@@ -368,8 +368,7 @@
       "sections": {
         "header": {
           "type": "header",
-          "settings": {
-          }
+          "settings": {}
         },
         "hero": {
           "type": "hero",
@@ -382,21 +381,18 @@
           "blocks": {
             "slideshow-0": {
               "type": "image",
-              "settings": {
-              }
+              "settings": {}
             },
             "slideshow-1": {
               "type": "image",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
             "slideshow-0",
             "slideshow-1"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "featured-collections": {
           "type": "collection",
@@ -406,8 +402,7 @@
         },
         "feature-row": {
           "type": "feature-row",
-          "settings": {
-          }
+          "settings": {}
         },
         "footer": {
           "type": "footer",
@@ -561,23 +556,20 @@
         },
         "1492033809691": {
           "type": "map",
-          "settings": {
-          }
+          "settings": {}
         },
         "1492033877875": {
           "type": "quotes",
           "blocks": {
             "1492033877875-0": {
               "type": "quote",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
             "1492033877875-0"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "1492033924902": {
           "type": "custom-content",
@@ -603,18 +595,15 @@
           "blocks": {
             "1492096252560-0": {
               "type": "featured_collection",
-              "settings": {
-              }
+              "settings": {}
             },
             "1492096252560-1": {
               "type": "featured_collection",
-              "settings": {
-              }
+              "settings": {}
             },
             "1492096252560-2": {
               "type": "featured_collection",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
