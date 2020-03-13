@@ -254,7 +254,6 @@
       </ul>
     </nav>
   </header>
-  {%- include 'nav-addition' -%}
 
   {% if section.settings.align_logo == 'center' %}
   <nav class="small--hide border-bottom" id="AccessibleNav" role="navigation">
@@ -262,6 +261,7 @@
   </nav>
   {% endif %}
 </div>
+{%- include 'nav-addition' -%}
 
 {% schema %}
   {
