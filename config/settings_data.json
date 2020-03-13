@@ -1,0 +1,663 @@
+{
+  "current": {
+    "color_text": "#5bb6ae",
+    "color_body_text": "#6d6d6d",
+    "color_sale_text": "#9fc958",
+    "color_borders": "#e4e4e4",
+    "color_button": "#9fc958",
+    "color_button_text": "#ffffff",
+    "color_small_button_text_border": "#162950",
+    "color_text_field": "#ffffff",
+    "color_text_field_text": "#162950",
+    "color_image_overlay_text": "#ffffff",
+    "color_image_overlay": "#3d3d3d",
+    "image_overlay_opacity": 0,
+    "color_body_bg": "#ffffff",
+    "type_header_font": "lato_n8",
+    "type_header_base_size": 34,
+    "type_base_font": "montserrat_n4",
+    "type_base_size": 16,
+    "type_bold_product_titles": false,
+    "share_image": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "https:\/\/twitter.com\/vidafuel",
+    "social_facebook_link": "https:\/\/www.facebook.com\/VidaFuel\/",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/vida_fuel\/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "shopify:\/\/shop_images\/blog_footer-BLUEBLUEVFlogo.png",
+    "recurring-orders-loading": "Loading subscription info...",
+    "recurring-orders-inherit-classes": false,
+    "recurring-orders-additional-button-classes": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#e8f3f6",
+    "checkout_heading_font": "Roboto",
+    "checkout_body_font": "Source Sans Pro",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#9bcd74",
+    "checkout_error_color": "#ff6d6d",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/vida-fuel-logo-rectangle.png",
+          "logo_max_width": 165,
+          "main_linklist": "vidafuel-1-3-main-menu",
+          "message": true,
+          "home_page_only": false,
+          "message_text": "Use code FIRSTORDER at checkout for 10% off!",
+          "message_link": "shopify:\/\/collections\/snacks",
+          "color_bg": "#9fc958",
+          "color_text": "#ffffff"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "footer_linklist": "new-test-menu",
+          "footer_linklist_two": "",
+          "footer_newsletter_enable": true,
+          "footer_newsletter_subheading": "<p>To receive discounts and new product updates<\/p>",
+          "show_payment_icons": true
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "image_size": "medium",
+          "show_quantity_selector": true,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_zoom": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 3,
+          "rows": 8,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": true
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "layout": "list",
+          "blog_show_author": true,
+          "blog_show_date": false
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_author": true,
+          "blog_show_date": true,
+          "show_share_buttons": true
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_notes_enable": false
+        }
+      },
+      "1534160018241": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/bottles.jpg",
+          "mobile_image": "",
+          "alignment": "center",
+          "h_alignment": "right",
+          "text_width": "narrow",
+          "hex_text": "#5bb6ae",
+          "title": "New Wellness Protein",
+          "text": "<p>Formulation highlights<\/p>",
+          "hero_size": "large",
+          "text_size": "medium",
+          "icon_01": "heartbeat",
+          "bullet_01": "16g of complete protein in just 2oz",
+          "icon_02": "heartbeat",
+          "bullet_02": "Packed with the amino acids your body needs",
+          "icon_03": "heartbeat",
+          "bullet_03": "Whey protein to increase strength & muscle mass",
+          "icon_04": "heartbeat",
+          "bullet_04": "Collagen protein for bone, joint and skin health",
+          "icon_05": "heartbeat",
+          "bullet_05": "No artificial sweeteners or colors",
+          "icon_06": "heartbeat",
+          "bullet_06": "Infused with light, natural flavors",
+          "icon_07": "heartbeat",
+          "bullet_07": "Ready to drink",
+          "icon_08": "heartbeat",
+          "bullet_08": "Kidney-friendly",
+          "button_label": "Shop Now",
+          "button_link": "shopify:\/\/collections\/shop"
+        }
+      },
+      "1554418849590": {
+        "type": "feature-columns",
+        "blocks": {
+          "1554418849590-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": false,
+              "image": "",
+              "title": "We're giving 'medical nutrition' a much needed upgrade",
+              "text": "<p>Diet plays a critical role in the onset and progression of disease, so our expert dietitians went to work to create products that make it easy and delicious to comply with your diet.<\/p>\n<p><\/p>\n<p><strong>BETTER INGREDIENTS, SUPERIOR NUTRITION:<\/strong><\/p>",
+              "icon_name": "plus-square",
+              "title_element": "Highest quality protein",
+              "text_element": "Not all protein is equal. We use the best. Powerful whey + collagen protein for optimal efficacy.",
+              "title_element_02": "No artificial sweeteners or colors",
+              "text_element_02": "These may increase your risk of metabolic syndrome, type 2 diabetes, GI distress and altered taste buds.",
+              "title_element_03": "Lower sugar",
+              "text_element_03": "For our diabetic friends and all of us needing to consume less sugar.",
+              "title_element_04": "Great taste & convenience",
+              "text_element_04": "We make it quick and easy to be healthy.",
+              "title_element_05": "Portion control",
+              "text_element_05": "This allows you to still eat what you love & enjoy life!",
+              "title_element_06": "Mineral balance",
+              "text_element_06": "Controlled levels of potassium, phosphorus and sodium for ease on your kidneys and heart.",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1554418849590-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Chip_Graphic_Website_Asset_Full.png",
+              "title": "",
+              "text": "",
+              "icon_name": "",
+              "title_element": "",
+              "text_element": "",
+              "title_element_02": "",
+              "text_element_02": "",
+              "title_element_03": "",
+              "text_element_03": "",
+              "title_element_04": "",
+              "text_element_04": "",
+              "title_element_05": "",
+              "text_element_05": "",
+              "title_element_06": "",
+              "text_element_06": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1554418849590-0",
+          "1554418849590-1"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left"
+        }
+      },
+      "1554446454586": {
+        "type": "custom-content",
+        "blocks": {
+          "1554904471498": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"yotpo yotpo-reviews-carousel\" data-background-color=\"transparent\" data-mode=\"top_rated\" data-type=\"both\" data-count=\"9\" data-show-bottomline=\"1\" data-autoplay-enabled=\"1\" data-autoplay-speed=\"9000\" data-show-navigation=\"1\"> <\/div>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "1554904471498"
+        ],
+        "settings": {
+          "title": "What our customers are saying:"
+        }
+      },
+      "1554835321692": {
+        "type": "hero-2",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/VF_Web_Banner_Cup.jpg",
+          "mobile_image": "shopify:\/\/shop_images\/VF_Banner-01-Mobile_720x_cce7e735-3e62-4b10-a4f9-c676553f748c.jpg",
+          "alignment": "top",
+          "hero_layout": "full_width",
+          "hero_size": "large",
+          "text_size": "medium",
+          "h_alignment": "center",
+          "text_width": "wider",
+          "hex_text_alt": "#fff",
+          "title": "Products that support you, when you need them the most.",
+          "text": "<p><strong>Dietitian developed for:<\/strong><\/p>",
+          "bullet_01": "Dialysis patients",
+          "bullet_02": "Cancer therapy",
+          "bullet_03": "Post surgery recovery",
+          "bullet_04": "Geriatric nutrition",
+          "bullet_05": "Healthy aging",
+          "bullet_06": "Chronic disease prevention",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "1554841169717": {
+        "type": "feature-row-alt",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/VF_Web_Banner_Chips2.jpg",
+          "mobile_image": "shopify:\/\/shop_images\/Home_ChipsBanner_M.jpg",
+          "layout": "left",
+          "title": "",
+          "text": "<p>From snack foods to medical grade nutrition supplements, <strong>vidafuel<\/strong> is here to help.<\/p>\n<p><\/p>",
+          "button_label": "Shop Now",
+          "button_link": "shopify:\/\/collections\/shop",
+          "button_color": "#fff",
+          "text_background_color": "#7bcdd8"
+        }
+      },
+      "1554903576664": {
+        "type": "feature-columns-full",
+        "blocks": {
+          "1554903576664-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/vida-fuel-cips-comparisson-02.png",
+              "title": "",
+              "text": "",
+              "icon_name": "",
+              "title_element": "",
+              "text_element": "",
+              "title_element_02": "",
+              "text_element_02": "",
+              "title_element_03": "",
+              "text_element_03": "",
+              "title_element_04": "",
+              "text_element_04": "",
+              "title_element_05": "",
+              "text_element_05": "",
+              "title_element_06": "",
+              "text_element_06": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "1554903576664-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/vida-fuel-cips-comparisson-01.png",
+              "title": "",
+              "text": "",
+              "icon_name": "",
+              "title_element": "",
+              "text_element": "",
+              "title_element_02": "",
+              "text_element_02": "",
+              "title_element_03": "",
+              "text_element_03": "",
+              "title_element_04": "",
+              "text_element_04": "",
+              "title_element_05": "",
+              "text_element_05": "",
+              "title_element_06": "",
+              "text_element_06": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1554903576664-0",
+          "1554903576664-1"
+        ],
+        "settings": {
+          "supertitle": "Dietitian Developed Snacks",
+          "title": "How we Compare",
+          "align_text": "left"
+        }
+      }
+    },
+    "content_for_index": [
+      "1554835321692",
+      "1554418849590",
+      "1534160018241",
+      "1554903576664",
+      "1554446454586",
+      "1554841169717"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "color_text": "#3d4246",
+      "color_body_text": "#69727b",
+      "color_sale_text": "#557B97",
+      "color_borders": "#e8e9eb",
+      "color_button": "#557B97",
+      "color_button_text": "#fff",
+      "color_small_button_text_border": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#fff",
+      "type_header_font": "work_sans_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "work_sans_n4",
+      "type_base_size": 16,
+      "type_bold_product_titles": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+              }
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_linklist_two": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "feature-row",
+        "slideshow"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "type_bold_product_titles": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "autoplay": true,
+            "autoplay_speed": 6,
+            "slideshow_height": "medium",
+            "text_size": "medium"
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "footer_linklist": "main-menu",
+            "footer_linklist_two": "footer",
+            "footer_newsletter_enable": true,
+            "show_payment_icons": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "image_size": "medium",
+            "show_quantity_selector": false,
+            "show_variant_labels": true,
+            "show_vendor": false,
+            "enable_zoom": true,
+            "show_share_buttons": true
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {
+          }
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {
+          }
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

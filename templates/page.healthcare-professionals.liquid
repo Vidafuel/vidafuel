@@ -1,0 +1,293 @@
+<link rel="stylesheet" href="https://use.typekit.net/xbq8sxe.css">
+<link rel="stylesheet" href="{{ 'healthcare-professionals.css' | asset_url }}">
+
+<div id="healthcare">
+  
+  <!-- page title -->
+  <div class="healthcare-page-title">
+    <div class="wrapper centertext">
+  		<h1 class="trade_gothic_condensed_bold">NEW Protein Supplement</h1>
+    </div>
+  </div>
+  
+  <!-- feature -->
+  <div class="healthcare-feature" class="trade_gothic">
+    <div class="wrapper">
+      <div class="inner">
+		<div class="table">
+          <div class="cell text">
+            <div class="title trade_gothic_condensed_heavy">
+              Request Clinic Samples
+            </div>
+            Dietitian Developed for Optimal Absorption.<br />
+			Patient Approved Taste. 
+          </div>
+          <div class="cell image">
+            <img src="{{ 'healthcare-01.png' | asset_url }}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- about -->
+  <div class="healthcare-about">
+    <div class="wrapper">
+      <div class="inner">
+        <div class="table">
+          <div class="cell text">
+            <div class="title trade_gothic_condensed_bold">Small but Mighty</div>
+            <p>Not at all proteins are equal. See how Vidafuel is superior.</p>
+            <a href="#" class="button blue">Comp Chart</a>
+          </div>
+          <div class="cell image">
+            <div class="table">
+              <div class="cell centertext">
+          	    <img src="{{ 'healthcare-02.png' | asset_url }}" alt="" />
+              </div>
+              <div class="cell bullets trade_gothic_bold">
+                <ul>
+                  <li>16g of complete protein in 2oz</li>
+                  <li>No dilution required</li>
+                  <li>Easy to swallow texture</li>
+                  <li>No artificial sweeteners or colors</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- request form -->
+  <div class="healthcare-form">
+    <div class="wrapper">
+      <div class="inner">
+        <div class="title centertext uppercase trade_gothic_condensed_bold">Sample Request Form</div>
+        <div class="formwrap">
+          
+          {% form 'contact' %}
+          
+            {% if form.posted_successfully? %}
+          
+              <p class="centertext" style="color:#ffffff; font-size:20px;">Thank you for your submission. We will be in touch with you shortly!</p>
+          
+          	{% else %}
+          
+              {{ form.errors | default_errors }}
+
+              <div class="clearfix">
+                <div class="floatleft">
+                  <div class="field">
+                    <input type="text" 
+                           name="contact[name]"
+                           value="Name (First and Last) *" 
+                           onBlur="if(this.value == '') { this.value='Name (First and Last) *'}" 
+                           onFocus="if (this.value == 'Name (First and Last) *') {this.value=''}" />
+                  </div>
+                </div>
+                <div class="floatright">
+                  <div class="field">
+                    <select name="contact[Credential Type]">
+                      <option value="">Credential Type</option>
+                      <option value="Physician">Physician</option>
+                      <option value="PA">PA</option>
+                      <option value="NP">NP</option>
+                      <option value="Registered Dietitian">Registered Dietitian</option>
+                      <option value="Nurse">Nurse</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix">
+                <div class="floatleft">
+                  <div class="field">
+                    <input type="text" 
+                           name="contact[phone]" 
+                           value="Office Phone *"
+                           onBlur="if(this.value == '') { this.value='Office Phone *'}" 
+                           onFocus="if (this.value == 'Office Phone *') {this.value=''}" />
+                  </div>
+                </div>
+                <div class="floatright">
+                  <div class="field">
+                    <input type="text" 
+                           name="contact[email]"
+                           value="Email *"
+                           onBlur="if(this.value == '') { this.value='Email *'}" 
+                           onFocus="if (this.value == 'Email *') {this.value=''}" />
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix">
+                <div class="floatleft">
+                  <div class="field">
+                    <input type="text" 
+                           name="contact[Institution name]"
+                           value="Institution name"
+                           onBlur="if(this.value == '') { this.value='Institution name'}" 
+                           onFocus="if (this.value == 'Institution name') {this.value=''}" />
+                  </div>
+                </div>
+                <div class="floatright">
+                  <div class="field">
+                    <input type="text" 
+                           name="contact[Institution address]"
+                           value="Institution address"
+                           onBlur="if(this.value == '') { this.value='Institution address'}" 
+                           onFocus="if (this.value == 'Institution address') {this.value=''}" />
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix">
+                <div class="floatleft">
+                  <div class="field">
+                    <input type="text" 
+                           name="contact[City]"
+                           value="City"
+                           onBlur="if(this.value == '') { this.value='City'}" 
+                           onFocus="if (this.value == 'City') {this.value=''}" />
+                  </div>
+                </div>
+                <div class="floatright">
+                  <div class="field">
+                    <input type="text" 
+                           name="contact[State]"
+                           value="State"
+                           onBlur="if(this.value == '') { this.value='State'}" 
+                           onFocus="if (this.value == 'State') {this.value=''}" />
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix">
+                <div class="floatleft">
+                  <div class="field">
+                    <input type="text"
+                           name="contact[Zipcode]"
+                           value="Zipcode"
+                           onBlur="if(this.value == '') { this.value='Zipcode'}" 
+                           onFocus="if (this.value == 'Zipcode') {this.value=''}" />
+                  </div>
+                </div>
+                <div class="floatright">
+                  <input type="hidden" name="contact[body]" value="Sample Request" />
+                  <input type="submit" value="Request Now" />
+                </div>
+              </div>
+          
+            {% endif %}
+
+          {% endform %}
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- textblock -->
+  <div class="healthcare-textblock">
+    <div class="wrapper">
+      <div class="inner centertext">
+        <div class="title uppercase trade_gothic_condensed_bold">About Us</div>
+        <div class="text trade_gothic_bold">
+          Vidafuel is an outcomes-driven company dedicated to leading improvement in the 
+          nutritional therapy market. Our passionate team of dietitians and scientists leads 
+          development of best in class products that provide a superior nutritional profile 
+          and patient experience. Our mission is to educate, support and continue to develop 
+          innovative nutritional therapy products that enable patients to live longer, happier lives.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- cta -->
+  <div class="healthcare-cta">
+    <div class="wrapper">
+      <div class="inner centertext">
+        <div class="table">
+          <div class="cell">
+            <div class="item">
+              <img src="{{ 'healthcare-03.png' | asset_url }}" alt="" />
+              <p>Download white paper:<br />Clinical and financial value of Oral Nutrition Supplement programs</p>
+              <a href="#" class="button">Download</a>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="item">
+              <img src="{{ 'healthcare-04.png' | asset_url }}" alt="" />
+              <p>Order snacks for your clinic lobby day or end of month lab day</p>
+              <a href="#" class="button">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- distribution -->
+  <div class="healthcare-distribution">
+    <div class="wrapper">
+      <div class="inner centertext">
+        <div class="title uppercase">Distributed By</div>
+        <img src="{{ 'healthcare-05.png' | asset_url }}" alt="" />
+      </div>
+    </div>
+  </div>
+  
+  <!-- contact -->
+  <div class="healthcare-contact">
+    <div class="wrapper">
+      <div class="inner centertext">
+        <p>Have questions about our products?<br />Reach out to us anytime!</p>
+        <p>customercare@vidafuel.com <span>|</span> (615) 430-8733</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<script src="{{ 'jquery.validate.min.js' | asset_url }}"></script>
+<script>
+jQuery.validator.addMethod("defaultInvalid", function(value, element) {
+  switch (element.value) {
+    case "Name (First and Last) *":
+      if (element.name == "contact[name]") return false;
+      break;
+    case "Email *":
+      if (element.name == "contact[email]") return false;
+      break;
+    case "Office Phone *":
+      if (element.name == "contact[phone]") return false;
+      break;
+    default: return true; 
+      break;
+  }
+},  'This field is required.');
+jQuery(function($){
+
+    if ($('#healthcare .healthcare-form .formwrap form').length) {
+      
+      $('#healthcare .healthcare-form .formwrap form').validate({		
+        rules: {
+          'contact[name]': {
+            required: true,
+            defaultInvalid: true
+          },
+          'contact[email]': {
+            required: true,
+            email: true,
+            defaultInvalid: true
+          },
+          'contact[phone]': {
+            required: true,
+            defaultInvalid: true
+          }
+        }
+      });
+      
+    }
+
+});
+</script>

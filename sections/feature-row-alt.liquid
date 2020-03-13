@@ -1,0 +1,236 @@
+<style>
+  .feature-row__item-alt {
+    padding:250px 0;
+    background-color:{{ section.settings.text_background_color }};
+    background-image:url({{ section.settings.image | img_url: 'master' }});
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+  }
+  .feature-row__item.feature-row__text {
+    width: 40%;
+    float:right;
+    padding: 3.45rem;
+    text-align: center;
+  }
+  .rte.rte-setting.featured-row__subtext p {
+    color: #fff;
+    font-size: 2rem;
+  }
+  a.btn {
+    border-radius: 50px;
+    font-size: 1.5rem;
+    padding: 10px 29px;
+  }
+  @media screen and (max-width: 1024px){
+    .feature-row__item-alt {
+      padding:550px 0 60px;
+      background-image:url({{ section.settings.mobile_image | img_url: 'master' }});
+      background-position:top center; 
+    }
+    .feature-row__item.feature-row__text {
+      width:100%;
+      float:none;
+    }
+    .rte.rte-setting.featured-row__subtext p {
+      font-size:1.5rem;
+    }
+  }
+</style>
+
+<div class="feature-row">
+  <div class="feature-row-alt">
+    <div class="feature-row__item-alt">
+      <div class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }}">
+        <div class="grid__item">
+          {% if section.settings.title != blank %}
+          <h2 class="h3 trade_gothic">{{ section.settings.title | escape }}</h2>
+          {% endif %}
+          {% if section.settings.text != blank %}
+          <div class="rte rte-setting featured-row__subtext in-v fade-in" style="color: {{ section.settings.text_background_color }};">{{ section.settings.text }}</div>
+          {% endif %}
+          {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+          <a href="{{ section.settings.button_link }}" class="btn in-v fade-in" style="background-color:{{ section.settings.button_color }}; color: {{ section.settings.text_background_color }};">
+            {{ section.settings.button_label | escape }}
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": {
+      "en": "Image with text alt"
+    },
+    "class": "index-section index-section--flush",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": {
+          "en": "Image",
+          "de": "Foto",
+          "fr": "Image",
+          "it": "Immagine",
+          "ja": "画像",
+          "es": "Imagen",
+          "pt-BR": "Imagem"
+        }
+      },
+	 {
+        "type": "image_picker",
+        "id": "mobile_image",
+        "label": {
+          "en": "Mobile Image"
+        }
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": {
+          "en": "Image alignment",
+          "de": "Fotoausrichtung",
+          "fr": "Alignement de l'image",
+          "it": "Allineamento immagine",
+          "ja": "画像アラインメント",
+          "es": "Alineación de imagen",
+          "pt-BR": "Alinhamento da imagem"
+        },
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": {
+              "en": "Left",
+              "de": "Links",
+              "fr": "Gauche",
+              "it": "Sinistra",
+              "ja": "左",
+              "es": "Izquierda",
+              "pt-BR": "Esquerda"
+            }
+          },
+          {
+            "value": "right",
+            "label": {
+              "en": "Right",
+              "de": "Rechts",
+              "fr": "Droite",
+              "it": "Destra",
+              "ja": "右",
+              "es": "Derecha",
+              "pt-BR": "Direita"
+            }
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": {
+          "en": "Heading",
+          "de": "Titel",
+          "fr": "En-tête",
+          "it": "Heading",
+          "ja": "見出し",
+          "es": "Título",
+          "pt-BR": "Título"
+        },
+        "default": {
+          "en": "Image with text alt",
+          "de": "Foto mit Text",
+          "fr": "Image avec du texte",
+          "it": "Immagine con testo",
+          "ja": "テキスト付き画像",
+          "es": "Imagen con texto",
+          "pt-BR": "Imagem com texto"
+        }
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": {
+          "en": "Text",
+          "de": "Text",
+          "fr": "Texte",
+          "it": "Testo",
+          "ja": "テキスト",
+          "es": "Texto",
+          "pt-BR": "Texto"
+        },
+        "default": {
+          "en": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "de": "<p>Kombinieren Sie große Schrift mit einem Foto, um einen Fokus auf Ihr ausgewähltes Produkt, die Kategorie oder einen Blogpost zu legen. Dazu Details zur Verfügbarkeit, Stil oder ein Review.</p>",
+          "fr": "<p>Ajoutez une image à un long texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.</p>",
+          "it": "<p>Associa un testo di grandi dimensioni a un'immagine per dare importanza al prodotto, alla collezione o all'articolo del blog di tua scelta. Aggiungi dettagli sulla disponibilità, sullo stile o fornisci una recensione.</p>",
+          "ja": "<p>あなたが選んだ商品、コレクション、またはブログ投稿に注目を集めるため、大きなテキストと画像を組み合わせます。可用性、スタイル、またはレビュー提供についての詳細を追加します。</p>",
+          "es": "<p>Vincula un texto largo con una imagen para dar visibilidad a tu producto, colección o publicación de blog elegida. Agrega detalles sobre disponibilidad, estilo, o incluso ofrece una reseña.</p>",
+          "pt-BR": "<p>Emparelhe textos grandes com uma imagem para dar foco ao produto, coleção ou postagem do blog escolhido. Adicione detalhes sobre disponibilidade, estilo ou até mesmo um comentário.</p>"
+        }
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": {
+          "en": "Button label",
+          "de": "Button-Etikett",
+          "fr": "Texte du bouton",
+          "it": "Etichetta pulsante",
+          "ja": "ボタンラベル",
+          "es": "Etiqueta de botón",
+          "pt-BR": "Etiqueta do botão"
+        }
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": {
+          "en": "Button link",
+          "de": "Button-Link",
+          "fr": "Lien du bouton",
+          "it": "Link pulsante",
+          "ja": "ボタンリンク",
+          "es": "Enlace de botón",
+          "pt-BR": "Link do botão"
+        }
+    },
+    {
+        "type": "text",
+        "id" : "button_color",
+        "label" : "Button Color",
+        "default" : "#fff"
+    },
+    {
+        "type": "text",
+        "id" : "text_background_color",
+        "label" : "Text Background Color",
+        "default": "#7CCDC9"
+    }
+    ],
+    "presets": [
+      {
+        "name": {
+          "en": "Image with text alt",
+          "de": "Foto mit Text",
+          "fr": "Image avec texte",
+          "it": "Immagine con testo",
+          "ja": "テキスト付き画像",
+          "es": "Imagen con texto",
+          "pt-BR": "Imagem com texto"
+        },
+        "category": {
+          "en": "Image",
+          "de": "Foto",
+          "fr": "Image",
+          "it": "Immagine",
+          "ja": "画像",
+          "es": "Imagen",
+          "pt-BR": "Imagem"
+        }
+      }
+    ]
+  }
+{% endschema %}
