@@ -186,6 +186,11 @@
   font-size:50px;
   line-height:1.2;
 }
+#healthcare .healthcare-feature .text p { 
+  font-size: 20px;
+  color: #fff;
+}
+
 #healthcare .healthcare-feature .text .title {
   font-size:80px; 
 }
@@ -271,6 +276,11 @@
   font-size:60px;
   line-height:1.2;
 }
+#healthcare .healthcare-form .subtext p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
 #healthcare .healthcare-form .formwrap .floatleft,
 #healthcare .healthcare-form .formwrap .floatright {
   width:50%;
@@ -281,6 +291,8 @@
   margin-bottom:26px; 
 }
 #healthcare .healthcare-form .formwrap input[type='text'],
+#healthcare .healthcare-form .formwrap input[type='number'],
+#healthcare .healthcare-form .formwrap textarea[type='textarea'],
 #healthcare .healthcare-form .formwrap select {
   width:100%;
   padding:0 30px;
@@ -288,6 +300,9 @@
   font-size:18px;
   line-height:70px;
   color:#7acdc7;
+}
+::placeholder {
+  color: #7acdc7;
 }
 #healthcare .healthcare-form .formwrap input[type='submit'] {
   width:100%;
@@ -398,6 +413,7 @@
   /* feature */
   #healthcare .healthcare-feature .text { width:40%; font-size:30px; }
   #healthcare .healthcare-feature .text .title { font-size:60px; } 
+  #healthcare .healthcare-feature .text p { font-size: 20px;}
   
   /* about */
   #healthcare .healthcare-about .text { width:40%; }
