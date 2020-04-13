@@ -31,8 +31,8 @@
     <dd>
       <span class="price-item price-item--regular" data-regular-price>
         {% if available %}
-          {% if compare_at_price > price %}
-            {{ compare_at_price | money }}
+          {% if product.price_varies and template == 'collection' %}
+            {{ product.price_min | money }} to {{ product.price_max | money }}
           {% else %}
             {{ money_price }}
           {% endif %}

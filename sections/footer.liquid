@@ -178,6 +178,12 @@
           <small class="site-footer__copyright-content">{{ powered_by_link }}</small>
         </div>
       </div>
+      {% unless template == 'page.contact' %}
+      <div class="grid__item disclaimer" style="text-align:left; font-size:12px; margin-top:30px; color:#6d6d6d; font-weight:700;">
+        The statements herein have not been evaluated by the Food and Drug Administration. This product is not 
+        intended to diagnose, treat, cure, or prevent any disease.  Oral nutrition products should be used under physician supervision.
+      </div>
+      {% endunless %}
     </div>
   </div>
 </footer>
