@@ -82,16 +82,26 @@
   <div class="healthcare-form">
     <div class="wrapper">
       <div class="inner">
-        <div class="title centertext uppercase trade_gothic_condensed_bold">Patient Request Form</div>
+        <div class="subtext centertext">
+          <h4 class="title centertext uppercase trade_gothic_condensed_bold">Patient Support Program Complete</h4>
+          <p>Thank you to all the wonderful clinicians who submitted requests! The response was overwhelming and enabled us to support 1,000+ patients by providing a 1 month supply of the Vidafuel Wellness Protein. This unimaginable time has shown how strong and incredible the renal community is. We're inspired by you and grateful to serve this community.</p> 
+          <p>Please know that you have our full support as you continue to safeguard the well-being of dialysis patients, as well as that of you and your families.</p>
+          <p>-Team Vidafuel</p>
+        </div>
+        {% comment %}
+        <div class="title centertext uppercase trade_gothic_condensed_bold">Patient Waitlist Request Form</div>
         <div class="subtext centertext">
           <p>We ask that you be extremely thoughtful about your request. We want to ensure the most at-risk patients,
             either
             financially or health wise, receive product. The protein will be shipped directly to your clinic to be
-            distributed.
-            There is a 6 patient limit per clinic.</p>
+            distributed. There is a 6 patient limit per clinic.</p>
           <p>
+            <p>Thank you to all the wonderful clinicians who have submitted requests! The response to our program has been
+            overwhelming, well in excess of 600 patients, so all new requests will be waitlisted. We will notify you if we are able
+            to fulfill your waitlist request. We appreciate your support!!</p>
         </div>
-        <div class="formwrap">
+
+        <div class="formwrap" style="margin-bottom: 2rem;">
 
           {% form 'contact' %}
 
@@ -211,6 +221,10 @@
           {% endform %}
 
         </div>
+        
+      </div>
+      <p class="centertext light-text">We will notify you if we are able to fulfill your request. Thank you!</p>
+	{% endcomment %}
       </div>
     </div>
   </div>

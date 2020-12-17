@@ -16,13 +16,13 @@
     "type_header_font": "lato_n8",
     "type_header_base_size": 34,
     "type_base_font": "montserrat_n4",
-    "type_base_size": 16,
-    "type_bold_product_titles": false,
+    "type_base_size": 18,
+    "type_bold_product_titles": true,
     "share_image": "",
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
-    "social_twitter_link": "https:\/\/twitter.com\/vidafuel",
+    "social_twitter_link": "",
     "social_facebook_link": "https:\/\/www.facebook.com\/VidaFuel\/",
     "social_pinterest_link": "",
     "social_instagram_link": "https:\/\/www.instagram.com\/vida_fuel\/",
@@ -34,10 +34,10 @@
     "recurring-orders-loading": "Loading subscription info...",
     "recurring-orders-inherit-classes": false,
     "recurring-orders-additional-button-classes": "",
-    "checkout_header_image": "",
-    "checkout_logo_image": "",
+    "checkout_header_image": "shopify:\/\/shop_images\/VF_Web_Banner_Cup.jpg",
+    "checkout_logo_image": "shopify:\/\/shop_images\/vida-fuel-logo_copy.png",
     "checkout_logo_position": "left",
-    "checkout_logo_size": "small",
+    "checkout_logo_size": "medium",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
@@ -45,8 +45,8 @@
     "checkout_sidebar_background_color": "#e8f3f6",
     "checkout_heading_font": "Roboto",
     "checkout_body_font": "Source Sans Pro",
-    "checkout_accent_color": "#1990c6",
-    "checkout_button_color": "#9bcd74",
+    "checkout_accent_color": "#006862",
+    "checkout_button_color": "#9fc958",
     "checkout_error_color": "#ff6d6d",
     "sections": {
       "header": {
@@ -58,17 +58,20 @@
           "main_linklist": "main-menu",
           "message": true,
           "home_page_only": false,
-          "message_text": "Use code FIRSTORDER at checkout for 10% off!",
-          "message_link": "shopify:\/\/collections\/snacks",
+          "message_text": "FREE SHIPPING on all orders over $50",
+          "message_link": "shopify:\/\/collections\/all",
           "color_bg": "#9fc958",
-          "color_text": "#ffffff"
+          "color_text": "#ffffff",
+          "header_tab": true,
+          "header_tab_text": "We're now on",
+          "header_tab_link": "https:\/\/www.amazon.com\/s?k=vidafuel"
         }
       },
       "footer": {
         "type": "footer",
         "settings": {
-          "footer_linklist": "footer",
-          "footer_linklist_two": "",
+          "footer_linklist": "footer-menu-1",
+          "footer_linklist_two": "footer-menu-2",
           "footer_newsletter_enable": true,
           "footer_newsletter_subheading": "<p>To receive discounts and new product updates<\/p>",
           "show_payment_icons": true
@@ -92,7 +95,7 @@
           "layout": "grid",
           "grid": 3,
           "rows": 8,
-          "show_collection_image": true,
+          "show_collection_image": false,
           "show_vendor": false,
           "sort_enable": true,
           "tags_enable": true
@@ -150,7 +153,7 @@
           "icon_08": "heartbeat",
           "bullet_08": "Kidney-friendly",
           "button_label": "Shop Now",
-          "button_link": "shopify:\/\/collections\/shop"
+          "button_link": "shopify:\/\/collections\/snacks"
         }
       },
       "1554418849590": {
@@ -265,7 +268,7 @@
           "title": "",
           "text": "<p>From snack foods to medical grade nutrition supplements, <strong>vidafuel<\/strong> is here to help.<\/p>\n<p><\/p>",
           "button_label": "Shop Now",
-          "button_link": "shopify:\/\/collections\/shop",
+          "button_link": "shopify:\/\/collections\/snacks",
           "button_color": "#fff",
           "text_background_color": "#7bcdd8"
         }
@@ -368,8 +371,7 @@
       "sections": {
         "header": {
           "type": "header",
-          "settings": {
-          }
+          "settings": {}
         },
         "hero": {
           "type": "hero",
@@ -382,21 +384,18 @@
           "blocks": {
             "slideshow-0": {
               "type": "image",
-              "settings": {
-              }
+              "settings": {}
             },
             "slideshow-1": {
               "type": "image",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
             "slideshow-0",
             "slideshow-1"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "featured-collections": {
           "type": "collection",
@@ -406,8 +405,7 @@
         },
         "feature-row": {
           "type": "feature-row",
-          "settings": {
-          }
+          "settings": {}
         },
         "footer": {
           "type": "footer",
@@ -561,23 +559,20 @@
         },
         "1492033809691": {
           "type": "map",
-          "settings": {
-          }
+          "settings": {}
         },
         "1492033877875": {
           "type": "quotes",
           "blocks": {
             "1492033877875-0": {
               "type": "quote",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
             "1492033877875-0"
           ],
-          "settings": {
-          }
+          "settings": {}
         },
         "1492033924902": {
           "type": "custom-content",
@@ -603,18 +598,15 @@
           "blocks": {
             "1492096252560-0": {
               "type": "featured_collection",
-              "settings": {
-              }
+              "settings": {}
             },
             "1492096252560-1": {
               "type": "featured_collection",
-              "settings": {
-              }
+              "settings": {}
             },
             "1492096252560-2": {
               "type": "featured_collection",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [

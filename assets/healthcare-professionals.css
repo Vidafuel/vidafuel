@@ -203,7 +203,8 @@
   margin:40px 0;
   background:#ffffff;
 }
-#healthcare .healthcare-about {
+#healthcare .healthcare-about,
+#healthcare .healthcare-reviews {
   padding:50px 0;
 }
 #healthcare .healthcare-about .inner {
@@ -290,16 +291,30 @@
 #healthcare .healthcare-form .formwrap .field {
   margin-bottom:26px; 
 }
+#healthcare .healthcare-form .formwrap .three-columns{
+	display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack: justify;
+  	-ms-flex-pack: justify;
+  	justify-content: space-between;
+}
+#healthcare .healthcare-form .formwrap .three-columns input{
+	max-width: 265px;
+}
 #healthcare .healthcare-form .formwrap input[type='text'],
+#healthcare .healthcare-form .formwrap input[type='email'],
 #healthcare .healthcare-form .formwrap input[type='number'],
 #healthcare .healthcare-form .formwrap textarea[type='textarea'],
 #healthcare .healthcare-form .formwrap select {
-  width:100%;
-  padding:0 30px;
-  border-radius:15px;
-  font-size:18px;
-  line-height:70px;
-  color:#7acdc7;
+  width: 100%;
+  padding: 2px 30px;
+  border-radius: 15px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #7acdc7;
+  margin-bottom: 20px;
+  height: auto;
 }
 ::placeholder {
   color: #7acdc7;
@@ -467,4 +482,12 @@
   #healthcare .healthcare-distribution .title { font-size:30px; }
   #healthcare .healthcare-contact p span { display:block; margin:0; height:0; text-align:left; text-indent:-9999em; }
   
+}
+@media screen and (max-width: 590px){
+  #healthcare .healthcare-form .formwrap .three-columns{
+  	display: block;
+  }
+  #healthcare .healthcare-form .formwrap .three-columns input{
+  	max-width: none;
+  }
 }

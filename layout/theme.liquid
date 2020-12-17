@@ -2,6 +2,25 @@
 <!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{ shop.locale }}"> <!--<![endif]-->
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-KNQ2TM4');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Ads: 682486222 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-682486222"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'AW-682486222');
+    </script>
+    
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -91,6 +110,7 @@
   {% include 'bold-common' %}
   {% include 'bold-ro-init' %}
   {{ 'bold.css' | asset_url | stylesheet_tag }}
+  {{ 'vidafuel.scss.css' | asset_url | stylesheet_tag }}
 
 
   {% include 'minmaxify-head' %}
@@ -101,27 +121,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <meta name="google-site-verification" content="a6HtKogePX6wHMs7l9B1QsVCUyPxt5cUTn16e26KbOc" />
-  <!-- Global site tag (gtag.js) - Google Ads: 682486222 -->
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-682486222"></script>
-
-  <script>
-
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() { dataLayer.push(arguments); }
-
-    gtag('js', new Date());
-
-
-    gtag('config', 'AW-682486222');
-
-  </script>
-
+  <meta name="ahrefs-site-verification" content="b70c2387d853a0c2788d1c5f4c39a0837310db1438e8e2b6db5c94fc3c2a0234">
+  <meta name="google-site-verification" content="oRxTR7VYWxz1XUAFEFKcuRw1vjntnOrygfRDsqkPJQc" />
 </head>
 
 <body class="template-{{ template | split: '.' | first }}">
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNQ2TM4" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
   <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
   <div id="SearchDrawer" class="search-bar drawer drawer--top" role="dialog" aria-modal="true" aria-label="{{ 'general.search.placeholder' | t }}">
@@ -155,6 +163,18 @@
     {% section 'footer' %}
 
   </div>
+<script src="https://cdn.attn.tv/vidafuel/dtag.js"></script>
+<script>
+jQuery(function($){
 
+  // reviews nav link
+  $('.site-nav a[href="#yotpo-testimonials"]').on('click tap', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    $('#yotpo-testimonials').show(0).addClass('yotpo-modal-active');
+  });
+
+});
+</script>
 </body>
 </html>
