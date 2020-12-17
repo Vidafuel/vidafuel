@@ -146,7 +146,12 @@
             {%- if section.settings.enable_payment_button and product.has_only_default_variant %} product-form--payment-button-no-variants {%- endif -%}	
             {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
           {%- endcapture %}
-
+<style>
+.ro_widget {
+    order: 2;
+    padding: 0 5px;
+}
+</style>
           {% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
             {% unless product.has_only_default_variant %}
               {% for option in product.options_with_values %}
@@ -181,7 +186,8 @@
                 <input type="number" id="Quantity-{{ section.id }}" name="quantity" value="1" min="1" class="product-form__input" pattern="[0-9]*" data-quantity-input>
               </div>
             {% endif %}
-<div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}"	
+            {%- comment -%}
+            <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}"	
               data-error-message-wrapper	
               role="alert"	
             >	
@@ -189,13 +195,17 @@
               {% include 'icon-error' %}	
               <span class="product-form__error-message" data-error-message>{{ 'products.product.quantity_minimum_message' | t }}</span>
             </div>
+            {%- endcomment -%}
 
             <div class="product-form__item product-form__item--submit{% if section.settings.enable_payment_button %} product-form__item--payment-button{% endif %}{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
               <button type="submit" name="add"
                 {% unless current_variant.available %} aria-disabled="true"{% endunless %}
                 aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
-                class="btn product-form__cart-submit{% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}"
+                class="button product-form__cart-submit"
                 data-add-to-cart>
+                {%- comment -%}button additional class before Mosheh's change
+                {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
+                {%- endcomment -%}
                 <span data-add-to-cart-text>
                   {% unless current_variant.available %}
                     {{ 'products.product.sold_out' | t }}
