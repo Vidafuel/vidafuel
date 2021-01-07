@@ -30,9 +30,6 @@
                 <div class="list-view-item__title">
                   <a href="{{ item.url }}">
                     {{ item.product.title }}
-<span class="saso-cart-item-discount-notes" data-key="{{item.key}}"></span>
-<span class="saso-cart-item-upsell-notes" data-key="{{item.key}}"></span>
-                                
                     {% if item.quantity > 1 %}
                       <span class="medium-up--hide"><span class="visually-hidden">{{ 'cart.label.quantity' | t }}</span>(x{{ item.quantity }})</span>
                     {% endif %}
@@ -58,11 +55,11 @@
                 {{ bold_item_properties }}
                 {{ bold_recurring_desc }}
                 {%- assign property_size = item.properties | size -%}
-                <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_properties" style="display:none !important;"></span><div class='hulkapps-reminder' data-key='{{item.key}}'></div>{% if property_size > 0 %}
+                <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_properties" style="display:none !important;"></span>{% if property_size > 0 %}
                   <div class="cart__meta-text">
                     
 {%- comment -%}
-{%- comment -%}{% for p in item.properties %}
+{% for p in item.properties %}
 				{%- if p.first.first == '_' -%}{%- continue -%}{%- endif -%}
                       {% unless p.last == blank %}
                         {{ p.first }}:
@@ -76,25 +73,7 @@
                           {{ p.last }}
                         {% endif %}
                       {% endunless %}
-                    {% endfor %}{%- endcomment -%}{%- for p in item.properties -%}
-            {%- unless p.last == blank -%}
-              <li class="product-details__item product-details__item--property{%if property_size == 0%} hide{% endif %}" data-cart-item-property>
-                <span class="product-details__item-label" data-cart-item-property-name>{{ p.first }}: </span>
-
-                {%- comment -%}
-                  Check if there was an uploaded file associated
-                {%- endcomment -%}
-                <span data-cart-item-property-value>
-                  {%- if p.last contains "uploads" -%}
-                    <a href="{{ p.last }}">Uploaded File</a>
-                  {%- else -%}
-                    {{ p.last }}
-                  {%- endif -%}
-                </span>
-              </li>
-            {%- endunless -%}
-          {%- endfor -%}
-            <button type="button" class="edit_cart_option btn btn--primary button" data-product_id="{{item.product_id}}" data-key="{{item.key}}" data-variant_id="{{item.variant_id}}" data-quantity="{{item.quantity}}">Edit Options</button>
+                    {% endfor %}
 {%- endcomment -%}
 
                   </div>
@@ -105,9 +84,7 @@
                 </p>
               </td>
               <td class="cart__price-wrapper">
-                <span class="bold_cart_item_price-wrapper"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" style="display:none !important;"></span>
-<span class="saso-cart-item-price" data-key="{{item.key}}">{{ bold_item_price | money }}</span>
-</span>
+                <span class="bold_cart_item_price-wrapper"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" style="display:none !important;"></span>{{ bold_item_price | money }}</span>
 
                 {% for discount in item.discounts %}
                   <div class="cart-item__discount medium-up--hide">{{ discount.title }}</div>
@@ -129,9 +106,7 @@
               </td>
               <td class="text-right small--hide">
                 {% if item.original_line_price != bold_item_line_price %}
-                  <div class="cart-item__original-price">
-<span class="saso-cart-item-line-price" data-key="{{item.key}}"><s><span class='hulkapps-cart-item-line-price' data-key='{{item.key}}'>{{ item.original_line_price | money }}</span></s></span>
-</div>
+                  <div class="cart-item__original-price"><s>{{ item.original_line_price | money }}</s></div>
                 {% endif %}
 
                 <div>
@@ -170,10 +145,7 @@
           <div class="grid__item text-right small--text-center{% if section.settings.cart_notes_enable %} medium-up--one-half{% endif %}">
             <div>
               <span class="cart__subtotal-title">{{ 'cart.general.subtotal' | t }}</span>
-              <span class="cart__subtotal"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_total" style="display:none !important;"></span>
-<span class="saso-cart-original-total">{{ bold_cart_total_price | money }}</span>
-<span class="saso-cart-total"></span>
-</span>
+              <span class="cart__subtotal"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_total" style="display:none !important;"></span>{{ bold_cart_total_price | money }}</span>
             </div>
             {% if cart.total_discounts > 0 %}
               <div class="cart__savings">

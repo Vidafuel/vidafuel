@@ -123,7 +123,7 @@
   <meta name="google-site-verification" content="a6HtKogePX6wHMs7l9B1QsVCUyPxt5cUTn16e26KbOc" />
   <meta name="ahrefs-site-verification" content="b70c2387d853a0c2788d1c5f4c39a0837310db1438e8e2b6db5c94fc3c2a0234">
   <meta name="google-site-verification" content="oRxTR7VYWxz1XUAFEFKcuRw1vjntnOrygfRDsqkPJQc" />
-{% include 'hulkcode_common' %}{% if template contains 'product' or template contains 'cart' %}<script src='https://volumediscount.hulkapps.com/api/v2/frontend/hulkcode.js' defer='defer'></script>{% endif %}</head>
+</head>
 
 <body class="template-{{ template | split: '.' | first }}">
 <!-- Google Tag Manager (noscript) -->
@@ -176,8 +176,5 @@ jQuery(function($){
 
 });
 </script>
-
-{% render 'special-offers' %}
-
 </body>
 </html>
