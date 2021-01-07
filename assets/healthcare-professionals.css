@@ -313,8 +313,11 @@
   font-size: 18px;
   line-height: 1.8;
   color: #7acdc7;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   height: auto;
+}
+#healthcare .needsclick:not([type="button"]) {
+    border-radius: 50px !important;
 }
 ::placeholder {
   color: #7acdc7;
