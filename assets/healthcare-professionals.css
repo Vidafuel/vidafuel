@@ -316,8 +316,8 @@
   margin-bottom: 10px;
   height: auto;
 }
-#healthcare .needsclick:not([type="button"]) {
-    border-radius: 50px !important;
+#healthcare .needsclick:not([role="listbox"]) {
+    border-radius: 50px !important; 
 }
 ::placeholder {
   color: #7acdc7;
