@@ -1,3 +1,4 @@
+<h1>testing</h1>
 <div class="product-template__container page-width"
   id="ProductSection-{{ section.id }}"
   data-section-id="{{ section.id }}"
@@ -234,6 +235,7 @@
             <div class="product-form__item product-form__item--submit{% if section.settings.enable_payment_button %} product-form__item--payment-button{% endif %}{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
               {% assign firstVariant = product.variants.first %}
               {% if firstVariant.inventory_quantity <= 0 and firstVariant.available and firstVariant.inventory_management !='' %}
+              
                 <button class="btn product-form__cart-submit" type="button"
                   onclick="KlaviyoSubscribe.attachToModalForm('#JQgHNX',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: false});">Click
                   me</button>
