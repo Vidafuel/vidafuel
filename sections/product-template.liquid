@@ -217,12 +217,26 @@
             </div>
             {%- endcomment -%}
 
+<<<<<<< HEAD
             <div class="product-form__item product-form__item--submit{% if section.settings.enable_payment_button %} product-form__item--payment-button{% endif %}{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
               <button type="submit" name="add"
                 {% unless current_variant.available %} aria-disabled="true"{% endunless %}
                 aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
                 class="button product-form__cart-submit"
                 data-add-to-cart>
+=======
+{% for variant in product.variants %}
+{% if variant.inventory_quantity <= 0 %}
+
+{% endif %}
+{% endfor %} 
+{%- endcomment -%}
+
+            <div class="product-form__item product-form__item--submit{% if section.settings.enable_payment_button %} product-form__item--payment-button{% endif %}{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
+              <button class="shopify-form-button button product-form__cart-submit" type="button" style="display: none" onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: false});">Click here to be notified</button>
+              <button type="submit" name="add" {% unless current_variant.available %} aria-disabled="true" {% endunless %} 
+              aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" class="button product-form__cart-submit shopify-add-to-cart-button" data-add-to-cart >
+>>>>>>> theme-vidafuel-1.6
                 {%- comment -%}button additional class before Mosheh's change
                 {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
                 {%- endcomment -%}
@@ -237,6 +251,10 @@
                   {% include 'icon-spinner' %}
                 </span>
               </button>
+<<<<<<< HEAD
+=======
+
+>>>>>>> theme-vidafuel-1.6
               {% if section.settings.enable_payment_button %}
                 {{ form | payment_button }}
               {% endif %}
@@ -338,7 +356,66 @@
   </script>
 {% endunless %}
 
+<<<<<<< HEAD
 
+=======
+{%- comment -%} KLAVIYO POPUP FORM {%- endcomment -%}
+<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+<script type="text/javascript">
+  KlaviyoSubscribe.attachModalSignUp({
+    list: 'JQgHNX', delay_seconds: 1,
+    content: {
+      clazz: ' klaviyo_modal',
+      header: "Want to know when this product is back in stock?",
+      subheader: "Enter your email below and we'll let you know when this product is available.",
+      button: "Let me know", 
+      hide_form_on_success: true,
+      success_message: 'Thank you! We will let you know.',
+      success: 'Thanks! We will let you know.',
+      extra_properties: { $source: '$modal', Brand: 'Klaviyo' },
+      styles: '.klaviyo_modal { font-family: "Helvetica Neue"; display: none}.klaviyo_modal .klaviyo_header { color:#065069;}.klaviyo_modal .klaviyo_subheader { color:#065069;}.klaviyo_modal .klaviyo_submit_button,.klaviyo_modal .klaviyo_submit_button span { background-color:#4BBDAA; background-image: none; border-radius: 2px;}.klaviyo_modal .klaviyo_submit_button:hover,.klaviyo_modal .klaviyo_submit_button span:hover { background-color:#28C6AC; background-image: none; }.klaviyo_modal .klaviyo_inner,.klaviyo_modal .klaviyo_fieldset .klaviyo_field_group input[type=text],.klaviyo_modal .klaviyo_fieldset .klaviyo_field_group input[type=email] { border-radius: 2px;}'
+    }
+  });
+</script>
+ 
+{%- comment -%}
+<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+<div class="klaviyo_modal" id="JQgHNX" style="display:none;">
+  <div class="klaviyo_inner">
+    <a href="#" class="klaviyo_close_modal klaviyo_header_close">×</a>
+    <form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate"
+      class="klaviyo_subscription_form">
+      <input type="hidden" name="g" value="LIST_ID">
+      <div class="klaviyo_fieldset">
+        <p class="klaviyo_header">We'll let you know when this snack is ready.</p>
+      </div>
+      <div class="klaviyo_fieldset">
+        <div class="klaviyo_field_group">
+          <label for="JQgHNX_$email">Email Address</label>
+          <input type="email" id="JQgHNX_$email" name="email">
+<!--           
+          <label for="klaviyo_form_first_name">First Name:</label>
+          <input id="klaviyo_form_first_name" type="text" name="first_name" value="" />
+          <label for="klaviyo_form_last_name">Last Name:</label>
+          <input id="klaviyo_form_last_name" type="text" name="last_name" value="" /> -->
+         
+        </div>
+      </div>
+      <div class="klaviyo_fine_print"></div>
+      <div class="klaviyo_form_actions">
+        <button type="submit" class="klaviyo_submit_button">
+          <span>Notify Me</span>
+        </button>
+      </div>
+      <div class="klaviyo_below_submit"></div>
+    </form>
+    <div class="error_message"></div>
+    <div class="success_message"></div>
+  </div>
+</div>
+{%- endcomment -%}
+{%- comment -%} end KLAVIYO POPUP FORM {%- endcomment -%}
+>>>>>>> theme-vidafuel-1.6
 
 {% schema %}
 {

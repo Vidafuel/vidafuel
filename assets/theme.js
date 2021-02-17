@@ -2770,6 +2770,8 @@ theme.Product = (function() {
       saleLabel: '.product-price__sale-label-' + sectionId,
       singleOptionSelector: '.single-option-selector-' + sectionId,
       shopifyPaymentButton: '.shopify-payment-button',
+      shopifyAddToCartButton: '.shopify-add-to-cart-button',
+      shopifyFormButton: '.shopify-form-button',
       priceContainer: '[data-price]',
       regularPrice: '[data-regular-price]',
       salePrice: '[data-sale-price]'
@@ -3095,17 +3097,23 @@ theme.Product = (function() {
           $(this.selectors.addToCart).prop('disabled', false);
           $(this.selectors.addToCartText).text(theme.strings.addToCart);
           $(this.selectors.shopifyPaymentButton, this.$container).show();
+          $(this.selectors.shopifyAddToCartButton, this.$container).show();
+          $(this.selectors.shopifyFormButton, this.$container).hide();
         } else {
           // The variant doesn't exist, disable submit button and change the text.
           // This may be an error or notice that a specific variant is not available.
           $(this.selectors.addToCart).prop('disabled', true);
           $(this.selectors.addToCartText).text(theme.strings.soldOut);
           $(this.selectors.shopifyPaymentButton, this.$container).hide();
+          $(this.selectors.shopifyAddToCartButton, this.$container).hide();
+          $(this.selectors.shopifyFormButton, this.$container).show();
         }
       } else {
         $(this.selectors.addToCart).prop('disabled', true);
         $(this.selectors.addToCartText).text(theme.strings.unavailable);
         $(this.selectors.shopifyPaymentButton, this.$container).hide();
+        $(this.selectors.shopifyAddToCartButton, this.$container).show();
+        $(this.selectors.shopifyFormButton, this.$container).hide();
       }
     },
 
