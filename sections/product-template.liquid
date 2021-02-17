@@ -48,17 +48,25 @@
     {% endfor %}
 
     {% if found %}
-      <div class="product-single__desc page-width">
-        {{ collections.snacks.description }}
-    </div>
-    <style>
-      @media only screen and (min-width: 750px) {
-        .main-content {
-            padding-top: 25px;
+      <!-- collection description -->
+        <div class="product-single__desc page-width">
+          {{ collections.snacks.description }}
+      </div>
+      <!-- styles if collection description is showing -->
+      <style>
+        @media only screen and (min-width: 750px) {
+          .main-content {
+              padding-top: 25px;
+          }
         }
-      }
-    </style>
+        .klaviyo_modal .klaviyo_inner {
+          top: 20px;
+        }
+      </style>
+      
+
     {% endif %}
+
     <div class="grid__item product-single__photos {{ product_image_width }}{% if section.settings.image_size == 'full' %} product-single__photos--full{% endif %}">
       {%- assign featured_image = product.selected_or_first_available_variant.featured_image | default: product.featured_image -%}
       {% for image in product.images %}
@@ -215,14 +223,24 @@
               {% include 'icon-error' %}	
               <span class="product-form__error-message" data-error-message>{{ 'products.product.quantity_minimum_message' | t }}</span>
             </div>
-            {%- endcomment -%}
+            
 
+{% for variant in product.variants %}
+{% if variant.inventory_quantity <= 0 %}
+
+{% endif %}
+{% endfor %}
+{%- endcomment -%}
             <div class="product-form__item product-form__item--submit{% if section.settings.enable_payment_button %} product-form__item--payment-button{% endif %}{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
-              <button type="submit" name="add"
-                {% unless current_variant.available %} aria-disabled="true"{% endunless %}
-                aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
-                class="button product-form__cart-submit"
-                data-add-to-cart>
+              {% assign firstVariant = product.variants.first %}
+              {% if firstVariant.inventory_quantity <= 0 and firstVariant.available and firstVariant.inventory_management !='' %}
+                <button class="btn product-form__cart-submit" type="button"
+                  onclick="KlaviyoSubscribe.attachToModalForm('#JQgHNX',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: false});">Click
+                  me</button>
+
+                {% else %}
+              <button type="submit" name="add" {% unless current_variant.available %} aria-disabled="true" {% endunless %} 
+              aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" class="button product-form__cart-submit" data-add-to-cart >
                 {%- comment -%}button additional class before Mosheh's change
                 {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
                 {%- endcomment -%}
@@ -233,10 +251,14 @@
                     {{ 'products.product.add_to_cart' | t }}
                   {% endunless %}
                 </span>
+              {%- comment -%}
                 <span class="hide" data-loader>
                   {% include 'icon-spinner' %}
                 </span>
+              {%- endcomment -%}
               </button>
+            {% endif %}
+
               {% if section.settings.enable_payment_button %}
                 {{ form | payment_button }}
               {% endif %}
@@ -338,7 +360,41 @@
   </script>
 {% endunless %}
 
-
+{%- comment -%} KLAVIYO POPUP FORM {%- endcomment -%}
+<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+<div class="klaviyo_modal" id="JQgHNX" style="display:none;">
+  <div class="klaviyo_inner">
+    <a href="#" class="klaviyo_close_modal klaviyo_header_close">×</a>
+    <form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate"
+      class="klaviyo_subscription_form">
+      <input type="hidden" name="g" value="LIST_ID">
+      <div class="klaviyo_fieldset">
+        <p class="klaviyo_header">We'll let you know when this snack is ready.</p>
+        <p class="klaviyo_subheader">Stay in the know with news and promotions.</p>
+      </div>
+      <div class="klaviyo_fieldset">
+        <div class="klaviyo_field_group">
+          <label for="JQgHNX_$email">Email Address</label>
+          <input type="email" id="JQgHNX_$email" name="email">
+          <label for="klaviyo_form_first_name">First Name:</label>
+          <input id="klaviyo_form_first_name" type="text" name="first_name" value="" />
+          <label for="klaviyo_form_last_name">Last Name:</label>
+          <input id="klaviyo_form_last_name" type="text" name="last_name" value="" />
+        </div>
+      </div>
+      <div class="klaviyo_fine_print"></div>
+      <div class="klaviyo_form_actions">
+        <button type="submit" class="klaviyo_submit_button">
+          <span>Notify Me</span>
+        </button>
+      </div>
+      <div class="klaviyo_below_submit"></div>
+    </form>
+    <div class="error_message"></div>
+    <div class="success_message"></div>
+  </div>
+</div>
+{%- comment -%} end KLAVIYO POPUP FORM {%- endcomment -%}
 
 {% schema %}
 {
