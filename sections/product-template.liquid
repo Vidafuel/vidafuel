@@ -48,17 +48,25 @@
     {% endfor %}
 
     {% if found %}
-      <div class="product-single__desc page-width">
-        {{ collections.snacks.description }}
-    </div>
-    <style>
-      @media only screen and (min-width: 750px) {
-        .main-content {
-            padding-top: 25px;
+      <!-- collection description -->
+        <div class="product-single__desc page-width">
+          {{ collections.snacks.description }}
+      </div>
+      <!-- styles if collection description is showing -->
+      <style>
+        @media only screen and (min-width: 750px) {
+          .main-content {
+              padding-top: 25px;
+          }
         }
-      }
-    </style>
+        .klaviyo_modal .klaviyo_inner {
+          top: 20px;
+        }
+      </style>
+      
+
     {% endif %}
+
     <div class="grid__item product-single__photos {{ product_image_width }}{% if section.settings.image_size == 'full' %} product-single__photos--full{% endif %}">
       {%- assign featured_image = product.selected_or_first_available_variant.featured_image | default: product.featured_image -%}
       {% for image in product.images %}
@@ -215,16 +223,8 @@
               {% include 'icon-error' %}	
               <span class="product-form__error-message" data-error-message>{{ 'products.product.quantity_minimum_message' | t }}</span>
             </div>
-            {%- endcomment -%}
+            
 
-<<<<<<< HEAD
-            <div class="product-form__item product-form__item--submit{% if section.settings.enable_payment_button %} product-form__item--payment-button{% endif %}{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
-              <button type="submit" name="add"
-                {% unless current_variant.available %} aria-disabled="true"{% endunless %}
-                aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
-                class="button product-form__cart-submit"
-                data-add-to-cart>
-=======
 {% for variant in product.variants %}
 {% if variant.inventory_quantity <= 0 %}
 
@@ -236,7 +236,6 @@
               <button class="shopify-form-button button product-form__cart-submit" type="button" style="display: none" onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: false});">Click here to be notified</button>
               <button type="submit" name="add" {% unless current_variant.available %} aria-disabled="true" {% endunless %} 
               aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" class="button product-form__cart-submit shopify-add-to-cart-button" data-add-to-cart >
->>>>>>> theme-vidafuel-1.6
                 {%- comment -%}button additional class before Mosheh's change
                 {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
                 {%- endcomment -%}
@@ -247,14 +246,13 @@
                     {{ 'products.product.add_to_cart' | t }}
                   {% endunless %}
                 </span>
+              {%- comment -%}
                 <span class="hide" data-loader>
                   {% include 'icon-spinner' %}
                 </span>
+              {%- endcomment -%}
               </button>
-<<<<<<< HEAD
-=======
 
->>>>>>> theme-vidafuel-1.6
               {% if section.settings.enable_payment_button %}
                 {{ form | payment_button }}
               {% endif %}
@@ -356,9 +354,6 @@
   </script>
 {% endunless %}
 
-<<<<<<< HEAD
-
-=======
 {%- comment -%} KLAVIYO POPUP FORM {%- endcomment -%}
 <script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
 <script type="text/javascript">
@@ -415,7 +410,6 @@
 </div>
 {%- endcomment -%}
 {%- comment -%} end KLAVIYO POPUP FORM {%- endcomment -%}
->>>>>>> theme-vidafuel-1.6
 
 {% schema %}
 {
