@@ -233,7 +233,7 @@
 {%- endcomment -%}
 
             <div class="product-form__item product-form__item--submit{% if section.settings.enable_payment_button %} product-form__item--payment-button{% endif %}{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
-              <button class="shopify-form-button button product-form__cart-submit" type="button" style="display: none" onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: false});">Click here to be notified</button>
+              <button class="shopify-form-button button product-form__cart-submit" type="button" style="display: none" onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: false});">Temporarily out of stock – click here to be notified when back in stock</button>
               <button type="submit" name="add" {% unless current_variant.available %} aria-disabled="true" {% endunless %} 
               aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" class="button product-form__cart-submit shopify-add-to-cart-button" data-add-to-cart >
                 {%- comment -%}button additional class before Mosheh's change
@@ -363,7 +363,7 @@
       clazz: ' klaviyo_modal',
       header: "Want to know when this product is back in stock?",
       subheader: "Enter your email below and we'll let you know when this product is available.",
-      button: "Let me know", 
+      button: "Please let me know", 
       hide_form_on_success: true,
       success_message: 'Thank you! We will let you know.',
       success: 'Thanks! We will let you know.',
