@@ -53,16 +53,7 @@
           {{ collections.snacks.description }}
       </div>
       <!-- styles if collection description is showing -->
-      <style>
-        @media only screen and (min-width: 750px) {
-          .main-content {
-              padding-top: 25px;
-          }
-        }
-        .klaviyo_modal .klaviyo_inner {
-          top: 20px;
-        }
-      </style>
+
       
 
     {% endif %}
@@ -233,8 +224,10 @@
 {%- endcomment -%}
 
             <div class="product-form__item product-form__item--submit{% if section.settings.enable_payment_button %} product-form__item--payment-button{% endif %}{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
-              <button class="shopify-form-button button product-form__cart-submit" type="button" style="display: none" onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: false});">Temporarily out of stock – click here to be notified when back in stock</button>
-              <button type="submit" name="add" {% unless current_variant.available %} aria-disabled="true" {% endunless %} 
+              
+              <button class="shopify-form-button button product-form__cart-submit" type="button" style="display: none" 
+                onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });">Temporarily out of stock – click here to be notified when back in stock</button>
+              <button type="submit" name="add" {% unless current_variant.available %} aria-disabled="true" {% endunless %}
               aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" class="button product-form__cart-submit shopify-add-to-cart-button" data-add-to-cart >
                 {%- comment -%}button additional class before Mosheh's change
                 {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
@@ -354,62 +347,76 @@
   </script>
 {% endunless %}
 
-{%- comment -%} KLAVIYO POPUP FORM {%- endcomment -%}
-<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
-<script type="text/javascript">
-  KlaviyoSubscribe.attachModalSignUp({
-    list: 'JQgHNX', delay_seconds: 1,
-    content: {
-      clazz: ' klaviyo_modal',
-      header: "Want to know when this product is back in stock?",
-      subheader: "Enter your email below and we'll let you know when this product is available.",
-      button: "Please let me know", 
-      hide_form_on_success: true,
-      success_message: 'Thank you! We will let you know.',
-      success: 'Thanks! We will let you know.',
-      extra_properties: { $source: '$modal', Brand: 'Klaviyo' },
-      styles: '.klaviyo_modal { font-family: "Helvetica Neue"; display: none}.klaviyo_modal .klaviyo_header { color:#065069;}.klaviyo_modal .klaviyo_subheader { color:#065069;}.klaviyo_modal .klaviyo_submit_button,.klaviyo_modal .klaviyo_submit_button span { background-color:#4BBDAA; background-image: none; border-radius: 2px;}.klaviyo_modal .klaviyo_submit_button:hover,.klaviyo_modal .klaviyo_submit_button span:hover { background-color:#28C6AC; background-image: none; }.klaviyo_modal .klaviyo_inner,.klaviyo_modal .klaviyo_fieldset .klaviyo_field_group input[type=text],.klaviyo_modal .klaviyo_fieldset .klaviyo_field_group input[type=email] { border-radius: 2px;}'
-    }
-  });
-</script>
- 
-{%- comment -%}
-<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
-<div class="klaviyo_modal" id="JQgHNX" style="display:none;">
+
+<div class="klaviyo_modal" id="k_id_modal_request" style="display:none;">
   <div class="klaviyo_inner">
     <a href="#" class="klaviyo_close_modal klaviyo_header_close">×</a>
     <form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate"
       class="klaviyo_subscription_form">
-      <input type="hidden" name="g" value="LIST_ID">
+      <input type="hidden" name="g" value="JQgHNX">
       <div class="klaviyo_fieldset">
-        <p class="klaviyo_header">We'll let you know when this snack is ready.</p>
+        <p class="klaviyo_header">Want to know when this product is back in stock?</p>
+        <p class="klaviyo_subheader">Enter your email below and we will let you know when this product is available.</p>
       </div>
       <div class="klaviyo_fieldset">
         <div class="klaviyo_field_group">
-          <label for="JQgHNX_$email">Email Address</label>
-          <input type="email" id="JQgHNX_$email" name="email">
-<!--           
-          <label for="klaviyo_form_first_name">First Name:</label>
-          <input id="klaviyo_form_first_name" type="text" name="first_name" value="" />
-          <label for="klaviyo_form_last_name">Last Name:</label>
-          <input id="klaviyo_form_last_name" type="text" name="last_name" value="" /> -->
-         
+          <label for="k_id_modal_$email">Email Address</label>
+          <input type="email" id="k_id_modal_$email" name="email">
         </div>
       </div>
       <div class="klaviyo_fine_print"></div>
       <div class="klaviyo_form_actions">
         <button type="submit" class="klaviyo_submit_button">
-          <span>Notify Me</span>
+          <span>Please Let Me Know</span>
         </button>
       </div>
       <div class="klaviyo_below_submit"></div>
     </form>
-    <div class="error_message"></div>
-    <div class="success_message"></div>
+    <div class="klaviyo_messages">
+      <div class="success_message" style="display:none;">Thank you! We'll let you know.</div>
+      <div class="error_message" style="display:none;"></div>
+    </div>
   </div>
 </div>
-{%- endcomment -%}
-{%- comment -%} end KLAVIYO POPUP FORM {%- endcomment -%}
+<style>
+  @media only screen and (min-width: 750px) {
+    .main-content {
+      padding-top: 25px;
+    }
+  }
+
+  .klaviyo_modal .klaviyo_inner {
+    top: 20px !important;
+  }
+
+  .klaviyo_modal .klaviyo_header {
+    color: #065069;
+  }
+
+  .klaviyo_modal .klaviyo_subheader {
+    color: #065069;
+  }
+
+  .klaviyo_modal .klaviyo_submit_button,
+  .klaviyo_modal .klaviyo_submit_button span {
+    background-color: #4BBDAA;
+    background-image: none;
+    border-radius: 2px;
+  }
+
+  .klaviyo_modal .klaviyo_fieldset {
+    border-top: none;
+  }
+</style>
+<script type="text/javascript">
+    KlaviyoSubscribe.attachToForms('#k_id_modal_request', {
+      hide_form_on_success: true
+    });
+</script>
+<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+
+
+
 
 {% schema %}
 {
