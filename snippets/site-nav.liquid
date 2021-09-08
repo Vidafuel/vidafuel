@@ -1,5 +1,12 @@
 <ul class="site-nav list--inline {{ nav_alignment }}" id="SiteNav">
-  {% for link in linklists[section.settings.main_linklist].links %}
+  {% assign menu_handle = 'main-menu' %}
+  {% if customer %}
+    {% if customer.tags contains 'wholesale' %}
+    	{% assign menu_handle = 'main-menu-wholesale' %}
+    {% endif %}
+  {% endif %}
+  {% for link in linklists[menu_handle].links %}
+
     {%- assign child_list_handle = link.title | handleize -%}
 
     {% comment %}

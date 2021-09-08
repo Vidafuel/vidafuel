@@ -44,9 +44,6 @@
       &ndash; {{ 'general.meta.page' | t: page: current_page }}
     {%- endif -%}
     {%- assign escaped_page_title = page_title | escape -%}
-    {%- unless escaped_page_title contains shop.name -%}
-      &ndash; {{ shop.name }}
-    {%- endunless -%}
   {%- endcapture -%}
   <title>{{ seo_title | strip }}</title>
 
@@ -123,7 +120,7 @@
   <meta name="google-site-verification" content="a6HtKogePX6wHMs7l9B1QsVCUyPxt5cUTn16e26KbOc" />
   <meta name="ahrefs-site-verification" content="b70c2387d853a0c2788d1c5f4c39a0837310db1438e8e2b6db5c94fc3c2a0234">
   <meta name="google-site-verification" content="oRxTR7VYWxz1XUAFEFKcuRw1vjntnOrygfRDsqkPJQc" />
-{% include 'hulkcode_common' %}{% if template contains 'product' or template contains 'cart' %}<script src='https://volumediscount.hulkapps.com/api/v2/frontend/hulkcode.js' defer='defer'></script>{% endif %}</head>
+{% include 'hulkcode_common' %}{% if template contains 'product' or template contains 'cart' %}<script src='https://volumediscount.hulkapps.com/api/v2/frontend/hulkcode.js' defer='defer'></script>{% endif %}{% include 'orichi_multi_pixel' %}</head>
 
 <body class="template-{{ template | split: '.' | first }}">
 <!-- Google Tag Manager (noscript) -->
@@ -157,7 +154,19 @@
   <div class="page-container" id="PageContainer">
 
     <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
+      {% if template contains 'wholesale' %}
+      {% if customer %}
+      {% if customer.tags contains 'wholesale' %}
       {{ content_for_layout }}
+      {% else %}
+      {% include 'wholesale-note' %}
+      {% endif %}
+      {% else %}
+      {% include 'wholesale-note' %}
+      {% endif %}
+      {% else%}
+      {{ content_for_layout }}
+      {% endif %}
     </main>
 
     {% section 'footer' %}

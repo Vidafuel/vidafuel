@@ -1,0 +1,13 @@
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <h1 style="text-align:center;">This page is for approved wholesale customers only.</h1>
+      <p style="text-align:center;">
+      {% unless customer %}
+      <a href="/account/login">Log in to your account</a> |  
+      {% endunless %}
+      <a href="/pages/contact">Contact us</a> to request a wholesale account.
+      </p>
+    </div>
+  </div>
+</div>
