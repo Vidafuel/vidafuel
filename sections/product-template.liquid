@@ -54,7 +54,7 @@
       </div>
       <!-- styles if collection description is showing -->
 
-      
+      {% assign soldOut = "Temporarily out of stock – click here to be notified when back in stock" %}
 
     {% endif %}
 
@@ -165,12 +165,12 @@
             {%- if section.settings.enable_payment_button and product.has_only_default_variant %} product-form--payment-button-no-variants {%- endif -%}	
             {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
           {%- endcapture %}
-<style>
-.ro_widget {
-    order: 2;
-    padding: 0 5px;
-}
-</style>
+          <style>
+          .ro_widget {
+              order: 2;
+              padding: 0 5px;
+          }
+          </style>
           {% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
             {% unless product.has_only_default_variant %}
               {% for option in product.options_with_values %}
@@ -206,35 +206,43 @@
               </div>
             {% endif %}
             {%- comment -%}
-            <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}"	
-              data-error-message-wrapper	
-              role="alert"	
-            >	
-              <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>	
-              {% include 'icon-error' %}	
-              <span class="product-form__error-message" data-error-message>{{ 'products.product.quantity_minimum_message' | t }}</span>
-            </div>
-            
+              <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}"	
+                data-error-message-wrapper	
+                role="alert">	
+                <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>	
+                {% include 'icon-error' %}	
+                <span class="product-form__error-message" data-error-message>{{ 'products.product.quantity_minimum_message' | t }}</span>
+              </div>
+              {% for variant in product.variants %}
+                {% if variant.inventory_quantity <= 0 %}
 
-{% for variant in product.variants %}
-{% if variant.inventory_quantity <= 0 %}
-
-{% endif %}
-{% endfor %} 
-{%- endcomment -%}
+                {% endif %}
+              {% endfor %} 
+            {%- endcomment -%}
 
             <div class="product-form__item product-form__item--submit{% if section.settings.enable_payment_button %} product-form__item--payment-button{% endif %}{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
-              
-              <button class="shopify-form-button button product-form__cart-submit" type="button" style="display: none" 
+
+              <button 
+                class="shopify-form-button button product-form__cart-submit" type="button" style="display: none"
                 onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });">Temporarily out of stock – click here to be notified when back in stock</button>
-              <button type="submit" name="add" {% unless current_variant.available %} aria-disabled="true" {% endunless %}
-              aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" class="button product-form__cart-submit shopify-add-to-cart-button" data-add-to-cart >
+
+              <button 
+                {% unless current_variant.available %} 
+                  onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });"
+                  type="button"
+                {% else %} 
+                  type="submit" 
+                  name="add" 
+                  data-add-to-cart 
+                {% endunless %}
+                aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" 
+                class="button product-form__cart-submit shopify-add-to-cart-button">
                 {%- comment -%}button additional class before Mosheh's change
                 {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
                 {%- endcomment -%}
                 <span data-add-to-cart-text>
                   {% unless current_variant.available %}
-                    {{ 'products.product.sold_out' | t }}
+                    {{ soldOut }}
                   {% else %}
                     {{ 'products.product.add_to_cart' | t }}
                   {% endunless %}
@@ -297,9 +305,10 @@
   </div>
 </div>
 
-<!-- product lightbox
-    https://guide.freecodecamp.org/javascript/tutorials/how-to-create-a-lightbox/
--->
+{% comment %} 
+  product lightbox 
+  https://guide.freecodecamp.org/javascript/tutorials/how-to-create-a-lightbox/
+{% endcomment %}
 <div id="Lightbox" class="modal product-modal">
     <span class="close pointer" onclick="closeLightbox()">&times;</span>
         <div class="modal-content">
@@ -339,7 +348,7 @@
         </div>
 </div>
 
-<!-- END product lightbox -->
+{% comment %} END product lightbox {% endcomment %}
 
 {% unless product == empty %}
   <script type="application/json" id="ProductJson-{{ section.id }}">
@@ -347,7 +356,7 @@
   </script>
 {% endunless %}
 
-
+{% comment %} klaviyo form {% endcomment %}
 <div class="klaviyo_modal" id="k_id_modal_request" style="display:none;">
   <div class="klaviyo_inner">
     <a href="#" class="klaviyo_close_modal klaviyo_header_close">×</a>
