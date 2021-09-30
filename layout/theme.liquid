@@ -57,7 +57,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/regular.js" integrity="sha384-Uc9toywOA44owltk1MWl0lQZ+L0mBzJkLQcdif6+JtG9izvok9DLJtCZX57Uq3k2" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js" integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS" crossorigin="anonymous"></script>
 
-{{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+{{ 'styles.min.css' | asset_url | stylesheet_tag }}
 
   <script>
     var theme = {
@@ -90,13 +90,13 @@
     <!--[if lte IE 9]><script src="{{ 'shopify_common.js' | shopify_asset_url }}"></script><![endif]-->
   {%- endif -%}
 
-  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'lazysizes.js' | asset_url }}" async="async"></script><!--<![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'lazysizes-min.js' | asset_url }}" async="async"></script><!--<![endif]-->
   <!--[if lte IE 9]><script src="{{ 'lazysizes.min.js' | asset_url }}"></script><![endif]-->
 
-  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'vendor-min.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
   <!--[if lte IE 9]><script src="{{ 'vendor.js' | asset_url }}"></script><![endif]-->
 
-  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'theme.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'theme-min.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
   <!--[if lte IE 9]><script src="{{ 'theme.js' | asset_url }}"></script><![endif]-->
 
 <!-- YOTPO reviews widget -->
@@ -107,7 +107,6 @@
   {% include 'bold-common' %}
   {% include 'bold-ro-init' %}
   {{ 'bold.css' | asset_url | stylesheet_tag }}
-  {{ 'vidafuel.scss.css' | asset_url | stylesheet_tag }}
 
 
   {% include 'minmaxify-head' %}
@@ -120,7 +119,15 @@
   <meta name="google-site-verification" content="a6HtKogePX6wHMs7l9B1QsVCUyPxt5cUTn16e26KbOc" />
   <meta name="ahrefs-site-verification" content="b70c2387d853a0c2788d1c5f4c39a0837310db1438e8e2b6db5c94fc3c2a0234">
   <meta name="google-site-verification" content="oRxTR7VYWxz1XUAFEFKcuRw1vjntnOrygfRDsqkPJQc" />
-{% include 'hulkcode_common' %}{% if template contains 'product' or template contains 'cart' %}<script src='https://volumediscount.hulkapps.com/api/v2/frontend/hulkcode.js' defer='defer'></script>{% endif %}{% include 'orichi_multi_pixel' %}</head>
+{% include 'hulkcode_common' %}{% if template contains 'product' or template contains 'cart' %}<script src='https://volumediscount.hulkapps.com/api/v2/frontend/hulkcode.js' defer='defer'></script>{% endif %}{% include 'orichi_multi_pixel' %}
+
+{% if request.path contains "/bundle" %}
+
+<meta name="robots" content="noindex">
+
+{% endif %}
+
+</head>
 
 <body class="template-{{ template | split: '.' | first }}">
 <!-- Google Tag Manager (noscript) -->
