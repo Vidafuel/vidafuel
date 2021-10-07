@@ -1,7 +1,19 @@
 <!doctype html>
 <!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{ shop.locale }}"> <!--<![endif]-->
-<head>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="no-js" lang="{{ shop.locale }}">
+  <!--<![endif]-->
+
+  <head>
+{%- comment -%}
+    {% if request.path contains '/collection' %}
+    <meta name='robots' content="noindex">
+    <script>
+      // window.location.replace("https://dev-nouri.myshopify.com/pages/products");
+    </script>
+    {% endif %}
+{%- endcomment -%}
+
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
         w[l] = w[l] || []; w[l].push({
@@ -20,216 +32,247 @@
       gtag('js', new Date());
       gtag('config', 'AW-682486222');
     </script>
-    
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="{{ settings.color_button }}">
-  <link rel="canonical" href="{{ canonical_url }}">
 
-  {%- if settings.favicon != blank -%}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_button }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- if settings.favicon != blank -%}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
-  {%- endif -%}
+    {%- endif -%}
 
-  {%- capture seo_title -%}
+    {%- capture seo_title -%}
     {%- if template == 'search' and search.performed == true -%}
-      {{ 'general.search.heading' | t: count: search.results_count }}: {{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
+      {{ 'general.search.heading' | t: count: search.results_count }}: {{ 'general.search.results_with_count' | t: terms:
+    search.terms, count: search.results_count }}
+    {%- elsif request.path == '/products' -%}
+      {{ 'Products' }}
     {%- else -%}
       {{ page_title }}
     {%- endif -%}
     {%- if current_tags -%}
-      {%- assign meta_tags = current_tags | join: ', ' -%} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+    {%- assign meta_tags = current_tags | join: ', ' -%} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
     {%- endif -%}
     {%- if current_page != 1 -%}
-      &ndash; {{ 'general.meta.page' | t: page: current_page }}
+    &ndash; {{ 'general.meta.page' | t: page: current_page }}
     {%- endif -%}
     {%- assign escaped_page_title = page_title | escape -%}
-  {%- endcapture -%}
-  <title>{{ seo_title | strip }}</title>
+    {%- endcapture -%}
+    <title>{{ seo_title | strip }}</title>
 
-  {%- if page_description -%}
+    {%- if page_description -%}
     <meta name="description" content="{{ page_description | escape }}">
-  {%- endif -%}
+    {%- elsif request.path == '/products' -%}
+        <meta name="description" content="{{ settings.product_pg_meta_descrip }}">
+    {%- endif -%}
 
-  {% include 'social-meta-tags' %}
+    {% include 'social-meta-tags' %}
 
-  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/solid.js" integrity="sha384-IA6YnujJIO+z1m4NKyAGvZ9Wmxrd4Px8WFqhFcgRmwLaJaiwijYgApVpo1MV8p77" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/regular.js" integrity="sha384-Uc9toywOA44owltk1MWl0lQZ+L0mBzJkLQcdif6+JtG9izvok9DLJtCZX57Uq3k2" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js" integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/solid.js"
+      integrity="sha384-IA6YnujJIO+z1m4NKyAGvZ9Wmxrd4Px8WFqhFcgRmwLaJaiwijYgApVpo1MV8p77"
+      crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/regular.js"
+      integrity="sha384-Uc9toywOA44owltk1MWl0lQZ+L0mBzJkLQcdif6+JtG9izvok9DLJtCZX57Uq3k2"
+      crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js"
+      integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS"
+      crossorigin="anonymous"></script>
 
-{{ 'styles.min.css' | asset_url | stylesheet_tag }}
+    {{ 'styles.min.css' | asset_url | stylesheet_tag }}
 
-  <script>
-    var theme = {
-      strings: {
-        addToCart: {{ 'products.product.add_to_cart' | t | json }},
-        soldOut: {{ 'products.product.sold_out' | t | json }},
-        unavailable: {{ 'products.product.unavailable' | t | json }},
-        regularPrice: {{ 'products.product.regular_price' | t | json }},
-        sale: {{ 'products.product.on_sale' | t | json }},
-        showMore: {{ 'general.filters.show_more' | t | json }},
-        showLess: {{ 'general.filters.show_less' | t | json }},
-        addressError: {{ 'sections.map.address_error' | t | json }},
-        addressNoResults: {{ 'sections.map.address_no_results' | t | json }},
-        addressQueryLimit: {{ 'sections.map.address_query_limit_html' | t | json }},
-        authError: {{ 'sections.map.auth_error_html' | t | json }},
-        newWindow: {{ 'general.accessibility.link_messages.new_window' | t | json }},
-        external: {{ 'general.accessibility.link_messages.external' | t | json }},
-        newWindowExternal: {{ 'general.accessibility.link_messages.new_window_and_external' | t | json }}
+    <script>
+      var theme = {
+        strings: {
+          addToCart: {{ 'products.product.add_to_cart' | t | json }},
+      soldOut: {{ 'products.product.sold_out' | t | json }},
+      unavailable: {{ 'products.product.unavailable' | t | json }},
+      regularPrice: {{ 'products.product.regular_price' | t | json }},
+      sale: {{ 'products.product.on_sale' | t | json }},
+      showMore: {{ 'general.filters.show_more' | t | json }},
+      showLess: {{ 'general.filters.show_less' | t | json }},
+      addressError: {{ 'sections.map.address_error' | t | json }},
+      addressNoResults: {{ 'sections.map.address_no_results' | t | json }},
+      addressQueryLimit: {{ 'sections.map.address_query_limit_html' | t | json }},
+      authError: {{ 'sections.map.auth_error_html' | t | json }},
+      newWindow: {{ 'general.accessibility.link_messages.new_window' | t | json }},
+      external: {{ 'general.accessibility.link_messages.external' | t | json }},
+      newWindowExternal: {{ 'general.accessibility.link_messages.new_window_and_external' | t | json }}
       },
       moneyFormat: {{ shop.money_format | json }}
     }
 
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-  </script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    </script>
 
-  <!--[if (lte IE 9) ]>{{ 'match-media.min.js' | asset_url | script_tag }}<![endif]-->
+    <!--[if (lte IE 9) ]>{{ 'match-media.min.js' | asset_url | script_tag }}<![endif]-->
 
-  {%- if template.directory == 'customers' -%}
-    <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script><!--<![endif]-->
+    {%- if template.directory == 'customers' -%}
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
+    <!--<![endif]-->
     <!--[if lte IE 9]><script src="{{ 'shopify_common.js' | shopify_asset_url }}"></script><![endif]-->
-  {%- endif -%}
+    {%- endif -%}
 
-  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'lazysizes-min.js' | asset_url }}" async="async"></script><!--<![endif]-->
-  <!--[if lte IE 9]><script src="{{ 'lazysizes.min.js' | asset_url }}"></script><![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="{{ 'lazysizes.js' | asset_url }}" async="async"></script>
+    <!--<![endif]-->
+    <!--[if lte IE 9]><script src="{{ 'lazysizes.min.js' | asset_url }}"></script><![endif]-->
 
-  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'vendor-min.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
-  <!--[if lte IE 9]><script src="{{ 'vendor.js' | asset_url }}"></script><![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
+    <!--<![endif]-->
+    <!--[if lte IE 9]><script src="{{ 'vendor.js' | asset_url }}"></script><![endif]-->
 
-  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'theme-min.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
-  <!--[if lte IE 9]><script src="{{ 'theme.js' | asset_url }}"></script><![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+    <!--<![endif]-->
+    <!--[if lte IE 9]><script src="{{ 'theme.js' | asset_url }}"></script><![endif]-->
 
-<!-- YOTPO reviews widget -->
-<script type="text/javascript">(function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/DQkSVEOOfTk6RwUP3XUIMXJSc60azZRBfpfLxYtV/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();</script>
-  {{ content_for_header }}
-{%- include 'bold-options-hybrid' -%}
-{%- include 'bold-product' with product, hide_action: 'header' -%}
-  {% include 'bold-common' %}
-  {% include 'bold-ro-init' %}
-  {{ 'bold.css' | asset_url | stylesheet_tag }}
+    <!-- YOTPO reviews widget -->
+    <script
+      type="text/javascript">(function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/DQkSVEOOfTk6RwUP3XUIMXJSc60azZRBfpfLxYtV/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();</script>
+    {{ content_for_header }}
+    {%- include 'bold-options-hybrid' -%}
+    {%- include 'bold-product' with product, hide_action: 'header' -%}
+    {% include 'bold-common' %}
+    {% include 'bold-ro-init' %}
+    {{ 'bold.css' | asset_url | stylesheet_tag }}
+    {{ 'vidafuel.scss.css' | asset_url | stylesheet_tag }}
 
 
-  {% include 'minmaxify-head' %}
+    {% include 'minmaxify-head' %}
 
 
-  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <meta name="google-site-verification" content="a6HtKogePX6wHMs7l9B1QsVCUyPxt5cUTn16e26KbOc" />
-  <meta name="ahrefs-site-verification" content="b70c2387d853a0c2788d1c5f4c39a0837310db1438e8e2b6db5c94fc3c2a0234">
-  <meta name="google-site-verification" content="oRxTR7VYWxz1XUAFEFKcuRw1vjntnOrygfRDsqkPJQc" />
-{% include 'hulkcode_common' %}{% if template contains 'product' or template contains 'cart' %}<script src='https://volumediscount.hulkapps.com/api/v2/frontend/hulkcode.js' defer='defer'></script>{% endif %}{% include 'orichi_multi_pixel' %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <meta name="google-site-verification" content="a6HtKogePX6wHMs7l9B1QsVCUyPxt5cUTn16e26KbOc" />
+    <meta name="ahrefs-site-verification" content="b70c2387d853a0c2788d1c5f4c39a0837310db1438e8e2b6db5c94fc3c2a0234">
+    <meta name="google-site-verification" content="oRxTR7VYWxz1XUAFEFKcuRw1vjntnOrygfRDsqkPJQc" />
+    {% include 'hulkcode_common' %}{% if template contains 'product' or template contains 'cart' %}
+    <script src='https://volumediscount.hulkapps.com/api/v2/frontend/hulkcode.js' defer='defer'></script>{% endif %}{%
+    include 'orichi_multi_pixel' %}
+    {% if request.path contains 'collection' %}
+    <meta name="robots" content="noindex">
+    {% endif %}
+  </head>
+  <body class="template-{{ template | split: '.' | first }}">
+    <!-- Google Tag Manager (noscript) -->
 
-{% if request.path contains "/bundle" %}
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNQ2TM4" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t
+      }}</a>
 
-<meta name="robots" content="noindex">
-
-{% endif %}
-
-</head>
-
-<body class="template-{{ template | split: '.' | first }}">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNQ2TM4" height="0" width="0"
-    style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
-
-  <div id="SearchDrawer" class="search-bar drawer drawer--top" role="dialog" aria-modal="true" aria-label="{{ 'general.search.placeholder' | t }}">
-    <div class="search-bar__table">
-      <div class="search-bar__table-cell search-bar__form-wrapper">
-        <form class="search search-bar__form" action="/search" method="get" role="search">
-          <input class="search__input search-bar__input" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ 'general.search.placeholder' | t }}" aria-label="{{ 'general.search.placeholder' | t }}">
-          <button class="search-bar__submit search__submit btn--link" type="submit">
-            {% include 'icon-search' %}
-            <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
+    <div id="SearchDrawer" class="search-bar drawer drawer--top" role="dialog" aria-modal="true"
+      aria-label="{{ 'general.search.placeholder' | t }}">
+      <div class="search-bar__table">
+        <div class="search-bar__table-cell search-bar__form-wrapper">
+          <form class="search search-bar__form" action="/search" method="get" role="search">
+            <input class="search__input search-bar__input" type="search" name="q" value="{{ search.terms | escape }}"
+              placeholder="{{ 'general.search.placeholder' | t }}" aria-label="{{ 'general.search.placeholder' | t }}">
+            <button class="search-bar__submit search__submit btn--link" type="submit">
+              {% include 'icon-search' %}
+              <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
+            </button>
+          </form>
+        </div>
+        <div class="search-bar__table-cell text-right">
+          <button type="button" class="btn--link search-bar__close js-drawer-close">
+            {% include 'icon-close' %}
+            <span class="icon__fallback-text">{{ 'general.search.close' | t }}</span>
           </button>
-        </form>
-      </div>
-      <div class="search-bar__table-cell text-right">
-        <button type="button" class="btn--link search-bar__close js-drawer-close">
-          {% include 'icon-close' %}
-          <span class="icon__fallback-text">{{ 'general.search.close' | t }}</span>
-        </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  {% section 'header' %}
+    {% section 'header' %}
 
-  <div class="page-container" id="PageContainer">
+    <div class="page-container" id="PageContainer">
 
-    <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
-      {% if template contains 'wholesale' %}
-      {% if customer %}
-      {% if customer.tags contains 'wholesale' %}
-      {{ content_for_layout }}
-      {% else %}
-      {% include 'wholesale-note' %}
-      {% endif %}
-      {% else %}
-      {% include 'wholesale-note' %}
-      {% endif %}
-      {% else%}
-      {{ content_for_layout }}
-      {% endif %}
-    </main>
+      <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
+        
+        <!-- <h1 style="z-index: 9;position: absolute;">{{ template.name }}</h1> -->
 
-    {% section 'footer' %}
+        {% if template contains 'wholesale' %}
+        {% if customer %}
+        {% if customer.tags contains 'wholesale' %}
+        {{ content_for_layout }}
+        {% else %}
+        {% include 'wholesale-note' %}
+        {% endif %}
+        {% else %}
+        {% include 'wholesale-note' %}
+        {% endif %}
+        {% else%}
+        {{ content_for_layout }}
+        {% endif %}
+      </main>
 
-  </div>
-<script src="https://cdn.attn.tv/vidafuel/dtag.js"></script>
-<script>
-jQuery(function($){
+      {% section 'footer' %}
 
-  // reviews nav link
-  $('.site-nav a[href="#yotpo-testimonials"]').on('click tap', function(e) {
-    e.stopPropagation();
-    e.preventDefault();
-    $('#yotpo-testimonials').show(0).addClass('yotpo-modal-active');
-  });
+    </div>
+    <script src="https://cdn.attn.tv/vidafuel/dtag.js"></script>
+    <script>
+      jQuery(function ($) {
 
-});
-</script>
+        // reviews nav link
+        $('.site-nav a[href="#yotpo-testimonials"]').on('click tap', function (e) {
+          e.stopPropagation();
+          e.preventDefault();
+          $('#yotpo-testimonials').show(0).addClass('yotpo-modal-active');
+        });
 
-{% render 'special-offers' %}
-  
-  {% comment %}
-Klaviyo Tracking Tag
-{% endcomment %}
-  
-  {% comment %}
-<script>
-window.addEventListener("klaviyoForms", function(e) { 
-  if (e.detail.type == 'submit') {
-    ga('send', 'event', 'Klaviyo form', 'form_submit', e.detail.XfN77h);
- }
-});
-</script>
-  {% endcomment %}
-  
-  <script>
-window.addEventListener("klaviyoForms", function(e) { 
-  if (e.detail.type == 'open') {
-    ga('send', 'event', 'Klaviyo form', 'form_open', e.detail.XfN77h);
-  }
-  if (e.detail.type == 'submit') {
-    ga('send', 'event', 'Klaviyo form', 'form_submit', e.detail.XfN77h);
-  }
-});
-</script>
+      });
+    </script>
+
+    {% render 'special-offers' %}
+
     {% comment %}
-END Klaviyo Tracking Tag
-{% endcomment %}
-  
-  {% comment %}
-LinkedIn Tag
-{% endcomment %}
-<script type="text/javascript"> _linkedin_partner_id = "2634580"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2634580&fmt=gif" /> </noscript>
-{% comment %}
-END LinkedIn Tag
-{% endcomment %}
-  
-</body>
+    Klaviyo Tracking Tag
+    {% endcomment %}
+
+    {% comment %}
+    <script>
+      window.addEventListener("klaviyoForms", function (e) {
+        if (e.detail.type == 'submit') {
+          ga('send', 'event', 'Klaviyo form', 'form_submit', e.detail.XfN77h);
+        }
+      });
+    </script>
+    {% endcomment %}
+
+    <script>
+      window.addEventListener("klaviyoForms", function (e) {
+        if (e.detail.type == 'open') {
+          ga('send', 'event', 'Klaviyo form', 'form_open', e.detail.XfN77h);
+        }
+        if (e.detail.type == 'submit') {
+          ga('send', 'event', 'Klaviyo form', 'form_submit', e.detail.XfN77h);
+        }
+      });
+    </script>
+    {% comment %}
+    END Klaviyo Tracking Tag
+    {% endcomment %}
+
+    {% comment %}
+    LinkedIn Tag
+    {% endcomment %}
+    <script
+      type="text/javascript"> _linkedin_partner_id = "2634580"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id);</script>
+    <script
+      type="text/javascript"> (function () { var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript"; b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s); })();</script>
+    <noscript> <img height="1" width="1" style="display:none;" alt=""
+        src="https://px.ads.linkedin.com/collect/?pid=2634580&fmt=gif" /> </noscript>
+    {% comment %}
+    END LinkedIn Tag
+    {% endcomment %}
+
+  </body>
+
 </html>

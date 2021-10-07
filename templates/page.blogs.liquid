@@ -1,0 +1,17 @@
+{% section 'hero-2' %}
+
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      {% assign blog_handles = "healthcare-professionals,nutrition-wellness" | split: "," %}
+      <ul class="grid grid--uniform grid--blog">
+        {%- comment -%}Shopify Link List: https://www.shopify.com/partners/blog/shopify-link-list{%- endcomment -%}
+        {% for handle in blog_handles %}
+          {% for article in blogs[handle].articles %}
+            {% include 'blog-page-template' %}
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

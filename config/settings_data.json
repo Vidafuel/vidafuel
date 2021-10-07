@@ -55,7 +55,7 @@
           "align_logo": "left",
           "logo": "shopify:\/\/shop_images\/Vidafuel-logo-official.png",
           "logo_max_width": 165,
-          "main_linklist": "main-menu",
+          "main_linklist": "main-menu-2-0",
           "message": true,
           "home_page_only": false,
           "message_text": "FREE SHIPPING ON ORDERS $50+",
@@ -70,8 +70,8 @@
       "footer": {
         "type": "footer",
         "settings": {
-          "footer_linklist": "footer-menu-1",
-          "footer_linklist_two": "footer-menu-2",
+          "footer_linklist": "",
+          "footer_linklist_two": "",
           "footer_newsletter_enable": true,
           "footer_newsletter_subheading": "<p>To receive discounts and new product updates<\/p>",
           "show_payment_icons": true
@@ -95,17 +95,17 @@
           "layout": "grid",
           "grid": 3,
           "rows": 8,
-          "show_collection_image": false,
+          "show_collection_image": true,
           "show_vendor": false,
-          "sort_enable": true,
-          "tags_enable": true
+          "sort_enable": false,
+          "tags_enable": false
         }
       },
       "blog-template": {
         "type": "blog-template",
         "settings": {
-          "layout": "list",
-          "blog_show_author": true,
+          "layout": "grid",
+          "blog_show_author": false,
           "blog_show_date": false
         }
       },
@@ -333,6 +333,73 @@
           "supertitle": "Dietitian Developed Snacks",
           "title": "How we Compare",
           "align_text": "left"
+        }
+      },
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/home-01_1.jpg",
+          "alignment": "center",
+          "h_alignment": "left",
+          "text_width": "wider",
+          "hex_text": "#5bb6ae",
+          "title": "Products",
+          "text": "",
+          "hero_size": "small",
+          "text_size": "medium",
+          "icon_01": "",
+          "bullet_01": "",
+          "icon_02": "",
+          "bullet_02": "",
+          "icon_03": "",
+          "bullet_03": "",
+          "icon_04": "",
+          "bullet_04": "",
+          "icon_05": "",
+          "bullet_05": "",
+          "icon_06": "",
+          "bullet_06": "",
+          "icon_07": "",
+          "bullet_07": "",
+          "icon_08": "",
+          "bullet_08": "",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "filters": {
+        "type": "filters",
+        "settings": {
+          "layout": "grid",
+          "grid": 4,
+          "rows": 2,
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": true,
+          "tags_enable": true
+        }
+      },
+      "hero-2": {
+        "type": "hero-2",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/home-01_1.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "small",
+          "text_size": "medium",
+          "h_alignment": "left",
+          "text_width": "wider",
+          "hex_text_alt": "#5bb6ae",
+          "title": "Vidafuel Education",
+          "text": "",
+          "bullet_01": "",
+          "bullet_02": "",
+          "bullet_03": "",
+          "bullet_04": "",
+          "bullet_05": "",
+          "bullet_06": "",
+          "button_label": "",
+          "button_link": ""
         }
       }
     },

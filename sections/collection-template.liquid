@@ -16,7 +16,6 @@
 {% endif %}
 
 {% paginate collection.products by limit %}
-
 <div data-section-id="{{ section.id }}" data-section-type="collection-template">
   <header class="collection-header">    
     {%- assign is_filter_by_available = false -%}
@@ -26,6 +25,7 @@
 
     {% if section.settings.show_collection_image and collection.image %}
       <div class="collection-hero">
+        
         <div class="collection-hero__image ratio-container lazyload js"
              data-bgset="{% include 'bgset', image: collection.image %}"
              data-sizes="auto"

@@ -32,7 +32,7 @@
             <div class="grid__item {% if section.settings.text_width == 'narrow' %}medium-up--one-half{% else %} medium-up--three-quarters {% endif %} text-left">
 
                   {% if section.settings.title != blank %}
-                    <h2 class="trade_gothic fadeInRight h1 mega-title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}" style="letter-spacing:0; color: {{ section.settings.hex_text }};">{{ section.settings.title | escape }}</h2>
+                    <h1 class="fadeInRight collection-hero__title h1 {% if section.settings.text_size == 'large' %} mega-title--large{% endif %}" style="letter-spacing:0; color: {{ section.settings.hex_text }};">{{ section.settings.title | escape }}</h1>
                   {% endif %}
                   {% if section.settings.text != blank %}
                     <div class="fadeInRight rte-setting mega-subtitle og {% if section.settings.text_size == 'large' %} mega-subtitle--large{% endif %}">{{ section.settings.text }}</div>

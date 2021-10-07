@@ -30,8 +30,11 @@
       {% endcase %}
       {% if section.settings.sort == 'products_low' or section.settings.sort == 'date' or section.settings.sort == 'alphabetical' %}
         {% for collection in collections %}
-          <li class="grid__item {{ grid_item_width }}">
+          <li class="grid__item collection__item {{ grid_item_width }}">
             {% include 'collection-grid-item', collection_image_size: image_size %}
+            <div class="collection__description">
+              {{ collection.description }}
+            </div>
           </li>
         {% endfor %}
       {% else %}

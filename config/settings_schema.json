@@ -9,6 +9,33 @@
   },
   {
     "name": {
+      "en": "Metadata"
+    },
+    "settings": [
+      {
+        "type": "header",
+        "content": {
+          "en": "Products Page"
+        }
+      },
+      {
+        "type": "text",
+        "id": "product_pg_meta_descrip",
+        "label": {
+          "en": "Meta description"
+        }
+      },
+      {
+        "type": "image_picker",
+        "id": "product_pg_meta_image",
+        "label": {
+          "en": "Meta image"
+        }
+      }
+    ]
+  },
+  {
+    "name": {
       "en": "Colors",
       "de": "Farben",
       "fr": "Couleurs",

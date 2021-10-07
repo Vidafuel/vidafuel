@@ -98,7 +98,7 @@
 
           <div class="grid__item {% if section.settings.text_width == 'narrow' %}medium-up--one-half{% else %} medium-up--three-quarters {% endif %}">
               {%- if section.settings.title != blank -%}
-                <h2 class="trade_gothic h1 fadeInUp mega-title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}" style="letter-spacing:0;">{{ section.settings.title | escape }}</h2>
+                <h2 class="trade_gothic h1 fadeInUp mega-title{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}" style="letter-spacing:0; color: {{ section.settings.hex_text_alt }};">{{ section.settings.title | escape }}</h2>
               {%- endif -%}
               {%- if section.settings.text != blank -%}
               <style>

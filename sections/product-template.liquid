@@ -224,7 +224,9 @@
 
               <button 
                 class="shopify-form-button button product-form__cart-submit" type="button" style="display: none"
-                onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });">Temporarily out of stock – click here to be notified when back in stock</button>
+                onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });">
+                Temporarily out of stock – click here to be notified when back in stock
+              </button>
 
               <button 
                 {% unless current_variant.available %} 
@@ -276,8 +278,7 @@
         <p class="visually-hidden" data-loader-status
           aria-live="assertive"
           role="alert"
-          aria-hidden="true"
-        >{{ 'products.product.loader_label' | t }}</p>
+          aria-hidden="true" >{{ 'products.product.loader_label' | t }}</p>
 
 		{%- comment -%}
         	yotpo review stars
