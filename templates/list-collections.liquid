@@ -1,28 +1,60 @@
 {% comment %}
   The contents of the lists-collections.liquid template can be found in /sections/lists-collections-template.liquid
+  loop the default "all" collection:
+  https://community.shopify.com/c/shopify-design/how-to-display-all-individual-products-in-a-shopify-store/m-p/308607/highlight/true#M80564
 {% endcomment %}
+
 {% if request.path contains '/products' %}
+
 {% paginate collections.all.products by limit %}
+
+{# TODO: get the collection descriptions #}
+{# TODO: get the collection descriptions #}
+{# TODO: get the collection descriptions #}
+        {% assign collection_handle = 'wellness-supplements' %}
+        {% for collection in collections %}
+        {% if collection.handle == 'wellness-supplements' %}
+        {% assign sectionDescription = collection.description %}
+        {% endif %}
+        {% endfor %}
+        <pre style="color: black;">{{ sectionDescription }}</pre>
+{# TODO: get the collection descriptions #}
+{# TODO: get the collection descriptions #}
+{# TODO: get the collection descriptions #}
+
 
   <header class="section-header text-center with-filters">
     <div class="collection-hero">
       {% section 'hero' %}
       {% section 'filters' %}
     </div>
-
   </header>
   {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
   {%- assign max_height = 345 -%}
+
   <div class="page-width">
-    <ul class="grid grid--uniform{% if collection.products_count > 0 %} grid--view-items{% endif %}">
-      {% for product in collections.all.products %} {%- comment -%}loop the default "all" collection: https://community.shopify.com/c/shopify-design/how-to-display-all-individual-products-in-a-shopify-store/m-p/308607/highlight/true#M80564{%- endcomment -%}
-      {%- include 'bold-product' with product, hide_action: 'skip' -%}
-      <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
-        {% include 'product-card-grid', max_height: max_height %}
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+      <h2>Beverages</h2>
+      <ul class="grid grid--uniform{% if collection.products_count > 0 %} grid--view-items{% endif %}">
+        {% for product in collections.wellness-supplements.products %} 
+            {%- include 'bold-product' with product, hide_action: 'skip' -%}
+            <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
+              {% include 'product-card-grid', max_height: max_height %}
+            </li>
+        {% endfor %}
+      </ul>
+      <h2>Snacks</h2>
+      <ul class="grid grid--uniform{% if collection.products_count > 0 %} grid--view-items{% endif %}">
+        {% assign collection_handle = 'snacks' %}
+        {% for product in collections.snacks.products %}
+            {%- include 'bold-product' with product, hide_action: 'skip' -%}
+            <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
+              {% include 'product-card-grid', max_height: max_height %}
+            </li>
+        {% endfor %}
+      </ul>
+
+    </div>
+
 {% endpaginate %}
 {% else %}
   {% section 'list-collections-template' %}

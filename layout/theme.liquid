@@ -155,13 +155,12 @@
     {% include 'hulkcode_common' %}{% if template contains 'product' or template contains 'cart' %}
     <script src='https://volumediscount.hulkapps.com/api/v2/frontend/hulkcode.js' defer='defer'></script>{% endif %}{%
     include 'orichi_multi_pixel' %}
-    {% if request.path contains 'collection' %}
+    {% if request.path contains 'collections/all' %}
     <meta name="robots" content="noindex">
     {% endif %}
   </head>
   <body class="template-{{ template | split: '.' | first }}">
     <!-- Google Tag Manager (noscript) -->
-
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNQ2TM4" height="0" width="0"
         style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -199,7 +198,7 @@
         <!-- <h1 style="z-index: 9;position: absolute;">{{ template.name }}</h1> -->
 
         {% if template contains 'wholesale' %}
-        {% if customer %}
+          {% if customer %}
         {% if customer.tags contains 'wholesale' %}
         {{ content_for_layout }}
         {% else %}
@@ -236,15 +235,15 @@
     Klaviyo Tracking Tag
     {% endcomment %}
 
-    {% comment %}
     <script>
-      window.addEventListener("klaviyoForms", function (e) {
+      /*
+         window.addEventListener("klaviyoForms", function (e) {
         if (e.detail.type == 'submit') {
           ga('send', 'event', 'Klaviyo form', 'form_submit', e.detail.XfN77h);
         }
-      });
+      }); 
+      */
     </script>
-    {% endcomment %}
 
     <script>
       window.addEventListener("klaviyoForms", function (e) {
