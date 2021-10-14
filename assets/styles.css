@@ -4210,9 +4210,17 @@ hr {
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
+.collection-hero__title.collection-description {
+	font-size: 15px;
+	top: 60%;
+}
 @media only screen and (min-width: 750px) {
-	.collection-hero__title {
+	h1.collection-hero__title {
 		font-size: 2.22222em;
+	}
+	.collection-hero__title.collection-description {
+		font-size: 18px;
+		top: 55%;
 	}
 }
 

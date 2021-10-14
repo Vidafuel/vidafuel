@@ -44,38 +44,7 @@
       </div>
 
       {% if section.settings.footer_newsletter_enable %}
-        <div class="grid__item medium-up--one-half">
-          {% comment %}
-          <div class="site-footer__newsletter">
-            {%- assign formId = 'ContactFooter' -%}
-            {% form 'customer', id: formId, novalidate: 'novalidate' %}
-              {% include 'form-status', formId %}
-              <label for="Email" class="h4">{{ 'general.newsletter_form.newsletter_email' | t }}</label>
-              {% if section.settings.footer_newsletter_subheading != blank %}
-                <div class="rte">{{ section.settings.footer_newsletter_subheading }}</div>
-              {% endif %}
-              <div class="input-group{% if form.errors %} input-group--error{% endif %}">
-                <input type="hidden" name="contact[tags]" value="newsletter">
-                <input type="email"
-                  name="contact[email]"
-                  id="{{ formId }}-email"
-                  class="input-group__field newsletter__input{% if form.errors %} input--error{% endif %}"
-                  value="{% if customer %}{{ customer.email }}{% endif %}"
-                  placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
-                  autocorrect="off"
-                  autocapitalize="off"
-                  {% if form.errors %} aria-invalid="true" aria-describedby="{{ formId }}-email-error"{% endif %}>
-                <span class="input-group__btn">
-                  <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe">
-                    <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
-                  </button>
-                </span>
-                <span id="{{ formId }}-email-error" class="input-error-message">{% include 'icon-error' %} {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
-              </div>
-            {% endform %}
-          </div>
-          {% endcomment %}
-
+        <div class="grid__item medium-up--one-whole">
           <div class="klaviyo-form-XKDUe6"></div>
         </div>
       {% endif %}

@@ -93,14 +93,6 @@
                   {{ 'blogs.article.read_more' | t }}
                 </a>
               </li>
-
-              <ul class="list--inline article__meta-buttons">
-                <li>
-                  <a href="{{ article.url }}" class="btn btn--tertiary btn--small">
-                    {{ 'blogs.article.read_more' | t }}
-                  </a>
-                </li>
-
                 {% if blog.comments_enabled? and article.comments_count > 0 %}
                   <li>
                     <a href="{{ article.url }}#comments" class="article__comment-count btn btn--tertiary btn--small">
@@ -108,7 +100,6 @@
                     </a>
                   </li>
                 {% endif %}
-              </ul>
               </ul>
             </div>
         </li>

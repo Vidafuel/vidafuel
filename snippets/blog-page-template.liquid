@@ -45,8 +45,8 @@
       {{ article.content | strip_html | truncate: 100 }}
       {% endif %}
     </div>
-
-    <!-- {% if article.tags.size > 0 %}
+{%- comment -%}
+    {% if article.tags.size > 0 %}
     <div class="article__tags rte">
       <ul class="list--inline" aria-label="{{ 'blogs.article.tags' | t }}">
         {% for tag in article.tags %}
@@ -56,8 +56,8 @@
         {% endfor %}
       </ul>
     </div>
-    {% endif %} -->
-
+    {% endif %}
+{%- endcomment -%}
 
 
     <ul class="list--inline article__meta-buttons">
