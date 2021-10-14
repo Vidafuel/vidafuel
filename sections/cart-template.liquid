@@ -185,12 +185,14 @@
             <a href="collections/all" class="btn btn--secondary cart__update cart__continue--large small--hide" >{{ 'cart.general.continue_shopping' | t }}</a>
             <input type="submit" name="update" class="btn btn--secondary cart__update cart__update--large small--hide" value="{{ 'cart.general.update' | t }}">
             {{ bold_ro_cart }}
+            <span class="bold-disabled-checkout">
             <input type="submit" name="checkout" class="btn btn--small-wide" value="{{ 'cart.general.checkout' | t }}">
             {% if show_paypal and additional_checkout_buttons and show_paypal %}
                 <div class="additional-checkout-buttons">
                     {{ content_for_additional_checkout_buttons }}
                 </div>
             {% endif %}
+            </span>
           </div>
         </div>
       </div>
@@ -206,7 +208,16 @@
     </div>
   {% endif %}
 </div>
-
+<script>
+  window.onload = function(){
+  document.querySelector(".bold-disabled-checkout").classList.remove("bold-disabled-checkout");
+}
+</script>
+<style>
+  .bold-disabled-checkout{
+    pointer-events:none;
+  }
+</style>
 {% schema %}
   {
     "name": {
