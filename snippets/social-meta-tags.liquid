@@ -1,6 +1,10 @@
 <!-- /snippets/social-meta-tags.liquid -->
 {%- assign og_title = page_title -%}
-{%- assign og_url = canonical_url -%}
+{% if request.path contains '/products' %}
+  {%- assign og_url = 'https://vidafuel.com/products' -%}
+{%else %}
+  {%- assign og_url = canonical_url -%}
+{% endif %}
 {%- assign og_type = 'website' -%}
 {%- assign og_description = page_description | default: shop.description | default: shop.name -%}
 {% if settings.share_image %}

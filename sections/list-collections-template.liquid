@@ -18,7 +18,6 @@
       {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
       {%- assign image_size = '225x' -%}
   {% endcase %}
-
   <ul class="grid grid--uniform">
     {% if section.settings.display_type == 'all' %}
       {% case section.settings.sort %}
@@ -29,18 +28,23 @@
       {% endcase %}
       {% if section.settings.sort == 'products_low' or section.settings.sort == 'date' or section.settings.sort == 'alphabetical' %}
         {% for collection in collections %}
+        {% if collection.handle != 'wholesale' %}
           <li class="grid__item collection__item {{ grid_item_width }}">
             {% include 'collection-grid-item', collection_image_size: image_size %}
             <div class="collection__description">
               {{ collection.description }}
             </div>
           </li>
+        {% endif %}
+
         {% endfor %}
       {% else %}
         {% for collection in collections reversed %}
-          <li class="grid__item {{ grid_item_width }}">
-            {% include 'collection-grid-item', collection_image_size: image_size %}
-          </li>
+          {% if collection.handle != 'wholesale' %}
+            <li class="grid__item {{ grid_item_width }}">
+              {% include 'collection-grid-item', collection_image_size: image_size %}
+            </li>
+          {% endif %}
         {% endfor %}
       {% endif %}
     {% else %}

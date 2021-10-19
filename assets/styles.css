@@ -79,6 +79,9 @@
 /*================ Typography ================*/
 :root {
 	--primary-color: #5bb6ae;
+	--primary-light-color: #abe3de;
+	--secondary-color: #9fc958;
+	--tertiary-color: #e68227;
 	--white-color: #fff;
 	--offwhite-color: #fff8f8;
 }
@@ -142,7 +145,9 @@
 		url("https://fonts.shopifycdn.com/montserrat/montserrat_i7.25524241b12d864609c85325613d60efcf1a87e3.woff?&hmac=52d5d1f52cacaac04dec2f10df0bcaeec767bd41569a43d36480d4a16030455d")
 			format("woff");
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /*================ Gift Cards ================*/
 /*================ Z-index ================*/
 /*================ VENDOR ================*/
@@ -5958,6 +5963,7 @@ hr {
 	-moz-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .filters-toolbar .icon-chevron-down {
 	width: calc(10em / 16);
@@ -7395,6 +7401,16 @@ span.yotpo-logo-title,
 	clip-path: polygon(0 0, 0 100%, 100% calc(100% - 7vw), 100% 0);
 }
 
+.secondary__page-header {
+	background-color: var(--tertiary-color);
+}
+.feat__page-header {
+	background-color: var(--primary-light-color);
+}
+.feat__page-header * {
+	color: var(--white-color);
+}
+
 .contact-page-header-text {
 	text-transform: uppercase;
 	font-size: 50px;
@@ -7671,6 +7687,7 @@ iframe#preview-bar-iframe {
 .collection__item .collection__description {
 	padding: 20px;
 	background-color: var(--primary-color);
+	color: var(--white-color);
 	height: 140px;
 	display: flex;
 	align-items: center;
@@ -7750,3 +7767,12 @@ iframe#preview-bar-iframe {
     top: 15px
 }
 
+/* override utilities */
+.mb-0 {
+	margin-bottom: 0;
+}
+
+.sub {
+	font-style: normal;
+	font-weight: 600;
+}

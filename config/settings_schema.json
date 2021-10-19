@@ -9,7 +9,7 @@
   },
   {
     "name": {
-      "en": "Metadata"
+      "en": "Products page"
     },
     "settings": [
       {
@@ -30,6 +30,20 @@
         "id": "product_pg_meta_image",
         "label": {
           "en": "Meta image"
+        }
+      },
+      {
+        "type": "text",
+        "id": "product_pg_feat_title",
+        "label": {
+          "en": "Featured section title"
+        }
+      },
+      {
+        "type": "textarea",
+        "id": "product_pg_feat_description",
+        "label": {
+          "en": "Featured section description"
         }
       }
     ]

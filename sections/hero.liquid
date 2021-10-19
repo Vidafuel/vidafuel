@@ -42,8 +42,8 @@
                           color: {{ section.settings.hex_text }};
                       }
                   </style>
+                  {%- comment -%}
                   <ul class="bullet-list">
-                      <!-- icon -->
                       {% if section.settings.icon_01 != blank %}
                         <li class="bullet in-v fade-in-up diet-list-item" style="color: {{ section.settings.hex_text }};">
                             {{ section.settings.bullet_01 }}
@@ -92,7 +92,7 @@
                         </li>
                       {% endif %}
                   </ul>
-
+                  {%- endcomment -%}
                   {% if section.settings.button_label != blank and section.settings.button_link != blank %}
                     <a href="{{ section.settings.button_link }}" class="btn hero__btn fade-in">
                       {{ section.settings.button_label | escape }}
