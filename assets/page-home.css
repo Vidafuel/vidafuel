@@ -212,7 +212,8 @@
 }
 #home .feature .text .title {
   max-width:600px;
-  font-size:70px;
+  font-size: 3.5em;
+  text-transform: uppercase;
   line-height:1;
 }
 #home .feature .text p {

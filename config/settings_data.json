@@ -1,5 +1,8 @@
 {
   "current": {
+    "product_pg_meta_descrip": "Clinical nutrition supplements offers great tasting on protein drinks and kidney-friendly snacks. Developed by dietitians to fit your lifestyle.",
+    "product_pg_feat_title": "What's new?",
+    "product_pg_feat_description": "",
     "color_text": "#5bb6ae",
     "color_body_text": "#6d6d6d",
     "color_sale_text": "#9fc958",
@@ -343,7 +346,7 @@
           "h_alignment": "left",
           "text_width": "wider",
           "hex_text": "#5bb6ae",
-          "title": "Products",
+          "title": "All of our nutritional products",
           "text": "",
           "hero_size": "small",
           "text_size": "medium",

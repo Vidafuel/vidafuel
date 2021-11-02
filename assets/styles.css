@@ -1826,7 +1826,6 @@ h6 a,
 h1,
 .h1 {
 	font-size: 2.5em;
-	text-transform: none;
 	letter-spacing: 0;
 }
 @media only screen and (max-width: 749px) {
