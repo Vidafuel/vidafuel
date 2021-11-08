@@ -1,8 +1,14 @@
 {
   "current": {
-    "product_pg_meta_descrip": "Clinical nutrition supplements offers great tasting on protein drinks and kidney-friendly snacks. Developed by dietitians to fit your lifestyle.",
+    "product_pg_meta_descrip": "Here you can buy healthy snacks and protein drinks for all kinds of health conditions. Get to know our kidney friendly nutrition products.",
     "product_pg_feat_title": "What's new?",
     "product_pg_feat_description": "",
+    "dietitian_toolbox_pg_meta_title": "Nutrition Wellness – Tagged \"Dietitian toolbox\"",
+    "dietitian_toolbox_pg_meta_descrip": "Dietitian Toolbox blog posts. Developed by dietitians to fit your lifestyle.",
+    "meet_the_team_pg_meta_title": "Nutrition Wellness – Tagged \"Meet the team\"",
+    "meet_the_team_pg_meta_descrip": "Meet the team blog posts. Developed by dietitians to fit your lifestyle.",
+    "protein_pg_meta_title": "Nutrition Wellness – Tagged \"Protein\"",
+    "protein_pg_meta_descrip": "Protein blog posts. Developed by dietitians to fit your lifestyle.",
     "color_text": "#5bb6ae",
     "color_body_text": "#6d6d6d",
     "color_sale_text": "#9fc958",
@@ -51,6 +57,8 @@
     "checkout_accent_color": "#006862",
     "checkout_button_color": "#9fc958",
     "checkout_error_color": "#ff6d6d",
+    "general_blog_pg_meta_title": "Nutrition Wellness",
+    "general_blog_pg_meta_descrip": "General blog meta",
     "sections": {
       "header": {
         "type": "header",
@@ -58,7 +66,7 @@
           "align_logo": "left",
           "logo": "shopify:\/\/shop_images\/Vidafuel-logo-official.png",
           "logo_max_width": 165,
-          "main_linklist": "main-menu-2-0",
+          "main_linklist": "main-menu",
           "message": true,
           "home_page_only": false,
           "message_text": "FREE SHIPPING ON ORDERS $50+",
@@ -403,6 +411,14 @@
           "bullet_06": "",
           "button_label": "",
           "button_link": ""
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 2
         }
       }
     },
