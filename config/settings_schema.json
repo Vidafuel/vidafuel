@@ -19,7 +19,7 @@
         }
       },
       {
-        "type": "text",
+        "type": "textarea",
         "id": "product_pg_meta_descrip",
         "label": {
           "en": "Meta description"
@@ -44,6 +44,61 @@
         "id": "product_pg_feat_description",
         "label": {
           "en": "Featured section description"
+        }
+      }
+    ]
+  },
+  {
+    "name": {
+      "en": "Blog pages"
+    },
+    "settings": [
+      {
+        "type": "header",
+        "content": {
+          "en": "Tag pages"
+        }
+      },
+      {
+        "type": "text",
+        "id": "dietitian_toolbox_pg_meta_title",
+        "label": {
+          "en": "Dietitian Toolbox Meta title"
+        }
+      },
+      {
+        "type": "textarea",
+        "id": "dietitian_toolbox_pg_meta_descrip",
+        "label": {
+          "en": "Dietitian Toolbox Meta description"
+        }
+      },
+      {
+        "type": "text",
+        "id": "meet_the_team_pg_meta_title",
+        "label": {
+          "en": "Meet the team Meta title"
+        }
+      },
+      {
+        "type": "textarea",
+        "id": "meet_the_team_pg_meta_descrip",
+        "label": {
+          "en": "Meet the team Meta description"
+        }
+      },
+      {
+        "type": "text",
+        "id": "protein_pg_meta_title",
+        "label": {
+          "en": "Protein Meta title"
+        }
+      },
+      {
+        "type": "textarea",
+        "id": "protein_pg_meta_descrip",
+        "label": {
+          "en": "Protein Meta description"
         }
       }
     ]
