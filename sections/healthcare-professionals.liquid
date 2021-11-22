@@ -1,0 +1,242 @@
+<div id="healthcare">
+
+  <!-- page title -->
+  <div class="healthcare-page-title">
+    <div class="wrapper centertext">
+  		<h1 class="trade_gothic_condensed_bold">{{ section.settings.hc_title }}</h1>
+    </div>
+  </div>
+
+  <!-- feature -->
+  <div class="healthcare-feature trade_gothic">
+    <div class="wrapper page-width">
+      <div class="inner">
+        <div class="table">
+          <div class="cell info">
+            <h2 class="title trade_gothic_condensed_heavy">{{ section.settings.s_one_title }}</h2>
+            <h4 class="text">{{ section.settings.s_one_text }}</h4>
+          </div>
+          <div class="cell image">
+            {% capture img_id %}FeatureRowImage-{{ section.id }}{% endcapture %}
+            {%- assign img_url = section.settings.s_one_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            {% include 'image-style' with image: section.settings.s_one_image, width: 545, height: 545, small_style: true, wrapper_id:
+                    wrapper_id, img_id: img_id %}
+            <div id="{{ wrapper_id }}" class="feature-row__image-wrapper js">
+              <img class="lazyload" id="{{ img_id }}"
+                src="{{ section.settings.s_one_image | image_url: width: 600 }}"
+                data-src="{{ section.settings.s_one_image | image_url }}" 
+                data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
+                data-aspectratio="{{ section.settings.s_one_image.aspect_ratio }}" 
+                data-sizes="auto" 
+                alt="{{ section.settings.s_one_image.alt | escape }}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- about -->
+    <div class="healthcare-about page-width">
+      <div class="wrapper">
+        <div class="inner">
+          <div class="table">
+            <div class="cell info">
+              <h2 class="title trade_gothic_condensed_bold">{{ section.settings.s_two_title }}</h2>
+              <p class="text">{{ section.settings.s_two_text }}</p>
+              <a href="{{ section.settings.s_two_btn_url }}"
+                target="_blank" 
+                class="button blue">{{ section.settings.s_two_btn_title }}</a>
+            </div>
+            <div class="cell image">
+              <div class="table">
+                <div class="cell centertext">
+                  <img src="{{ 'healthcare-02.png' | asset_url }}" alt="" />
+                </div>
+                <div class="cell bullets trade_gothic_bold">
+                  <ul>
+                    <li>17g of complete protein in 2oz</li>
+                    <li>No dilution required</li>
+                    <li>Easy to swallow texture</li>
+                    <li>No artificial sweeteners or colors</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <div id="hide">
+
+    <!--wellness-protein video-->
+    <div class="healthcare-form" id="wellness-protein">
+      <div class="wrapper">
+        <div class="inner">
+          <style>
+            .embed-container {
+              position: relative;
+              padding-bottom: 56.25%;
+              height: 0;
+              overflow: hidden;
+              max-width: 100%;
+            }
+
+            .embed-container iframe,
+            .embed-container object,
+            .embed-container embed {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+          </style>
+          <div class='embed-container'><iframe src='https://www.youtube.com/embed/B5wCtpjZWR4?controls=0' frameborder='0'
+              allowfullscreen></iframe></div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- request form -->
+    <div class="healthcare-form">
+      <div class="wrapper">
+        <div class="inner">
+          <div class="title centertext uppercase trade_gothic_condensed_bold">Learn more</div>
+          <div class="formwrap">
+            <div class="klaviyo-form-XfN77h" id="healthcare-form"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- textblock -->
+    <div class="healthcare-textblock">
+      <div class="wrapper">
+        <div class="inner centertext">
+          <div class="title uppercase trade_gothic_condensed_bold">About Us</div>
+          <div class="text trade_gothic_bold">
+            Vidafuel is an outcomes-driven company dedicated to leading improvement in the 
+            nutritional therapy market. Our passionate team of dietitians and scientists leads 
+            development of best in class products that provide a superior nutritional profile 
+            and patient experience. Our mission is to educate, support and continue to develop 
+            innovative nutritional therapy products that enable patients to live longer, happier lives.
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- cta -->
+    <div class="healthcare-cta">
+      <div class="wrapper">
+        <div class="inner centertext">
+          <div class="table">
+            <div class="cell">
+              <div class="item">
+                <img src="{{ 'healthcare-03.png' | asset_url }}" alt="" />
+                <p>Download white paper:<br />Clinical and financial value of Oral Nutrition Supplement programs</p>
+                <a href="https://cdn.shopify.com/s/files/1/0922/1906/files/2020-VIDAFUEL-White-Paper.pdf?v=1584484018" target="_blank" class="button">Download</a>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="item">
+                <img src="{{ 'VidaFuel-Protein-wCup_new.png' | asset_url }}" alt="" />
+                <p>Shop our best-selling Protein Drinks!</p>
+                <a href="/collections/all/protein-drinks?sort_by=title-descending" class="button">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- distribution -->
+    <div class="healthcare-distribution">
+      <div class="wrapper">
+        <div class="inner centertext">
+          <div class="title uppercase">Distributed By</div>
+          <img src="{{ 'healthcare-05.png' | asset_url }}" alt="" />
+        </div>
+      </div>
+    </div>
+    
+    <!-- contact -->
+    <div class="healthcare-contact">
+      <div class="wrapper">
+        <div class="inner centertext">
+          <p>Have questions about our products?<br />Reach out to us anytime!</p>
+          <p>customercare@vidafuel.com <span>|</span> (615) 430-8733</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+  "name": "Content",
+  "class": "healthcare",
+  "settings": [
+    {
+      "type": "text",
+      "id": "hc_title",
+      "label": "Page title",
+      "default": "NEW Protein Supplement"
+    },
+    {
+      "type": "header",
+      "content": "Section one"
+    },
+    {
+      "type": "text",
+      "id": "s_one_title",
+      "label": "Title",
+      "default": "Clinical nutrition done right"
+    },
+    {
+      "type": "textarea",
+      "id": "s_one_text",
+      "label": "Subtext",
+      "default": "Dietitian Developed for Optimal Absorption."
+    },
+    {
+      "type": "image_picker",
+      "id": "s_one_image",
+      "label": "Image"
+    },
+    {
+    "type": "header",
+    "content": "Section two"
+    },
+    {
+      "type": "text",
+      "id": "s_two_title",
+      "label": "Title",
+      "default": "Small but Mighty"
+    },
+    {
+      "type": "textarea",
+      "id": "s_two_text",
+      "label": "Subtext",
+      "default": "Not all proteins are equal. See how Vidafuel is superior."
+    },
+    {
+      "type": "text",
+      "id": "s_two_btn_title",
+      "label": "Button title",
+      "default": "Comp Chart"
+    },
+    {
+      "type": "url",
+      "id": "s_two_btn_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "s_two_image",
+      "label": "Image"
+    }
+  ]
+  }
+{% endschema %}
