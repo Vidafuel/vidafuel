@@ -420,6 +420,36 @@
           "sort": "alphabetical",
           "grid": 2
         }
+      },
+      "healthcare-professionals": {
+        "type": "healthcare-professionals",
+        "settings": {
+          "hc_title": "NEW Protein Supplement",
+          "s_one_title": "Clinical nutrition done right",
+          "s_one_text": "Dietitian Developed for Optimal Absorption.",
+          "s_one_image": "shopify:\/\/shop_images\/home-05.png",
+          "s_one_img_link": "shopify:\/\/products\/collagen-protein-drink-2-pack",
+          "s_two_title": "Small but Mighty",
+          "s_two_text": "Not all proteins are equal. See how Vidafuel is superior.",
+          "s_two_btn_title": "Comp Chart",
+          "s_two_btn_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0922\/1906\/files\/Dietitian_BoneHealth_Bulletin.pdf?v=1626261954",
+          "s_two_image": "shopify:\/\/shop_images\/healthcare-02.png",
+          "s_two_bullet_one_text": "17g of complete protein in 2oz",
+          "s_two_bullet_two_text": "No dilution required",
+          "s_two_bullet_three_text": "Easy to swallow texture",
+          "s_two_bullet_four_text": "No artificial sweeteners or colors",
+          "s_three_title": "Request free samples for your patients",
+          "s_three_text": "Not all proteins are equal. See how Vidafuel is superior.",
+          "s_three_image": "shopify:\/\/shop_images\/Artboard.jpg",
+          "s_four_title": "The white paper",
+          "s_four_subtitle": "Clinical and financial value of Oral Nutrition Supplement programs.",
+          "s_four_text": "Research demonstrates the success of ONS programs in reducing mortality and improving outcomes in dialysis patients. One recent study reported the novel finding that an effective ONS program can reduce the number of missed dialysis treatments by 33%.",
+          "s_four_image": "shopify:\/\/shop_images\/healthcare-03.png",
+          "s_four_btn_title": "Download",
+          "s_four_btn_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0922\/1906\/files\/Dietitian_BoneHealth_Bulletin.pdf?v=1626261954",
+          "s_five_title": "About Us",
+          "s_five_text": "Vidafuel is an outcomes-driven company dedicated to leading improvement in the nutritional therapy market. Our passionate team of dietitians and scientists leads development of best in class products that provide a superior nutritional profile and patient experience. Our mission is to educate, support and continue to develop innovative nutritional therapy products that enable patients to live longer, happier lives."
+        }
       }
     },
     "content_for_index": [
@@ -457,7 +487,8 @@
       "sections": {
         "header": {
           "type": "header",
-          "settings": {}
+          "settings": {
+          }
         },
         "hero": {
           "type": "hero",
@@ -470,18 +501,21 @@
           "blocks": {
             "slideshow-0": {
               "type": "image",
-              "settings": {}
+              "settings": {
+              }
             },
             "slideshow-1": {
               "type": "image",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "slideshow-0",
             "slideshow-1"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "featured-collections": {
           "type": "collection",
@@ -491,7 +525,8 @@
         },
         "feature-row": {
           "type": "feature-row",
-          "settings": {}
+          "settings": {
+          }
         },
         "footer": {
           "type": "footer",
@@ -645,20 +680,23 @@
         },
         "1492033809691": {
           "type": "map",
-          "settings": {}
+          "settings": {
+          }
         },
         "1492033877875": {
           "type": "quotes",
           "blocks": {
             "1492033877875-0": {
               "type": "quote",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "1492033877875-0"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "1492033924902": {
           "type": "custom-content",
@@ -684,15 +722,18 @@
           "blocks": {
             "1492096252560-0": {
               "type": "featured_collection",
-              "settings": {}
+              "settings": {
+              }
             },
             "1492096252560-1": {
               "type": "featured_collection",
-              "settings": {}
+              "settings": {
+              }
             },
             "1492096252560-2": {
               "type": "featured_collection",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
