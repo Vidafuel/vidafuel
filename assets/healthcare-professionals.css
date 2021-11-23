@@ -131,9 +131,19 @@
 .inner {
 	margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+	.py-2 {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+}
+
+.text-white {
+	color: #fff;
+}
 
 /* healthcare professionals landing */
- {
+#healthcare {
 	margin-top: -55px;
 }
 a.button {
@@ -175,16 +185,13 @@ a.button.blue:hover {
 
 /* feature */
 .healthcare-feature {
-	padding: 70px 0;
 	background: url(healthcare-bg.jpg) left bottom no-repeat;
 	background-size: cover;
 }
 .healthcare-feature .inner {
 	max-width: 1280px;
 }
-.healthcare-feature .title,
-.healthcare-feature .text {
-	color: #ffffff;
+.healthcare-feature .title {
 	letter-spacing: normal;
 	font-size: 50px;
 	line-height: 1.2;
@@ -193,8 +200,11 @@ a.button.blue:hover {
 	font-size: 80px;
 	text-transform: none;
 }
-.healthcare-feature .text {
+.healthcare-feature .text,
+.healthcare-form .text {
 	font-weight: 400;
+	text-transform: none;
+	font-size: 50px;
 }
 .healthcare-feature .title:after {
 	display: block;
@@ -205,10 +215,7 @@ a.button.blue:hover {
 	margin: 40px 0;
 	background: #ffffff;
 }
-.healthcare-about,
-.healthcare-reviews {
-	padding: 50px 0;
-}
+
 .healthcare-about .inner {
 	max-width: 1280px;
 }
@@ -223,12 +230,12 @@ a.button.blue:hover {
 	font-size: 80px;
 	line-height: 1.2;
 	color: #000000;
-  text-transform: none;
-  line-height: 1.2;
-  margin: 0 0 0 0;
-  letter-spacing: normal;
+	text-transform: none;
+	line-height: 1.2;
+	margin: 0 0 0 0;
+	letter-spacing: normal;
 }
-.healthcare-about .text { 
+.healthcare-about .text {
 	margin-bottom: 0 0 19.44444px;
 	max-width: 300px;
 	color: #7acdc7;
@@ -270,14 +277,11 @@ a.button.blue:hover {
 }
 
 /* request form */
-.healthcare-form {
-	padding: 70px 0;
+.healthcare-form,
+.healthcare-video {
 	background: #7acdc7;
 }
-.healthcare-form .inner {
-	max-width: 900px;
-	color: #ffffff;
-}
+
 .healthcare-form .title {
 	margin-bottom: 50px;
 	font-size: 60px;
@@ -357,6 +361,21 @@ a.button.blue:hover {
 	margin-bottom: 30px;
 	text-align: center;
 	list-style: none;
+}
+
+/* healthcare white paper */
+.healthcare-white-paper {
+	align-items: center;
+}
+
+.healthcare-white-paper img {
+	margin-bottom: 2em;
+}
+/* healthcare video  */
+@media screen and (min-width: 768px) {
+	.healthcare-video .text {
+		padding-left: 3em;
+	}
 }
 
 /* textblock */
@@ -591,3 +610,22 @@ a.button.blue:hover {
 		max-width: none;
 	}
 }
+/* video embed */
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
