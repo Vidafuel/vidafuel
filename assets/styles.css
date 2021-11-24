@@ -1983,7 +1983,6 @@ p:last-child {
 .mega-title,
 .mega-subtitle {
 	color: white;
-	text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
 
 .mega-title {
@@ -2005,7 +2004,6 @@ p:last-child {
 	}
 }
 .mega-subtitle p {
-	font-size: 30px;
 	line-height: 1.1;
 }
 .mega-subtitle a {
@@ -4203,7 +4201,7 @@ hr {
 }
 
 .collection-hero__title {
-	position: absolute;
+	/* position: absolute; */
 	color: var(--primary-color);
 	width: 100%;
 	text-align: center;
@@ -7202,8 +7200,7 @@ hr {
 }
 
 .hero__inner h2,
-.hero__inner .h2,
-.hero__inner p {
+.hero__inner .h2 {
 	text-shadow: none;
 	width: 82%;
 }
