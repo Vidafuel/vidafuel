@@ -28,8 +28,8 @@
   {% endif %}
   <div class="hero__inner">
     <div class="page-width text-center">
-        <div class="grid grid--uniform">
-            <div class="grid__item {% if section.settings.text_width == 'narrow' %}medium-up--one-half{% else %} medium-up--three-quarters medium-up--push-two-twelfths {% endif %} text-left">
+        <div class="grid grid--no-gutters">
+            <div class="grid__item {% if section.settings.text_width == 'narrow' %}medium-up--one-half{% else %} medium-up--six-tenths medium-up--push-two-tenths {% endif %} text-left">
 
                   {% if section.settings.title != blank %}
                     <h1 class="fadeInRight collection-hero__title h1 {% if section.settings.text_size == 'large' %} mega-title--large{% endif %}" style="letter-spacing:0; color: {{ section.settings.hex_text }};">{{ section.settings.title | escape }}</h1>
@@ -99,10 +99,6 @@
                     </a>
                   {% endif %}
 
-            </div>
-
-            <div class="grid__item {% if section.settings.text_width == 'narrow' %}medium-up--one-half{% else %} medium-up--one-quarter {% endif %} ">
-                <h2 class="hide">VidaFuel Wellness Protein Supplement</h2>
             </div>
 
         </div>

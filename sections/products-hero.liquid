@@ -1,0 +1,126 @@
+
+<div class="collection-hero__image products-hero__image hero-og {% if section.settings.title != blank or section.settings.text != blank or section.settings.button_label != blank %} hero__overlay{% endif %} box js"
+  {% if section.settings.image %}
+  loading="lazy"
+  data-bgset="{% include 'bgset', image: section.settings.image %}"
+  data-sizes="auto"
+  data-parent-fit="cover"
+  style="background-image: url('{{ section.settings.image | img_url: 'x2048' }});"
+  {% endif %}>
+<div class="products-hero__title-wrapper">
+  <h1 class="products-hero__title page-width">
+    <span role="text">
+      <span class="visually-hidden">{{ section.settings.title }}: </span>
+      {{ section.settings.title }}
+    </span>
+  </h1>
+  {% if section.settings.description != blank %}
+  <div class="rte products-hero__title collection-description page-width">
+    {{ section.settings.description }}
+  </div>
+  {% endif %}
+</div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Products hero",
+  "class": "collection__hero products__hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Collection image"
+    },
+    {
+      "type": "select",
+      "id": "hero_size",
+      "label": {
+        "en": "Section height",
+        "de": "Bereichs-Höhe",
+        "fr": "Hauteur de la section",
+        "it": "Altezza sezione",
+        "ja": "セクションの高さ",
+        "es": "Altura de la sección",
+        "pt-BR": "Altura da seção"
+      },
+      "default": "medium",
+      "options": [
+        {
+          "label": {
+            "en": "Extra Small",
+            "de": "Extra klein",
+            "fr": "Très petite",
+            "it": "Molto piccola",
+            "ja": "極小",
+            "es": "Extra pequeña",
+            "pt-BR": "Extra pequeno"
+          },
+          "value": "x-small"
+        },
+        {
+          "label": {
+            "en": "Small",
+            "de": "Klein",
+            "fr": "Petite",
+            "it": "Small",
+            "ja": "小",
+            "es": "Pequeña",
+            "pt-BR": "Pequeno"
+          },
+          "value": "small"
+        },
+        {
+          "label": {
+            "en": "Medium",
+            "de": "Mitte",
+            "fr": "Moyenne",
+            "it": "Medium",
+            "ja": "中",
+            "es": "Mediana",
+            "pt-BR": "Médio"
+          },
+          "value": "medium"
+        },
+        {
+          "label": {
+            "en": "Large",
+            "de": "Groß",
+            "fr": "Grande",
+            "it": "Large",
+            "ja": "大",
+            "es": "Grande",
+            "pt-BR": "Grande"
+          },
+          "value": "large"
+        },
+        {
+          "label": {
+            "en": "Extra Large",
+            "de": "Extra groß",
+            "fr": "Très grande",
+            "it": "Molto grande",
+            "ja": "特大",
+            "es": "Extra grande",
+            "pt-BR": "Extra grande"
+          },
+          "value": "x-large"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Collection title",
+      "default": "All of our nutritional products"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Collection description",
+      "default": "<p>VidaFuel's clinical nutrition supplements offers great tasting on protein drinks and kidney-friendly snacks. Developed by dietitians to fit your lifestyle.</p>"
+    }
+  ]
+}
+{% endschema %}

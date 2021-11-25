@@ -8,10 +8,8 @@
 
 {% paginate collections.all.products by limit %}
   <header class="section-header text-center with-filters">
-    <div class="collection-hero">
-      {% section 'hero' %}
-      {% section 'filters' %}
-    </div>
+    {% section 'products-hero' %}
+    {% section 'filters' %}
   </header>
 
   {% assign collection_handle = 'wellness-supplements' %}
@@ -30,12 +28,14 @@
 
   {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
   {%- assign max_height = 345 -%}
-  <div class="shopify-section" id="healthy-snacks">
-    <header class="collection__description contact-page-header mb-0">
-      <a href="/collections/{{ snacksHandle }}">
-        <h2>{{ snacksTitle }}</h2>
-      </a>
-      <p>{{ snacksDescription }}</p>
+  <div class="shopify-section products" id="healthy-snacks">
+    <header class="collection__description grid contact-page-header mb-0">
+      <div class="page-container medium-up--six-tenths medium-up--push-two-tenths">
+        <a href="/collections/{{ snacksHandle }}">
+          <h2>{{ snacksTitle }}</h2>
+        </a>
+        <p>{{ snacksDescription }}</p>
+      </div>
     </header>
     <div class="page-width">
       <ul class="grid grid--uniform{% if collection.products_count > 0 %} grid--view-items{% endif %}">
@@ -48,12 +48,14 @@
       </ul>
     </div>
   </div>
-  <div class="shopify-section" id="wellness-supplements">
+  <div class="shopify-section products" id="wellness-supplements">
     <header class="collection__description contact-page-header mb-0 secondary__page-header">
-      <a href="/collections/{{ drinksHandle }}">
-        <h2>{{ drinksTitle }}</h2>
-      </a>
-      <p>{{ drinksDescription }}</p>
+      <div class="page-container medium-up--six-tenths medium-up--push-two-tenths">
+        <a href="/collections/{{ drinksHandle }}">
+          <h2>{{ drinksTitle }}</h2>
+        </a>
+        <p>{{ drinksDescription }}</p>
+      </div>
     </header>
     <div class="page-width">
       <ul class="grid grid--uniform{% if collection.products_count > 0 %} grid--view-items{% endif %}">
@@ -68,9 +70,12 @@
   </div>
   <div class="shopify-section" id="featured-products">
       <header class="feat__page-header mb-0 contact-page-header">
+        <div class="page-container medium-up--six-tenths medium-up--push-two-tenths">
+
+        </div>
       <div class="page-width">
-                <h2>{{ settings.product_pg_feat_title }}</h2>
-                <p>{{ settings.product_pg_feat_description }}</p>
+        <h2>{{ settings.product_pg_feat_title }}</h2>
+        <p>{{ settings.product_pg_feat_description }}</p>
       </div>
       </header>
       <div class="page-width">
