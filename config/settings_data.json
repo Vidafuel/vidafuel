@@ -458,8 +458,8 @@
         "settings": {
           "image": "shopify:\/\/shop_images\/home-01_1.jpg",
           "hero_size": "medium",
-          "title": "All of our nutritional products",
-          "description": "<p>VidaFuel's clinical nutrition supplements offers great tasting on protein drinks and kidney-friendly snacks. Developed by dietitians to fit your lifestyle.<\/p>"
+          "title": "Nutritional products",
+          "description": "<p>VidaFuel's clinical nutrition supplements offers great tasting on protein drinks and kidney-friendly snacks. Developed by dietitians to fit your lifestyle. test<\/p>"
         }
       }
     },
