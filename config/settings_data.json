@@ -450,6 +450,15 @@
           "s_five_title": "About Us",
           "s_five_text": "Vidafuel is an outcomes-driven company dedicated to leading improvement in the nutritional therapy market. Our passionate team of dietitians and scientists leads development of best in class products that provide a superior nutritional profile and patient experience. Our mission is to educate, support and continue to develop innovative nutritional therapy products that enable patients to live longer, happier lives."
         }
+      },
+      "products-hero": {
+        "type": "products-hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/home-01_1.jpg",
+          "hero_size": "medium",
+          "title": "All of our nutritional products",
+          "description": "<p>VidaFuel's clinical nutrition supplements offers great tasting on protein drinks and kidney-friendly snacks. Developed by dietitians to fit your lifestyle.<\/p>"
+        }
       }
     },
     "content_for_index": [
