@@ -42,6 +42,8 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     <meta name="theme-color" content="{{ settings.color_button }}">
     {%- if request.path == '/collections' or request.path == '/collections/all' -%}
       <link rel="canonical" href="https://vidafuel.com/products">
+    {%- elsif request.path == '/products' -%}
+      <link rel="canonical" href="https://vidafuel.com/products">
     {%- else -%}
       <link rel="canonical" href="{{ canonical_url }}">
     {%- endif -%}
