@@ -68,8 +68,9 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     {%- assign escaped_page_title = page_title | escape -%}
     {%- endcapture -%}
 
-    
-    {%- if request.path contains 'tagged/dietitian-toolbox' -%}
+    {%- if request.path == '/products' -%}
+      <title>{{ settings.product_pg_meta_title }}</title>
+    {%- elsif request.path contains 'tagged/dietitian-toolbox' -%}
       <title>{{ settings.dietitian_toolbox_pg_meta_title }}</title>
     {%- elsif request.path contains 'tagged/meet-the-team' -%}
       <title>{{ settings.meet_the_team_pg_meta_title }}</title>

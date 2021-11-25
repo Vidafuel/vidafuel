@@ -19,6 +19,13 @@
         }
       },
       {
+        "type": "text",
+        "id": "product_pg_meta_title",
+        "label": {
+          "en": "Meta title"
+        }
+      },
+      {
         "type": "textarea",
         "id": "product_pg_meta_descrip",
         "label": {
