@@ -84,6 +84,7 @@
 	--tertiary-color: #e68227;
 	--white-color: #fff;
 	--offwhite-color: #fff8f8;
+	--box-shadow-default: 0px 3px 7px -6px black;
 }
 @import url("https://use.typekit.net/xbq8sxe.css");
 @font-face {
@@ -1706,6 +1707,12 @@ html {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+@media screen and (min-width: 750px) {
+	.page-width__wide {
+		max-width: 1500px;
+	}
 }
 
 .main-content {
@@ -4802,7 +4809,7 @@ hr {
 	top: -1px;
 	background: var(--white-color);
 	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-	box-shadow: 0px 3px 7px -6px black;
+	box-shadow: var(--box-shadow-default);
 	animation: 1s ease-out 0s 1 slideInFromTop;
 }
 .header-tab .tab-container--right {
@@ -6400,6 +6407,7 @@ hr {
 	width: 97%;
 	position: absolute;
 	top: 38px;
+	left: 0;
 }
 @media only screen and (max-width: 749px) {
 	.feature-row__image {
@@ -7522,6 +7530,13 @@ svg:not(:root).svg-inline--fa {
 	-ms-flex-direction: column;
 	flex-direction: column;
 }
+
+@media only screen and (min-width: 750px) {
+	.medium-up--flex-row {
+		flex-direction: row;
+	}
+}
+
 .flex-align-center {
 	align-items: center;
 }
@@ -7806,6 +7821,39 @@ iframe#preview-bar-iframe {
 	margin-bottom: 0;
 }
 
+.pt-2 {
+	padding-top: 2em;
+}
+
+@media screen and (min-width: 750px) {
+	.pt-2 {
+		padding-top: 0;
+	}
+}
+
+.my-2 {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+@media screen and (min-width: 750px) {
+	.my-2 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+.py-2 {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+@media screen and (min-width: 750px) {
+	.py-2 {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
 .sub {
 	font-style: normal;
 	font-weight: 600;

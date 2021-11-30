@@ -17,20 +17,35 @@
             <h4 class="text text-white">{{ section.settings.s_one_text }}</h4>
           </div>
           <div class="cell image">
-            {% capture img_id %}FeatureRowImage-{{ section.id }}{% endcapture %}
-            {%- assign img_url = section.settings.s_one_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-            {% render 'image-style' with image: section.settings.s_one_image, width: 545, height: 545, small_style: true, wrapper_id: wrapper_id, img_id: img_id %}
-            <div id="{{ wrapper_id }}" class="feature-row__image-wrapper js">
-              <a href="{{ section.settings.s_one_img_link }}">
-                <img class="lazyload" id="{{ img_id }}"
-                  src="{{ section.settings.s_one_image | image_url: width: 600 }}"
-                  data-src="{{ section.settings.s_one_image | image_url }}" 
-                  data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
-                  data-aspectratio="{{ section.settings.s_one_image.aspect_ratio }}" 
-                  data-sizes="auto" 
-                  alt="{{ section.settings.s_one_image.alt | escape }}">
-              </a>
-            </div>
+
+            {% if section.settings.s_one_image != blank %}
+              {% capture img_id %}FeatureRowImage-section_one-{{ section.id }}{% endcapture %}
+              {% capture wrapper_id %}FeatureRowImageWrapper-section_one-{{ section.id }}{% endcapture %}
+              {%- assign img_url = section.settings.s_one_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              {% render 'image-style' with image: section.settings.s_one_image, width: 470, height: 470, small_style: true,
+              wrapper_id: wrapper_id, img_id: img_id %}
+              <div id="{{ wrapper_id }}" class="feature-row__image-wrapper js">
+                <div style="padding-top:{{ 1 | divided_by: section.settings.s_one_image.aspect_ratio | times: 120}}%;" data-image-loading-animation>
+                  <a href="{{ section.settings.s_one_img_link }}">
+                    <img id="{{ img_id }}" 
+                      class="feature-row__image lazyload"
+                      data-src="{{ section.settings.s_one_image | image_url }}"
+                      data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
+                      data-aspectratio="{{ section.settings.s_one_image.aspect_ratio }}" 
+                      data-sizes="auto"
+                      alt="{{ section.settings.s_one_image.alt | escape }}"
+                      loading="lazy">
+                  </a>
+                </div>
+              </div>
+              <noscript>
+                {{ section.settings.image | img_url: '600x600', scale: 2 | img_tag: section.settings.image.alt, 'feature-row__image'
+                }}
+              </noscript>
+            {% else %}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+
           </div>
         </div>
       </div>
@@ -51,11 +66,31 @@
           <div class="cell image">
             <div class="table">
               <div class="cell centertext">
-              <img class="lazyload" id="{{ img_id }}" src="{{ section.settings.s_two_image | image_url: width: 600 }}"
-                data-src="{{ section.settings.s_two_image | image_url }}"
-                data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
-                data-aspectratio="{{ section.settings.s_one_image.aspect_ratio }}" data-sizes="auto"
-                alt="{{ section.settings.s_two_image.alt | escape }}">
+                {% if section.settings.s_two_image != blank %}
+                  {% capture img_id %}FeatureRowImage-section_two-{{ section.id }}{% endcapture %}
+                  {% capture wrapper_id %}FeatureRowImageWrapper-section_two-{{ section.id }}{% endcapture %}
+                  {%- assign img_url = section.settings.s_two_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                  {% render 'image-style' with image: section.settings.s_two_image, width: 360, height: 360, small_style: true,
+                  wrapper_id: wrapper_id, img_id: img_id %}
+                  <div id="{{ wrapper_id }}" class="feature-row__image-wrapper js">
+                    <div style="padding-top:{{ 1 | divided_by: section.settings.s_two_image.aspect_ratio | times: 100}}%;" data-image-loading-animation>
+                      <img id="{{ img_id }}" 
+                        class="feature-row__image lazyload"
+                        data-src="{{ section.settings.s_two_image | image_url }}"
+                        data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
+                        data-aspectratio="{{ section.settings.s_two_image.aspect_ratio }}" 
+                        data-sizes="auto"
+                        alt="{{ section.settings.s_two_image.alt | escape }}"
+                        loading="lazy">
+                    </div>
+                  </div>
+                  <noscript>
+                    {{ section.settings.image | img_url: '600x600', scale: 2 | img_tag: section.settings.image.alt, 'feature-row__image'
+                    }}
+                  </noscript>
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
               </div>
               <div class="cell bullets trade_gothic_bold">
                 <ul>
@@ -73,26 +108,67 @@
     
     {%- comment -%} REQUEST FORM {%- endcomment -%}
     <div class="healthcare-form py-2">
-      <div class="wrapper">
+      <div class="background-blue">
+        <div class="page-width__wide">
+          <h2 class="title text-white trade_gothic_condensed_heavy desktop-hide">{{ section.settings.s_three_title }}</h2>
+          <h3 class="subtext text-white desktop-hide">{{ section.settings.s_three_text }}</h3>
+          <p class="txt-minor text-white">Developed by dieticians</p>
+        </div>
+      </div>
+      <div class="page-width page-width__wide">
+
         <div class="inner text-white">
-          <div class="cols">
-            <div class="col one-third">
-              <h2 class="title trade_gothic_condensed_heavy">{{ section.settings.s_three_title }}</h2>
-              <h4 class="text">{{ section.settings.s_three_text }}</h4>
-            </div>
-            <div class="col one-third">
-              <div class="table">
-                <div class="cell">
-                <img class="lazyload" id="{{ img_id }}" src="{{ section.settings.s_three_image | image_url: width: 600 }}"
-                  data-src="{{ section.settings.s_three_image | image_url }}"
-                  data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
-                  data-aspectratio="{{ section.settings.s_one_image.aspect_ratio }}" data-sizes="auto"
-                  alt="{{ section.settings.s_three_image.alt | escape }}">
-                </div>
+          <div class="cols display-flexbox my-2">
+            <div class="col one-whole copy medium-up--four-eighths">
+              <div>
+                <h2 class="title trade_gothic_condensed_heavy">{{ section.settings.s_three_title }}</h2>
+                <h3 class="subtext">{{ section.settings.s_three_text }}</h3>
+                <p class="txt-minor desktop-hide">Developed by dieticians</p>
               </div>
             </div>
-            <div class="col one-third">
-              <h2>Form goes here</h2>
+            <div class="col one-whole medium-up--two-eighths">
+              <div class="cell">
+                {% if section.settings.s_three_image != blank %}
+                  {% capture img_id %}FeatureRowImage-section_three-{{ section.id }}{% endcapture %}
+                  {% capture wrapper_id %}FeatureRowImageWrapper-section_three-{{ section.id }}{% endcapture %}
+                  {%- assign img_url = section.settings.s_three_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                  <div id="{{ wrapper_id }}" class="feature-row__image-wrapper js">
+                    <div data-image-loading-animation>
+                      <img id="{{ img_id }}" 
+                        class="lazyload"
+                        data-src="{{ section.settings.s_three_image | image_url }}"
+                        data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
+                        data-aspectratio="{{ section.settings.s_three_image.aspect_ratio }}" 
+                        data-sizes="auto"
+                        alt="{{ section.settings.s_three_image.alt | escape }}"
+                        loading="lazy">
+                    </div>
+                  </div>
+                  <noscript>
+                    {{ section.settings.image | img_url: '600x600', scale: 2 | img_tag: section.settings.image.alt, 'feature-row__image'
+                    }}
+                  </noscript>
+                {% else %}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+            </div>
+            <div class="col one-whole medium-up--two-eighths my-2">
+              <form id="form1" class="form form__hubspot">
+                <fieldset class="display-flex flex-col">
+                  <legend class="trade_gothic_condensed_bold">Fill out the form<br><span class="txt--minor">to get your free sample</span></legend>
+                  <p class="formReq text-right txt--minor"><abbr title="required">*</abbr> Required fields</p>
+                  <label for="name"><input type="text" class="needsclick" placeholder="Name & Last Name*" name="name" maxlength="50" required minlength="3"></label>
+                  <label for="email"><input type="email" class="needsclick" placeholder="Email*" name="email" maxlength="200" required minlength="3"></label>
+                  <label for="phone"><input type="phone" class="needsclick" placeholder="Phone Number*" name="phone" maxlength="20" required minlength="3"></label>
+                  <label for="institution"><input type="text" class="needsclick" placeholder="Instituition Name*" name="institution" maxlength="100" required></label>
+                  <label for="job"><input type="text" class="needsclick" placeholder="Job Title*" name="job" maxlength="50" required></label>
+                  <label for="instAddress"><input type="text" class="needsclick" placeholder="Instituition address*" name="instAddress" maxlength="200" required minlength="3"></label>
+                  <p class="policy txt--minor text-center">We never spam or share your information. Manage your subscription or opt-out at anytime. View our <a href="https://www.vida-fuel.com/pages/privacy-policy" target="_blank">privacy policy</a>.</p>
+                  <button type="submit" class="frmButton btn" id="submitForm">GET MY FREE SAMPLE</button>
+                </fieldset>
+            <!-- <div class="formError" id="formErrors">Form has invalid or missing information, please check your data and try again.</div> -->
+            </form>
             </div>
           </div>
         </div>
@@ -101,69 +177,47 @@
 
     {%- comment -%} WHITE PAPER {%- endcomment -%}
     <div class="healthcare-white-paper page-width display-flexbox py-2">
-        <div class="cell flex-half">
-          <h2>{{ section.settings.s_four_title }}</h2>
-          <h5>{{ section.settings.s_four_subtitle }}</h5>
-          <p>{{ section.settings.s_four_text }}</p>
+      <div class="inner">
+        <div class="cols display-flexbox flex-col medium-up--flex-row flex-align-center">
+          <div class="col medium-up--one-half">
+            <h2 class="h1">{{ section.settings.s_four_title }}</h2>
+            <h5>{{ section.settings.s_four_subtitle }}</h5>
+            <p>{{ section.settings.s_four_text }}</p>
+          </div>
+          <div class="col medium-up--one-half image display-flexbox flex-col flex-align-center my-2">
+            <a href="{{ section.settings.s_four_btn_url }}" target="_blank">
+              <img loading="lazy" id="{{ img_id }}" src="{{ section.settings.s_four_image | image_url: width: 180 }}"
+                data-src="{{ section.settings.s_four_image | image_url }}"
+                data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
+                data-aspectratio="{{ section.settings.s_one_image.aspect_ratio }}" data-sizes="auto"
+                alt="{{ section.settings.s_four_image.alt | escape }}">
+            </a>
+            {%- comment -%}
+              <a href="{{ section.settings.s_four_btn_url }}" target="_blank" class="button blue">{{ section.settings.s_four_btn_title }}</a>
+            {%- endcomment -%}
+            <button class="btn" onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: false});">Download</button>
+          </div>
         </div>
-        <div class="image display-flexbox flex-half flex-col flex-align-center">
-          <a href="{{ section.settings.s_four_btn_url }}" target="_blank">
-            <img loading="lazy" id="{{ img_id }}" src="{{ section.settings.s_four_image | image_url: width: 180 }}"
-              data-src="{{ section.settings.s_four_image | image_url }}"
-              data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
-              data-aspectratio="{{ section.settings.s_one_image.aspect_ratio }}" data-sizes="auto"
-              alt="{{ section.settings.s_four_image.alt | escape }}">
-          </a>
-          <a href="{{ section.settings.s_four_btn_url }}" target="_blank" class="button blue">{{ section.settings.s_four_btn_title }}</a>
-        </div>
+      </div>
     </div>
 
     {%- comment -%} VIDEO {%- endcomment -%}
     <div class="healthcare-video py-2" id="wellness-protein">
-      <div class="wrapper">
-        <div class="inner page-width">
-          <div class="table">
-            <div class="cell">
-              <div class='embed-container'><iframe src='https://www.youtube.com/embed/B5wCtpjZWR4?controls=0' frameborder='0'
-                  allowfullscreen></iframe></div>
-            </div>
-            <div class="cell text">
-              <h2 class="text-white">{{ section.settings.s_five_title }}</h2>
-              <p class="text-white">{{ section.settings.s_five_text }}</p>
-            </div>
+      <div class="inner page-width">
+        <div class="cols">
+          <div class="col one-whole medium-up--one-half">
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/B5wCtpjZWR4?controls=0' frameborder='0'
+                allowfullscreen></iframe></div>
+          </div>
+          <div class="col one-whole medium-up--one-half text pt-2">
+            <h2 class="text-white">{{ section.settings.s_five_title }}</h2>
+            <p class="text-white">{{ section.settings.s_five_text }}</p>
           </div>
         </div>
       </div>
     </div>
 
-  <div id="hide">
-    
-    <!-- cta -->
-    {%- comment -%}
-    <div class="healthcare-cta">
-      <div class="wrapper">
-        <div class="inner centertext">
-          <div class="table">
-            <div class="cell">
-              <div class="item">
-                <img src="{{ 'healthcare-03.png' | asset_url }}" alt="" />
-                <p>Download white paper:<br />Clinical and financial value of Oral Nutrition Supplement programs</p>
-                <a href="https://cdn.shopify.com/s/files/1/0922/1906/files/2020-VIDAFUEL-White-Paper.pdf?v=1584484018" target="_blank" class="button">Download</a>
-              </div>
-            </div>
-            <div class="cell">
-              <div class="item">
-                <img src="{{ 'VidaFuel-Protein-wCup_new.png' | asset_url }}" alt="" />
-                <p>Shop our best-selling Protein Drinks!</p>
-                <a href="/collections/all/protein-drinks?sort_by=title-descending" class="button">Shop Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {%- endcomment -%}
-    <!-- distribution -->
+    {%- comment -%} distribution {%- endcomment -%}
     <div class="healthcare-distribution">
       <div class="wrapper">
         <div class="inner centertext">
@@ -173,7 +227,7 @@
       </div>
     </div>
     
-    <!-- contact -->
+    {%- comment -%} contact {%- endcomment -%}
     <div class="healthcare-contact">
       <div class="wrapper">
         <div class="inner centertext">
@@ -182,8 +236,71 @@
         </div>
       </div>
     </div>
+
+  {%- comment -%} KLAVIYO FORM {%- endcomment -%}
+  <div class="klaviyo_modal klaviyo_modal__custom" id="k_id_modal" style="display:none;">
+    <div class="klaviyo_inner">
+      <a href="#" class="klaviyo_close_modal klaviyo_header_close">×</a>
+      <form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate"
+        class="klaviyo_subscription_form">
+        <input type="hidden" name="g" value="PAxjHM">
+        <div class="klaviyo_fieldset">
+          <p class="klaviyo_header" style="text-align: left;">Download White Paper</p>
+          <p class="klaviyo_subheader" style="text-align: left;">Enter email to receive white paper download.</p>
+        </div>
+        <div class="klaviyo_fieldset">
+          <div class="klaviyo_field_group">
+            <label for="k_id_modal_$email">Email Address</label>
+            <input type="email" id="k_id_modal_$email" name="email">
+            <div class="display-flexbox" style="align-items: baseline;padding: 10px 6px;">
+              <input id="Healthcare Professional__3__5" aria-label="I am a healthcare professional." type="checkbox"
+                name="Healthcare Professional__3" style="margin-right: 10px;" />
+              <label for="Healthcare Professional__3__5"
+                style="display: flex; align-items: center; flex: 1 0 100%; padding-bottom: 8px; word-break: break-word; max-width: 100%; cursor: pointer;">I
+                am a healthcare professional.</label>
+            </div>
+          </div>
+        </div>
+        <div class="klaviyo_fine_print"></div>
+        <div class="klaviyo_form_actions" style="padding-top: 0;">
+          <button type="submit" class="klaviyo_submit_button" style='background: rgb(159, 202, 87); border-radius: 2px; border-style: solid; border-color: rgb(159, 202, 87); border-width: 5px; color: rgb(255, 255, 255); font-family: "Montserrat Bold", "Arial Black", "Arial Bold", Gadget, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0px; line-height: 1; white-space: normal; padding: 11px 10px; text-align: center; word-break: break-word; align-self: flex-end; cursor: pointer;'>
+            Sign Me Up!
+          </button>
+        </div>
+        <div class="klaviyo_below_submit"></div>
+      </form>
+    </div>
   </div>
+
 </div>
+
+<style>
+  .klaviyo_modal__custom {
+    display: flex;
+    z-index: 90000;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    background-color: rgba(20, 20, 20, 0.6);
+    animation-duration: 0.35s;
+    animation-timing-function: ease;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: klaviyo-fadein;
+  }
+  .klaviyo_modal__custom .klaviyo_inner {
+    top: unset;
+  }
+</style>
+
+<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
 
 {% schema %}
   {
