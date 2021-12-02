@@ -59,9 +59,9 @@
           <div class="cell info">
             <h2 class="title trade_gothic_condensed_bold">{{ section.settings.s_two_title }}</h2>
             <p class="text">{{ section.settings.s_two_text }}</p>
-            <a href="{{ section.settings.s_two_btn_url }}"
-              target="_blank" 
-              class="button blue">{{ section.settings.s_two_btn_title }}</a>
+
+            <button class="btn blue" id="modal_simple_btn">{{ section.settings.s_two_btn_title }}</button>
+
           </div>
           <div class="cell image">
             <div class="table">
@@ -205,17 +205,13 @@
             <div class='embed-container'>
               <div id="hcp_video_cover" style="display: block;"
                 onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
-                <img src="https://cdn.shopify.com/s/files/1/0922/1906/files/Vidafuel-Wellness-Protein-Tutorial-cover.jpg?v=1638373246"
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0922/1906/files/Vidafuel-Wellness-Protein-Tutorial-cover.jpg?v=1638373246"
                   style="cursor:pointer" />
               </div>
-              <iframe style="display: none;" 
-                id="hcp_video"
-                width="560" 
-                height="315"
-                src="https://www.youtube-nocookie.com/embed/B5wCtpjZWR4" 
-                title="YouTube video player" 
-                frameborder="0"
-                enablejsapi="1" 
+              <iframe style="display: none;" id="hcp_video" width="560" height="315"
+                src="https://www.youtube-nocookie.com/embed/B5wCtpjZWR4" title="YouTube video player" frameborder="0"
+                enablejsapi="1"
                 allow="accelerometer; modestbranding; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
                 allowfullscreen></iframe>
             </div>
@@ -296,6 +292,15 @@
 
 <script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
 
+    <!-- hcp modal content -->
+    <div class="modal-simple">
+      <div class="modal-simple__content">
+        <span class="modal-simple__close-btn">&times;</span>
+        <img src="{{ section.settings.s_two_modal_image | image_url }}"
+          alt="{{ section.settings.s_two_modal_image.alt | escape }}" loading="lazy">
+      </div>
+    </div>
+
 {% schema %}
   {
   "name": "Content",
@@ -356,9 +361,9 @@
       "default": "Comp Chart"
     },
     {
-      "type": "url",
-      "id": "s_two_btn_url",
-      "label": "Button URL"
+      "type": "image_picker",
+      "id": "s_two_modal_image",
+      "label": "Button modal image"
     },
     {
       "type": "image_picker",

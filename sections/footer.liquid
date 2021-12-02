@@ -159,6 +159,24 @@
       {% endunless %}
     </div>
   </div>
+
+  <script>
+    let modalBtn = document.getElementById("modal_simple_btn")
+    let modal = document.querySelector(".modal-simple")
+    let closeBtn = document.querySelector(".modal-simple__close-btn")
+    modalBtn.onclick = function () {
+      modal.style.display = "block"
+    }
+    closeBtn.onclick = function () {
+      modal.style.display = "none"
+    }
+    window.onclick = function (e) {
+      if (e.target == modal) {
+        modal.style.display = "none"
+      }
+    }
+  </script>
+
 </footer>
 
 {% schema %}

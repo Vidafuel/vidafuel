@@ -216,25 +216,19 @@
             {%- endcomment -%}
 
             <div class="product-form__item product-form__item--submit{% if section.settings.enable_payment_button %} product-form__item--payment-button{% endif %}{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
-
+              {% unless current_variant.available %}
               <button 
                 class="shopify-form-button button product-form__cart-submit" type="button" style="display: none"
                 onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });">
                 Temporarily out of stock – click here to be notified when back in stock
               </button>
-
+              {% else %}
               <button 
-                {% unless current_variant.available %} 
-                  onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });"
-                  type="button"
-                {% else %} 
-                  type="submit" 
-                  name="add" 
-                  data-add-to-cart 
-                {% endunless %}
+                type="submit" 
+                name="add" 
+                data-add-to-cart 
                 aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" 
-                class="button product-form__cart-submit shopify-add-to-cart-button {% if product.selected_or_first_available_variant.metafields.bold_rp.rp_group_id %} bold-hidden{% endif %}
-">
+                class="button product-form__cart-submit shopify-add-to-cart-button {% if product.selected_or_first_available_variant.metafields.bold_rp.rp_group_id %} bold-hidden{% endif %}">
                 {%- comment -%}button additional class before Mosheh's change
                 {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
                 {%- endcomment -%}

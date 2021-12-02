@@ -86,7 +86,7 @@
 	--offwhite-color: #fff8f8;
 	--box-shadow-default: 0px 3px 7px -6px black;
 }
-@import url("https://use.typekit.net/xbq8sxe.css");
+/* @import url("https://use.typekit.net/xbq8sxe.css");
 @font-face {
 	font-family: Lato;
 	font-weight: 800;
@@ -145,9 +145,9 @@
 			format("woff2"),
 		url("https://fonts.shopifycdn.com/montserrat/montserrat_i7.25524241b12d864609c85325613d60efcf1a87e3.woff?&hmac=52d5d1f52cacaac04dec2f10df0bcaeec767bd41569a43d36480d4a16030455d")
 			format("woff");
-}
+} */
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 /*================ Gift Cards ================*/
 /*================ Z-index ================*/
@@ -4245,8 +4245,8 @@ hr {
 @media screen and (min-width: 750px) {
 	.products .collection__description {
 		padding-top: 3em;
-    padding-bottom: 8em;
-		}
+		padding-bottom: 8em;
+	}
 }
 .collection-hero__title.collection-description {
 	font-size: 15px;
@@ -7025,7 +7025,7 @@ hr {
 	bottom: 0;
 	left: 0;
 	background-color: #fff;
-	opacity: .4;
+	opacity: 0.4;
 }
 
 .custom-content {
@@ -7673,6 +7673,12 @@ img.hover-shadow {
 	z-index: 9999999999;
 }
 
+@media screen and (min-width: 750px) {
+	.close {
+		right: 22vw;
+	}
+}
+
 .close:hover,
 .close:focus {
 	color: #999;
@@ -7753,25 +7759,25 @@ iframe#preview-bar-iframe {
 
 /* SHOP TABS  */
 .shop-tabs .contentWrapper {
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    text-align: center
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-    .shop-tabs .contentWrapper {
-        width:100%
-    }
+	.shop-tabs .contentWrapper {
+		width: 100%;
+	}
 }
 
 .shop-tabs .tabsWrapper {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 3rem;
-		border-bottom: 2px solid var(--primary-color);
-    z-index: 10
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 3rem;
+	border-bottom: 2px solid var(--primary-color);
+	z-index: 10;
 }
 @media screen and (min-width: 750px) {
 	.shop-tabs .tabsWrapper {
@@ -7781,7 +7787,7 @@ iframe#preview-bar-iframe {
 
 .tabs .btn {
 	background-color: var(--white-color);
-	color: var(--primary-color);;
+	color: var(--primary-color);
 	transition: background-color 0.2s ease-in;
 }
 .tabs li.active {
@@ -7790,30 +7796,31 @@ iframe#preview-bar-iframe {
 	transition: background-color 0.2s ease-in;
 }
 .tab-products__product-block.container {
-    scroll-margin-top: 50px !important;
+	scroll-margin-top: 50px !important;
 }
 .tab-products__product-block {
-    margin-bottom: 68px;
+	margin-bottom: 68px;
 }
 @media screen and (min-width: 768px) {
-    .shop-tabs .next-tab {
-        display:none!important
-    }
+	.shop-tabs .next-tab {
+		display: none !important;
+	}
 }
 
-.shop-tabs .next-tab,.shop-tabs .previous-tab {
-    position: absolute;
-    padding: 0;
-    top: 0;
-    background-color: #fff;
-    border-radius: 50%;
-    z-index: 12;
-    cursor: pointer
+.shop-tabs .next-tab,
+.shop-tabs .previous-tab {
+	position: absolute;
+	padding: 0;
+	top: 0;
+	background-color: #fff;
+	border-radius: 50%;
+	z-index: 12;
+	cursor: pointer;
 }
 
 .shop-tabs .next-tab {
-    right: 30px;
-    top: 15px
+	right: 30px;
+	top: 15px;
 }
 
 /* override utilities */
@@ -7857,4 +7864,76 @@ iframe#preview-bar-iframe {
 .sub {
 	font-style: normal;
 	font-weight: 600;
+}
+
+/* modal html5 & css3 */
+/* https://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/ */
+.modal-simple {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	height: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-simple:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -4px;
+	box-sizing: border-box;
+}
+.modal-simple__content {
+	position: absolute;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	width: 600px;
+	margin: 30px auto;
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+	width: 75%;
+	top: 0vh;
+	left: 10vw;
+	bottom: calc(140vh + 88vh);
+}
+.modal-simple__close-btn {
+	color: #d3d3d3;
+	font-size: 74px;
+	font-weight: 700;
+	position: absolute;
+	top: 10vh;
+	right: -4vw;
+	cursor: pointer;
+}
+.modal-simple__close-btn:hover {
+	color: darkgray;
+}
+@-webkit-keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
 }
