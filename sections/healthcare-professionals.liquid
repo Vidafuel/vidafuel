@@ -245,61 +245,18 @@
       </div>
     </div>
 
-  {%- comment -%} KLAVIYO FORM 
-  <div class="klaviyo_modal klaviyo_modal__custom" id="k_id_modal" style="display:none;">
-    <div class="klaviyo_inner">
-      <a href="#" class="klaviyo_close_modal klaviyo_header_close">×</a>
-      <form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate"
-        class="klaviyo_subscription_form">
-        <input type="hidden" name="g" value="PAxjHM">
-        <div class="klaviyo_fieldset">
-          <p class="klaviyo_header" style="text-align: left;">Download White Paper</p>
-          <p class="klaviyo_subheader" style="text-align: left;">Enter email to receive white paper download.</p>
-        </div>
-        <div class="klaviyo_fieldset">
-          <div class="klaviyo_field_group">
-            <label for="k_id_modal_$email">Email Address</label>
-            <input type="email" id="k_id_modal_$email" name="email">
-            <div class="display-flexbox" style="align-items: baseline;padding: 10px 6px;">
-              <input id="Healthcare Professional__3__5" aria-label="I am a healthcare professional." type="checkbox"
-                name="Healthcare Professional__3" style="margin-right: 10px;" />
-              <label for="Healthcare Professional__3__5"
-                style="display: flex; align-items: center; flex: 1 0 100%; padding-bottom: 8px; word-break: break-word; max-width: 100%; cursor: pointer;">I
-                am a healthcare professional.</label>
-            </div>
-          </div>
-        </div>
-        <div class="klaviyo_fine_print"></div>
-        <div class="klaviyo_form_actions" style="padding-top: 0;">
-          <button type="submit" class="klaviyo_submit_button" style='background: rgb(159, 202, 87); border-radius: 2px; border-style: solid; border-color: rgb(159, 202, 87); border-width: 5px; color: rgb(255, 255, 255); font-family: "Montserrat Bold", "Arial Black", "Arial Bold", Gadget, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0px; line-height: 1; white-space: normal; padding: 11px 10px; text-align: center; word-break: break-word; align-self: flex-end; cursor: pointer;'>
-            Sign Me Up!
-          </button>
-        </div>
-        <div class="klaviyo_below_submit"></div>
-      </form>
-    </div>
-  </div>
-  {%- endcomment -%}
 </div>
-
-<style>
-  .klaviyo_modal__custom {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-  }
-</style>
 
 <script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
 
-    <!-- hcp modal content -->
-    <div class="modal-simple">
-      <div class="modal-simple__content">
-        <span class="modal-simple__close-btn">&times;</span>
-        <img src="{{ section.settings.s_two_modal_image | image_url }}"
-          alt="{{ section.settings.s_two_modal_image.alt | escape }}" loading="lazy">
-      </div>
-    </div>
+{%- comment -%} hcp modal content {%- endcomment -%}
+<div class="modal-simple">
+  <span class="modal-simple__close-btn">&times;</span>
+  <div class="modal-simple__content">
+    <img src="{{ section.settings.s_two_modal_image | image_url }}"
+      alt="{{ section.settings.s_two_modal_image.alt | escape }}" loading="lazy">
+  </div>
+</div>
 
 {% schema %}
   {

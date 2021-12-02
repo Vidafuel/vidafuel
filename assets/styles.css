@@ -7866,6 +7866,12 @@ iframe#preview-bar-iframe {
 	font-weight: 600;
 }
 
+.klaviyo_modal__custom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 /* modal html5 & css3 */
 /* https://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/ */
 .modal-simple {
@@ -7877,9 +7883,17 @@ iframe#preview-bar-iframe {
 	left: 0;
 	z-index: 5;
 	width: 100%;
-	height: auto;
 	background-color: rgb(0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.5);
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 100vh;
+}
+@media screen and (min-width: 750px) {
+	.modal-simple {
+		height: 100%;
+		width: 100vw;
+	}
 }
 .modal-simple:before {
 	content: "";
@@ -7891,29 +7905,46 @@ iframe#preview-bar-iframe {
 }
 .modal-simple__content {
 	position: absolute;
-	box-sizing: border-box;
 	display: flex;
 	align-items: center;
-	width: 600px;
-	margin: 30px auto;
+	margin: 10vh auto;
 	-webkit-animation-name: animatetop;
 	-webkit-animation-duration: 0.4s;
 	animation-name: animatetop;
 	animation-duration: 0.4s;
-	width: 75%;
-	top: 0vh;
-	left: 10vw;
-	bottom: calc(140vh + 88vh);
+	width: 95%;
+	left: 0;
+	top: 0;
+	right: 0;
 }
+
+@media screen and (min-width: 750px) {
+	.modal-simple__content {
+		width: 75%;
+		top: 25vh;
+	}
+}
+
 .modal-simple__close-btn {
 	color: #d3d3d3;
-	font-size: 74px;
+	font-size: 55px;
 	font-weight: 700;
 	position: absolute;
-	top: 10vh;
-	right: -4vw;
+	top: 0;
+	left: 90%;
 	cursor: pointer;
 }
+
+@media screen and (min-width: 750px) {
+	.modal-simple__close-btn {
+		font-size: 75px;
+		right: 0;
+		top: 32vh;
+		color: var(--primary-color);
+		z-index: 9;
+	}
+}
+
 .modal-simple__close-btn:hover {
 	color: darkgray;
 }
