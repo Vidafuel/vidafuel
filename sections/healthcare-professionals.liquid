@@ -119,14 +119,14 @@
 
         <div class="inner text-white">
           <div class="cols display-flexbox my-2">
-            <div class="col one-whole copy medium-up--four-eighths">
+            <div class="col one-whole copy medium-up--three-eighths">
               <div>
                 <h2 class="title trade_gothic_condensed_heavy">{{ section.settings.s_three_title }}</h2>
                 <h3 class="subtext">{{ section.settings.s_three_text }}</h3>
                 <p class="txt-minor desktop-hide">Developed by dieticians</p>
               </div>
             </div>
-            <div class="col one-whole medium-up--two-eighths">
+            <div class="col one-whole medium-up--three-eighths">
               <div class="cell">
                 {% if section.settings.s_three_image != blank %}
                   {% capture img_id %}FeatureRowImage-section_three-{{ section.id }}{% endcapture %}
@@ -185,16 +185,11 @@
             <p>{{ section.settings.s_four_text }}</p>
           </div>
           <div class="col medium-up--one-half image display-flexbox flex-col flex-align-center my-2">
-            <a href="{{ section.settings.s_four_btn_url }}" target="_blank">
-              <img loading="lazy" id="{{ img_id }}" src="{{ section.settings.s_four_image | image_url: width: 180 }}"
-                data-src="{{ section.settings.s_four_image | image_url }}"
-                data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
-                data-aspectratio="{{ section.settings.s_one_image.aspect_ratio }}" data-sizes="auto"
-                alt="{{ section.settings.s_four_image.alt | escape }}">
-            </a>
-            {%- comment -%}
-              <a href="{{ section.settings.s_four_btn_url }}" target="_blank" class="button blue">{{ section.settings.s_four_btn_title }}</a>
-            {%- endcomment -%}
+            <img loading="lazy" id="{{ img_id }}" src="{{ section.settings.s_four_image | image_url: width: 180 }}"
+              data-src="{{ section.settings.s_four_image | image_url }}"
+              data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
+              data-aspectratio="{{ section.settings.s_one_image.aspect_ratio }}" data-sizes="auto"
+              alt="{{ section.settings.s_four_image.alt | escape }}">
             <button class="btn" onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: false});">Download</button>
           </div>
         </div>
@@ -206,8 +201,25 @@
       <div class="inner page-width">
         <div class="cols">
           <div class="col one-whole medium-up--one-half">
-            <div class='embed-container'><iframe src='https://www.youtube.com/embed/B5wCtpjZWR4?controls=0' frameborder='0'
-                allowfullscreen></iframe></div>
+
+            <div class='embed-container'>
+              <div id="hcp_video_cover" style="display: block;"
+                onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                <img src="https://cdn.shopify.com/s/files/1/0922/1906/files/Vidafuel-Wellness-Protein-Tutorial-cover.jpg?v=1638373246"
+                  style="cursor:pointer" />
+              </div>
+              <iframe style="display: none;" 
+                id="hcp_video"
+                width="560" 
+                height="315"
+                src="https://www.youtube-nocookie.com/embed/B5wCtpjZWR4" 
+                title="YouTube video player" 
+                frameborder="0"
+                enablejsapi="1" 
+                allow="accelerometer; modestbranding; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                allowfullscreen></iframe>
+            </div>
+            
           </div>
           <div class="col one-whole medium-up--one-half text pt-2">
             <h2 class="text-white">{{ section.settings.s_five_title }}</h2>
@@ -237,7 +249,7 @@
       </div>
     </div>
 
-  {%- comment -%} KLAVIYO FORM {%- endcomment -%}
+  {%- comment -%} KLAVIYO FORM 
   <div class="klaviyo_modal klaviyo_modal__custom" id="k_id_modal" style="display:none;">
     <div class="klaviyo_inner">
       <a href="#" class="klaviyo_close_modal klaviyo_header_close">×</a>
@@ -271,32 +283,14 @@
       </form>
     </div>
   </div>
-
+  {%- endcomment -%}
 </div>
 
 <style>
   .klaviyo_modal__custom {
-    display: flex;
-    z-index: 90000;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-    background-color: rgba(20, 20, 20, 0.6);
-    animation-duration: 0.35s;
-    animation-timing-function: ease;
-    animation-play-state: running;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-name: klaviyo-fadein;
-  }
-  .klaviyo_modal__custom .klaviyo_inner {
-    top: unset;
+   display: flex;
+   justify-content: center;
+   align-items: center;
   }
 </style>
 

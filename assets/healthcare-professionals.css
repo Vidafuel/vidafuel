@@ -419,9 +419,9 @@ a.button.blue:hover {
 	height: 38px;
 	width: 100%;
 }
-.needsclick:not([role="listbox"]) {
+/* .needsclick:not([role="listbox"]) {
 	border-radius: 50px !important;
-}
+} */
 ::placeholder {
 	color: #7acdc7;
 }
