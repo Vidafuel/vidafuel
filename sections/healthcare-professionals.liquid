@@ -225,11 +225,11 @@
       </div>
     </div>
 
-    {%- comment -%} distribution {%- endcomment -%}
+    {%- comment -%} SIX distribution {%- endcomment -%}
     <div class="healthcare-distribution">
       <div class="wrapper">
         <div class="inner centertext">
-          <div class="title uppercase">Distributed By</div>
+          <div class="title uppercase">{{ section.settings.s_six_title }}</div>
           <img src="{{ 'healthcare-05.png' | asset_url }}" alt="" />
         </div>
       </div>
@@ -425,6 +425,16 @@
       "id": "s_five_text",
       "label": "Text",
       "default": "Vidafuel is an outcomes-driven company dedicated to leading improvement in the nutritional therapy market. Our passionate team of dietitians and scientists leads development of best in class products that provide a superior nutritional profile and patient experience. Our mission is to educate, support and continue to develop innovative nutritional therapy products that enable patients to live longer, happier lives."
+    },
+    {
+      "type": "header",
+      "content": "Section six"
+    },
+        {
+      "type": "textarea",
+      "id": "s_six_title",
+      "label": "Title",
+      "default": "Distributed by"
     }
   ]
   }
