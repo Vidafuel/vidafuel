@@ -299,9 +299,9 @@ a.button.blue:hover {
 	padding-left: 22px;
 	padding-right: 22px;
 }
-.healthcare-form .copy {
+/* .healthcare-form .copy {
 	display: none;
-}
+} */
 .healthcare-form .background-blue {
 	padding-left: 22px;
 	padding-right: 22px;
@@ -309,7 +309,7 @@ a.button.blue:hover {
 	padding-top: 2em;
 }
 @media screen and (min-width: 750px) {
-	.background-blue {
+	/* .background-blue {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -327,7 +327,7 @@ a.button.blue:hover {
 		width: 1500px;
 		margin: 0 auto;
 		padding: 0 22px;
-	}
+	} */
 	.healthcare-form .page-width__wide {
 		position: relative;
 	}
@@ -717,3 +717,7 @@ a.button.blue:hover {
 	height: 100%;
 }
 
+.form-container {
+	padding: 1em;
+	background-color: var(--white-color);
+}

@@ -107,7 +107,8 @@
     </div>
     
     {%- comment -%} REQUEST FORM {%- endcomment -%}
-    <div class="healthcare-form py-2">
+    <div class="healthcare-form py-2 background-blue">
+{%- comment -%}
       <div class="background-blue">
         <div class="page-width__wide">
           <h2 class="title text-white trade_gothic_condensed_heavy desktop-hide">{{ section.settings.s_three_title }}</h2>
@@ -115,7 +116,8 @@
           <p class="txt-minor text-white">Developed by dieticians</p>
         </div>
       </div>
-      <div class="page-width page-width__wide">
+{%- endcomment -%}
+      <div class="page-width page-width">
 
         <div class="inner text-white">
           <div class="cols display-flexbox my-2">
@@ -123,7 +125,7 @@
               <div>
                 <h2 class="title trade_gothic_condensed_heavy">{{ section.settings.s_three_title }}</h2>
                 <h3 class="subtext">{{ section.settings.s_three_text }}</h3>
-                <p class="txt-minor desktop-hide">Developed by dieticians</p>
+                <p class="txt-minor">Developed by dieticians{{ section.settings.s_three_subtext }}</p>
               </div>
             </div>
             <div class="col one-whole medium-up--three-eighths">
@@ -154,6 +156,7 @@
               </div>
             </div>
             <div class="col one-whole medium-up--two-eighths my-2">
+              {%- comment -%}
               <form id="form1" class="form form__hubspot">
                 <fieldset class="display-flex flex-col">
                   <legend class="trade_gothic_condensed_bold">Fill out the form<br><span class="txt--minor">to get your free sample</span></legend>
@@ -168,7 +171,18 @@
                   <button type="submit" class="frmButton btn" id="submitForm">GET MY FREE SAMPLE</button>
                 </fieldset>
             <!-- <div class="formError" id="formErrors">Form has invalid or missing information, please check your data and try again.</div> -->
-            </form>
+              </form>
+              {%- endcomment -%}
+              <div class="form-container bk-white">
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                <script>
+                  hbspt.forms.create({
+                    region: "na1",
+                    portalId: "19971200",
+                    formId: "03a444a5-8a44-42ff-b7bd-34263b9df190"
+                  });
+                </script>
+              </div>
             </div>
           </div>
         </div>
@@ -366,6 +380,12 @@
       "id": "s_three_text",
       "label": "Subtext",
       "default": "Not all proteins are equal. See how Vidafuel is superior."
+    },
+    {
+      "type": "text",
+      "id": "s_three_subtext",
+      "label": "Subtext",
+      "default": "Developed by dieticians"
     },
     {
       "type": "image_picker",
