@@ -1,5 +1,104 @@
 {
   "sections": {
+    "163908444861c999ea": {
+      "type": "image-with-text",
+      "blocks": {
+        "1639084448a58c7e7f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "DIETITIAN DEVELOPED NUTRITION SOLUTIONS"
+          }
+        },
+        "1639084448a58c7e7f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Protein nutrition: Backed by science, made for you.<\/p>"
+          }
+        },
+        "1639084448a58c7e7f-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "\/products"
+          }
+        }
+      },
+      "block_order": [
+        "1639084448a58c7e7f-0",
+        "1639084448a58c7e7f-1",
+        "1639084448a58c7e7f-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/home-02-2x-updated.png",
+        "height": "adapt",
+        "color_scheme": "accent-1",
+        "layout": "text_first"
+      }
+    },
+    "1639084432953c1471": {
+      "type": "multicolumn",
+      "blocks": {
+        "16390844327d3f0c32-0": {
+          "type": "column",
+          "settings": {
+            "title": "PRODUCTS THAT SUPPORT YOU WHEN YOU NEED THEM THE MOST.",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16390844327d3f0c32-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2021-12-09_at_11.31.34_AM.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16390844327d3f0c32-0",
+        "16390844327d3f0c32-1"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "ADEQUATE NUTRITION IS THE FOUNDATION FOR A LONG, ACTIVE LIFE.",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vidafuel products make it more <strong>accessible, convenient & enjoyable.<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -37,32 +136,6 @@
         "color_scheme": "accent-2",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "ADEQUATE NUTRITION IS THE FOUNDATION FOR A LONG, ACTIVE LIFE.",
-            "heading_size": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Vidafuel products make it more <strong>accessible, convenient & enjoyable.<\/strong><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
       }
     },
     "video": {
@@ -130,32 +203,41 @@
         "show_rating": false
       }
     },
-    "1639084432953c1471": {
+    "163908469440159016": {
       "type": "multicolumn",
       "blocks": {
-        "16390844327d3f0c32-0": {
+        "1639084694c85ae57d-0": {
           "type": "column",
           "settings": {
-            "title": "PRODUCTS THAT SUPPORT YOU WHEN YOU NEED THEM THE MOST.",
-            "text": "",
+            "title": "MEET YOUR DAILY PROTEIN BOOSTER",
+            "text": "<p>SMALL BUT MIGHTY<\/p>",
             "link_label": "",
             "link": ""
           }
         },
-        "16390844327d3f0c32-1": {
+        "1639084694c85ae57d-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2021-12-09_at_11.31.34_AM.png",
-            "title": "",
-            "text": "",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1639084694c85ae57d-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "16390844327d3f0c32-0",
-        "16390844327d3f0c32-1"
+        "1639084694c85ae57d-0",
+        "1639084694c85ae57d-1",
+        "1639084694c85ae57d-2"
       ],
       "settings": {
         "title": "Multicolumn",
@@ -170,11 +252,13 @@
     }
   },
   "order": [
-    "image_banner",
+    "163908444861c999ea",
+    "1639084432953c1471",
     "rich_text",
+    "image_banner",
     "video",
     "multi_column",
     "featured_products",
-    "1639084432953c1471"
+    "163908469440159016"
   ]
 }
