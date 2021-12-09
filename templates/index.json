@@ -45,33 +45,73 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "heading": "ADEQUATE NUTRITION IS THE FOUNDATION FOR A LONG, ACTIVE LIFE.",
+            "heading_size": "h2"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
+            "text": "<p>Vidafuel products make it more <strong>accessible, convenient & enjoyable.<\/strong><\/p>"
           }
         }
       },
       "block_order": [
         "heading",
-        "text",
-        "button"
+        "text"
       ],
       "settings": {
         "color_scheme": "background-1",
         "full_width": true
+      }
+    },
+    "video": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "cover_image": "shopify:\/\/shop_images\/vidafuel-pour-wellness-protein.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=y4cw0jMrFjw",
+        "description": "",
+        "full_width": true
+      }
+    },
+    "multi_column": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-05.png",
+            "title": "WELLNESS PROTEIN",
+            "text": "<p>Quick & easy way to boost<br\/>your daily protein intake<\/p><p><\/p><p>Powerful combo of<br\/>whey + collagen protein<\/p><p><\/p><p>17g protein per 2oz shot<\/p>",
+            "link_label": "SHOP PROTEIN",
+            "link": "https:\/\/vidafuel.com\/collections\/all\/protein-drinks?sort_by=title-descending"
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chip_Graphic_Website_Asset_Full.png",
+            "title": "SNACKS",
+            "text": "<p>Convenient &<br\/>portion controlled<\/p><p>Controlled sugar,<br\/>sodium and fat<\/p><p>Only 80-120 calories<\/p>",
+            "link_label": "SHOP SNACKS",
+            "link": "https:\/\/vidafuel.com\/collections\/all\/protein-crisps?sort_by=title-descending"
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
       }
     },
     "featured_products": {
@@ -90,90 +130,32 @@
         "show_rating": false
       }
     },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "video": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": "Describe the video",
-            "image_padding": false
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false,
-            "image_padding": false,
-            "secondary_background": false
-          }
-        },
-        "collection": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_padding": false,
-            "color_scheme": "background-1"
-          }
-        }
-      },
-      "block_order": [
-        "video",
-        "product",
-        "collection"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "desktop_layout": "left",
-        "mobile_layout": "collage"
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "Video",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false
-      }
-    },
-    "multi_column": {
+    "1639084432953c1471": {
       "type": "multicolumn",
       "blocks": {
-        "column1": {
+        "16390844327d3f0c32-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "PRODUCTS THAT SUPPORT YOU WHEN YOU NEED THEM THE MOST.",
+            "text": "",
             "link_label": "",
             "link": ""
           }
         },
-        "column2": {
+        "16390844327d3f0c32-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2021-12-09_at_11.31.34_AM.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "16390844327d3f0c32-0",
+        "16390844327d3f0c32-1"
       ],
       "settings": {
         "title": "Multicolumn",
@@ -190,9 +172,9 @@
   "order": [
     "image_banner",
     "rich_text",
-    "featured_products",
-    "collage",
     "video",
-    "multi_column"
+    "multi_column",
+    "featured_products",
+    "1639084432953c1471"
   ]
 }
