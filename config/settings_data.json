@@ -36,7 +36,8 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo_width": 100,
+          "logo": "shopify:\/\/shop_images\/Vidafuel-logo-official.png",
+          "logo_width": 150,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "show_line_separator": true,
