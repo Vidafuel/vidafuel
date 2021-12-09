@@ -250,6 +250,60 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "163908469606a1b713": {
+      "type": "image-with-text",
+      "blocks": {
+        "163908469612a0c493-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "TODO:"
+          }
+        },
+        "163908469612a0c493-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Reviews here<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163908469612a0c493-0",
+        "163908469612a0c493-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/home-09.png",
+        "height": "adapt",
+        "color_scheme": "accent-1",
+        "layout": "text_first"
+      }
+    },
+    "1639085117b298d674": {
+      "type": "image-with-text",
+      "blocks": {
+        "1639085117d4baf919-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "DIETITIAN DEVELOPED SNACKS"
+          }
+        },
+        "1639085117d4baf919-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>HOW WE COMPARE<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1639085117d4baf919-0",
+        "1639085117d4baf919-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/home-12.png",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "text_first"
+      }
     }
   },
   "order": [
@@ -260,6 +314,8 @@
     "video",
     "multi_column",
     "featured_products",
-    "163908469440159016"
+    "163908469440159016",
+    "163908469606a1b713",
+    "1639085117b298d674"
   ]
 }
