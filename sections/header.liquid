@@ -509,6 +509,9 @@
       </a>
     </div>
   </header>
+  
+  {%- render 'nav-tab' -%}
+  
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
 {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
@@ -731,7 +734,28 @@
       "default": true,
       "label": "t:sections.header.settings.enable_sticky_header.label",
       "info": "t:sections.header.settings.enable_sticky_header.info"
-    }
+    },
+    {
+      "type": "header",
+      "content": "Header tab"
+    },
+    {
+      "type": "checkbox",
+      "id": "header_tab",
+      "label": "Show header tab",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "header_tab_text",
+      "label": "Text",
+      "default": "We're now on"
+    },
+		{
+      "type": "url",
+      "id": "header_tab_link",
+      "label": "Tag link"
+		}
   ]
 }
 {% endschema %}

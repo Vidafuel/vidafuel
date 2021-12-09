@@ -2265,6 +2265,58 @@ details[open] > .header__icon--menu .icon-hamburger {
   right: 2rem;
 }
 
+/* nav tab styles */
+
+.header-tab {
+    background: 0 0;
+    position: relative;
+    z-index: 1
+}
+
+.header-tab .tab-container {
+    position: absolute;
+    top: -1px;
+    background: var(--white-color);
+    padding: .5rem .5rem .5rem .5rem;
+    box-shadow: 0 3px 7px -6px #000;
+    animation: 1s ease-out 0s 1 slideInFromTop
+}
+
+.header-tab .tab-container--right {
+    right: 0
+}
+
+.header-tab .tab-container cite {
+    font-size: 70%
+}
+
+.header-tab .tab-container img {
+    width: 125px;
+    max-width: 70%
+}
+
+.header-tab .nav-addition {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center
+}
+
+@media only screen and (min-width: 750px) {
+    .header-tab .tab-container {
+        padding:1rem
+    }
+
+    .header-tab .tab-container cite {
+        font-size: 100%
+    }
+
+    .header-tab .tab-container img {
+        max-width: 100%
+    }
+}
+
+
 details-disclosure > details {
   position: relative;
 }
