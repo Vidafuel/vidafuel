@@ -218,8 +218,9 @@
         "1639084694c85ae57d-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/home-07_new.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -228,7 +229,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p><strong>Whey protein <\/strong>to support muscle mass & strength.<\/p><p><\/p><p><strong>Collagen protein <\/strong>to support skin, joint & bone health.<\/p><p><\/p><p><strong>No artificial sweeteners<\/strong>, ever.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -240,11 +241,11 @@
         "1639084694c85ae57d-2"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "",
         "image_width": "full",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "secondary",
         "button_label": "Button label",
         "button_link": "",
         "swipe_on_mobile": false
