@@ -84,6 +84,7 @@
       "type": "video",
       "settings": {
         "heading": "Video",
+        "cover_image": "shopify:\/\/shop_images\/Vidafuel-Wellness-Protein-Tutorial.png",
         "video_url": "https:\/\/www.youtube.com\/watch?v=B5wCtpjZWR4",
         "description": "",
         "full_width": false
