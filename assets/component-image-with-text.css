@@ -17,6 +17,10 @@
   margin-bottom: 0;
 }
 
+.image-with-text.image-with-text--full-width {
+  margin-top: 0;
+}
+
 .image-with-text__grid {
   overflow: hidden;
 }
