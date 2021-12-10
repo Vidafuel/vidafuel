@@ -1,1 +1,134 @@
-{"sections":{"main":{"type":"main-page","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1639156556f1f7aaff": {
+      "type": "image-with-text",
+      "blocks": {
+        "163915655632d9adf3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Clinical nutrition done right"
+          }
+        },
+        "163915655632d9adf3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dietitian Developed for Optimal Absorption.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163915655632d9adf3-0",
+        "163915655632d9adf3-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/home-05.png",
+        "height": "adapt",
+        "color_scheme": "accent-1",
+        "layout": "text_first"
+      }
+    },
+    "1639156579218b5f05": {
+      "type": "image-with-text",
+      "blocks": {
+        "163915657968c1f582-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Small but Mighty"
+          }
+        },
+        "163915657968c1f582-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Not all proteins are equal. See how Vidafuel is superior.<\/p>"
+          }
+        },
+        "163915657968c1f582-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Comp Chart",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "163915657968c1f582-0",
+        "163915657968c1f582-1",
+        "163915657968c1f582-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "163915671883655487": {
+      "type": "multicolumn",
+      "blocks": {
+        "16391567181da7a84b-1": {
+          "type": "column",
+          "settings": {
+            "title": "Small but Mighty",
+            "text": "<p>Not all proteins are equal. See how Vidafuel is superior.<\/p>",
+            "link_label": "Comp Chart",
+            "link": ""
+          }
+        },
+        "16391567181da7a84b-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/healthcare-02.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16391567181da7a84b-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>- 17g of complete protein in 2oz<\/p><p>- No dilution requiredEasy to swallow texture<\/p><p>- No artificial sweeteners or colors<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16391567181da7a84b-1",
+        "16391567181da7a84b-0",
+        "16391567181da7a84b-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "16391568488013a061": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=B5wCtpjZWR4",
+        "description": "",
+        "full_width": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639156556f1f7aaff",
+    "1639156579218b5f05",
+    "163915671883655487",
+    "16391568488013a061"
+  ]
+}
