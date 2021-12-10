@@ -32,40 +32,6 @@
         "layout": "text_first"
       }
     },
-    "1639156579218b5f05": {
-      "type": "image-with-text",
-      "blocks": {
-        "163915657968c1f582-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Small but Mighty"
-          }
-        },
-        "163915657968c1f582-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Not all proteins are equal. See how Vidafuel is superior.<\/p>"
-          }
-        },
-        "163915657968c1f582-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Comp Chart",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "163915657968c1f582-0",
-        "163915657968c1f582-1",
-        "163915657968c1f582-2"
-      ],
-      "settings": {
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first"
-      }
-    },
     "163915671883655487": {
       "type": "multicolumn",
       "blocks": {
@@ -127,7 +93,6 @@
   "order": [
     "main",
     "1639156556f1f7aaff",
-    "1639156579218b5f05",
     "163915671883655487",
     "16391568488013a061"
   ]
