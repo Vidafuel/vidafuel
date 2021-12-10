@@ -11,7 +11,9 @@
     {%- elsif request.path == '/products' -%}
       <link rel="canonical" href="https://vidafuel.com/products">
     {%- else -%}
-    <link rel="canonical" href="{{ canonical_url }}">
+      <link rel="canonical" href="{{ canonical_url }}">      
+    {%- endif -%}
+
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
     {%- if settings.favicon != blank -%}
