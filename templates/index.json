@@ -69,190 +69,6 @@
         "full_width": true
       }
     },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "medium"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/home-05.png",
-        "image_2": "shopify:\/\/shop_images\/Chip_Graphic_Website_Asset_Full.png",
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "flex-end",
-        "show_text_box": false,
-        "image_overlay_opacity": 0,
-        "color_scheme": "accent-2",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "Video",
-        "cover_image": "shopify:\/\/shop_images\/vidafuel-pour-wellness-protein.png",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=y4cw0jMrFjw",
-        "description": "",
-        "full_width": true
-      }
-    },
-    "multi_column": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/home-05.png",
-            "title": "WELLNESS PROTEIN",
-            "text": "<p>Quick & easy way to boost<br\/>your daily protein intake<\/p><p><\/p><p>Powerful combo of<br\/>whey + collagen protein<\/p><p><\/p><p>17g protein per 2oz shot<\/p>",
-            "link_label": "SHOP PROTEIN",
-            "link": "https:\/\/vidafuel.com\/collections\/all\/protein-drinks?sort_by=title-descending"
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Chip_Graphic_Website_Asset_Full.png",
-            "title": "SNACKS",
-            "text": "<p>Convenient &<br\/>portion controlled<\/p><p>Controlled sugar,<br\/>sodium and fat<\/p><p>Only 80-120 calories<\/p>",
-            "link_label": "SHOP SNACKS",
-            "link": "https:\/\/vidafuel.com\/collections\/all\/protein-crisps?sort_by=title-descending"
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "secondary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
-    },
-    "featured_products": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "collection": "all",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
-      }
-    },
-    "163908469440159016": {
-      "type": "multicolumn",
-      "blocks": {
-        "1639084694c85ae57d-0": {
-          "type": "column",
-          "settings": {
-            "title": "MEET YOUR DAILY PROTEIN BOOSTER",
-            "text": "<p>SMALL BUT MIGHTY<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "1639084694c85ae57d-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/home-07_new.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "1639084694c85ae57d-2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p><strong>Whey protein <\/strong>to support muscle mass & strength.<\/p><p><\/p><p><strong>Collagen protein <\/strong>to support skin, joint & bone health.<\/p><p><\/p><p><strong>No artificial sweeteners<\/strong>, ever.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1639084694c85ae57d-0",
-        "1639084694c85ae57d-1",
-        "1639084694c85ae57d-2"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "full",
-        "image_ratio": "square",
-        "column_alignment": "left",
-        "background_style": "secondary",
-        "button_label": "Button label",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
-    },
-    "163908469606a1b713": {
-      "type": "image-with-text",
-      "blocks": {
-        "163908469612a0c493-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "TODO:",
-            "heading_font": "default"
-          }
-        },
-        "163908469612a0c493-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Reviews here<\/p>",
-            "text_font": "default",
-            "text_size": "default",
-            "text_color": "default"
-          }
-        }
-      },
-      "block_order": [
-        "163908469612a0c493-0",
-        "163908469612a0c493-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/home-09.png",
-        "height": "adapt",
-        "color_scheme": "accent-1",
-        "layout": "text_first",
-        "section_width": "full_width"
-      }
-    },
     "1639085117b298d674": {
       "type": "image-with-text",
       "blocks": {
@@ -260,16 +76,16 @@
           "type": "heading",
           "settings": {
             "heading": "DIETITIAN DEVELOPED SNACKS",
-            "heading_font": "default"
+            "heading_font": "proxima_nova_light"
           }
         },
         "1639085117d4baf919-1": {
           "type": "text",
           "settings": {
             "text": "<p>HOW WE COMPARE<\/p>",
-            "text_font": "default",
-            "text_size": "default",
-            "text_color": "default"
+            "text_font": "trade_gothic_compressed_bold",
+            "text_size": "h2",
+            "text_color": "color-foreground-accent-1"
           }
         }
       },
@@ -289,12 +105,6 @@
   "order": [
     "163908444861c999ea",
     "rich_text",
-    "image_banner",
-    "video",
-    "multi_column",
-    "featured_products",
-    "163908469440159016",
-    "163908469606a1b713",
     "1639085117b298d674"
   ]
 }
