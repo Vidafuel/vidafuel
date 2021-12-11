@@ -12,8 +12,12 @@
   }
 }
 
+.grid-page__width {
+  padding: 0 5rem;
+}
+
 .image-with-text .grid {
-  margin-left: 0;
+  margin-left: auto;
   margin-bottom: 0;
 }
 
@@ -78,6 +82,20 @@
   transform: translate(-50%, -50%);
   width: 100%;
   fill: currentColor;
+}
+
+.image-with-text__media--background {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-with-text__media--background_img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100vw;
+  z-index: -1;
 }
 
 .image-with-text__content {

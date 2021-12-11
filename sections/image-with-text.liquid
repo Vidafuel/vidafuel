@@ -1,8 +1,25 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
-<div class="image-with-text {% if section.settings.section_width == 'full_width' %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}">
-  {% if section.settings.section_width == 'full_width' %}<div class="page-width">{% else %}{% endif %}
-  <div class="image-with-text__grid color-{{ section.settings.color_scheme }} grid grid--gapless grid--1-col grid--2-col-tablet gradient{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}">
+<div class="image-with-text color-{{ section.settings.color_scheme }} {% if section.settings.section_width == 'full_width' %}image-with-text--full-width{% else %}page-width color-scheme-{{ section.settings.color_scheme }}{% endif %} {%- if section.settings.bk_image != blank -%} image-with-text__media--background {% else %}gradient {% endif %}" {%- if section.settings.bk_image != blank -%}style="background-color:transparent;"{% endif %}>
+  {%- if section.settings.bk_image != blank -%}
+    <img
+      srcset="{%- if section.settings.bk_image.width >= 165 -%}{{ section.settings.bk_image | img_url: '165x' }} 165w,{%- endif -%}
+        {%- if section.settings.bk_image.width >= 360 -%}{{ section.settings.bk_image | img_url: '360x' }} 360w,{%- endif -%}
+        {%- if section.settings.bk_image.width >= 535 -%}{{ section.settings.bk_image | img_url: '535x' }} 535w,{%- endif -%}
+        {%- if section.settings.bk_image.width >= 750 -%}{{ section.settings.bk_image | img_url: '750x' }} 750w,{%- endif -%}
+        {%- if section.settings.bk_image.width >= 1070 -%}{{ section.settings.bk_image | img_url: '1070x' }} 1070w,{%- endif -%}
+        {%- if section.settings.bk_image.width >= 1500 -%}{{ section.settings.bk_image | img_url: '1500x' }} 1500w,{%- endif -%}
+        {{ section.settings.bk_image | img_url: 'master' }} {{ section.settings.bk_image.width }}w"
+      src="{{ section.settings.bk_image | img_url: '1500x' }}"
+      sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+      alt="{{ section.settings.bk_image.alt | escape }}"
+      loading="lazy"
+      class="image-with-text__media--background_img"
+      width="{{ section.settings.bk_image.width }}"
+      height="{{ section.settings.bk_image.height }}"
+    >
+  {%- endif -%}
+  <div class="image-with-text__grid grid grid--gapless grid--1-col grid--2-col-tablet {% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} {% if section.settings.section_width == 'full_width' %}page-width{% endif %}">
     <div class="grid__item">
       <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
         {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
@@ -33,14 +50,14 @@
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'heading' -%}
-              <h2 class="image-with-text__heading h1" {{ block.shopify_attributes }}>
+              <h2 class="image-with-text__heading h1 {% if block.settings.heading_font != 'default' %}{{ block.settings.heading_font }}{% endif %}" {{ block.shopify_attributes }}>
                 {{ block.settings.heading | escape }}
               </h2>
             {%- when 'text' -%}
-              <div class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+              <div class="image-with-text__text rte {% if block.settings.text_font != 'default' %}{{ block.settings.text_font }}{% endif %} {% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %} {% if block.settings.text_color != 'default' %}{{ block.settings.text_color }}{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
-                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
+                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} {% if block.settings.button_font != 'default' %}{{ block.settings.button_font }}{% endif %}" {{ block.shopify_attributes }}>
                   {{ block.settings.button_label | escape }}
                 </a>
               {%- endif -%}
@@ -49,7 +66,6 @@
       </div>
     </div>
   </div>
-  {% if section.settings.section_width == 'full_width' %}</div>{% else %}{% endif %}
 </div>
 
 {% schema %}
@@ -61,6 +77,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "bk_image",
+      "label": "Background image"
     },
     {
       "type": "select",
@@ -155,6 +176,50 @@
           "id": "heading",
           "default": "Image with text",
           "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_font",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "proxima_nova_light",
+              "label": "Proxima Nova Light"
+            },
+            {
+              "value": "trade_gothic",
+              "label": "Trade Gothic"
+            },
+            {
+              "value": "trade_gothic_bold",
+              "label": "Trade Gothic Bold"
+            },
+            {
+              "value": "trade_gothic_bold_condensed",
+              "label": "Trade Gothic Bold Condensed"
+            },
+            {
+              "value": "trade_gothic_condensed",
+              "label": "Trade Gothic Condensed"
+            },
+            {
+              "value": "trade_gothic_condensed_bold",
+              "label": "Trade Gothic Condensed Bold"
+            },
+            {
+              "value": "trade_gothic_compressed_bold",
+              "label": "Trade Gothic Compressed Bold"
+            },
+            {
+              "value": "trade_gothic_condensed_heavy",
+              "label": "Trade Gothic Condensed Heavy"
+            }
+          ],
+          "default": "default",
+          "label": "Heading font"
         }
       ]
     },
@@ -168,6 +233,106 @@
           "id": "text",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "label": "t:sections.image-with-text.blocks.text.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_font",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "proxima_nova_light",
+              "label": "Proxima Nova Light"
+            },
+            {
+              "value": "trade_gothic",
+              "label": "Trade Gothic"
+            },
+            {
+              "value": "trade_gothic_bold",
+              "label": "Trade Gothic Bold"
+            },
+            {
+              "value": "trade_gothic_bold_condensed",
+              "label": "Trade Gothic Bold Condensed"
+            },
+            {
+              "value": "trade_gothic_condensed",
+              "label": "Trade Gothic Condensed"
+            },
+            {
+              "value": "trade_gothic_condensed_bold",
+              "label": "Trade Gothic Condensed Bold"
+            },
+            {
+              "value": "trade_gothic_compressed_bold",
+              "label": "Trade Gothic Compressed Bold"
+            },
+            {
+              "value": "trade_gothic_condensed_heavy",
+              "label": "Trade Gothic Condensed Heavy"
+            }
+          ],
+          "default": "default",
+          "label": "Button font"
+        },
+        {
+          "type": "select",
+          "id": "text_size",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "h1",
+              "label": "h1"
+            },
+            {
+              "value": "h2",
+              "label": "h2"
+            },
+            {
+              "value": "h3",
+              "label": "h3"
+            },
+            {
+              "value": "h4",
+              "label": "h4"
+            },
+            {
+              "value": "h5",
+              "label": "h5"
+            },
+            {
+              "value": "h6",
+              "label": "h6"
+            }
+          ],
+          "default": "default",
+          "label": "Text size"
+        },
+        {
+          "type": "select",
+          "id": "text_color",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "color-foreground-accent-1",
+              "label": "Accent 1"
+            },
+            {
+              "value": "color-foreground-accent-2",
+              "label": "Accent 2"
+            }
+          ],
+          "default": "default",
+          "label": "Text color"
         }
       ]
     },
@@ -187,6 +352,50 @@
           "type": "url",
           "id": "button_link",
           "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+        },
+        {
+          "type": "select",
+          "id": "button_font",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "proxima_nova_light",
+              "label": "Proxima Nova Light"
+            },
+            {
+              "value": "trade_gothic",
+              "label": "Trade Gothic"
+            },
+            {
+              "value": "trade_gothic_bold",
+              "label": "Trade Gothic Bold"
+            },
+            {
+              "value": "trade_gothic_bold_condensed",
+              "label": "Trade Gothic Bold Condensed"
+            },
+            {
+              "value": "trade_gothic_condensed",
+              "label": "Trade Gothic Condensed"
+            },
+            {
+              "value": "trade_gothic_condensed_bold",
+              "label": "Trade Gothic Condensed Bold"
+            },
+            {
+              "value": "trade_gothic_compressed_bold",
+              "label": "Trade Gothic Compressed Bold"
+            },
+            {
+              "value": "trade_gothic_condensed_heavy",
+              "label": "Trade Gothic Condensed Heavy"
+            }
+          ],
+          "default": "default",
+          "label": "Description font"
         }
       ]
     }
