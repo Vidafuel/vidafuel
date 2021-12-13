@@ -1154,11 +1154,77 @@
     "images-with-text": {
       "name": "Images with text",
       "settings": {
-        "image": {
-          "label": "Image"
+        "image_01": {
+          "label": "Image one"
         },
-        "image_link": {
-          "label": "Image link"
+        "image_01_title": {
+          "label": "Image title"
+        },
+        "image_01_link": {
+          "label": "Image one link"
+        },
+        "image_02": {
+          "label": "Image two"
+        },
+        "image_02_title": {
+          "label": "Image title"
+        },
+        "image_02_link": {
+          "label": "Image two link"
+        },
+        "image_03": {
+          "label": "Image three"
+        },
+        "image_03_title": {
+          "label": "Image title"
+        },
+        "image_03_link": {
+          "label": "Image three link"
+        },
+        "image_04": {
+          "label": "Image four"
+        },
+        "image_04_title": {
+          "label": "Image title"
+        },
+        "image_04_link": {
+          "label": "Image four link"
+        },
+        "image_05": {
+          "label": "Image five"
+        },
+        "image_05_title": {
+          "label": "Image title"
+        },
+        "image_05_link": {
+          "label": "Image five link"
+        },
+        "image_06": {
+          "label": "Image six"
+        },
+        "image_06_title": {
+          "label": "Image title"
+        },
+        "image_06_link": {
+          "label": "Image six link"
+        },
+        "image_07": {
+          "label": "Image seven"
+        },
+        "image_07_title": {
+          "label": "Image title"
+        },
+        "image_07_link": {
+          "label": "Image seven link"
+        },
+        "image_08": {
+          "label": "Image eight"
+        },
+        "image_08_title": {
+          "label": "Image title"
+        },
+        "image_08_link": {
+          "label": "Image eight link"
         },
         "bk_image": {
           "label": "Background image"

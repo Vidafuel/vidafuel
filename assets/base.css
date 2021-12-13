@@ -1022,7 +1022,7 @@ summary::-webkit-details-marker {
   }
 }
 
-.grid--gapless .grid__item {
+.grid--gapless > .grid__item {
   padding-left: 0;
   padding-bottom: 0;
 }
@@ -1078,7 +1078,7 @@ summary::-webkit-details-marker {
     width: calc(33.33% - 1rem * 2 / 3);
   }
 
-  .grid--2-col-tablet .grid__item {
+  .grid--2-col-tablet > .grid__item {
     width: calc(50% - 1rem / 2);
   }
 }

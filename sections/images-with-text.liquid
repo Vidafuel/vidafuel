@@ -1,6 +1,6 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
-<div class="image-with-text color-{{ section.settings.color_scheme }} {% if section.settings.section_width == 'full_width' %}image-with-text--full-width{% else %}page-width color-scheme-{{ section.settings.color_scheme }}{% endif %} {%- if section.settings.bk_image != blank -%} image-with-text__media--background {% else %}gradient {% endif %}" {%- if section.settings.bk_image != blank -%}style="background-color:transparent;"{% endif %}>
+<div class="image-with-text images-with-text color-{{ section.settings.color_scheme }} {% if section.settings.section_width == 'full_width' %}image-with-text--full-width{% else %}page-width color-scheme-{{ section.settings.color_scheme }}{% endif %} {%- if section.settings.bk_image != blank -%} image-with-text__media--background {% else %}gradient {% endif %}" {%- if section.settings.bk_image != blank -%}style="background-color:transparent;"{% endif %}>
   {%- if section.settings.bk_image != blank -%}
     <img
       srcset="{%- if section.settings.bk_image.width >= 165 -%}{{ section.settings.bk_image | img_url: '165x' }} 165w,{%- endif -%}
@@ -21,31 +21,234 @@
   {%- endif -%}
   <div class="image-with-text__grid grid grid--gapless grid--1-col grid--2-col-tablet {% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %} {% if section.settings.section_width == 'full_width' %}page-width{% endif %}">
     <div class="grid__item">
-      {%- if section.settings.image_link != blank -%}<a href="{{ section.settings.image_link }}" class="image-link">{% endif %}
-      <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-        {% if section.settings.height == 'adapt' and section.settings.image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;"{% endif %}
-      >
-        {%- if section.settings.image != blank -%}
-          <img
-            srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
-              {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
-              {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | img_url: '535x' }} 535w,{%- endif -%}
-              {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
-              {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | img_url: '1070x' }} 1070w,{%- endif -%}
-              {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
-              {{ section.settings.image | img_url: 'master' }} {{ section.settings.image.width }}w"
-            src="{{ section.settings.image | img_url: '1500x' }}"
-            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-            alt="{{ section.settings.image.alt | escape }}"
-            loading="lazy"
-            width="{{ section.settings.image.width }}"
-            height="{{ section.settings.image.height }}"
+      <ul class="multicolumn-list grid grid--2-col grid--4-col-tablet">
+        <li class="multicolumn-list__item grid__item center">
+          {%- comment -%} IMAGE ONE {%- endcomment -%}
+          <div class="multicolumn-card">
+          {%- if section.settings.image_01_link != blank -%}<a href="{{ section.settings.image_01_link }}" class="image-link">{% endif %}
+          <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_01 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+            {% if section.settings.height == 'adapt' and section.settings.image_01 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_01.aspect_ratio | times: 100 }}%;"{% endif %}
           >
-        {%- else -%}
-          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-        {%- endif -%}
-      </div>
-      {%- if section.settings.image_link != blank -%}</a>{% endif %}
+            {%- if section.settings.image_01 != blank -%}
+              <img
+                srcset="{%- if section.settings.image_01.width >= 165 -%}{{ section.settings.image_01 | img_url: '165x' }} 165w,{%- endif -%}
+                  {%- if section.settings.image_01.width >= 360 -%}{{ section.settings.image_01 | img_url: '360x' }} 360w,{%- endif -%}
+                  {%- if section.settings.image_01.width >= 535 -%}{{ section.settings.image_01 | img_url: '535x' }} 535w,{%- endif -%}
+                  {%- if section.settings.image_01.width >= 750 -%}{{ section.settings.image_01 | img_url: '750x' }} 750w,{%- endif -%}
+                  {%- if section.settings.image_01.width >= 1070 -%}{{ section.settings.image_01 | img_url: '1070x' }} 1070w,{%- endif -%}
+                  {%- if section.settings.image_01.width >= 1500 -%}{{ section.settings.image_01 | img_url: '1500x' }} 1500w,{%- endif -%}
+                  {{ section.settings.image_01 | img_url: 'master' }} {{ section.settings.image_01.width }}w"
+                src="{{ section.settings.image_01 | img_url: '1500x' }}"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                alt="{{ section.settings.image_01.alt | escape }}"
+                loading="lazy"
+                width="{{ section.settings.image_01.width }}"
+                height="{{ section.settings.image_01.height }}"
+              >
+            {%- endif -%}
+          </div>
+          {%- if section.settings.image_01_title != blank -%}<p class="label trade_gothic_compressed_bold color-{{ section.settings.color_scheme }}">{{ section.settings.image_01_title }}</p>{% endif %}
+          {%- if section.settings.image_01_link != blank -%}</a>{% endif %}
+          </div>
+        </li>
+        <li class="multicolumn-list__item grid__item center">
+          {%- comment -%} IMAGE TWO {%- endcomment -%}
+          <div class="multicolumn-card">
+            {%- if section.settings.image_02_link != blank -%}<a href="{{ section.settings.image_02_link }}" class="image-link">{% endif %}
+            <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_02 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+              {% if section.settings.height == 'adapt' and section.settings.image_02 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_02.aspect_ratio | times: 100 }}%;"{% endif %}
+            >
+              {%- if section.settings.image_02 != blank -%}
+                <img
+                  srcset="{%- if section.settings.image_02.width >= 165 -%}{{ section.settings.image_02 | img_url: '165x' }} 165w,{%- endif -%}
+                    {%- if section.settings.image_02.width >= 360 -%}{{ section.settings.image_02 | img_url: '360x' }} 360w,{%- endif -%}
+                    {%- if section.settings.image_02.width >= 535 -%}{{ section.settings.image_02 | img_url: '535x' }} 535w,{%- endif -%}
+                    {%- if section.settings.image_02.width >= 750 -%}{{ section.settings.image_02 | img_url: '750x' }} 750w,{%- endif -%}
+                    {%- if section.settings.image_02.width >= 1070 -%}{{ section.settings.image_02 | img_url: '1070x' }} 1070w,{%- endif -%}
+                    {%- if section.settings.image_02.width >= 1500 -%}{{ section.settings.image_02 | img_url: '1500x' }} 1500w,{%- endif -%}
+                    {{ section.settings.image_02 | img_url: 'master' }} {{ section.settings.image_02.width }}w"
+                  src="{{ section.settings.image_02 | img_url: '1500x' }}"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="{{ section.settings.image_02.alt | escape }}"
+                  loading="lazy"
+                  width="{{ section.settings.image_02.width }}"
+                  height="{{ section.settings.image_02.height }}"
+                >
+              {%- endif -%}
+            </div>
+            {%- if section.settings.image_02_title != blank -%}<p class="label trade_gothic_compressed_bold color-{{ section.settings.color_scheme }}">{{ section.settings.image_02_title }}</p>{% endif %}
+            {%- if section.settings.image_02_link != blank -%}</a>{% endif %}
+          </div>
+        </li>
+        <li class="multicolumn-list__item grid__item center">
+          <div class="multicolumn-card">
+          {%- if section.settings.image_03_link != blank -%}<a href="{{ section.settings.image_03_link }}" class="image-link">{% endif %}
+            <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_03 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+              {% if section.settings.height == 'adapt' and section.settings.image_03 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_03.aspect_ratio | times: 100 }}%;"{% endif %}
+            >
+              {%- if section.settings.image_03 != blank -%}
+                <img
+                  srcset="{%- if section.settings.image_03.width >= 165 -%}{{ section.settings.image_03 | img_url: '165x' }} 165w,{%- endif -%}
+                    {%- if section.settings.image_03.width >= 360 -%}{{ section.settings.image_03 | img_url: '360x' }} 360w,{%- endif -%}
+                    {%- if section.settings.image_03.width >= 535 -%}{{ section.settings.image_03 | img_url: '535x' }} 535w,{%- endif -%}
+                    {%- if section.settings.image_03.width >= 750 -%}{{ section.settings.image_03 | img_url: '750x' }} 750w,{%- endif -%}
+                    {%- if section.settings.image_03.width >= 1070 -%}{{ section.settings.image_03 | img_url: '1070x' }} 1070w,{%- endif -%}
+                    {%- if section.settings.image_03.width >= 1500 -%}{{ section.settings.image_03 | img_url: '1500x' }} 1500w,{%- endif -%}
+                    {{ section.settings.image_03 | img_url: 'master' }} {{ section.settings.image_03.width }}w"
+                  src="{{ section.settings.image_03 | img_url: '1500x' }}"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="{{ section.settings.image_03.alt | escape }}"
+                  loading="lazy"
+                  width="{{ section.settings.image_03.width }}"
+                  height="{{ section.settings.image_03.height }}"
+                >
+              {%- endif -%}
+            </div>
+          {%- if section.settings.image_03_title != blank -%}<p class="label trade_gothic_compressed_bold color-{{ section.settings.color_scheme }}">{{ section.settings.image_03_title }}</p>{% endif %}
+          {%- if section.settings.image_03_link != blank -%}</a>{% endif %}
+          </div>
+        </li>
+        <li class="multicolumn-list__item grid__item center">
+          <div class="multicolumn-card">
+            {%- if section.settings.image_04_link != blank -%}<a href="{{ section.settings.image_04_link }}" class="image-link">{% endif %}
+            <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_04 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+              {% if section.settings.height == 'adapt' and section.settings.image_04 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_04.aspect_ratio | times: 100 }}%;"{% endif %}
+            >
+              {%- if section.settings.image_04 != blank -%}
+                <img
+                  srcset="{%- if section.settings.image_04.width >= 165 -%}{{ section.settings.image_04 | img_url: '165x' }} 165w,{%- endif -%}
+                    {%- if section.settings.image_04.width >= 360 -%}{{ section.settings.image_04 | img_url: '360x' }} 360w,{%- endif -%}
+                    {%- if section.settings.image_04.width >= 535 -%}{{ section.settings.image_04 | img_url: '535x' }} 535w,{%- endif -%}
+                    {%- if section.settings.image_04.width >= 750 -%}{{ section.settings.image_04 | img_url: '750x' }} 750w,{%- endif -%}
+                    {%- if section.settings.image_04.width >= 1070 -%}{{ section.settings.image_04 | img_url: '1070x' }} 1070w,{%- endif -%}
+                    {%- if section.settings.image_04.width >= 1500 -%}{{ section.settings.image_04 | img_url: '1500x' }} 1500w,{%- endif -%}
+                    {{ section.settings.image_04 | img_url: 'master' }} {{ section.settings.image_04.width }}w"
+                  src="{{ section.settings.image_04 | img_url: '1500x' }}"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="{{ section.settings.image_04.alt | escape }}"
+                  loading="lazy"
+                  width="{{ section.settings.image_04.width }}"
+                  height="{{ section.settings.image_04.height }}"
+                >
+              {%- endif -%}
+            </div>
+            {%- if section.settings.image_04_title != blank -%}<p class="label trade_gothic_compressed_bold color-{{ section.settings.color_scheme }}">{{ section.settings.image_04_title }}</p>{% endif %}
+            {%- if section.settings.image_04_link != blank -%}</a>{% endif %}
+          </div>
+        </li>
+        <li class="multicolumn-list__item grid__item center">
+          <div class="multicolumn-card">
+            {%- if section.settings.image_05_link != blank -%}<a href="{{ section.settings.image_05_link }}" class="image-link">{% endif %}
+            <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_05 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+              {% if section.settings.height == 'adapt' and section.settings.image_05 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_05.aspect_ratio | times: 100 }}%;"{% endif %}
+            >
+              {%- if section.settings.image_05 != blank -%}
+                <img
+                  srcset="{%- if section.settings.image_05.width >= 165 -%}{{ section.settings.image_05 | img_url: '165x' }} 165w,{%- endif -%}
+                    {%- if section.settings.image_05.width >= 360 -%}{{ section.settings.image_05 | img_url: '360x' }} 360w,{%- endif -%}
+                    {%- if section.settings.image_05.width >= 535 -%}{{ section.settings.image_05 | img_url: '535x' }} 535w,{%- endif -%}
+                    {%- if section.settings.image_05.width >= 750 -%}{{ section.settings.image_05 | img_url: '750x' }} 750w,{%- endif -%}
+                    {%- if section.settings.image_05.width >= 1070 -%}{{ section.settings.image_05 | img_url: '1070x' }} 1070w,{%- endif -%}
+                    {%- if section.settings.image_05.width >= 1500 -%}{{ section.settings.image_05 | img_url: '1500x' }} 1500w,{%- endif -%}
+                    {{ section.settings.image_05 | img_url: 'master' }} {{ section.settings.image_05.width }}w"
+                  src="{{ section.settings.image_05 | img_url: '1500x' }}"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="{{ section.settings.image_05.alt | escape }}"
+                  loading="lazy"
+                  width="{{ section.settings.image_05.width }}"
+                  height="{{ section.settings.image_05.height }}"
+                >
+              {%- endif -%}
+            </div>
+            {%- if section.settings.image_05_title != blank -%}<p class="label trade_gothic_compressed_bold color-{{ section.settings.color_scheme }}">{{ section.settings.image_05_title }}</p>{% endif %}
+            {%- if section.settings.image_05_link != blank -%}</a>{% endif %}
+          </div>
+        </li>
+        <li class="multicolumn-list__item grid__item center">
+          <div class="multicolumn-card">
+          {%- if section.settings.image_06_link != blank -%}<a href="{{ section.settings.image_06_link }}" class="image-link">{% endif %}
+          <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_06 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+            {% if section.settings.height == 'adapt' and section.settings.image_06 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_06.aspect_ratio | times: 100 }}%;"{% endif %}
+          >
+            {%- if section.settings.image_06 != blank -%}
+              <img
+                srcset="{%- if section.settings.image_06.width >= 165 -%}{{ section.settings.image_06 | img_url: '165x' }} 165w,{%- endif -%}
+                  {%- if section.settings.image_06.width >= 360 -%}{{ section.settings.image_06 | img_url: '360x' }} 360w,{%- endif -%}
+                  {%- if section.settings.image_06.width >= 535 -%}{{ section.settings.image_06 | img_url: '535x' }} 535w,{%- endif -%}
+                  {%- if section.settings.image_06.width >= 750 -%}{{ section.settings.image_06 | img_url: '750x' }} 750w,{%- endif -%}
+                  {%- if section.settings.image_06.width >= 1070 -%}{{ section.settings.image_06 | img_url: '1070x' }} 1070w,{%- endif -%}
+                  {%- if section.settings.image_06.width >= 1500 -%}{{ section.settings.image_06 | img_url: '1500x' }} 1500w,{%- endif -%}
+                  {{ section.settings.image_06 | img_url: 'master' }} {{ section.settings.image_06.width }}w"
+                src="{{ section.settings.image_06 | img_url: '1500x' }}"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                alt="{{ section.settings.image_06.alt | escape }}"
+                loading="lazy"
+                width="{{ section.settings.image_06.width }}"
+                height="{{ section.settings.image_06.height }}"
+              >
+            {%- endif -%}
+          </div>
+          {%- if section.settings.image_06_title != blank -%}<p class="label trade_gothic_compressed_bold color-{{ section.settings.color_scheme }}">{{ section.settings.image_06_title }}</p>{% endif %}
+          {%- if section.settings.image_06_link != blank -%}</a>{% endif %}
+          </div>
+        </li>
+        <li class="multicolumn-list__item grid__item center">
+          <div class="multicolumn-card">
+          {%- if section.settings.image_07_link != blank -%}<a href="{{ section.settings.image_07_link }}" class="image-link">{% endif %}
+            <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_07 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+              {% if section.settings.height == 'adapt' and section.settings.image_07 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_07.aspect_ratio | times: 100 }}%;"{% endif %}
+            >
+              {%- if section.settings.image_07 != blank -%}
+                <img
+                  srcset="{%- if section.settings.image_07.width >= 165 -%}{{ section.settings.image_07 | img_url: '165x' }} 165w,{%- endif -%}
+                    {%- if section.settings.image_07.width >= 360 -%}{{ section.settings.image_07 | img_url: '360x' }} 360w,{%- endif -%}
+                    {%- if section.settings.image_07.width >= 535 -%}{{ section.settings.image_07 | img_url: '535x' }} 535w,{%- endif -%}
+                    {%- if section.settings.image_07.width >= 750 -%}{{ section.settings.image_07 | img_url: '750x' }} 750w,{%- endif -%}
+                    {%- if section.settings.image_07.width >= 1070 -%}{{ section.settings.image_07 | img_url: '1070x' }} 1070w,{%- endif -%}
+                    {%- if section.settings.image_07.width >= 1500 -%}{{ section.settings.image_07 | img_url: '1500x' }} 1500w,{%- endif -%}
+                    {{ section.settings.image_07 | img_url: 'master' }} {{ section.settings.image_07.width }}w"
+                  src="{{ section.settings.image_07 | img_url: '1500x' }}"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="{{ section.settings.image_07.alt | escape }}"
+                  loading="lazy"
+                  width="{{ section.settings.image_07.width }}"
+                  height="{{ section.settings.image_07.height }}"
+                >
+              {%- endif -%}
+            </div>
+            {%- if section.settings.image_07_title != blank -%}<p class="label trade_gothic_compressed_bold color-{{ section.settings.color_scheme }}">{{ section.settings.image_07_title }}</p>{% endif %}
+            {%- if section.settings.image_07_link != blank -%}</a>{% endif %}
+          </div>
+        </li>
+        <li class="multicolumn-list__item grid__item center">
+          <div class="multicolumn-card">
+            {%- if section.settings.image_08_link != blank -%}<a href="{{ section.settings.image_08_link }}" class="image-link">{% endif %}
+            <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_08 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+              {% if section.settings.height == 'adapt' and section.settings.image_08 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_08.aspect_ratio | times: 100 }}%;"{% endif %}
+            >
+              {%- if section.settings.image_08 != blank -%}
+                <img
+                  srcset="{%- if section.settings.image_08.width >= 165 -%}{{ section.settings.image_08 | img_url: '165x' }} 165w,{%- endif -%}
+                    {%- if section.settings.image_08.width >= 360 -%}{{ section.settings.image_08 | img_url: '360x' }} 360w,{%- endif -%}
+                    {%- if section.settings.image_08.width >= 535 -%}{{ section.settings.image_08 | img_url: '535x' }} 535w,{%- endif -%}
+                    {%- if section.settings.image_08.width >= 750 -%}{{ section.settings.image_08 | img_url: '750x' }} 750w,{%- endif -%}
+                    {%- if section.settings.image_08.width >= 1070 -%}{{ section.settings.image_08 | img_url: '1070x' }} 1070w,{%- endif -%}
+                    {%- if section.settings.image_08.width >= 1500 -%}{{ section.settings.image_08 | img_url: '1500x' }} 1500w,{%- endif -%}
+                    {{ section.settings.image_08 | img_url: 'master' }} {{ section.settings.image_08.width }}w"
+                  src="{{ section.settings.image_08 | img_url: '1500x' }}"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="{{ section.settings.image_08.alt | escape }}"
+                  loading="lazy"
+                  width="{{ section.settings.image_08.width }}"
+                  height="{{ section.settings.image_08.height }}"
+                >
+              {%- endif -%}
+            </div>
+            {%- if section.settings.image_08_title != blank -%}<p class="label trade_gothic_compressed_bold">{{ section.settings.image_08_title }}</p>{% endif %}
+            {%- if section.settings.image_08_link != blank -%}</a>{% endif %}
+          </div>
+        </li>
+      </ul>
     </div>
     <div class="grid__item">
       <div class="image-with-text__content image-with-text__content--{{ section.settings.height }}">
@@ -72,18 +275,135 @@
 
 {% schema %}
 {
-  "name": "t:sections.image-with-text.name",
+  "name": "Images with text",
   "class": "spaced-section spaced-section--full-width",
   "settings": [
     {
       "type": "image_picker",
-      "id": "image",
-      "label": "t:sections.image-with-text.settings.image.label"
+      "id": "image_01",
+      "label": "Image one"
+    },
+    {
+      "type": "text",
+      "id": "image_01_title",
+      "label": "Image title",
+      "default": "CKD/DIALYSIS"
     },
     {
       "type": "url",
-      "id": "image_link",
-      "label": "Image link"
+      "id": "image_01_link",
+      "label": "Image one link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_02",
+      "label": "Image two"
+    },
+    {
+      "type": "text",
+      "id": "image_02_title",
+      "label": "Image title",
+      "default": "DIABETES"
+    },
+    {
+      "type": "url",
+      "id": "image_02_link",
+      "label": "Image two link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_03",
+      "label": "Image three"
+    },
+    {
+      "type": "text",
+      "id": "image_03_title",
+      "label": "Image title",
+      "default": "ACTIVE AGING"
+    },
+    {
+      "type": "url",
+      "id": "image_03_link",
+      "label": "Image three link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_04",
+      "label": "Image four"
+    },
+    {
+      "type": "text",
+      "id": "image_04_title",
+      "label": "Image title",
+      "default": "POST-SURGERY RECOVERY"
+    },
+    {
+      "type": "url",
+      "id": "image_04_link",
+      "label": "Image four link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_05",
+      "label": "Image five"
+    },
+    {
+      "type": "text",
+      "id": "image_05_title",
+      "label": "Image title",
+      "default": "GERIATRIC NUTRITION"
+    },
+    {
+      "type": "url",
+      "id": "image_05_link",
+      "label": "Image five link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_06",
+      "label": "Image six"
+    },
+    {
+      "type": "text",
+      "id": "image_06_title",
+      "label": "Image title",
+      "default": "CANCER"
+    },
+    {
+      "type": "url",
+      "id": "image_06_link",
+      "label": "Image six link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_07",
+      "label": "Image seven"
+    },
+    {
+      "type": "text",
+      "id": "image_07_title",
+      "label": "Image title",
+      "default": "FITNESS / ATHLETICS"
+    },
+    {
+      "type": "url",
+      "id": "image_07_link",
+      "label": "Image seven link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_08",
+      "label": "Image eight"
+    },
+    {
+      "type": "text",
+      "id": "image_08_title",
+      "label": "Image title"
+    },
+    {
+      "type": "url",
+      "id": "image_08_link",
+      "label": "Image eight link"
     },
     {
       "type": "image_picker",
@@ -409,7 +729,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.image-with-text.presets.name",
+      "name": "Images with text",
       "blocks": [
         {
           "type": "heading"
