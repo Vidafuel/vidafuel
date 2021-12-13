@@ -7657,6 +7657,11 @@ img.hover-shadow {
 	font-weight: bold;
 	z-index: 9999999999;
 }
+  @media screen and (min-width: 750px) {
+   .close {
+    right: 247px; 
+   }
+  }
 
 .close:hover,
 .close:focus {
