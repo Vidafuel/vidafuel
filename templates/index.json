@@ -79,10 +79,19 @@
             "heading": "PRODUCTS THAT SUPPORT YOU WHEN YOU NEED THEM THE MOST.",
             "heading_font": "trade_gothic_compressed_bold"
           }
+        },
+        "847081ef-8696-42f1-ad5e-a315d489674c": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "\/products",
+            "button_font": "default"
+          }
         }
       },
       "block_order": [
-        "16395038879d66b692-0"
+        "16395038879d66b692-0",
+        "847081ef-8696-42f1-ad5e-a315d489674c"
       ],
       "settings": {
         "image_01": "shopify:\/\/shop_images\/DIALYSIS.png",
