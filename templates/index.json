@@ -36,9 +36,9 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/home-02-2x-updated.png",
         "image_link": "",
-        "bk_image": "shopify:\/\/shop_images\/topBG_2x_25879f39-45d0-436b-8111-8bb6b0a21cd9.png",
+        "bk_image": "shopify:\/\/shop_images\/home-01_1.jpg",
         "height": "adapt",
-        "color_scheme": "accent-1",
+        "color_scheme": "background-1",
         "layout": "text_first",
         "section_width": "full_width"
       }
