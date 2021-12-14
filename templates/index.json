@@ -199,6 +199,54 @@
         "layout": "text_first",
         "section_width": "normal"
       }
+    },
+    "1639505258119ea558": {
+      "type": "multicolumn",
+      "blocks": {
+        "16395052587fb2d08a-0": {
+          "type": "column",
+          "settings": {
+            "title": "MEET YOUR DAILY PROTEIN BOOSTER",
+            "text": "<p>SMALL BUT MIGHTY<\/p>",
+            "link_label": "Shop Wellness Nutrition",
+            "link": "\/products"
+          }
+        },
+        "16395052587fb2d08a-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-07_new.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16395052587fb2d08a-2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>Whey protein <\/strong>to support muscle mass & strength.<\/p><p><\/p><p><strong>Collagen protein <\/strong>to support skin, joint & bone health.<\/p><p><\/p><p><strong>No artificial sweeteners<\/strong>, ever<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16395052587fb2d08a-0",
+        "16395052587fb2d08a-1",
+        "16395052587fb2d08a-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "swipe_on_mobile": true
+      }
     }
   },
   "order": [
@@ -206,6 +254,7 @@
     "rich_text",
     "1639503887e884ceb3",
     "1639504497f2620302",
-    "1639085117b298d674"
+    "1639085117b298d674",
+    "1639505258119ea558"
   ]
 }
