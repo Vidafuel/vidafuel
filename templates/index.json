@@ -244,7 +244,7 @@
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "Shop Now",
-        "button_link": "",
+        "button_link": "\/products",
         "swipe_on_mobile": true
       }
     }
