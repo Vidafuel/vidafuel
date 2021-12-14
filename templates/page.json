@@ -11,13 +11,17 @@
         "163915655632d9adf3-0": {
           "type": "heading",
           "settings": {
-            "heading": "Clinical nutrition done right"
+            "heading": "Clinical nutrition done right",
+            "heading_font": "trade_gothic_bold_condensed"
           }
         },
         "163915655632d9adf3-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Dietitian Developed for Optimal Absorption.<\/p>"
+            "text": "<p>Dietitian Developed for Optimal Absorption.<\/p>",
+            "text_font": "proxima_nova_light",
+            "text_size": "h2",
+            "text_color": "default"
           }
         }
       },
@@ -27,9 +31,12 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/home-05.png",
+        "image_link": "shopify:\/\/products\/collagen-protein-drink-2-pack",
+        "bk_image": "shopify:\/\/shop_images\/healthcare-bg.jpg",
         "height": "adapt",
         "color_scheme": "accent-1",
-        "layout": "text_first"
+        "layout": "text_first",
+        "section_width": "normal"
       }
     },
     "163915671883655487": {
@@ -89,12 +96,109 @@
         "description": "",
         "full_width": true
       }
+    },
+    "16395061492d0dea2e": {
+      "type": "rich-text",
+      "blocks": {
+        "1639506149aa8c364f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "ABOUT US",
+            "heading_size": "h1",
+            "heading_font": "trade_gothic_condensed_bold"
+          }
+        },
+        "1639506149aa8c364f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vidafuel is an outcomes-driven company dedicated to leading improvement in the nutritional therapy market. Our passionate team of dietitians and scientists leads development of best in class products that provide a superior nutritional profile and patient experience. Our mission is to educate, support and continue to develop innovative nutritional therapy products that enable patients to live longer, happier lives.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1639506149aa8c364f-0",
+        "1639506149aa8c364f-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "163950623206c4ca1f": {
+      "type": "multicolumn",
+      "blocks": {
+        "163950623263ceff12-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/healthcare-03.png",
+            "title": "",
+            "text": "<p>Download white paper:<br\/>Clinical and financial value of Oral Nutrition Supplement programs<\/p>",
+            "link_label": "DOWNLOAD",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0922\/1906\/files\/2020-VIDAFUEL-White-Paper.pdf?v=1584484018"
+          }
+        },
+        "163950623263ceff12-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VidaFuel-Protein-wCup_new.jpg",
+            "title": "",
+            "text": "<p>Shop our best-selling Protein Drinks!<\/p>",
+            "link_label": "SHOP NOW",
+            "link": "\/products"
+          }
+        }
+      },
+      "block_order": [
+        "163950623263ceff12-0",
+        "163950623263ceff12-1"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "third",
+        "image_ratio": "portrait",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "1639506526d4856680": {
+      "type": "multicolumn",
+      "blocks": {
+        "16395065260cbd3902-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/metro-medical.png",
+            "title": "DISTRIBUTED BY",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16395065260cbd3902-0"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "secondary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
     "main",
     "1639156556f1f7aaff",
     "163915671883655487",
-    "16391568488013a061"
+    "16391568488013a061",
+    "16395061492d0dea2e",
+    "163950623206c4ca1f",
+    "1639506526d4856680"
   ]
 }
