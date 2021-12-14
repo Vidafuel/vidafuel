@@ -50,22 +50,10 @@
       },
       "footer": {
         "type": "footer",
-        "blocks": {
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
-            }
-          }
-        },
-        "block_order": [
-          "footer-0"
-        ],
         "settings": {
           "color_scheme": "background-1",
           "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
+          "newsletter_heading": "Join our mai﻿ling list",
           "show_social": true,
           "enable_country_selector": true,
           "enable_language_selector": false,
