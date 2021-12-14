@@ -76,55 +76,36 @@
         "16395038879d66b692-0": {
           "type": "heading",
           "settings": {
-            "heading": "Images with text",
-            "heading_font": "default"
-          }
-        },
-        "16395038879d66b692-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_font": "default",
-            "text_size": "default",
-            "text_color": "default"
-          }
-        },
-        "16395038879d66b692-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_font": "default"
+            "heading": "PRODUCTS THAT SUPPORT YOU WHEN YOU NEED THEM THE MOST.",
+            "heading_font": "trade_gothic_compressed_bold"
           }
         }
       },
       "block_order": [
-        "16395038879d66b692-0",
-        "16395038879d66b692-1",
-        "16395038879d66b692-2"
+        "16395038879d66b692-0"
       ],
       "settings": {
         "image_01": "shopify:\/\/shop_images\/DIALYSIS.png",
         "image_01_title": "CKD\/DIALYSIS",
-        "image_01_link": "",
+        "image_01_link": "shopify:\/\/pages\/healthcare-professionals",
         "image_02": "shopify:\/\/shop_images\/DIABETES.png",
         "image_02_title": "DIABETES",
-        "image_02_link": "",
+        "image_02_link": "shopify:\/\/pages\/healthcare-professionals",
         "image_03": "shopify:\/\/shop_images\/ACTIVE-AGING.png",
         "image_03_title": "ACTIVE AGING",
-        "image_03_link": "",
+        "image_03_link": "shopify:\/\/pages\/healthcare-professionals",
         "image_04": "shopify:\/\/shop_images\/POST-SURGERY-RECOVERY.png",
         "image_04_title": "POST-SURGERY RECOVERY",
-        "image_04_link": "",
+        "image_04_link": "shopify:\/\/pages\/healthcare-professionals",
         "image_05": "shopify:\/\/shop_images\/GERIATRIC-NUTRITION.png",
         "image_05_title": "GERIATRIC NUTRITION",
-        "image_05_link": "",
+        "image_05_link": "shopify:\/\/pages\/healthcare-professionals",
         "image_06": "shopify:\/\/shop_images\/CANCER.png",
         "image_06_title": "CANCER",
-        "image_06_link": "",
+        "image_06_link": "shopify:\/\/pages\/healthcare-professionals",
         "image_07": "shopify:\/\/shop_images\/ATHLETICS.png",
         "image_07_title": "FITNESS \/ ATHLETICS",
-        "image_07_link": "",
+        "image_07_link": "shopify:\/\/pages\/healthcare-professionals",
         "image_08_title": "",
         "image_08_link": "",
         "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
