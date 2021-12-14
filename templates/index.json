@@ -80,6 +80,15 @@
             "heading_font": "trade_gothic_compressed_bold"
           }
         },
+        "027f7cd7-0e9c-4f49-a473-b4702be58903": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_font": "default",
+            "text_size": "default",
+            "text_color": "default"
+          }
+        },
         "847081ef-8696-42f1-ad5e-a315d489674c": {
           "type": "button",
           "settings": {
@@ -91,6 +100,7 @@
       },
       "block_order": [
         "16395038879d66b692-0",
+        "027f7cd7-0e9c-4f49-a473-b4702be58903",
         "847081ef-8696-42f1-ad5e-a315d489674c"
       ],
       "settings": {
