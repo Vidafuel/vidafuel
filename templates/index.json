@@ -70,39 +70,6 @@
         "full_width": true
       }
     },
-    "1639085117b298d674": {
-      "type": "image-with-text",
-      "blocks": {
-        "1639085117d4baf919-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "DIETITIAN DEVELOPED SNACKS",
-            "heading_font": "proxima_nova_light"
-          }
-        },
-        "1639085117d4baf919-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>HOW WE COMPARE<\/p>",
-            "text_font": "trade_gothic_compressed_bold",
-            "text_size": "h2",
-            "text_color": "color-foreground-accent-1"
-          }
-        }
-      },
-      "block_order": [
-        "1639085117d4baf919-0",
-        "1639085117d4baf919-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/home-12.png",
-        "image_link": "",
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "text_first",
-        "section_width": "normal"
-      }
-    },
     "1639503887e884ceb3": {
       "type": "images-with-text",
       "blocks": {
@@ -166,12 +133,79 @@
         "layout": "text_first",
         "section_width": "full_width"
       }
+    },
+    "1639504497f2620302": {
+      "type": "image-with-text",
+      "blocks": {
+        "16395044977b90f46f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "ADEQUATE NUTRITION IS THE FOUNDATION FOR A LONG, ACTIVE LIFE.",
+            "heading_font": "trade_gothic_compressed_bold"
+          }
+        },
+        "16395044977b90f46f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vidafuel products make it more <strong>accessible, convenient & enjoyable.<\/strong><\/p>",
+            "text_font": "default",
+            "text_size": "default",
+            "text_color": "default"
+          }
+        }
+      },
+      "block_order": [
+        "16395044977b90f46f-0",
+        "16395044977b90f46f-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Stop-Motion-Pour720.gif",
+        "image_link": "",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "section_width": "full_width"
+      }
+    },
+    "1639085117b298d674": {
+      "type": "image-with-text",
+      "blocks": {
+        "1639085117d4baf919-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "DIETITIAN DEVELOPED SNACKS",
+            "heading_font": "proxima_nova_light"
+          }
+        },
+        "1639085117d4baf919-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>HOW WE COMPARE<\/p>",
+            "text_font": "trade_gothic_compressed_bold",
+            "text_size": "h2",
+            "text_color": "color-foreground-accent-1"
+          }
+        }
+      },
+      "block_order": [
+        "1639085117d4baf919-0",
+        "1639085117d4baf919-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/home-12.png",
+        "image_link": "",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "text_first",
+        "section_width": "normal"
+      }
     }
   },
   "order": [
     "163908444861c999ea",
     "rich_text",
-    "1639085117b298d674",
-    "1639503887e884ceb3"
+    "1639503887e884ceb3",
+    "1639504497f2620302",
+    "1639085117b298d674"
   ]
 }
