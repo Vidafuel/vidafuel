@@ -260,8 +260,8 @@
             "title_top": false,
             "title_font": "default",
             "title_size": "default",
-            "text": "<p><strong>Whey protein <\/strong>to support muscle mass & strength.<\/p><p><\/p><p><strong>Collagen protein <\/strong>to support skin, joint & bone health.<\/p><p><\/p><p><strong>No artificial sweeteners<\/strong>, ever<\/p>",
-            "p_bullets": false,
+            "text": "<p><strong>Whey protein <br\/><\/strong>to support muscle mass & strength.<\/p><p><\/p><p><strong>Collagen protein <br\/><\/strong>to support skin, joint & bone health.<\/p><p><\/p><p><strong>No artificial sweeteners<\/strong>, <br\/>ever<\/p>",
+            "p_bullets": true,
             "text_color_primary": false,
             "text_font": "default",
             "text_size": "default",
@@ -280,9 +280,9 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
-        "flex_align_center": false,
+        "flex_align_center": true,
         "background_style": "none",
-        "button_label": "SHOP NOW",
+        "button_label": "",
         "button_link": "\/products",
         "swipe_on_mobile": true
       }
