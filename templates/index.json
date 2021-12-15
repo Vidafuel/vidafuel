@@ -338,7 +338,7 @@
         "1639579439ccdff72d-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "READ REVIEWS",
             "button_link": ""
           }
         }
@@ -349,11 +349,13 @@
         "1639579439ccdff72d-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/home-snack-reviews.png",
+        "bk_image": "shopify:\/\/shop_images\/home-reviews-background.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
-        "layout": "image_first",
-        "custom_liquid": "",
-        "section_width": "normal"
+        "layout": "text_first",
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"129641733,230229879,129641702,172539969\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
+        "section_width": "full_width"
       }
     }
   },
