@@ -1087,19 +1087,10 @@
                 "label": "h1"
               },
               "options__3": {
-                "label": "h2"
-              },
-              "options__4": {
                 "label": "h3"
               },
-              "options__5": {
-                "label": "h4"
-              },
-              "options__6": {
+              "options__4": {
                 "label": "h5"
-              },
-              "options__7": {
-                "label": "h6"
               }
             }
           }
@@ -2036,6 +2027,9 @@
             "label": "Center"
           }
         },
+        "flex_align_center": {
+          "label": "Vertically center align"
+        },
         "background_style": {
           "label": "Secondary background",
           "options__1": {
@@ -2046,6 +2040,12 @@
           },
           "options__3": {
             "label": "Show as section background"
+          },
+          "options__4": {
+            "label": "Show accent 1 as section background"
+          },
+          "options__5": {
+            "label": "Show accent 2 as section background"
           }
         },
         "button_label": {
@@ -2068,8 +2068,113 @@
             "title": {
               "label": "Heading"
             },
+            "title_top": {
+              "label": "Heading above image"
+            },
+            "title_font": {
+              "label": "Heading font",
+              "options__1": {
+                "label": "Default"
+              },
+              "options__2": {
+                "label": "Proxima Nova Light"
+              },
+              "options__3": {
+                "label": "Trade Gothic"
+              },
+              "options__4": {
+                "label": "Trade Gothic Bold"
+              },
+              "options__5": {
+                "label": "Trade Gothic Bold Condensed"
+              },
+              "options__6": {
+                "label": "Trade Gothic Condensed"
+              },
+              "options__7": {
+                "label": "Trade Gothic Condensed Bold"
+              },
+              "options__8": {
+                "label": "Trade Gothic Compressed Bold"
+              },
+              "options__9": {
+                "label": "Trade Gothic Condensed Heavy"
+              }
+            },
+            "title_size": {
+              "label": "Heading size",
+              "options__1": {
+                "label": "Default"
+              },
+              "options__2": {
+                "label": "h1"
+              },
+              "options__3": {
+                "label": "h2"
+              },
+              "options__4": {
+                "label": "h3"
+              },
+              "options__5": {
+                "label": "h5"
+              }
+            },
             "text": {
               "label": "Description"
+            },
+            "text_color_primary": {
+              "label": "Description color primary"
+            },
+            "text_font": {
+              "label": "Description font",
+              "options__1": {
+                "label": "Default"
+              },
+              "options__2": {
+                "label": "Proxima Nova Light"
+              },
+              "options__3": {
+                "label": "Trade Gothic"
+              },
+              "options__4": {
+                "label": "Trade Gothic Bold"
+              },
+              "options__5": {
+                "label": "Trade Gothic Bold Condensed"
+              },
+              "options__6": {
+                "label": "Trade Gothic Condensed"
+              },
+              "options__7": {
+                "label": "Trade Gothic Condensed Bold"
+              },
+              "options__8": {
+                "label": "Trade Gothic Compressed Bold"
+              },
+              "options__9": {
+                "label": "Trade Gothic Condensed Heavy"
+              }
+            },
+            "text_size": {
+              "label": "Description size",
+              "options__1": {
+                "label": "Default"
+              },
+              "options__2": {
+                "label": "h1"
+              },
+              "options__3": {
+                "label": "h2"
+              },
+              "options__4": {
+                "label": "h3"
+              },
+              "options__5": {
+                "label": "h5"
+              }
+            },
+            "p_bullets": {
+              "label": "Paragraph bullets"
             },
             "link_label": {
               "label": "Link label"

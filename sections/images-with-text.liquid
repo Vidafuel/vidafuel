@@ -26,9 +26,7 @@
           {%- comment -%} IMAGE ONE {%- endcomment -%}
           <div class="multicolumn-card">
           {%- if section.settings.image_01_link != blank -%}<a href="{{ section.settings.image_01_link }}" class="image-link">{% endif %}
-          <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_01 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-            {% if section.settings.height == 'adapt' and section.settings.image_01 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_01.aspect_ratio | times: 100 }}%;"{% endif %}
-          >
+          <div class="image-with-text__media images image-with-text__media--{{ section.settings.height }} {% if section.settings.image_01 != blank %}media {% else %}image-with-text__media--placeholder placeholder{% endif %}">
             {%- if section.settings.image_01 != blank -%}
               <img
                 srcset="{%- if section.settings.image_01.width >= 165 -%}{{ section.settings.image_01 | img_url: '165x' }} 165w,{%- endif -%}
@@ -56,9 +54,7 @@
           {%- comment -%} IMAGE TWO {%- endcomment -%}
           <div class="multicolumn-card">
             {%- if section.settings.image_02_link != blank -%}<a href="{{ section.settings.image_02_link }}" class="image-link">{% endif %}
-            <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_02 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-              {% if section.settings.height == 'adapt' and section.settings.image_02 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_02.aspect_ratio | times: 100 }}%;"{% endif %}
-            >
+            <div class="image-with-text__media images image-with-text__media--{{ section.settings.height }} {% if section.settings.image_02 != blank %}media {% else %}image-with-text__media--placeholder placeholder{% endif %}">
               {%- if section.settings.image_02 != blank -%}
                 <img
                   srcset="{%- if section.settings.image_02.width >= 165 -%}{{ section.settings.image_02 | img_url: '165x' }} 165w,{%- endif -%}
@@ -85,9 +81,7 @@
         <li class="multicolumn-list__item grid__item center">
           <div class="multicolumn-card">
           {%- if section.settings.image_03_link != blank -%}<a href="{{ section.settings.image_03_link }}" class="image-link">{% endif %}
-            <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_03 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-              {% if section.settings.height == 'adapt' and section.settings.image_03 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_03.aspect_ratio | times: 100 }}%;"{% endif %}
-            >
+            <div class="image-with-text__media images image-with-text__media--{{ section.settings.height }} {% if section.settings.image_03 != blank %}media {% else %}image-with-text__media--placeholder placeholder{% endif %}">
               {%- if section.settings.image_03 != blank -%}
                 <img
                   srcset="{%- if section.settings.image_03.width >= 165 -%}{{ section.settings.image_03 | img_url: '165x' }} 165w,{%- endif -%}
@@ -114,9 +108,7 @@
         <li class="multicolumn-list__item grid__item center">
           <div class="multicolumn-card">
             {%- if section.settings.image_04_link != blank -%}<a href="{{ section.settings.image_04_link }}" class="image-link">{% endif %}
-            <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_04 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-              {% if section.settings.height == 'adapt' and section.settings.image_04 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_04.aspect_ratio | times: 100 }}%;"{% endif %}
-            >
+            <div class="image-with-text__media images image-with-text__media--{{ section.settings.height }} {% if section.settings.image_04 != blank %}media {% else %}image-with-text__media--placeholder placeholder{% endif %}">
               {%- if section.settings.image_04 != blank -%}
                 <img
                   srcset="{%- if section.settings.image_04.width >= 165 -%}{{ section.settings.image_04 | img_url: '165x' }} 165w,{%- endif -%}
@@ -143,9 +135,7 @@
         <li class="multicolumn-list__item grid__item center">
           <div class="multicolumn-card">
             {%- if section.settings.image_05_link != blank -%}<a href="{{ section.settings.image_05_link }}" class="image-link">{% endif %}
-            <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_05 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-              {% if section.settings.height == 'adapt' and section.settings.image_05 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_05.aspect_ratio | times: 100 }}%;"{% endif %}
-            >
+            <div class="image-with-text__media images image-with-text__media--{{ section.settings.height }} {% if section.settings.image_05 != blank %}media {% else %}image-with-text__media--placeholder placeholder{% endif %}">
               {%- if section.settings.image_05 != blank -%}
                 <img
                   srcset="{%- if section.settings.image_05.width >= 165 -%}{{ section.settings.image_05 | img_url: '165x' }} 165w,{%- endif -%}
@@ -172,9 +162,7 @@
         <li class="multicolumn-list__item grid__item center">
           <div class="multicolumn-card">
           {%- if section.settings.image_06_link != blank -%}<a href="{{ section.settings.image_06_link }}" class="image-link">{% endif %}
-          <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_06 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-            {% if section.settings.height == 'adapt' and section.settings.image_06 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_06.aspect_ratio | times: 100 }}%;"{% endif %}
-          >
+          <div class="image-with-text__media images image-with-text__media--{{ section.settings.height }} {% if section.settings.image_06 != blank %}media {% else %}image-with-text__media--placeholder placeholder{% endif %}">
             {%- if section.settings.image_06 != blank -%}
               <img
                 srcset="{%- if section.settings.image_06.width >= 165 -%}{{ section.settings.image_06 | img_url: '165x' }} 165w,{%- endif -%}
@@ -201,9 +189,7 @@
         <li class="multicolumn-list__item grid__item center">
           <div class="multicolumn-card">
           {%- if section.settings.image_07_link != blank -%}<a href="{{ section.settings.image_07_link }}" class="image-link">{% endif %}
-            <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_07 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-              {% if section.settings.height == 'adapt' and section.settings.image_07 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_07.aspect_ratio | times: 100 }}%;"{% endif %}
-            >
+            <div class="image-with-text__media images image-with-text__media--{{ section.settings.height }} {% if section.settings.image_07 != blank %}media {% else %}image-with-text__media--placeholder placeholder{% endif %}">
               {%- if section.settings.image_07 != blank -%}
                 <img
                   srcset="{%- if section.settings.image_07.width >= 165 -%}{{ section.settings.image_07 | img_url: '165x' }} 165w,{%- endif -%}
@@ -230,9 +216,7 @@
         <li class="multicolumn-list__item grid__item center">
           <div class="multicolumn-card">
             {%- if section.settings.image_08_link != blank -%}<a href="{{ section.settings.image_08_link }}" class="image-link">{% endif %}
-            <div class="image-with-text__media image-with-text__media--{{ section.settings.height }} {% if section.settings.image_08 != blank %}media media--circle{% else %}image-with-text__media--placeholder placeholder{% endif %}"
-              {% if section.settings.height == 'adapt' and section.settings.image_08 != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.image_08.aspect_ratio | times: 100 }}%;"{% endif %}
-            >
+            <div class="image-with-text__media images image-with-text__media--{{ section.settings.height }} {% if section.settings.image_08 != blank %}media {% else %}image-with-text__media--placeholder placeholder{% endif %}">
               {%- if section.settings.image_08 != blank -%}
                 <img
                   srcset="{%- if section.settings.image_08.width >= 165 -%}{{ section.settings.image_08 | img_url: '165x' }} 165w,{%- endif -%}

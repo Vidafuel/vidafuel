@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="multicolumn background-{{ section.settings.background_style }} {% if section.settings.background_style == 'gradient-1' %} gradient color-accent-1{% elsif section.settings.background_style == 'gradient-2' %} gradient color-accent-2{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
       <h2 class="title">
@@ -13,7 +13,7 @@
       {%- endif -%}
     </div>
     <slider-component class="slider-mobile-gutter">
-      <ul class="multicolumn-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
+      <ul class="multicolumn-list {% if section.settings.flex_align_center %}flex-align-center {% endif %} grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
         id="Slider-{{ section.id }}"
         role="list"
       >
@@ -32,7 +32,10 @@
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
                 {% endif %}
-                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
+                {%- if block.settings.title != blank and block.settings.title_top -%}
+                  <h3 class="multicolumn-card-spacing">{{ block.settings.title | escape }}</h3>
+                {%- endif -%}
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image and block.settings.title_top == false %} multicolumn-card-spacing{% endif %}">
                   <div class="media media--transparent media--{{ section.settings.image_ratio }}"
                     {% if section.settings.image_ratio == 'adapt' %}
                       style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
@@ -56,14 +59,14 @@
                 </div>
               {%- endif -%}
               <div class="multicolumn-card__info">
-                {%- if block.settings.title != blank -%}
-                  <h3>{{ block.settings.title | escape }}</h3>
+                {%- if block.settings.title != blank and block.settings.title_top == false -%}
+                  <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.title_size != 'default' %}{{ block.settings.title_size }}{% endif %}">{{ block.settings.title | escape }}</h3>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
-                  <div class="rte">{{ block.settings.text }}</div>
+                  <div class="rte {% if block.settings.text_color_primary %}color-foreground-accent-1 {% endif %}{% if block.settings.p_bullets %} p_bullets{% endif %}{% if block.settings.text_font != 'default' %}{{ block.settings.text_font }} {% endif %}{% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %}">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
-                  <a class="link animate-arrow" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
+                  <a class="button button--primary" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
                 {%- endif -%}
               </div>
             </div>
@@ -167,6 +170,12 @@
       "label": "t:sections.multicolumn.settings.column_alignment.label"
     },
     {
+      "type": "checkbox",
+      "id": "flex_align_center",
+      "label": "Vertically center align",
+      "default": false
+    },
+    {
       "type": "select",
       "id": "background_style",
       "options": [
@@ -181,6 +190,14 @@
         {
           "value": "secondary",
           "label": "t:sections.multicolumn.settings.background_style.options__3.label"
+        },
+        {
+          "value": "gradient-1",
+          "label": "Show accent 1 as section background"
+        },
+        {
+          "value": "gradient-2",
+          "label": "Show accent 2 as section background"
         }
       ],
       "default": "primary",
@@ -221,10 +238,171 @@
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
         },
         {
+          "type": "checkbox",
+          "id": "title_top",
+          "label": "Heading above image"
+        },
+        {
+          "type": "select",
+          "id": "title_font",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "proxima_nova_light",
+              "label": "Proxima Nova Light"
+            },
+            {
+              "value": "trade_gothic",
+              "label": "Trade Gothic"
+            },
+            {
+              "value": "trade_gothic_bold",
+              "label": "Trade Gothic Bold"
+            },
+            {
+              "value": "trade_gothic_bold_condensed",
+              "label": "Trade Gothic Bold Condensed"
+            },
+            {
+              "value": "trade_gothic_condensed",
+              "label": "Trade Gothic Condensed"
+            },
+            {
+              "value": "trade_gothic_condensed_bold",
+              "label": "Trade Gothic Condensed Bold"
+            },
+            {
+              "value": "trade_gothic_compressed_bold",
+              "label": "Trade Gothic Compressed Bold"
+            },
+            {
+              "value": "trade_gothic_condensed_heavy",
+              "label": "Trade Gothic Condensed Heavy"
+            }
+          ],
+          "default": "default",
+          "label": "Heading font"
+        },
+        {
+          "type": "select",
+          "id": "title_size",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "heading-1",
+              "label": "h1"
+            },
+            {
+              "value": "heading-2",
+              "label": "h2"
+            },
+            {
+              "value": "heading-3",
+              "label": "h3"
+            },
+            {
+              "value": "heading-5",
+              "label": "h5"
+            }
+          ],
+          "default": "default",
+          "label": "Heading size"
+        },
+        {
           "type": "richtext",
           "id": "text",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "label": "t:sections.multicolumn.blocks.column.settings.text.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "p_bullets",
+          "label": "Paragraph bullets",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "text_color_primary",
+          "label": "Description color primary",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "text_font",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "proxima_nova_light",
+              "label": "Proxima Nova Light"
+            },
+            {
+              "value": "trade_gothic",
+              "label": "Trade Gothic"
+            },
+            {
+              "value": "trade_gothic_bold",
+              "label": "Trade Gothic Bold"
+            },
+            {
+              "value": "trade_gothic_bold_condensed",
+              "label": "Trade Gothic Bold Condensed"
+            },
+            {
+              "value": "trade_gothic_condensed",
+              "label": "Trade Gothic Condensed"
+            },
+            {
+              "value": "trade_gothic_condensed_bold",
+              "label": "Trade Gothic Condensed Bold"
+            },
+            {
+              "value": "trade_gothic_compressed_bold",
+              "label": "Trade Gothic Compressed Bold"
+            },
+            {
+              "value": "trade_gothic_condensed_heavy",
+              "label": "Trade Gothic Condensed Heavy"
+            }
+          ],
+          "default": "default",
+          "label": "Description font"
+        },
+        {
+          "type": "select",
+          "id": "text_size",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "heading-1",
+              "label": "h1"
+            },
+            {
+              "value": "h2",
+              "label": "h2"
+            },
+            {
+              "value": "heading-3",
+              "label": "h3"
+            },
+            {
+              "value": "heading-5",
+              "label": "h5"
+            }
+          ],
+          "default": "default",
+          "label": "Description size"
         },
         {
           "type": "text",
