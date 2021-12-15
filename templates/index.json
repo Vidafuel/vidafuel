@@ -239,56 +239,41 @@
         "1639535416ca744400-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "title_top": false,
-            "title_font": "default",
-            "title_size": "default",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/home-05.png",
+            "title": "WELLNESS PROTEIN",
+            "title_top": true,
+            "title_font": "trade_gothic_compressed_bold",
+            "title_size": "heading-2",
+            "text": "<p><strong>Quick & easy way to boost<br\/>your daily protein intake<br\/><br\/>Powerful combo of<br\/>whey + collagen protein<br\/><br\/>17g protein per 2oz shot<\/strong><\/p>",
             "p_bullets": false,
             "text_color_primary": false,
             "text_font": "default",
             "text_size": "default",
-            "link_label": "",
-            "link": ""
+            "link_label": "SHOP PROTEIN",
+            "link": "shopify:\/\/collections\/wellness-supplements"
           }
         },
         "1639535416ca744400-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "title_top": false,
-            "title_font": "default",
-            "title_size": "default",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Chip_Graphic_Website_Asset_Full.png",
+            "title": "SNACKS",
+            "title_top": true,
+            "title_font": "trade_gothic_compressed_bold",
+            "title_size": "heading-3",
+            "text": "<p><strong>Convenient &<br\/>portion controlled<br\/><br\/>Controlled sugar,<br\/>sodium and fat<br\/><br\/>Only 80-120 calories<\/strong><\/p>",
             "p_bullets": false,
             "text_color_primary": false,
             "text_font": "default",
             "text_size": "default",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "1639535416ca744400-2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "title_top": false,
-            "title_font": "default",
-            "title_size": "default",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "p_bullets": false,
-            "text_color_primary": false,
-            "text_font": "default",
-            "text_size": "default",
-            "link_label": "",
-            "link": ""
+            "link_label": "SHOP SNACKS",
+            "link": "shopify:\/\/collections\/snacks"
           }
         }
       },
       "block_order": [
         "1639535416ca744400-0",
-        "1639535416ca744400-1",
-        "1639535416ca744400-2"
+        "1639535416ca744400-1"
       ],
       "settings": {
         "title": "",
