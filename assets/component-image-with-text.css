@@ -173,12 +173,6 @@
 	}
 }
 
-@media screen and (min-width: 750px) {
-	.images-with-text.images-with-text {
-		margin-bottom: 0;
-	}
-}
-
 .image-with-text__content > * + * {
 	margin-top: 2rem;
 }
@@ -210,4 +204,15 @@
 .image-with-text__text p {
 	margin-top: 0;
 	margin-bottom: 1rem;
+}
+
+/* CUSTOM CSS */
+.images-with-text .multicolumn-list {
+	padding-top: 4rem ;
+}
+
+@media screen and (min-width: 750px) {
+	.desktop_no_spacing.image-with-text:not(.color-scheme-background-1) {
+		margin-bottom: 0;
+	}
 }

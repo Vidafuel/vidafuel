@@ -1,6 +1,6 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
-<div class="image-with-text images-with-text color-{{ section.settings.color_scheme }} {% if section.settings.section_width == 'full_width' %}image-with-text--full-width{% else %}page-width color-scheme-{{ section.settings.color_scheme }}{% endif %} {%- if section.settings.bk_image != blank -%} image-with-text__media--background {% else %}gradient {% endif %}" {%- if section.settings.bk_image != blank -%}style="background-color:transparent;"{% endif %}>
+<div class="image-with-text images-with-text color-{{ section.settings.color_scheme }} {% if section.settings.section_width == 'full_width' %}image-with-text--full-width{% else %}page-width color-scheme-{{ section.settings.color_scheme }}{% endif %} {%- if section.settings.bk_image != blank -%} image-with-text__media--background {% else %}gradient {% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}" {%- if section.settings.bk_image != blank -%}style="background-color:transparent;"{% endif %}>
   {%- if section.settings.bk_image != blank -%}
     <img
       srcset="{%- if section.settings.bk_image.width >= 165 -%}{{ section.settings.bk_image | img_url: '165x' }} 165w,{%- endif -%}
@@ -270,6 +270,98 @@
   "name": "Images with text",
   "class": "spaced-section spaced-section--full-width",
   "settings": [
+     {
+      "type": "image_picker",
+      "id": "bk_image",
+      "label": "Background image"
+    },
+    {
+      "type": "select",
+      "id": "height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.image-with-text.settings.height.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.image-with-text.settings.height.options__2.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.image-with-text.settings.height.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.image-with-text.settings.height.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "desktop_no_spacing",
+      "label": "Remove desktop bottom spacing",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "background-1",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__3.label"
+        },
+        {
+          "value": "accent-1",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__4.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.image-with-text.settings.color_scheme.options__5.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.image-with-text.settings.color_scheme.label"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "image_first",
+          "label": "t:sections.image-with-text.settings.layout.options__1.label"
+        },
+        {
+          "value": "text_first",
+          "label": "t:sections.image-with-text.settings.layout.options__2.label"
+        }
+      ],
+      "default": "image_first",
+      "label": "t:sections.image-with-text.settings.layout.label",
+      "info": "t:sections.image-with-text.settings.layout.info"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "options": [
+        {
+          "value": "full_width",
+          "label": "Full width"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        }
+      ],
+      "default": "normal",
+      "label": "Section width"
+    },
     {
       "type": "image_picker",
       "id": "image_01",
@@ -396,92 +488,6 @@
       "type": "url",
       "id": "image_08_link",
       "label": "Image eight link"
-    },
-    {
-      "type": "image_picker",
-      "id": "bk_image",
-      "label": "Background image"
-    },
-    {
-      "type": "select",
-      "id": "height",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.image-with-text.settings.height.options__1.label"
-        },
-        {
-          "value": "small",
-          "label": "t:sections.image-with-text.settings.height.options__2.label"
-        },
-        {
-          "value": "large",
-          "label": "t:sections.image-with-text.settings.height.options__3.label"
-        }
-      ],
-      "default": "adapt",
-      "label": "t:sections.image-with-text.settings.height.label"
-    },
-    {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "background-1",
-          "label": "t:sections.image-with-text.settings.color_scheme.options__1.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.image-with-text.settings.color_scheme.options__2.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.image-with-text.settings.color_scheme.options__3.label"
-        },
-        {
-          "value": "accent-1",
-          "label": "t:sections.image-with-text.settings.color_scheme.options__4.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.image-with-text.settings.color_scheme.options__5.label"
-        }
-      ],
-      "default": "background-1",
-      "label": "t:sections.image-with-text.settings.color_scheme.label"
-    },
-    {
-      "type": "select",
-      "id": "layout",
-      "options": [
-        {
-          "value": "image_first",
-          "label": "t:sections.image-with-text.settings.layout.options__1.label"
-        },
-        {
-          "value": "text_first",
-          "label": "t:sections.image-with-text.settings.layout.options__2.label"
-        }
-      ],
-      "default": "image_first",
-      "label": "t:sections.image-with-text.settings.layout.label",
-      "info": "t:sections.image-with-text.settings.layout.info"
-    },
-    {
-      "type": "select",
-      "id": "section_width",
-      "options": [
-        {
-          "value": "full_width",
-          "label": "Full width"
-        },
-        {
-          "value": "normal",
-          "label": "Normal"
-        }
-      ],
-      "default": "normal",
-      "label": "Section width"
     }
   ],
   "blocks": [

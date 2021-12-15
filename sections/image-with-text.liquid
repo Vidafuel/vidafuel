@@ -1,6 +1,6 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
-<div class="image-with-text color-{{ section.settings.color_scheme }} {% if section.settings.section_width == 'full_width' %}image-with-text--full-width{% else %}page-width color-scheme-{{ section.settings.color_scheme }}{% endif %} {%- if section.settings.bk_image != blank -%} image-with-text__media--background {% else %}gradient {% endif %}" {%- if section.settings.bk_image != blank -%}style="background-color:transparent;"{% endif %}>
+<div class="image-with-text color-{{ section.settings.color_scheme }} {% if section.settings.section_width == 'full_width' %}image-with-text--full-width{% else %}page-width color-scheme-{{ section.settings.color_scheme }}{% endif %} {%- if section.settings.bk_image != blank -%} image-with-text__media--background {% else %}gradient {% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}" {%- if section.settings.bk_image != blank -%}style="background-color:transparent;"{% endif %}>
   {%- if section.settings.bk_image != blank -%}
     <img
       srcset="{%- if section.settings.bk_image.width >= 165 -%}{{ section.settings.bk_image | img_url: '165x' }} 165w,{%- endif -%}
@@ -91,6 +91,10 @@
       "label": "Background image"
     },
     {
+      "type": "header",
+      "content": "Settings"
+    },
+    {
       "type": "select",
       "id": "height",
       "options": [
@@ -170,6 +174,12 @@
       ],
       "default": "normal",
       "label": "Section width"
+    },
+    {
+      "type": "checkbox",
+      "id": "desktop_no_spacing",
+      "label": "Remove desktop bottom spacing",
+      "default": false
     }
   ],
   "blocks": [

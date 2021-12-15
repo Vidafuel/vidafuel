@@ -290,3 +290,18 @@
 	top: 7px;
 	left: 0;
 }
+
+/* CUSTOM CSS */
+
+@media screen and (min-width: 750px) {
+	h3.multicolumn-card-spacing {
+		padding-top: 2em;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	.desktop_no_spacing.multicolumn.no-heading:not(.background-secondary),
+	.desktop_no_spacing .multicolumn-list.slider {
+		margin-top: 0;
+	}
+}
