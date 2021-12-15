@@ -254,6 +254,38 @@
         "swipe_on_mobile": true
       }
     },
+    "1639578542bcd508be": {
+      "type": "liquid-with-image",
+      "blocks": {
+        "163957854218e39ddb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CUSTOMER REVIEWS ON OUR WELLNESS PROTEIN",
+            "heading_font": "trade_gothic_compressed_bold"
+          }
+        },
+        "163957854218e39ddb-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "READ REVIEWS",
+            "button_link": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "163957854218e39ddb-0",
+        "163957854218e39ddb-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/home-09.png",
+        "bk_image": "shopify:\/\/shop_images\/home-reviews-background.jpg",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "text_first",
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"\" \n data-header-customisation-alignment=\"center\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"227804089,129641817,229428686,202976632\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
+        "section_width": "full_width"
+      }
+    },
     "1639085117b298d674": {
       "type": "image-with-text",
       "blocks": {
@@ -286,38 +318,6 @@
         "layout": "text_first",
         "section_width": "normal"
       }
-    },
-    "1639578542bcd508be": {
-      "type": "liquid-with-image",
-      "blocks": {
-        "163957854218e39ddb-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "CUSTOMER REVIEWS ON OUR WELLNESS PROTEIN",
-            "heading_font": "trade_gothic_compressed_bold"
-          }
-        },
-        "163957854218e39ddb-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "READ REVIEWS",
-            "button_link": "shopify:\/\/collections"
-          }
-        }
-      },
-      "block_order": [
-        "163957854218e39ddb-0",
-        "163957854218e39ddb-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/home-09.png",
-        "bk_image": "shopify:\/\/shop_images\/home-reviews-background.jpg",
-        "height": "small",
-        "color_scheme": "background-1",
-        "layout": "text_first",
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"\" \n data-header-customisation-alignment=\"center\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"227804089,129641817,229428686,202976632\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
-        "section_width": "full_width"
-      }
     }
   },
   "order": [
@@ -326,7 +326,7 @@
     "1639504497f2620302",
     "16395354160dec9b11",
     "1639505258119ea558",
-    "1639085117b298d674",
-    "1639578542bcd508be"
+    "1639578542bcd508be",
+    "1639085117b298d674"
   ]
 }
