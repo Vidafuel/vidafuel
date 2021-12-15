@@ -130,39 +130,6 @@
         "section_width": "full_width"
       }
     },
-    "1639085117b298d674": {
-      "type": "image-with-text",
-      "blocks": {
-        "1639085117d4baf919-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "DIETITIAN DEVELOPED SNACKS",
-            "heading_font": "proxima_nova_light"
-          }
-        },
-        "1639085117d4baf919-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>HOW WE COMPARE<\/p>",
-            "text_font": "trade_gothic_compressed_bold",
-            "text_size": "h2",
-            "text_color": "color-foreground-accent-1"
-          }
-        }
-      },
-      "block_order": [
-        "1639085117d4baf919-0",
-        "1639085117d4baf919-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/home-12.png",
-        "image_link": "",
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "text_first",
-        "section_width": "normal"
-      }
-    },
     "16395354160dec9b11": {
       "type": "multicolumn",
       "blocks": {
@@ -286,14 +253,47 @@
         "button_link": "\/products",
         "swipe_on_mobile": true
       }
+    },
+    "1639085117b298d674": {
+      "type": "image-with-text",
+      "blocks": {
+        "1639085117d4baf919-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "DIETITIAN DEVELOPED SNACKS",
+            "heading_font": "proxima_nova_light"
+          }
+        },
+        "1639085117d4baf919-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>HOW WE COMPARE<\/p>",
+            "text_font": "trade_gothic_compressed_bold",
+            "text_size": "h2",
+            "text_color": "color-foreground-accent-1"
+          }
+        }
+      },
+      "block_order": [
+        "1639085117d4baf919-0",
+        "1639085117d4baf919-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/home-12.png",
+        "image_link": "",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "text_first",
+        "section_width": "normal"
+      }
     }
   },
   "order": [
     "163908444861c999ea",
     "1639503887e884ceb3",
     "1639504497f2620302",
-    "1639085117b298d674",
     "16395354160dec9b11",
-    "1639505258119ea558"
+    "1639505258119ea558",
+    "1639085117b298d674"
   ]
 }
