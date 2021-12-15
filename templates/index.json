@@ -325,14 +325,8 @@
         "1639579439ccdff72d-0": {
           "type": "heading",
           "settings": {
-            "heading": "Liquid with image",
+            "heading": "CUSTOMER REVIEWS ON OUR SNACKS",
             "heading_font": "trade_gothic_compressed_bold"
-          }
-        },
-        "1639579439ccdff72d-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
         "1639579439ccdff72d-2": {
@@ -345,13 +339,12 @@
       },
       "block_order": [
         "1639579439ccdff72d-0",
-        "1639579439ccdff72d-1",
         "1639579439ccdff72d-2"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/home-snack-reviews.png",
         "bk_image": "shopify:\/\/shop_images\/home-reviews-background.jpg",
-        "height": "adapt",
+        "height": "small",
         "color_scheme": "background-1",
         "layout": "text_first",
         "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"129641733,230229879,129641702,172539969\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
