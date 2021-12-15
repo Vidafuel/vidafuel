@@ -325,14 +325,8 @@
         "1639579439ccdff72d-0": {
           "type": "heading",
           "settings": {
-            "heading": "Liquid with image",
+            "heading": "CUSTOMER REVIEWS ON OUR SNACKS",
             "heading_font": "trade_gothic_compressed_bold"
-          }
-        },
-        "1639579439ccdff72d-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
         "1639579439ccdff72d-2": {
@@ -345,7 +339,6 @@
       },
       "block_order": [
         "1639579439ccdff72d-0",
-        "1639579439ccdff72d-1",
         "1639579439ccdff72d-2"
       ],
       "settings": {
