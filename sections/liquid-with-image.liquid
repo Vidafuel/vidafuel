@@ -49,7 +49,7 @@
       <div class="liquid-with-image__content liquid-with-image__content--{{ section.settings.height }}">
         {% for block in section.blocks %}
           {% if block.settings.heading %}
-              <h2 class="liquid-with-image__heading h1 {% if block.settings.heading_font != 'default' %}{{ block.settings.heading_font }}{% endif %}" {{ block.shopify_attributes }}>
+              <h2 class="liquid-with-image__heading h1 {% if block.settings.heading_font != 'default' %}{{ block.settings.heading_font }}{% endif %} {% if block.settings.heading_size != 'default' %}{{ block.settings.heading_size }}{% endif %}" {{ block.shopify_attributes }}>
                 {{ block.settings.heading | escape }}
               </h2>
           {% endif %}
@@ -231,6 +231,30 @@
           ],
           "default": "default",
           "label": "Heading font"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "heading-1",
+              "label": "h1"
+            },
+            {
+              "value": "heading-3",
+              "label": "h3"
+            },
+            {
+              "value": "heading-5",
+              "label": "h5"
+            }
+          ],
+          "default": "default",
+          "label": "Heading size"
         }
       ]
     },

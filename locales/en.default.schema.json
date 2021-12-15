@@ -1186,7 +1186,7 @@
             "label": "Image first"
           },
           "options__2": {
-            "label": "Text first"
+            "label": "Liquid first"
           },
           "label": "Desktop layout",
           "info": "Image first is the default mobile layout."
@@ -1198,6 +1198,60 @@
           "settings": {
             "heading": {
               "label": "Heading"
+            },
+            "heading_font": {
+              "label": "Heading font",
+              "options__1": {
+                "label": "Default"
+              },
+              "options__2": {
+                "label": "Proxima Nova Light"
+              },
+              "options__3": {
+                "label": "Trade Gothic"
+              },
+              "options__4": {
+                "label": "Trade Gothic Bold"
+              },
+              "options__5": {
+                "label": "Trade Gothic Bold Condensed"
+              },
+              "options__6": {
+                "label": "Trade Gothic Condensed"
+              },
+              "options__7": {
+                "label": "Trade Gothic Condensed Bold"
+              },
+              "options__8": {
+                "label": "Trade Gothic Compressed Bold"
+              },
+              "options__9": {
+                "label": "Trade Gothic Condensed Heavy"
+              }
+            },
+            "heading_size": {
+              "label": "Heading size",
+              "options__1": {
+                "label": "Default"
+              },
+              "options__2": {
+                "label": "h1"
+              },
+              "options__3": {
+                "label": "h2"
+              },
+              "options__4": {
+                "label": "h3"
+              },
+              "options__5": {
+                "label": "h4"
+              },
+              "options__6": {
+                "label": "h5"
+              },
+              "options__7": {
+                "label": "h6"
+              }
             },
             "custom_liquid": {
               "label": "Custom liquid",
