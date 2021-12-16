@@ -30,15 +30,6 @@
             "show_dynamic_checkout": false
           }
         },
-        "8b4bfb81-ae3d-4d40-a8f3-75f125d75bcc": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Product info",
-            "content": "<p>{{ product.metafields.vidafield.product_info | metafield_tag }}<\/p>",
-            "page": "",
-            "icon": "heart"
-          }
-        },
         "65f1d19c-fd62-44b4-9448-fa83afcc2d1d": {
           "type": "collapsible_tab",
           "settings": {
@@ -46,6 +37,15 @@
             "content": "",
             "page": "",
             "icon": "leaf"
+          }
+        },
+        "8b4bfb81-ae3d-4d40-a8f3-75f125d75bcc": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product info",
+            "content": "<p>{{ product.metafields.vidafield.product_info | metafield_tag }}<\/p>",
+            "page": "",
+            "icon": "heart"
           }
         }
       },
@@ -55,8 +55,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "8b4bfb81-ae3d-4d40-a8f3-75f125d75bcc",
-        "65f1d19c-fd62-44b4-9448-fa83afcc2d1d"
+        "65f1d19c-fd62-44b4-9448-fa83afcc2d1d",
+        "8b4bfb81-ae3d-4d40-a8f3-75f125d75bcc"
       ],
       "settings": {
         "enable_sticky_info": true,
