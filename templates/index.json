@@ -163,7 +163,7 @@
             "link_label": "SHOP SNACKS",
             "link": "shopify:\/\/collections\/snacks",
             "title_font": "trade_gothic_compressed_bold",
-            "title_size": "heading-3",
+            "title_size": "heading-2",
             "text_font": "default",
             "text_size": "default",
             "title_top": true,
