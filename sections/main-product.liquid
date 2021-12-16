@@ -71,7 +71,7 @@
     <div class="product__info-wrapper grid__item">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
-
+        {%- assign count = 0 -%}
         {%- for block in section.blocks -%}
           {%- case block.type -%}
           {%- when '@app' -%}
@@ -98,12 +98,6 @@
                 {%- endif -%}
               </div>
             {%- endif -%}
-            <div {{ block.shopify_attributes }}>
-              {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
-                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                {{ form | payment_terms }}
-              {%- endform -%}
-            </div>
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
@@ -113,8 +107,15 @@
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
+          {% liquid
+            if block.settings.heading contains 'in the box'
+              assign attrName = 'open'
+            else
+              assign attrName = ''
+            endif
+          %}
             <div class="product__accordion accordion" {{ block.shopify_attributes }}>
-              <details id="Details-{{ block.id }}-{{ section.id }}">
+              <details id="Details-{{ block.id }}-{{ section.id }}" {{ attrName }}>
                 <summary>
                   <div class="summary__title">
                     {% render 'icon-accordion', icon: block.settings.icon %}
@@ -364,7 +365,14 @@
               </p>
             {%- endif -%}
           {%- endcase -%}
+          {% assign count = count | plus: 1 %}
         {%- endfor -%}
+        <div {{ block.shopify_attributes }}>
+          {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
+            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+            {{ form | payment_terms }}
+          {%- endform -%}
+        </div>
       </div>
     </div>
   </div>
