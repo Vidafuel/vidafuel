@@ -147,7 +147,7 @@
 
 @media screen and (min-width: 750px) {
 	.image-with-text__media--background_img {
-		height: auto;
+		height: 100%;
 		width: 100%;
 	}
 }
