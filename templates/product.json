@@ -61,6 +61,13 @@
             "text": "Text block",
             "text_style": "body"
           }
+        },
+        "49191571-e27c-448d-bc04-a5e81f978d33": {
+          "type": "text",
+          "settings": {
+            "text": "Text block",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -73,7 +80,8 @@
         "buy_buttons",
         "description",
         "share",
-        "00e284ce-41a0-4e0e-8cbe-444569ebf55e"
+        "00e284ce-41a0-4e0e-8cbe-444569ebf55e",
+        "49191571-e27c-448d-bc04-a5e81f978d33"
       ],
       "settings": {
         "enable_sticky_info": true,
