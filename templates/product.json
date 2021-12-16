@@ -51,7 +51,7 @@
         "6b257676-5c89-4827-9ec0-5983a0fb4a40": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{{ product.metafields.vidafield.product_info_text.value }}"
+            "custom_liquid": "<b>{{ product.metafields.vidafield.product_info_text.value }}<\/b>"
           }
         }
       },
