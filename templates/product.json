@@ -34,7 +34,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "What's in the box",
-            "content": "",
+            "content": "<p>{{ product.metafields.vidafield.box_contents | metafield_tag }}<\/p>",
             "page": "",
             "icon": "leaf"
           }
