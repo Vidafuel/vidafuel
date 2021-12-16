@@ -65,7 +65,7 @@
         "49191571-e27c-448d-bc04-a5e81f978d33": {
           "type": "text",
           "settings": {
-            "text": "Text block",
+            "text": "{{ product.metafields.my_fields.ingredients_heading.value }}",
             "text_style": "body"
           }
         }
