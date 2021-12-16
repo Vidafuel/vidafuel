@@ -3,23 +3,9 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
-          }
-        },
-        "subtitle": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
           }
         },
         "price": {
@@ -44,44 +30,23 @@
             "show_dynamic_checkout": false
           }
         },
-        "description": {
-          "type": "description",
+        "8b4bfb81-ae3d-4d40-a8f3-75f125d75bcc": {
+          "type": "collapsible_tab",
           "settings": {
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
-        "00e284ce-41a0-4e0e-8cbe-444569ebf55e": {
-          "type": "text",
-          "settings": {
-            "text": "Text block",
-            "text_style": "body"
-          }
-        },
-        "49191571-e27c-448d-bc04-a5e81f978d33": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.my_fields.ingredients_heading.value }}",
-            "text_style": "body"
+            "heading": "Product info",
+            "content": "<p>{{ product.metafields.vidafield.product_info | metafield_tag }}<\/p>",
+            "page": "",
+            "icon": "heart"
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
-        "subtitle",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share",
-        "00e284ce-41a0-4e0e-8cbe-444569ebf55e",
-        "49191571-e27c-448d-bc04-a5e81f978d33"
+        "8b4bfb81-ae3d-4d40-a8f3-75f125d75bcc"
       ],
       "settings": {
         "enable_sticky_info": true,
