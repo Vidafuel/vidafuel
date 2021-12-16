@@ -70,7 +70,7 @@
       "settings": {
         "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
         "height": "adapt",
-        "desktop_no_spacing": false,
+        "desktop_no_spacing": true,
         "color_scheme": "accent-1",
         "layout": "text_first",
         "section_width": "full_width",
