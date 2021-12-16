@@ -38,6 +38,15 @@
             "page": "",
             "icon": "heart"
           }
+        },
+        "65f1d19c-fd62-44b4-9448-fa83afcc2d1d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What's in the box",
+            "content": "",
+            "page": "",
+            "icon": "leaf"
+          }
         }
       },
       "block_order": [
@@ -46,7 +55,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "8b4bfb81-ae3d-4d40-a8f3-75f125d75bcc"
+        "8b4bfb81-ae3d-4d40-a8f3-75f125d75bcc",
+        "65f1d19c-fd62-44b4-9448-fa83afcc2d1d"
       ],
       "settings": {
         "enable_sticky_info": true,
