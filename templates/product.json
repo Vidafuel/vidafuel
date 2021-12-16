@@ -47,6 +47,13 @@
             "page": "",
             "icon": "heart"
           }
+        },
+        "c464ec62-608a-498a-b722-e53b7cc00b7d": {
+          "type": "popup",
+          "settings": {
+            "text": "Pop-up link text",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -56,7 +63,8 @@
         "quantity_selector",
         "buy_buttons",
         "65f1d19c-fd62-44b4-9448-fa83afcc2d1d",
-        "8b4bfb81-ae3d-4d40-a8f3-75f125d75bcc"
+        "8b4bfb81-ae3d-4d40-a8f3-75f125d75bcc",
+        "c464ec62-608a-498a-b722-e53b7cc00b7d"
       ],
       "settings": {
         "enable_sticky_info": false,
