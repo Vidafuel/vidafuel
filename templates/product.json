@@ -47,12 +47,6 @@
             "page": "",
             "icon": "heart"
           }
-        },
-        "6b257676-5c89-4827-9ec0-5983a0fb4a40": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<b>{{ product.metafields.vidafield.product_info_text.value }}<\/b>"
-          }
         }
       },
       "block_order": [
@@ -62,11 +56,10 @@
         "quantity_selector",
         "buy_buttons",
         "65f1d19c-fd62-44b4-9448-fa83afcc2d1d",
-        "8b4bfb81-ae3d-4d40-a8f3-75f125d75bcc",
-        "6b257676-5c89-4827-9ec0-5983a0fb4a40"
+        "8b4bfb81-ae3d-4d40-a8f3-75f125d75bcc"
       ],
       "settings": {
-        "enable_sticky_info": true,
+        "enable_sticky_info": false,
         "hide_variants": false,
         "enable_video_looping": false
       }
