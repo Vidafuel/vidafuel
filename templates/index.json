@@ -130,7 +130,7 @@
         "color_scheme": "background-1",
         "layout": "image_first",
         "section_width": "full_width",
-        "desktop_no_spacing": false
+        "desktop_no_spacing": true
       }
     },
     "16395354160dec9b11": {
@@ -187,7 +187,7 @@
         "button_link": "",
         "swipe_on_mobile": true,
         "flex_align_center": false,
-        "desktop_no_spacing": false
+        "desktop_no_spacing": true
       }
     },
     "1639505258119ea558": {
