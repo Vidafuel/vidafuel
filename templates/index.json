@@ -40,7 +40,8 @@
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "text_first",
-        "section_width": "full_width"
+        "section_width": "full_width",
+        "desktop_no_spacing": true
       }
     },
     "1639503887e884ceb3": {
@@ -67,6 +68,12 @@
         "847081ef-8696-42f1-ad5e-a315d489674c"
       ],
       "settings": {
+        "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
+        "height": "adapt",
+        "desktop_no_spacing": false,
+        "color_scheme": "accent-1",
+        "layout": "text_first",
+        "section_width": "full_width",
         "image_01": "shopify:\/\/shop_images\/DIALYSIS.png",
         "image_01_title": "CKD\/DIALYSIS",
         "image_01_link": "shopify:\/\/pages\/healthcare-professionals",
@@ -89,12 +96,7 @@
         "image_07_title": "FITNESS \/ ATHLETICS",
         "image_07_link": "shopify:\/\/pages\/healthcare-professionals",
         "image_08_title": "",
-        "image_08_link": "",
-        "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
-        "height": "adapt",
-        "color_scheme": "accent-1",
-        "layout": "text_first",
-        "section_width": "full_width"
+        "image_08_link": ""
       }
     },
     "1639504497f2620302": {
@@ -127,7 +129,8 @@
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first",
-        "section_width": "full_width"
+        "section_width": "full_width",
+        "desktop_no_spacing": false
       }
     },
     "16395354160dec9b11": {
@@ -138,16 +141,17 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/home-05.png",
             "title": "WELLNESS PROTEIN",
-            "title_top": true,
+            "text": "<p><strong>Quick & easy way to boost<br\/>your daily protein intake<br\/><br\/>Powerful combo of<br\/>whey + collagen protein<br\/><br\/>17g protein per 2oz shot<\/strong><\/p>",
+            "link_label": "SHOP PROTEIN",
+            "link": "shopify:\/\/collections\/wellness-supplements",
             "title_font": "trade_gothic_compressed_bold",
             "title_size": "heading-2",
-            "text": "<p><strong>Quick & easy way to boost<br\/>your daily protein intake<br\/><br\/>Powerful combo of<br\/>whey + collagen protein<br\/><br\/>17g protein per 2oz shot<\/strong><\/p>",
-            "p_bullets": false,
-            "text_color_primary": false,
             "text_font": "default",
             "text_size": "default",
-            "link_label": "SHOP PROTEIN",
-            "link": "shopify:\/\/collections\/wellness-supplements"
+            "title_top": true,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
           }
         },
         "1639535416ca744400-1": {
@@ -155,16 +159,17 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Chip_Graphic_Website_Asset_Full.png",
             "title": "SNACKS",
-            "title_top": true,
+            "text": "<p><strong>Convenient &<br\/>portion controlled<br\/><br\/>Controlled sugar,<br\/>sodium and fat<br\/><br\/>Only 80-120 calories<\/strong><\/p>",
+            "link_label": "SHOP SNACKS",
+            "link": "shopify:\/\/collections\/snacks",
             "title_font": "trade_gothic_compressed_bold",
             "title_size": "heading-3",
-            "text": "<p><strong>Convenient &<br\/>portion controlled<br\/><br\/>Controlled sugar,<br\/>sodium and fat<br\/><br\/>Only 80-120 calories<\/strong><\/p>",
-            "p_bullets": false,
-            "text_color_primary": false,
             "text_font": "default",
             "text_size": "default",
-            "link_label": "SHOP SNACKS",
-            "link": "shopify:\/\/collections\/snacks"
+            "title_top": true,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
           }
         }
       },
@@ -177,11 +182,12 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "center",
-        "flex_align_center": false,
         "background_style": "gradient-2",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": true
+        "swipe_on_mobile": true,
+        "flex_align_center": false,
+        "desktop_no_spacing": false
       }
     },
     "1639505258119ea558": {
@@ -191,16 +197,17 @@
           "type": "column",
           "settings": {
             "title": "MEET YOUR DAILY PROTEIN BOOSTER",
-            "title_top": false,
+            "text": "<p>SMALL BUT MIGHTY<\/p>",
+            "link_label": "",
+            "link": "\/products",
             "title_font": "proxima_nova_light",
             "title_size": "heading-2",
-            "text": "<p>SMALL BUT MIGHTY<\/p>",
-            "p_bullets": false,
-            "text_color_primary": true,
             "text_font": "trade_gothic_compressed_bold",
             "text_size": "h2",
-            "link_label": "",
-            "link": "\/products"
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": true
           }
         },
         "16395052587fb2d08a-1": {
@@ -208,32 +215,34 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/home-07_new.png",
             "title": "",
-            "title_top": false,
+            "text": "",
+            "link_label": "",
+            "link": "",
             "title_font": "default",
             "title_size": "default",
-            "text": "",
-            "p_bullets": false,
-            "text_color_primary": false,
             "text_font": "default",
             "text_size": "default",
-            "link_label": "",
-            "link": ""
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
           }
         },
         "16395052587fb2d08a-2": {
           "type": "column",
           "settings": {
             "title": "",
-            "title_top": false,
+            "text": "<p><strong>Whey protein <br\/><\/strong>to support muscle mass & strength.<\/p><p><\/p><p><strong>Collagen protein <br\/><\/strong>to support skin, joint & bone health.<\/p><p><\/p><p><strong>No artificial sweeteners<\/strong>, <br\/>ever<\/p>",
+            "link_label": "",
+            "link": "",
             "title_font": "default",
             "title_size": "default",
-            "text": "<p><strong>Whey protein <br\/><\/strong>to support muscle mass & strength.<\/p><p><\/p><p><strong>Collagen protein <br\/><\/strong>to support skin, joint & bone health.<\/p><p><\/p><p><strong>No artificial sweeteners<\/strong>, <br\/>ever<\/p>",
-            "p_bullets": true,
-            "text_color_primary": false,
             "text_font": "default",
             "text_size": "default",
-            "link_label": "",
-            "link": ""
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": true,
+            "text_color_primary": false
           }
         }
       },
@@ -247,11 +256,12 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
-        "flex_align_center": true,
         "background_style": "none",
         "button_label": "",
         "button_link": "\/products",
-        "swipe_on_mobile": true
+        "swipe_on_mobile": true,
+        "flex_align_center": true,
+        "desktop_no_spacing": false
       }
     },
     "1639578542bcd508be": {
@@ -261,7 +271,8 @@
           "type": "heading",
           "settings": {
             "heading": "CUSTOMER REVIEWS ON OUR WELLNESS PROTEIN",
-            "heading_font": "trade_gothic_compressed_bold"
+            "heading_font": "trade_gothic_compressed_bold",
+            "heading_size": "default"
           }
         },
         "163957854218e39ddb-2": {
@@ -316,7 +327,8 @@
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "text_first",
-        "section_width": "normal"
+        "section_width": "normal",
+        "desktop_no_spacing": false
       }
     },
     "1639579439e5b1f86c": {
@@ -326,7 +338,8 @@
           "type": "heading",
           "settings": {
             "heading": "CUSTOMER REVIEWS ON OUR SNACKS",
-            "heading_font": "trade_gothic_compressed_bold"
+            "heading_font": "trade_gothic_compressed_bold",
+            "heading_size": "default"
           }
         },
         "1639579439ccdff72d-2": {
