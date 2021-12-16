@@ -81,18 +81,18 @@
         "16391567181da7a84b-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>- 17g of complete protein in 2oz<\/p><p>- No dilution requiredEasy to swallow texture<\/p><p>- No artificial sweeteners or colors<\/p>",
+            "title": "",
+            "text": "<p>17g of complete protein in 2oz<\/p><p>No dilution requiredEasy to swallow texture<\/p><p>No artificial sweeteners or colors<\/p>",
             "link_label": "",
             "link": "",
             "title_font": "default",
             "title_size": "default",
-            "text_font": "default",
+            "text_font": "trade_gothic_bold",
             "text_size": "default",
             "title_top": false,
             "desktop_no_spacing": false,
-            "p_bullets": false,
-            "text_color_primary": false
+            "p_bullets": true,
+            "text_color_primary": true
           }
         }
       },
