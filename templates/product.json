@@ -43,7 +43,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Product info",
-            "content": "<p>{{ product.metafields.vidafield.product_info | metafield_tag }}<\/p>",
+            "content": "<p><strong>{{ product.metafields.vidafield.product_info_text | metafield_tag }}<\/strong><\/p><p>{{ product.metafields.vidafield.product_info | metafield_tag }}<\/p>",
             "page": "",
             "icon": "heart"
           }
