@@ -1,4 +1,4 @@
-{{ 'component-liquid-with-text.css' | asset_url | stylesheet_tag }}
+{{ 'component-liquid-with-image.css' | asset_url | stylesheet_tag }}
 
 <div class="liquid-with-image color-{{ section.settings.color_scheme }} {% if section.settings.section_width %}liquid-with-image--full-width{% else %}page-width color-scheme-{{ section.settings.color_scheme }}{% endif %} {%- if section.settings.bk_image != blank -%} liquid-with-image__media--background {% else %}gradient {% endif %}" {%- if section.settings.bk_image != blank -%}style="background-color:transparent;"{% endif %}>
   {%- if section.settings.bk_image != blank -%}
