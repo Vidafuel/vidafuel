@@ -343,17 +343,18 @@
             "heading_size": "default"
           }
         },
-        "1639579439ccdff72d-2": {
-          "type": "button",
+        "ac013710-53e0-4146-a80f-c03d37ce5731": {
+          "type": "popup",
           "settings": {
             "button_label": "READ REVIEWS",
-            "button_link": ""
+            "page": "",
+            "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"132069571,129641671,129641786,147406012\" \n data-show-navigation=\"1\">&nbsp;<\/div>"
           }
         }
       },
       "block_order": [
         "1639579439ccdff72d-0",
-        "1639579439ccdff72d-2"
+        "ac013710-53e0-4146-a80f-c03d37ce5731"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/home-snack-reviews.png",
