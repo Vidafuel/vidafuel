@@ -173,111 +173,112 @@
 /* modal */
 
 .liquid-with-image-popup-modal {
-  box-sizing: border-box;
-  opacity: 0;
-  position: fixed;
-  visibility: hidden;
-  z-index: -1;
-  margin: 0 auto;
-  top: 0;
-  left: 0;
-  overflow: auto;
-  width: 100%;
-  background: rgba(var(--color-foreground), 0.2);
-  height: 100%;
+	box-sizing: border-box;
+	opacity: 0;
+	position: fixed;
+	visibility: hidden;
+	z-index: -1;
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	overflow: auto;
+	width: 100%;
+	background: rgba(var(--color-foreground), 0.2);
+	height: 100%;
 }
 
 .liquid-with-image-popup-modal[open] {
-  opacity: 1;
-  visibility: visible;
-  z-index: 101;
+	opacity: 1;
+	visibility: visible;
+	z-index: 101;
 }
 
 .liquid-with-image-popup-modal__content {
-  background-color: rgb(var(--color-background));
-  overflow: hidden;
-  height: 40%;
-  margin: 0 auto;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 5rem;
-  width: 92%;
-  position: absolute;
-  top: 0;
-  padding: 0 1.5rem 0 3rem;
+	background-color: rgb(var(--color-background));
+	overflow: auto;
+	height: 80%;
+	margin: 0 auto;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 5rem;
+	width: 92%;
+	position: absolute;
+	top: 0;
+	padding: 0 1.5rem 0 3rem;
 }
 
 @media screen and (min-width: 750px) {
-  .liquid-with-image-popup-modal__content {
-    padding-right: 1.5rem;
-    margin-top: 10rem;
-    width: 70%;
-    padding: 0 3rem;
-  }
+	.liquid-with-image-popup-modal__content {
+		padding-right: 1.5rem;
+		margin-top: 10rem;
+		width: 70%;
+		padding: 0 3rem;
+	}
 }
 
 .liquid-with-image-popup-modal__content img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 @media screen and (max-width: 749px) {
-  .liquid-with-image-popup-modal__content table {
-    display: block;
-    max-width: fit-content;
-    overflow-x: auto;
-    white-space: nowrap;
-    margin: 0;
-  }
+	.liquid-with-image-popup-modal__content table {
+		display: block;
+		max-width: fit-content;
+		overflow-x: auto;
+		white-space: nowrap;
+		margin: 0;
+	}
 }
 
 .liquid-with-image-popup-modal__opener {
-  display: inline-block;
+	display: inline-block;
 }
 
 .liquid-with-image-popup-modal__button:hover {
-  text-decoration-thickness: 0.2rem;
+	text-decoration-thickness: 0.2rem;
 }
 
 .liquid-with-image-popup-modal__content-info {
-  padding-right: 4.4rem;
+	padding-right: 4.4rem;
 }
 
 .liquid-with-image-popup-modal__content-info > * {
-  height: auto;
-  margin: 0 auto;
-  max-width: 100%;
-  width: 100%;
+	height: auto;
+	margin: 0 auto;
+	max-width: 100%;
+	width: 100%;
 }
 
 @media screen and (max-width: 749px) {
-  .liquid-with-image-popup-modal__content-info > * {
-    max-height: 100%;
-  }
+	.liquid-with-image-popup-modal__content-info > * {
+		max-height: 100%;
+	}
 }
 
 .liquid-with-image-popup-modal__toggle {
-  background-color: rgb(var(--color-background));
-  border: 0.1rem solid rgba(var(--color-foreground), 0.1);
-  border-radius: 50%;
-  color: rgba(var(--color-foreground), 0.55);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  position: sticky;
-  padding: 1.2rem;
-  z-index: 2;
-  top: 1.5rem;
-  width: 4rem;
-  margin: 0 0 0 auto;
+	background-color: rgb(var(--color-background));
+	border: 0.1rem solid rgba(var(--color-foreground), 0.1);
+	border-radius: 50%;
+	color: rgba(var(--color-foreground), 0.55);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	position: sticky;
+	padding: 1.2rem;
+	z-index: 2;
+	top: 1.5rem;
+	width: 4rem;
+	margin: 0 0 0 auto;
 }
 
 .liquid-with-image-popup-modal__toggle:hover {
-  color: rgba(var(--color-foreground), 0.75);
+	color: rgba(var(--color-foreground), 0.75);
 }
 
 .liquid-with-image-popup-modal__toggle .icon {
-  height: auto;
-  margin: 0;
-  width: 2.2rem;
+	height: auto;
+	margin: 0;
+	width: 2.2rem;
 }
+
