@@ -3,14 +3,14 @@
 <div class="image-with-text color-{{ section.settings.color_scheme }} {% if section.settings.section_width == 'full_width' %}image-with-text--full-width{% else %}page-width color-scheme-{{ section.settings.color_scheme }}{% endif %} {%- if section.settings.bk_image != blank -%} image-with-text__media--background {% else %}gradient {% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}" {%- if section.settings.bk_image != blank -%}style="background-color:transparent;"{% endif %}>
   {%- if section.settings.bk_image != blank -%}
     <img
-      srcset="{%- if section.settings.bk_image.width >= 165 -%}{{ section.settings.bk_image | img_url: '165x' }} 165w,{%- endif -%}
-        {%- if section.settings.bk_image.width >= 360 -%}{{ section.settings.bk_image | img_url: '360x' }} 360w,{%- endif -%}
-        {%- if section.settings.bk_image.width >= 535 -%}{{ section.settings.bk_image | img_url: '535x' }} 535w,{%- endif -%}
-        {%- if section.settings.bk_image.width >= 750 -%}{{ section.settings.bk_image | img_url: '750x' }} 750w,{%- endif -%}
-        {%- if section.settings.bk_image.width >= 1070 -%}{{ section.settings.bk_image | img_url: '1070x' }} 1070w,{%- endif -%}
-        {%- if section.settings.bk_image.width >= 1500 -%}{{ section.settings.bk_image | img_url: '1500x' }} 1500w,{%- endif -%}
-        {{ section.settings.bk_image | img_url: 'master' }} {{ section.settings.bk_image.width }}w"
-      src="{{ section.settings.bk_image | img_url: '1500x' }}"
+      srcset="{%- if section.settings.bk_image.width >= 165 -%}{{ section.settings.bk_image | image_url: width: 165 }} 165w,{%- endif -%}
+        {%- if section.settings.bk_image.width >= 360 -%}{{ section.settings.bk_image | image_url: width: 360 }} 360w,{%- endif -%}
+        {%- if section.settings.bk_image.width >= 535 -%}{{ section.settings.bk_image | image_url: width: 535 }} 535w,{%- endif -%}
+        {%- if section.settings.bk_image.width >= 750 -%}{{ section.settings.bk_image | image_url: width: 750 }} 750w,{%- endif -%}
+        {%- if section.settings.bk_image.width >= 1070 -%}{{ section.settings.bk_image | image_url: width: 1070 }} 1070w,{%- endif -%}
+        {%- if section.settings.bk_image.width >= 1500 -%}{{ section.settings.bk_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+        {{ section.settings.bk_image | image_url }} {{ section.settings.bk_image.width }}w"
+      src="{{ section.settings.bk_image | image_url: width: 1500 }}"
       sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
       alt="{{ section.settings.bk_image.alt | escape }}"
       loading="lazy"
@@ -27,14 +27,14 @@
       >
         {%- if section.settings.image != blank -%}
           <img
-            srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | img_url: '165x' }} 165w,{%- endif -%}
-              {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{%- endif -%}
-              {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | img_url: '535x' }} 535w,{%- endif -%}
-              {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
-              {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | img_url: '1070x' }} 1070w,{%- endif -%}
-              {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
-              {{ section.settings.image | img_url: 'master' }} {{ section.settings.image.width }}w"
-            src="{{ section.settings.image | img_url: '1500x' }}"
+            srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+              {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+              {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
+              {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
+              {%- if section.settings.image.width >= 1070 -%}{{ section.settings.image | image_url: width: 1070 }} 1070w,{%- endif -%}
+              {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+              {{ section.settings.image | image_url }} {{ section.settings.image.width }}w"
+            src="{{ section.settings.image | image_url: width: 1500 }}"
             sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
             alt="{{ section.settings.image.alt | escape }}"
             loading="lazy"
@@ -293,7 +293,7 @@
             }
           ],
           "default": "default",
-          "label": "Button font"
+          "label": "Text font"
         },
         {
           "type": "select",

@@ -1,11 +1,10 @@
+{% if request.path == '/collections' %}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
-
-
+{% endif %}
 
 <div class="page-width">
-
-{% if request.path != '/products' %}
+{% if request.path == '/collections' %}
   {%- comment -%} DEFAULT COLLECTION {%- endcomment -%}
   <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
   {%- liquid
@@ -73,15 +72,18 @@
       </li>
     {%- endfor -%}
   </ul>
-  
 {% endif %}
 </div>
 
 {% schema %}
 {
   "name": "t:sections.main-list-collections.name",
-  "class": "spaced-section",
+  "class": "spaced-section--full-width",
   "settings": [
+    {
+      "type": "paragraph",
+      "content": "** this block is only for the Collection List, to edit the Products page click Shop All Products in the site main nav"
+    },
     {
       "type": "text",
       "id": "title",

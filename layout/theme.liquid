@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
     {%- if settings.favicon != blank -%}
-      <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
+      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
@@ -160,7 +160,12 @@
 
     {% section 'announcement-bar' %}
     {% section 'header' %}
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+    {% if request.path == '/collections' %}
+      {% assign mainClass = 'collections' %}
+    {% elsif request.path == '/products' %}
+      {% assign mainClass = 'products' %}
+    {% endif %}
+    <main id="MainContent" class="{{ mainClass }} content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 

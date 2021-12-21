@@ -119,3 +119,9 @@
 .collection-list__item .card-colored {
   position: relative;
 }
+
+/* custom styles */
+/* hide any sections added to list-collections */
+main.collections .shopify-section.spaced-section:nth-child(n+2) {
+    display: none;
+}
