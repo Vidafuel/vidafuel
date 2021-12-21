@@ -2227,6 +2227,9 @@
             "image": {
               "label": "Image"
             },
+            "image_url": {
+              "label": "Image link"
+            },
             "title": {
               "label": "Heading"
             },
