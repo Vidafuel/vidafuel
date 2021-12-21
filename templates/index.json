@@ -1,5 +1,43 @@
 {
   "sections": {
+    "1640098901617a2a0b": {
+      "type": "image-banner",
+      "blocks": {
+        "1640098901cb462048-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "DIETITIAN DEVELOPED NUTRITION SOLUTIONS",
+            "heading_size": "medium"
+          }
+        },
+        "1640098901cb462048-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "GET STARTED",
+            "button_link_1": "shopify:\/\/collections\/wellness-supplements",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1640098901cb462048-0",
+        "1640098901cb462048-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Stop-Motion-Pour720.gif",
+        "image_height": "large",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "flex-start",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "163908444861c999ea": {
       "type": "image-with-text",
       "blocks": {
@@ -368,6 +406,7 @@
     }
   },
   "order": [
+    "1640098901617a2a0b",
     "163908444861c999ea",
     "1639503887e884ceb3",
     "1639504497f2620302",
