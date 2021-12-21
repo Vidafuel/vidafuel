@@ -139,7 +139,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/home-05.png",
-            "image_url": "shopify:\/\/collections\/wellness-supplements",
+            "image_url": "\/products#drinks",
             "title": "WELLNESS PROTEIN",
             "text": "<p><strong>Quick & easy way to boost<br\/>your daily protein intake<br\/><br\/>Powerful combo of<br\/>whey + collagen protein<br\/><br\/>17g protein per 2oz shot<\/strong><\/p>",
             "link_label": "SHOP PROTEIN",
