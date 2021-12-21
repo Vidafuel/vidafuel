@@ -121,14 +121,36 @@
         "desktop_no_spacing": false
       }
     },
-    "16391568488013a061": {
-      "type": "video",
+    "1640123076cbff58b5": {
+      "type": "collage",
+      "blocks": {
+        "164012307670ab9899-0": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/Vidafuel-Wellness-Protein-Tutorial.png",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=B5wCtpjZWR4",
+            "description": "Describe the video",
+            "image_padding": false
+          }
+        },
+        "164012307670ab9899-1": {
+          "type": "product",
+          "settings": {
+            "product": "protein-juice-orange",
+            "second_image": false,
+            "image_padding": true,
+            "secondary_background": false
+          }
+        }
+      },
+      "block_order": [
+        "164012307670ab9899-0",
+        "164012307670ab9899-1"
+      ],
       "settings": {
-        "heading": "Video",
-        "cover_image": "shopify:\/\/shop_images\/Vidafuel-Wellness-Protein-Tutorial.png",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=B5wCtpjZWR4",
-        "description": "",
-        "full_width": true
+        "heading": "",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
       }
     },
     "16395061492d0dea2e": {
@@ -261,7 +283,7 @@
     "main",
     "1639156556f1f7aaff",
     "163915671883655487",
-    "16391568488013a061",
+    "1640123076cbff58b5",
     "16395061492d0dea2e",
     "163950623206c4ca1f",
     "1639506526d4856680"
