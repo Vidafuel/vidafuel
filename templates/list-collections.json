@@ -91,7 +91,23 @@
         "color_scheme": "accent-1",
         "layout": "image_first",
         "section_width": "full_width",
-        "desktop_no_spacing": false
+        "desktop_no_spacing": true
+      }
+    },
+    "164012152966eb2d65": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "collection": "snacks",
+        "products_to_show": 12,
+        "show_view_all": false,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
       }
     }
   },
@@ -99,6 +115,7 @@
     "main",
     "1640121428e4293882",
     "16401214947620309f",
-    "1640121497f0b3cd4b"
+    "1640121497f0b3cd4b",
+    "164012152966eb2d65"
   ]
 }
