@@ -3,6 +3,10 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "title_alt": "NEW Protein Supplement",
+        "title_color": "#5bb6ae",
+        "title_font": "default",
+        "title_size": "h2"
       }
     },
     "1639156556f1f7aaff": {
@@ -46,6 +50,7 @@
         "16391567181da7a84b-1": {
           "type": "column",
           "settings": {
+            "image_url": "",
             "title": "Small but Mighty",
             "text": "<p>Not all proteins are equal. See how Vidafuel is superior.<\/p>",
             "link_label": "Comp Chart",
@@ -64,6 +69,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/healthcare-02.png",
+            "image_url": "",
             "title": "",
             "text": "",
             "link_label": "",
@@ -81,6 +87,7 @@
         "16391567181da7a84b-2": {
           "type": "column",
           "settings": {
+            "image_url": "",
             "title": "",
             "text": "<p>17g of complete protein in 2oz<\/p><p>No dilution requiredEasy to swallow texture<\/p><p>No artificial sweeteners or colors<\/p>",
             "link_label": "",
@@ -110,7 +117,7 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
-        "flex_align_center": false,
+        "flex_align_center": true,
         "desktop_no_spacing": false
       }
     },
@@ -158,15 +165,16 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/healthcare-03.png",
-            "title": "",
-            "text": "<p>Download white paper:<br\/>Clinical and financial value of Oral Nutrition Supplement programs<\/p>",
+            "image_url": "",
+            "title": "Download White Paper",
+            "text": "<p>Clinical and financial value of Oral Nutrition Supplement programs<\/p>",
             "link_label": "DOWNLOAD",
             "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0922\/1906\/files\/2020-VIDAFUEL-White-Paper.pdf?v=1584484018",
             "title_font": "default",
-            "title_size": "default",
+            "title_size": "heading-5",
             "text_font": "default",
             "text_size": "default",
-            "title_top": false,
+            "title_top": true,
             "desktop_no_spacing": false,
             "p_bullets": false,
             "text_color_primary": false
@@ -176,6 +184,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/VidaFuel-Protein-wCup_new.jpg",
+            "image_url": "",
             "title": "",
             "text": "<p>Shop our best-selling Protein Drinks!<\/p>",
             "link_label": "SHOP NOW",
@@ -204,7 +213,7 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
-        "flex_align_center": false,
+        "flex_align_center": true,
         "desktop_no_spacing": false
       }
     },
@@ -215,6 +224,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/metro-medical.png",
+            "image_url": "",
             "title": "DISTRIBUTED BY",
             "text": "",
             "link_label": "",
