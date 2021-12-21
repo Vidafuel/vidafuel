@@ -16,32 +16,23 @@
         "1640121428738d06ed-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Wellness Protein Drinks",
             "heading_font": "default"
           }
         },
         "1640121428738d06ed-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p><strong>Delicious protein supplement beverages.<\/strong><\/p><p>Increasing your daily protein intake has never been easier! Vidafuel Wellness protein drinks are the first nutritional supplement of its kind, providing 16g of high-quality protein in a quick, 2oz shot! Dietitian developed, our nutrition products have a powerful blend of collagen and whey protein, plus all 20 amino acids. <\/p>",
             "text_font": "default",
             "text_size": "default",
             "text_color": "default"
-          }
-        },
-        "1640121428738d06ed-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_font": "default"
           }
         }
       },
       "block_order": [
         "1640121428738d06ed-0",
-        "1640121428738d06ed-1",
-        "1640121428738d06ed-2"
+        "1640121428738d06ed-1"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Stop-Motion-Pour720.gif",
