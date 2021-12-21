@@ -945,6 +945,9 @@
     "image-with-text": {
       "name": "Image with text",
       "settings": {
+        "section_id": {
+          "label": "Section ID"
+        },
         "image": {
           "label": "Image"
         },

@@ -1,6 +1,6 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
-<div class="image-with-text color-{{ section.settings.color_scheme }} {% if section.settings.section_width == 'full_width' %}image-with-text--full-width{% else %}page-width color-scheme-{{ section.settings.color_scheme }}{% endif %} {%- if section.settings.bk_image != blank -%} image-with-text__media--background {% else %}gradient {% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}" {%- if section.settings.bk_image != blank -%}style="background-color:transparent;"{% endif %}>
+<div {% if section.settings.section_id != blank %}id="{{ section.settings.section_id }}"{% endif %} class="image-with-text color-{{ section.settings.color_scheme }} {% if section.settings.section_width == 'full_width' %}image-with-text--full-width{% else %}page-width color-scheme-{{ section.settings.color_scheme }}{% endif %} {%- if section.settings.bk_image != blank -%} image-with-text__media--background {% else %}gradient {% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}" {%- if section.settings.bk_image != blank -%}style="background-color:transparent;"{% endif %}>
   {%- if section.settings.bk_image != blank -%}
     <img
       srcset="{%- if section.settings.bk_image.width >= 165 -%}{{ section.settings.bk_image | image_url: width: 165 }} 165w,{%- endif -%}
@@ -75,6 +75,13 @@
   "name": "t:sections.image-with-text.name",
   "class": "spaced-section spaced-section--full-width",
   "settings": [
+    {
+      "type": "text",
+      "id": "section_id",
+      "label": "Section ID",
+      "info": "Must be unique, lowercase & spaces are underscores.",
+      "placeholder": "wellness_protein"
+    },
     {
       "type": "image_picker",
       "id": "image",
