@@ -160,13 +160,19 @@
           "settings": {
             "show_dynamic_checkout": false
           }
+        },
+        "6a815fd7-8d1f-443c-b889-0ef1ad061d95": {
+          "type": "rating",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "1640122542dea8d13b-1",
         "1640122542dea8d13b-3",
         "1640122542dea8d13b-5",
-        "1640122542dea8d13b-6"
+        "1640122542dea8d13b-6",
+        "6a815fd7-8d1f-443c-b889-0ef1ad061d95"
       ],
       "settings": {
         "product": "holiday-boxes-2020",

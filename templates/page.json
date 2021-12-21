@@ -34,6 +34,7 @@
         "163915655632d9adf3-1"
       ],
       "settings": {
+        "section_id": "",
         "image": "shopify:\/\/shop_images\/home-05.png",
         "image_link": "shopify:\/\/products\/collagen-protein-drink-2-pack",
         "bk_image": "shopify:\/\/shop_images\/healthcare-bg.jpg",
@@ -127,7 +128,7 @@
         "164012307670ab9899-0": {
           "type": "video",
           "settings": {
-            "cover_image": "shopify:\/\/shop_images\/Vidafuel-Wellness-Protein-Tutorial.png",
+            "cover_image": "shopify:\/\/shop_images\/Vidafuel-Wellness-Protein-Tutorial.jpg",
             "video_url": "https:\/\/www.youtube.com\/watch?v=B5wCtpjZWR4",
             "description": "Describe the video",
             "image_padding": false
