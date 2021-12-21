@@ -95,7 +95,7 @@
             "title_font": "default",
             "title_size": "default",
             "text_font": "trade_gothic_bold",
-            "text_size": "default",
+            "text_size": "h2",
             "title_top": false,
             "desktop_no_spacing": false,
             "p_bullets": true,
