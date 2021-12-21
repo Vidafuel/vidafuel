@@ -294,6 +294,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/home-09.png",
+        "image_url": "",
         "bk_image": "shopify:\/\/shop_images\/home-reviews-background.jpg",
         "height": "small",
         "color_scheme": "background-1",
@@ -315,7 +316,7 @@
         "1639085117d4baf919-1": {
           "type": "text",
           "settings": {
-            "text": "<p>HOW WE COMPARE<\/p><p>**need to add Snack links below img &gt;&gt;<\/p>",
+            "text": "<p>HOW WE COMPARE<\/p>",
             "text_font": "trade_gothic_compressed_bold",
             "text_size": "h2",
             "text_color": "color-foreground-accent-1"
@@ -362,6 +363,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/home-snack-reviews.png",
+        "image_url": "",
         "bk_image": "shopify:\/\/shop_images\/home-reviews-background.jpg",
         "height": "small",
         "color_scheme": "background-1",
