@@ -109,6 +109,68 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "16401224468d9b8dcf": {
+      "type": "image-with-text",
+      "blocks": {
+        "16401224463b454216-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "What's New?",
+            "heading_font": "default"
+          }
+        }
+      },
+      "block_order": [
+        "16401224463b454216-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Chip_Graphic_Website_Asset_Full.png",
+        "image_link": "",
+        "height": "small",
+        "color_scheme": "background-2",
+        "layout": "image_first",
+        "section_width": "full_width",
+        "desktop_no_spacing": false
+      }
+    },
+    "16401225429970e504": {
+      "type": "featured-product",
+      "blocks": {
+        "1640122542dea8d13b-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "1640122542dea8d13b-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "1640122542dea8d13b-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "1640122542dea8d13b-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        }
+      },
+      "block_order": [
+        "1640122542dea8d13b-1",
+        "1640122542dea8d13b-3",
+        "1640122542dea8d13b-5",
+        "1640122542dea8d13b-6"
+      ],
+      "settings": {
+        "product": "holiday-boxes-2020",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
     }
   },
   "order": [
@@ -116,6 +178,8 @@
     "1640121428e4293882",
     "16401214947620309f",
     "1640121497f0b3cd4b",
-    "164012152966eb2d65"
+    "164012152966eb2d65",
+    "16401224468d9b8dcf",
+    "16401225429970e504"
   ]
 }
