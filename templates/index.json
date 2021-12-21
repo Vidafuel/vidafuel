@@ -255,7 +255,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/home-07_new.png",
-            "image_url": "",
+            "image_url": "shopify:\/\/collections\/wellness-supplements",
             "title": "",
             "text": "",
             "link_label": "",
