@@ -73,7 +73,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/home-02-2x-updated.png",
-        "image_link": "",
+        "image_link": "\/products",
         "bk_image": "shopify:\/\/shop_images\/home-01_1.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
@@ -178,6 +178,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/home-05.png",
+            "image_url": "shopify:\/\/collections\/wellness-supplements",
             "title": "WELLNESS PROTEIN",
             "text": "<p><strong>Quick & easy way to boost<br\/>your daily protein intake<br\/><br\/>Powerful combo of<br\/>whey + collagen protein<br\/><br\/>17g protein per 2oz shot<\/strong><\/p>",
             "link_label": "SHOP PROTEIN",
@@ -196,6 +197,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Chip_Graphic_Website_Asset_Full.png",
+            "image_url": "shopify:\/\/collections\/snacks",
             "title": "SNACKS",
             "text": "<p><strong>Convenient &<br\/>portion controlled<br\/><br\/>Controlled sugar,<br\/>sodium and fat<br\/><br\/>Only 80-120 calories<\/strong><\/p>",
             "link_label": "SHOP SNACKS",
@@ -234,6 +236,7 @@
         "16395052587fb2d08a-0": {
           "type": "column",
           "settings": {
+            "image_url": "",
             "title": "MEET YOUR DAILY PROTEIN BOOSTER",
             "text": "<p>SMALL BUT MIGHTY<\/p>",
             "link_label": "",
@@ -252,6 +255,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/home-07_new.png",
+            "image_url": "",
             "title": "",
             "text": "",
             "link_label": "",
@@ -269,6 +273,7 @@
         "16395052587fb2d08a-2": {
           "type": "column",
           "settings": {
+            "image_url": "",
             "title": "",
             "text": "<p><strong>Whey protein <br\/><\/strong>to support muscle mass & strength.<\/p><p><\/p><p><strong>Collagen protein <br\/><\/strong>to support skin, joint & bone health.<\/p><p><\/p><p><strong>No artificial sweeteners<\/strong>, <br\/>ever<\/p>",
             "link_label": "",
