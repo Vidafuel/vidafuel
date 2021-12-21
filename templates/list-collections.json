@@ -66,40 +66,31 @@
         "1640121497ce050c54-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Healthy Snacks",
             "heading_font": "default"
           }
         },
         "1640121497ce050c54-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p><\/p><p><strong>Healthy snacks! Chips, crisps, and variety packs. <\/strong><\/p><p>Our dietitians took your favorite snacks and put a healthier spin on them by simplifying the ingredients and cutting down on the bad stuff. Our nutrition products are portion-controlled, with the benefits of fewer calories, sugar, salt, and fat in other snack foods*. We also maintain a balance of minerals such as potassium and phosphorus, making our snacks kidney-friendly!<\/p>",
             "text_font": "default",
             "text_size": "default",
             "text_color": "default"
-          }
-        },
-        "1640121497ce050c54-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_font": "default"
           }
         }
       },
       "block_order": [
         "1640121497ce050c54-0",
-        "1640121497ce050c54-1",
-        "1640121497ce050c54-2"
+        "1640121497ce050c54-1"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/home-snack-reviews.png",
         "image_link": "",
         "height": "adapt",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-1",
         "layout": "image_first",
-        "section_width": "normal",
+        "section_width": "full_width",
         "desktop_no_spacing": false
       }
     }
