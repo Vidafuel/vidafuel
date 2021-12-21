@@ -125,7 +125,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/home-02-2x-updated.png",
-        "image_link": "",
+        "image_link": "\/products",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first",
