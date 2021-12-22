@@ -70,9 +70,9 @@
                   {% endif %}
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info">
+              <div class="multicolumn-card__info" {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}style="background-color:{{ block.settings.liquid_background }};"{% endif %}>
                 {%- if block.settings.title != blank and block.settings.title_top == false -%}
-                  <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.title_size != 'default' %}{{ block.settings.title_size }}{% endif %}">{{ block.settings.title | escape }}</h3>
+                  <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.title_size != 'default' %}{{ block.settings.title_size }}{% endif %}" {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}style="color:#000;"{% endif %}>{{ block.settings.title | escape }}</h3>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte {% if block.settings.text_color_primary %}color-foreground-accent-1 {% endif %}{% if block.settings.p_bullets %} p_bullets {% endif %}{% if block.settings.text_font != 'default' %} {{ block.settings.text_font }}{% endif %}{% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %}">{{ block.settings.text }}</div>
@@ -108,6 +108,9 @@
                       </div>
                     </div>
                   </modal-dialog>
+                {%- endif -%}
+                {%- if block.settings.custom_liquid != blank -%}
+                  {{ block.settings.custom_liquid }}
                 {%- endif -%}
               </div>
             </div>
@@ -296,6 +299,10 @@
           "label": "t:sections.multicolumn.blocks.column.settings.text.label"
         },
         {
+          "type": "header",
+          "content": "Button settings"
+        },
+        {
           "type": "text",
           "id": "link_label",
           "label": "t:sections.multicolumn.blocks.column.settings.link_label.label"
@@ -327,6 +334,21 @@
           "id": "modal_image",
           "label": "Modal image"
         },
+       {
+         "type": "header",
+         "content": "Custom liquid settings"
+       },
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "Custom liquid"
+        },
+       {
+         "type": "color",
+         "id": "liquid_background",
+         "label": "Liquid background",
+         "default": "#fff"
+       },
         {
           "type": "header",
           "content": "Column settings"
