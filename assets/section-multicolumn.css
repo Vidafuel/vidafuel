@@ -273,6 +273,17 @@
 	line-height: 1.4;
 }
 
+.multicolumn-card__info.custom-liquid {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	box-shadow: 4px 3px 10px 6px #00000024;
+}
+
+.multicolumn-card__info.custom-liquid h3 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
 .multicolumn-card__info .icon-wrap {
 	margin-left: 0.8rem;
 	white-space: nowrap;
