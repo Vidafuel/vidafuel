@@ -145,6 +145,23 @@
 	margin-bottom: 0;
 }
 
+.liquid-with-image__liquid {
+	overflow: hidden;
+	width: 240px;
+}
+
+@media screen and (min-width: 750px) {
+	.liquid-with-image__liquid {
+		width: 304px;
+	}
+}
+
+@media screen and (min-width: 990px) {
+	.liquid-with-image__liquid {
+		width: 580px;
+	}
+}
+
 .liquid-with-image__text p {
 	margin-top: 0;
 	margin-bottom: 1rem;
@@ -281,4 +298,3 @@
 	margin: 0;
 	width: 2.2rem;
 }
-

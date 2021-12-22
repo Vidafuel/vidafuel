@@ -339,6 +339,23 @@
               </modal-dialog>
             {%- endif -%}
           </div>
+
+        {%- when 'text' -%}
+          <div class="collage-card collage-text color-{{ block.settings.color_scheme }}{% if focus_card_left %} collage-card--left{% elsif focus_card_right %} collage-card--right{% endif %}" {{ block.shopify_attributes }}>
+            <div class="collage-content collage-card__text-wrapper">
+              <div class="card__text-spacing">
+                {%- if block.settings.title != blank -%}
+                  <h2 class="collage-cart__heading">{{ block.settings.title }}</h2>
+                {%- endif -%}
+                {%- if block.settings.text != blank -%}
+                  <div class="collage-card__text">
+                    <p>{{ block.settings.text }}</p>
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+
         {%- endcase -%}
     {%- endfor -%}
   </div>
@@ -547,6 +564,51 @@
           "default": false,
           "label": "t:sections.collage.blocks.video.settings.image_padding.label",
           "info": "t:sections.collage.blocks.video.settings.image_padding.info"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "options": [
+            {
+              "value": "accent-1",
+              "label": "Accent 1"
+            },
+            {
+              "value": "accent-2",
+              "label": "Accent 2"
+            },
+            {
+              "value": "background-1",
+              "label": "Background 1"
+            },
+            {
+              "value": "background-2",
+              "label": "Background 2"
+            },
+            {
+              "value": "inverse",
+              "label": "Inverse"
+            }
+          ],
+          "default": "background-1",
+          "label": "Background 1",
+          "info": "t:sections.collage.blocks.image.settings.color_scheme.info"
         }
       ]
     }
