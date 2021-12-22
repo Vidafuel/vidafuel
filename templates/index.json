@@ -44,61 +44,6 @@
         "desktop_no_spacing": true
       }
     },
-    "1639503887e884ceb3": {
-      "type": "images-with-text",
-      "blocks": {
-        "16395038879d66b692-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "PRODUCTS THAT SUPPORT YOU WHEN YOU NEED THEM THE MOST.",
-            "heading_font": "trade_gothic_compressed_bold"
-          }
-        },
-        "847081ef-8696-42f1-ad5e-a315d489674c": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP NOW",
-            "button_link": "\/products",
-            "button_font": "default"
-          }
-        }
-      },
-      "block_order": [
-        "16395038879d66b692-0",
-        "847081ef-8696-42f1-ad5e-a315d489674c"
-      ],
-      "settings": {
-        "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
-        "height": "adapt",
-        "desktop_no_spacing": true,
-        "color_scheme": "accent-1",
-        "layout": "text_first",
-        "section_width": "full_width",
-        "image_01": "shopify:\/\/shop_images\/DIALYSIS.png",
-        "image_01_title": "CKD\/DIALYSIS",
-        "image_01_link": "shopify:\/\/pages\/protein-drinks-for-dialysis-patients",
-        "image_02": "shopify:\/\/shop_images\/DIABETES.png",
-        "image_02_title": "DIABETES",
-        "image_02_link": "shopify:\/\/pages\/healthcare-professionals",
-        "image_03": "shopify:\/\/shop_images\/ACTIVE-AGING.png",
-        "image_03_title": "ACTIVE AGING",
-        "image_03_link": "shopify:\/\/pages\/healthcare-professionals",
-        "image_04": "shopify:\/\/shop_images\/POST-SURGERY-RECOVERY.png",
-        "image_04_title": "POST-SURGERY RECOVERY",
-        "image_04_link": "shopify:\/\/pages\/healthcare-professionals",
-        "image_05": "shopify:\/\/shop_images\/GERIATRIC-NUTRITION.png",
-        "image_05_title": "GERIATRIC NUTRITION",
-        "image_05_link": "shopify:\/\/pages\/healthcare-professionals",
-        "image_06": "shopify:\/\/shop_images\/CANCER.png",
-        "image_06_title": "CANCER",
-        "image_06_link": "shopify:\/\/pages\/healthcare-professionals",
-        "image_07": "shopify:\/\/shop_images\/ATHLETICS.png",
-        "image_07_title": "FITNESS \/ ATHLETICS",
-        "image_07_link": "shopify:\/\/pages\/healthcare-professionals",
-        "image_08_title": "",
-        "image_08_link": ""
-      }
-    },
     "1639505258119ea558": {
       "type": "multicolumn",
       "blocks": {
@@ -305,6 +250,61 @@
         "desktop_no_spacing": true
       }
     },
+    "1639503887e884ceb3": {
+      "type": "images-with-text",
+      "blocks": {
+        "16395038879d66b692-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PRODUCTS THAT SUPPORT YOU WHEN YOU NEED THEM THE MOST.",
+            "heading_font": "trade_gothic_compressed_bold"
+          }
+        },
+        "847081ef-8696-42f1-ad5e-a315d489674c": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "\/products",
+            "button_font": "default"
+          }
+        }
+      },
+      "block_order": [
+        "16395038879d66b692-0",
+        "847081ef-8696-42f1-ad5e-a315d489674c"
+      ],
+      "settings": {
+        "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
+        "height": "adapt",
+        "desktop_no_spacing": true,
+        "color_scheme": "accent-1",
+        "layout": "text_first",
+        "section_width": "full_width",
+        "image_01": "shopify:\/\/shop_images\/DIALYSIS.png",
+        "image_01_title": "CKD\/DIALYSIS",
+        "image_01_link": "shopify:\/\/pages\/protein-drinks-for-dialysis-patients",
+        "image_02": "shopify:\/\/shop_images\/DIABETES.png",
+        "image_02_title": "DIABETES",
+        "image_02_link": "shopify:\/\/pages\/healthcare-professionals",
+        "image_03": "shopify:\/\/shop_images\/ACTIVE-AGING.png",
+        "image_03_title": "ACTIVE AGING",
+        "image_03_link": "shopify:\/\/pages\/healthcare-professionals",
+        "image_04": "shopify:\/\/shop_images\/POST-SURGERY-RECOVERY.png",
+        "image_04_title": "POST-SURGERY RECOVERY",
+        "image_04_link": "shopify:\/\/pages\/healthcare-professionals",
+        "image_05": "shopify:\/\/shop_images\/GERIATRIC-NUTRITION.png",
+        "image_05_title": "GERIATRIC NUTRITION",
+        "image_05_link": "shopify:\/\/pages\/healthcare-professionals",
+        "image_06": "shopify:\/\/shop_images\/CANCER.png",
+        "image_06_title": "CANCER",
+        "image_06_link": "shopify:\/\/pages\/healthcare-professionals",
+        "image_07": "shopify:\/\/shop_images\/ATHLETICS.png",
+        "image_07_title": "FITNESS \/ ATHLETICS",
+        "image_07_link": "shopify:\/\/pages\/healthcare-professionals",
+        "image_08_title": "",
+        "image_08_link": ""
+      }
+    },
     "1639085117b298d674": {
       "type": "image-with-text",
       "blocks": {
@@ -378,11 +378,11 @@
   },
   "order": [
     "163908444861c999ea",
-    "1639503887e884ceb3",
     "1639505258119ea558",
     "16395354160dec9b11",
     "1639578542bcd508be",
     "1639504497f2620302",
+    "1639503887e884ceb3",
     "1639085117b298d674",
     "1639579439e5b1f86c"
   ]
