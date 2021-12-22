@@ -60,8 +60,9 @@
               </h2>
           {% endif %}
         {% endfor %}
-          
-        {{ section.settings.custom_liquid }}
+        <div class="liquid-with-image__liquid">
+          {{ section.settings.custom_liquid }}
+        </div>
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'text' -%}

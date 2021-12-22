@@ -91,6 +91,10 @@
 	height: 19.4rem;
 }
 
+.image-with-text__media--small img {
+	object-fit: contain;
+}
+
 .image-with-text__media--large {
 	height: 43.5rem;
 }

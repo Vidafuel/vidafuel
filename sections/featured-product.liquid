@@ -91,14 +91,13 @@
                   {%- endif -%}
                 </div>
               {%- endif -%}
-              {%- if product != blank -%}
-                <div {{ block.shopify_attributes }}>
-                  {%- form 'product', product -%}
-                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                    {{ form | payment_terms }}
-                  {%- endform -%}
-                </div>
-              {%- endif -%}
+            {%- when 'payment_terms' -%}
+              <div {{ block.shopify_attributes }}>
+                {%- form 'product', product -%}
+                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                  {{ form | payment_terms }}
+                {%- endform -%}
+              </div>
             {%- when 'quantity_selector' -%}
               <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
                 <label class="form__label" for="Quantity-{{ section.id }}">
@@ -522,6 +521,11 @@
       "type": "quantity_selector",
       "name": "t:sections.featured-product.blocks.quantity_selector.name",
       "limit": 1
+    },
+    {
+    "type": "payment_terms",
+    "name": "t:sections.featured-product.blocks.payment_terms.name",
+    "limit": 1
     },
     {
       "type": "variant_picker",

@@ -589,6 +589,9 @@
         "price": {
           "name": "Price"
         },
+        "payment_terms": {
+          "name": "Payment terms"
+        },
         "quantity_selector": {
           "name": "Quantity selector"
         },
