@@ -77,8 +77,37 @@
                 {%- if block.settings.text != blank -%}
                   <div class="rte {% if block.settings.text_color_primary %}color-foreground-accent-1 {% endif %}{% if block.settings.p_bullets %} p_bullets {% endif %}{% if block.settings.text_font != 'default' %} {{ block.settings.text_font }}{% endif %}{% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %}">{{ block.settings.text }}</div>
                 {%- endif -%}
-                {%- if block.settings.link_label != blank -%}
-                  <a class="button button--primary" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
+                {%- if block.settings.link_type == 'link' -%}
+                  {%- if block.settings.link_label != blank -%}
+                    <a class="button button--primary" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
+                  {%- endif -%}
+                {%- else -%}
+                  <modal-opener class="multicolumn-card-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
+                    <button id="ProductPopup-{{ block.id }}" class="button button--primary multicolumn-card-popup-modal__button link" type="button"
+                      aria-haspopup="dialog">{{ block.settings.link_label | escape }}</button>
+                  </modal-opener>
+                  <modal-dialog id="PopupModal-{{ block.id }}" class="multicolumn-card-popup-modal" {{ block.shopify_attributes }}>
+                    <div role="dialog" aria-label="{{ block.settings.link_label }}" aria-modal="true" class="multicolumn-card-popup-modal__content"
+                      tabindex="-1">
+                      <button id="ModalClose-{{ block.id }}" type="button" class="multicolumn-card-popup-modal__toggle"
+                        aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
+                      <div class="multicolumn-card-popup-modal__content-info">
+                        <img
+                          srcset="{%- if block.settings.modal_image.width >= 275 -%}{{ block.settings.modal_image | image_url: width: 275 }} 275w,{%- endif -%}
+                            {%- if block.settings.modal_image.width >= 550 -%}{{ block.settings.modal_image | image_url: width: 550 }} 550w,{%- endif -%}
+                            {%- if block.settings.modal_image.width >= 710 -%}{{ block.settings.modal_image | image_url: width: 710 }} 710w,{%- endif -%}
+                            {%- if block.settings.modal_image.width >= 1420 -%}{{ block.settings.modal_image | image_url: width: 1420 }} 1420w,{%- endif -%}
+                            {{ block.settings.modal_image | image_url }} {{ block.settings.modal_image.width }}w"
+                          src="{{ block.settings.modal_image | image_url: width: 550 }}"
+                          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                          alt="{{ block.settings.modal_image.alt }}"
+                          height="{{ block.settings.modal_image.height }}"
+                          width="{{ block.settings.modal_image.width }}"
+                          loading="lazy"
+                        >
+                      </div>
+                    </div>
+                  </modal-dialog>
                 {%- endif -%}
               </div>
             </div>
@@ -272,9 +301,31 @@
           "label": "t:sections.multicolumn.blocks.column.settings.link_label.label"
         },
         {
+          "type": "radio",
+          "id": "link_type",
+          "label": "Link or modal",
+          "default": "link",
+          "info": "Select what the link will do.",
+          "options": [
+            {
+              "value": "link",
+              "label": "Link"
+            },
+            {
+              "value": "modal",
+              "label": "Modal"
+            }
+          ]
+        },
+        {
           "type": "url",
           "id": "link",
           "label": "t:sections.multicolumn.blocks.column.settings.link.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "modal_image",
+          "label": "Modal image"
         },
         {
           "type": "header",
