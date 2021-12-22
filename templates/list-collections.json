@@ -35,6 +35,7 @@
         "1640121428738d06ed-1"
       ],
       "settings": {
+        "section_id": "drinks",
         "image": "shopify:\/\/shop_images\/Stop-Motion-Pour720.gif",
         "image_link": "",
         "height": "adapt",
@@ -85,6 +86,7 @@
         "1640121497ce050c54-1"
       ],
       "settings": {
+        "section_id": "snacks",
         "image": "shopify:\/\/shop_images\/home-snack-reviews.png",
         "image_link": "",
         "height": "adapt",
@@ -125,10 +127,11 @@
         "16401224463b454216-0"
       ],
       "settings": {
+        "section_id": "new",
         "image": "shopify:\/\/shop_images\/Chip_Graphic_Website_Asset_Full.png",
         "image_link": "",
         "height": "small",
-        "color_scheme": "background-2",
+        "color_scheme": "accent-1",
         "layout": "image_first",
         "section_width": "full_width",
         "desktop_no_spacing": false
@@ -157,13 +160,19 @@
           "settings": {
             "show_dynamic_checkout": false
           }
+        },
+        "6a815fd7-8d1f-443c-b889-0ef1ad061d95": {
+          "type": "rating",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "1640122542dea8d13b-1",
         "1640122542dea8d13b-3",
         "1640122542dea8d13b-5",
-        "1640122542dea8d13b-6"
+        "1640122542dea8d13b-6",
+        "6a815fd7-8d1f-443c-b889-0ef1ad061d95"
       ],
       "settings": {
         "product": "holiday-boxes-2020",
