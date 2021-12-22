@@ -380,7 +380,7 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
-        "flex_align_center": false,
+        "flex_align_center": true,
         "desktop_no_spacing": false
       }
     }
