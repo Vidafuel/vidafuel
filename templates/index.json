@@ -34,6 +34,7 @@
         "1639084448a58c7e7f-2"
       ],
       "settings": {
+        "section_id": "",
         "image": "shopify:\/\/shop_images\/Stop-Motion-Pour720.gif",
         "image_link": "\/products",
         "height": "adapt",
@@ -96,99 +97,6 @@
         "image_07_link": "shopify:\/\/pages\/healthcare-professionals",
         "image_08_title": "",
         "image_08_link": ""
-      }
-    },
-    "1639504497f2620302": {
-      "type": "image-with-text",
-      "blocks": {
-        "16395044977b90f46f-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "ADEQUATE NUTRITION IS THE FOUNDATION FOR A LONG, ACTIVE LIFE.",
-            "heading_font": "trade_gothic_compressed_bold"
-          }
-        },
-        "16395044977b90f46f-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Vidafuel products make it more <strong>accessible, convenient & enjoyable.<\/strong><\/p>",
-            "text_font": "default",
-            "text_size": "default",
-            "text_color": "default"
-          }
-        }
-      },
-      "block_order": [
-        "16395044977b90f46f-0",
-        "16395044977b90f46f-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/home-02-2x-updated.png",
-        "image_link": "\/products",
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first",
-        "section_width": "full_width",
-        "desktop_no_spacing": true
-      }
-    },
-    "16395354160dec9b11": {
-      "type": "multicolumn",
-      "blocks": {
-        "1639535416ca744400-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/home-05.png",
-            "image_url": "\/products#drinks",
-            "title": "WELLNESS PROTEIN",
-            "text": "<p><strong>Quick & easy way to boost<br\/>your daily protein intake<br\/><br\/>Powerful combo of<br\/>whey + collagen protein<br\/><br\/>17g protein per 2oz shot<\/strong><\/p>",
-            "link_label": "SHOP PROTEIN",
-            "link": "shopify:\/\/collections\/wellness-supplements",
-            "title_font": "trade_gothic_compressed_bold",
-            "title_size": "heading-2",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": true,
-            "desktop_no_spacing": false,
-            "p_bullets": false,
-            "text_color_primary": false
-          }
-        },
-        "1639535416ca744400-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Chip_Graphic_Website_Asset_Full.png",
-            "image_url": "shopify:\/\/collections\/snacks",
-            "title": "SNACKS",
-            "text": "<p><strong>Convenient &<br\/>portion controlled<br\/><br\/>Controlled sugar,<br\/>sodium and fat<br\/><br\/>Only 80-120 calories<\/strong><\/p>",
-            "link_label": "SHOP SNACKS",
-            "link": "shopify:\/\/collections\/snacks",
-            "title_font": "trade_gothic_compressed_bold",
-            "title_size": "heading-2",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": true,
-            "desktop_no_spacing": false,
-            "p_bullets": false,
-            "text_color_primary": false
-          }
-        }
-      },
-      "block_order": [
-        "1639535416ca744400-0",
-        "1639535416ca744400-1"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "center",
-        "background_style": "gradient-2",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": true,
-        "flex_align_center": false,
-        "desktop_no_spacing": true
       }
     },
     "1639505258119ea558": {
@@ -268,6 +176,65 @@
         "desktop_no_spacing": false
       }
     },
+    "16395354160dec9b11": {
+      "type": "multicolumn",
+      "blocks": {
+        "1639535416ca744400-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-05.png",
+            "image_url": "\/products#drinks",
+            "title": "WELLNESS PROTEIN",
+            "text": "<p><strong>Quick & easy way to boost<br\/>your daily protein intake<br\/><br\/>Powerful combo of<br\/>whey + collagen protein<br\/><br\/>17g protein per 2oz shot<\/strong><\/p>",
+            "link_label": "SHOP PROTEIN",
+            "link": "shopify:\/\/collections\/wellness-supplements",
+            "title_font": "trade_gothic_compressed_bold",
+            "title_size": "heading-2",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": true,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        },
+        "1639535416ca744400-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chip_Graphic_Website_Asset_Full.png",
+            "image_url": "shopify:\/\/collections\/snacks",
+            "title": "SNACKS",
+            "text": "<p><strong>Convenient &<br\/>portion controlled<br\/><br\/>Controlled sugar,<br\/>sodium and fat<br\/><br\/>Only 80-120 calories<\/strong><\/p>",
+            "link_label": "SHOP SNACKS",
+            "link": "shopify:\/\/collections\/snacks",
+            "title_font": "trade_gothic_compressed_bold",
+            "title_size": "heading-2",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": true,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        }
+      },
+      "block_order": [
+        "1639535416ca744400-0",
+        "1639535416ca744400-1"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "gradient-2",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true,
+        "flex_align_center": false,
+        "desktop_no_spacing": true
+      }
+    },
     "1639578542bcd508be": {
       "type": "liquid-with-image",
       "blocks": {
@@ -303,6 +270,41 @@
         "section_width": "full_width"
       }
     },
+    "1639504497f2620302": {
+      "type": "image-with-text",
+      "blocks": {
+        "16395044977b90f46f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "ADEQUATE NUTRITION IS THE FOUNDATION FOR A LONG, ACTIVE LIFE.",
+            "heading_font": "trade_gothic_compressed_bold"
+          }
+        },
+        "16395044977b90f46f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vidafuel products make it more <strong>accessible, convenient & enjoyable.<\/strong><\/p>",
+            "text_font": "default",
+            "text_size": "default",
+            "text_color": "default"
+          }
+        }
+      },
+      "block_order": [
+        "16395044977b90f46f-0",
+        "16395044977b90f46f-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "image": "shopify:\/\/shop_images\/home-02-2x-updated.png",
+        "image_link": "\/products",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "section_width": "full_width",
+        "desktop_no_spacing": true
+      }
+    },
     "1639085117b298d674": {
       "type": "image-with-text",
       "blocks": {
@@ -328,6 +330,7 @@
         "1639085117d4baf919-1"
       ],
       "settings": {
+        "section_id": "",
         "image": "shopify:\/\/shop_images\/home-12.png",
         "image_link": "",
         "height": "adapt",
@@ -376,10 +379,10 @@
   "order": [
     "163908444861c999ea",
     "1639503887e884ceb3",
-    "1639504497f2620302",
-    "16395354160dec9b11",
     "1639505258119ea558",
+    "16395354160dec9b11",
     "1639578542bcd508be",
+    "1639504497f2620302",
     "1639085117b298d674",
     "1639579439e5b1f86c"
   ]
