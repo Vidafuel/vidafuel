@@ -399,6 +399,53 @@
         "description": "",
         "full_width": true
       }
+    },
+    "164027257383728043": {
+      "type": "collage",
+      "blocks": {
+        "16402725735ef65295-0": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/Vidafuel-Wellness-Protein-Pour.png",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=Uq7HVwkzUAc&feature=youtu.be",
+            "description": "Describe the video",
+            "image_padding": false
+          }
+        },
+        "16402725735ef65295-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "16402725735ef65295-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "16402725735ef65295-0",
+        "16402725735ef65295-1",
+        "16402725735ef65295-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
+    "1640272896a90b81bb": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/watch?v=Uq7HVwkzUAc?autoplay=1&loop=1\" frameborder=\"0\" allowfullscreen><\/iframe>​"
+      }
     }
   },
   "order": [
@@ -410,6 +457,8 @@
     "1639503887e884ceb3",
     "1639085117b298d674",
     "1639579439e5b1f86c",
-    "16402725582cd900da"
+    "16402725582cd900da",
+    "164027257383728043",
+    "1640272896a90b81bb"
   ]
 }
