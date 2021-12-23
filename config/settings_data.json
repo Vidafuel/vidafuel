@@ -69,7 +69,7 @@
           "logo": "shopify:\/\/shop_images\/Vidafuel-logo-official.png",
           "logo_max_width": 165,
           "main_linklist": "main-menu",
-          "message": true,
+          "message": false,
           "home_page_only": false,
           "message_text": "HOLIDAY SNACKS FLASH SALE: 20% OFF WITH CODE HOLIDAYSNACKS until 12\/16",
           "message_link": "shopify:\/\/collections\/all",
