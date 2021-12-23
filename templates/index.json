@@ -57,7 +57,7 @@
             "link_type": "link",
             "link": "\/products",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "proxima_nova_light",
             "title_size": "heading-2",
             "text_font": "trade_gothic_compressed_bold",
@@ -79,7 +79,7 @@
             "link_type": "link",
             "link": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "default",
             "title_size": "default",
             "text_font": "default",
@@ -100,7 +100,7 @@
             "link_type": "link",
             "link": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "default",
             "title_size": "default",
             "text_font": "default",
@@ -144,7 +144,7 @@
             "link_type": "link",
             "link": "shopify:\/\/collections\/wellness-supplements",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "trade_gothic_compressed_bold",
             "title_size": "heading-2",
             "text_font": "default",
@@ -166,7 +166,7 @@
             "link_type": "link",
             "link": "shopify:\/\/collections\/snacks",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "trade_gothic_compressed_bold",
             "title_size": "heading-2",
             "text_font": "default",
@@ -390,59 +390,9 @@
         "section_width": "full_width"
       }
     },
-    "16402725582cd900da": {
-      "type": "video",
-      "settings": {
-        "heading": "Video",
-        "cover_image": "shopify:\/\/shop_images\/Vidafuel-Wellness-Protein-Pour.png",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=Uq7HVwkzUAc",
-        "description": "",
-        "full_width": true
-      }
-    },
-    "164027257383728043": {
-      "type": "collage",
-      "blocks": {
-        "16402725735ef65295-0": {
-          "type": "video",
-          "settings": {
-            "cover_image": "shopify:\/\/shop_images\/Vidafuel-Wellness-Protein-Pour.png",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=Uq7HVwkzUAc&feature=youtu.be",
-            "description": "Describe the video",
-            "image_padding": false
-          }
-        },
-        "16402725735ef65295-1": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false,
-            "image_padding": false,
-            "secondary_background": false
-          }
-        },
-        "16402725735ef65295-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_padding": false,
-            "color_scheme": "background-1"
-          }
-        }
-      },
-      "block_order": [
-        "16402725735ef65295-0",
-        "16402725735ef65295-1",
-        "16402725735ef65295-2"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "desktop_layout": "left",
-        "mobile_layout": "collage"
-      }
-    },
     "1640272896a90b81bb": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<iframe width=\"100%\" height=\"720\" src=\"https:\/\/www.youtube-nocookie.com\/embed\/Uq7HVwkzUAc?playlist=Uq7HVwkzUAc&autoplay=1&controls=1&loop=1&mute=1\" frameborder=\"0\" allowfullscreen><\/iframe>"
       }
@@ -457,8 +407,6 @@
     "1639503887e884ceb3",
     "1639085117b298d674",
     "1639579439e5b1f86c",
-    "16402725582cd900da",
-    "164027257383728043",
     "1640272896a90b81bb"
   ]
 }
