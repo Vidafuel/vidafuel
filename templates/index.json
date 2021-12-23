@@ -444,7 +444,7 @@
     "1640272896a90b81bb": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/watch?v=Uq7HVwkzUAc?autoplay=1&loop=1\" frameborder=\"0\" allowfullscreen><\/iframe>​"
+        "custom_liquid": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/Uq7HVwkzUAc?autoplay=1&loop=1&playlist=Uq7HVwkzUAc& modestbranding=1& iv_load_policy=3&fs=0&controls=0\" frameborder=\"0\" allowfullscreen><\/iframe>​"
       }
     }
   },
