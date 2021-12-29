@@ -51,7 +51,7 @@
           "type": "column",
           "settings": {
             "image_url": "",
-            "title": "DAILY PROTEIN BOOSTER",
+            "title": "Daily protein booster",
             "text": "<p><\/p><p><strong>The benefits of Vidafuel concentrated nutrition:<\/strong><\/p><p>Low volume, <strong>quick & easy to consume<\/strong>. Powerful, with <strong>high value nutrition<\/strong>. Optimized, delivering <strong>macronutrients without the extra sugar, fat and calories. <\/strong>Economical, <strong>biggest bang for your buck<\/strong>.<\/p>",
             "link_label": "",
             "link_type": "link",
@@ -142,6 +142,7 @@
         },
         "847081ef-8696-42f1-ad5e-a315d489674c": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "SHOP NOW",
             "button_link": "\/products",
@@ -180,7 +181,7 @@
         "image_06_link": "shopify:\/\/pages\/healthcare-professionals",
         "image_07": "shopify:\/\/shop_images\/ATHLETICS.png",
         "image_07_title": "FITNESS \/ ATHLETICS",
-        "image_07_link": "shopify:\/\/pages\/healthcare-professionals",
+        "image_07_link": "",
         "image_08_title": "",
         "image_08_link": ""
       }
@@ -255,11 +256,78 @@
         "section_width": "full_width"
       }
     },
+    "164078610945303f2d": {
+      "type": "image-with-text",
+      "blocks": {
+        "1640786109f60a207b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dietitian developed snacks",
+            "heading_font": "default"
+          }
+        },
+        "1640786109f60a207b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Convenient &<br\/>portion controlled<br\/><br\/>Controlled sugar,<br\/>sodium and fat<br\/><br\/>Only 80-120 calories<\/strong><\/p>",
+            "text_font": "default",
+            "text_size": "default",
+            "text_color": "default"
+          }
+        },
+        "1640786109f60a207b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP SNACKS",
+            "button_link": "https:\/\/vidafuel.com\/products",
+            "button_font": "default"
+          }
+        }
+      },
+      "block_order": [
+        "1640786109f60a207b-0",
+        "1640786109f60a207b-1",
+        "1640786109f60a207b-2"
+      ],
+      "settings": {
+        "section_id": "",
+        "image_link": "",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first",
+        "section_width": "normal",
+        "desktop_no_spacing": false
+      }
+    },
     "16395354160dec9b11": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
+        "1639535416ca744400-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chip_Graphic_Website_Asset_Full.png",
+            "image_url": "shopify:\/\/collections\/snacks",
+            "title": "Dietitian developed snacks",
+            "text": "<p><strong>Convenient &<br\/>portion controlled<br\/><br\/>Controlled sugar,<br\/>sodium and fat<br\/><br\/>Only 80-120 calories<\/strong><\/p>",
+            "link_label": "SHOP SNACKS",
+            "link_type": "link",
+            "link": "shopify:\/\/collections\/snacks",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "title_font": "trade_gothic_compressed_bold",
+            "title_size": "heading-2",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": true,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        },
         "1639535416ca744400-0": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/home-05.png",
             "image_url": "\/products#drinks",
@@ -280,23 +348,23 @@
             "text_color_primary": false
           }
         },
-        "1639535416ca744400-1": {
+        "5c838d0f-e286-4208-a893-ea3e575da31e": {
           "type": "column",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Chip_Graphic_Website_Asset_Full.png",
-            "image_url": "shopify:\/\/collections\/snacks",
-            "title": "SNACKS",
-            "text": "<p><strong>Convenient &<br\/>portion controlled<br\/><br\/>Controlled sugar,<br\/>sodium and fat<br\/><br\/>Only 80-120 calories<\/strong><\/p>",
-            "link_label": "SHOP SNACKS",
+            "image_url": "",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
             "link_type": "link",
-            "link": "shopify:\/\/collections\/snacks",
+            "link": "",
             "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "title_font": "trade_gothic_compressed_bold",
-            "title_size": "heading-2",
+            "liquid_background": "#fff",
+            "title_font": "default",
+            "title_size": "default",
             "text_font": "default",
             "text_size": "default",
-            "title_top": true,
+            "title_top": false,
             "desktop_no_spacing": false,
             "p_bullets": false,
             "text_color_primary": false
@@ -304,8 +372,9 @@
         }
       },
       "block_order": [
+        "1639535416ca744400-1",
         "1639535416ca744400-0",
-        "1639535416ca744400-1"
+        "5c838d0f-e286-4208-a893-ea3e575da31e"
       ],
       "settings": {
         "title": "",
@@ -322,6 +391,7 @@
     },
     "1639504497f2620302": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "16395044977b90f46f-0": {
           "type": "heading",
@@ -357,6 +427,7 @@
     },
     "1639579439e5b1f86c": {
       "type": "liquid-with-image",
+      "disabled": true,
       "blocks": {
         "1639579439ccdff72d-0": {
           "type": "heading",
@@ -404,6 +475,7 @@
     "1639503887e884ceb3",
     "1639085117b298d674",
     "1639578542bcd508be",
+    "164078610945303f2d",
     "16395354160dec9b11",
     "1639504497f2620302",
     "1639579439e5b1f86c",
