@@ -185,6 +185,76 @@
         "image_08_link": ""
       }
     },
+    "1639085117b298d674": {
+      "type": "image-with-text",
+      "blocks": {
+        "1639085117d4baf919-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "DIETITIAN DEVELOPED SNACKS",
+            "heading_font": "proxima_nova_light"
+          }
+        },
+        "1639085117d4baf919-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>HOW WE COMPARE<\/p>",
+            "text_font": "default",
+            "text_size": "h2",
+            "text_color": "color-foreground-accent-1"
+          }
+        }
+      },
+      "block_order": [
+        "1639085117d4baf919-0",
+        "1639085117d4baf919-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "image": "shopify:\/\/shop_images\/home-12.png",
+        "image_link": "",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "text_first",
+        "section_width": "normal",
+        "desktop_no_spacing": false
+      }
+    },
+    "1639578542bcd508be": {
+      "type": "liquid-with-image",
+      "blocks": {
+        "163957854218e39ddb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CUSTOMER REVIEWS ON OUR WELLNESS PROTEIN",
+            "heading_font": "trade_gothic_compressed_bold",
+            "heading_size": "default"
+          }
+        },
+        "65764e0c-b08f-4bf9-bcae-bf2f7ca455a9": {
+          "type": "popup",
+          "settings": {
+            "button_label": "READ REVIEWS",
+            "page": "",
+            "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" data-header-customisation-enabled=\"1\" data-header-customisation-color=\"#56575f\" data-header-customisation-font-size=\"18\" data-header-customisation-text=\"\" data-header-customisation-alignment=\"left\" data-background-color=\"transparent\" data-mode=\"manual\" data-type=\"both\" data-review-ids=\"150141957,150141923,242826219,206683394,241938754,232722945,189304251,185110703\" data-show-navigation=\"1\">&nbsp;<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "163957854218e39ddb-0",
+        "65764e0c-b08f-4bf9-bcae-bf2f7ca455a9"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/home-09.png",
+        "image_url": "",
+        "bk_image": "shopify:\/\/shop_images\/home-reviews-background.jpg",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "text_first",
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"\" \n data-header-customisation-alignment=\"center\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"227804089,129641817,229428686,202976632\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
+        "section_width": "full_width"
+      }
+    },
     "16395354160dec9b11": {
       "type": "multicolumn",
       "blocks": {
@@ -250,41 +320,6 @@
         "desktop_no_spacing": true
       }
     },
-    "1639578542bcd508be": {
-      "type": "liquid-with-image",
-      "blocks": {
-        "163957854218e39ddb-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "CUSTOMER REVIEWS ON OUR WELLNESS PROTEIN",
-            "heading_font": "trade_gothic_compressed_bold",
-            "heading_size": "default"
-          }
-        },
-        "65764e0c-b08f-4bf9-bcae-bf2f7ca455a9": {
-          "type": "popup",
-          "settings": {
-            "button_label": "READ REVIEWS",
-            "page": "",
-            "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" data-header-customisation-enabled=\"1\" data-header-customisation-color=\"#56575f\" data-header-customisation-font-size=\"18\" data-header-customisation-text=\"\" data-header-customisation-alignment=\"left\" data-background-color=\"transparent\" data-mode=\"manual\" data-type=\"both\" data-review-ids=\"150141957,150141923,242826219,206683394,241938754,232722945,189304251,185110703\" data-show-navigation=\"1\">&nbsp;<\/div>"
-          }
-        }
-      },
-      "block_order": [
-        "163957854218e39ddb-0",
-        "65764e0c-b08f-4bf9-bcae-bf2f7ca455a9"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/home-09.png",
-        "image_url": "",
-        "bk_image": "shopify:\/\/shop_images\/home-reviews-background.jpg",
-        "height": "small",
-        "color_scheme": "background-1",
-        "layout": "text_first",
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"\" \n data-header-customisation-alignment=\"center\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"227804089,129641817,229428686,202976632\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
-        "section_width": "full_width"
-      }
-    },
     "1639504497f2620302": {
       "type": "image-with-text",
       "blocks": {
@@ -318,41 +353,6 @@
         "layout": "image_first",
         "section_width": "full_width",
         "desktop_no_spacing": true
-      }
-    },
-    "1639085117b298d674": {
-      "type": "image-with-text",
-      "blocks": {
-        "1639085117d4baf919-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "DIETITIAN DEVELOPED SNACKS",
-            "heading_font": "proxima_nova_light"
-          }
-        },
-        "1639085117d4baf919-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>HOW WE COMPARE<\/p>",
-            "text_font": "trade_gothic_compressed_bold",
-            "text_size": "h2",
-            "text_color": "color-foreground-accent-1"
-          }
-        }
-      },
-      "block_order": [
-        "1639085117d4baf919-0",
-        "1639085117d4baf919-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "image": "shopify:\/\/shop_images\/home-12.png",
-        "image_link": "",
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "text_first",
-        "section_width": "normal",
-        "desktop_no_spacing": false
       }
     },
     "1639579439e5b1f86c": {
@@ -402,10 +402,10 @@
     "163908444861c999ea",
     "1639505258119ea558",
     "1639503887e884ceb3",
-    "16395354160dec9b11",
-    "1639578542bcd508be",
-    "1639504497f2620302",
     "1639085117b298d674",
+    "1639578542bcd508be",
+    "16395354160dec9b11",
+    "1639504497f2620302",
     "1639579439e5b1f86c",
     "1640272896a90b81bb"
   ]
