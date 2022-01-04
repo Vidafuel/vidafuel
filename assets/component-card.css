@@ -323,3 +323,7 @@
     transition: background-color var(--duration-long) ease;
   }
 }
+
+.show-purchase .product-form__quantity .form__label {
+  margin-right: 1em;
+}
