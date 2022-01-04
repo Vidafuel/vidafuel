@@ -1,0 +1,120 @@
+.yotpo-reviews-carousel
+	.carousel-display-wrapper
+	#carousel-top-panel
+	.carousel-arrows
+	.yotpo-icon-left-arrow-thin,
+.yotpo-reviews-carousel
+	.carousel-display-wrapper
+	#carousel-top-panel
+	.carousel-arrows
+	.yotpo-icon-right-arrow-thin {
+	background: #cdda01;
+	padding: 13px;
+	color: white !important;
+	border-radius: 50%;
+}
+
+.yotpo-reviews-carousel .carousel-display-wrapper .stars-container {
+	order: 3;
+}
+
+.yotpo-reviews-carousel .carousel-display-wrapper .yotpo-carousel .big-version {
+	display: flex !important;
+	align-items: end;
+	justify-content: space-between;
+	padding-bottom: 2em;
+}
+
+.yotpo-reviews-carousel
+	.carousel-display-wrapper
+	.yotpo-carousel
+	.big-version
+	.right-side {
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.yotpo-reviews-carousel
+	.carousel-display-wrapper
+	.yotpo-carousel
+	.y-slider-container
+	.single-carousel
+	.product-image-container {
+	display: flex;
+	flex-direction: column;
+	vertical-align: bottom;
+}
+
+.yotpo-reviews-carousel
+	.carousel-display-wrapper
+	.yotpo-carousel
+	.carousel-review-product-text {
+	display: none;
+}
+
+a.product-link-container {
+	height: 100%;
+	min-height: 100%;
+}
+
+.yotpo-reviews-carousel
+	.carousel-display-wrapper
+	.yotpo-carousel
+	.y-slider-container
+	.single-carousel
+	.product-image-container
+	.y-carousel-product-image {
+	border-radius: 50% !important;
+}
+
+.yotpo-reviews-carousel
+	.carousel-display-wrapper
+	.yotpo-carousel
+	.carousel-review-body {
+	position: relative;
+	float: left;
+}
+
+.yotpo-reviews-carousel
+	.carousel-display-wrapper
+	.yotpo-carousel
+	.single-carousel
+	.carousel-review-date {
+	display: none;
+}
+
+.yotpo-reviews-carousel
+	.carousel-display-wrapper
+	.yotpo-carousel
+	.carousel-review-author {
+	display: flex;
+	flex: 1 0 auto;
+	align-items: flex-end;
+}
+
+.yotpo-reviews-carousel
+	.carousel-display-wrapper
+	.yotpo-carousel
+	.carousel-review-body::before {
+	content: "\201D";
+	font-size: 42px;
+	position: relative;
+	font-family: sans-serif;
+	top: 15px;
+	font-weight: 600;
+	margin-right: 10px;
+	color: #78ccc8;
+}
+
+.yotpo-reviews-carousel
+	.carousel-display-wrapper
+	.yotpo-carousel
+	.carousel-review-body {
+	font-style: normal !important;
+}
+
+.yotpo-label.yotpo-small-box {
+	display: none;
+}
