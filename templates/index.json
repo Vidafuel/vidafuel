@@ -293,7 +293,7 @@
         "section_id": "",
         "image": "shopify:\/\/shop_images\/home-snack-reviews.png",
         "image_link": "",
-        "height": "adapt",
+        "height": "small",
         "color_scheme": "background-1",
         "layout": "image_first",
         "section_width": "normal",
@@ -360,7 +360,7 @@
             "link_type": "link",
             "link": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "default",
             "title_size": "default",
             "text_font": "default",
@@ -455,18 +455,79 @@
         "image": "shopify:\/\/shop_images\/home-snack-reviews.png",
         "image_url": "",
         "bk_image": "shopify:\/\/shop_images\/home-reviews-background.jpg",
-        "height": "small",
+        "height": "adapt",
         "color_scheme": "background-1",
         "layout": "text_first",
         "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"129641733,230229879,129641702,172539969\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
         "section_width": "full_width"
       }
     },
-    "1640272896a90b81bb": {
-      "type": "custom-liquid",
-      "disabled": true,
+    "1641257838a30efc31": {
+      "type": "featured-product",
+      "blocks": {
+        "164125783832f62955-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "164125783832f62955-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "164125783832f62955-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "164125783832f62955-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "164125783832f62955-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "164125783832f62955-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "164125783832f62955-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "164125783832f62955-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "164125783832f62955-0",
+        "164125783832f62955-1",
+        "164125783832f62955-2",
+        "164125783832f62955-3",
+        "164125783832f62955-4",
+        "164125783832f62955-5",
+        "164125783832f62955-6",
+        "164125783832f62955-7"
+      ],
       "settings": {
-        "custom_liquid": "<iframe width=\"100%\" height=\"720\" src=\"https:\/\/www.youtube-nocookie.com\/embed\/Uq7HVwkzUAc?playlist=Uq7HVwkzUAc&autoplay=1&controls=1&loop=1&mute=1\" frameborder=\"0\" allowfullscreen><\/iframe>"
+        "product": "",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false
       }
     }
   },
@@ -480,6 +541,6 @@
     "16395354160dec9b11",
     "1639504497f2620302",
     "1639579439e5b1f86c",
-    "1640272896a90b81bb"
+    "1641257838a30efc31"
   ]
 }
