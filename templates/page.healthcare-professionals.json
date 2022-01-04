@@ -1,0 +1,398 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "title_alt": "NEW Protein Supplement",
+        "title_color": "#5bb6ae",
+        "title_font": "default",
+        "title_size": "h2"
+      }
+    },
+    "1639156556f1f7aaff": {
+      "type": "image-with-text",
+      "blocks": {
+        "163915655632d9adf3-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Clinical nutrition done right",
+            "heading_font": "trade_gothic_bold_condensed"
+          }
+        },
+        "163915655632d9adf3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dietitian Developed for Optimal Absorption.<\/p>",
+            "text_font": "proxima_nova_light",
+            "text_size": "h2",
+            "text_color": "default"
+          }
+        }
+      },
+      "block_order": [
+        "163915655632d9adf3-0",
+        "163915655632d9adf3-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "image": "shopify:\/\/shop_images\/home-05.png",
+        "image_link": "shopify:\/\/products\/collagen-protein-drink-2-pack",
+        "bk_image": "shopify:\/\/shop_images\/healthcare-bg.jpg",
+        "height": "adapt",
+        "color_scheme": "accent-1",
+        "layout": "text_first",
+        "section_width": "normal",
+        "desktop_no_spacing": false
+      }
+    },
+    "163915671883655487": {
+      "type": "multicolumn",
+      "blocks": {
+        "16391567181da7a84b-1": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "Small but Mighty",
+            "text": "<p>Not all proteins are equal. See how Vidafuel is superior.<\/p>",
+            "link_label": "Comp Chart",
+            "link_type": "modal",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0922\/1906\/files\/VF_ProteinSpecificFlyer_Back_Aug_2021.jpg?v=1628250284",
+            "modal_image": "shopify:\/\/shop_images\/Vidafuel-Protein-Specific-Flyer.jpg",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "title_font": "trade_gothic_condensed_bold",
+            "title_size": "heading-1",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        },
+        "16391567181da7a84b-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/healthcare-02.png",
+            "image_url": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        },
+        "16391567181da7a84b-2": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "",
+            "text": "<p>17g of complete protein in 2oz<\/p><p>No dilution requiredEasy to swallow texture<\/p><p>No artificial sweeteners or colors<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "trade_gothic_bold",
+            "text_size": "h2",
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": true,
+            "text_color_primary": true
+          }
+        }
+      },
+      "block_order": [
+        "16391567181da7a84b-1",
+        "16391567181da7a84b-0",
+        "16391567181da7a84b-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "flex_align_center": true,
+        "desktop_no_spacing": false
+      }
+    },
+    "164014386357a60c4a": {
+      "type": "multicolumn",
+      "blocks": {
+        "1640143863f88f8f3f-0": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "REQUEST FREE SAMPLES FOR YOUR PATIENTS!",
+            "text": "<p><strong>Not all proteins are equal. See how Vidafuel* is superior.<\/strong><\/p><p><em>Developed by <\/em>dietitians<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        },
+        "1640143863f88f8f3f-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image-hero-banner-coupon.png",
+            "image_url": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        },
+        "1640143863f88f8f3f-2": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "FILL OUT THE FORM TO GET YOUR FREE SAMPLE",
+            "text": "",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "custom_liquid": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/shell.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"19971200\",\n    formId: \"03a444a5-8a44-42ff-b7bd-34263b9df190\"\n  });\n<\/script>",
+            "liquid_background": "#fff",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        }
+      },
+      "block_order": [
+        "1640143863f88f8f3f-0",
+        "1640143863f88f8f3f-1",
+        "1640143863f88f8f3f-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "gradient-1",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "flex_align_center": true,
+        "desktop_no_spacing": false
+      }
+    },
+    "1640123076cbff58b5": {
+      "type": "collage",
+      "blocks": {
+        "164012307670ab9899-0": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/Vidafuel-Wellness-Protein-Tutorial.jpg",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=B5wCtpjZWR4",
+            "description": "Describe the video",
+            "image_padding": false
+          }
+        },
+        "164012307670ab9899-1": {
+          "type": "product",
+          "settings": {
+            "product": "protein-juice-orange",
+            "second_image": false,
+            "image_padding": true,
+            "secondary_background": false
+          }
+        }
+      },
+      "block_order": [
+        "164012307670ab9899-0",
+        "164012307670ab9899-1"
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
+    "16395061492d0dea2e": {
+      "type": "rich-text",
+      "blocks": {
+        "1639506149aa8c364f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "ABOUT US",
+            "heading_size": "h1",
+            "heading_font": "trade_gothic_condensed_bold"
+          }
+        },
+        "1639506149aa8c364f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vidafuel is an outcomes-driven company dedicated to leading improvement in the nutritional therapy market. Our passionate team of dietitians and scientists leads development of best in class products that provide a superior nutritional profile and patient experience. Our mission is to educate, support and continue to develop innovative nutritional therapy products that enable patients to live longer, happier lives.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1639506149aa8c364f-0",
+        "1639506149aa8c364f-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "163950623206c4ca1f": {
+      "type": "multicolumn",
+      "blocks": {
+        "163950623263ceff12-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/healthcare-03.png",
+            "image_url": "",
+            "title": "Download White Paper",
+            "text": "<p>Clinical and financial value of Oral Nutrition Supplement programs<\/p>",
+            "link_label": "DOWNLOAD",
+            "link_type": "link",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0922\/1906\/files\/2020-VIDAFUEL-White-Paper.pdf?v=1584484018",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "title_font": "default",
+            "title_size": "heading-5",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": true,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        },
+        "163950623263ceff12-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/VidaFuel-Protein-wCup_new.jpg",
+            "image_url": "",
+            "title": "",
+            "text": "<p>Shop our best-selling Protein Drinks!<\/p>",
+            "link_label": "SHOP NOW",
+            "link_type": "link",
+            "link": "\/products",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        }
+      },
+      "block_order": [
+        "163950623263ceff12-0",
+        "163950623263ceff12-1"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "third",
+        "image_ratio": "portrait",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "flex_align_center": true,
+        "desktop_no_spacing": false
+      }
+    },
+    "1639506526d4856680": {
+      "type": "multicolumn",
+      "blocks": {
+        "16395065260cbd3902-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/metro-medical.png",
+            "image_url": "",
+            "title": "DISTRIBUTED BY",
+            "text": "",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        }
+      },
+      "block_order": [
+        "16395065260cbd3902-0"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "flex_align_center": false,
+        "desktop_no_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639156556f1f7aaff",
+    "163915671883655487",
+    "164014386357a60c4a",
+    "1640123076cbff58b5",
+    "16395061492d0dea2e",
+    "163950623206c4ca1f",
+    "1639506526d4856680"
+  ]
+}
