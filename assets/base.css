@@ -2454,6 +2454,10 @@ details-disclosure > details {
   align-items: center;
 }
 
+.flex-justify-center {
+  justify-content: center;
+}
+
 .heading-1 {
   font-size: calc(var(--font-heading-scale) * 3rem);
 }
@@ -2492,4 +2496,15 @@ details-disclosure > details {
   .heading-5 {
     font-size: calc(var(--font-heading-scale) * 1.3rem);
   }
+}
+
+/* bold widget */
+.bold-ro__radio-div {
+    border-radius: 50px;
+}
+.bold-ro__one-time-div, 
+.bold-ro__recurring-div, 
+.bold-ro__frequency-label, 
+.bold-ro__mix-div {
+  color: #78CCC8;
 }

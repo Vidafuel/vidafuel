@@ -8,7 +8,14 @@
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
 {%- assign product = section.settings.product -%}
-
+{%- comment -%}
+Showing the Bold Widget in Special Cases
+https://github.com/bold-commerce/bold-subscriptions/wiki/Bold-Subscriptions-Install-Instructions-for-Shopify-Experts#24-suggested-showing-the-widget-in-special-cases
+{%- endcomment -%}
+<script>
+window.BOLD.common.Shopify.saveProduct({{ product.handle | json }}, {{ product.id | json }});
+{%- for variant in product.variants -%} window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, {product_id: {{ product.id | json }}, price: {{ variant.price | json }}, group_id: '{{variant.metafields.bold_rp.rp_group_id}}'}); {%- endfor -%}
+</script>
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
   {{ 'component-product-model.css' | asset_url | stylesheet_tag }}
@@ -95,6 +102,8 @@
               <div {{ block.shopify_attributes }}>
                 {%- form 'product', product -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                  <div class="ro_widget"></div>
+                  <br>
                   {{ form | payment_terms }}
                 {%- endform -%}
               </div>
@@ -116,7 +125,7 @@
                       value="1"
                       form="{{ product_form_id }}"
                     >
-                  <button class="quantity__button no-js-hidden" name="plus" type="button">
+                  <button class="addtocart quantity__button no-js-hidden" name="plus" type="button">
                     <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
                     {% render 'icon-plus' %}
                   </button>

@@ -96,8 +96,8 @@
                           {%- endfor -%}
                         {%- endif -%}
                         <span class="bold_ro_desc" data-product-id="{{item.id}}-{{ forloop.index0 }}"></span>
-<span class="bold_load_cart_item_properties"></span>
-						{% comment %}
+                        <span class="bold_load_cart_item_properties"></span>
+                        {% comment %}
                         {%- for property in item.properties -%}
                           {%- assign property_first_char = property.first | slice: 0 -%}
                           {%- if property.last != blank and property_first_char != '_' -%}
