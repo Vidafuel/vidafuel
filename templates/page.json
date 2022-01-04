@@ -3,7 +3,7 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "title_alt": "",
+        "title_alt": "Protein drinks for dialysis patients",
         "title_color": "#5bb6ae",
         "title_font": "default",
         "title_size": "h2"
