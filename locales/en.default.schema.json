@@ -512,6 +512,12 @@
         "title": {
           "label": "Heading"
         },
+        "subtitle": {
+          "label": "Subtitle"
+        },
+        "center_headers": {
+          "label": "Center headers"
+        },
         "collection": {
           "label": "Collection"
         },
@@ -547,6 +553,9 @@
         },
         "show_image_outline": {
           "label": "Show image border"
+        },
+        "show_purchase_options": {
+          "label": "Show purchase options"
         },
         "show_vendor": {
           "label": "Show vendor"
