@@ -319,6 +319,12 @@
         "show_rating": true
       }
     },
+    "1641321960606b3a1e": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#cdda01\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"REAL CUSTOMER REVIEWS\" \n data-header-customisation-alignment=\"center\" \n data-background-color-enabled=\"1\" \n data-background-color=\"#fbfced\" \n data-mode=\"top_rated\" \n data-type=\"product\" \n data-count=\"9\" \n data-show-navigation=\"1\">&nbsp;<\/div>"
+      }
+    },
     "16395354160dec9b11": {
       "type": "multicolumn",
       "disabled": true,
@@ -480,12 +486,6 @@
         "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"129641733,230229879,129641702,172539969\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
         "section_width": "full_width"
       }
-    },
-    "1641321960606b3a1e": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#cdda01\" \n data-header-customisation-font-size=\"22\" \n data-header-customisation-text=\"REAL CUSTOMER REVIEWS\" \n data-header-customisation-alignment=\"center\" \n data-background-color-enabled=\"1\" \n data-background-color=\"#fbfced\" \n data-mode=\"top_rated\" \n data-type=\"product\" \n data-count=\"9\" \n data-show-navigation=\"1\">&nbsp;<\/div>"
-      }
     }
   },
   "order": [
@@ -496,9 +496,9 @@
     "1639578542bcd508be",
     "164078610945303f2d",
     "1641268922eacc76d1",
+    "1641321960606b3a1e",
     "16395354160dec9b11",
     "1639504497f2620302",
-    "1639579439e5b1f86c",
-    "1641321960606b3a1e"
+    "1639579439e5b1f86c"
   ]
 }
