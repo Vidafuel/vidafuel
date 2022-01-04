@@ -3,14 +3,38 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "title_alt": "Protein drinks for dialysis patients",
-        "title_color": "#5bb6ae",
-        "title_font": "default",
-        "title_size": "h2"
+      }
+    },
+    "16413392446709310c": {
+      "type": "rich-text",
+      "blocks": {
+        "1641339243eb811afe-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "MEDICAL ADVICE DISCLAIMER",
+            "heading_size": "h2",
+            "heading_font": "default"
+          }
+        },
+        "1641339243eb811afe-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>DISCLAIMER: THIS WEBSITE DOES NOT PROVIDE MEDICAL ADVICE<\/p><p>The information, including but not limited to, text, graphics, images and other material contained on this website are for informational purposes only. No material on this site is intended to be a substitute for professional medical advice, diagnosis or treatment. Always seek the advice of your health care provider for any questions you may have regarding a medical condition or treatment and before undertaking a new health care regimen, and never disregard professional medical advice or delay in seeking it because of something you have read on this website.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1641339243eb811afe-0",
+        "1641339243eb811afe-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16413392446709310c"
   ]
 }
