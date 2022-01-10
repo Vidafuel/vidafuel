@@ -1152,6 +1152,12 @@
               "options__9": {
                 "label": "Trade Gothic Condensed Heavy"
               }
+            },
+            "button_style_secondary": {
+              "label": "Use outline button style"
+            },
+            "button_inverse": {
+              "label": "Button color inverse"
             }
           }
         }
@@ -2267,6 +2273,18 @@
             "label": "Center"
           }
         },
+        "columns": {
+          "label": "Columns",
+          "default": {
+            "label": "Default"
+          },
+          "three": {
+            "label": "Three"
+          },
+          "four": {
+            "label": "Four"
+          }
+        },
         "background_style": {
           "label": "Secondary background",
           "options__1": {
@@ -2590,7 +2608,7 @@
         }
       },
       "presets": {
-        "name": "PPage"
+        "name": "Page"
       }
     },
     "product-recommendations": {

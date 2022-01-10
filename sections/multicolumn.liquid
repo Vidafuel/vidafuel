@@ -26,7 +26,7 @@
           endfor
         -%}
         {%- for block in section.blocks -%}
-          <li class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
+          <li class="multicolumn-list__item {% if section.settings.columns != 'default' %} {{ section.settings.columns }}{% endif %} grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
             <div class="multicolumn-card">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
@@ -70,10 +70,12 @@
                   {% endif %}
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info {% if block.settings.custom_liquid != blank %}custom-liquid {% endif %}" {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}style="background-color:{{ block.settings.liquid_background }};"{% endif %}>
+              <div class="multicolumn-card__info{% if block.settings.custom_liquid != blank %} custom-liquid{% endif %}" {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}style="background-color:{{ block.settings.liquid_background }};"{% endif %}>
+                {% if section.settings.icon_enable %} <div class="icon__enable">{% endif %}
                 {%- if block.settings.title != blank and block.settings.title_top == false -%}
-                  <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.title_size != 'default' %}{{ block.settings.title_size }}{% endif %}" {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}style="color:#000;"{% endif %}>{{ block.settings.title | escape }}</h3>
+                  {% if section.settings.icon_enable %}{% render 'icon-accordion', icon: block.settings.icon %}{% endif %}<h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.title_size != 'default' %}{{ block.settings.title_size }}{% endif %}" {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}style="color:#000;"{% endif %}>{{ block.settings.title | escape }}</h3>
                 {%- endif -%}
+                {% if section.settings.icon_enable %} </div>{% endif %}
                 {%- if block.settings.text != blank -%}
                   <div class="rte {% if block.settings.text_color_primary %}color-foreground-accent-1 {% endif %}{% if block.settings.p_bullets %} p_bullets {% endif %}{% if block.settings.text_font != 'default' %} {{ block.settings.text_font }}{% endif %}{% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %}">{{ block.settings.text }}</div>
                 {%- endif -%}
@@ -215,6 +217,27 @@
     },
     {
       "type": "select",
+      "id": "columns",
+      "info": "Column count on desktop.",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "three",
+          "label": "Three"
+        },
+        {
+          "value": "four",
+          "label": "Four"
+        }
+      ],
+      "default": "default",
+      "label": "Columns"
+    },
+    {
+      "type": "select",
       "id": "background_style",
       "options": [
         {
@@ -269,6 +292,12 @@
       "id": "desktop_no_spacing",
       "label": "Remove desktop top spacing",
       "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "icon_enable",
+      "label": "Column heading icons",
+      "default": false
     }
   ],
   "blocks": [
@@ -287,10 +316,118 @@
           "label": "Image link"
         },
         {
+          "type": "header",
+          "content": "Heading"
+        },
+        {
           "type": "text",
           "id": "title",
           "default": "Column",
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__1.label"
+            },
+            {
+              "value": "box",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__2.label"
+            },
+            {
+              "value": "chat_bubble",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__3.label"
+            },
+            {
+              "value": "check_mark",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__4.label"
+            },
+            {
+              "value": "dryer",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__5.label"
+            },
+            {
+              "value": "eye",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__6.label"
+            },
+            {
+              "value": "heart",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__7.label"
+            },
+            {
+              "value": "iron",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__8.label"
+            },
+            {
+              "value": "leaf",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__9.label"
+            },
+            {
+              "value": "leather",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__10.label"
+            },
+            {
+              "value": "lock",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__11.label"
+            },
+            {
+              "value": "map_pin",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__12.label"
+            },
+            {
+              "value": "pants",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__13.label"
+            },
+            {
+              "value": "plane",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__14.label"
+            },
+            {
+              "value": "price_tag",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__15.label"
+            },
+            {
+              "value": "question_mark",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__16.label"
+            },
+            {
+              "value": "return",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__17.label"
+            },
+            {
+              "value": "ruler",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__18.label"
+            },
+            {
+              "value": "shirt",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__19.label"
+            },
+            {
+              "value": "shoe",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__20.label"
+            },
+            {
+              "value": "silhouette",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__21.label"
+            },
+            {
+              "value": "star",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__22.label"
+            },
+            {
+              "value": "truck",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__23.label"
+            },
+            {
+              "value": "washing",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__24.label"
+            }
+          ],
+          "default": "check_mark",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
         },
         {
           "type": "richtext",
@@ -501,12 +638,6 @@
           "type": "checkbox",
           "id": "title_top",
           "label": "Heading above image"
-        },
-        {
-          "type": "checkbox",
-          "id": "desktop_no_spacing",
-          "label": "Remove desktop top spacing",
-          "default": false
         },
         {
           "type": "checkbox",

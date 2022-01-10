@@ -2,7 +2,7 @@
 	margin-top: 5rem;
 }
 
-.image-with-text:not(.color-scheme-background-1) {
+.image-with-text:not(.color-scheme-background-1):not(.desktop_no_spacing) {
 	margin-bottom: 5rem;
 }
 
