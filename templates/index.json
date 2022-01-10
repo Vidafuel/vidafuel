@@ -13,7 +13,7 @@
         "1639084448a58c7e7f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Protein nutrition: the easiest way to nourish your day<\/p>",
+            "text": "<p>The easiest way to nourish your day<\/p>",
             "text_font": "proxima_nova_light",
             "text_size": "h3",
             "text_color": "default"
@@ -24,7 +24,7 @@
           "settings": {
             "button_label": "SHOP NOW",
             "button_link": "\/products",
-            "button_font": "default"
+            "button_font": "trade_gothic_compressed_bold"
           }
         }
       },
@@ -44,6 +44,169 @@
         "desktop_no_spacing": true
       }
     },
+    "1641834224a94d856f": {
+      "type": "multicolumn",
+      "blocks": {
+        "16418342231ac13c89-0": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "Low volume",
+            "text": "<p>Quick & easy to consume<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        },
+        "16418342231ac13c89-1": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "Powerful",
+            "text": "<p>High value nutrition<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        },
+        "16418342231ac13c89-2": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "Optimized",
+            "text": "<p>Delivers macronutrients without the extra sugar, fat and calories<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        },
+        "e59229b5-1a1c-46ca-a575-992d0ab5c191": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "Economical",
+            "text": "<p>Biggest bang for your buck<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "desktop_no_spacing": false,
+            "p_bullets": false,
+            "text_color_primary": false
+          }
+        }
+      },
+      "block_order": [
+        "16418342231ac13c89-0",
+        "16418342231ac13c89-1",
+        "16418342231ac13c89-2",
+        "e59229b5-1a1c-46ca-a575-992d0ab5c191"
+      ],
+      "settings": {
+        "title": "The benefits of Vidafuel concentrated nutrition",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "flex_align_center": false,
+        "desktop_no_spacing": false
+      }
+    },
+    "1639503887e884ceb3": {
+      "type": "images-with-text",
+      "blocks": {
+        "16395038879d66b692-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Developed by dietitians to deliver essential nutrients when you need them most",
+            "heading_font": "trade_gothic_compressed_bold"
+          }
+        },
+        "847081ef-8696-42f1-ad5e-a315d489674c": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "\/products",
+            "button_font": "default"
+          }
+        }
+      },
+      "block_order": [
+        "16395038879d66b692-0",
+        "847081ef-8696-42f1-ad5e-a315d489674c"
+      ],
+      "settings": {
+        "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
+        "height": "adapt",
+        "desktop_no_spacing": true,
+        "color_scheme": "background-2",
+        "layout": "text_first",
+        "section_width": "full_width",
+        "image_01": "shopify:\/\/shop_images\/DIALYSIS.png",
+        "image_01_title": "CKD\/DIALYSIS",
+        "image_01_link": "shopify:\/\/pages\/protein-drinks-for-dialysis-patients",
+        "image_02": "shopify:\/\/shop_images\/DIABETES.png",
+        "image_02_title": "BARIATRIC",
+        "image_02_link": "shopify:\/\/pages\/healthcare-professionals",
+        "image_03": "shopify:\/\/shop_images\/ACTIVE-AGING.png",
+        "image_03_title": "ACTIVE AGING",
+        "image_03_link": "shopify:\/\/pages\/healthcare-professionals",
+        "image_04": "shopify:\/\/shop_images\/POST-SURGERY-RECOVERY.png",
+        "image_04_title": "POST-SURGERY RECOVERY",
+        "image_04_link": "shopify:\/\/pages\/healthcare-professionals",
+        "image_05": "shopify:\/\/shop_images\/GERIATRIC-NUTRITION.png",
+        "image_05_title": "GERIATRIC NUTRITION",
+        "image_05_link": "shopify:\/\/pages\/healthcare-professionals",
+        "image_06": "shopify:\/\/shop_images\/CANCER.png",
+        "image_06_title": "CANCER",
+        "image_06_link": "shopify:\/\/pages\/healthcare-professionals",
+        "image_07": "shopify:\/\/shop_images\/ATHLETICS.png",
+        "image_07_title": "FITNESS \/ ATHLETICS",
+        "image_07_link": "",
+        "image_08_title": "",
+        "image_08_link": ""
+      }
+    },
     "1639505258119ea558": {
       "type": "multicolumn",
       "blocks": {
@@ -51,8 +214,8 @@
           "type": "column",
           "settings": {
             "image_url": "",
-            "title": "Daily protein booster",
-            "text": "<p><\/p><p><strong>The benefits of Vidafuel concentrated nutrition:<\/strong><\/p><p>Low volume, <strong>quick & easy to consume<\/strong>. Powerful, with <strong>high value nutrition<\/strong>. Optimized, delivering <strong>macronutrients without the extra sugar, fat and calories. <\/strong>Economical, <strong>biggest bang for your buck<\/strong>.<\/p>",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link_type": "link",
             "link": "\/products",
@@ -118,7 +281,7 @@
         "16395052587fb2d08a-2"
       ],
       "settings": {
-        "title": "",
+        "title": "Meet your daily protein booster",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
@@ -130,95 +293,10 @@
         "desktop_no_spacing": false
       }
     },
-    "1639503887e884ceb3": {
-      "type": "images-with-text",
-      "blocks": {
-        "16395038879d66b692-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Developed by dietitians to deliver essential nutrients when you need them most",
-            "heading_font": "trade_gothic_compressed_bold"
-          }
-        },
-        "847081ef-8696-42f1-ad5e-a315d489674c": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "SHOP NOW",
-            "button_link": "\/products",
-            "button_font": "default"
-          }
-        }
-      },
-      "block_order": [
-        "16395038879d66b692-0",
-        "847081ef-8696-42f1-ad5e-a315d489674c"
-      ],
+    "164183533155a59c42": {
+      "type": "custom-liquid",
       "settings": {
-        "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
-        "height": "adapt",
-        "desktop_no_spacing": true,
-        "color_scheme": "background-2",
-        "layout": "text_first",
-        "section_width": "full_width",
-        "image_01": "shopify:\/\/shop_images\/DIALYSIS.png",
-        "image_01_title": "CKD\/DIALYSIS",
-        "image_01_link": "shopify:\/\/pages\/protein-drinks-for-dialysis-patients",
-        "image_02": "shopify:\/\/shop_images\/DIABETES.png",
-        "image_02_title": "BARIATRIC",
-        "image_02_link": "shopify:\/\/pages\/healthcare-professionals",
-        "image_03": "shopify:\/\/shop_images\/ACTIVE-AGING.png",
-        "image_03_title": "ACTIVE AGING",
-        "image_03_link": "shopify:\/\/pages\/healthcare-professionals",
-        "image_04": "shopify:\/\/shop_images\/POST-SURGERY-RECOVERY.png",
-        "image_04_title": "POST-SURGERY RECOVERY",
-        "image_04_link": "shopify:\/\/pages\/healthcare-professionals",
-        "image_05": "shopify:\/\/shop_images\/GERIATRIC-NUTRITION.png",
-        "image_05_title": "GERIATRIC NUTRITION",
-        "image_05_link": "shopify:\/\/pages\/healthcare-professionals",
-        "image_06": "shopify:\/\/shop_images\/CANCER.png",
-        "image_06_title": "CANCER",
-        "image_06_link": "shopify:\/\/pages\/healthcare-professionals",
-        "image_07": "shopify:\/\/shop_images\/ATHLETICS.png",
-        "image_07_title": "FITNESS \/ ATHLETICS",
-        "image_07_link": "",
-        "image_08_title": "",
-        "image_08_link": ""
-      }
-    },
-    "1639085117b298d674": {
-      "type": "image-with-text",
-      "blocks": {
-        "1639085117d4baf919-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "DIETITIAN DEVELOPED SNACKS",
-            "heading_font": "proxima_nova_light"
-          }
-        },
-        "1639085117d4baf919-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>HOW WE COMPARE<\/p>",
-            "text_font": "default",
-            "text_size": "h2",
-            "text_color": "color-foreground-accent-1"
-          }
-        }
-      },
-      "block_order": [
-        "1639085117d4baf919-0",
-        "1639085117d4baf919-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "image": "shopify:\/\/shop_images\/home-12.png",
-        "image_link": "",
-        "height": "small",
-        "color_scheme": "background-1",
-        "layout": "text_first",
-        "section_width": "normal",
-        "desktop_no_spacing": false
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"Reviews fro\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"1\" \n data-autoplay-speed=\"3000\" \n data-show-navigation=\"1\">&nbsp;<\/div>"
       }
     },
     "1639578542bcd508be": {
@@ -300,6 +378,41 @@
         "desktop_no_spacing": false
       }
     },
+    "1639085117b298d674": {
+      "type": "image-with-text",
+      "blocks": {
+        "1639085117d4baf919-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "DIETITIAN DEVELOPED SNACKS",
+            "heading_font": "proxima_nova_light"
+          }
+        },
+        "1639085117d4baf919-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>HOW WE COMPARE<\/p>",
+            "text_font": "default",
+            "text_size": "h2",
+            "text_color": "color-foreground-accent-1"
+          }
+        }
+      },
+      "block_order": [
+        "1639085117d4baf919-0",
+        "1639085117d4baf919-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "image": "shopify:\/\/shop_images\/home-12.png",
+        "image_link": "",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "text_first",
+        "section_width": "normal",
+        "desktop_no_spacing": false
+      }
+    },
     "1641268922eacc76d1": {
       "type": "featured-collection",
       "settings": {
@@ -317,12 +430,6 @@
         "show_purchase_options": true,
         "show_vendor": false,
         "show_rating": true
-      }
-    },
-    "1641321960606b3a1e": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#cdda01\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"REAL CUSTOMER REVIEWS\" \n data-header-customisation-alignment=\"center\" \n data-background-color-enabled=\"1\" \n data-background-color=\"#fbfced\" \n data-mode=\"top_rated\" \n data-type=\"product\" \n data-count=\"9\" \n data-show-navigation=\"1\">&nbsp;<\/div>"
       }
     },
     "16395354160dec9b11": {
@@ -486,19 +593,27 @@
         "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"129641733,230229879,129641702,172539969\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
         "section_width": "full_width"
       }
+    },
+    "1641321960606b3a1e": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#cdda01\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"REAL CUSTOMER REVIEWS\" \n data-header-customisation-alignment=\"center\" \n data-background-color-enabled=\"1\" \n data-background-color=\"#fbfced\" \n data-mode=\"top_rated\" \n data-type=\"product\" \n data-count=\"9\" \n data-show-navigation=\"1\">&nbsp;<\/div>"
+      }
     }
   },
   "order": [
     "163908444861c999ea",
-    "1639505258119ea558",
+    "1641834224a94d856f",
     "1639503887e884ceb3",
-    "1639085117b298d674",
+    "1639505258119ea558",
+    "164183533155a59c42",
     "1639578542bcd508be",
     "164078610945303f2d",
+    "1639085117b298d674",
     "1641268922eacc76d1",
-    "1641321960606b3a1e",
     "16395354160dec9b11",
     "1639504497f2620302",
-    "1639579439e5b1f86c"
+    "1639579439e5b1f86c",
+    "1641321960606b3a1e"
   ]
 }
