@@ -215,7 +215,7 @@
                         {%- if current_variant.available == false %} product-form--variant-sold-out {%- endif -%}
                       {%- endcapture %}
                        <div class="produtos-item">
-                        	{% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
+                        	{% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
                             <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"/></div>
                             <div class="produto-item-title">{{ product.title }}</div>
                             <div class="produto-qty-container">
