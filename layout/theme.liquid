@@ -218,8 +218,9 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
       </div>
     </div>
 
-    {% section 'header' %}
-
+    {% unless template.suffix contains "campaign_proteindrinks" %}
+    	{% section 'header' %}
+	{% endunless %}
     <div class="page-container" id="PageContainer">
 
       <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
