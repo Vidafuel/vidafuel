@@ -211,84 +211,20 @@
 	            	{% if product.id == 1928836186154 %}
 		               <div class="produtos-item">
                         	{% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
-            <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
-              {% for variant in product.variants %}
-                {% if variant.available %}
-                  <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
-                    {{ variant.title }}
-                  </option>
-                {% else %}
-                  <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
-                {% endif %}
-              {% endfor %}
-            </select>
+                                <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+                                  {% for variant in product.variants %}
+                                    {% if variant.available %}
+                                      <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                                        {{ variant.title }}
+                                      </option>
+                                    {% else %}
+                                      <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+                                    {% endif %}
+                                  {% endfor %}
+                                </select>
 
-            {% if section.settings.show_quantity_selector %}
-              <div class="product-form__item product-form__item--quantity">
-                <label for="Quantity-{{ section.id }}">{{ 'products.product.quantity' | t }}</label>
-                <input type="number" id="Quantity-{{ section.id }}" name="quantity" value="1" min="1" class="product-form__input" pattern="[0-9]*" data-quantity-input>
-              </div>
-            {% endif %}
-            {%- comment -%}
-              <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}"	
-                data-error-message-wrapper	
-                role="alert">	
-                <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>	
-                {% include 'icon-error' %}	
-                <span class="product-form__error-message" data-error-message>{{ 'products.product.quantity_minimum_message' | t }}</span>
-              </div>
-              {% for variant in product.variants %}
-                {% if variant.inventory_quantity <= 0 %}
+            
 
-                {% endif %}
-              {% endfor %} 
-            {%- endcomment -%}
-
-            <div class="product-form__item product-form__item--submit{% if section.settings.enable_payment_button %} product-form__item--payment-button{% endif %}{% if product.has_only_default_variant %} product-form__item--no-variants{% endif %}">
-
-              <button 
-                class="shopify-form-button button product-form__cart-submit" type="button" style="display: none"
-                onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });">
-                Temporarily out of stock – click here to be notified when back in stock
-              </button>
-
-              <button 
-                {% unless current_variant.available %} 
-                  onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });"
-                  type="button"
-                {% else %} 
-                  type="submit" 
-                  name="add" 
-                  data-add-to-cart 
-                {% endunless %}
-                aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" 
-                class="button product-form__cart-submit shopify-add-to-cart-button {% if product.selected_or_first_available_variant.metafields.bold_rp.rp_group_id %} bold-hidden{% endif %}
-">
-                {%- comment -%}button additional class before Mosheh's change
-                {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
-                {%- endcomment -%}
-                <span data-add-to-cart-text>
-                  {% unless current_variant.available %}
-                    {{ soldOut }}
-                  {% else %}
-                    {{ 'products.product.add_to_cart' | t }}
-                  {% endunless %}
-                </span>
-              {%- comment -%}
-                <span class="hide" data-loader>
-                  {% include 'icon-spinner' %}
-                </span>
-              {%- endcomment -%}
-              </button>
-
-              {% if section.settings.enable_payment_button %}
-                {{ form | payment_button }}
-              {% endif %}
-            </div>
-                         
-                         
-                         
-                         
                             <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"/></div>
                             <div class="produto-item-title">{{ product.title }}</div>
                             <div class="produto-qty-container">
