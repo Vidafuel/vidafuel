@@ -5,7 +5,7 @@
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="{% unless section.settings.full_width %}page-width{% endunless %}">
-  <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
+  <div class="rich-text {% if section.settings.text_align_center %} center{% endif %} color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
     <div class="rich-text__blocks">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -62,6 +62,12 @@
       "id": "full_width",
       "default": true,
       "label": "t:sections.rich-text.settings.full_width.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "text_align_center",
+      "label": "Text align center",
+      "default": true
     }
   ],
   "blocks": [
@@ -80,6 +86,10 @@
           "type": "select",
           "id": "heading_size",
           "options": [
+            {
+            "value": "h6",
+            "label": "X-small"
+            },
             {
               "value": "h2",
               "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__1.label"
