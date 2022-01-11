@@ -262,6 +262,28 @@
                             </div>
                             <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 34.99</span><span class="price-number">$ 29.74</span></div>
                             <div class="btn-container"><a href="javascript:;" class="btn" title="Add to cart">Add to cart</a></div>
+                         <button 
+                              type="submit" 
+                              name="add" 
+                              data-add-to-cart 
+	                          aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" 
+                              class="button product-form__cart-submit shopify-add-to-cart-button {% if product.selected_or_first_available_variant.metafields.bold_rp.rp_group_id %} bold-hidden{% endif %}">
+                            {%- comment -%}button additional class before Mosheh's change
+                            {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
+                            {%- endcomment -%}
+                            <span data-add-to-cart-text>
+                              {% unless current_variant.available %}
+                                {{ soldOut }}
+                              {% else %}
+                                {{ 'products.product.add_to_cart' | t }}
+                              {% endunless %}
+                            </span>
+                          {%- comment -%}
+                            <span class="hide" data-loader>
+                              {% include 'icon-spinner' %}
+                            </span>
+                          {%- endcomment -%}
+                          </button>
 	                        {% endform %}
                         </div>
               {% endif %}
