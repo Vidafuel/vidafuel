@@ -2605,6 +2605,9 @@
       "settings": {
         "page": {
           "label": "Page"
+        },
+        "title": {
+          "label": "Heading"
         }
       },
       "presets": {

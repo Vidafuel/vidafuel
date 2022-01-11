@@ -11,12 +11,21 @@
   <div class="rte">
     {{ page.content }}
   </div>
+  <pre>{{ section.settings.title }}</pre>
 </div>
 
 {% schema %}
 {
   "name": "t:sections.main-page.name",
   "tag": "section",
-  "class": "spaced-section"
+  "class": "spaced-section",
+  "settings": [
+      {
+      "type": "text",
+      "id": "title",
+      "default": "Page title",
+      "label": "Page title"
+      }
+  ]
 }
 {% endschema %}
