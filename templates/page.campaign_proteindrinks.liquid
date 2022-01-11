@@ -268,6 +268,18 @@
               {% endif %}
              	  {% if product.id == 4373693726762 %}
                       <div class="produtos-item">
+                        {% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
+                                <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+                                  {% for variant in product.variants %}
+                                    {% if variant.available %}
+                                      <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                                        {{ variant.title }}
+                                      </option>
+                                    {% else %}
+                                      <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+                                    {% endif %}
+                                  {% endfor %}
+                                </select>
                         <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"></img></div>
                         <div class="produto-item-title">{{ product.title }}</div>
                         <div class="produto-qty-container">
@@ -306,10 +318,23 @@
                         </div>
                         <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 19.99</span><span class="price-number">$ 16.99</span></div>
                         <div class="btn-container"><a href="javascript:;" class="btn" title="Add to cart">Add to cart</a></div>
+              	                        {% endform %}
                       </div>
                   {% endif %}
              	  {% if product.id == 4373694283818 %}
                     <div class="produtos-item">
+                      {% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
+                                <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+                                  {% for variant in product.variants %}
+                                    {% if variant.available %}
+                                      <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                                        {{ variant.title }}
+                                      </option>
+                                    {% else %}
+                                      <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+                                    {% endif %}
+                                  {% endfor %}
+                                </select>
                         <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"></img></div>
                         <div class="produto-item-title">{{ product.title }}</div>
                         <div class="produto-qty-container">
@@ -348,6 +373,7 @@
                         </div>
                         <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 19.99</span><span class="price-number">$ 16.99</span></div>
                         <div class="btn-container"><a href="javascript:;" class="btn" title="Add to cart">Add to cart</a></div>
+                     	                        {% endform %}
                       </div>
                   {% endif %}
 	            {% endfor %}
