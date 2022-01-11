@@ -217,16 +217,10 @@
                 {% for product in collections.all.products %}
 	            	{% if product.id == 1928836186154 %}
 		               <div class="produtos-item">
-                        	{% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
                             <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"/></div>
                             <div class="produto-item-title">{{ product.title }}</div>
-                            <div class="produto-qty-container">
-                                <div class="product-form__item product-form__item--quantity">
-                                  <label for="Quantity-product-template">{{ product.quantity | t }}</label>
-                                  <input type="number" id="Quantity-product-template" name="quantity" value="1" min="1" class="product-form__input" pattern="[0-9]*" data-quantity-input>
-                                </div>
-                            </div>
-	                        <select name="id" id="ProductSelect-product-template" class="product-form__variants no-js">
+	                       {% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
+                              <select name="id" id="ProductSelect-product-template" class="product-form__variants no-js">
                                   {% for variant in product.variants %}
                                     {% if variant.available %}
                                       <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
@@ -236,7 +230,14 @@
                                       <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
                                     {% endif %}
                                   {% endfor %}
-                            </select>
+                              </select>
+
+                            <div class="produto-qty-container">
+                                <div class="product-form__item product-form__item--quantity">
+                                  <label for="Quantity-product-template">{{ product.quantity | t }}</label>
+                                  <input type="number" id="Quantity-product-template" name="quantity" value="1" min="1" class="product-form__input" pattern="[0-9]*" data-quantity-input>
+                                </div>
+                            </div>
                             <div class="produtos-tabs">
                               <div class="tab-container">
                                 <input id="product_1_single" type="radio" name="product_1" value="one">
@@ -265,24 +266,24 @@
                             </div>
                             <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 34.99</span><span class="price-number">$ 29.74</span></div>
                             <div class="btn-container"><a href="javascript:;" class="btn" title="Add to cart">Add to cart</a></div>
-                         <button 
-                              type="submit" 
-                              name="add" 
-                              data-add-to-cart 
-	                          aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" 
-                              class="button product-form__cart-submit shopify-add-to-cart-button {% if product.selected_or_first_available_variant.metafields.bold_rp.rp_group_id %} bold-hidden{% endif %}">
-                            {%- comment -%}button additional class before Mosheh's change
-                            {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
-                            {%- endcomment -%}
-                            <span data-add-to-cart-text>
-                                Add to cart
-                            </span>
-                          {%- comment -%}
-                            <span class="hide" data-loader>
-                              {% include 'icon-spinner' %}
-                            </span>
-                          {%- endcomment -%}
-                          </button>
+                             <button 
+                                  type="submit" 
+                                  name="add" 
+                                  data-add-to-cart 
+                                  aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" 
+                                  class="button product-form__cart-submit shopify-add-to-cart-button {% if product.selected_or_first_available_variant.metafields.bold_rp.rp_group_id %} bold-hidden{% endif %}">
+                                {%- comment -%}button additional class before Mosheh's change
+                                {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
+                                {%- endcomment -%}
+                                <span data-add-to-cart-text>
+                                    Add to cart
+                                </span>
+                              {%- comment -%}
+                                <span class="hide" data-loader>
+                                  {% include 'icon-spinner' %}
+                                </span>
+                              {%- endcomment -%}
+                              </button>
 	                        {% endform %}
                         </div>
               {% endif %}
