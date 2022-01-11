@@ -3,6 +3,7 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "page_title_background": "shopify:\/\/shop_images\/home-reviews-bk.jpg"
       }
     },
     "16413392446709310c": {
@@ -29,7 +30,8 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "full_width": false
+        "full_width": false,
+        "text_align_center": true
       }
     }
   },
