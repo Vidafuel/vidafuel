@@ -165,14 +165,17 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     <script
       type="text/javascript">(function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/DQkSVEOOfTk6RwUP3XUIMXJSc60azZRBfpfLxYtV/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();</script>
     {{ content_for_header }}
-    {% unless template.suffix contains "campaign_proteindrinks" %}
-    {%- include 'bold-options-hybrid' -%}
-    {%- include 'bold-product' with product, hide_action: 'header' -%}
-    {% include 'bold-common' %}
-    {% include 'bold-ro-init' %}
-    {{ 'bold.css' | asset_url | stylesheet_tag }}
-    {{ 'vidafuel.scss.css' | asset_url | stylesheet_tag }}
-   	{% endunless %}
+	{% if template contains 'campaign_proteindrinks' %}
+    
+   	{% else %}
+      {%- include 'bold-options-hybrid' -%}
+      {%- include 'bold-product' with product, hide_action: 'header' -%}
+      {% include 'bold-common' %}
+      {% include 'bold-ro-init' %}
+      {{ 'bold.css' | asset_url | stylesheet_tag }}
+      {{ 'vidafuel.scss.css' | asset_url | stylesheet_tag }}
+    {% endif %}
+
 
     {% include 'minmaxify-head' %}
 
