@@ -1,4 +1,5 @@
 {% for block in section.blocks %}
+{{ block.settings.title }}
     {% assign b = block.settings %}
     {% if b.page_handle contains page.handle %}
         <section {{ block.shopify_attributes }}>
