@@ -13,7 +13,7 @@
           "type": "heading",
           "settings": {
             "heading": "MEDICAL ADVICE DISCLAIMER",
-            "heading_size": "h6",
+            "heading_size": "small",
             "heading_font": "default"
           }
         },
