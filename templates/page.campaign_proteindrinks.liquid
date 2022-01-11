@@ -272,11 +272,7 @@
                             {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
                             {%- endcomment -%}
                             <span data-add-to-cart-text>
-                              {% unless current_variant.available %}
-                                {{ soldOut }}
-                              {% else %}
                                 Add to cart
-                              {% endunless %}
                             </span>
                           {%- comment -%}
                             <span class="hide" data-loader>
