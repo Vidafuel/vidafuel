@@ -210,7 +210,7 @@
                 {% for product in collections.all.products %}
 	            {% if product.id == 1928836186154 %}
 					<div class="produtos-item">
-                      <div class="img-wrapper"><img src="{{ product.image.src }}" alt="{{ product.title }}"/></div>
+                      <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"/></div>
                       <div class="produto-item-title">{{ product.title }}</div>
                       <div class="produto-qty-container">
                         <div class="produto-small-label">Quantity</div>
