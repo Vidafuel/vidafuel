@@ -204,6 +204,12 @@
       <div class="protein-drink-section">
         <div class="grid-container" id="link-protein-drink">
           <div class="desktop-80 desktop-push-10 ls-tablet-100 ls-tablet-push-0 pt-tablet-100 pt-tablet-push-0">
+            {% for product in collections.all.products %}
+	            {% if product.id == 1928836186154 %}
+		            <div class="protein-title">{{ product.title }}</div>    	    	    
+        	    {% endif %}
+            {% endfor %}
+
             <div class="protein-title">Wellness Protein Drink</div>
             <div class="protein-subtitle">Save 15% on your first order.</div>
             <div class="produtos-list">
