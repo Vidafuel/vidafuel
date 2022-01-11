@@ -211,18 +211,6 @@
 	            	{% if product.id == 1928836186154 %}
 		               <div class="produtos-item">
                         	{% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
-            <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
-              {% for variant in product.variants %}
-                {% if variant.available %}
-                  <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
-                    {{ variant.title }}
-                  </option>
-                {% else %}
-                  <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
-                {% endif %}
-              {% endfor %}
-            </select>
-
             {% if section.settings.show_quantity_selector %}
               <div class="product-form__item product-form__item--quantity">
                 <label for="Quantity-{{ section.id }}">{{ 'products.product.quantity' | t }}</label>
