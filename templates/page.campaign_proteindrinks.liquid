@@ -1,7 +1,16 @@
 {% layout none %}
-<link rel="stylesheet" href="https://use.typekit.net/mhs8yib.css">
-<link rel="stylesheet" href="{{ 'campaign_protein_drinks.css' | asset_url }}">
-<style>
+<!doctype html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vida Fuel</title>
+  <link rel="stylesheet" href="https://use.typekit.net/mhs8yib.css">
+  <link rel="stylesheet" href="{{ 'campaign_protein_drinks.css' | asset_url }}">
+  <style>
    .landing-page-section .banner-container::before {
       background-image: url('{{ 'cpd_waves_01.svg' | asset_url }}');
    }
@@ -42,6 +51,9 @@
       background-image: url('{{ 'cpd_ui_star.svg' | asset_url }}');
    }
 </style>
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
 <main>
     <nav id="menu">
       <div class="grid-container">
@@ -431,6 +443,7 @@
     <div class="copyright">© <?php echo date('Y'); ?>, Vida-Fuel</div>
     <div class="powered-by">Powered by Shopify</div>
   </footer>
+</body>
 <script src="{{ 'cpd_plugins.js' | asset_url }}"></script>
 <script>
   $(document).ready(function() {
@@ -550,3 +563,4 @@
 
   });
 </script>
+</html>
