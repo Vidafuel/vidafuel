@@ -218,7 +218,15 @@
 	            	{% if product.id == 1928836186154 %}
 		               <div class="produtos-item">
                         	{% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
-                                <select name="id" id="ProductSelect-product-template" class="product-form__variants no-js">
+                            <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"/></div>
+                            <div class="produto-item-title">{{ product.title }}</div>
+                            <div class="produto-qty-container">
+                                <div class="product-form__item product-form__item--quantity">
+                                  <label for="Quantity-product-template">{{ product.quantity | t }}</label>
+                                  <input type="number" id="Quantity-product-template" name="quantity" value="1" min="1" class="product-form__input" pattern="[0-9]*" data-quantity-input>
+                                </div>
+                            </div>
+	                        <select name="id" id="ProductSelect-product-template" class="product-form__variants no-js">
                                   {% for variant in product.variants %}
                                     {% if variant.available %}
                                       <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
@@ -228,15 +236,7 @@
                                       <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
                                     {% endif %}
                                   {% endfor %}
-                                </select>
-                            <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"/></div>
-                            <div class="produto-item-title">{{ product.title }}</div>
-                            <div class="produto-qty-container">
-                                <div class="product-form__item product-form__item--quantity">
-                                  <label for="Quantity-product-template">{{ product.quantity | t }}</label>
-                                  <input type="number" id="Quantity-product-template" name="quantity" value="1" min="1" class="product-form__input" pattern="[0-9]*" data-quantity-input>
-                                </div>
-                            </div>
+                            </select>
                             <div class="produtos-tabs">
                               <div class="tab-container">
                                 <input id="product_1_single" type="radio" name="product_1" value="one">
