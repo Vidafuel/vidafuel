@@ -13,7 +13,7 @@
           "type": "heading",
           "settings": {
             "heading": "MEDICAL ADVICE DISCLAIMER",
-            "heading_size": "h2",
+            "heading_size": "h6",
             "heading_font": "default"
           }
         },
@@ -31,7 +31,7 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": false,
-        "text_align_center": true
+        "text_align_center": false
       }
     }
   },
