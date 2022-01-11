@@ -149,6 +149,13 @@
 	--color-icon: rgb(var(--color-base-outline-button-labels));
 }
 
+.color-text-accent-1 {
+	color: rgb(var(--color-base-accent-1));
+}
+
+.color-text-accent-2 {
+	color: rgb(var(--color-base-accent-2));
+}
 /* base */
 
 /* custom fonts  */
@@ -2460,6 +2467,16 @@ details-disclosure > details {
 
 .flex-justify-center {
 	justify-content: center;
+}
+
+.small {
+	font-size: calc(var(--font-heading-scale) * 0.65rem);
+}
+
+@media screen and (min-width: 750px) {
+	.small {
+		font-size: calc(var(--font-heading-scale) * 0.8rem);
+	}
 }
 
 .heading-1 {

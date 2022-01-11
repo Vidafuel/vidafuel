@@ -19,8 +19,13 @@
 	flex-wrap: wrap;
 }
 
+.product-link-container {
+	display: none;
+}
+
 .yotpo-reviews-carousel .carousel-display-wrapper .stars-container {
 	order: 4;
+	padding-left: 35px;
 }
 
 .yotpo-reviews-carousel .carousel-display-wrapper .yotpo-carousel {
@@ -78,6 +83,16 @@
 	font-size: 1em;
 	text-transform: uppercase;
 	line-height: 30px;
+	flex: 1 0 100%;
+}
+
+.yotpo-reviews-carousel
+	.carousel-display-wrapper
+	.yotpo-carousel
+	.small-version
+	.right-side {
+	width: auto;
+	padding-left: 35px;
 }
 
 .yotpo-reviews-carousel
@@ -110,6 +125,13 @@
 		display: none !important;
 	}
 
+	.yotpo-reviews-carousel
+		.carousel-display-wrapper
+		.yotpo-carousel
+		.carousel-review-title {
+		flex: 0 0 auto;
+	}
+
 	.yotpo.yotpo-reviews-carousel {
 		max-width: 100% !important;
 	}
@@ -120,9 +142,9 @@
 	}
 
 	.yotpo-reviews-carousel .carousel-display-wrapper .stars-container {
-    display: flex;
+		display: flex;
 		order: 3;
-    justify-content: end;
+		justify-content: end;
 	}
 
 	.yotpo-reviews-carousel
@@ -152,13 +174,12 @@
 		.yotpo-carousel
 		.big-version
 		.right-side {
-		height: 215px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 	}
 
-  	a.product-link-container {
+	a.product-link-container {
 		position: relative;
 	}
 
@@ -171,11 +192,10 @@
 		display: flex;
 		flex-direction: column;
 		vertical-align: bottom;
-    position: absolute;
-    left: 30px;
-    bottom: 0;
+		position: absolute;
+		left: 30px;
+		bottom: 0;
 	}
-
 
 	.yotpo-reviews-carousel
 		.carousel-display-wrapper
@@ -185,9 +205,12 @@
 		float: left;
 	}
 
-  .yotpo-reviews-carousel .carousel-display-wrapper .yotpo-carousel .carousel-stars {
-    right: unset !important;
-  }
+	.yotpo-reviews-carousel
+		.carousel-display-wrapper
+		.yotpo-carousel
+		.carousel-stars {
+		right: unset !important;
+	}
 
 	.yotpo-reviews-carousel
 		.carousel-display-wrapper
@@ -195,7 +218,7 @@
 		.carousel-review-author {
 		display: flex;
 		flex: 1 0 auto;
-    align-items: flex-end;
-    justify-content: flex-end;
+		align-items: flex-end;
+		justify-content: flex-end;
 	}
 }
