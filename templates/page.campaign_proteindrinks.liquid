@@ -209,60 +209,56 @@
             <div class="produtos-list">
                 {% for product in collections.all.products %}
 	            	{% if product.id == 1928836186154 %}
-                      <div class="produtos-item">
-                        <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"/></div>
-                        <div class="produto-item-title">{{ product.title }}</div>
-                        <div class="produto-qty-container">
-                          {% unless product.has_only_default_variant %}
-                            {% for option in product.options_with_values %}
-                              <div class="selector-wrapper js product-form__item">
-                                <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">
-                                  {{ option.name }}
+                    	{% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
+                          <div class="produtos-item">
+                            <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"/></div>
+                            <div class="produto-item-title">{{ product.title }}</div>
+                            <div class="produto-qty-container">
+                              {% unless product.has_only_default_variant %}
+                                {% for option in product.options_with_values %}
+                                  <div class="selector-wrapper js product-form__item">
+                                    <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">
+                                      {{ option.name }}
+                                    </label>
+                                    <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                                      {% for value in option.values %}
+                                        <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                                      {% endfor %}
+                                    </select>
+                                  </div>
+                                {% endfor %}
+                              {% endunless %}
+                            </div>
+                            <div class="produtos-tabs">
+                              <div class="tab-container">
+                                <input id="product_1_single" type="radio" name="product_1" value="one">
+                                <label for="product_1_single" class="row">
+                                  <div class="circle"></div>
+                                  <div class="tab-label">One-time purchase</div>
+                                  <div class="tab-price-cut">$ 34.99</div>
+                                  <div class="tab-price">$ 29.74</div>
                                 </label>
-                                <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
-                                  {% for value in option.values %}
-                                    <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
-                                  {% endfor %}
-                                </select>
                               </div>
-                            {% endfor %}
-                          {% endunless %}
-                          <div class="produto-small-label">Quantity</div>
-                          <div class="inner">
-                            <button class="qty-btn left"></button>
-                            <div class="qty-label">1</div>
-                            <button class="qty-btn right"></button>
+                              <div class="tab-container">
+                                <input id="product_1_subscription" type="radio" name="product_1" value="sub">
+                                <label for="product_1_subscription" class="row square">
+                                  <div class="circle"></div>
+                                  <div class="tab-label">Subscribe and Save! 15%!</div>
+                                  <div class="tab-price-cut">$ 34.99</div>
+                                  <div class="tab-price">$ 29.74</div>
+                                  <div class="separador"></div>
+                                  <span class="tab-label">Deliver every</span>
+                                  <select name="delivery_1">
+                                    <option>1</option>
+                                  </select>
+                                  <span class="tab-label black">Month(s)</span>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 34.99</span><span class="price-number">$ 29.74</span></div>
+                            <div class="btn-container"><a href="javascript:;" class="btn" title="Add to cart">Add to cart</a></div>
                           </div>
-                        </div>
-                        <div class="produtos-tabs">
-                          <div class="tab-container">
-                            <input id="product_1_single" type="radio" name="product_1" value="one">
-                            <label for="product_1_single" class="row">
-                              <div class="circle"></div>
-                              <div class="tab-label">One-time purchase</div>
-                              <div class="tab-price-cut">$ 34.99</div>
-                              <div class="tab-price">$ 29.74</div>
-                            </label>
-                          </div>
-                          <div class="tab-container">
-                            <input id="product_1_subscription" type="radio" name="product_1" value="sub">
-                            <label for="product_1_subscription" class="row square">
-                              <div class="circle"></div>
-                              <div class="tab-label">Subscribe and Save! 15%!</div>
-                              <div class="tab-price-cut">$ 34.99</div>
-                              <div class="tab-price">$ 29.74</div>
-                              <div class="separador"></div>
-                              <span class="tab-label">Deliver every</span>
-                              <select name="delivery_1">
-                                <option>1</option>
-                              </select>
-                              <span class="tab-label black">Month(s)</span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 34.99</span><span class="price-number">$ 29.74</span></div>
-                        <div class="btn-container"><a href="javascript:;" class="btn" title="Add to cart">Add to cart</a></div>
-                      </div>
+                        {% endform %}
                   {% endif %}
              	  {% if product.id == 4373693726762 %}
                       <div class="produtos-item">
