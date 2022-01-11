@@ -3,33 +3,36 @@
 
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
-
-<div class="main-page__media--background main-page-title">
+  <div class="{% if section.settings.page_title_background != blank %}main-page__media--background main-page-title{% else %}page-width page-width--narrow{% endif %}">
     {%- if section.settings.page_title_background != blank -%}
-    <img srcset="{%- if section.settings.page_title_background.width >= 165 -%}{{ section.settings.page_title_background | img_url: '165x' }} 165w,{%- endif -%}
-            {%- if section.settings.page_title_background.width >= 360 -%}{{ section.settings.page_title_background | img_url: '360x' }} 360w,{%- endif -%}
-            {%- if section.settings.page_title_background.width >= 535 -%}{{ section.settings.page_title_background | img_url: '535x' }} 535w,{%- endif -%}
-            {%- if section.settings.page_title_background.width >= 750 -%}{{ section.settings.page_title_background | img_url: '750x' }} 750w,{%- endif -%}
-            {%- if section.settings.page_title_background.width >= 1070 -%}{{ section.settings.page_title_background | img_url: '1070x' }} 1070w,{%- endif -%}
-            {%- if section.settings.page_title_background.width >= 1500 -%}{{ section.settings.page_title_background | img_url: '1500x' }} 1500w,{%- endif -%}
-            {{ section.settings.page_title_background | img_url: 'master' }} {{ section.settings.page_title_background.width }}w"
-      src="{{ section.settings.page_title_background | img_url: '1500x' }}"
-      sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-      alt="{{ section.settings.page_title_background.alt | escape }}" loading="lazy" class="main-page__media--background_img"
-      width="{{ section.settings.page_title_background.width }}" height="{{ section.settings.page_title_background.height }}">
-    {%- endif -%}
-  <div class="page-title-container page-width page-width--narrow">
-    <h1 class="page-title h0">
-      {{ page.title | escape }}
-    </h1>
+      <img srcset="{%- if section.settings.page_title_background.width >= 165 -%}{{ section.settings.page_title_background | img_url: '165x' }} 165w,{%- endif -%}
+              {%- if section.settings.page_title_background.width >= 360 -%}{{ section.settings.page_title_background | img_url: '360x' }} 360w,{%- endif -%}
+              {%- if section.settings.page_title_background.width >= 535 -%}{{ section.settings.page_title_background | img_url: '535x' }} 535w,{%- endif -%}
+              {%- if section.settings.page_title_background.width >= 750 -%}{{ section.settings.page_title_background | img_url: '750x' }} 750w,{%- endif -%}
+              {%- if section.settings.page_title_background.width >= 1070 -%}{{ section.settings.page_title_background | img_url: '1070x' }} 1070w,{%- endif -%}
+              {%- if section.settings.page_title_background.width >= 1500 -%}{{ section.settings.page_title_background | img_url: '1500x' }} 1500w,{%- endif -%}
+              {{ section.settings.page_title_background | img_url: 'master' }} {{ section.settings.page_title_background.width }}w"
+        src="{{ section.settings.page_title_background | img_url: '1500x' }}"
+        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+        alt="{{ section.settings.page_title_background.alt | escape }}" 
+        loading="lazy" 
+        class="main-page__media--background_img"
+        width="{{ section.settings.page_title_background.width }}" 
+        height="{{ section.settings.page_title_background.height }}">
+    <div class="page-title{% if section.settings.page_title_background != blank %}_media{% endif %}-container page-width page-width--narrow">
+      {%- endif -%}
+      <h1 class="page-title{% if section.settings.page_title_background != blank %}_media{% else %} main-page-title center{% endif %} h0">
+        {{ page.title | escape }}
+      </h1>
+          {%- if section.settings.page_title_background != blank -%}
+    </div>
   </div>
-</div>
-<div class="page-width page-width--narrow">
-  <div class="rte">
-    {{ page.content }}
+  <div class="page-width page-width--narrow">
+    {% endif %}
+    <div class="rte">
+      {{ page.content }}
+    </div>
   </div>
-</div>
-
 
 {% schema %}
 {
