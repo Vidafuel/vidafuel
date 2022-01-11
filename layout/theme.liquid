@@ -168,7 +168,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 	{% if template contains 'campaign_proteindrinks' %}
       {%- include 'bold-options-hybrid' -%}
       {% for product in collections.all.products %}
-       	{% if product.id == 1928836186154 or product.id == 4373693726762 or product.id == 4373694283818 %}
+       	{% if product.id == 1928836186154 %}
 		   {%- include 'bold-product' with product, hide_action: 'header' -%}
         {% endif %}
       {% endfor %}
