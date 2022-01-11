@@ -461,6 +461,24 @@
           "title": "All of our nutritional products",
           "description": "<p>VidaFuel's clinical nutrition supplements offers great tasting on protein drinks and kidney-friendly snacks. Developed by dietitians to fit your lifestyle. <\/p>"
         }
+      },
+      "section1": {
+        "type": "section1",
+        "blocks": {
+          "c9b4b8e8-e626-4c67-a606-5961553c5db5": {
+            "type": "Hero",
+            "settings": {
+              "title": "testing",
+              "page_handle": "example content",
+              "image": "shopify:\/\/shop_images\/Vidafuel-Wellness-Protein-Tutorial.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "c9b4b8e8-e626-4c67-a606-5961553c5db5"
+        ],
+        "settings": {
+        }
       }
     },
     "content_for_index": [
