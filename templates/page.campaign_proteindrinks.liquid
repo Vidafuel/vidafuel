@@ -209,8 +209,8 @@
             <div class="produtos-list">
                 {% for product in collections.all.products %}
 	            	{% if product.id == 1928836186154 %}
-                    	{% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
-                          <div class="produtos-item">
+                       <div class="produtos-item">
+                        	{% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
                             <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"/></div>
                             <div class="produto-item-title">{{ product.title }}</div>
                             <div class="produto-qty-container">
@@ -257,9 +257,9 @@
                             </div>
                             <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 34.99</span><span class="price-number">$ 29.74</span></div>
                             <div class="btn-container"><a href="javascript:;" class="btn" title="Add to cart">Add to cart</a></div>
-                          </div>
-                        {% endform %}
-                  {% endif %}
+	                        {% endform %}
+                        </div>
+              {% endif %}
              	  {% if product.id == 4373693726762 %}
                       <div class="produtos-item">
                         <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"></img></div>
