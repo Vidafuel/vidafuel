@@ -211,20 +211,6 @@
 	            	{% if product.id == 1928836186154 %}
 		               <div class="produtos-item">
                         	{% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
-                         {% unless product.has_only_default_variant %}
-              {% for option in product.options_with_values %}
-                <div class="selector-wrapper js product-form__item">
-                  <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">
-                    {{ option.name }}
-                  </label>
-                  <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
-                    {% for value in option.values %}
-                      <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
-                    {% endfor %}
-                  </select>
-                </div>
-              {% endfor %}
-            {% endunless %}
 
             <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
               {% for variant in product.variants %}
