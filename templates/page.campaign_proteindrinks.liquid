@@ -112,7 +112,7 @@
       </div>
       <div class="mighty-section">
         <div class="grid-container">
-          <div class="desktop-40 desktop-push-30 ls-tablet-50 ls-tablet-push-25 pt-tablet-60 pt-tablet-push-20">
+          <div class="desktop-40 desktop-push-30 ls-tablet-50 ls-tablet-push-25 pt-tablet-60 pt-tablet-push-20" id="link-mighty">
             <div class="mighty-title">Small but <span>Mighty</span></div>
           </div>
         </div>
@@ -202,7 +202,7 @@
         </div>
       </div>
       <div class="protein-drink-section">
-        <div class="grid-container">
+        <div class="grid-container" id="link-protein-drink">
           <div class="desktop-80 desktop-push-10 ls-tablet-100 ls-tablet-push-0 pt-tablet-100 pt-tablet-push-0">
             <div class="protein-title">Wellness Protein Drink</div>
             <div class="protein-subtitle">Save 15% on your first order.</div>
@@ -472,7 +472,7 @@
       var target = $(target);
       if (target.length) {
         root.animate({
-          scrollTop: target.offset().top - 100
+          scrollTop: target.offset().top
         }, 600, "swing");
       }
     }
