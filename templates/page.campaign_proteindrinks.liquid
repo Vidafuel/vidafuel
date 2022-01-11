@@ -208,130 +208,136 @@
             <div class="protein-subtitle">Save 15% on your first order.</div>
             <div class="produtos-list">
                 {% for product in collections.all.products %}
-	            {% if product.id == 1928836186154 %}
-					<div class="produtos-item">
-                      <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"/></div>
-                      <div class="produto-item-title">{{ product.title }}</div>
-                      <div class="produto-qty-container">
-                        <div class="produto-small-label">Quantity</div>
-                        <div class="inner">
-                          <button class="qty-btn left"></button>
-                          <div class="qty-label">1</div>
-                          <button class="qty-btn right"></button>
+	            	{% if product.id == 1928836186154 %}
+                      <div class="produtos-item">
+                        <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"/></div>
+                        <div class="produto-item-title">{{ product.title }}</div>
+                        <div class="produto-qty-container">
+                          <div class="produto-small-label">Quantity</div>
+                          <div class="inner">
+                            <button class="qty-btn left"></button>
+                            <div class="qty-label">1</div>
+                            <button class="qty-btn right"></button>
+                          </div>
                         </div>
+                        <div class="produtos-tabs">
+                          <div class="tab-container">
+                            <input id="product_1_single" type="radio" name="product_1" value="one">
+                            <label for="product_1_single" class="row">
+                              <div class="circle"></div>
+                              <div class="tab-label">One-time purchase</div>
+                              <div class="tab-price-cut">$ 34.99</div>
+                              <div class="tab-price">$ 29.74</div>
+                            </label>
+                          </div>
+                          <div class="tab-container">
+                            <input id="product_1_subscription" type="radio" name="product_1" value="sub">
+                            <label for="product_1_subscription" class="row square">
+                              <div class="circle"></div>
+                              <div class="tab-label">Subscribe and Save! 15%!</div>
+                              <div class="tab-price-cut">$ 34.99</div>
+                              <div class="tab-price">$ 29.74</div>
+                              <div class="separador"></div>
+                              <span class="tab-label">Deliver every</span>
+                              <select name="delivery_1">
+                                <option>1</option>
+                              </select>
+                              <span class="tab-label black">Month(s)</span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 34.99</span><span class="price-number">$ 29.74</span></div>
+                        <div class="btn-container"><a href="javascript:;" class="btn" title="Add to cart">Add to cart</a></div>
                       </div>
-                      <div class="produtos-tabs">
-                        <div class="tab-container">
-                          <input id="product_1_single" type="radio" name="product_1" value="one">
-                          <label for="product_1_single" class="row">
-                            <div class="circle"></div>
-                            <div class="tab-label">One-time purchase</div>
-                            <div class="tab-price-cut">$ 34.99</div>
-                            <div class="tab-price">$ 29.74</div>
-                          </label>
+                  {% endif %}
+             	  {% if product.id == 4373693726762 %}
+                      <div class="produtos-item">
+                        <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"></img></div>
+                        <div class="produto-item-title">{{ product.title }}</div>
+                        <div class="produto-qty-container">
+                          <div class="produto-small-label">Quantity</div>
+                          <div class="inner">
+                            <button class="qty-btn left"></button>
+                            <div class="qty-label">1</div>
+                            <button class="qty-btn right"></button>
+                          </div>
                         </div>
-                        <div class="tab-container">
-                          <input id="product_1_subscription" type="radio" name="product_1" value="sub">
-                          <label for="product_1_subscription" class="row square">
-                            <div class="circle"></div>
-                            <div class="tab-label">Subscribe and Save! 15%!</div>
-                            <div class="tab-price-cut">$ 34.99</div>
-                            <div class="tab-price">$ 29.74</div>
-                            <div class="separador"></div>
-                            <span class="tab-label">Deliver every</span>
-                            <select name="delivery_1">
-                              <option>1</option>
-                            </select>
-                            <span class="tab-label black">Month(s)</span>
-                          </label>
+                        <div class="produtos-tabs">
+                          <div class="tab-container">
+                            <input id="product_2_single" type="radio" name="product_2" value="one">
+                            <label for="product_2_single" class="row">
+                              <div class="circle"></div>
+                              <div class="tab-label">One-time purchase</div>
+                              <div class="tab-price-cut">$ 19.99</div>
+                              <div class="tab-price">$ 16.99</div>
+                            </label>
+                          </div>
+                          <div class="tab-container">
+                            <input id="product_2_subscription" type="radio" name="product_2" value="sub">
+                            <label for="product_2_subscription" class="row">
+                              <div class="circle"></div>
+                              <div class="tab-label">Subscribe and Save! 15%!</div>
+                              <div class="tab-price-cut">$ 19.99</div>
+                              <div class="tab-price">$ 16.99</div>
+                              <!-- <div class="separador"></div>
+                              <span class="tab-label">Deliver every</span>
+                              <select name="delivery_2">
+                                <option>1</option>
+                              </select>
+                              <span class="tab-label black">Month(s)</span> -->
+                            </label>
+                          </div>
                         </div>
+                        <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 19.99</span><span class="price-number">$ 16.99</span></div>
+                        <div class="btn-container"><a href="javascript:;" class="btn" title="Add to cart">Add to cart</a></div>
                       </div>
-                      <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 34.99</span><span class="price-number">$ 29.74</span></div>
-                      <div class="btn-container"><a href="javascript:;" class="btn" title="Add to cart">Add to cart</a></div>
-                    </div>
-        	    {% endif %}
+                  {% endif %}
+             	  {% if product.id == 4373694283818 %}
+                    <div class="produtos-item">
+                        <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"></img></div>
+                        <div class="produto-item-title">{{ product.title }}</div>
+                        <div class="produto-qty-container">
+                          <div class="produto-small-label">Quantity</div>
+                          <div class="inner">
+                            <button class="qty-btn left"></button>
+                            <div class="qty-label">1</div>
+                            <button class="qty-btn right"></button>
+                          </div>
+                        </div>
+                        <div class="produtos-tabs">
+                          <div class="tab-container">
+                            <input id="product_3_single" type="radio" name="product_3" value="sub">
+                            <label for="product_3_single" class="row">
+                              <div class="circle"></div>
+                              <div class="tab-label">One-time purchase</div>
+                              <div class="tab-price-cut">$ 19.99</div>
+                              <div class="tab-price">$ 16.99</div>
+                            </label>
+                          </div>
+                          <div class="tab-container">
+                            <input id="product_3_subscription" type="radio" name="product_3" value="sub">
+                            <label for="product_3_subscription" class="row">
+                              <div class="circle"></div>
+                              <div class="tab-label">Subscribe and Save! 15%!</div>
+                              <div class="tab-price-cut">$ 19.99</div>
+                              <div class="tab-price">$ 16.99</div>
+                              <!-- <div class="separador"></div>
+                              <span class="tab-label">Deliver every</span>
+                              <select name="delivery_2">
+                                <option>1</option>
+                              </select>
+                              <span class="tab-label black">Month(s)</span> -->
+                            </label>
+                          </div>
+                        </div>
+                        <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 19.99</span><span class="price-number">$ 16.99</span></div>
+                        <div class="btn-container"><a href="javascript:;" class="btn" title="Add to cart">Add to cart</a></div>
+                      </div>
+                  {% endif %}
 	            {% endfor %}
 
-              <div class="produtos-item">
-                <div class="img-wrapper"><img src="{{ 'cpd_product_citrus.jpg' | asset_url }}" alt="Wellness Protein Drink"></img></div>
-                <div class="produto-item-title">Wellness Protein Drink - Citrus Burst</div>
-                <div class="produto-qty-container">
-                  <div class="produto-small-label">Quantity</div>
-                  <div class="inner">
-                    <button class="qty-btn left"></button>
-                    <div class="qty-label">1</div>
-                    <button class="qty-btn right"></button>
-                  </div>
-                </div>
-                <div class="produtos-tabs">
-                  <div class="tab-container">
-                    <input id="product_2_single" type="radio" name="product_2" value="one">
-                    <label for="product_2_single" class="row">
-                      <div class="circle"></div>
-                      <div class="tab-label">One-time purchase</div>
-                      <div class="tab-price-cut">$ 19.99</div>
-                      <div class="tab-price">$ 16.99</div>
-                    </label>
-                  </div>
-                  <div class="tab-container">
-                    <input id="product_2_subscription" type="radio" name="product_2" value="sub">
-                    <label for="product_2_subscription" class="row">
-                      <div class="circle"></div>
-                      <div class="tab-label">Subscribe and Save! 15%!</div>
-                      <div class="tab-price-cut">$ 19.99</div>
-                      <div class="tab-price">$ 16.99</div>
-                      <!-- <div class="separador"></div>
-                      <span class="tab-label">Deliver every</span>
-                      <select name="delivery_2">
-                        <option>1</option>
-                      </select>
-                      <span class="tab-label black">Month(s)</span> -->
-                    </label>
-                  </div>
-                </div>
-                <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 19.99</span><span class="price-number">$ 16.99</span></div>
-                <div class="btn-container"><a href="javascript:;" class="btn" title="Add to cart">Add to cart</a></div>
-              </div>
-              <div class="produtos-item">
-                <div class="img-wrapper"><img src="{{ 'cpd_product_berry.jpg' | asset_url }}" alt="Wellness Protein Drink"></img></div>
-                <div class="produto-item-title">Wellness Protein Drink Berry Delight</div>
-                <div class="produto-qty-container">
-                  <div class="produto-small-label">Quantity</div>
-                  <div class="inner">
-                    <button class="qty-btn left"></button>
-                    <div class="qty-label">1</div>
-                    <button class="qty-btn right"></button>
-                  </div>
-                </div>
-                <div class="produtos-tabs">
-                  <div class="tab-container">
-                    <input id="product_3_single" type="radio" name="product_3" value="sub">
-                    <label for="product_3_single" class="row">
-                      <div class="circle"></div>
-                      <div class="tab-label">One-time purchase</div>
-                      <div class="tab-price-cut">$ 19.99</div>
-                      <div class="tab-price">$ 16.99</div>
-                    </label>
-                  </div>
-                  <div class="tab-container">
-                    <input id="product_3_subscription" type="radio" name="product_3" value="sub">
-                    <label for="product_3_subscription" class="row">
-                      <div class="circle"></div>
-                      <div class="tab-label">Subscribe and Save! 15%!</div>
-                      <div class="tab-price-cut">$ 19.99</div>
-                      <div class="tab-price">$ 16.99</div>
-                      <!-- <div class="separador"></div>
-                      <span class="tab-label">Deliver every</span>
-                      <select name="delivery_2">
-                        <option>1</option>
-                      </select>
-                      <span class="tab-label black">Month(s)</span> -->
-                    </label>
-                  </div>
-                </div>
-                <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 19.99</span><span class="price-number">$ 16.99</span></div>
-                <div class="btn-container"><a href="javascript:;" class="btn" title="Add to cart">Add to cart</a></div>
-              </div>
+              
+              
             </div>
           </div>
         </div>
