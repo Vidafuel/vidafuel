@@ -214,17 +214,12 @@
                             <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"/></div>
                             <div class="produto-item-title">{{ product.title }}</div>
                             <div class="produto-qty-container">
-                              <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
-                                {% for variant in product.variants %}
-                                  {% if variant.available %}
-                                    <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
-                                      {{ variant.title }}
-                                    </option>
-                                  {% else %}
-                                    <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
-                                  {% endif %}
-                                {% endfor %}
-                              </select>
+                              {% if section.settings.show_quantity_selector %}
+                                <div class="product-form__item product-form__item--quantity">
+                                  <label for="Quantity-{{ section.id }}">{{ 'products.product.quantity' | t }}</label>
+                                  <input type="number" id="Quantity-{{ section.id }}" name="quantity" value="1" min="1" class="product-form__input" pattern="[0-9]*" data-quantity-input>
+                                </div>
+                              {% endif %}
                             </div>
                             <div class="produtos-tabs">
                               <div class="tab-container">
