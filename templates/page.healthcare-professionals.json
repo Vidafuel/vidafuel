@@ -3,10 +3,7 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "title_alt": "NEW Protein Supplement",
-        "title_color": "#5bb6ae",
-        "title_font": "default",
-        "title_size": "h2"
+        "page_title_background": "shopify:\/\/shop_images\/home-reviews-bk.jpg"
       }
     },
     "1639156556f1f7aaff": {
@@ -53,19 +50,19 @@
           "settings": {
             "image_url": "",
             "title": "Small but Mighty",
+            "icon": "check_mark",
             "text": "<p>Not all proteins are equal. See how Vidafuel is superior.<\/p>",
             "link_label": "Comp Chart",
             "link_type": "modal",
             "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0922\/1906\/files\/VF_ProteinSpecificFlyer_Back_Aug_2021.jpg?v=1628250284",
             "modal_image": "shopify:\/\/shop_images\/Vidafuel-Protein-Specific-Flyer.jpg",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "trade_gothic_condensed_bold",
             "title_size": "heading-1",
             "text_font": "default",
             "text_size": "default",
             "title_top": false,
-            "desktop_no_spacing": false,
             "p_bullets": false,
             "text_color_primary": false
           }
@@ -76,18 +73,18 @@
             "image": "shopify:\/\/shop_images\/healthcare-02.png",
             "image_url": "",
             "title": "",
+            "icon": "check_mark",
             "text": "",
             "link_label": "",
             "link_type": "link",
             "link": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "default",
             "title_size": "default",
             "text_font": "default",
             "text_size": "default",
             "title_top": false,
-            "desktop_no_spacing": false,
             "p_bullets": false,
             "text_color_primary": false
           }
@@ -97,18 +94,18 @@
           "settings": {
             "image_url": "",
             "title": "",
+            "icon": "check_mark",
             "text": "<p>17g of complete protein in 2oz<\/p><p>No dilution requiredEasy to swallow texture<\/p><p>No artificial sweeteners or colors<\/p>",
             "link_label": "",
             "link_type": "link",
             "link": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "default",
             "title_size": "default",
             "text_font": "trade_gothic_bold",
             "text_size": "h2",
             "title_top": false,
-            "desktop_no_spacing": false,
             "p_bullets": true,
             "text_color_primary": true
           }
@@ -124,12 +121,14 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
+        "columns": "default",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
         "flex_align_center": true,
-        "desktop_no_spacing": false
+        "desktop_no_spacing": false,
+        "icon_enable": false
       }
     },
     "164014386357a60c4a": {
@@ -140,18 +139,18 @@
           "settings": {
             "image_url": "",
             "title": "REQUEST FREE SAMPLES FOR YOUR PATIENTS!",
+            "icon": "check_mark",
             "text": "<p><strong>Not all proteins are equal. See how Vidafuel* is superior.<\/strong><\/p><p><em>Developed by <\/em>dietitians<\/p>",
             "link_label": "",
             "link_type": "link",
             "link": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "default",
             "title_size": "default",
             "text_font": "default",
             "text_size": "default",
             "title_top": false,
-            "desktop_no_spacing": false,
             "p_bullets": false,
             "text_color_primary": false
           }
@@ -162,18 +161,18 @@
             "image": "shopify:\/\/shop_images\/image-hero-banner-coupon.png",
             "image_url": "",
             "title": "",
+            "icon": "check_mark",
             "text": "",
             "link_label": "",
             "link_type": "link",
             "link": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "default",
             "title_size": "default",
             "text_font": "default",
             "text_size": "default",
             "title_top": false,
-            "desktop_no_spacing": false,
             "p_bullets": false,
             "text_color_primary": false
           }
@@ -183,18 +182,18 @@
           "settings": {
             "image_url": "",
             "title": "FILL OUT THE FORM TO GET YOUR FREE SAMPLE",
+            "icon": "check_mark",
             "text": "",
             "link_label": "",
             "link_type": "link",
             "link": "",
             "custom_liquid": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/shell.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"19971200\",\n    formId: \"03a444a5-8a44-42ff-b7bd-34263b9df190\"\n  });\n<\/script>",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "default",
             "title_size": "default",
             "text_font": "default",
             "text_size": "default",
             "title_top": false,
-            "desktop_no_spacing": false,
             "p_bullets": false,
             "text_color_primary": false
           }
@@ -210,12 +209,14 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
+        "columns": "default",
         "background_style": "gradient-1",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
         "flex_align_center": true,
-        "desktop_no_spacing": false
+        "desktop_no_spacing": false,
+        "icon_enable": false
       }
     },
     "1640123076cbff58b5": {
@@ -264,7 +265,8 @@
         "1639506149aa8c364f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Vidafuel is an outcomes-driven company dedicated to leading improvement in the nutritional therapy market. Our passionate team of dietitians and scientists leads development of best in class products that provide a superior nutritional profile and patient experience. Our mission is to educate, support and continue to develop innovative nutritional therapy products that enable patients to live longer, happier lives.<\/p>"
+            "text": "<p>Vidafuel is an outcomes-driven company dedicated to leading improvement in the nutritional therapy market. Our passionate team of dietitians and scientists leads development of best in class products that provide a superior nutritional profile and patient experience. Our mission is to educate, support and continue to develop innovative nutritional therapy products that enable patients to live longer, happier lives.<\/p>",
+            "rich_text_size": "default"
           }
         }
       },
@@ -274,7 +276,9 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "full_width": true
+        "full_width": true,
+        "text_align_center": true,
+        "text_color": "default"
       }
     },
     "163950623206c4ca1f": {
@@ -286,18 +290,18 @@
             "image": "shopify:\/\/shop_images\/healthcare-03.png",
             "image_url": "",
             "title": "Download White Paper",
+            "icon": "check_mark",
             "text": "<p>Clinical and financial value of Oral Nutrition Supplement programs<\/p>",
             "link_label": "DOWNLOAD",
             "link_type": "link",
             "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0922\/1906\/files\/2020-VIDAFUEL-White-Paper.pdf?v=1584484018",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "default",
             "title_size": "heading-5",
             "text_font": "default",
             "text_size": "default",
             "title_top": true,
-            "desktop_no_spacing": false,
             "p_bullets": false,
             "text_color_primary": false
           }
@@ -308,18 +312,18 @@
             "image": "shopify:\/\/shop_images\/VidaFuel-Protein-wCup_new.jpg",
             "image_url": "",
             "title": "",
+            "icon": "check_mark",
             "text": "<p>Shop our best-selling Protein Drinks!<\/p>",
             "link_label": "SHOP NOW",
             "link_type": "link",
             "link": "\/products",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "default",
             "title_size": "default",
             "text_font": "default",
             "text_size": "default",
             "title_top": false,
-            "desktop_no_spacing": false,
             "p_bullets": false,
             "text_color_primary": false
           }
@@ -334,12 +338,14 @@
         "image_width": "third",
         "image_ratio": "portrait",
         "column_alignment": "center",
+        "columns": "default",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
         "flex_align_center": true,
-        "desktop_no_spacing": false
+        "desktop_no_spacing": false,
+        "icon_enable": false
       }
     },
     "1639506526d4856680": {
@@ -351,18 +357,18 @@
             "image": "shopify:\/\/shop_images\/metro-medical.png",
             "image_url": "",
             "title": "DISTRIBUTED BY",
+            "icon": "check_mark",
             "text": "",
             "link_label": "",
             "link_type": "link",
             "link": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "title_font": "default",
             "title_size": "default",
             "text_font": "default",
             "text_size": "default",
             "title_top": false,
-            "desktop_no_spacing": false,
             "p_bullets": false,
             "text_color_primary": false
           }
@@ -376,12 +382,14 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "center",
+        "columns": "default",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
         "flex_align_center": false,
-        "desktop_no_spacing": false
+        "desktop_no_spacing": false,
+        "icon_enable": false
       }
     }
   },
