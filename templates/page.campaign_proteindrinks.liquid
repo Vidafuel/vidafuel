@@ -209,6 +209,11 @@
             <div class="produtos-list">
                 {% for product in collections.all.products %}
 	            	{% if product.id == 1928836186154 %}
+		              {%- include 'bold-ro' -%}
+                      {%- include 'bold-product' with product, hide_action: 'break', output: 'none' -%}
+                      {% comment %}
+                        The contents of the product.liquid template can be found in /sections/product-template.liquid
+                      {% endcomment %}
 		              {% capture "form_classes" -%}
                         product-form product-form-{{ section.id }}{%- unless section.settings.show_variant_labels %} product-form--hide-variant-labels {% endunless %}	
                         {%- if section.settings.enable_payment_button and product.has_only_default_variant %} product-form--payment-button-no-variants {%- endif -%}	
