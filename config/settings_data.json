@@ -472,10 +472,18 @@
               "page_handle": "example content",
               "image": "shopify:\/\/shop_images\/Vidafuel-Wellness-Protein-Tutorial.jpg"
             }
+          },
+          "8fcae708-e990-4cbe-bfcb-75300b1e2870": {
+            "type": "Hero",
+            "settings": {
+              "title": "new title",
+              "page_handle": ""
+            }
           }
         },
         "block_order": [
-          "c9b4b8e8-e626-4c67-a606-5961553c5db5"
+          "c9b4b8e8-e626-4c67-a606-5961553c5db5",
+          "8fcae708-e990-4cbe-bfcb-75300b1e2870"
         ],
         "settings": {
         }
