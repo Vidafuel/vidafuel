@@ -33,13 +33,17 @@
       }
   .landing-page-section .review-section .slick-arrow-nav .slick-arrow.slick-prev{
     background-image: url('{{ 'cpd_ui_arrow_prev_white.svg' | asset_url }}');
-      }
+  }
   .landing-page-section .review-section .slick-arrow-nav .slick-arrow.slick-next{
     background-image: url('{{ 'cpd_ui_arrow_next_white.svg' | asset_url }}');
-      }
+  }
   .landing-page-section .review-section .review-slider .review-item .user-container .user-info-container .star-container span{
     background-image: url('{{ 'cpd_ui_star.svg' | asset_url }}');
-      }
+  }
+  .no-js:not(html) 
+  {
+    display: none;
+  }
 </style>
 <main>
     <nav id="menu">
@@ -211,7 +215,7 @@
 	            	{% if product.id == 1928836186154 %}
 		               <div class="produtos-item">
                         	{% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
-                                <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
+                                <select name="id" id="ProductSelect-product-template" class="product-form__variants no-js">
                                   {% for variant in product.variants %}
                                     {% if variant.available %}
                                       <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
@@ -222,9 +226,6 @@
                                     {% endif %}
                                   {% endfor %}
                                 </select>
-
-            
-
                             <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"/></div>
                             <div class="produto-item-title">{{ product.title }}</div>
                             <div class="produto-qty-container">
