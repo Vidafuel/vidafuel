@@ -604,17 +604,10 @@
       for(var i=0;i<els.length;i++){
        	if($.trim($(els.get(i)).text()) == $.trim($(this).val()))
         {
-          var priceClean = $(els.get(i)).data("price");
-          var reg = /^-?\d*\.?\d*$/;
-          while(priceClean.length > 0 && !reg.test(priceClean.charAt(0)))
-          {
-           priceClean = priceClean.substring(1);
-          }
-          
           var price = parseFloat($.trim(priceClean)) * parseFloat($($(this).parent().parent().find(".product-form__input")).val());
     	  $($(this).parent().parent().find("select.product-form__variants")).val($(els.get(i)).val());
           $($(this).parent().parent().find(".bold-ro__one-time-price")).text($(els.get(i)).data("price"));
-          $($(this).parent().parent().find(".price-number")).text(price);
+          $($(this).parent().parent().find(".price-number")).text($(els.get(i)).data("price"));
         }
       }
 
