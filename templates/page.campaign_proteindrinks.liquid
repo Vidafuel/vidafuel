@@ -356,7 +356,7 @@
                               </div>
                             {% endfor %}
                           {% endunless %}
-                          <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants {% if product.has_only_default_variant %} no-js {% endif %}">
+                          <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
                             {% for variant in product.variants %}
                             {% if variant.available %}
                             <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
