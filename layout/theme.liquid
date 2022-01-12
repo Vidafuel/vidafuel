@@ -108,7 +108,9 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
       integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS"
       crossorigin="anonymous"></script>
 
+    {% unless template.suffix contains "campaign_proteindrinks" %}
 		{{ 'styles.min.css' | asset_url | stylesheet_tag }}
+   	{% endunless %}
 
     <script>
       var theme = {
@@ -149,9 +151,11 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     <!--[if lte IE 9]><script src="{{ 'lazysizes.min.js' | asset_url }}"></script><![endif]-->
 
     <!--[if (gt IE 9)|!(IE)]><!-->
+    {% unless template.suffix contains "campaign_proteindrinks" %}
     <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
     <!--<![endif]-->
     <!--[if lte IE 9]><script src="{{ 'vendor.js' | asset_url }}"></script><![endif]-->
+   	{% endunless %}
     <!--[if (gt IE 9)|!(IE)]><!-->
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
     <!--<![endif]-->
