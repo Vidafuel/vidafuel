@@ -603,7 +603,7 @@
       var price = "";
       var els = $(this).parent().parent().find("select.product-form__variants option");
       for(var i=0;i<els.length;i++){
-        console.log($(els.get(i)).text());
+        console.log($.trim($(els.get(i)).text()));
         console.log($.trim($(this).val()));
        	if($.trim($(els.get(i)).text()) == $.trim($(this).val()))
         {
