@@ -151,11 +151,11 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     <!--[if lte IE 9]><script src="{{ 'lazysizes.min.js' | asset_url }}"></script><![endif]-->
 
     <!--[if (gt IE 9)|!(IE)]><!-->
-
+    {% unless template.suffix contains "campaign_proteindrinks" %}
     <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
     <!--<![endif]-->
     <!--[if lte IE 9]><script src="{{ 'vendor.js' | asset_url }}"></script><![endif]-->
-
+   	{% endunless %}
     <!--[if (gt IE 9)|!(IE)]><!-->
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
     <!--<![endif]-->
