@@ -376,7 +376,7 @@
                                     </label>
                                     <select class="my-product-form" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
                                       {% for value in option.values %}
-                                        <option data-price="{{ variant.price }}" value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                                        <option data-price="{{ option.price }}" value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
                                       {% endfor %}
                                     </select>
                                   </div>
