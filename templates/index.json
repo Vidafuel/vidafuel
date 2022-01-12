@@ -236,29 +236,6 @@
             "text_color_primary": true
           }
         },
-        "16395052587fb2d08a-1": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/home-07_new.png",
-            "image_url": "shopify:\/\/collections\/wellness-supplements",
-            "title": "",
-            "icon": "check_mark",
-            "text": "",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "title_font": "default",
-            "title_size": "default",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": false,
-            "p_bullets": false,
-            "text_color_primary": false
-          }
-        },
         "16395052587fb2d08a-2": {
           "type": "column",
           "settings": {
@@ -283,7 +260,6 @@
       },
       "block_order": [
         "16395052587fb2d08a-0",
-        "16395052587fb2d08a-1",
         "16395052587fb2d08a-2"
       ],
       "settings": {
