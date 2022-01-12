@@ -256,9 +256,9 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         {{ content_for_layout }}
         {% endif %}
       </main>
-	
+	{% unless template.suffix contains "campaign_proteindrinks" %}
       {% section 'footer' %}
-	
+	{% endunless %}
     </div>
     <script src="https://cdn.attn.tv/vidafuel/dtag.js"></script>
     <script>
