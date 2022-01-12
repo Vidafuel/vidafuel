@@ -376,7 +376,7 @@
                                     </label>
                                     <select class="my-product-form" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
                                       {% for value in option.values %}
-                                        <option data-price="{{ value }}" value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                                        <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
                                       {% endfor %}
                                     </select>
                                   </div>
@@ -385,7 +385,7 @@
                               <select name="id" class="product-form__variants no-js">
                                 {% for variant in product.variants %}
                                 {% if variant.available %}
-                                <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                                <option data-price="{{ floatval(variant.price) }}" {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
                                   {{ variant.title }}
                                 </option>
                                 {% else %}
