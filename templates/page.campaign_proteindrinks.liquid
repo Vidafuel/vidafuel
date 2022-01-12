@@ -339,7 +339,7 @@
                                     <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">
                                       {{ option.name }}
                                     </label>
-                                    <select class="single-option-selector single-option-selector-product-template product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                                    <select class="my-product-form" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
                                       {% for value in option.values %}
                                         <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
                                       {% endfor %}
@@ -347,16 +347,16 @@
                                   </div>
                                 {% endfor %}
                               {% endunless %}
-                         	  <select name="id" id="ProductSelect-product-template" class="product-form__variants no-js">
-                                  {% for variant in product.variants %}
-                                    {% if variant.available %}
-                                      <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
-                                        {{ variant.title }}
-                                      </option>
-                                    {% else %}
-                                      <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
-                                    {% endif %}
-                                  {% endfor %}
+                         	  <select name="id" class="product-form__variants no-js">
+                                {% for variant in product.variants %}
+                                {% if variant.available %}
+                                <option data-price="{{ variant.price | money }}" {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                                  {{ variant.title }}
+                                </option>
+                                {% else %}
+                                <option data-price="{{ variant.price | money }}" disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+                                {% endif %}
+                                {% endfor %}
                               </select>
 							  <div class="produto-qty-container">
                                 <div class="produto-small-label">Quantity</div>
@@ -366,9 +366,9 @@
                                   <button type="button" class="qty-btn right"></button>
                                 </div>
                               </div>
-                              <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 34.99</span><span class="price-number">$ 29.74</span></div>
-                              <div class="btn-container">
-                               <button 
+                              <div class="price-container"><span class="price-label">Total:</span><span class="price-number">{{ current_variant.price | money }}</span></div>
+                          	  <div class="btn-container">
+                                <button 
                                     type="submit" 
                                     name="add" 
                                     data-add-to-cart 
@@ -455,57 +455,64 @@
                   {% endif %}
              	  {% if product.id == 4373694283818 %}
                     <div class="produtos-item">
-                      {% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
-                                <select name="id" id="ProductSelect-{{ section.id }}" class="product-form__variants no-js">
-                                  {% for variant in product.variants %}
-                                    {% if variant.available %}
-                                      <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
-                                        {{ variant.title }}
-                                      </option>
-                                    {% else %}
-                                      <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
-                                    {% endif %}
-                                  {% endfor %}
-                                </select>
                         <div class="img-wrapper"><img src="{{ product | img_url: '600x600' }}" alt="{{ product.title }}"></img></div>
                         <div class="produto-item-title">{{ product.title }}</div>
-                        <div class="produto-qty-container">
-                          <div class="produto-small-label">Quantity</div>
-                          <div class="inner">
-                            <button class="qty-btn left"></button>
-                            <div class="qty-label">1</div>
-                            <button class="qty-btn right"></button>
-                          </div>
-                        </div>
-                        <div class="produtos-tabs">
-                          <div class="tab-container">
-                            <input id="product_3_single" type="radio" name="product_3" value="sub">
-                            <label for="product_3_single" class="row">
-                              <div class="circle"></div>
-                              <div class="tab-label">One-time purchase</div>
-                              <div class="tab-price-cut">$ 19.99</div>
-                              <div class="tab-price">$ 16.99</div>
-                            </label>
-                          </div>
-                          <div class="tab-container">
-                            <input id="product_3_subscription" type="radio" name="product_3" value="sub">
-                            <label for="product_3_subscription" class="row">
-                              <div class="circle"></div>
-                              <div class="tab-label">Subscribe and Save! 15%!</div>
-                              <div class="tab-price-cut">$ 19.99</div>
-                              <div class="tab-price">$ 16.99</div>
-                              <!-- <div class="separador"></div>
-                              <span class="tab-label">Deliver every</span>
-                              <select name="delivery_2">
-                                <option>1</option>
+                        {% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
+							{% unless product.has_only_default_variant %}
+                                {% for option in product.options_with_values %}
+                                  <div class="selector-wrapper js product-form__item">
+                                    <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">
+                                      {{ option.name }}
+                                    </label>
+                                    <select class="my-product-form" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                                      {% for value in option.values %}
+                                        <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
+                                      {% endfor %}
+                                    </select>
+                                  </div>
+                                {% endfor %}
+                              {% endunless %}
+                              <select name="id" class="product-form__variants no-js">
+                                {% for variant in product.variants %}
+                                {% if variant.available %}
+                                <option data-price="{{ variant.price | money }}" {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                                  {{ variant.title }}
+                                </option>
+                                {% else %}
+                                <option data-price="{{ variant.price | money }}" disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+                                {% endif %}
+                                {% endfor %}
                               </select>
-                              <span class="tab-label black">Month(s)</span> -->
-                            </label>
-                          </div>
-                        </div>
-                        <div class="price-container"><span class="price-label">Total:</span> <span class="price-number cut">$ 19.99</span><span class="price-number">$ 16.99</span></div>
-                        <div class="btn-container"><a href="javascript:;" class="btn" title="Add to cart">Add to cart</a></div>
-                     	                        {% endform %}
+                              <div class="produto-qty-container">
+                                    <div class="produto-small-label">Quantity</div>
+                                    <div class="inner">
+                                      <button type="button" class="qty-btn left"></button>
+                                      <input type="text" name="quantity" value="1" readonly class="product-form__input" data-quantity-input>
+                                      <button type="button" class="qty-btn right"></button>
+                                    </div>
+                              </div>
+                         	  <div class="price-container"><span class="price-label">Total:</span><span class="price-number">{{ current_variant.price | money }}</span></div>
+                          	  <div class="btn-container">
+                                <button 
+                                    type="submit" 
+                                    name="add" 
+                                    data-add-to-cart 
+                                    aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" 
+                                    class="button product-form__cart-submit shopify-add-to-cart-button {% if product.selected_or_first_available_variant.metafields.bold_rp.rp_group_id %} bold-hidden{% endif %}">
+                                  {%- comment -%}button additional class before Mosheh's change
+                                  {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
+                                  {%- endcomment -%}
+                                  <span data-add-to-cart-text>
+                                      Add to cart
+                                  </span>
+                                {%- comment -%}
+                                  <span class="hide" data-loader>
+                                    {% include 'icon-spinner' %}
+                                  </span>
+                                {%- endcomment -%}
+                                </button>
+                              </div>
+              	        {% endform %}
                       </div>
                   {% endif %}
 	            {% endfor %}
