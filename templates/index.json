@@ -217,10 +217,11 @@
         "16395052587fb2d08a-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/shot_hand.png",
             "image_url": "",
             "title": "",
             "icon": "check_mark",
-            "text": "<p><em>need the shot glass image with the hand<\/em><\/p>",
+            "text": "",
             "link_label": "",
             "link_type": "link",
             "link": "\/products",
@@ -237,6 +238,7 @@
         },
         "16395052587fb2d08a-1": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/home-07_new.png",
             "image_url": "shopify:\/\/collections\/wellness-supplements",
