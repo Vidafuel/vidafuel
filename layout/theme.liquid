@@ -108,9 +108,9 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
       integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS"
       crossorigin="anonymous"></script>
 
-    <!--a unless template.suffix contains "campaign_proteindrinks" -->
+    {% unless template.suffix contains "campaign_proteindrinks" %}
 		{{ 'styles.min.css' | asset_url | stylesheet_tag }}
-    <!--a endunless -->
+    {% endunless %}
 
     <script>
       var theme = {
@@ -151,11 +151,11 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     <!--[if lte IE 9]><script src="{{ 'lazysizes.min.js' | asset_url }}"></script><![endif]-->
 
     <!--[if (gt IE 9)|!(IE)]><!-->
-    <!--a unless template.suffix contains "campaign_proteindrinks" -->
+    {% unless template.suffix contains "campaign_proteindrinks" %}
     <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
     <!--<![endif]-->
     <!--[if lte IE 9]><script src="{{ 'vendor.js' | asset_url }}"></script><![endif]-->
-   	<!-- endunless -->
+   	{% endunless %}
     <!--[if (gt IE 9)|!(IE)]><!-->
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
     <!--<![endif]-->
@@ -209,7 +209,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNQ2TM4" height="0" width="0"
         style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!--a unless template.suffix contains "campaign_proteindrinks" -->
+    {% unless template.suffix contains "campaign_proteindrinks" %}
 	    <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t
 	      }}</a>
 
@@ -235,7 +235,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
           </div>
         </div>
 		{% section 'header' %}
-	<!-- endunless -->
+	{% endunless %}
     <div class="page-container" id="PageContainer">
 
       <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
@@ -256,9 +256,9 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
         {{ content_for_layout }}
         {% endif %}
       </main>
-	<!--a unless template.suffix contains "campaign_proteindrinks" -->
+	{% unless template.suffix contains "campaign_proteindrinks" %}
       {% section 'footer' %}
-	<!-- endunless -->
+	{% endunless %}
     </div>
     <script src="https://cdn.attn.tv/vidafuel/dtag.js"></script>
     <script>
