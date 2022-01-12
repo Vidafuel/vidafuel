@@ -599,6 +599,17 @@
 
     var root = $('html,body');
 	
+    $(".my-product-form").change(function(e){
+      var price = "";
+      var els = $(this).parent().parent().find("select.product-form__variants option");
+      for(var i=0;i<els.length;i++){
+       	if($.trim($(els.get(i)).text()) == $(this).val())
+        {
+			$($(this).parent().parent().find("select.product-form__variants")).val($(els.get(i)).val());
+        }
+      }
+
+    });
     $(".qty-btn.left").click(function(e){
       var elInput = $($(this).parent().find("input"));
       if(parseInt(elInput.val()) >=2 )
