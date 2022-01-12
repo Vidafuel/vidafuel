@@ -385,11 +385,11 @@
                               <select name="id" class="product-form__variants no-js">
                                 {% for variant in product.variants %}
                                 {% if variant.available %}
-                                <option data-price="{{ variant.price | number }}" {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
+                                <option data-price="{{ variant.price | abs }}" {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
                                   {{ variant.title }}
                                 </option>
                                 {% else %}
-                                <option data-price="{{ variant.price | number }}" disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+                                <option data-price="{{ variant.price | abs }}" disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
                                 {% endif %}
                                 {% endfor %}
                               </select>
