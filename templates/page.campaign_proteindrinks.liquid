@@ -285,7 +285,14 @@
                                     {% endif %}
                                   {% endfor %}
                               </select>
-
+							  <div class="produto-qty-container">
+                                <div class="produto-small-label">Quantity</div>
+                                <div class="inner">
+                                  <button class="qty-btn left"></button>
+                                  <input type="text" name="quantity" value="1" class="product-form__input" data-quantity-input>
+                                  <button class="qty-btn right"></button>
+                                </div>
+                              </div>
                             <div class="produto-qty-container">
                                 <div class="product-form__item product-form__item--quantity">
                                   <label for="Quantity-product-template">{{ product.quantity | t }}</label>
@@ -571,6 +578,17 @@
 
     var root = $('html,body');
 
+    $(".qty-btn.left").click(function(e){
+      var elInput = $($(this).parent().find("input"));
+      if(parseInt(elInput.val()) >=2 )
+        elInput.val(parseInt(elInput.val())-1);
+    });
+    
+    $(".qty-btn.right").click(function(e){
+      var elInput = $($(this).parent().find("input"));
+      elInput.val(parseInt(elInput.val())+1);
+    });
+    
     $(".video-1 video").get(0).onended = function() {
         $(".video-image-1").removeClass("hidden");
         $(".video-1 video").addClass("hidden");
