@@ -606,7 +606,7 @@
         {
           var priceClean = $(els.get(i)).data("price");
           var reg = /^-?\d*\.?\d*$/;
-          while(priceClean.lenght > 0 && !reg.test(priceClean.charAt(0)))
+          while(priceClean.length > 0 && !reg.test(priceClean.charAt(0)))
           {
            priceClean = priceClean.substring(1);
           }
