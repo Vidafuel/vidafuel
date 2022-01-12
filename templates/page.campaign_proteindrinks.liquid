@@ -607,6 +607,7 @@
         console.log($.trim($(this).val()));
        	if($.trim($(els.get(i)).text()) == $.trim($(this).val()))
         {
+          console.log("aqui");
 			$($(this).parent().parent().find("select.product-form__variants")).val($(els.get(i)).val());
         }
       }
