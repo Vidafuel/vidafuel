@@ -1,4 +1,8 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+{% if section.settings.color_scheme == 'waves' %}
+  {{ 'component-backgrounds.css' | asset_url | stylesheet_tag }}
+  {% render 'section-backgrounds' %}
+{% endif %}
 
 <div {% if section.settings.section_id != blank %}id="{{ section.settings.section_id }}"{% endif %} class="image-with-text color-{{ section.settings.color_scheme }} {% if section.settings.section_width == 'full_width' %}image-with-text--full-width{% else %}page-width color-scheme-{{ section.settings.color_scheme }}{% endif %} {%- if section.settings.bk_image != blank -%} image-with-text__media--background {% else %}gradient {% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}" {%- if section.settings.bk_image != blank -%}style="background-color:transparent;"{% endif %}>
   {%- if section.settings.bk_image != blank -%}
@@ -144,6 +148,10 @@
         {
           "value": "accent-2",
           "label": "t:sections.image-with-text.settings.color_scheme.options__5.label"
+        },
+        {
+          "value": "waves",
+          "label": "Waves"
         }
       ],
       "default": "background-1",

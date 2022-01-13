@@ -1,0 +1,64 @@
+
+/* joana's team landing page backgrounds  */
+
+.color-waves {
+	position: relative;
+	padding-top: 8rem;
+	background-color: #fff;
+	background: radial-gradient(
+		circle at 75% 20%,
+		#e5f5f4,
+		#7bccc8 20%,
+		#7bccc8 100%
+	);
+	padding-bottom: 8rem;
+	background-color: #7bccc8;
+}
+
+@media (max-width: 1732px) {
+	.color-waves {
+		background: radial-gradient(
+			circle at 75% 20%,
+			#e5f5f4,
+			#7bccc8 40%,
+			#7bccc8 100%
+		);
+	}
+}
+
+@media (max-width: 1335px) {
+	.color-waves {
+		padding-top: 130px;
+	}
+}
+
+@media (orientation: landscape) and (max-width: 666px) {
+	.color-waves {
+		padding-top: 104px;
+		background: revert;
+		background-color: #7bccc8;
+		text-align: center;
+	}
+}
+
+@media (max-width: 450px) {
+	.color-waves {
+		padding-top: 104px;
+		background: revert;
+		background-color: #7bccc8;
+		text-align: center;
+	}
+}
+
+.color-waves::before {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	right: 0;
+	padding-bottom: calc(8.25% + 1px);
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	z-index: 1;
+} 
