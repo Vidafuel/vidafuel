@@ -2,6 +2,10 @@
 	margin-top: 5rem;
 }
 
+.image-with-text.mt-0 {
+	margin-top: 0;
+}
+
 .image-with-text:not(.color-scheme-background-1):not(.desktop_no_spacing) {
 	margin-bottom: 5rem;
 }
@@ -183,6 +187,10 @@
 
 .image-with-text__content > .image-with-text__text:empty ~ a {
 	margin-top: 2rem;
+}
+
+.waves-button {
+	box-shadow: 0 0 0 .1rem rgba(var(--color-button),var(--alpha-button-border));
 }
 
 .image-with-text__content > :first-child:is(.image-with-text__heading) {

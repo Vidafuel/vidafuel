@@ -278,6 +278,15 @@
             "label": "Right large block"
           }
         },
+        "color_scheme": {
+          "options__1": {
+            "label": "None"
+          },
+          "options__2": {
+            "label": "Waves"
+          },
+          "label": "Color scheme"
+        },
         "mobile_layout": {
           "label": "Mobile layout",
           "options__1": {
@@ -386,6 +395,44 @@
             "description": {
               "label": "Video alt text",
               "info": "Describe the video to make it accessible for customers using screen readers."
+            }
+          }
+        },
+        "text": {
+          "name": "Text",
+          "settings": {
+            "title": {
+              "label": "Title"
+            },
+            "text": {
+              "label": "Text"
+            },
+            "button_label": {
+              "label": "Button label"
+            },
+            "button_link": {
+              "label": "Button link"
+            },
+            "color_scheme": {
+              "options__1": {
+                "label": "None"
+              },
+              "options__2": {
+                "label": "Accent 1"
+              },
+              "options__3": {
+                "label": "Accent 2"
+              },
+              "options__4": {
+                "label": "Background 1"
+              },
+              "options__5": {
+                "label": "Background 2"
+              },
+              "options__6": {
+                "label": "Inverse"
+              },
+              "label": "Color scheme"
             }
           }
         }

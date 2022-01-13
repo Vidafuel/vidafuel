@@ -3,8 +3,8 @@
   {{ 'component-backgrounds.css' | asset_url | stylesheet_tag }}
   {% render 'section-backgrounds' %}
 {% endif %}
-
-<div {% if section.settings.section_id != blank %}id="{{ section.settings.section_id }}"{% endif %} class="image-with-text color-{{ section.settings.color_scheme }} {% if section.settings.section_width == 'full_width' %}image-with-text--full-width{% else %}page-width color-scheme-{{ section.settings.color_scheme }}{% endif %} {%- if section.settings.bk_image != blank -%} image-with-text__media--background {% else %}gradient {% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}" {%- if section.settings.bk_image != blank -%}style="background-color:transparent;"{% endif %}>
+  
+<div {% if section.settings.section_id != blank %}id="{{ section.settings.section_id }}"{% endif %} class="image-with-text {% if section.settings.remove_top_margin %}mt-0{% endif %} color-{{ section.settings.color_scheme }} {% if section.settings.section_width == 'full_width' %}image-with-text--full-width{% else %}page-width color-scheme-{{ section.settings.color_scheme }}{% endif %} {%- if section.settings.bk_image != blank -%} image-with-text__media--background {% else %}gradient {% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}" {%- if section.settings.bk_image != blank -%}style="background-color:transparent;"{% endif %}>
   {%- if section.settings.bk_image != blank -%}
     <img
       srcset="{%- if section.settings.bk_image.width >= 165 -%}{{ section.settings.bk_image | image_url: width: 165 }} 165w,{%- endif -%}
@@ -62,8 +62,12 @@
             {%- when 'text' -%}
               <div class="image-with-text__text rte {% if block.settings.text_font != 'default' %}{{ block.settings.text_font }}{% endif %} {% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %} {% if block.settings.text_color != 'default' %}{{ block.settings.text_color }}{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
+            {% if section.settings.color_scheme == 'waves' %}
+            {{ 'component-backgrounds.css' | asset_url | stylesheet_tag }}
+            {% render 'section-backgrounds' %}
+            {% endif %}
               {%- if block.settings.button_label != blank -%}
-                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} {% if block.settings.button_inverse %} color-inverse {% endif %} {% if block.settings.button_font != 'default' %}{{ block.settings.button_font }}{% endif %}" {{ block.shopify_attributes }}>
+                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} {% if block.settings.button_inverse %} color-inverse {% endif %} {% if block.settings.color_scheme == 'waves' %} waves-button {% endif %} {% if block.settings.button_font != 'default' %}{{ block.settings.button_font }}{% endif %}" {{ block.shopify_attributes }}>
                   {{ block.settings.button_label | escape }}
                 </a>
               {%- endif -%}
@@ -194,6 +198,12 @@
       "type": "checkbox",
       "id": "desktop_no_spacing",
       "label": "Remove desktop bottom spacing",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_top_margin",
+      "label": "Remove top margin",
       "default": false
     }
   ],
