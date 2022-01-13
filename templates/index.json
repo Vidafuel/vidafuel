@@ -624,7 +624,7 @@
         "1642081099a4f212ed-1": {
           "type": "text",
           "settings": {
-            "text": "<p>–––––––––––––––––––––––––––––<\/p><p>All sections below. . .<\/p><p>are optional looks for different sections of the homepage.<\/p>",
+            "text": "<p>All sections below. . .<\/p><p>are optional looks for different sections of the homepage.<\/p><p>–––––––––––––––––––––––––––––<\/p>",
             "rich_text_size": "default"
           }
         }
@@ -637,6 +637,27 @@
         "color_scheme": "background-1",
         "full_width": true,
         "text_align_center": true,
+        "text_color": "default"
+      }
+    },
+    "1642081326b8985fde": {
+      "type": "rich-text",
+      "blocks": {
+        "16420813253e0e3010-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Top section:<\/p>",
+            "rich_text_size": "default"
+          }
+        }
+      },
+      "block_order": [
+        "16420813253e0e3010-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "text_align_center": false,
         "text_color": "default"
       }
     },
@@ -689,6 +710,7 @@
     "1639578542bcd508be",
     "1641321960606b3a1e",
     "1642081099e741e2c5",
+    "1642081326b8985fde",
     "16420790196f1cba40"
   ]
 }
