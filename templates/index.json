@@ -146,13 +146,14 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "columns": "four",
-        "background_style": "gradient-2",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
         "flex_align_center": false,
         "desktop_no_spacing": true,
-        "icon_enable": true
+        "icon_enable": true,
+        "full_width_section": false
       }
     },
     "1639503887e884ceb3": {
@@ -274,7 +275,8 @@
         "swipe_on_mobile": true,
         "flex_align_center": true,
         "desktop_no_spacing": false,
-        "icon_enable": false
+        "icon_enable": false,
+        "full_width_section": false
       }
     },
     "164183533155a59c42": {
@@ -438,7 +440,8 @@
         "swipe_on_mobile": true,
         "flex_align_center": false,
         "desktop_no_spacing": true,
-        "icon_enable": false
+        "icon_enable": false,
+        "full_width_section": false
       }
     },
     "1639504497f2620302": {
