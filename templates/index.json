@@ -624,7 +624,7 @@
         "1642081099a4f212ed-1": {
           "type": "text",
           "settings": {
-            "text": "<p>All sections below. . .<\/p><p>are optional looks for different sections of the homepage.<\/p><p>–––––––––––––––––––––––––––––<\/p>",
+            "text": "<p><strong>All sections below<\/strong>. . . are optional looks for different sections of the homepage. <\/p><p><em>Pulling ideas from Joana's team to establish a cohesive look.<\/em><\/p><p>–––––––––––––––––––––––––––––<\/p>",
             "rich_text_size": "default"
           }
         }
@@ -646,7 +646,7 @@
         "16420813253e0e3010-1": {
           "type": "text",
           "settings": {
-            "text": "<p>(1) Top\/intro section:<\/p>",
+            "text": "<p><strong>(1)<\/strong> Top\/intro section:<\/p>",
             "rich_text_size": "default"
           }
         }
