@@ -633,7 +633,7 @@
       ],
       "settings": {
         "heading": "",
-        "desktop_layout": "left",
+        "desktop_layout": "right",
         "mobile_layout": "collage"
       }
     }
