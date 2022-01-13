@@ -625,20 +625,11 @@
             "image_padding": false,
             "secondary_background": false
           }
-        },
-        "164207901930f97d52-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_padding": false,
-            "color_scheme": "background-1"
-          }
         }
       },
       "block_order": [
         "164207901930f97d52-0",
-        "164207901930f97d52-1",
-        "164207901930f97d52-2"
+        "164207901930f97d52-1"
       ],
       "settings": {
         "heading": "",
