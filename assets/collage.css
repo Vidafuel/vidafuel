@@ -13,9 +13,9 @@
     margin-top: calc(6rem + var(--page-width-margin));
   }
 
-  .collage-section + .collage-section .no-heading {
+  /* .collage-section + .collage-section .no-heading {
     margin-top: calc(-4rem - var(--page-width-margin));
-  }
+  } */
 }
 
 .collage-wrapper-title {

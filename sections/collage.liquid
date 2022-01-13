@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<div class="collage-wrapper{% if section.settings.color_scheme != 'waves' %} page-width{% endif %}{% if section.settings.heading == blank %} no-heading{% endif %} color-{{ section.settings.color_scheme }} color-scheme-{{ section.settings.color_scheme }}{% if section.settings.remove_top_spacing %} remove_top_spacing{% else %}spaced-section{% endif %}">
+<div class="collage-wrapper{% if section.settings.color_scheme != 'waves' %} page-width{% endif %}{% if section.settings.heading == blank %} no-heading{% endif %} color-{{ section.settings.color_scheme }} color-scheme-{{ section.settings.color_scheme }}{% if section.settings.remove_top_spacing %} remove_top_spacing{% else %} spaced-section{% endif %}">
   <h2 class="collage-wrapper-title">{{ section.settings.heading | escape }}</h2>
 
   <div class="collage collage--{{ section.settings.desktop_layout }}{% if section.settings.color_scheme == 'waves' %} page-width{% endif %}{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
