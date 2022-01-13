@@ -679,7 +679,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Vidafuel-Wellness-Protein-Pour.png",
             "image_padding": false,
-            "color_scheme": "background-1"
+            "color_scheme": "none"
           }
         }
       },
