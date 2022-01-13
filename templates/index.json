@@ -294,11 +294,11 @@
         "1640786109f60a207b-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Convenient &<br\/>portion controlled<br\/><br\/>Controlled sugar,<br\/>sodium and fat<br\/><br\/>Only 80-120 calories<\/strong><\/p>",
+            "text": "<p><strong>Convenient &<br\/>portion controlled<\/strong><\/p><p><strong>Controlled sugar,<br\/>sodium and fat<\/strong><\/p><p><strong>Only 80-120 calories<\/strong><\/p>",
             "text_font": "default",
             "text_size": "default",
             "text_color": "default",
-            "p_bullets": false
+            "p_bullets": true
           }
         },
         "1640786109f60a207b-2": {
