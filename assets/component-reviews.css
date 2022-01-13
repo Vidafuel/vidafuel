@@ -157,7 +157,8 @@
 
 	.yotpo-reviews-carousel .carousel-display-wrapper #carousel-top-panel {
 		display: flex;
-		justify-content: space-between;
+		align-items: center;
+		justify-content: space-around;
 	}
 
 	.yotpo-reviews-carousel .carousel-display-wrapper .stars-container {
@@ -182,7 +183,7 @@
 		border-radius: 10px;
 		box-shadow: 0 0 10px 0 rgb(29 3 18 / 10%);
 		margin-right: 70px;
-		padding: 10px 20px 10px;
+		padding: 20px 0;
 	}
 
 	.yotpo-reviews-carousel
@@ -201,11 +202,10 @@
 		.carousel-display-wrapper
 		.yotpo-carousel
 		.big-version {
-		width: 330px;
+		width: 365px;
 		display: flex !important;
 		align-items: flex-end;
-		justify-content: space-between;
-		padding-bottom: 2em;
+		justify-content: space-around;
 	}
 
 	.yotpo-reviews-carousel
@@ -249,6 +249,7 @@
 		.yotpo-carousel
 		.carousel-stars {
 		right: unset !important;
+		margin-bottom: 0 !important;
 	}
 
 	.yotpo-reviews-carousel
