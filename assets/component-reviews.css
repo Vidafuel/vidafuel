@@ -1,3 +1,4 @@
+
 .yotpo-reviews-carousel .carousel-display-wrapper .scroller {
 	padding: 2rem 0;
 }
@@ -156,12 +157,12 @@
 
 	.yotpo-reviews-carousel .carousel-display-wrapper #carousel-top-panel {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 	}
 
 	.yotpo-reviews-carousel .carousel-display-wrapper .stars-container {
 		display: flex;
-		justify-content: end;
+		justify-content: flex-end;
 	}
 
 	.yotpo-reviews-carousel
@@ -202,8 +203,8 @@
 		.big-version {
 		width: 330px;
 		display: flex !important;
-		align-items: end;
-		justify-content: space-evenly;
+		align-items: flex-end;
+		justify-content: space-between;
 		padding-bottom: 2em;
 	}
 
@@ -261,37 +262,4 @@
 	}
 }
 
-/* green/review waves  */
 
-.review-section {
-	margin-top: 90px;
-	padding-top: 8.25%;
-	position: relative;
-}
-@media (max-width: 1024px) {
-	.review-section {
-		margin-top: 70px;
-	}
-}
-.review-section::before {
-	content: "";
-	position: absolute;
-	top: calc(8.25vw - 2px);
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: #fbfcec;
-	pointer-events: none;
-}
-.review-section::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	padding-bottom: 8.25%;
-	background-size: cover;
-	background-position: top;
-	background-repeat: no-repeat;
-	z-index: 1;
-}

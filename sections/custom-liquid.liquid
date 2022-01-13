@@ -1,9 +1,51 @@
 {{ 'component-reviews.css' | asset_url | stylesheet_tag }}
 
-  {% render 'section-backgrounds' %}
+{% if section.settings.custom_background %}
+  <style>
+    .review-section {
+      margin-top: 90px;
+      padding-top: 8.25%;
+      position: relative;
+    }
+
+    @media (max-width: 1024px) {
+      .review-section {
+        margin-top: 70px;
+      }
+    }
+
+    .review-section::before {
+      content: "";
+      position: absolute;
+      top: calc(8.25vw - 2px);
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #fbfcec;
+      pointer-events: none;
+    }
+
+    .review-section::after {
+      content: "";
+      background-image: url('{{ 'cpd_waves_04.svg' | asset_url }}');
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding-bottom: 8.25%;
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+  </style>
+
   <div class="review-section">
     {{ section.settings.custom_liquid }}
   </div>
+{% else %}
+  {{ section.settings.custom_liquid }}
+{% endif %}
 
 {% schema %}
 {
@@ -16,6 +58,12 @@
       "id": "custom_liquid",
       "label": "t:sections.custom-liquid.settings.custom_liquid.label",
       "info": "t:sections.custom-liquid.settings.custom_liquid.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_background",
+      "label": "Custom background",
+      "default": false
     }
   ],
   "presets": [
