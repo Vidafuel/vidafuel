@@ -1,10 +1,14 @@
 {{ 'collage.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
+{% if section.settings.color_scheme == 'waves' %}
+  {{ 'component-backgrounds.css' | asset_url | stylesheet_tag }}
+  {% render 'section-backgrounds' %}
+{% endif %}
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<div class="collage-wrapper page-width{% if section.settings.heading == blank %} no-heading{% endif %}">
+<div class="collage-wrapper page-width{% if section.settings.heading == blank %} no-heading{% endif %} color-{{ section.settings.color_scheme }} color-scheme-{{ section.settings.color_scheme }}">
   <h2 class="collage-wrapper-title">{{ section.settings.heading | escape }}</h2>
 
   <div class="collage collage--{{ section.settings.desktop_layout }}{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
@@ -352,6 +356,11 @@
                     <p>{{ block.settings.text }}</p>
                   </div>
                 {%- endif -%}
+                {%- if block.settings.button_label != blank -%}
+                  <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} {% if block.settings.button_inverse %} color-inverse {% endif %} {% if block.settings.color_scheme == 'waves' %} waves-button {% endif %} {% if block.settings.button_font != 'default' %}{{ block.settings.button_font }}{% endif %}" {{ block.shopify_attributes }}>
+                    {{ block.settings.button_label | escape }}
+                  </a>
+                {%- endif -%}
               </div>
             </div>
           </div>
@@ -388,6 +397,23 @@
       ],
       "default": "left",
       "label": "t:sections.collage.settings.desktop_layout.label"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "waves",
+          "label": "Waves"
+        }
+      ],
+      "default": "none",
+      "label": "Section color scheme",
+      "info": "Set the section background."
     },
     {
       "type": "select",
@@ -582,9 +608,25 @@
           "label": "Text"
         },
         {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "Button label",
+          "info": "Leave the label blank to hide the button."
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
           "type": "select",
           "id": "color_scheme",
           "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
             {
               "value": "accent-1",
               "label": "Accent 1"
