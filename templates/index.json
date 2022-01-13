@@ -699,6 +699,27 @@
         "remove_top_spacing": true
       }
     },
+    "1642086584feabb190": {
+      "type": "rich-text",
+      "blocks": {
+        "1642086584cd7acb47-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>(2)<\/strong> Reviews background<\/p>",
+            "rich_text_size": "default"
+          }
+        }
+      },
+      "block_order": [
+        "1642086584cd7acb47-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "text_align_center": false,
+        "text_color": "default"
+      }
+    },
     "164208655555477e69": {
       "type": "custom-liquid",
       "settings": {
@@ -723,6 +744,7 @@
     "1642081099e741e2c5",
     "1642081326b8985fde",
     "16420790196f1cba40",
+    "1642086584feabb190",
     "164208655555477e69"
   ]
 }
