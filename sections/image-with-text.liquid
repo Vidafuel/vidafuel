@@ -60,12 +60,8 @@
                 {{ block.settings.heading | escape }}
               </h2>
             {%- when 'text' -%}
-              <div class="image-with-text__text rte {% if block.settings.text_font != 'default' %}{{ block.settings.text_font }}{% endif %} {% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %} {% if block.settings.text_color != 'default' %}{{ block.settings.text_color }}{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+              <div class="image-with-text__text rte{% if block.settings.text_font != 'default' %} {{ block.settings.text_font }}{% endif %}{% if block.settings.text_size != 'default' %} {{ block.settings.text_size }}{% endif %}{% if block.settings.text_color != 'default' %} {{ block.settings.text_color }}{% endif %}{% if block.settings.p_bullets %} p_bullets{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
-            {% if section.settings.color_scheme == 'waves' %}
-            {{ 'component-backgrounds.css' | asset_url | stylesheet_tag }}
-            {% render 'section-backgrounds' %}
-            {% endif %}
               {%- if block.settings.button_label != blank -%}
                 <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} {% if block.settings.button_inverse %} color-inverse {% endif %} {% if block.settings.color_scheme == 'waves' %} waves-button {% endif %} {% if block.settings.button_font != 'default' %}{{ block.settings.button_font }}{% endif %}" {{ block.shopify_attributes }}>
                   {{ block.settings.button_label | escape }}
@@ -363,6 +359,12 @@
           ],
           "default": "default",
           "label": "Text color"
+        },
+        {
+          "type": "checkbox",
+          "id": "p_bullets",
+          "label": "Description bullets",
+          "default": false
         }
       ]
     },

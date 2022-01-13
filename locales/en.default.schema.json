@@ -295,6 +295,9 @@
           "options__2": {
             "label": "Column"
           }
+        },
+        "remove_top_spacing": {
+          "label": "Remove top spacing"
         }
       },
       "blocks": {

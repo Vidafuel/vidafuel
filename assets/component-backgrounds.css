@@ -1,4 +1,3 @@
-
 /* joana's team landing page backgrounds  */
 
 .color-waves {
@@ -16,9 +15,9 @@
 }
 
 @media screen and (min-width: 750px) {
-.color-waves {
-  padding-bottom: 20rem;
-}
+	.color-waves {
+		padding-bottom: 20rem;
+	}
 }
 
 @media (max-width: 1732px) {
@@ -65,4 +64,4 @@
 	background-position: bottom;
 	background-repeat: no-repeat;
 	z-index: 1;
-} 
+}

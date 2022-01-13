@@ -228,3 +228,21 @@
 		margin-bottom: 0;
 	}
 }
+
+.p_bullets p {
+	position: relative;
+	padding-left: 3rem;
+	padding-bottom: 2rem;
+}
+
+.p_bullets p::before {
+	display: block;
+	content: "";
+	width: 8px;
+	height: 8px;
+	background: #cdda01;
+	border-radius: 100%;
+	position: absolute;
+	top: 7px;
+	left: 0;
+}
