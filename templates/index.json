@@ -43,7 +43,8 @@
         "color_scheme": "background-2",
         "layout": "text_first",
         "section_width": "full_width",
-        "desktop_no_spacing": true
+        "desktop_no_spacing": true,
+        "remove_top_margin": false
       }
     },
     "1641834224a94d856f": {
@@ -328,7 +329,8 @@
         "color_scheme": "background-1",
         "layout": "image_first",
         "section_width": "normal",
-        "desktop_no_spacing": false
+        "desktop_no_spacing": false,
+        "remove_top_margin": false
       }
     },
     "1641268922eacc76d1": {
@@ -477,7 +479,8 @@
         "color_scheme": "background-1",
         "layout": "image_first",
         "section_width": "full_width",
-        "desktop_no_spacing": true
+        "desktop_no_spacing": true,
+        "remove_top_margin": false
       }
     },
     "1639579439e5b1f86c": {
@@ -560,7 +563,8 @@
         "color_scheme": "background-1",
         "layout": "text_first",
         "section_width": "normal",
-        "desktop_no_spacing": false
+        "desktop_no_spacing": false,
+        "remove_top_margin": false
       }
     },
     "1639578542bcd508be": {
@@ -614,6 +618,8 @@
           "settings": {
             "title": "Discover the power of concentrated macronutrients",
             "text": "The easiest way to nourish your day",
+            "button_label": "Button label",
+            "button_link": "",
             "color_scheme": "background-1"
           }
         },
@@ -633,7 +639,8 @@
       "settings": {
         "heading": "",
         "desktop_layout": "right",
-        "mobile_layout": "collage"
+        "color_scheme": "waves",
+        "mobile_layout": "column"
       }
     }
   },
