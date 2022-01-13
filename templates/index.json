@@ -332,7 +332,7 @@
     "164183533155a59c42": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-text=\"REAL COSTUMER REVIEWS\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"1\" \n data-autoplay-speed=\"3000\" \n data-show-navigation=\"1\">&nbsp;<\/div>"
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-text=\"REAL COSTUMER REVIEWS\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-show-navigation=\"1\">&nbsp;<\/div>"
       }
     },
     "1641268922eacc76d1": {
