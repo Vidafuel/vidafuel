@@ -929,7 +929,8 @@ summary::-webkit-details-marker {
 }
 
 .title-wrapper--self-padded-tablet-down,
-.title-wrapper--self-padded-mobile {
+.title-wrapper--self-padded-mobile,
+.title-wrapper--self-padded-mobile--full-width {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 }
@@ -938,6 +939,10 @@ summary::-webkit-details-marker {
 	.title-wrapper--self-padded-mobile {
 		padding-left: 0;
 		padding-right: 0;
+	}
+		.title-wrapper--self-padded-mobile--full-width {
+		padding-left: 5rem;
+		padding-right: 5rem;
 	}
 }
 
