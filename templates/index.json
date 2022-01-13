@@ -306,11 +306,11 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "columns": "default",
-        "background_style": "none",
+        "background_style": "secondary",
         "button_label": "",
         "button_link": "\/products",
         "swipe_on_mobile": false,
-        "flex_align_center": true,
+        "flex_align_center": false,
         "desktop_no_spacing": false,
         "icon_enable": false,
         "full_width_section": true
@@ -362,6 +362,48 @@
         "section_width": "normal",
         "desktop_no_spacing": false,
         "remove_top_margin": false
+      }
+    },
+    "16420919513c4f58e1": {
+      "type": "collage",
+      "blocks": {
+        "f81ddaeb-2974-4f01-a3a2-dafff89f1643": {
+          "type": "text",
+          "settings": {
+            "title": "BETTE PAROLINI, FOUNDER & CEO",
+            "text": "Our mission is to develop powerful, nutrition boosting products that are easy to incorporate into your day!",
+            "button_label": "BUY NOW",
+            "button_link": "\/products",
+            "color_scheme": "none"
+          }
+        },
+        "1642091951dc5ad408-0": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/BETTE-PAROLINI_-Vidafuel-FOUNDER-_-CEO.png",
+            "video_url": "https:\/\/youtu.be\/93XGONMsXek",
+            "description": "Our mission is to develop powerful, nutrition boosting products that are easy to incorporate into your day!",
+            "image_padding": true
+          }
+        }
+      },
+      "block_order": [
+        "f81ddaeb-2974-4f01-a3a2-dafff89f1643",
+        "1642091951dc5ad408-0"
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "right",
+        "color_scheme": "none",
+        "mobile_layout": "column",
+        "remove_top_spacing": false
+      }
+    },
+    "16420895372c7ae66d": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-text=\"REAL COSTUMER REVIEWS\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
+        "custom_background": true
       }
     },
     "1641268922eacc76d1": {
@@ -674,48 +716,6 @@
         "text_align_center": true,
         "text_color": "default"
       }
-    },
-    "16420919513c4f58e1": {
-      "type": "collage",
-      "blocks": {
-        "f81ddaeb-2974-4f01-a3a2-dafff89f1643": {
-          "type": "text",
-          "settings": {
-            "title": "BETTE PAROLINI, FOUNDER & CEO",
-            "text": "Our mission is to develop powerful, nutrition boosting products that are easy to incorporate into your day!",
-            "button_label": "BUY NOW",
-            "button_link": "\/products",
-            "color_scheme": "none"
-          }
-        },
-        "1642091951dc5ad408-0": {
-          "type": "video",
-          "settings": {
-            "cover_image": "shopify:\/\/shop_images\/BETTE-PAROLINI_-Vidafuel-FOUNDER-_-CEO.png",
-            "video_url": "https:\/\/youtu.be\/93XGONMsXek",
-            "description": "Our mission is to develop powerful, nutrition boosting products that are easy to incorporate into your day!",
-            "image_padding": true
-          }
-        }
-      },
-      "block_order": [
-        "f81ddaeb-2974-4f01-a3a2-dafff89f1643",
-        "1642091951dc5ad408-0"
-      ],
-      "settings": {
-        "heading": "",
-        "desktop_layout": "right",
-        "color_scheme": "none",
-        "mobile_layout": "column",
-        "remove_top_spacing": false
-      }
-    },
-    "16420895372c7ae66d": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-text=\"REAL COSTUMER REVIEWS\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
-        "custom_background": true
-      }
     }
   },
   "order": [
@@ -725,6 +725,8 @@
     "1639503887e884ceb3",
     "1639505258119ea558",
     "164078610945303f2d",
+    "16420919513c4f58e1",
+    "16420895372c7ae66d",
     "1641268922eacc76d1",
     "16395354160dec9b11",
     "1639504497f2620302",
@@ -732,8 +734,6 @@
     "1639085117b298d674",
     "1639578542bcd508be",
     "1641321960606b3a1e",
-    "1642081099e741e2c5",
-    "16420919513c4f58e1",
-    "16420895372c7ae66d"
+    "1642081099e741e2c5"
   ]
 }
