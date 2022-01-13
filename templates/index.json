@@ -16,7 +16,8 @@
             "text": "<p>The easiest way to nourish your day<\/p>",
             "text_font": "proxima_nova_light",
             "text_size": "h3",
-            "text_color": "default"
+            "text_color": "default",
+            "p_bullets": false
           }
         },
         "1639084448a58c7e7f-2": {
@@ -302,7 +303,8 @@
             "text": "<p><strong>Convenient &<br\/>portion controlled<br\/><br\/>Controlled sugar,<br\/>sodium and fat<br\/><br\/>Only 80-120 calories<\/strong><\/p>",
             "text_font": "default",
             "text_size": "default",
-            "text_color": "default"
+            "text_color": "default",
+            "p_bullets": false
           }
         },
         "1640786109f60a207b-2": {
@@ -463,7 +465,8 @@
             "text": "<p>Adequate nutrition is the foundation for a long, active life.<\/p><p>Vidafuel products make it more <strong>accessible, convenient & enjoyable.<\/strong><\/p>",
             "text_font": "default",
             "text_size": "default",
-            "text_color": "default"
+            "text_color": "default",
+            "p_bullets": false
           }
         }
       },
@@ -536,7 +539,8 @@
             "text": "<p>HOW WE COMPARE<\/p>",
             "text_font": "default",
             "text_size": "h2",
-            "text_color": "color-foreground-accent-1"
+            "text_color": "color-foreground-accent-1",
+            "p_bullets": false
           }
         },
         "51942f3d-d457-482e-80de-a5f41ecadf5b": {
@@ -691,7 +695,8 @@
         "heading": "",
         "desktop_layout": "right",
         "color_scheme": "waves",
-        "mobile_layout": "column"
+        "mobile_layout": "column",
+        "remove_top_spacing": true
       }
     }
   },
