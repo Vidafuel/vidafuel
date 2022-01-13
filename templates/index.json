@@ -609,27 +609,26 @@
     "16420790196f1cba40": {
       "type": "collage",
       "blocks": {
-        "164207901930f97d52-0": {
-          "type": "video",
+        "ccea9b7c-bc59-423f-962f-fb479244665d": {
+          "type": "text",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": "Describe the video",
-            "image_padding": false
+            "title": "Discover the power of concentrated macronutrients",
+            "text": "The easiest way to nourish your day",
+            "color_scheme": "background-1"
           }
         },
-        "164207901930f97d52-1": {
-          "type": "product",
+        "6fc10e7f-096e-49a2-9c81-1e158cd62f31": {
+          "type": "image",
           "settings": {
-            "product": "",
-            "second_image": false,
+            "image": "shopify:\/\/shop_images\/Vidafuel-Wellness-Protein-Pour.png",
             "image_padding": false,
-            "secondary_background": false
+            "color_scheme": "background-1"
           }
         }
       },
       "block_order": [
-        "164207901930f97d52-0",
-        "164207901930f97d52-1"
+        "ccea9b7c-bc59-423f-962f-fb479244665d",
+        "6fc10e7f-096e-49a2-9c81-1e158cd62f31"
       ],
       "settings": {
         "heading": "",
