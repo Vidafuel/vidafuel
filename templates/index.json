@@ -646,7 +646,7 @@
         "16420813253e0e3010-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Top section:<\/p>",
+            "text": "<p>(1) Top\/intro section:<\/p>",
             "rich_text_size": "default"
           }
         }
