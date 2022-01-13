@@ -281,12 +281,6 @@
         "full_width_section": true
       }
     },
-    "164183533155a59c42": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-text=\"REAL COSTUMER REVIEWS\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"1\" \n data-autoplay-speed=\"3000\" \n data-show-navigation=\"1\">&nbsp;<\/div>"
-      }
-    },
     "164078610945303f2d": {
       "type": "image-with-text",
       "blocks": {
@@ -333,6 +327,12 @@
         "section_width": "normal",
         "desktop_no_spacing": false,
         "remove_top_margin": false
+      }
+    },
+    "164183533155a59c42": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-text=\"REAL COSTUMER REVIEWS\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"1\" \n data-autoplay-speed=\"3000\" \n data-show-navigation=\"1\">&nbsp;<\/div>"
       }
     },
     "1641268922eacc76d1": {
@@ -705,8 +705,8 @@
     "1641834224a94d856f",
     "1639503887e884ceb3",
     "1639505258119ea558",
-    "164183533155a59c42",
     "164078610945303f2d",
+    "164183533155a59c42",
     "1641268922eacc76d1",
     "16395354160dec9b11",
     "1639504497f2620302",
