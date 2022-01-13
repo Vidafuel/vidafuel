@@ -40,7 +40,7 @@
         "image": "shopify:\/\/shop_images\/Stop-Motion-Pour720.gif",
         "image_link": "\/products",
         "height": "adapt",
-        "color_scheme": "background-2",
+        "color_scheme": "waves",
         "layout": "text_first",
         "section_width": "full_width",
         "desktop_no_spacing": true
