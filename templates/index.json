@@ -605,7 +605,7 @@
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#cdda01\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"REAL CUSTOMER REVIEWS\" \n data-header-customisation-alignment=\"center\" \n data-background-color-enabled=\"1\" \n data-background-color=\"#fbfced\" \n data-mode=\"top_rated\" \n data-type=\"product\" \n data-count=\"9\" \n data-show-navigation=\"1\">&nbsp;<\/div>"
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-text=\"REAL COSTUMER REVIEWS\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"1\" \n data-autoplay-speed=\"3000\" \n data-show-navigation=\"1\">&nbsp;<\/div>"
       }
     },
     "1642081099e741e2c5": {
