@@ -1,13 +1,9 @@
 {{ 'component-reviews.css' | asset_url | stylesheet_tag }}
 
-{% if section.settings.custom_background %}
   {% render 'section-backgrounds' %}
   <div class="review-section">
     {{ section.settings.custom_liquid }}
   </div>
-{% else %}
-  {{ section.settings.custom_liquid }}
-{% endif %}
 
 {% schema %}
 {
@@ -20,12 +16,6 @@
       "id": "custom_liquid",
       "label": "t:sections.custom-liquid.settings.custom_liquid.label",
       "info": "t:sections.custom-liquid.settings.custom_liquid.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "custom_background",
-      "label": "Custom background",
-      "default": false
     }
   ],
   "presets": [
