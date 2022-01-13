@@ -2,7 +2,6 @@
 	padding: 2rem 0;
 }
 
-.yotpo-reviews-carousel .carousel-display-wrapper #carousel-top-panel .headline,
 .yotpo-reviews-carousel
 	.carousel-display-wrapper
 	.yotpo-carousel
@@ -12,6 +11,20 @@
 	.yotpo-carousel
 	.carousel-review-body {
 	font-family: "trade-gothic-next-condensed", sans-serif !important;
+}
+
+.yotpo-reviews-carousel
+	.carousel-display-wrapper
+	#carousel-top-panel
+	.headline {
+	color: #cddb00;
+	font-family: trade-gothic-next-compressed, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 40px;
+	letter-spacing: 0.5px;
+	line-height: 48px;
+	text-transform: uppercase;
 }
 
 .yotpo-reviews-carousel
@@ -187,7 +200,7 @@
 		.carousel-display-wrapper
 		.yotpo-carousel
 		.big-version {
-			width: 330px;
+		width: 330px;
 		display: flex !important;
 		align-items: end;
 		justify-content: space-evenly;
@@ -246,4 +259,39 @@
 		align-items: flex-end;
 		justify-content: flex-end;
 	}
+}
+
+/* green/review waves  */
+
+.review-section {
+	margin-top: 90px;
+	padding-top: 8.25%;
+	position: relative;
+}
+@media (max-width: 1024px) {
+	.review-section {
+		margin-top: 70px;
+	}
+}
+.review-section::before {
+	content: "";
+	position: absolute;
+	top: calc(8.25vw - 2px);
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #fbfcec;
+	pointer-events: none;
+}
+.review-section::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-bottom: 8.25%;
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	z-index: 1;
 }
