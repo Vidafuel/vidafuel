@@ -1,7 +1,42 @@
 {
   "sections": {
+    "16420790196f1cba40": {
+      "type": "collage",
+      "blocks": {
+        "ccea9b7c-bc59-423f-962f-fb479244665d": {
+          "type": "text",
+          "settings": {
+            "title": "Discover the power of concentrated macronutrients",
+            "text": "The easiest way to nourish your day",
+            "button_label": "Shop Now",
+            "button_link": "\/products",
+            "color_scheme": "background-1"
+          }
+        },
+        "6fc10e7f-096e-49a2-9c81-1e158cd62f31": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Stop-Motion-Pour720.gif",
+            "image_padding": false,
+            "color_scheme": "none"
+          }
+        }
+      },
+      "block_order": [
+        "ccea9b7c-bc59-423f-962f-fb479244665d",
+        "6fc10e7f-096e-49a2-9c81-1e158cd62f31"
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "right",
+        "color_scheme": "waves",
+        "mobile_layout": "column",
+        "remove_top_spacing": true
+      }
+    },
     "163908444861c999ea": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "1639084448a58c7e7f-0": {
           "type": "heading",
@@ -13,7 +48,7 @@
         "1639084448a58c7e7f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The easiest way to nourish your day<\/p>",
+            "text": "<p><strong>!!! OLD TOP BANNER !!!<br\/><\/strong>The easiest way to nourish your day<\/p>",
             "text_font": "proxima_nova_light",
             "text_size": "h3",
             "text_color": "default",
@@ -611,6 +646,7 @@
     },
     "1642081099e741e2c5": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1642081099a4f212ed-0": {
           "type": "heading",
@@ -637,40 +673,6 @@
         "full_width": true,
         "text_align_center": true,
         "text_color": "default"
-      }
-    },
-    "16420790196f1cba40": {
-      "type": "collage",
-      "blocks": {
-        "ccea9b7c-bc59-423f-962f-fb479244665d": {
-          "type": "text",
-          "settings": {
-            "title": "Discover the power of concentrated macronutrients",
-            "text": "The easiest way to nourish your day",
-            "button_label": "Shop Now",
-            "button_link": "\/products",
-            "color_scheme": "background-1"
-          }
-        },
-        "6fc10e7f-096e-49a2-9c81-1e158cd62f31": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Stop-Motion-Pour720.gif",
-            "image_padding": false,
-            "color_scheme": "none"
-          }
-        }
-      },
-      "block_order": [
-        "ccea9b7c-bc59-423f-962f-fb479244665d",
-        "6fc10e7f-096e-49a2-9c81-1e158cd62f31"
-      ],
-      "settings": {
-        "heading": "",
-        "desktop_layout": "right",
-        "color_scheme": "waves",
-        "mobile_layout": "column",
-        "remove_top_spacing": true
       }
     },
     "16420919513c4f58e1": {
@@ -717,6 +719,7 @@
     }
   },
   "order": [
+    "16420790196f1cba40",
     "163908444861c999ea",
     "1641834224a94d856f",
     "1639503887e884ceb3",
@@ -730,7 +733,6 @@
     "1639578542bcd508be",
     "1641321960606b3a1e",
     "1642081099e741e2c5",
-    "16420790196f1cba40",
     "16420919513c4f58e1",
     "16420895372c7ae66d"
   ]
