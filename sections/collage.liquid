@@ -1,17 +1,24 @@
 {{ 'collage.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
-{% if section.settings.color_scheme == 'waves' %}
-  {{ 'component-backgrounds.css' | asset_url | stylesheet_tag }}
-  {% render 'section-backgrounds' %}
+{% if section.settings.background_color_scheme == 'waves' %}
+  {% render 'background-waves' %}
+{% elsif section.settings.background_color_scheme == 'mighty' %}
+  {% render 'background-mighty' %}
 {% endif %}
+
+{%- comment -%} COLOR SCHEME {%- endcomment -%}
+{%- assign scheme = section.settings.background_color_scheme -%}
+{%- capture background_color_scheme -%}{{ scheme }}{%- endcapture -%}
+
+{%- comment -%}TODO: match variables and such from image-with-text.liquid file{%- endcomment -%}
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<div class="collage-wrapper{% if section.settings.color_scheme != 'waves' %} page-width{% endif %}{% if section.settings.heading == blank %} no-heading{% endif %} color-{{ section.settings.color_scheme }} color-scheme-{{ section.settings.color_scheme }}{% if section.settings.remove_top_spacing %} remove_top_spacing{% else %} spaced-section{% endif %}">
+<div class="collage-wrapper page-width {% if section.settings.heading == blank %} no-heading{% endif %} {% if section.settings.background_color_scheme != 'default' %}{{ scheme }}{% endif %} {% if section.settings.remove_top_spacing %} remove_top_spacing{% else %} spaced-section{% endif %}">
   <h2 class="collage-wrapper-title">{{ section.settings.heading | escape }}</h2>
 
-  <div class="collage collage--{{ section.settings.desktop_layout }}{% if section.settings.color_scheme == 'waves' %} page-width{% endif %}{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
+  <div class="collage collage--{{ section.settings.desktop_layout }}{% if section.settings.background_color_scheme != 'default' %} page-width{% endif %}{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
     {%- for block in section.blocks -%}
 
       {% liquid
@@ -357,7 +364,7 @@
                   </div>
                 {%- endif -%}
                 {%- if block.settings.button_label != blank -%}
-                  <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} {% if block.settings.button_inverse %} color-inverse {% endif %} {% if block.settings.color_scheme == 'waves' %} waves-button {% endif %} {% if block.settings.button_font != 'default' %}{{ block.settings.button_font }}{% endif %}" {{ block.shopify_attributes }}>
+                  <a {% if block.settings.button_link == blank %}role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}{% if block.settings.button_inverse %} color-inverse{% endif %}{% if block.settings.color_scheme == 'waves' %} waves-button{% endif %}{% if block.settings.button_font != 'default' %}{{ block.settings.button_font }}{% endif %}" {{ block.shopify_attributes }}>
                     {{ block.settings.button_label | escape }}
                   </a>
                 {%- endif -%}
@@ -400,20 +407,23 @@
     },
     {
       "type": "select",
-      "id": "color_scheme",
+      "id": "background_color_scheme",
       "options": [
         {
-          "value": "none",
-          "label": "None"
+          "value": "default",
+          "label": "Default"
         },
         {
           "value": "waves",
           "label": "Waves"
+        },
+        {
+          "value": "mighty",
+          "label": "Mighty"
         }
       ],
-      "default": "none",
-      "label": "Section color scheme",
-      "info": "Set the section background."
+      "default": "default",
+      "label": "Background scheme"
     },
     {
       "type": "select",

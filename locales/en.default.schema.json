@@ -278,14 +278,17 @@
             "label": "Right large block"
           }
         },
-        "color_scheme": {
+        "background_color_scheme": {
           "options__1": {
-            "label": "None"
+            "label": "Default"
           },
           "options__2": {
             "label": "Waves"
           },
-          "label": "Color scheme"
+          "options__3": {
+            "label": "Mighty"
+          },
+          "label": "Background scheme"
         },
         "mobile_layout": {
           "label": "Mobile layout",
@@ -1051,6 +1054,18 @@
             "label": "Accent 2"
           },
           "label": "Color scheme"
+        },
+        "background_scheme": {
+          "options__1": {
+            "label": "Default"
+          },
+          "options__2": {
+            "label": "Waves"
+          },
+          "options__3": {
+            "label": "Mighty"
+          },
+          "label": "Background scheme"
         },
         "layout": {
           "options__1": {

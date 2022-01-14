@@ -24,7 +24,7 @@
 	--gradient-background: var(--gradient-base-accent-1);
 }
 
-.color-waves {
+.waves {
 	--color-foreground: var(--color-base-solid-button-labels);
 	--gradient-background: var(--gradient-base-accent-1);
 }
@@ -334,7 +334,7 @@ body,
 .color-inverse,
 .color-accent-1,
 .color-accent-2,
-.color-waves {
+.waves {
 	color: rgba(var(--color-foreground), 0.75);
 	background-color: rgb(var(--color-background));
 }
