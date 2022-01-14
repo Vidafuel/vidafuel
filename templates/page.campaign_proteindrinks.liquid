@@ -248,10 +248,10 @@
         <div class="grid-container">
           <div class="desktop-55 desktop-push-10 ls-tablet-55 ls-tablet-push-5 pt-tablet-55 pt-tablet-push-0 ls-phone-50 mighty-left">
             <div class="video video-1">
-              <video width="100%" height="100%" controls class="hidden">
+              <video width="100%" height="100%" autoplay muted loop playsinline style="pointer-events: none;">
                 <source src="{{ 'cpd_video_01_stop_motion.mp4' | asset_url }}" type="video/mp4">
               </video>
-              <div class="img-placeholder imagem16x9 video-image-1" style="background-image:url('{{ 'cpd_video_placeholder_01.jpg' | asset_url }}')"></div>
+              <!--div class="img-placeholder imagem16x9 video-image-1" style="background-image:url('{{ 'cpd_video_placeholder_01.jpg' | asset_url }}')"></div-->
             </div>
           </div>
           <div class="desktop-25 desktop-push-15 ls-tablet-30 ls-tablet-push-10 pt-tablet-40 pt-tablet-push-5 ls-phone-50 mighty-right">
@@ -669,7 +669,7 @@
       elInput.val(parseInt(elInput.val())+1);
     });
     
-    $(".video-1 video").get(0).onended = function() {
+  /*  $(".video-1 video").get(0).onended = function() {
         $(".video-image-1").removeClass("hidden");
         $(".video-1 video").addClass("hidden");
     };
@@ -692,7 +692,7 @@
         $(".video-image-2").addClass("hidden");
         $(".video-2 video").removeClass("hidden");
         $(".video-2 video").get(0).play();
-    });
+    });*/
 
     function smoothScrollingTo(target) {
       var target = $(target);
