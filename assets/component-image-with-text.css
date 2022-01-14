@@ -211,6 +211,7 @@
 
 .image-with-text__heading {
 	margin-bottom: 0;
+	z-index: 1;
 }
 
 .image-with-text__text p {
