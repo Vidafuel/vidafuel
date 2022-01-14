@@ -29,7 +29,7 @@
       "settings": {
         "heading": "",
         "desktop_layout": "right",
-        "color_scheme": "waves",
+        "background_color_scheme": "waves",
         "mobile_layout": "column",
         "remove_top_spacing": true
       }
@@ -77,6 +77,7 @@
         "image_link": "\/products",
         "height": "adapt",
         "color_scheme": "background-2",
+        "background_scheme": "default",
         "layout": "text_first",
         "section_width": "full_width",
         "desktop_no_spacing": true,
@@ -189,7 +190,7 @@
         "swipe_on_mobile": false,
         "flex_align_center": false,
         "desktop_no_spacing": true,
-        "icon_enable": true,
+        "icon_enable": false,
         "full_width_section": false
       }
     },
@@ -358,6 +359,7 @@
         "image_link": "",
         "height": "small",
         "color_scheme": "background-1",
+        "background_scheme": "default",
         "layout": "image_first",
         "section_width": "normal",
         "desktop_no_spacing": false,
@@ -394,7 +396,7 @@
       "settings": {
         "heading": "",
         "desktop_layout": "right",
-        "color_scheme": "none",
+        "background_color_scheme": "default",
         "mobile_layout": "column",
         "remove_top_spacing": false
       }
@@ -551,6 +553,7 @@
         "image_link": "\/products",
         "height": "adapt",
         "color_scheme": "background-1",
+        "background_scheme": "default",
         "layout": "image_first",
         "section_width": "full_width",
         "desktop_no_spacing": true,
@@ -636,6 +639,7 @@
         "image_link": "",
         "height": "small",
         "color_scheme": "background-1",
+        "background_scheme": "default",
         "layout": "text_first",
         "section_width": "normal",
         "desktop_no_spacing": false,
