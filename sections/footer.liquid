@@ -14,7 +14,15 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient">
+{% if section.settings.footer_bkgnd_color != 'rgba(0,0,0,0)' %}
+<style>
+  .footer-bkgnd-color {
+    background-color:{{ section.settings.footer_bkgnd_color }};
+  }
+</style>
+{% endif %}
+
+<footer class="footer color-{{ section.settings.color_scheme }}{% if section.settings.footer_bkgnd_color != 'rgba(0,0,0,0)' %} footer-bkgnd-color{% else%} gradient{% endif %}">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
       {%- if section.blocks.size > 0 -%}
@@ -81,7 +89,7 @@
               <h2 class="footer-block__heading">{{ section.settings.newsletter_heading | escape }}</h2>
             {%- endif -%}
             {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
-              <input type="hidden" name="contact[tags]" value="newsletter">
+            <input type="hidden" name="contact[tags]" value="newsletter">
               <div class="newsletter-form__field-wrapper">
                 <div class="field">
                   <input
@@ -450,6 +458,10 @@
   ],
   "settings": [
     {
+      "type": "header",
+      "content": "Settings"
+    },
+    {
       "type": "select",
       "id": "color_scheme",
       "options": [
@@ -476,6 +488,16 @@
       ],
       "default": "background-1",
       "label": "t:sections.footer.settings.color_scheme.label"
+    },
+    {
+      "type": "paragraph",
+      "content": "Or choose a color"
+    },
+    {
+      "type": "color",
+      "id": "footer_bkgnd_color",
+      "label": "Background color",
+      "default": "#fff"
     },
     {
       "type": "header",
