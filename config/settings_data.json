@@ -11,7 +11,7 @@
     "gradient_background_1": "",
     "colors_background_2": "#7bccc8",
     "type_header_font": "trade_gothic_next_n7",
-    "heading_scale": 145,
+    "heading_scale": 110,
     "type_body_font": "trade_gothic_next_n4",
     "page_width": "1600",
     "social_facebook_link": "https:\/\/www.facebook.com\/VidaFuel\/",
@@ -55,6 +55,7 @@
         "type": "footer",
         "settings": {
           "color_scheme": "background-1",
+          "footer_bkgnd_color": "#fff",
           "newsletter_enable": true,
           "newsletter_heading": "Join our mai﻿ling list",
           "show_social": true,
