@@ -14,6 +14,8 @@
     "heading_scale": 145,
     "type_body_font": "trade_gothic_next_n4",
     "page_width": "1600",
+    "social_facebook_link": "https:\/\/www.facebook.com\/VidaFuel\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/vida_fuel\/",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
