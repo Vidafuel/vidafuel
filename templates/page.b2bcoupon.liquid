@@ -1,13 +1,262 @@
-<div class="page-width">
-  <div class="grid">
-    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
-      <div class="section-header text-center">
-        <h1>{{ page.title }}</h1>
-      </div>
+<link rel="stylesheet" href="{{ 'page_b2b_coupon.css' | asset_url }}">
+<style>
+  .topContent::before { 
+    background-image: url('assets/imgs/image-hero-banner.png'); 
+  }
+  .topHeader::before { 
+    background-image: url('assets/imgs/topBG.png'); 
+  }
+  .thirdBlock::before { 
+    background-image: url('assets/imgs/bgGreen.png'); 
+  }
+</style>
+<div class="topHeader">
+        <div class="container">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="161" height="40" viewBox="0 0 161 40">
+                <defs>
+                  <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 360 89">
+                    <image width="360" height="89" xlink:href="data:image/png;base64,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"/>
+                  </pattern>
+                </defs>
+                <rect id="Vidafuel-logo-official" width="161" height="40" fill="url(#pattern)"/>
+            </svg>
+            <div class="topContent">
+                <div class="leftBlock" id="leftBlock">
+                    <h1 class="title">Request a coupon!</h1>
+                    <h2 class="subTitle">No all proteins are equal.<br>See how Vidafuel* is<br>superior.</h2>
 
-      <div class="rte">
-        {{ page.content }}
-      </div>
+                    <img src="assets/imgs/image-hero-banner-mobile.png" class="mobileOnly" />
+
+                    <div class="notice desktopOnly">*Developed by Dietitians</div>
+                </div>
+
+            </div>
+            <div class="formBlock" id="formBlock">
+                <div class="formClose mobileOnly"><img src="assets/imgs/close.svg"></div>
+                <div class="formTitle">FILL OUT THE FORM</div>
+                <div class="formTitleSec">TO GET A COUPON FOR YOUR PATIENTS</div>
+                <form id="form2">
+                    <div class="inputBlock">
+                        <div class="formReq">*Required fields</div>
+                        <div class="formInputs">
+                            <input type="text" placeholder="Name & Last Name*" name="name" maxlength="50" required minlength="3">
+                            <input type="email" placeholder="Email*" name="email" maxlength="200" required minlength="3">
+                            <input type="phone" placeholder="Phone Number*" name="phone" maxlength="20" required minlength="3">
+                            <input type="text" placeholder="Instituition Name*" name="institution" maxlength="100" required>
+                            <input type="text" placeholder="Job Title*" name="job" maxlength="50" required>
+                        </div>
+                        <div class="policy">We never spam or share your information. Manage your subscription or opt-out at anytime. View our <a href="https://www.vida-fuel.com/pages/privacy-policy" target="_blank">privacy policy</a>.</div>
+                    </div>
+                    <div class="formError" id="formErrors">Form has invalid or missing information, please check your data and try again.</div>
+                    <button class="frmButton" id="submitFormCoupon">GET MY FREE SAMPLE</button>
+                </form>
+            </div>
+            
+        </div>
     </div>
-  </div>
-</div>
+    <div class="secondBlock">
+        <div class="container">
+            <div class="notice mobileOnly">*Developed by Dietitians</div>
+            <div class="leftBlock" id="leftBlock">
+                <div class="secondTitle">A quick and powerful dose <br class="mobileOnly">of high-quality protein, support for:</div>
+            </div>
+            <div class="imagesRow desktopOnly">
+                <div class="imgsBlock">
+                    <div class="support-image">
+                        <img src="assets/imgs/cpd_icon_01_2x.png" />
+                    </div>
+                    <div class="imgsText">CKD/DIALYSIS</div>
+                </div>
+                <div class="imgsBlock">
+                    <div class="support-image">
+                        <img src="assets/imgs/cpd_icon_02_2x.png" />
+                    </div>
+                    <div class="imgsText">CANCER</div>
+                </div>
+                <div class="imgsBlock">
+                    <div class="support-image">
+                        <img src="assets/imgs/cpd_icon_03_2x.png" />
+                    </div>
+                    <div class="imgsText">POST SURGERY RECOVERY</div>
+                </div>
+                <div class="imgsBlock">
+                    <div class="support-image">
+                        <img src="assets/imgs/cpd_icon_04_2x.png" />
+                    </div>
+                    <div class="imgsText">GERIATRIC NUTRITION</div>
+                </div>
+                <div class="imgsBlock">
+                    <div class="support-image">
+                        <img src="assets/imgs/cpd_icon_05_2x.png" />
+                    </div>
+                    <div class="imgsText">DIABETES</div>
+                </div>
+            </div>
+            <div class="mobileOnly">
+                <div class="splide" id="splideQuick">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="imgsBlock">
+                                    <div class="support-image">
+                                        <img src="assets/imgs/cpd_icon_01_2x.png" />
+                                    </div>    
+                                    <div class="imgsText">CKD/DIALYSIS</div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="imgsBlock">
+                                    <div class="support-image">
+                                        <img src="assets/imgs/cpd_icon_02_2x.png" />
+                                    </div>
+                                    <div class="imgsText">CANCER</div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="imgsBlock">
+                                    <div class="support-image">
+                                        <img src="assets/imgs/cpd_icon_03_2x.png" />
+                                    </div>
+                                    <div class="imgsText">POST SURGERY RECOVERY</div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="imgsBlock">
+                                    <div class="support-image">
+                                        <img src="assets/imgs/cpd_icon_04_2x.png" />
+                                    </div>
+                                    <div class="imgsText">GERIATRIC NUTRITION</div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="imgsBlock">
+                                    <div class="support-image">
+                                        <img src="assets/imgs/cpd_icon_05_2x.png" />
+                                    </div>
+                                    <div class="imgsText">DIABETES</div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="thirdBlock">
+        <div class="container">
+            <div class="precRows">
+                <div class="percBlock">
+                    <img src="assets/imgs/94-percentage.png" />
+                    <div class="percText">of patients achieved an improved albumin level, after <br class="mobileOnly">3 months*.</div>
+                </div>
+                <div class="percBlock percImg2">
+                    <img src="assets/imgs/84-percentage.png" />
+                    <div class="percText">approval rating in 300+ dialysis clinics across the country.</div>
+                </div>
+            </div>
+            <div class="thirdBottom">* A study conducted in Dialysis Center with 32 patients.</div>
+        </div>
+    </div>
+
+    <div class="fourthBlock">
+        <div class="container">
+            <div class="fourthTitle">Small but Mighty</div>
+            <div class="cupBlock">
+                <div class="cupImg cupLeft">
+                    <img src="assets/imgs/cup.jpg">
+                </div>
+                <div class="cupText cupLeft">
+                    <p class="title">17g protein per 2oz shot</p>
+                    <p class="subtitle">One shot per day it’s all you need</p>
+                    <p class="title">Whey + Collagen protein</p>
+                    <p class="subtitle">To support muscle mass & strength</p>
+                    <p class="title">No artificial sweeteners, ever</p>
+                    <p class="subtitle">Patient approved taste</p>
+                    <p class="title">Contains all 20 amino acids</p>
+                    <p class="subtitle">To keep immune system strong</p>
+                </div>
+                <div class="video">
+                    <video width="100%" height="100%" autoplay muted loop playsinline style="pointer-events: none;">
+                        <source src="assets/imgs/cpd_video_01_stop_motion.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fifthBlock">
+        <div class="container">
+            <div class="leftBlock leftWide">
+
+                <div class="splide" id="splideTests">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="slideStars">
+                                    <img src="assets/imgs/stars.svg" />
+                                </div>
+                                <div class="slideText">
+                                    Vidafuel is a delicious way to get more protein. I am a PD patient and hate chewing protein (meat) with every meal. 
+                                    Yucko. I actually enjoy my afternoon Vidafuel "shot." It is a cool, great tasting break in my day.
+                                </div>
+                                <div class="slideName">
+                                    <strong>Rebecca H.</strong> - verified buyer
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="slideStars">
+                                    <img src="assets/imgs/stars.svg" />
+                                </div>
+                                <div class="slideText">
+                                    Tastes Great - Perfect after surgery!
+                                    Trying to get all the protein and water for a day is hard sometimes.<br>This product helps so much!
+                                </div>
+                                <div class="slideName">
+                                    <strong>Tammra E.</strong> - verified buyer
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="slideStars">
+                                    <img src="assets/imgs/stars.svg" />
+                                </div>
+                                <div class="slideText">
+                                    Easy way to get protein
+                                    My dialysis dietitian is always telling me., you need more protein.”<br>These beverages do help!
+                                </div>
+                                <div class="slideName">
+                                    <strong>Cynthia F.</strong> - verified buyer
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="slideStars">
+                                    <img src="assets/imgs/stars.svg" />
+                                </div>
+                                <div class="slideText">
+                                    VERY GOOD
+                                    YOUR PRODUCT IS OUT STANDING .....IN COMPARISON TO OTHER [THAT ARE MUCH TO SWEET]<br>I FIND THIS VERY TOLERABLE AN EASY TO FINISH.......THANK YOU .....
+                                </div>
+                                <div class="slideName">
+                                    <strong>Larry L.</strong> - verified buyer
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mobileOnly fixedButton">
+        <button class="frmButton" id="getForm">GET MY FREE SAMPLE</button>
+    </div>
+    
+
+
+    <div class="footerBlock">
+        <div class="footerText">© 2021, Vida-Fuel</div>
+    </div>
