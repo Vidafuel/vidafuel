@@ -97,9 +97,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
       crossorigin="anonymous"></script>
 
     {% unless template.suffix contains "campaign_proteindrinks" %}
-        {% unless template.suffix contains "b2bcoupon" %}
-			{{ 'styles.min.css' | asset_url | stylesheet_tag }}
-	    {% endunless %}
+		{{ 'styles.min.css' | asset_url | stylesheet_tag }}
     {% endunless %}
 
     <script>
@@ -142,13 +140,10 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 
     <!--[if (gt IE 9)|!(IE)]><!-->
     {% unless template.suffix contains "campaign_proteindrinks" %}
-       {% unless template.suffix contains "b2bcoupon" %}
     <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
     <!--<![endif]-->
     <!--[if lte IE 9]><script src="{{ 'vendor.js' | asset_url }}"></script><![endif]-->
-   	   	{% endunless %}
-    {% endunless %}
-    
+   	{% endunless %}
     <!--[if (gt IE 9)|!(IE)]><!-->
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
     <!--<![endif]-->
