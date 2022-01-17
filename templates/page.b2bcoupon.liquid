@@ -320,6 +320,7 @@
     if(window.innerWidth<1200){
         $("#formBlock").hide();
         $("body").css("overflow-y","auto");
+	    $("#formBlock").css({ left: 0 });
         return false;
     }
     var left = $(".leftBlock").offset().left;
