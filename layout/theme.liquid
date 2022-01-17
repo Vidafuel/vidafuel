@@ -96,7 +96,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
       integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS"
       crossorigin="anonymous"></script>
 
-    {% unless template.suffix contains "campaign_proteindrinks" %}
+    {% unless template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
 		{{ 'styles.min.css' | asset_url | stylesheet_tag }}
     {% endunless %}
 
