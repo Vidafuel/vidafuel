@@ -160,6 +160,11 @@
   height: 100%;
 }
 
+.collage-text,
+.collage-content.media {
+  border-radius: var(--border-radius);
+}
+
 .collage-content {
   justify-content: center;
   overflow: hidden;

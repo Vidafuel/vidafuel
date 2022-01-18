@@ -129,7 +129,7 @@ window.BOLD.common.Shopify.saveProduct({{ product_card_product.handle | json }},
                     </svg>
                   </div>
               </button>
-              {% render 'price', product: product_card_product, price_class: '', show_purchase_options: true %}
+              {% render 'price', product: product_card_product, price_class: '', show_purchase_options: false %}
               {%- if show_rating -%}
                 {%- comment -%} YOTPO APP STAR RATING https://support.yotpo.com/en/article/shopify-installing-yotpo#manual-installation-a-step-by-step-guide {%- endcomment -%}
                 <div class="yotpo bottomLine" data-product-id="{{ product_card_product.id }}">

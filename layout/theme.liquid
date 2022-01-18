@@ -163,6 +163,9 @@
         }]);
       }
     </script>
+    {% if template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
+      <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    {% endif %}
 </head>
 
   <body class="gradient">
@@ -222,5 +225,6 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
   </body>
 </html>
