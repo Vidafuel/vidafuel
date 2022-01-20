@@ -187,11 +187,11 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
-        "flex_align_center": false,
+        "swipe_on_mobile": true,
+        "flex_align_center": true,
         "desktop_no_spacing": true,
-        "icon_enable": false,
-        "full_width_section": false
+        "icon_enable": true,
+        "full_width_section": true
       }
     },
     "1639503887e884ceb3": {
