@@ -35,13 +35,15 @@
                 <span class="saso-cart-item-upsell-notes" data-key="{{ item.key }}"></span>
 
                 {% if item.quantity > 1 %}
-                <span class="medium-up--hide"><span class="visually-hidden">{{ 'cart.label.quantity' | t }}</span>(x{{
-                  item.quantity }})</span>
+                <span class="medium-up--hide">
+                  <span class="visually-hidden">{{ 'cart.label.quantity' | t }}</span>
+                  (x{{ item.quantity }})
+                </span>
                 {% endif %}
               </a>
                 {% if item.product.metafields.vidafields.backorder_product == true and item.product.metafields.vidafields.backorder_text != blank %}
-                <p style="color: #ff8000;font-weight: 400;">
-                  <b>Backorder Notice:</b>
+                <p class="backorder-notice">
+                  <strong>Backorder Notice:</strong>
                   <br>
                   {{ item.product.metafields.vidafields.backorder_text.value }}
                 </p>

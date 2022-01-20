@@ -7815,3 +7815,8 @@ iframe#preview-bar-iframe {
 	font-style: normal;
 	font-weight: 600;
 }
+
+.backorder-notice {
+	color: var(--tertiary-color);
+	font-weight: 400;
+}
