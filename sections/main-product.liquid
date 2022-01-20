@@ -101,6 +101,7 @@
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
+                {% render 'product-backorder-notification' %}
                 {{ product.description }}
               </div>
             {%- endif -%}
