@@ -133,7 +133,10 @@
       "cart-template": {
         "type": "cart-template",
         "settings": {
-          "cart_notes_enable": false
+          "cart_notes_enable": false,
+          "show_backorder_notice": true,
+          "backorder_text": "expected to Ship Week of February 14th",
+          "backorder_product": "collagen-protein-drink-2-pack"
         }
       },
       "1534160018241": {
