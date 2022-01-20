@@ -23,21 +23,29 @@
         <tr class="cart__row border-bottom line{{ forloop.index }}{% if forloop.first %} border-top{% endif %}">
           <td class="cart__image-wrapper">
             <div>
-              <img class="cart__image" src="{{ item | img_url: '95x95', scale: 2 }}" alt="{{ item.title | escape }}" data-item-url="{{ item.url }}">
+              <img class="cart__image" src="{{ item | image_url: width: 190, height: 190 }}" alt="{{ item.title | escape }}" data-item-url="{{ item.url }}">
             </div>
           </td>
           <td class="cart__meta small--text-left">
             <div class="list-view-item__title">
               <a href="{{ item.url }}">
                 {{ item.product.title }}
-                <span class="saso-cart-item-discount-notes" data-key="{{item.key}}"></span>
-                <span class="saso-cart-item-upsell-notes" data-key="{{item.key}}"></span>
+                {{ item.product.tags }}
+                <span class="saso-cart-item-discount-notes" data-key="{{ item.key }}"></span>
+                <span class="saso-cart-item-upsell-notes" data-key="{{ item.key }}"></span>
 
                 {% if item.quantity > 1 %}
                 <span class="medium-up--hide"><span class="visually-hidden">{{ 'cart.label.quantity' | t }}</span>(x{{
                   item.quantity }})</span>
                 {% endif %}
               </a>
+                {% if item.product.metafields.vidafields.backorder_product == true and item.product.metafields.vidafields.backorder_text != blank %}
+                <p style="color: #ff8000;font-weight: 400;">
+                  <b>Backorder Notice:</b>
+                  <br>
+                  {{ item.product.metafields.vidafields.backorder_text.value }}
+                </p>
+                {% endif %}
             </div>
             {% unless item.variant.title contains 'Default' %}
             <div class="cart__meta-text">
@@ -62,7 +70,7 @@
             {%- assign property_size = item.properties | size -%}
             <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_properties"
               style="display:none !important;"></span>
-            <div class='hulkapps-reminder' data-key='{{item.key}}'></div>{% if property_size > 0 %}
+            <div class='hulkapps-reminder' data-key='{{ item.key }}'></div>{% if property_size > 0 %}
             <div class="cart__meta-text">
 
               {%- comment -%}
@@ -117,7 +125,7 @@
           <td class="cart__price-wrapper">
             <span class="bold_cart_item_price-wrapper"><span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price"
                 style="display:none !important;"></span>
-              <span class="saso-cart-item-price" data-key="{{item.key}}">{{ bold_item_price | money }}</span>
+              <span class="saso-cart-item-price" data-key="{{ item.key }}">{{ bold_item_price | money }}</span>
             </span>
 
             {% for discount in item.discounts %}
@@ -137,8 +145,8 @@
             <div class="cart__qty">
               <label for="updates_large_{{ item.key }}" class="cart__qty-label">{{ 'cart.label.quantity' | t }}</label>
               <input class="cart__qty-input" type="number" name="updates[]" id="updates_large_{{ item.key }}"
-                value="{{ item.quantity }}" {% unless item.variant.inventory_management==blank or
-                item.variant.inventory_policy=='continue' %} max="{{ item.variant.inventory_quantity }}" {% endunless %}
+                value="{{ item.quantity }}" {% unless item.variant.inventory_management == blank or
+                item.variant.inventory_policy == 'continue' %} max="{{ item.variant.inventory_quantity }}" {% endunless %}
                 min="0" pattern="[0-9]*" data-quantity-item="{{ forloop.index }}" data-id="{{ item.key }}">
 
             </div>
@@ -146,8 +154,8 @@
           <td class="text-right small--hide">
             {% if item.original_line_price != bold_item_line_price %}
             <div class="cart-item__original-price">
-              <span class="saso-cart-item-line-price" data-key="{{item.key}}"><s>
-                  <span class='hulkapps-cart-item-line-price' data-key='{{item.key}}'>{{ item.original_line_price |
+              <span class="saso-cart-item-line-price" data-key="{{ item.key }}"><s>
+                  <span class='hulkapps-cart-item-line-price' data-key='{{ item.key }}'>{{ item.original_line_price |
                     money }}</span></s></span>
             </div>
             {% endif %}
@@ -175,7 +183,7 @@
               <div class="cart__qty">
                 <label for="updates_{{ item.key }}" class="cart__qty-label">{{ 'cart.label.quantity' | t }}</label>
                 <input class="cart__qty-input" type="number" id="updates_{{ item.key }}" value="{{ item.quantity }}" {%
-                  unless item.variant.inventory_management==blank or item.variant.inventory_policy=='continue' %}
+                  unless item.variant.inventory_management == blank or item.variant.inventory_policy == 'continue' %}
                   max="{{ item.variant.inventory_quantity }}" {% endunless %} min="0" pattern="[0-9]*"
                   data-quantity-item="{{ forloop.index }}">
               </div>
@@ -191,22 +199,12 @@
 
     <div class="cart__footer">
       <div class="grid">
-        {% if section.settings.cart_notes_enable or section.settings.show_backorder_notice %}
+        {% if section.settings.cart_notes_enable %}
         <div class="grid__item medium-up--one-half cart-note">
-          {% if section.settings.show_backorder_notice %}
-            {%- assign backorderProduct = section.settings.backorder_product -%}
-            <h4>
-              <span color="#ff8000" style="color: #ff8000;">
-                <b>Backorder Notice: <br>{{ backorderProduct.title }} {{ section.settings.backorder_text }}</b>
-              </span>
-            </h4>
-          {% endif %}
-          {% if section.settings.cart_notes_enable %}
-            <label for="CartSpecialInstructions" class="cart-note__label small--text-center">
-              {{ 'cart.general.note' | t }}
-            </label>
-            <textarea name="note" id="CartSpecialInstructions" class="cart-note__input">{{ cart.note }}</textarea>
-          {% endif %}
+          <label for="CartSpecialInstructions" class="cart-note__label small--text-center">
+            {{ 'cart.general.note' | t }}
+          </label>
+          <textarea name="note" id="CartSpecialInstructions" class="cart-note__input">{{ cart.note }}</textarea>
         </div>
         {% endif %}
         <div class="grid__item text-right small--text-center{% if section.settings.cart_notes_enable %} medium-up--one-half{% endif %}">
@@ -268,49 +266,31 @@
 
 {% schema %}
 {
-   "name":{
-      "en":"Cart page",
-      "de":"Warenkorb-Seite",
-      "fr":"Page du panier",
-      "it":"Pagina del carrello",
-      "ja":"カートページ",
-      "es":"Página de carrito",
-      "pt-BR":"Página do carrinho"
-   },
-   "settings":[
-      {
-         "type":"checkbox",
-         "id":"cart_notes_enable",
-         "label":{
-            "en":"Enable cart notes",
-            "de":"Warenkorb-Notifikationen erlauben",
-            "fr":"Activer les notes de panier",
-            "it":"Abilita note carrello",
-            "ja":"カートメモを有効にする",
-            "es":"Habilitar notas de carrito",
-            "pt-BR":"Ativar observações sobre o carrinho"
-         },
-         "default":false
+  "name": {
+    "en": "Cart page",
+    "de": "Warenkorb-Seite",
+    "fr": "Page du panier",
+    "it": "Pagina del carrello",
+    "ja": "カートページ",
+    "es": "Página de carrito",
+    "pt-BR": "Página do carrinho"
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "cart_notes_enable",
+      "label": {
+        "en": "Enable cart notes",
+        "de": "Warenkorb-Notifikationen erlauben",
+        "fr": "Activer les notes de panier",
+        "it": "Abilita note carrello",
+        "ja": "カートメモを有効にする",
+        "es": "Habilitar notas de carrito",
+        "pt-BR": "Ativar observações sobre o carrinho"
       },
-      {
-         "type":"checkbox",
-         "id":"show_backorder_notice",
-         "label":"Show backorder notice",
-         "default":false
-      },
-      {
-         "type":"textarea",
-         "id":"backorder_text",
-         "label":"Backorder text",
-         "default":"expected to Ship Week of February 14th",
-         "placeholder":"expected to Ship Week of February 14th"
-      },
-      {
-        "type": "product",
-        "id": "backorder_product",
-        "label": "Backorder product"
-      }
-   ]
+      "default": false
+    }
+  ]
 }
 {% endschema %}
 

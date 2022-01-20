@@ -3,7 +3,17 @@
 {% comment %}
   The contents of the product.liquid template can be found in /sections/product-template.liquid
 {% endcomment %}
+{%- if product.metafields.vidafield.backorder == false -%}
 
+<div>
+
+  <h3>Ingredients: </h3>
+
+  <div class="product__ingredients rte">{{ product.metafields.vidafield.backorder }}</div>
+
+</div>
+
+{%- endif -%}
 {% section 'product-template' %}
 
 <script>
