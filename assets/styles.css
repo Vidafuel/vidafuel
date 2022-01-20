@@ -4091,6 +4091,7 @@ hr {
 	height: 100%;
 	position: relative;
 	padding-bottom: 4px;
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 749px) {
