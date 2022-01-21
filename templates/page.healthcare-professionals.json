@@ -43,7 +43,7 @@
         "layout": "text_first",
         "section_width": "normal",
         "desktop_no_spacing": false,
-        "remove_top_margin": false
+        "remove_top_margin": true
       }
     },
     "163915671883655487": {
