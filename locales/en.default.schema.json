@@ -1125,6 +1125,21 @@
               "options__9": {
                 "label": "Trade Gothic Condensed Heavy"
               }
+            },
+            "heading_size": {
+              "label": "Heading size",
+              "options__1": {
+                "label": "Default"
+              },
+              "options__2": {
+                "label": "h1"
+              },
+              "options__3": {
+                "label": "h3"
+              },
+              "options__4": {
+                "label": "h5"
+              }
             }
           }
         },
