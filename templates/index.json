@@ -16,7 +16,7 @@
         "6fc10e7f-096e-49a2-9c81-1e158cd62f31": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Stop-Motion-Pour720.gif",
+            "image": "shopify:\/\/shop_images\/vidafuel-protein-pour.gif",
             "image_padding": false,
             "color_scheme": "none"
           }
@@ -191,7 +191,7 @@
         "flex_align_center": true,
         "desktop_no_spacing": true,
         "icon_enable": true,
-        "full_width_section": true
+        "full_width_section": false
       }
     },
     "1639503887e884ceb3": {

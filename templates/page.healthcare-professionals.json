@@ -3,7 +3,7 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "page_title_background": "shopify:\/\/shop_images\/home-reviews-bk.jpg"
+        "page_title_background": "shopify:\/\/shop_images\/home-reviews-background.jpg"
       }
     },
     "1639156556f1f7aaff": {
@@ -22,7 +22,8 @@
             "text": "<p>Dietitian Developed for Optimal Absorption.<\/p>",
             "text_font": "proxima_nova_light",
             "text_size": "h2",
-            "text_color": "default"
+            "text_color": "default",
+            "p_bullets": false
           }
         }
       },
@@ -37,9 +38,11 @@
         "bk_image": "shopify:\/\/shop_images\/healthcare-bg.jpg",
         "height": "adapt",
         "color_scheme": "accent-1",
+        "background_scheme": "default",
         "layout": "text_first",
         "section_width": "normal",
-        "desktop_no_spacing": false
+        "desktop_no_spacing": false,
+        "remove_top_margin": false
       }
     },
     "163915671883655487": {
@@ -128,7 +131,8 @@
         "swipe_on_mobile": false,
         "flex_align_center": true,
         "desktop_no_spacing": false,
-        "icon_enable": false
+        "icon_enable": false,
+        "full_width_section": false
       }
     },
     "164014386357a60c4a": {
@@ -216,7 +220,8 @@
         "swipe_on_mobile": false,
         "flex_align_center": true,
         "desktop_no_spacing": false,
-        "icon_enable": false
+        "icon_enable": false,
+        "full_width_section": false
       }
     },
     "1640123076cbff58b5": {
@@ -248,7 +253,9 @@
       "settings": {
         "heading": "",
         "desktop_layout": "left",
-        "mobile_layout": "collage"
+        "background_color_scheme": "default",
+        "mobile_layout": "collage",
+        "remove_top_spacing": false
       }
     },
     "16395061492d0dea2e": {
@@ -345,7 +352,8 @@
         "swipe_on_mobile": false,
         "flex_align_center": true,
         "desktop_no_spacing": false,
-        "icon_enable": false
+        "icon_enable": false,
+        "full_width_section": false
       }
     },
     "1639506526d4856680": {
@@ -389,7 +397,8 @@
         "swipe_on_mobile": false,
         "flex_align_center": false,
         "desktop_no_spacing": false,
-        "icon_enable": false
+        "icon_enable": false,
+        "full_width_section": false
       }
     }
   },
