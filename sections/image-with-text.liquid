@@ -19,7 +19,8 @@
 
 {%- comment -%} TOP MARGIN ZERO {%- endcomment -%}
 {%- if section.settings.remove_top_margin -%} 
-  {%- assign margin_top_zero = 'mt-0' -%}
+  {%- assign margin_top_zero = ' mt-0' -%}
+  <style>.spaced-section{margin-top:0;}</style>
 {%- endif -%}
   
 {%- comment -%} SECTION WIDTH {%- endcomment -%}
