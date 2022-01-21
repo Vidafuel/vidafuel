@@ -191,7 +191,7 @@
         "flex_align_center": true,
         "desktop_no_spacing": true,
         "icon_enable": true,
-        "full_width_section": true
+        "full_width_section": false
       }
     },
     "1639503887e884ceb3": {
