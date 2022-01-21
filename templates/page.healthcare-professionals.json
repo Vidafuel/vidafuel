@@ -13,7 +13,8 @@
           "type": "heading",
           "settings": {
             "heading": "Clinical nutrition done right",
-            "heading_font": "trade_gothic_bold_condensed"
+            "heading_font": "trade_gothic_bold_condensed",
+            "heading_size": "heading-1"
           }
         },
         "163915655632d9adf3-1": {
