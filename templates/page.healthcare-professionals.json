@@ -152,9 +152,9 @@
             "custom_liquid": "",
             "liquid_background": "#ffffff",
             "title_font": "default",
-            "title_size": "default",
+            "title_size": "heading-2",
             "text_font": "default",
-            "text_size": "default",
+            "text_size": "heading-3",
             "title_top": false,
             "p_bullets": false,
             "text_color_primary": false
