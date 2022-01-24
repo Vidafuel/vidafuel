@@ -31,7 +31,8 @@
         "desktop_layout": "right",
         "background_color_scheme": "waves",
         "mobile_layout": "column",
-        "remove_top_spacing": true
+        "remove_top_spacing": true,
+        "full_width": true
       }
     },
     "163908444861c999ea": {
@@ -42,7 +43,8 @@
           "type": "heading",
           "settings": {
             "heading": "Discover the power of concentrated macronutrients",
-            "heading_font": "trade_gothic_compressed_bold"
+            "heading_font": "trade_gothic_compressed_bold",
+            "heading_size": "default"
           }
         },
         "1639084448a58c7e7f-1": {
@@ -324,7 +326,8 @@
           "type": "heading",
           "settings": {
             "heading": "Dietitian developed snacks",
-            "heading_font": "default"
+            "heading_font": "default",
+            "heading_size": "default"
           }
         },
         "1640786109f60a207b-1": {
@@ -398,14 +401,16 @@
         "desktop_layout": "right",
         "background_color_scheme": "default",
         "mobile_layout": "column",
-        "remove_top_spacing": false
+        "remove_top_spacing": false,
+        "full_width": false
       }
     },
     "16420895372c7ae66d": {
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"26\" \n data-header-customisation-text=\"Loved &amp; trusted by thousands of customers\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"both\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"1\" \n data-autoplay-speed=\"3000\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
-        "custom_background": true
+        "custom_background": true,
+        "full_width": false
       }
     },
     "1641268922eacc76d1": {
@@ -529,7 +534,8 @@
           "type": "heading",
           "settings": {
             "heading": "DIETITIAN DEVELOPED, DAUGHTER APPROVED",
-            "heading_font": "trade_gothic_compressed_bold"
+            "heading_font": "trade_gothic_compressed_bold",
+            "heading_size": "default"
           }
         },
         "16395044977b90f46f-1": {
@@ -604,7 +610,8 @@
           "type": "heading",
           "settings": {
             "heading": "DIETITIAN DEVELOPED SNACKS",
-            "heading_font": "proxima_nova_light"
+            "heading_font": "proxima_nova_light",
+            "heading_size": "default"
           }
         },
         "1639085117d4baf919-1": {
@@ -687,7 +694,8 @@
       "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-text=\"REAL COSTUMER REVIEWS\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"1\" \n data-autoplay-speed=\"3000\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
-        "custom_background": false
+        "custom_background": false,
+        "full_width": false
       }
     },
     "1642081099e741e2c5": {
