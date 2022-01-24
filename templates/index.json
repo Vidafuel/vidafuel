@@ -371,6 +371,7 @@
     },
     "16420919513c4f58e1": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "f81ddaeb-2974-4f01-a3a2-dafff89f1643": {
           "type": "text",
