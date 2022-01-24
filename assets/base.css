@@ -18,6 +18,10 @@
 	--gradient-background: rgb(var(--color-base-text));
 }
 
+.color-tertiary {
+	--color-tertiary: rgb(var(--color-base-tertiary));
+}
+
 .color-accent-1 {
 	--color-foreground: var(--color-base-solid-button-labels);
 	--color-background: var(--color-base-accent-1);
@@ -165,7 +169,6 @@
 :root {
 	--border-radius: 10px;
 	--border-radius-button: 5px;
-	--color-tertiary: var(--color-base-tertiary);
 }
 /* base */
 
