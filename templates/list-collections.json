@@ -17,16 +17,18 @@
           "type": "heading",
           "settings": {
             "heading": "Wellness Protein Drinks",
-            "heading_font": "default"
+            "heading_font": "default",
+            "heading_size": "default"
           }
         },
         "1640121428738d06ed-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Delicious protein supplement beverages.<\/strong><\/p><p>Increasing your daily protein intake has never been easier! Vidafuel Wellness protein drinks are the first nutritional supplement of its kind, providing 16g of high-quality protein in a quick, 2oz shot! Dietitian developed, our nutrition products have a powerful blend of collagen and whey protein, plus all 20 amino acids. <\/p>",
+            "text": "<p><strong>**BETTE TO UPDATE<\/strong><\/p><p><strong>Delicious protein supplement beverages.<\/strong><\/p><p>Increasing your daily protein intake has never been easier! Vidafuel Wellness protein drinks are the first nutritional supplement of its kind, providing 16g of high-quality protein in a quick, 2oz shot! Dietitian developed, our nutrition products have a powerful blend of collagen and whey protein, plus all 20 amino acids. <\/p>",
             "text_font": "default",
             "text_size": "default",
-            "text_color": "default"
+            "text_color": "default",
+            "p_bullets": false
           }
         }
       },
@@ -40,15 +42,19 @@
         "image_link": "",
         "height": "adapt",
         "color_scheme": "accent-2",
+        "background_scheme": "default",
         "layout": "text_first",
         "section_width": "full_width",
-        "desktop_no_spacing": true
+        "desktop_no_spacing": true,
+        "remove_top_margin": false
       }
     },
     "16401214947620309f": {
       "type": "featured-collection",
       "settings": {
         "title": "",
+        "subtitle": "Subscribe & Save 15%!",
+        "center_headers": false,
         "collection": "wellness-supplements",
         "products_to_show": 12,
         "show_view_all": false,
@@ -57,6 +63,7 @@
         "show_secondary_image": false,
         "add_image_padding": false,
         "show_image_outline": true,
+        "show_purchase_options": false,
         "show_vendor": false,
         "show_rating": false
       }
@@ -68,7 +75,8 @@
           "type": "heading",
           "settings": {
             "heading": "Healthy Snacks",
-            "heading_font": "default"
+            "heading_font": "default",
+            "heading_size": "default"
           }
         },
         "1640121497ce050c54-1": {
@@ -77,7 +85,8 @@
             "text": "<p><\/p><p><strong>Healthy snacks! Chips, crisps, and variety packs. <\/strong><\/p><p>Our dietitians took your favorite snacks and put a healthier spin on them by simplifying the ingredients and cutting down on the bad stuff. Our nutrition products are portion-controlled, with the benefits of fewer calories, sugar, salt, and fat in other snack foods*. We also maintain a balance of minerals such as potassium and phosphorus, making our snacks kidney-friendly!<\/p>",
             "text_font": "default",
             "text_size": "default",
-            "text_color": "default"
+            "text_color": "default",
+            "p_bullets": false
           }
         }
       },
@@ -91,15 +100,19 @@
         "image_link": "",
         "height": "adapt",
         "color_scheme": "accent-1",
+        "background_scheme": "default",
         "layout": "image_first",
         "section_width": "full_width",
-        "desktop_no_spacing": true
+        "desktop_no_spacing": true,
+        "remove_top_margin": false
       }
     },
     "164012152966eb2d65": {
       "type": "featured-collection",
       "settings": {
         "title": "",
+        "subtitle": "Subscribe & Save 15%!",
+        "center_headers": false,
         "collection": "snacks",
         "products_to_show": 12,
         "show_view_all": false,
@@ -108,6 +121,7 @@
         "show_secondary_image": false,
         "add_image_padding": false,
         "show_image_outline": true,
+        "show_purchase_options": false,
         "show_vendor": false,
         "show_rating": false
       }
@@ -119,7 +133,8 @@
           "type": "heading",
           "settings": {
             "heading": "What's New?",
-            "heading_font": "default"
+            "heading_font": "default",
+            "heading_size": "default"
           }
         }
       },
@@ -132,9 +147,11 @@
         "image_link": "",
         "height": "small",
         "color_scheme": "accent-1",
+        "background_scheme": "default",
         "layout": "image_first",
         "section_width": "full_width",
-        "desktop_no_spacing": false
+        "desktop_no_spacing": false,
+        "remove_top_margin": false
       }
     },
     "16401225429970e504": {
