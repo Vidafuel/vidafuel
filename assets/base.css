@@ -35,6 +35,12 @@
 	--gradient-background: var(--gradient-base-accent-2);
 }
 
+.color-tertiary {
+	--color-foreground: var(--color-base-tertiary);
+	--color-background: var(--color-base-tertiary);
+	--gradient-background: var(--gradient-base-tertiary);
+}
+
 .color-foreground-outline-button {
 	--color-foreground: var(--color-base-outline-button-labels);
 }
@@ -160,6 +166,10 @@
 
 .color-text-accent-2 {
 	color: rgb(var(--color-base-accent-2));
+}
+
+.color-text-tertiary {
+	color: rgb(var(--color-base-tertiary));
 }
 
 :root {

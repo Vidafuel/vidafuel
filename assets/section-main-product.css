@@ -816,3 +816,8 @@ a.product__text {
   margin: 0;
   width: 2.2rem;
 }
+
+.backorder-notice {
+    color: var(--color-base-tertiary);
+    font-weight: 400;
+}
