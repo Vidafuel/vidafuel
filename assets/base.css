@@ -169,7 +169,7 @@
 :root {
 	--border-radius: 10px;
 	--border-radius-button: 5px;
-	--color-tertiary: var(--color-base-tertiary);
+	--color-tertiary: rgb(var(--color-base-tertiary));
 }
 /* base */
 

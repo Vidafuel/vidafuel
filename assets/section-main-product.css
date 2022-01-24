@@ -818,6 +818,6 @@ a.product__text {
 }
 
 .backorder-notice {
-    color: var(--color-base-tertiary);
+    color: rgb(var(--color-tertiary));
     font-weight: 400;
 }
