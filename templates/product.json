@@ -29,31 +29,6 @@
           "settings": {
             "show_dynamic_checkout": false
           }
-        },
-        "65f1d19c-fd62-44b4-9448-fa83afcc2d1d": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "What's in the box",
-            "content": "<p>{{ product.metafields.vidafield.box_contents | metafield_tag }}<\/p>",
-            "page": "",
-            "icon": "leaf"
-          }
-        },
-        "8b4bfb81-ae3d-4d40-a8f3-75f125d75bcc": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Product info",
-            "content": "<p><strong>{{ product.metafields.vidafield.product_info_text | metafield_tag }}<\/strong><\/p><p>{{ product.metafields.vidafield.product_info | metafield_tag }}<\/p>",
-            "page": "",
-            "icon": "heart"
-          }
-        },
-        "c464ec62-608a-498a-b722-e53b7cc00b7d": {
-          "type": "popup",
-          "settings": {
-            "text": "Pop-up link text",
-            "page": ""
-          }
         }
       },
       "block_order": [
@@ -61,13 +36,10 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
-        "65f1d19c-fd62-44b4-9448-fa83afcc2d1d",
-        "8b4bfb81-ae3d-4d40-a8f3-75f125d75bcc",
-        "c464ec62-608a-498a-b722-e53b7cc00b7d"
+        "buy_buttons"
       ],
       "settings": {
-        "enable_sticky_info": false,
+        "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false
       }
