@@ -49,7 +49,7 @@
         "01f31cd5-86c2-41b6-98cd-e0b8b0272a0e"
       ],
       "settings": {
-        "enable_sticky_info": true,
+        "enable_sticky_info": false,
         "hide_variants": false,
         "enable_video_looping": false
       }
