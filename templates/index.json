@@ -35,57 +35,6 @@
         "full_width": true
       }
     },
-    "163908444861c999ea": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "1639084448a58c7e7f-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Discover the power of concentrated macronutrients",
-            "heading_font": "trade_gothic_compressed_bold",
-            "heading_size": "default"
-          }
-        },
-        "1639084448a58c7e7f-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>!!! OLD TOP BANNER !!!<br\/><\/strong>The easiest way to nourish your day<\/p>",
-            "text_font": "proxima_nova_light",
-            "text_size": "h3",
-            "text_color": "default",
-            "p_bullets": false
-          }
-        },
-        "1639084448a58c7e7f-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP NOW",
-            "button_link": "\/products",
-            "button_font": "trade_gothic_compressed_bold",
-            "button_style_secondary": true,
-            "button_inverse": true
-          }
-        }
-      },
-      "block_order": [
-        "1639084448a58c7e7f-0",
-        "1639084448a58c7e7f-1",
-        "1639084448a58c7e7f-2"
-      ],
-      "settings": {
-        "section_id": "",
-        "image": "shopify:\/\/shop_images\/Stop-Motion-Pour720.gif",
-        "image_link": "\/products",
-        "height": "adapt",
-        "color_scheme": "background-2",
-        "background_scheme": "default",
-        "layout": "text_first",
-        "section_width": "full_width",
-        "desktop_no_spacing": true,
-        "remove_top_margin": false
-      }
-    },
     "1641834224a94d856f": {
       "type": "multicolumn",
       "blocks": {
@@ -736,7 +685,6 @@
   },
   "order": [
     "16420790196f1cba40",
-    "163908444861c999ea",
     "1641834224a94d856f",
     "1639503887e884ceb3",
     "1639505258119ea558",
