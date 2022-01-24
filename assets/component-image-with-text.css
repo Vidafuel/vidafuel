@@ -33,6 +33,12 @@
 	overflow: hidden;
 }
 
+@media screen and (max-width: 749px) {
+.image-with-text__grid {
+		padding-top: 4rem;
+	}
+}
+
 .image-with-text__grid .multicolumn-list__item,
 .images-with-text
 	.grid--2-col-tablet
