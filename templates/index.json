@@ -182,6 +182,7 @@
       ],
       "settings": {
         "title": "The benefits of Vidafuel concentrated nutrition",
+        "title_center": true,
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
@@ -190,7 +191,7 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
-        "flex_align_center": true,
+        "flex_align_center": false,
         "desktop_no_spacing": true,
         "icon_enable": true,
         "full_width_section": false
@@ -305,6 +306,7 @@
       ],
       "settings": {
         "title": "",
+        "title_center": false,
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
@@ -513,6 +515,7 @@
       ],
       "settings": {
         "title": "",
+        "title_center": false,
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "center",
