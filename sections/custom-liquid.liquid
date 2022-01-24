@@ -40,8 +40,10 @@
     }
   </style>
 
-  <div class="review-section {% unless section.settings.full_width %}page-width{% endunless %}">
+  <div class="review-section">
+    {% unless section.settings.full_width == false %}<div class="page-width">{% endunless %}
     {{ section.settings.custom_liquid }}
+    {% unless section.settings.full_width == false %}</div>{% endunless %}
   </div>
 {% else %}
   {{ section.settings.custom_liquid }}
