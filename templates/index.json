@@ -189,7 +189,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "flex_align_center": true,
         "desktop_no_spacing": true,
         "icon_enable": true,
