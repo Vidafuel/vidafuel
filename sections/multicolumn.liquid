@@ -5,7 +5,7 @@
 <div class="multicolumn background-{{ section.settings.background_style }} {% if section.settings.background_style == 'gradient-1' %} gradient color-accent-1{% elsif section.settings.background_style == 'gradient-2' %} gradient color-accent-2{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}">
   <div {% if section.settings.full_width_section != true %}class="page-width"{% endif %}>
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.full_width_section %}--full-width{% else %}{% endif %} {% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
-      <h2 class="title">
+      <h2 class="title{% if section.settings.title_center %} center{% endif %}">
         {{ section.settings.title | escape }}
       </h2>
       {%- if section.settings.button_label != blank and section.settings.swipe_on_mobile -%}
@@ -159,6 +159,12 @@
       "id": "title",
       "default": "Multicolumn",
       "label": "t:sections.multicolumn.settings.title.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "title_center",
+      "label": "Center heading",
+      "default": false
     },
     {
       "type": "select",

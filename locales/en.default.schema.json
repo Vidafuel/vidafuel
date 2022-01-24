@@ -2326,6 +2326,9 @@
         "title": {
           "label": "Heading"
         },
+        "title_center": {
+          "label": "Center heading"
+        },
         "image_width": {
           "label": "Image width",
           "options__1": {
