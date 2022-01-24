@@ -1,8 +1,8 @@
 {%- comment -%} USING METAFIELDS! https://www.sunriseintegration.com/learn/using-the-new-shopify-metafields-day-2 {%-endcomment -%}
-{% if product.metafields.vidafields.backorder_product == true and product.metafields.vidafields.backorder_text != blank
-%}
+{% if product.metafields.vidafields.backorder_product == true and product.metafields.vidafields.backorder_text != blank %}
 <p class="backorder-notice h2">
   <strong>Backorder Notice:</strong>
   <br>
   {{ product.metafields.vidafields.backorder_text.value }}
 </p>
+{% endif %}
