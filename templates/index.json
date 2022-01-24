@@ -176,6 +176,7 @@
         "desktop_no_spacing": true,
         "color_scheme": "background-2",
         "layout": "text_first",
+        "mobile_text_first": true,
         "section_width": "full_width",
         "image_01": "shopify:\/\/shop_images\/DIALYSIS.png",
         "image_01_title": "CKD\/DIALYSIS",
