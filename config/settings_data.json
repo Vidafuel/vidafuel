@@ -54,6 +54,18 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "8119b1aa-8d71-4393-ba66-7bb4c54e234e": {
+            "type": "text",
+            "settings": {
+              "heading": "",
+              "subtext": "<p><a href=\"\/\" title=\"\/\">© 2022, Vida-Fuel<\/a><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "8119b1aa-8d71-4393-ba66-7bb4c54e234e"
+        ],
         "settings": {
           "color_scheme": "background-1",
           "footer_bkgnd_color": "#ffffff",

@@ -364,7 +364,7 @@
         "color_scheme": "background-1",
         "background_scheme": "mighty",
         "layout": "image_first",
-        "section_width": "normal",
+        "section_width": "full_width",
         "desktop_no_spacing": false,
         "remove_top_margin": false
       }
