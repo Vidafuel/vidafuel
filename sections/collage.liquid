@@ -15,7 +15,8 @@
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<div class="collage-wrapper page-width {% if section.settings.heading == blank %} no-heading{% endif %} {% if section.settings.background_color_scheme != 'default' %}{{ scheme }}{% endif %} {% if section.settings.remove_top_spacing %} remove_top_spacing{% else %} spaced-section{% endif %}">
+<div class="collage-wrapper {% unless section.settings.full_width %}page-width{% endunless %}{% if section.settings.heading == blank %} no-heading{% endif %} {% if section.settings.background_color_scheme != 'default' %}{{ scheme }}{% endif %} {% if section.settings.remove_top_spacing %} remove_top_spacing{% else %} spaced-section{% endif %}">
+  
   <h2 class="collage-wrapper-title">{{ section.settings.heading | escape }}</h2>
 
   <div class="collage collage--{{ section.settings.desktop_layout }}{% if section.settings.background_color_scheme != 'default' %} page-width{% endif %}{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
@@ -445,6 +446,12 @@
       "type": "checkbox",
       "id": "remove_top_spacing",
       "label": "Remove top spacing",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
       "default": false
     }
   ],

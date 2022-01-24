@@ -40,7 +40,7 @@
     }
   </style>
 
-  <div class="review-section page-width">
+  <div class="review-section {% unless section.settings.full_width %}page-width{% endunless %}">
     {{ section.settings.custom_liquid }}
   </div>
 {% else %}
@@ -63,6 +63,12 @@
       "type": "checkbox",
       "id": "custom_background",
       "label": "Custom background",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
       "default": false
     }
   ],

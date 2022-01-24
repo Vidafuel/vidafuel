@@ -301,6 +301,9 @@
         },
         "remove_top_spacing": {
           "label": "Remove top spacing"
+        },
+        "full_width": {
+          "label": "Full width"
         }
       },
       "blocks": {
@@ -523,6 +526,9 @@
         },
         "custom_background": {
           "label": "Custom background"
+        },
+        "full_width": {
+          "label": "Full width"
         }
       },
       "presets": {
