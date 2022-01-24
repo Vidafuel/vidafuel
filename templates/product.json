@@ -29,6 +29,15 @@
           "settings": {
             "show_dynamic_checkout": false
           }
+        },
+        "01f31cd5-86c2-41b6-98cd-e0b8b0272a0e": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Benefits",
+            "content": "<p>{{ product.metafields.vidafields.benefits | metafield_tag }}<\/p>",
+            "page": "",
+            "icon": "check_mark"
+          }
         }
       },
       "block_order": [
@@ -36,7 +45,8 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "01f31cd5-86c2-41b6-98cd-e0b8b0272a0e"
       ],
       "settings": {
         "enable_sticky_info": true,
