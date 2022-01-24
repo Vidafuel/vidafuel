@@ -45,6 +45,12 @@
         },
         "gradient_background_2": {
           "label": "Background 2 gradient"
+        },
+        "header__3": {
+          "content": "Tertiary color"
+        },
+        "colors_tertiary": {
+          "label": "Tertiary color"
         }
       }
     },
