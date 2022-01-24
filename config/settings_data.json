@@ -10,6 +10,7 @@
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
     "colors_background_2": "#7bccc8",
+    "colors_tertiary": "#e68227",
     "type_header_font": "trade_gothic_next_n7",
     "heading_scale": 110,
     "type_body_font": "trade_gothic_next_n4",
@@ -62,7 +63,8 @@
           "show_social": true,
           "enable_country_selector": true,
           "enable_language_selector": false,
-          "payment_enable": true
+          "payment_enable": true,
+          "disclaimer_text": "The statements herein have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Dietary choices are each individual's responsibility."
         }
       }
     },
