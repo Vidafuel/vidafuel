@@ -376,12 +376,6 @@ noscript .localization-selector.link {
   margin-top: 1.5rem;
 }
 
-@media screen and (min-width: 750px) {
-  .footer__copyright {
-    text-align: right;
-  }
-}
-
 /* .footer__copyright a {
   font-size: 1.3rem;
   text-decoration: none;

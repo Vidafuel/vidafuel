@@ -832,6 +832,9 @@
         },
         "payment_enable": {
           "label": "Show payment icons"
+        },
+        "disclaimer_text": {
+          "label": "Disclaimer text"
         }
       }
     },

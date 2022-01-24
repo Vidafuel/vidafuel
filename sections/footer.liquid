@@ -65,7 +65,7 @@
                       {%- assign image_size = block.settings.image_width | append: 'x' -%}
                       <img
                         srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
-                        src="{{ block.settings.image | img_url: '400x' }}"
+                        src="{{ block.settings.image | image_url: width: 400 }}"
                         alt="{{ block.settings.image.alt | escape }}"
                         loading="lazy"
                         width="{{ block.settings.image.width }}"
@@ -313,6 +313,8 @@
         {%- endif -%}
         <div class="footer__copyright caption">
           <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
+          <br>
+          <small class="disclaimer__content">{{ section.settings.disclaimer_text }}</small>
         </div>
       </div>
     </div>
@@ -557,6 +559,16 @@
       "id": "payment_enable",
       "default": true,
       "label": "t:sections.footer.settings.payment_enable.label"
+    },
+    {
+      "type": "header",
+      "content": "Disclaimer"
+    },
+    {
+      "type": "textarea",
+      "id": "disclaimer_text",
+      "label": "Disclaimer text",
+      "default": "The statements herein have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Dietary choices are each individual's responsibility."
     }
   ],
   "default": {
