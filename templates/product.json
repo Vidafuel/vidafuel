@@ -48,7 +48,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Support for",
-            "content": "",
+            "content": "<p>{{ product.metafields.vidafields.support_for_bullets | metafield_tag }}<\/p>",
             "page": "",
             "icon": "check_mark"
           }
