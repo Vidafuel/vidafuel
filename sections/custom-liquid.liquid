@@ -3,15 +3,8 @@
 {% if section.settings.custom_background %}
   <style>
     .review-section {
-      margin-top: 90px;
       padding-top: 8.25%;
       position: relative;
-    }
-
-    @media (max-width: 1024px) {
-      .review-section {
-        margin-top: 70px;
-      }
     }
 
     .review-section::before {
@@ -40,7 +33,7 @@
     }
   </style>
 
-  <div class="review-section">
+  <div class="review-section"{% if section.settings.background_color %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
     {% unless section.settings.full_width == false %}<div class="page-width">{% endunless %}
     {{ section.settings.custom_liquid }}
     {% unless section.settings.full_width == false %}</div>{% endunless %}
@@ -66,6 +59,13 @@
       "id": "custom_background",
       "label": "Custom background",
       "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#fff",
+      "info": "Background color behind the custom background"
     },
     {
       "type": "checkbox",
