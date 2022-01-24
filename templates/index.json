@@ -327,7 +327,7 @@
           "settings": {
             "heading": "Dietitian developed snacks",
             "heading_font": "default",
-            "heading_size": "default"
+            "heading_size": "heading-1"
           }
         },
         "1640786109f60a207b-1": {
@@ -335,7 +335,7 @@
           "settings": {
             "text": "<p><strong>Convenient &<br\/>portion controlled<\/strong><\/p><p><strong>Controlled sugar,<br\/>sodium and fat<\/strong><\/p><p><strong>Only 80-120 calories<\/strong><\/p>",
             "text_font": "default",
-            "text_size": "default",
+            "text_size": "heading-3",
             "text_color": "default",
             "p_bullets": true
           }
