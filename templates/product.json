@@ -34,7 +34,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Benefits",
-            "content": "<p><strong>{{ product.metafields.vidafields.benefits_heading.value }}<\/strong>{{ product.metafields.vidafields.benefits | metafield_tag }}<\/p>",
+            "content": "<p><strong>{{ product.metafields.vidafields.benefits_heading.value }}<\/strong><\/p><p>{{ product.metafields.vidafields.benefits | metafield_tag }}<\/p>",
             "page": "",
             "icon": "check_mark"
           }
