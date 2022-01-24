@@ -1,7 +1,3 @@
-.multicolumn .title {
-	margin: 0;
-}
-
 .multicolumn.no-heading .title {
 	display: none;
 }
@@ -155,8 +151,7 @@
 
 	.multicolumn-list:not(.slider):not(.full-width),
 	.multicolumn-list.full-width .multicolumn-card__info {
-		padding-left: 1.5rem;
-		padding-right: 1.5rem;
+		padding: 4rem calc(4rem / var(--font-body-scale)) 5rem;
 	}
 
 	.multicolumn-list.slider .multicolumn-list__item {

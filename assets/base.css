@@ -925,9 +925,9 @@ summary::-webkit-details-marker {
 	margin: 3rem 0 2rem;
 }
 
-.title-wrapper-with-link .title {
+/* .title-wrapper-with-link .title {
 	margin: 0;
-}
+} */
 
 .title .link {
 	font-size: inherit;
