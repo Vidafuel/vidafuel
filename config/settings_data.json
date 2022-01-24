@@ -16,6 +16,7 @@
     "page_width": "1600",
     "social_facebook_link": "https:\/\/www.facebook.com\/VidaFuel\/",
     "social_instagram_link": "https:\/\/www.instagram.com\/vida_fuel\/",
+    "favicon": "shopify:\/\/shop_images\/vidafuel-favicon.png",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -55,7 +56,7 @@
         "type": "footer",
         "settings": {
           "color_scheme": "background-1",
-          "footer_bkgnd_color": "#fff",
+          "footer_bkgnd_color": "#ffffff",
           "newsletter_enable": true,
           "newsletter_heading": "Join our mai﻿ling list",
           "show_social": true,
