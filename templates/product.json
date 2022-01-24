@@ -52,13 +52,6 @@
           "settings": {
             "show_dynamic_checkout": false
           }
-        },
-        "5a6b1849-f628-4716-bb45-d06fb8a95b55": {
-          "type": "text",
-          "settings": {
-            "text": "Text block",
-            "text_style": "body"
-          }
         }
       },
       "block_order": [
@@ -69,8 +62,7 @@
         "209b5cd2-21e3-458c-b9e0-435c7de14288",
         "01f31cd5-86c2-41b6-98cd-e0b8b0272a0e",
         "792851cb-e4b4-4bbe-9821-00b87ccc8fec",
-        "buy_buttons",
-        "5a6b1849-f628-4716-bb45-d06fb8a95b55"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": false,
