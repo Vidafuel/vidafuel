@@ -29,12 +29,6 @@
           "settings": {
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false
-          }
-        },
         "01f31cd5-86c2-41b6-98cd-e0b8b0272a0e": {
           "type": "collapsible_tab",
           "settings": {
@@ -44,13 +38,10 @@
             "icon": "check_mark"
           }
         },
-        "9f7ac4d8-2c27-41d3-8087-f3acbe6c7dc9": {
-          "type": "collapsible_tab",
+        "buy_buttons": {
+          "type": "buy_buttons",
           "settings": {
-            "heading": "Collapsible tab",
-            "content": "",
-            "page": "",
-            "icon": "check_mark"
+            "show_dynamic_checkout": false
           }
         }
       },
@@ -60,9 +51,8 @@
         "variant_picker",
         "quantity_selector",
         "209b5cd2-21e3-458c-b9e0-435c7de14288",
-        "buy_buttons",
         "01f31cd5-86c2-41b6-98cd-e0b8b0272a0e",
-        "9f7ac4d8-2c27-41d3-8087-f3acbe6c7dc9"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": false,
