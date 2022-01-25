@@ -54,3 +54,15 @@
 .accordion__content img {
   max-width: 100%;
 }
+
+.metafield-multi_line_text_field::before {
+	display: block;
+	content: "";
+	width: 8px;
+	height: 8px;
+	background: #cdda01;
+	border-radius: 100%;
+	position: absolute;
+	top: 7px;
+	left: 0;
+}
