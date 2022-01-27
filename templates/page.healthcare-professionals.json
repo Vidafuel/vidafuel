@@ -122,6 +122,7 @@
       ],
       "settings": {
         "title": "",
+        "title_center": false,
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
@@ -211,6 +212,7 @@
       ],
       "settings": {
         "title": "",
+        "title_center": false,
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
@@ -256,7 +258,8 @@
         "desktop_layout": "left",
         "background_color_scheme": "default",
         "mobile_layout": "collage",
-        "remove_top_spacing": false
+        "remove_top_spacing": false,
+        "full_width": false
       }
     },
     "16395061492d0dea2e": {
@@ -343,6 +346,7 @@
       ],
       "settings": {
         "title": "",
+        "title_center": false,
         "image_width": "third",
         "image_ratio": "portrait",
         "column_alignment": "center",
@@ -355,6 +359,15 @@
         "desktop_no_spacing": false,
         "icon_enable": false,
         "full_width_section": false
+      }
+    },
+    "164328693248fb79aa": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"Healthcare professionals reviews\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"129641652,129641670,129641813\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"1\" \n data-autoplay-speed=\"3000\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
+        "custom_background": false,
+        "background_color": "#fff",
+        "full_width": false
       }
     },
     "1639506526d4856680": {
@@ -388,6 +401,7 @@
       ],
       "settings": {
         "title": "",
+        "title_center": false,
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "center",
@@ -411,6 +425,7 @@
     "1640123076cbff58b5",
     "16395061492d0dea2e",
     "163950623206c4ca1f",
+    "164328693248fb79aa",
     "1639506526d4856680"
   ]
 }
