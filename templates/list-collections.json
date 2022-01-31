@@ -128,6 +128,7 @@
     },
     "16401224468d9b8dcf": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "16401224463b454216-0": {
           "type": "heading",
@@ -156,6 +157,7 @@
     },
     "16401225429970e504": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "1640122542dea8d13b-1": {
           "type": "title",
