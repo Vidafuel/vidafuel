@@ -2445,6 +2445,24 @@
             "link": {
               "label": "Link"
             },
+            "modal_image": {
+              "label": "Modal image"
+            },
+            "link": {
+              "label": "Link"
+            },
+            "modal_image": {
+              "label": "Modal image"
+            },
+            "custom_liquid": {
+              "label": "Custom liquid"
+            },
+            "modal_liquid": {
+              "label": "Modal custom liquid"
+            },
+            "liquid_background": {
+              "label": "Liquid background"
+            },
             "title_font": {
               "label": "Heading font",
               "options__1": {
