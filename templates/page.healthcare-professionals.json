@@ -38,7 +38,7 @@
         "image": "shopify:\/\/shop_images\/home-05.png",
         "image_link": "shopify:\/\/products\/collagen-protein-drink-2-pack",
         "bk_image": "shopify:\/\/shop_images\/healthcare-bg.jpg",
-        "height": "adapt",
+        "height": "small",
         "color_scheme": "accent-1",
         "background_scheme": "default",
         "layout": "text_first",
