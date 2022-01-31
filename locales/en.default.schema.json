@@ -2448,12 +2448,6 @@
             "modal_image": {
               "label": "Modal image"
             },
-            "link": {
-              "label": "Link"
-            },
-            "modal_image": {
-              "label": "Modal image"
-            },
             "custom_liquid": {
               "label": "Custom liquid"
             },
