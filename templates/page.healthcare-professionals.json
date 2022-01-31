@@ -145,7 +145,7 @@
           "type": "column",
           "settings": {
             "image_url": "",
-            "title": "REQUEST FREE SAMPLES FOR YOUR PATIENTS!",
+            "title": "REQUEST 15% OFF FOR YOUR PATIENTS",
             "icon": "check_mark",
             "text": "<p><strong>Not all proteins are equal. See how Vidafuel* is superior.<\/strong><\/p><p><em>Developed by <\/em>dietitians<\/p>",
             "link_label": "",
@@ -242,6 +242,7 @@
         },
         "164012307670ab9899-1": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "protein-juice-orange",
             "second_image": false,
@@ -301,9 +302,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/healthcare-03.png",
             "image_url": "",
-            "title": "Download White Paper",
+            "title": "Clinical and financial value of Oral Nutrition Supplement programs",
             "icon": "none",
-            "text": "<p>Clinical and financial value of Oral Nutrition Supplement programs<\/p>",
+            "text": "",
             "link_label": "DOWNLOAD",
             "link_type": "link",
             "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0922\/1906\/files\/2020-VIDAFUEL-White-Paper.pdf?v=1584484018",
@@ -323,7 +324,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/VidaFuel-Protein-wCup_new.jpg",
             "image_url": "",
-            "title": "",
+            "title": "Shop our best-selling Protein Drinks!",
             "icon": "check_mark",
             "text": "<p>Shop our best-selling Protein Drinks!<\/p>",
             "link_label": "SHOP NOW",
