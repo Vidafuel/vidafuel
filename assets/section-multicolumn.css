@@ -379,7 +379,7 @@
 .multicolumn-card-popup-modal__content {
 	background-color: rgb(var(--color-background));
 	overflow: auto;
-	height: 80%;
+	height: auto;
 	margin: 0 auto;
 	left: 50%;
 	transform: translateX(-50%);
@@ -394,7 +394,7 @@
 	.multicolumn-card-popup-modal__content {
 		padding-right: 1.5rem;
 		margin-top: 10rem;
-		width: 70%;
+		width: auto;
 		padding: 0 3rem;
 	}
 }
