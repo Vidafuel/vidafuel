@@ -314,7 +314,7 @@
             "link_label": "DOWNLOAD",
             "link_type": "modal",
             "link": "",
-            "modal_liquid": "<div class=\"klaviyo-form-TaCVan\"><\/div>",
+            "modal_liquid": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/shell.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"19971200\",\n    formId: \"03a444a5-8a44-42ff-b7bd-34263b9df190\"\n  });\n<\/script>",
             "custom_liquid": "",
             "liquid_background": "#ffffff",
             "title_font": "default",
