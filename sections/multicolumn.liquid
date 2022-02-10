@@ -138,7 +138,7 @@
                 {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}
                   <div class="custom-liquid" style="background-color:{{ block.settings.liquid_background }};">
                     <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.title_size != 'default' %}{{ block.settings.title_size }}{% endif %}" {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}style="color:#000;"{% endif %}>
-                      {{ block.settings.title | escape }}
+                      {{ block.settings.title }}
                     </h3>
                     {{ block.settings.custom_liquid }}
                   </div>
@@ -334,7 +334,8 @@
       "type": "checkbox",
       "id": "icon_enable",
       "label": "Column heading icons",
-      "default": false
+      "default": false,
+      "info": "Assign the icon in each added column."
     },
     {
       "type": "checkbox",
@@ -363,9 +364,8 @@
           "content": "Heading"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "title",
-          "default": "Column",
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
         },
         {
@@ -470,7 +470,8 @@
             }
           ],
           "default": "check_mark",
-          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label",
+          "info": "To display column icon \"Column heading icons\" must be checked in Multicolumn wrapper."
         },
         {
           "type": "richtext",
