@@ -314,9 +314,9 @@
         "163950623263ceff12-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/healthcare-03.png",
+            "image": "shopify:\/\/shop_images\/image_20.png",
             "image_url": "",
-            "title": "<p>Clinical and financial value of Oral Nutrition Supplement programs<\/p>",
+            "title": "<p>White Paper: Use Of Oral Nutrition Supplements (Ons) To Reduce Missed Dialysis Treatments<\/p>",
             "icon": "none",
             "text": "",
             "link_label": "DOWNLOAD",
@@ -379,7 +379,7 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
-        "flex_align_center": true,
+        "flex_align_center": false,
         "desktop_no_spacing": false,
         "icon_enable": false,
         "full_width_section": false
