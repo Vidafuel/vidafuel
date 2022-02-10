@@ -33,7 +33,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Benefits",
-            "content": "<p><strong>{{ product.metafields.vidafields.benefits_heading.value }}<\/strong><\/p><p>{{ product.metafields.vidafields.benefits | metafield_tag }}<\/p>",
+            "content": "<p><strong>{{ product.metafields.vidafields.benefits_heading.value }}<\/strong><\/p><p><strong>All 9 Essential Amino Acids:<\/strong> These must be consumed through your diet and are involved in important processes such as tissue growth, energy production, immune function and nutrient absorption.<br\/><br\/><strong>Collagen protein:<\/strong> Helps to support skin, joint, and bone health. As we age, collagen production in our body begins to decline. Collagen is the major protein in our bones and connective tissues, and helps maintain integrity, strength, and function.<br\/><br\/><strong>Whey protein:<\/strong> Studies show that whey protein helps to maintain muscle mass and strength. It is the highest quality protein with the most impressive range of essential amino acids. Whey is fast digesting and contains branched-chain amino acids that serve as the building blocks for muscle growth.<\/p>",
             "page": "",
             "icon": "check_mark"
           }
