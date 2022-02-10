@@ -116,14 +116,14 @@
             "custom_liquid": "",
             "liquid_background": "#ffffff",
             "column_custom_text_color": false,
-            "copy_color": "#000000",
+            "copy_color": "#121212",
             "title_font": "default",
             "title_size": "default",
             "text_font": "trade_gothic_bold",
-            "text_size": "h2",
+            "text_size": "heading-5",
             "title_top": false,
             "p_bullets": true,
-            "p_bullets_color": "#cdda01",
+            "p_bullets_color": "#7bccc8",
             "text_color_primary": true
           }
         }
