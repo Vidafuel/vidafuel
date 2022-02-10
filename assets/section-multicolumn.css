@@ -294,13 +294,12 @@
 	line-height: 1.4;
 }
 
-.multicolumn-card__info.custom-liquid {
-	margin-top: 4rem;
-	margin-bottom: 4rem;
+.multicolumn-card__info .custom-liquid {
+	padding: 2.5rem 2.5rem;
 	box-shadow: 4px 3px 10px 6px #00000024;
 }
 
-.multicolumn-card__info.custom-liquid h3 {
+.multicolumn-card__info .custom-liquid h3 {
 	text-align: center;
 	margin-bottom: 1em;
 }
@@ -320,7 +319,6 @@
 	content: "";
 	width: 8px;
 	height: 8px;
-	background: #cdda01;
 	border-radius: 100%;
 	position: absolute;
 	top: 7px;

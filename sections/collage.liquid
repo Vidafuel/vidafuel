@@ -13,13 +13,23 @@
 
 {%- comment -%}TODO: match variables and such from image-with-text.liquid file{%- endcomment -%}
 
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'video' -%}
+    {% if block.settings.video_small_desktop %}
+      {% assign videoSmallDesktop = 'video_small_desktop' %}
+    {% else %}
+        {% assign videoSmallDesktop = '' %}
+    {% endif %}
+  {%- endcase -%}
+{%- endfor -%}
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
 <div class="collage-wrapper {% unless section.settings.full_width %}page-width{% endunless %}{% if section.settings.heading == blank %} no-heading{% endif %} {% if section.settings.background_color_scheme != 'default' %}{{ scheme }}{% endif %} {% if section.settings.remove_top_spacing %} remove_top_spacing{% else %} spaced-section{% endif %}">
   
   <h2 class="collage-wrapper-title">{{ section.settings.heading | escape }}</h2>
 
-  <div class="collage collage--{{ section.settings.desktop_layout }}{% if section.settings.background_color_scheme != 'default' %} page-width{% endif %}{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
+  <div class="collage {{ videoSmallDesktop }} collage--{{ section.settings.desktop_layout }}{% if section.settings.background_color_scheme != 'default' %} page-width{% endif %}{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
     {%- for block in section.blocks -%}
 
       {% liquid
@@ -617,6 +627,12 @@
           "default": false,
           "label": "t:sections.collage.blocks.video.settings.image_padding.label",
           "info": "t:sections.collage.blocks.video.settings.image_padding.info"
+        },
+        {
+          "type": "checkbox",
+          "id": "video_small_desktop",
+          "label": "Small on desktop",
+          "default": false
         }
       ]
     },

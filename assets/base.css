@@ -2538,6 +2538,7 @@ details-disclosure > details {
 
 .heading-2 {
 	font-size: calc(var(--font-heading-scale) * 3rem);
+	margin: inherit;
 }
 
 @media only screen and (min-width: 750px) {

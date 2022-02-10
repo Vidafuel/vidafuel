@@ -407,6 +407,9 @@
               "label": "Add image padding",
               "info": "Select image padding if you don't want your cover image to be cropped."
             },
+            "video_small_desktop": {
+              "label": "Small on desktop"
+            },
             "description": {
               "label": "Video alt text",
               "info": "Describe the video to make it accessible for customers using screen readers."
@@ -1048,6 +1051,9 @@
             "label": "Small"
           },
           "options__3": {
+            "label": "Medium"
+          },
+          "options__4": {
             "label": "Large"
           },
           "label": "Image ratio"
@@ -2457,6 +2463,12 @@
             "liquid_background": {
               "label": "Liquid background"
             },
+            "column_custom_text_color": {
+              "label": "Column custom text color"
+            },
+            "copy_color": {
+              "label": "Column text color"
+            },
             "title_font": {
               "label": "Heading font",
               "options__1": {
@@ -2558,6 +2570,9 @@
             },
             "p_bullets": {
               "label": "Description bullets"
+            },
+            "p_bullets_color": {
+              "label": "Bullet color"
             },
             "text_color_primary": {
               "label": "Description primary color"
