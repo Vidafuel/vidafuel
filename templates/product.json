@@ -81,10 +81,20 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "1644514249e58ac10a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.product__description.rte {\n    display: none;\n}\n<\/style>",
+        "custom_background": false,
+        "background_color": "#fff",
+        "full_width": false
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "1644514249e58ac10a"
   ]
 }
