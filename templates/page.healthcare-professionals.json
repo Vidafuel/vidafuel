@@ -54,7 +54,7 @@
           "type": "column",
           "settings": {
             "image_url": "",
-            "title": "Small but Mighty",
+            "title": "<p>Small but Mighty<\/p>",
             "icon": "none",
             "text": "<p>Not all proteins are equal. See how Vidafuel is superior.<\/p>",
             "link_label": "Comp Chart",
@@ -157,7 +157,7 @@
           "type": "column",
           "settings": {
             "image_url": "",
-            "title": "REQUEST 15% OFF FOR YOUR PATIENTS!",
+            "title": "<p>REQUEST 15% OFF FOR YOUR PATIENTS!<\/p>",
             "icon": "none",
             "text": "<p>Post Surgery Recovery<\/p><p>Cancer<\/p><p>CKD Dialysis<\/p><p>Geriatric Nutrition<\/p><p>Fitness \/ Athletics<\/p>",
             "link_label": "",
@@ -208,7 +208,7 @@
           "type": "column",
           "settings": {
             "image_url": "",
-            "title": "FILL OUT THE FORM TO GET A COUPON FOR YOUR PATIENTS",
+            "title": "<p>FILL OUT THE FORM TO GET A COUPON<br\/>FOR YOUR PATIENTS<\/p>",
             "icon": "check_mark",
             "text": "",
             "link_label": "",
@@ -327,7 +327,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/healthcare-03.png",
             "image_url": "",
-            "title": "Clinical and financial value of Oral Nutrition Supplement programs",
+            "title": "<p>Clinical and financial value of Oral Nutrition Supplement programs<\/p>",
             "icon": "none",
             "text": "",
             "link_label": "DOWNLOAD",
@@ -353,7 +353,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/VidaFuel-Protein-wCup_new.jpg",
             "image_url": "",
-            "title": "Shop our best-selling Protein Drinks!",
+            "title": "<p>Shop our best-selling Protein Drinks!<\/p>",
             "icon": "check_mark",
             "text": "<p>Shop our best-selling Protein Drinks!<\/p>",
             "link_label": "SHOP NOW",
@@ -413,7 +413,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/metro-medical.png",
             "image_url": "",
-            "title": "DISTRIBUTED BY",
+            "title": "<p>DISTRIBUTED BY<\/p>",
             "icon": "check_mark",
             "text": "",
             "link_label": "",
