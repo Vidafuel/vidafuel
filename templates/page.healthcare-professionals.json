@@ -343,7 +343,7 @@
             "image": "shopify:\/\/shop_images\/VidaFuel-Protein-with-cup.jpg",
             "image_url": "",
             "title": "<p>Shop our best-selling Protein Drinks!<\/p>",
-            "icon": "check_mark",
+            "icon": "none",
             "text": "",
             "link_label": "SHOP NOW",
             "link_type": "link",
