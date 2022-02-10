@@ -89,7 +89,7 @@
                     {% render 'icon-accordion', icon: block.settings.icon %}
                   {% endif %}
                   <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.title_size != 'default' %}{{ block.settings.title_size }}{% endif %}" {% if block.settings.column_custom_text_color %}style="color:{{ block.settings.copy_color }}"{% endif %}>
-                    {{ block.settings.title | escape }}
+                    {{ block.settings.title }}
                   </h3>
                 {%- endif -%}
                 {% if section.settings.icon_enable %} </div>{% endif %}
