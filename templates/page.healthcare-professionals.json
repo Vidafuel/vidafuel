@@ -239,7 +239,7 @@
         "title": "",
         "title_center": false,
         "image_width": "full",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "column_alignment": "left",
         "columns": "default",
         "background_style": "gradient-1",
@@ -247,7 +247,7 @@
         "button_link": "",
         "swipe_on_mobile": false,
         "flex_align_center": true,
-        "desktop_no_spacing": false,
+        "desktop_no_spacing": true,
         "icon_enable": false,
         "full_width_section": false
       }
