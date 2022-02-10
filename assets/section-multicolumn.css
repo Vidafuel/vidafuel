@@ -225,6 +225,10 @@
 	padding: 2.5rem 2.5rem;
 }
 
+.multicolumn-card__info.custom-liquid__info {
+	padding: 0 0;
+}
+
 .background-none .multicolumn-card__info {
 	padding-top: 0;
 	padding-left: 0;
@@ -284,11 +288,11 @@
 	}
 }
 
-.multicolumn-card__info .link {
+/* .multicolumn-card__info .link {
 	text-decoration: none;
 	font-size: inherit;
 	margin-top: 1.5rem;
-}
+} */
 
 .multicolumn-card__info p {
 	line-height: 1.4;

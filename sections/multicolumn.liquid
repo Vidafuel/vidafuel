@@ -82,7 +82,7 @@
                   {% endif %}
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info{% if block.settings.custom_liquid != blank and block.settings.liquid_background == blank %} custom-liquid{% endif %}">
+              <div class="multicolumn-card__info{% if block.settings.custom_liquid != blank %} custom-liquid__info{% endif %}">
                 {% if section.settings.icon_enable %} <div class="icon__enable">{% endif %}
                 {%- if block.settings.title != blank and block.settings.title_top == false and block.settings.custom_liquid == blank -%}
                   {% if section.settings.icon_enable %}
@@ -104,7 +104,7 @@
                   {%- endif -%}
                 {%- else -%}
                   <modal-opener class="multicolumn-card-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
-                    <button id="ProductPopup-{{ block.id }}" class="button button--primary multicolumn-card-popup-modal__button link" type="button"
+                    <button id="ProductPopup-{{ block.id }}" class="button button--primary multicolumn-card-popup-modal__button" type="button"
                       aria-haspopup="dialog">{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></button>
                   </modal-opener>
                   <modal-dialog id="PopupModal-{{ block.id }}" class="multicolumn-card-popup-modal" {{ block.shopify_attributes }}>
