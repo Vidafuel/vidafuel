@@ -29,6 +29,13 @@
           "settings": {
           }
         },
+        "3860f77f-ac5e-4ce4-970b-455240bddd02": {
+          "type": "popup",
+          "settings": {
+            "text": "Check the Ingredients & Nutrition Facts",
+            "page": ""
+          }
+        },
         "01f31cd5-86c2-41b6-98cd-e0b8b0272a0e": {
           "type": "collapsible_tab",
           "settings": {
@@ -60,6 +67,7 @@
         "variant_picker",
         "quantity_selector",
         "209b5cd2-21e3-458c-b9e0-435c7de14288",
+        "3860f77f-ac5e-4ce4-970b-455240bddd02",
         "01f31cd5-86c2-41b6-98cd-e0b8b0272a0e",
         "792851cb-e4b4-4bbe-9821-00b87ccc8fec",
         "buy_buttons"
