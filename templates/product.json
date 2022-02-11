@@ -63,7 +63,7 @@
         "138cbeb6-4363-4d97-a80b-79ffaf6d17a2": {
           "type": "text",
           "settings": {
-            "text": "Text block{{ product.metafields.vidafield.nutrition_info.value }}",
+            "text": "",
             "text_style": "body"
           }
         }
