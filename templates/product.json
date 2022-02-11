@@ -59,6 +59,13 @@
           "settings": {
             "show_dynamic_checkout": false
           }
+        },
+        "138cbeb6-4363-4d97-a80b-79ffaf6d17a2": {
+          "type": "text",
+          "settings": {
+            "text": "Text block{{ product.metafields.vidafield.nutrition_info.value }}",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -70,7 +77,8 @@
         "3860f77f-ac5e-4ce4-970b-455240bddd02",
         "01f31cd5-86c2-41b6-98cd-e0b8b0272a0e",
         "792851cb-e4b4-4bbe-9821-00b87ccc8fec",
-        "buy_buttons"
+        "buy_buttons",
+        "138cbeb6-4363-4d97-a80b-79ffaf6d17a2"
       ],
       "settings": {
         "enable_sticky_info": false,
