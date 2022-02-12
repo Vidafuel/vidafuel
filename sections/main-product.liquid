@@ -416,6 +416,18 @@
         <div class="product-popup-modal__content-info">
           <h1 class="h2">{{ block.settings.page.title }}</h1>
           {{ block.settings.page.content }}
+          {% if block.settings.show_nutrition_facts and product.metafields.vidafields.nutrition_facts != blank %}
+            <img
+              srcset="{% if nutrition_facts_image.width >= 288 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '288x' }} 288w,{% endif %}
+                      {% if product.metafields.vidafields.nutrition_facts.width >= 576 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '576x' }} 576w,{% endif %}
+                      {% if product.metafields.vidafields.nutrition_facts.width >= 750 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '750x' }} 750w,{% endif %}
+                      {% if product.metafields.vidafields.nutrition_facts.width >= 1100 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '1100x' }} 1100w,{% endif %}
+                      {% if product.metafields.vidafields.nutrition_facts.width >= 1500 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '1500x' }} 1500w,{% endif %}
+                      {{ product.metafields.vidafields.nutrition_facts | img_url: 'master' }} {{ product.metafields.vidafields.nutrition_facts.width }}w"
+              src="{{ product.metafields.vidafields.nutrition_facts | img_url: '1500x' }}"
+              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: 0.64 | round }}px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
+              loading="lazy" width="576" height="100%" alt="{{ product.metafields.vidafields.nutrition_facts.alt | escape }}">
+          {% endif %}
         </div>
       </div>
     </modal-dialog>
@@ -836,6 +848,12 @@
           "id": "text",
           "default": "Pop-up link text",
           "label": "t:sections.main-product.blocks.popup.settings.link_label.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_nutrition_facts",
+          "label": "Show nutrition facts",
+          "default": false
         },
         {
           "id": "page",
