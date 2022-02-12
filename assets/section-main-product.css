@@ -63,6 +63,11 @@
   padding-left: 30px;
   position: relative;
   font-size: smaller;
+  color: var(--gradient-base-background-2);
+}
+
+.bold-ro__recurring-div:not(.bold-ro__bold-active) {
+    padding-bottom: 0;
 }
 
 .product-form_buttons-pretext p:before {
