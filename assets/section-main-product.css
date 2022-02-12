@@ -51,6 +51,30 @@
   }
 }
 
+.product-form_buttons-pretext {
+  padding: 0 4rem 2rem 4rem;
+}
+
+.product-form_buttons-pretext p:first-child {
+  margin-top: 0;
+}
+
+.product-form_buttons-pretext p {
+  padding-left: 30px;
+  position: relative;
+  font-size: smaller;
+}
+
+.product-form_buttons-pretext p:before {
+  content: '';
+  position: absolute;
+  background: url("//cdn.shopify.com/s/files/1/0922/1906/t/73/assets/icon-checkmark.svg?v=8210881576379155112") no-repeat;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  top: 5px;
+}
+
 /* Dynamic checkout */
 
 .shopify-payment-button__button {

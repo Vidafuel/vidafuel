@@ -291,6 +291,11 @@
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
                   <div class="ro_widget"></div>
+                  {% if block.settings.show_button_pretext %}
+                    <div class="product-form_buttons-pretext">
+                      {{ block.settings.button_pretext }}
+                    </div>
+                  {% endif %}
                   <div class="product-form__buttons">
                     <button
                       type="submit"
@@ -670,6 +675,17 @@
           "default": true,
           "label": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_button_pretext",
+          "label": "Show button pre-text",
+          "default": false
+        },
+        {
+          "type": "richtext",
+          "id": "button_pretext",
+          "label": "Button pre-text"
         }
       ]
     },
