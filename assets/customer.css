@@ -26,6 +26,10 @@
   margin-bottom: 4rem;
 }
 
+.customer a {
+  color: rgba(var(--color-base-background-2), var(--alpha-link));
+}
+
 .customer ul a {
   display: inline;
 }
