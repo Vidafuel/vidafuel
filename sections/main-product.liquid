@@ -109,7 +109,7 @@
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
           {% liquid
-            if block.settings.heading contains 'in the box'
+            if block.settings.heading contains 'Benefits'
               assign attrName = 'open'
             else
               assign attrName = ''
