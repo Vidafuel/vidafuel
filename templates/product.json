@@ -41,7 +41,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Benefits",
-            "content": "<p>{{ product.metafields.vidafields.benefits | metafield_tag }}<\/p>",
+            "content": "<p><strong>{{ product.metafields.vidafields.benefit_1_title.value }}<\/strong> {{ product.metafields.vidafields.benefit_1_text | metafield_tag }}<\/p><p><strong>{{ product.metafields.vidafield.benefit_2_title.value }}<\/strong> {{ product.metafields.vidafields.benefit_2_text | metafield_tag }}<\/p><p><strong>{{ product.metafields.vidafields.benefit_3_title.value }}<\/strong> {{ product.metafields.vidafields.benefit_3_text | metafield_tag }}<\/p>",
             "page": "",
             "icon": "heart"
           }
