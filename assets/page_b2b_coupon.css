@@ -12,10 +12,10 @@ body { background-color: #fff; margin: 0; padding: 0; overflow-x: hidden; }
     background-size: cover;
     background-position: bottom;
 }
-.topContent { text-align: left; padding: 0 32px; height: 480px; }
+.topContent { text-align: left; padding: 0; height: 480px; }
 .leftBlock { max-width: 450px;}
 .topContent .title { font-family: 'Oswald', sans-serif; font-size: 48px; font-weight: normal; line-height: 56px; text-transform: uppercase; }
-.topContent .subTitle { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: normal; color: #fff; }
+.topContent .subTitle { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: normal; color: #fff; letter-spacing: normal; }
 .topContent .notice { font-family: 'Montserrat', sans-serif;  font-size: 18px; color: #000; text-align: left; position: absolute; bottom: 10px; left: 60px; }
 .topContent::before { 
     content: ''; 
@@ -196,7 +196,7 @@ input:vvalid {
     .desktopOnly { display: none;}
     .leftBlock { max-width: 100%; text-align: center; }
     .topContent .title { font-size: 30px; line-height: 38px; }
-    .topContent .subTitle { font-size: 20px; line-height: 26px; }
+    .topContent .subTitle { font-size: 20px; line-height: 26px; letter-spacing: normal; }
     .secondBlock { padding-bottom: 20px;}
     .secondBlock .notice { font-family: 'Montserrat', sans-serif;  font-size: 14px; line-height: 20px; color: #000; text-align: center; display: block; padding-bottom: 30px;  }
     .topContent::before { display: none; }
