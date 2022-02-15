@@ -850,3 +850,25 @@ a.product__text {
     color: var(--color-tertiary);
     font-weight: 400;
 }
+
+/* metafields: support for bullets */
+.support-for .accordion__content {
+    padding-left: 3rem
+}
+
+.support-for p {
+	position: relative;
+	padding-left: 1.5em;
+}
+
+.support-for p::before {
+	display: block;
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	position: absolute;
+	top: 12px;
+	left: 0;
+  background: rgba(var(--color-base-background-2));
+}
