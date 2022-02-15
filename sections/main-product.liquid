@@ -114,8 +114,10 @@
             else
               assign attrName = ''
             endif
+            assign blockClass = block.settings.heading | replace_first: " ", "-"
           %}
-            <div class="product__accordion accordion" {{ block.shopify_attributes }}>
+          {% assign variable = value %}
+            <div class="product__accordion accordion {{ blockClass | downcase }}" {{ block.shopify_attributes }}>
               <details id="Details-{{ block.id }}-{{ section.id }}" {{ attrName }}>
                 <summary>
                   <div class="summary__title">
