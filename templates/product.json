@@ -50,7 +50,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Support for",
-            "content": "<p>{{ product.metafields.vidafields.support_bullet_1.value }}<br\/>{{ product.metafields.vidafields.support_bullet_2.value }}<\/p><p>{{ product.metafields.vidafields.support_bullet_3.value }}<\/p><p>{{ product.metafields.vidafields.support_bullet_4.value }}<\/p><p>{{ product.metafields.vidafields.support_bullet_5.value }}<\/p><p><\/p>",
+            "content": "<p>{{ product.metafields.vidafields.support_bullet_1.value }}<\/p><p>{{ product.metafields.vidafields.support_bullet_2.value }}<\/p><p>{{ product.metafields.vidafields.support_bullet_3.value }}<\/p><p>{{ product.metafields.vidafields.support_bullet_4.value }}<\/p><p>{{ product.metafields.vidafields.support_bullet_5.value }}<\/p><p><\/p>",
             "page": "",
             "icon": "check_mark"
           }
