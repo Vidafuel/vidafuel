@@ -859,16 +859,21 @@ a.product__text {
 .support-for p {
 	position: relative;
 	padding-left: 1.5em;
+  margin: 0;
 }
 
-.support-for p::before {
-	display: block;
-	content: "";
-	width: 8px;
-	height: 8px;
-	border-radius: 100%;
-	position: absolute;
-	top: 12px;
-	left: 0;
-  background: rgba(var(--color-base-background-2));
+/* description bullets */
+.product__description ul {
+  list-style: none;
 }
+
+.support-for p::before,
+.product__description li:before {
+  content: "\2022";
+  color: rgba(var(--color-base-background-2));
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
