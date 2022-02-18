@@ -372,6 +372,10 @@
     var formLeft = left + widt + frmw;
     $("#formBlock").css({ left: formLeft }).show();
   }
+  
+  window.addEventListener('load', function() {
+       if (location.hash) location.href = location.hash;
+    });
 
   /* */
   $(document).ready(function () {
