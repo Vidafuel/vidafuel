@@ -373,12 +373,24 @@
     $("#formBlock").css({ left: formLeft }).show();
   }
   
-	$(window).on("load", function() {
-    	if (location.hash) location.href = location.hash;
-	}
+
   
   /* */
   $(document).ready(function () {
+    
+    var root = $('html,body');
+	function smoothScrollingTo(target) {
+
+		var target = $(target);
+		if (target.length) {
+			root.animate({
+				scrollTop: target.offset().top - 100
+			}, 400, "swing");
+		}
+	}
+
+	smoothScrollingTo(location.hash);
+    
     /* ALIGN FORM */
     topFormAlign();
     /* INIT SLIDER */
