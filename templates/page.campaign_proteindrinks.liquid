@@ -1,5 +1,10 @@
 <link rel="stylesheet" href="{{ 'page-home.css' | asset_url }}">
 <link rel="stylesheet" href="{{ 'campaign_protein_drinks.css' | asset_url }}">
+<script>
+{%- comment -%} product page {%- endcomment -%}
+window.BOLD.common.Shopify.saveProduct({{ product.handle | json }}, {{ product.id | json }});
+{%- for variant in product.variants -%} window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, {product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{variant.metafields.bold_rp.rp_group_id}}'}); {%- endfor -%}
+</script>
 <style>
   .landing-page-section .banner-container::before {
     background-image: url('{{ 'cpd_waves_01.svg' | asset_url }}');
@@ -377,7 +382,7 @@
                                 {% endif %}
                                 {% endfor %}
                               </select>
-							  <div class="produto-qty-container">
+                              <div class="produto-qty-container">
                                 <div class="produto-small-label">Quantity</div>
                                 <div class="inner">
                                   <button type="button" class="qty-btn left"></button>
@@ -385,6 +390,7 @@
                                   <button type="button" class="qty-btn right"></button>
                                 </div>
                               </div>
+                              <div class="ro_widget"></div>
                               <div class="price-container"><span class="price-label">Total:</span><span class="price-number">{{ current_variant.price | money }}</span></div>
                           	  <div class="btn-container">
                                 <button 
