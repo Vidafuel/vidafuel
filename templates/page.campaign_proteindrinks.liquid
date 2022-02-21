@@ -418,6 +418,11 @@
                         </div>
               	  {% endif %}
              	  {% if product.id == 4373693726762 %}
+                <script>
+                  {%- comment -%} product page {%- endcomment -%}
+                  window.BOLD.common.Shopify.saveProduct({{ product.handle | json }}, {{ product.id | json }});
+                  {%- for variant in product.variants -%} window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, { product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{variant.metafields.bold_rp.rp_group_id}}'}); {%- endfor -%}
+                </script>
 	              {%- assign current_variant = product.selected_or_first_available_variant -%}
                       <div class="produtos-item">
                         <div class="img-wrapper"><div style="background-image:url('{{ product | img_url: '600x600' }}');"></div></div>
@@ -456,6 +461,7 @@
                                       <button type="button" class="qty-btn right"></button>
                                     </div>
                               </div>
+                              <div class="ro_widget"></div>
                          	  <div class="price-container"><span class="price-label">Total:</span><span class="price-number">{{ current_variant.price | money }}</span></div>
                           	  <div class="btn-container">
                                 <button 
@@ -463,7 +469,7 @@
                                     name="add" 
                                     data-add-to-cart 
                                     aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" 
-                                    class="button product-form__cart-submit shopify-add-to-cart-button {% if product.selected_or_first_available_variant.metafields.bold_rp.rp_group_id %} bold-hidden{% endif %}">
+                                    class="button product-form__cart-submit shopify-add-to-cart-button addtocart {% if product.selected_or_first_available_variant.metafields.bold_rp.rp_group_id %} bold-hidden{% endif %}">
                                   {%- comment -%}button additional class before Mosheh's change
                                   {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
                                   {%- endcomment -%}
@@ -482,6 +488,11 @@
                       </div>
                   {% endif %}
              	  {% if product.id == 4373694283818 %}
+                <script>
+                  {%- comment -%} product page {%- endcomment -%}
+                  window.BOLD.common.Shopify.saveProduct({{ product.handle | json }}, {{ product.id | json }});
+                  {%- for variant in product.variants -%} window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, { product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{variant.metafields.bold_rp.rp_group_id}}'}); {%- endfor -%}
+                </script>
 	              {%- assign current_variant = product.selected_or_first_available_variant -%}
                     <div class="produtos-item">
                         <div class="img-wrapper"><div style="background-image:url('{{ product | img_url: '600x600' }}');"></div></div>
@@ -520,6 +531,7 @@
                                       <button type="button" class="qty-btn right"></button>
                                     </div>
                               </div>
+                              <div class="ro_widget"></div>
                          	  <div class="price-container"><span class="price-label">Total:</span><span class="price-number">{{ current_variant.price | money }}</span></div>
                           	  <div class="btn-container">
                                 <button 
@@ -527,7 +539,7 @@
                                     name="add" 
                                     data-add-to-cart 
                                     aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}" 
-                                    class="button product-form__cart-submit shopify-add-to-cart-button {% if product.selected_or_first_available_variant.metafields.bold_rp.rp_group_id %} bold-hidden{% endif %}">
+                                    class="button product-form__cart-submit shopify-add-to-cart-button addtocart {% if product.selected_or_first_available_variant.metafields.bold_rp.rp_group_id %} bold-hidden{% endif %}">
                                   {%- comment -%}button additional class before Mosheh's change
                                   {% if section.settings.enable_payment_button %} btn--secondary-accent{% endif %}
                                   {%- endcomment -%}
