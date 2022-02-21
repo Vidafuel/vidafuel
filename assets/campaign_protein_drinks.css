@@ -12,3 +12,55 @@ div:empty {
 .yotpo.testimonials {
     display: none;
 }
+
+.bold-ro__product .bold-ro__one-time-div {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #78ccc8;
+	border-radius: var(--border-radius-button);
+	margin-bottom: 1em;
+}
+.bold-ro__one-time-div,
+.bold-ro__recurring-div,
+.bold-ro__frequency-label,
+.bold-ro__mix-div {
+	color: #78ccc8;
+}
+
+.bold-ro__recurring-title {
+	display: none;
+}
+
+.bold-ro__see-details > .bold-ro__detail-tooltip {
+	position: absolute;
+	right: 1rem;
+	bottom: 2rem;
+}
+
+@media only screen and (min-width: 750px) {
+	.bold-ro__see-details {
+		bottom: 1.7rem;
+	}
+}
+
+.bold-ro__product {
+	position: relative;
+}
+
+.bold-ro__bold-active {
+	border-radius: var(--border-radius-button);
+}
+
+.bold-ro__radio-div input[type="radio"]:checked:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #78ccc8;
+	content: "";
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
