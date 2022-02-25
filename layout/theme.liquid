@@ -64,6 +64,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {% render 'meta-tags' %}
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'gtm-geo-ip.js' | asset_url }}"></script>
+
     {{ content_for_header }}
     {%- render 'bold-common' -%}
     {%- render 'bold-ro-init' -%}
