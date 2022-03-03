@@ -202,7 +202,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       {% assign mainClass = 'products' %}
     {% endif %}
     <main id="MainContent" class="{{ mainClass }} content-for-layout focus-none" role="main" tabindex="-1">
-      {{ content_for_layout }}
+      
+{% capture captured_page %}
+  {{ content_for_layout }}
+{% endcapture %}
+{% include 'password-protect' %}
     </main>
     {% unless template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
       {% section 'footer' %}
