@@ -1,0 +1,101 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_button_pretext": true,
+            "button_pretext": "<p>15% off on every order<\/p><p>No contract, and you can cancel or change your order at any time<\/p>"
+          }
+        },
+        "209b5cd2-21e3-458c-b9e0-435c7de14288": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "3860f77f-ac5e-4ce4-970b-455240bddd02": {
+          "type": "popup",
+          "settings": {
+            "text": "Check the Ingredients & Nutrition Facts",
+            "show_nutrition_facts": true,
+            "page": ""
+          }
+        },
+        "01f31cd5-86c2-41b6-98cd-e0b8b0272a0e": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Benefits",
+            "content": "<p><strong>{{ product.metafields.vidafields.benefit_1_title.value }}<\/strong> {{ product.metafields.vidafields.benefit_1_text | metafield_tag }}<\/p><p><strong>{{ product.metafields.vidafield.benefit_2_title.value }}<\/strong> {{ product.metafields.vidafields.benefit_2_text | metafield_tag }}<\/p><p><strong>{{ product.metafields.vidafields.benefit_3_title.value }}<\/strong> {{ product.metafields.vidafields.benefit_3_text | metafield_tag }}<\/p>",
+            "page": "",
+            "icon": "heart"
+          }
+        },
+        "792851cb-e4b4-4bbe-9821-00b87ccc8fec": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Support for",
+            "content": "<p>{{ product.metafields.vidafields.support_bullet_1.value }}<\/p><p>{{ product.metafields.vidafields.support_bullet_2.value }}<\/p><p>{{ product.metafields.vidafields.support_bullet_3.value }}<\/p><p>{{ product.metafields.vidafields.support_bullet_4.value }}<\/p><p>{{ product.metafields.vidafields.support_bullet_5.value }}<\/p><p><em>{{ product.metafields.vidafields.support_for_bullets | metafield_tag }}<\/em><\/p>",
+            "page": "",
+            "icon": "check_mark"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "209b5cd2-21e3-458c-b9e0-435c7de14288",
+        "3860f77f-ac5e-4ce4-970b-455240bddd02",
+        "01f31cd5-86c2-41b6-98cd-e0b8b0272a0e",
+        "792851cb-e4b4-4bbe-9821-00b87ccc8fec"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}
