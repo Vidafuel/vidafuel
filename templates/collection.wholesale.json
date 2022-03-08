@@ -9,6 +9,7 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid_wholesale",
+      "disabled": true,
       "settings": {
         "products_per_page": 16,
         "image_ratio": "adapt",
@@ -21,10 +22,148 @@
         "enable_sorting": true,
         "collapse_on_larger_devices": false
       }
+    },
+    "1646767150f081c63a": {
+      "type": "featured-product",
+      "blocks": {
+        "1646767150c62916c7-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "1646767150c62916c7-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "1646767150c62916c7-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "1646767150c62916c7-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "1646767150c62916c7-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "1646767150c62916c7-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "1646767150c62916c7-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "1646767150c62916c7-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "1646767150c62916c7-0",
+        "1646767150c62916c7-1",
+        "1646767150c62916c7-2",
+        "1646767150c62916c7-3",
+        "1646767150c62916c7-4",
+        "1646767150c62916c7-5",
+        "1646767150c62916c7-6",
+        "1646767150c62916c7-7"
+      ],
+      "settings": {
+        "product": "wholesale-wellness-protein-drink-berry-delight",
+        "secondary_background": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "164676717372ea54ab": {
+      "type": "featured-product",
+      "blocks": {
+        "1646767173096e122d-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "1646767173096e122d-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "1646767173096e122d-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "1646767173096e122d-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "1646767173096e122d-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "1646767173096e122d-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "1646767173096e122d-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "1646767173096e122d-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "1646767173096e122d-0",
+        "1646767173096e122d-1",
+        "1646767173096e122d-2",
+        "1646767173096e122d-3",
+        "1646767173096e122d-4",
+        "1646767173096e122d-5",
+        "1646767173096e122d-6",
+        "1646767173096e122d-7"
+      ],
+      "settings": {
+        "product": "wholesale-wellness-protein-drink-citrus-burst",
+        "secondary_background": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "1646767150f081c63a",
+    "164676717372ea54ab"
   ]
 }
