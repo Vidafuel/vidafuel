@@ -849,7 +849,7 @@
       "settings": {
         "product": {
           "label": "Product",
-          "info": "NOTE: This type of section only shows wholesale products on the front end."
+          "info": "NOTE: Before you use this section. This type of section is intended for wholesale products only."
         },
         "secondary_background": {
           "label": "Show secondary background"
