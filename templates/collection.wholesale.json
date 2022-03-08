@@ -24,7 +24,7 @@
       }
     },
     "1646767150f081c63a": {
-      "type": "featured-product",
+      "type": "featured-product_wholesale",
       "blocks": {
         "1646767150c62916c7-0": {
           "type": "text",
@@ -92,7 +92,7 @@
       }
     },
     "164676717372ea54ab": {
-      "type": "featured-product",
+      "type": "featured-product_wholesale",
       "blocks": {
         "1646767173096e122d-0": {
           "type": "text",
