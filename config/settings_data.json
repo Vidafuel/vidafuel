@@ -33,11 +33,10 @@
           },
           "230cd44c-c506-4349-a7fc-d2f3153f2caf": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "ENJOY 20% OFF SWEET SNACKS WITH CODE SWEETSNACKS20 UNTIL 3\/18",
               "color_scheme": "accent-2",
-              "link": ""
+              "link": "shopify:\/\/pages\/campaign-protein-drinks"
             }
           }
         },
@@ -80,7 +79,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "558381514691908246": {
+        "type": "shopify:\/\/apps\/volumeboost-volume-discount\/blocks\/app-embed\/25745434-52e7-4378-88f1-890df18a0110",
+        "disabled": true,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
