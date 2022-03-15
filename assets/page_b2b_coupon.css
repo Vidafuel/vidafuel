@@ -237,3 +237,7 @@ input:vvalid {
 .yotpo.testimonials {
     display: none;
 }
+
+.body.template-index #shopify-section-header  {
+  display:none !important;
+}
