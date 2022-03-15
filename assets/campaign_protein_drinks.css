@@ -64,3 +64,7 @@ div:empty {
 	visibility: visible;
 	border: 2px solid white;
 }
+   
+body.template-index #shopify-section-header .announcement-bar {
+  display:none;
+}
