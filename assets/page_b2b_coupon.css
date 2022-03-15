@@ -238,6 +238,6 @@ input:vvalid {
     display: none;
 }
 
-.body.template-index #shopify-section-header  {
-  display:none !important;
+.body.template-index #shopify-section-header .announcement-bar {
+  display:none;
 }
