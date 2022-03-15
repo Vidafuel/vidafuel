@@ -30,10 +30,19 @@
               "color_scheme": "accent-2",
               "link": "\/products"
             }
+          },
+          "230cd44c-c506-4349-a7fc-d2f3153f2caf": {
+            "type": "announcement",
+            "settings": {
+              "text": "Enjoy 20% off sweet snacks with code SWEETSNACKS20",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "230cd44c-c506-4349-a7fc-d2f3153f2caf"
         ],
         "settings": {
         }
