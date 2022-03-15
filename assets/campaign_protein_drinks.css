@@ -65,7 +65,7 @@ div:empty {
 	border: 2px solid white;
 }
    
-.body.template-index #shopify-section-header .announcement-bar {
+.announcement-bar {
   display:none;
 }
 
