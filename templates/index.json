@@ -295,56 +295,6 @@
         "full_width_section": true
       }
     },
-    "164078610945303f2d": {
-      "type": "image-with-text",
-      "blocks": {
-        "1640786109f60a207b-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Dietitian developed snacks",
-            "heading_font": "default",
-            "heading_size": "heading-1"
-          }
-        },
-        "1640786109f60a207b-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Convenient &<br\/>portion controlled<\/strong><\/p><p><strong>Controlled sugar,<br\/>sodium and fat<\/strong><\/p><p><strong>Only 80-120 calories<\/strong><\/p>",
-            "text_font": "default",
-            "text_size": "heading-3",
-            "text_color": "default",
-            "p_bullets": true
-          }
-        },
-        "1640786109f60a207b-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP SNACKS",
-            "button_link": "https:\/\/vidafuel.com\/products",
-            "button_font": "default",
-            "button_style_secondary": false,
-            "button_inverse": false
-          }
-        }
-      },
-      "block_order": [
-        "1640786109f60a207b-0",
-        "1640786109f60a207b-1",
-        "1640786109f60a207b-2"
-      ],
-      "settings": {
-        "section_id": "",
-        "image": "shopify:\/\/shop_images\/VidaFuel_Snacks.png",
-        "image_link": "",
-        "height": "small",
-        "color_scheme": "background-1",
-        "background_scheme": "mighty",
-        "layout": "image_first",
-        "section_width": "full_width",
-        "desktop_no_spacing": true,
-        "remove_top_margin": false
-      }
-    },
     "16420895372c7ae66d": {
       "type": "custom-liquid",
       "settings": {
@@ -360,7 +310,6 @@
     "1641834224a94d856f",
     "1639503887e884ceb3",
     "1639505258119ea558",
-    "164078610945303f2d",
     "16420895372c7ae66d"
   ]
 }
