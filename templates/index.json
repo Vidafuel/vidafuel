@@ -299,6 +299,7 @@
       "type": "video",
       "settings": {
         "heading": "Vidafuel Wellness Protein Drink delivers 17g of protein in a small 2oz shot",
+        "cover_image": "shopify:\/\/shop_images\/Vidafuel_2oz_shot_VS_Regular_Protein_Powders.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=foqV3s8GKJE",
         "description": "Video comparing Vidafuel with a regular protein powder.",
         "full_width": false
