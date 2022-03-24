@@ -74,6 +74,7 @@
 
 .blog__title {
   margin: 0;
+  text-align: center;
 }
 
 .blog__posts.articles-wrapper {
