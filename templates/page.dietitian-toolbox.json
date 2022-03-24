@@ -7,8 +7,72 @@
         "page_title_background": "shopify:\/\/shop_images\/icons-background.jpg"
       }
     },
+    "164813643934b647cf": {
+      "type": "image-banner",
+      "blocks": {
+        "16481364395d42de3f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dietitian Toolbox",
+            "heading_size": "medium"
+          }
+        },
+        "16481364395d42de3f-1": {
+          "type": "text",
+          "settings": {
+            "text": "Unique content to clinicians professionals to educate patients and improve their quality of life"
+          }
+        }
+      },
+      "block_order": [
+        "16481364395d42de3f-0",
+        "16481364395d42de3f-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/bgGreen_2x_c049ab59-d4c2-4d7b-a883-d8cfb4a04034.png",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "accent-2",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "16395061492d0dea2e": {
+      "type": "rich-text",
+      "blocks": {
+        "1639506149aa8c364f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Vidafuel Dietitian Toolbox",
+            "heading_size": "h1",
+            "heading_font": "trade_gothic_condensed_bold"
+          }
+        },
+        "1639506149aa8c364f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Vidafuel clinic team is constantly looking for ways to support our fellow clinicians in educating patients and, ultimately, <strong>improving outcomes and quality of life<\/strong>. The Dietitian Toolbox contains rich content, printable educational materials, and interactive guides created by our dietitians. <strong>All of these materials are free to download<\/strong> and available to anyone who wishes to use them.<\/p>",
+            "rich_text_size": "default"
+          }
+        }
+      },
+      "block_order": [
+        "1639506149aa8c364f-0",
+        "1639506149aa8c364f-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "text_align_center": true,
+        "text_color": "default"
+      }
+    },
     "1639156556f1f7aaff": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "163915655632d9adf3-0": {
           "type": "heading",
@@ -48,6 +112,7 @@
     },
     "163915671883655487": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "16391567181da7a84b-1": {
           "type": "column",
@@ -277,36 +342,6 @@
         "full_width": false
       }
     },
-    "16395061492d0dea2e": {
-      "type": "rich-text",
-      "blocks": {
-        "1639506149aa8c364f-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "ABOUT US",
-            "heading_size": "h1",
-            "heading_font": "trade_gothic_condensed_bold"
-          }
-        },
-        "1639506149aa8c364f-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Vidafuel is an outcomes-driven company dedicated to leading improvement in the nutritional therapy market. Our passionate team of dietitians and scientists leads development of best in class products that provide a superior nutritional profile and patient experience. Our mission is to educate, support and continue to develop innovative nutritional therapy products that enable patients to live longer, happier lives.<\/p>",
-            "rich_text_size": "default"
-          }
-        }
-      },
-      "block_order": [
-        "1639506149aa8c364f-0",
-        "1639506149aa8c364f-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "text_align_center": true,
-        "text_color": "default"
-      }
-    },
     "163950623206c4ca1f": {
       "type": "multicolumn",
       "blocks": {
@@ -442,17 +477,32 @@
         "icon_enable": false,
         "full_width_section": false
       }
+    },
+    "164814138497719715": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Dietitian Toolbox Content",
+        "blog": "nutrition-wellness",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": false,
+        "show_author": true,
+        "soft_background": true,
+        "show_view_all": true
+      }
     }
   },
   "order": [
     "main",
+    "164813643934b647cf",
+    "16395061492d0dea2e",
     "1639156556f1f7aaff",
     "163915671883655487",
     "164014386357a60c4a",
     "1640123076cbff58b5",
-    "16395061492d0dea2e",
     "163950623206c4ca1f",
     "164328693248fb79aa",
-    "1639506526d4856680"
+    "1639506526d4856680",
+    "164814138497719715"
   ]
 }
