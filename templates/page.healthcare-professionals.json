@@ -42,7 +42,7 @@
         "color_scheme": "accent-1",
         "background_scheme": "default",
         "layout": "text_first",
-        "section_width": "normal",
+        "section_width": "full_width",
         "desktop_no_spacing": false,
         "remove_top_margin": true
       }
