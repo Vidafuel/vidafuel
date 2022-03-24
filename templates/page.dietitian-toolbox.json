@@ -35,14 +35,13 @@
       ],
       "settings": {
         "section_id": "",
-        "image": "shopify:\/\/shop_images\/home-05.png",
-        "image_link": "shopify:\/\/products\/collagen-protein-drink-2-pack",
+        "image_link": "",
         "bk_image": "shopify:\/\/shop_images\/bgGreen_2x_c049ab59-d4c2-4d7b-a883-d8cfb4a04034.png",
         "height": "medium",
         "color_scheme": "accent-1",
         "background_scheme": "default",
         "layout": "text_first",
-        "section_width": "normal",
+        "section_width": "full_width",
         "desktop_no_spacing": false,
         "remove_top_margin": true
       }
