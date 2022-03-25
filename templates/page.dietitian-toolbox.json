@@ -442,7 +442,7 @@
         "flex_align_center": false,
         "desktop_no_spacing": false,
         "icon_enable": false,
-        "full_width_section": true
+        "full_width_section": false
       }
     },
     "163950623206c4ca1f": {
