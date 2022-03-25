@@ -403,7 +403,7 @@
             "image_url": "",
             "title": "<p>Hospitalization Passport<\/p>",
             "icon": "check_mark",
-            "text": "<p>Share with your renal patients in order to help them track important health information<\/p>",
+            "text": "<p>Share with your renal patients to help them track important health information<\/p>",
             "link_label": "Donwload the document",
             "link_type": "modal",
             "link": "",
