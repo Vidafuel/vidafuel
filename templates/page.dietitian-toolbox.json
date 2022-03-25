@@ -436,17 +436,18 @@
         "column_alignment": "left",
         "columns": "default",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
         "flex_align_center": false,
         "desktop_no_spacing": false,
         "icon_enable": false,
-        "full_width_section": false
+        "full_width_section": true
       }
     },
     "163950623206c4ca1f": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "163950623263ceff12-0": {
           "type": "column",
