@@ -596,6 +596,16 @@
         "soft_background": true,
         "show_view_all": true
       }
+    },
+    "1648202475d61fc8dd": {
+      "type": "video",
+      "settings": {
+        "heading": "Vidafuel Wellness Protein Drink delivers 17g of protein in a small 2oz shot",
+        "cover_image": "shopify:\/\/shop_images\/Vidafuel_2oz_shot_VS_Regular_Protein_Powders.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=foqV3s8GKJE",
+        "description": "",
+        "full_width": false
+      }
     }
   },
   "order": [
@@ -610,6 +620,7 @@
     "163950623206c4ca1f",
     "164328693248fb79aa",
     "1639506526d4856680",
-    "164814138497719715"
+    "164814138497719715",
+    "1648202475d61fc8dd"
   ]
 }
