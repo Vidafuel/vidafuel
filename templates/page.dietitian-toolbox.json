@@ -379,7 +379,7 @@
             "title": "<p>Osteopenia and Osteoporosis<\/p>",
             "icon": "check_mark",
             "text": "<p>What You Need to Know about Osteopenia and Osteoporosis<\/p>",
-            "link_label": "Donwload the document",
+            "link_label": "Download the document",
             "link_type": "modal",
             "link": "",
             "modal_liquid": "<div class=\"klaviyo-form-WjCPW7\"><\/div>",
@@ -404,7 +404,7 @@
             "title": "<p>Hospitalization Passport<\/p>",
             "icon": "check_mark",
             "text": "<p>Share with your renal patients to help them track important health information<\/p>",
-            "link_label": "Donwload the document",
+            "link_label": "Download the document",
             "link_type": "modal",
             "link": "",
             "modal_liquid": "<div class=\"klaviyo-form-SdVLKx\"><\/div>",
@@ -421,12 +421,38 @@
             "p_bullets_color": "#cdda01",
             "text_color_primary": false
           }
+        },
+        "2ba415b3-4242-4916-8f25-615afedc966f": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "<p>Protein as Protection<\/p>",
+            "icon": "check_mark",
+            "text": "<p>Download our free, ready-to-print guide to educate patients on how to protect themselves through adequate protein intake.<\/p>",
+            "link_label": "Download the document",
+            "link_type": "modal",
+            "link": "",
+            "modal_liquid": "<div class=\"klaviyo-form-YdhXGM\"><\/div>",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "text_color_primary": false
+          }
         }
       },
       "block_order": [
         "164814251216894cba-0",
         "164814251216894cba-1",
-        "164814251216894cba-2"
+        "164814251216894cba-2",
+        "2ba415b3-4242-4916-8f25-615afedc966f"
       ],
       "settings": {
         "title": "Printable Nutricional Materials",
