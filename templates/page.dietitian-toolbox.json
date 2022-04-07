@@ -70,280 +70,6 @@
         "text_color": "default"
       }
     },
-    "1639156556f1f7aaff": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "163915655632d9adf3-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Dietitian developed for compliance & optimal nutrition",
-            "heading_font": "trade_gothic_bold_condensed",
-            "heading_size": "heading-1"
-          }
-        },
-        "163915655632d9adf3-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>17g of complete protein in a 2oz shot<\/p>",
-            "text_font": "proxima_nova_light",
-            "text_size": "h2",
-            "text_color": "default",
-            "p_bullets": false
-          }
-        }
-      },
-      "block_order": [
-        "163915655632d9adf3-0",
-        "163915655632d9adf3-1"
-      ],
-      "settings": {
-        "section_id": "",
-        "image_link": "",
-        "bk_image": "shopify:\/\/shop_images\/bgGreen_2x_c049ab59-d4c2-4d7b-a883-d8cfb4a04034.png",
-        "height": "medium",
-        "color_scheme": "accent-1",
-        "background_scheme": "default",
-        "layout": "text_first",
-        "section_width": "full_width",
-        "desktop_no_spacing": false,
-        "remove_top_margin": true
-      }
-    },
-    "163915671883655487": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "16391567181da7a84b-1": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "<p>Small but Mighty<\/p>",
-            "icon": "none",
-            "text": "<p>Not all proteins are equal. See how Vidafuel is superior.<\/p>",
-            "link_label": "Amino Acid Profile",
-            "link_type": "modal",
-            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0922\/1906\/files\/VF_ProteinSpecificFlyer_Back_Aug_2021.jpg?v=1628250284",
-            "modal_image": "shopify:\/\/shop_images\/Vidafuel-Protein-Specific-Flyer.jpg",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "heading-2",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "text_color_primary": false
-          }
-        },
-        "16391567181da7a84b-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/shot_hand-horizontal.png",
-            "image_url": "",
-            "title": "",
-            "icon": "none",
-            "text": "",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "default",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "text_color_primary": false
-          }
-        },
-        "16391567181da7a84b-2": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "",
-            "icon": "none",
-            "text": "<p><strong>17g of complete protein in 2oz<br\/><\/strong>One shot per day it's all you need<\/p><p><strong>Whey + Collagen protein<br\/><\/strong>To support muscle mass & strength<\/p><p><strong>No artificial sweeteners, ever<\/strong><br\/>Patient approved taste<\/p><p><strong>Contains all 20 amino acids<\/strong><br\/>To keep immune system strong<\/p>",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#121212",
-            "title_font": "default",
-            "title_size": "default",
-            "text_font": "trade_gothic_bold",
-            "text_size": "heading-5",
-            "title_top": false,
-            "p_bullets": true,
-            "p_bullets_color": "#7bccc8",
-            "text_color_primary": true
-          }
-        }
-      },
-      "block_order": [
-        "16391567181da7a84b-1",
-        "16391567181da7a84b-0",
-        "16391567181da7a84b-2"
-      ],
-      "settings": {
-        "title": "",
-        "title_center": false,
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "columns": "default",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "flex_align_center": false,
-        "desktop_no_spacing": true,
-        "icon_enable": false,
-        "full_width_section": false
-      }
-    },
-    "164014386357a60c4a": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "1640143863f88f8f3f-0": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "<p>REQUEST 15% OFF FOR YOUR PATIENTS!<\/p>",
-            "icon": "none",
-            "text": "<p>Post Surgery Recovery<\/p><p>Cancer<\/p><p>CKD Dialysis<\/p><p>Geriatric Nutrition<\/p><p>Fitness \/ Athletics<\/p>",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": true,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "heading-2",
-            "text_font": "default",
-            "text_size": "heading-5",
-            "title_top": false,
-            "p_bullets": true,
-            "p_bullets_color": "#121212",
-            "text_color_primary": false
-          }
-        },
-        "1640143863f88f8f3f-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/image-hero-banner-coupon.png",
-            "image_url": "",
-            "title": "",
-            "icon": "check_mark",
-            "text": "",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "default",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "text_color_primary": false
-          }
-        },
-        "1640143863f88f8f3f-2": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "<p>FILL OUT THE FORM TO GET A COUPON<br\/>FOR YOUR PATIENTS<\/p>",
-            "icon": "check_mark",
-            "text": "",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/shell.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"19971200\",\n    formId: \"03a444a5-8a44-42ff-b7bd-34263b9df190\"\n  });\n<\/script>",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "default",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "text_color_primary": false
-          }
-        }
-      },
-      "block_order": [
-        "1640143863f88f8f3f-0",
-        "1640143863f88f8f3f-1",
-        "1640143863f88f8f3f-2"
-      ],
-      "settings": {
-        "title": "",
-        "title_center": false,
-        "image_width": "full",
-        "image_ratio": "square",
-        "column_alignment": "left",
-        "columns": "default",
-        "background_style": "gradient-1",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "flex_align_center": true,
-        "desktop_no_spacing": true,
-        "icon_enable": false,
-        "full_width_section": false
-      }
-    },
-    "1640123076cbff58b5": {
-      "type": "collage",
-      "disabled": true,
-      "blocks": {
-        "164012307670ab9899-0": {
-          "type": "video",
-          "settings": {
-            "cover_image": "shopify:\/\/shop_images\/Vidafuel-Wellness-Protein-Tutorial.jpg",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=B5wCtpjZWR4",
-            "description": "Describe the video",
-            "image_padding": false,
-            "video_small_desktop": true
-          }
-        }
-      },
-      "block_order": [
-        "164012307670ab9899-0"
-      ],
-      "settings": {
-        "heading": "",
-        "desktop_layout": "left",
-        "background_color_scheme": "default",
-        "mobile_layout": "collage",
-        "remove_top_spacing": false,
-        "full_width": false
-      }
-    },
     "16481425123ff6eb5a": {
       "type": "multicolumn",
       "blocks": {
@@ -351,13 +77,63 @@
           "type": "column",
           "settings": {
             "image_url": "",
-            "title": "<p>Bone Health Information<\/p>",
+            "title": "<p>Bone Health<\/p>",
             "icon": "check_mark",
-            "text": "<p>Risk Factors for Weak Bones and Waht Can Do<\/p>",
+            "text": "<p>Nutrition and exercise guides for supporting bone strength & health.<\/p>",
             "link_label": "Download the document",
             "link_type": "modal",
             "link": "",
             "modal_liquid": "<div class=\"klaviyo-form-YnGeGQ\"><\/div>",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "e554d5e0-b8a2-44fc-b90f-145d8440659d": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "<p>Protein 101 Guide<br\/>& Crossword Puzzle<\/p>",
+            "icon": "none",
+            "text": "<p>A quick and easy guide on what protein is and why it matters to you.<\/p>",
+            "link_label": "Download the document",
+            "link_type": "modal",
+            "link": "",
+            "modal_liquid": "<div class=\"klaviyo-form-WGH6Rj\"><\/div>",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "2ba415b3-4242-4916-8f25-615afedc966f": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "<p>Protein as Protection<\/p>",
+            "icon": "check_mark",
+            "text": "<p>Educate patients on how to protect<br\/>themselves through adequate protein intake.<\/p>",
+            "link_label": "Download the document",
+            "link_type": "modal",
+            "link": "",
+            "modal_liquid": "<div class=\"klaviyo-form-YdhXGM\"><\/div>",
             "custom_liquid": "",
             "liquid_background": "#ffffff",
             "column_custom_text_color": false,
@@ -422,31 +198,6 @@
             "text_color_primary": false
           }
         },
-        "2ba415b3-4242-4916-8f25-615afedc966f": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "<p>Protein as Protection<\/p>",
-            "icon": "check_mark",
-            "text": "<p>Download our free, ready-to-print guide to educate patients on how to protect themselves through adequate protein intake.<\/p>",
-            "link_label": "Download the document",
-            "link_type": "modal",
-            "link": "",
-            "modal_liquid": "<div class=\"klaviyo-form-YdhXGM\"><\/div>",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "default",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "text_color_primary": false
-          }
-        },
         "3f7b2f6e-6d4d-4472-82ed-6ac90ce575e5": {
           "type": "column",
           "settings": {
@@ -471,40 +222,15 @@
             "p_bullets_color": "#cdda01",
             "text_color_primary": false
           }
-        },
-        "e554d5e0-b8a2-44fc-b90f-145d8440659d": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "<p>Protein 101: What it is, and why it<br\/>matters to you<\/p>",
-            "icon": "none",
-            "text": "<p>Download our free, ready-to-print guide to help your patients incorporate protein into their daily consumption.<\/p>",
-            "link_label": "Download the document",
-            "link_type": "modal",
-            "link": "",
-            "modal_liquid": "<div class=\"klaviyo-form-WGH6Rj\"><\/div>",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "default",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "text_color_primary": false
-          }
         }
       },
       "block_order": [
         "164814251216894cba-0",
+        "e554d5e0-b8a2-44fc-b90f-145d8440659d",
+        "2ba415b3-4242-4916-8f25-615afedc966f",
         "164814251216894cba-1",
         "164814251216894cba-2",
-        "2ba415b3-4242-4916-8f25-615afedc966f",
-        "3f7b2f6e-6d4d-4472-82ed-6ac90ce575e5",
-        "e554d5e0-b8a2-44fc-b90f-145d8440659d"
+        "3f7b2f6e-6d4d-4472-82ed-6ac90ce575e5"
       ],
       "settings": {
         "title": "Printable Materials",
@@ -514,145 +240,6 @@
         "column_alignment": "left",
         "columns": "default",
         "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "flex_align_center": false,
-        "desktop_no_spacing": false,
-        "icon_enable": false,
-        "full_width_section": false
-      }
-    },
-    "163950623206c4ca1f": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "163950623263ceff12-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/vidafuel-white-paper_3c400647-fb84-4248-94ea-41afe449eab8.jpg",
-            "image_url": "",
-            "title": "<p>White Paper: Use Of Oral Nutrition Supplements (Ons) To Reduce Missed Dialysis Treatments<\/p>",
-            "icon": "none",
-            "text": "",
-            "link_label": "DOWNLOAD",
-            "link_type": "modal",
-            "link": "",
-            "modal_liquid": "<div class=\"klaviyo-form-TaCVan\"><\/div>",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "heading-3",
-            "text_font": "default",
-            "text_size": "heading-3",
-            "title_top": true,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "text_color_primary": false
-          }
-        },
-        "163950623263ceff12-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/VidaFuel-Protein-with-cup.jpg",
-            "image_url": "",
-            "title": "<p>Shop our best-selling <br\/>Protein Drinks!<\/p>",
-            "icon": "none",
-            "text": "",
-            "link_label": "SHOP NOW",
-            "link_type": "link",
-            "link": "\/products",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "heading-3",
-            "text_font": "default",
-            "text_size": "heading-3",
-            "title_top": true,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "text_color_primary": false
-          }
-        }
-      },
-      "block_order": [
-        "163950623263ceff12-0",
-        "163950623263ceff12-1"
-      ],
-      "settings": {
-        "title": "",
-        "title_center": false,
-        "image_width": "third",
-        "image_ratio": "portrait",
-        "column_alignment": "center",
-        "columns": "default",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "flex_align_center": false,
-        "desktop_no_spacing": false,
-        "icon_enable": false,
-        "full_width_section": false
-      }
-    },
-    "164328693248fb79aa": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"HEALTHCARE PROFESSIONALS REVIEWS\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"148676332,129641652,182466233\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"1\" \n data-autoplay-speed=\"4000\">&nbsp;<\/div>",
-        "custom_background": false,
-        "background_color": "#ffffff",
-        "full_width": false
-      }
-    },
-    "1639506526d4856680": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "16395065260cbd3902-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/metro-medical.png",
-            "image_url": "",
-            "title": "<p>DISTRIBUTED BY<\/p>",
-            "icon": "check_mark",
-            "text": "",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "default",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "text_color_primary": false
-          }
-        }
-      },
-      "block_order": [
-        "16395065260cbd3902-0"
-      ],
-      "settings": {
-        "title": "",
-        "title_center": false,
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "center",
-        "columns": "default",
-        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
@@ -690,14 +277,7 @@
     "main",
     "164813643934b647cf",
     "16395061492d0dea2e",
-    "1639156556f1f7aaff",
-    "163915671883655487",
-    "164014386357a60c4a",
-    "1640123076cbff58b5",
     "16481425123ff6eb5a",
-    "163950623206c4ca1f",
-    "164328693248fb79aa",
-    "1639506526d4856680",
     "164814138497719715",
     "1648202475d61fc8dd"
   ]
