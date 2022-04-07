@@ -16,17 +16,10 @@
             "heading": "Dietitian Toolbox",
             "heading_size": "medium"
           }
-        },
-        "16481364395d42de3f-1": {
-          "type": "text",
-          "settings": {
-            "text": "Unique content to clinicians professionals to educate patients and improve their quality of life"
-          }
         }
       },
       "block_order": [
-        "16481364395d42de3f-0",
-        "16481364395d42de3f-1"
+        "16481364395d42de3f-0"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/bgGreen_2x_c049ab59-d4c2-4d7b-a883-d8cfb4a04034.png",
@@ -46,7 +39,7 @@
         "1639506149aa8c364f-0": {
           "type": "heading",
           "settings": {
-            "heading": "Toolbox For Health and Nutrition Professionals",
+            "heading": "Free Educational Material Created by Dietitians",
             "heading_size": "h1",
             "heading_font": "trade_gothic_condensed_bold"
           }
@@ -179,7 +172,7 @@
             "image_url": "",
             "title": "<p>Osteopenia and Osteoporosis<\/p>",
             "icon": "check_mark",
-            "text": "<p>What You Need to Know about Osteopenia and Osteoporosis<\/p>",
+            "text": "<p>A guide on prevention, detection and the latest research findings.<\/p>",
             "link_label": "Download the document",
             "link_type": "modal",
             "link": "",
