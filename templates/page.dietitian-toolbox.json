@@ -215,6 +215,31 @@
             "p_bullets_color": "#cdda01",
             "text_color_primary": false
           }
+        },
+        "1113ca4a-ba4c-456a-b9a9-2b87263027aa": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "<p>DIY Bulletin Board on Bone<br\/>Health<\/p>",
+            "icon": "check_mark",
+            "text": "<p>A quick way to add educational<br\/>material to your clinic lobby<\/p>",
+            "link_label": "Check the Documents",
+            "link_type": "link",
+            "link": "https:\/\/vidafuel.com\/blogs\/nutrition-wellness\/dietitian-toolbox-diy-bulletin-board-on-bone-health",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "text_color_primary": false
+          }
         }
       },
       "block_order": [
@@ -223,7 +248,8 @@
         "2ba415b3-4242-4916-8f25-615afedc966f",
         "3f7b2f6e-6d4d-4472-82ed-6ac90ce575e5",
         "164814251216894cba-1",
-        "164814251216894cba-2"
+        "164814251216894cba-2",
+        "1113ca4a-ba4c-456a-b9a9-2b87263027aa"
       ],
       "settings": {
         "title": "Printable Materials",
