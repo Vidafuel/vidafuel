@@ -23,7 +23,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/bgGreen_2x_c049ab59-d4c2-4d7b-a883-d8cfb4a04034.png",
-        "image_height": "small",
+        "image_height": "xsmall",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": false,
@@ -48,7 +48,7 @@
           "type": "text",
           "settings": {
             "text": "<p>The Vidafuel clinic team is constantly looking for ways to support our fellow clinicians in educating patients and, ultimately, <strong>improving outcomes and quality of life<\/strong>. The Dietitian Toolbox contains rich content, printable educational materials, and interactive guides created by our dietitians. <strong>All of these materials are free to download<\/strong> and available to anyone who wishes to use them.<\/p>",
-            "rich_text_size": "default"
+            "rich_text_size": "lg"
           }
         }
       },
@@ -228,7 +228,7 @@
             "link": "https:\/\/vidafuel.com\/blogs\/nutrition-wellness\/dietitian-toolbox-diy-bulletin-board-on-bone-health",
             "modal_liquid": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "column_custom_text_color": false,
             "copy_color": "#000000",
             "title_font": "default",

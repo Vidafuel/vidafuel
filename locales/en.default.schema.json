@@ -1025,9 +1025,9 @@
         },
         "image_height": {
           "label": "Banner height",
-        "options__1": {
+          "options__1": {
             "label": "xSmall"
-        },
+          },
           "options__2": {
             "label": "Small"
           },
