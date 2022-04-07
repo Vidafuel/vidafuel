@@ -484,7 +484,7 @@
             "link": "",
             "modal_liquid": "<div class=\"klaviyo-form-WGH6Rj\"><\/div>",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "column_custom_text_color": false,
             "copy_color": "#000000",
             "title_font": "default",
@@ -507,7 +507,7 @@
         "e554d5e0-b8a2-44fc-b90f-145d8440659d"
       ],
       "settings": {
-        "title": "Printable Nutricional Materials",
+        "title": "Printable Materials",
         "title_center": true,
         "image_width": "full",
         "image_ratio": "adapt",
