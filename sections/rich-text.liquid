@@ -12,7 +12,7 @@
           {%- when 'heading' -%}
             <h2 class="{{ block.settings.heading_size }} {% if block.settings.heading_font != 'default' %}{{ block.settings.heading_font }}{% endif %}{% if section.settings.text_color != 'default' %} {{ section.settings.text_color }}{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
           {%- when 'text' -%}
-            <div class="rich-text__text{% if block.settings.rich_text_size == 'small' %} small{% endif %}{% if section.settings.text_color != 'default' %} {{ section.settings.text_color }}{% endif %} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+            <div class="rich-text__text{% if block.settings.rich_text_size != 'default' %} {{ block.settings.rich_text_size }}{% endif %}{% if section.settings.text_color != 'default' %} {{ section.settings.text_color }}{% endif %} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
           {%- when 'button' -%}
             <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
               {{ block.settings.button_label | escape }}
@@ -193,8 +193,16 @@
               "label": "Default"
             },
             {
-              "value": "small",
+              "value": "sm",
               "label": "Small"
+            },
+            {
+              "value": "md",
+              "label": "Medium"
+            },
+            {
+              "value": "lg",
+              "label": "Large"
             }
           ],
           "default": "default",

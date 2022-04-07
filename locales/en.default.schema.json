@@ -1025,13 +1025,16 @@
         },
         "image_height": {
           "label": "Banner height",
-          "options__1": {
+        "options__1": {
+            "label": "xSmall"
+        },
+          "options__2": {
             "label": "Small"
           },
-          "options__2": {
+          "options__3": {
             "label": "Medium"
           },
-          "options__3": {
+          "options__4": {
             "label": "Large"
           },
           "info": "For best results, use an image with a 3:2 aspect ratio. [Learn more](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
@@ -2983,6 +2986,21 @@
           "settings": {
             "text": {
               "label": "Description"
+            },
+            "rich_text_size": {
+              "label": "Rich text size",
+              "options__1": {
+                "label": "Default"
+              },
+              "options__2": {
+                "label": "Small"
+              },
+              "options__3": {
+                "label": "Medium"
+              },
+              "options__4": {
+                "label": "Large"
+              }
             }
           }
         },
