@@ -148,6 +148,31 @@
             "text_color_primary": false
           }
         },
+        "3f7b2f6e-6d4d-4472-82ed-6ac90ce575e5": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "<p>How to Choose a Protein Supplement<\/p>",
+            "icon": "none",
+            "text": "<p>A guide to help your patients choose the right protein supplement for their needs<\/p>",
+            "link_label": "Download the document",
+            "link_type": "modal",
+            "link": "",
+            "modal_liquid": "<div class=\"klaviyo-form-TpmmvQ\"><\/div>",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
         "164814251216894cba-1": {
           "type": "column",
           "settings": {
@@ -197,40 +222,15 @@
             "p_bullets_color": "#cdda01",
             "text_color_primary": false
           }
-        },
-        "3f7b2f6e-6d4d-4472-82ed-6ac90ce575e5": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "<p>How to Choose a Protein Supplement<\/p>",
-            "icon": "none",
-            "text": "<p>Download our free, ready-to-print guide to help your patients choose the right protein supplement for their needs.<\/p>",
-            "link_label": "Download the document",
-            "link_type": "modal",
-            "link": "",
-            "modal_liquid": "<div class=\"klaviyo-form-TpmmvQ\"><\/div>",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "default",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "text_color_primary": false
-          }
         }
       },
       "block_order": [
         "164814251216894cba-0",
         "e554d5e0-b8a2-44fc-b90f-145d8440659d",
         "2ba415b3-4242-4916-8f25-615afedc966f",
+        "3f7b2f6e-6d4d-4472-82ed-6ac90ce575e5",
         "164814251216894cba-1",
-        "164814251216894cba-2",
-        "3f7b2f6e-6d4d-4472-82ed-6ac90ce575e5"
+        "164814251216894cba-2"
       ],
       "settings": {
         "title": "Printable Materials",
