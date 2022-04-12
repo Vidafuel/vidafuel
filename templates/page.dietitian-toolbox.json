@@ -74,7 +74,7 @@
             "icon": "check_mark",
             "text": "<p>Nutrition and exercise guides for supporting bone strength & health.<\/p>",
             "link_label": "Download the document",
-            "link_type": "modal",
+            "link_type": "link",
             "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0922\/1906\/files\/Dietitian_BoneHealth_Bulletin.pdf?v=1626261954",
             "modal_liquid": "",
             "custom_liquid": "",
