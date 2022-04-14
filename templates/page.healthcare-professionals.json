@@ -388,7 +388,7 @@
     "164328693248fb79aa": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"337882256,129641668,177810157,129641815,150141923\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"1\" \n data-autoplay-speed=\"7500\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"337882256,129641668,177810157,129641815,150141923,129641641\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"1\" \n data-autoplay-speed=\"7500\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
         "custom_background": false,
         "background_color": "#ffffff",
         "full_width": false
