@@ -902,6 +902,6 @@ a.product__text {
 	margin-left: -1em;
 }
 
-.landing-page-section .protein-drink-section .produtos-list .produtos-item .produto-item-title {
+.product.title {
   font-size=25px
 }
