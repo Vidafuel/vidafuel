@@ -446,7 +446,7 @@
                                   </div>
                                 {% endfor %}
                               {% endunless %}
-                              <select name="id" class="product-form__variants no-js">
+                              <! –– and the comment closes with ––> <select name="id" class="product-form__variants no-js">
                                 {% for variant in product.variants %}
                                 {% if variant.available %}
                                 <option data-price="{{ variant.price | money }}" {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} value="{{ variant.id }}">
@@ -456,7 +456,7 @@
                                 <option data-price="{{ variant.price | money }}" disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
                                 {% endif %}
                                 {% endfor %}
-                              </select>
+                              </select><! –– /and the comment closes with ––>
                               <div class="produto-qty-container">
                                     <div class="produto-small-label">Quantity</div>
                                     <div class="inner">
