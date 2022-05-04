@@ -65,3 +65,7 @@ div:empty {
 	border: 2px solid white;
 }
    
+
+.product-form__item select {
+  display: none;
+}
