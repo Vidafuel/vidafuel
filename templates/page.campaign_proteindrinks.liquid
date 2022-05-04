@@ -430,7 +430,7 @@
 	              {%- assign current_variant = product.selected_or_first_available_variant -%}
                       <div class="produtos-item">
                         <div class="img-wrapper"><div style="background-image:url('{{ product | img_url: '600x600' }}');"></div></div>
-                        <div font-size=25px class="produto-item-title">{{ product.title }}</div>
+                        <div class="produto-item-title">{{ product.title }}</div>
                           {% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
                               {% unless product.has_only_default_variant %}
                                 {% for option in product.options_with_values %}
