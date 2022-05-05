@@ -765,7 +765,7 @@ a.product__text {
 .product-popup-modal__content {
 	background-color: rgb(var(--color-background));
 	overflow: auto;
-	height: 80%;
+	height: auto;
 	margin: 0 auto;
 	left: 50%;
 	transform: translateX(-50%);
