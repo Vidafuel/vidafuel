@@ -64,8 +64,3 @@ div:empty {
 	visibility: visible;
 	border: 2px solid white;
 }
-  
-  
-.landing-page-section .ro_widget {
-  display: none;
-}
