@@ -64,8 +64,8 @@ div:empty {
 	visibility: visible;
 	border: 2px solid white;
 }
-   
-
-.product-form__item select {
+  
+  
+//.product-form__item select {
   display: none;
 }
