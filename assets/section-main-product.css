@@ -907,7 +907,7 @@ a.product__text {
 }
   
   .product-popup-modal__content img {
-  max-width: 400px;
+  max-width: 500px;
 }
 .product-popup-modal__content-info {
   display: flex;
