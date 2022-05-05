@@ -38,3 +38,11 @@
   width: 1.4rem;
   margin-right: 1rem;
 }
+
+.product-popup-modal__content img {
+  max-width: 400px;
+}
+.product-popup-modal__content-info {
+  display: flex;
+  align-items: center;
+}
