@@ -905,3 +905,11 @@ a.product__text {
 .data-name {
   font-size: 15px
 }
+  
+  .product-popup-modal__content img {
+  max-width: 400px;
+}
+.product-popup-modal__content-info {
+  display: flex;
+  align-items: center;
+}
