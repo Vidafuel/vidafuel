@@ -642,13 +642,12 @@
     ]
   }
   
-      {%- unless YOPTO_Review_Count == 0 %}
-          "aggregateRating": [
-            "@type": "AggregateRating",
-            "ratingValue": "{{ YOPTO_Rating }}",
-            "reviewCount": "{{ YOPTO_Review_Count }}"
-          ],
- {%- endunless %}
+
+  "aggregateRating": {
+     "@type": "AggregateRating",
+     "ratingValue": "{{ review_rating }}",
+     "reviewCount": "{{ review_count }}"
+  },
   
   
   
