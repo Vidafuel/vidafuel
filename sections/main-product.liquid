@@ -640,18 +640,18 @@
         }{% unless forloop.last %},{% endunless %}
       {%- endfor -%}
     ]
-    
-    
-    {%- unless YOPTO_Review_Count == 0 %}
+  }
+  
+      {%- unless YOPTO_Review_Count == 0 %}
           "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "{{ YOPTO_Rating }}",
             "reviewCount": "{{ YOPTO_Review_Count }}"
           },
  {%- endunless %}
-    
-    
-  }
+  
+  
+  
 </script>
 {%- comment -%} YOTPO APP WIDGET {%- endcomment -%}
 <div class="yotpo yotpo-main-widget" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}"
