@@ -352,7 +352,7 @@
 	align-self: center;
 	fill: rgb(var(--color-foreground));
 	height: calc(var(--font-heading-scale) * 2.6rem);
-	margin-right: calc(var(--font-heading-scale) * -0.9rem);
+	margin-right: calc(var(--font-heading-scale) * 0.8rem);
 	width: calc(var(--font-heading-scale) * 2.6rem);
 }
 /* modal */
