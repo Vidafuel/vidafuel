@@ -83,9 +83,9 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
+            <h1 class="banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
               <span>{{ block.settings.heading | escape }}</span>
-            </h2>
+            </h1>
           {%- when 'text' -%}
             <div class="banner__text" {{ block.shopify_attributes }}>
               <span>{{ block.settings.text | escape }}</span>
