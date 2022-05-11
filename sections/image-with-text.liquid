@@ -104,9 +104,9 @@
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'heading' -%}
-              <h2 class="image-with-text__heading {% if block.settings.heading_font != 'default' %}{{ block.settings.heading_font }}{% endif %}{% if block.settings.heading_size != 'default' %} {{ block.settings.heading_size }}{% endif %}" {{ block.shopify_attributes }}>
+              <h1 class="image-with-text__heading {% if block.settings.heading_font != 'default' %}{{ block.settings.heading_font }}{% endif %}{% if block.settings.heading_size != 'default' %} {{ block.settings.heading_size }}{% endif %}" {{ block.shopify_attributes }}>
                 {{ block.settings.heading | escape }}
-              </h2>
+              </h1>
             {%- when 'text' -%}
               <div class="image-with-text__text rte{% if block.settings.text_font != 'default' %} {{ block.settings.text_font }}{% endif %}{% if block.settings.text_size != 'default' %} {{ block.settings.text_size }}{% endif %}{% if block.settings.text_color != 'default' %} {{ block.settings.text_color }}{% endif %}{% if block.settings.p_bullets %} p_bullets{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
