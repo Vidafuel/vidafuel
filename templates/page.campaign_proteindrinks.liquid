@@ -1,6 +1,11 @@
 <link rel="stylesheet" href="{{ 'page-home.css' | asset_url }}">
 <link rel="stylesheet" href="{{ 'campaign_protein_drinks.css' | asset_url }}">
-
+  {{ 'component-product-model.css' | asset_url | stylesheet_tag }}
+  <link id="ModelViewerStyle" rel="stylesheet"
+    href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print"
+    onload="this.media='all'">
+  <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print"
+    onload="this.media='all'">
 <style>
   .announcement-bar {
   	display:none;
@@ -198,6 +203,11 @@
         <div class="grid-container">
           <div class="hide-on-desktop hide-on-ls-tablet hide-on-pt-tablet banner-extra">
             <div class="banner-img"><img src="{{ 'cpd_banner_image_mobile.png' | asset_url }}" alt="Banner"></div>
+            <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-proteindrinks" {{
+              block.shopify_attributes }}>
+              <button id="ProductPopup-proteindrinks" class="product-popup-modal__button link" type="button"
+                aria-haspopup="dialog">Check Nutrition Facts</button>
+            </modal-opener>
           </div>
           <div class="desktop-40 desktop-push-5 ls-tablet-40 ls-tablet-push-5 pt-tablet-50 pt-tablet-push-5 banner-left">
             <div class="banner-info-container">
@@ -215,6 +225,11 @@
           </div>
           <div class="desktop-50 desktop-push-10 ls-tablet-50 ls-tablet-push-5 pt-tablet-45 pt-tablet-push-5 banner-right hide-on-ls-phone hide-on-pt-phone">
             <div class="banner-img"><img class="hide-on-pt-tablet hide-on-ls-phone" src="{{ 'cpd_banner_image.png' | asset_url }}" alt="Banner"><img class="hide-on-desktop hide-on-ls-tablet" src="{{ 'cpd_banner_image_mobile.png' | asset_url }}" alt="Banner"></div>
+              <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-proteindrinks" {{
+                block.shopify_attributes }}>
+                <button id="ProductPopup-proteindrinks" class="product-popup-modal__button link" type="button"
+                  aria-haspopup="dialog">Check Nutrition Facts</button>
+              </modal-opener>
           </div>
         </div>
       </div>
@@ -349,19 +364,24 @@
           <div class="desktop-80 desktop-push-10 ls-tablet-100 ls-tablet-push-0 pt-tablet-100 pt-tablet-push-0">
             <div class="protein-title">Wellness Protein Drink</div>
             <div class="protein-subtitle">Save 15% your first order, use promocode: FIRSTORDER15%</div>
+            <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-proteindrinks" {{
+              block.shopify_attributes }}>
+              <button id="ProductPopup-proteindrinks" class="product-popup-modal__button link" type="button"
+                aria-haspopup="dialog">Check Nutrition Facts</button>
+            </modal-opener>
             <div class="produtos-list">
                 {% for product in collections.all.products %}
 	            	{% if product.id == 1928836186154 %}
                 <script>
                   {%- comment -%} product page {%- endcomment -%}
                   window.BOLD.common.Shopify.saveProduct({{ product.handle | json }}, {{ product.id | json }});
-                  {%- for variant in product.variants -%} window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, { product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{variant.metafields.bold_rp.rp_group_id}}'}); {%- endfor -%}
+                  {%- for variant in product.variants -%} window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, { product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{ variant.metafields.bold_rp.rp_group_id }}'}); {%- endfor -%}
                 </script>
 	                {%- assign current_variant = product.selected_or_first_available_variant -%}
 		               <div class="produtos-item">
-                         <div class="img-wrapper"><div style="background-image:url('{{ product | img_url: '600x600' }}');"></div></div>
+                         <div class="img-wrapper"><div style="background-image:url('{{ product | image_url: width: 600, height: 600 }}');"></div></div>
                             <div class="produto-item-title">{{ product.title }}</div>
-	                       {% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
+	                       {% form 'product', product, class: 'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
                          	  {% unless product.has_only_default_variant %}
                                 {% for option in product.options_with_values %}
                                   <div class="selector-wrapper js product-form__item">
@@ -425,13 +445,13 @@
                 <script>
                   {%- comment -%} product page {%- endcomment -%}
                   window.BOLD.common.Shopify.saveProduct({{ product.handle | json }}, {{ product.id | json }});
-                  {%- for variant in product.variants -%} window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, { product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{variant.metafields.bold_rp.rp_group_id}}'}); {%- endfor -%}
+                  {%- for variant in product.variants -%} window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, { product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{ variant.metafields.bold_rp.rp_group_id }}'}); {%- endfor -%}
                 </script>
 	              {%- assign current_variant = product.selected_or_first_available_variant -%}
                       <div class="produtos-item">
-                        <div class="img-wrapper"><div style="background-image:url('{{ product | img_url: '600x600' }}');"></div></div>
+                        <div class="img-wrapper"><div style="background-image:url('{{ product | image_url: width: 600, height: 600 }}');"></div></div>
                         <div class="produto-item-title">{{ product.title }}</div>
-                          {% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
+                          {% form 'product', product, class: 'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
                               {% unless product.has_only_default_variant %}
                                 {% for option in product.options_with_values %}
                                   <div class="selector-wrapper js product-form__item">
@@ -495,13 +515,13 @@
                 <script>
                   {%- comment -%} product page {%- endcomment -%}
                   window.BOLD.common.Shopify.saveProduct({{ product.handle | json }}, {{ product.id | json }});
-                  {%- for variant in product.variants -%} window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, { product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{variant.metafields.bold_rp.rp_group_id}}'}); {%- endfor -%}
+                  {%- for variant in product.variants -%} window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, { product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{ variant.metafields.bold_rp.rp_group_id }}'}); {%- endfor -%}
                 </script>
 	              {%- assign current_variant = product.selected_or_first_available_variant -%}
                     <div class="produtos-item">
-                        <div class="img-wrapper"><div style="background-image:url('{{ product | img_url: '600x600' }}');"></div></div>
+                        <div class="img-wrapper"><div style="background-image:url('{{ product | image_url: width: 600, height: 600 }}');"></div></div>
                         <div class="produto-item-title">{{ product.title }}</div>
-                        {% form 'product', product, class:'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
+                        {% form 'product', product, class: 'product-form product-form-product-template product-form--payment-button-no-variants', novalidate: 'novalidate', data-product-form: '' %}
 							{% unless product.has_only_default_variant %}
                                 {% for option in product.options_with_values %}
                                   <div class="selector-wrapper js product-form__item">
@@ -707,10 +727,63 @@
     <div class="powered-by">Powered by Shopify</div>
   </footer>
 </body>
+    <modal-dialog id="PopupModal-proteindrinks" class="product-popup-modal" {{ block.shopify_attributes }}>
+      <div role="dialog" aria-label="{{ block.settings.text }}" aria-modal="true" class="product-popup-modal__content"
+        tabindex="-1">
+        <button id="ModalClose-proteindrinks" type="button" class="product-popup-modal__toggle"
+          aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
+        <div class="product-popup-modal__content-info">
+            <img
+              src="{{ 'citrus-berry-delight-nutrition-facts.jpg' | file_url }}"
+              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: 0.64 | round }}px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
+              loading="lazy" width="576" height="100%" alt="citrus berry delight nutrition facts">
+         
+        </div>
+      </div>
+    </modal-dialog>
 <script src="{{ 'cpd_plugins.js' | asset_url }}"></script>
 <script>
-  $(document).ready(function() {
+  class ProductModal extends ModalDialog {
+  constructor() {
+  super();
+  }
 
+  hide() {
+  super.hide();
+  }
+
+  show(opener) {
+  super.show(opener);
+  this.showActiveMedia();
+  }
+
+  showActiveMedia() {
+  this.querySelectorAll(`[data-media-id]:not([data-media-id="${this.openedBy.getAttribute("data-media-id")}"])`).forEach((element)
+  => {
+  element.classList.remove('active');
+  }
+  )
+  const activeMedia = this.querySelector(`[data-media-id="${this.openedBy.getAttribute("data-media-id")}"]`);
+  const activeMediaTemplate = activeMedia.querySelector('template');
+  const activeMediaContent = activeMediaTemplate ? activeMediaTemplate.content : null;
+  activeMedia.classList.add('active');
+  activeMedia.scrollIntoView();
+
+  const container = this.querySelector('[role="document"]');
+  container.scrollLeft = (activeMedia.width - container.clientWidth) / 2;
+
+  if (activeMedia.nodeName == 'DEFERRED-MEDIA' && activeMediaContent && activeMediaContent.querySelector('.js-youtube'))
+  activeMedia.loadContent();
+  }
+  }
+
+  customElements.define('product-modal', ProductModal);
+</script>
+<script src="{{ 'product-model.js' | asset_url }}" defer></>
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
     setTimeout(function() {
       AOS.init({
         offset: -200
@@ -731,6 +804,7 @@
       }
 
     });
+
     $(".qty-btn.left").click(function(e){
       var elInput = $($(this).parent().find("input"));
       if(parseInt(elInput.val()) >=2 )
@@ -741,24 +815,11 @@
       var elInput = $($(this).parent().find("input"));
       elInput.val(parseInt(elInput.val())+1);
     });
-    
-  /*  $(".video-1 video").get(0).onended = function() {
-        $(".video-image-1").removeClass("hidden");
-        $(".video-1 video").addClass("hidden");
-    };*/
 
     $(".video-2 video").get(0).onended = function() {
         $(".video-image-2").removeClass("hidden");
         $(".video-2 video").addClass("hidden");
     };
-
-/*    $(".video-image-1").click(function(e)
-    {
-        $(".video-image-1").addClass("hidden");
-        $(".video-1 video").removeClass("hidden");
-        $(".video-1 video").get(0).play();
-        
-    });*/
 
     $(".video-image-2").click(function(e)
     {
