@@ -131,12 +131,18 @@ div:empty {
     justify-content: center;
 }
 
+@media (min-width: 768px) {
+	.banner-container .product-popup-modal__opener {
+		transform: translateX(-5vw);
+	}
+}
+
 .product-popup-modal__button {
-	font-size: 1.6rem;
+	font-size: 1rem;
 	padding-right: 1.3rem;
 	padding-left: 0;
 	height: 4.4rem;
-	color: #000;
+	color: #426c6a;
 
 	text-underline-offset: 0.3rem;
 	text-decoration-thickness: 0.1rem;
