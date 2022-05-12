@@ -19,14 +19,16 @@
 	.carousel-display-wrapper
 	#carousel-top-panel
 	.headline {
-	color: #cddb00;
-	font-family: trade-gothic-next-compressed, sans-serif;
-	font-weight: 700;
-	font-style: normal;
-	font-size: 40px;
-	letter-spacing: 0.5px;
-	line-height: 48px;
-	text-transform: uppercase;
+    color: #cddb00 !important;
+    font-family: trade-gothic-next-compressed,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px !important;
+    letter-spacing: 0.5px;
+    line-height: 48px;
+    text-transform: uppercase;
+    padding-top: 0;
+    position: relative;
 }
 
 .yotpo-reviews-carousel

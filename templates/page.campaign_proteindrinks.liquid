@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="{{ 'page-home.css' | asset_url }}">
 <link rel="stylesheet" href="{{ 'campaign_protein_drinks.css' | asset_url }}">
   {{ 'component-product-model.css' | asset_url | stylesheet_tag }}
+  {{ 'component-reviews.css' | asset_url | stylesheet_tag }}
+
   <link id="ModelViewerStyle" rel="stylesheet"
     href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print"
     onload="this.media='all'">
@@ -591,128 +593,17 @@
       </div>
       <div class="review-section">
         <div class="grid-container" id="link-reviews">
-          <div class="desktop-40 desktop-push-20 ls-tablet-50 ls-tablet-push-15 pt-tablet-50 pt-tablet-push-5">
-            <div class="review-title">Real Customer reviews</div>
-          </div>
           <div class="desktop-20 desktop-push-20 ls-tablet-20 ls-tablet-push-20 pt-tablet-20 pt-tablet-push-10">
             <div class="slick-arrow-nav"></div>
           </div>
         </div>
         <div class="review-slider">
-          <div class="review-item mh">
-            <div class="quote-container">
-              <img src="{{ 'cpd_ui_quotes.svg' | asset_url }}" alt="quote">
-              <span class="quote-label">Taste pretty good</span>
-            </div>
-            <div class="review-text">This is a great product! Makes it easy to meet my nutritional needs throughout the day. I always keep one close by, and since it doesn’t require refrigeration it’s easy to take on the go.</div>
-            <div class="user-container">
-              <div class="user-pfp-container">
-                <img src="{{ 'cpd_reviews_01.jpg' | asset_url }}" alt="User1">
-              </div>
-              <div class="user-info-container">
-                <div class="user-name">Shelia H.</div>
-                <div class="review-rate-container">
-                  <span class="review-rate-label">Verified Buyer</span>
-                  <span class="star-container"><span></span><span></span><span></span><span></span><span></span></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="review-item mh">
-            <div class="quote-container">
-              <img src="{{ 'cpd_ui_quotes.svg' | asset_url }}" alt="quote">
-              <span class="quote-label">High quality protein, great taste</span>
-            </div>
-            <div class="review-text">I love this product! it's a simple way to add to my daily protein goals, without bloating. The 2oz. shot is easy to drink, and tastes great! I will be purchasing this product again very soon!</div>
-            <div class="user-container">
-              <div class="user-pfp-container">
-                <img src="{{ 'cpd_reviews_02.jpg' | asset_url }}" alt="User1">
-              </div>
-              <div class="user-info-container">
-                <div class="user-name">Jacquelynn K.</div>
-                <div class="review-rate-container">
-                  <span class="review-rate-label">Verified Buyer</span>
-                  <span class="star-container"><span></span><span></span><span></span><span></span><span></span></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="review-item mh">
-            <div class="quote-container">
-              <img src="{{ 'cpd_ui_quotes.svg' | asset_url }}" alt="quote">
-              <span class="quote-label">Best Tasting Protein Supplement Ever</span>
-            </div>
-            <div class="review-text">I've tried SO many different protein supplements to manage my specific diet needs. This tastes like real juice. NO chemical aftertaste! It is amazing. I mix 2 "shots" into my gatorade or zero calorie fruit drinks. Easiest way ever to get 1/3 of my daily protein requirement. I can't say enough good about this product.</div>
-            <div class="user-container">
-              <div class="user-pfp-container">
-                <img src="{{ 'cpd_reviews_03.jpg' | asset_url }}" alt="User1">
-              </div>
-              <div class="user-info-container">
-                <div class="user-name">Tamantha R.</div>
-                <div class="review-rate-container">
-                  <span class="review-rate-label">Verified Buyer</span>
-                  <span class="star-container"><span></span><span></span><span></span><span></span><span></span></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="review-item mh">
-            <div class="quote-container">
-              <img src="{{ 'cpd_ui_quotes.svg' | asset_url }}" alt="quote">
-              <span class="quote-label">Great product!</span>
-            </div>
-            <div class="review-text">This product is great!! Packed with protein, great flavor and all in a small portion. Much better flavor than protein shakes!!</div>
-            <div class="user-container">
-              <div class="user-pfp-container">
-                <img src="{{ 'cpd_reviews_01.jpg' | asset_url }}" alt="User1">
-              </div>
-              <div class="user-info-container">
-                <div class="user-name">Angela B.</div>
-                <div class="review-rate-container">
-                  <span class="review-rate-label">Verified Buyer</span>
-                  <span class="star-container"><span></span><span></span><span></span><span></span><span></span></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="review-item mh">
-            <div class="quote-container">
-              <img src="{{ 'cpd_ui_quotes.svg' | asset_url }}" alt="quote">
-              <span class="quote-label">Vidafuel is a delicious way</span>
-            </div>
-            <div class="review-text">Vidafuel is a delicious way to get more protein. I am a PD patient and hate chewing protein (meat) with every meal. Yucko. I actually enjoy my afternoon Vidafuel "shot." It is a cool, great tasting break in my day.</div>
-            <div class="user-container">
-              <div class="user-pfp-container">
-                <img src="{{ 'cpd_reviews_01.jpg' | asset_url }}" alt="User1">
-              </div>
-              <div class="user-info-container">
-                <div class="user-name">Rebecca H.</div>
-                <div class="review-rate-container">
-                  <span class="review-rate-label">Verified Buyer</span>
-                  <span class="star-container"><span></span><span></span><span></span><span></span><span></span></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="review-item mh">
-            <div class="quote-container">
-              <img src="{{ 'cpd_ui_quotes.svg' | asset_url }}" alt="quote">
-              <span class="quote-label">Retaining Weight</span>
-            </div>
-            <div class="review-text">I underwent major weight loss due to illness .Within a week I am retaining my weight instead of losing .This gives me hope to keep adding more pounds .Flavor is not bad it taste like a creamsicle without the cream lol as I’ve started with the Orange bottle first.</div>
-            <div class="user-container">
-              <div class="user-pfp-container">
-                <img src="{{ 'cpd_reviews_01.jpg' | asset_url }}" alt="User1">
-              </div>
-              <div class="user-info-container">
-                <div class="user-name">Yenifer S.</div>
-                <div class="review-rate-container">
-                  <span class="review-rate-label">Verified Buyer</span>
-                  <span class="star-container"><span></span><span></span><span></span><span></span><span></span></span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="yotpo yotpo-reviews-carousel" data-header-customisation-enabled="1"
+            data-header-customisation-color="#56575f" data-header-customisation-font-size="32"
+            data-header-customisation-text="REAL CUSTOMER REVIEWS"
+            data-header-customisation-alignment="left" data-background-color="transparent" data-mode="top_rated" data-type="both"
+            data-count="9" data-show-bottomline="1" data-autoplay-enabled="0" data-autoplay-speed="8000" data-show-navigation="1">
+            &nbsp;</div>
         </div>
       </div>
     </div>
@@ -742,48 +633,11 @@
       </div>
     </modal-dialog>
 <script src="{{ 'cpd_plugins.js' | asset_url }}"></script>
-<script>
-  class ProductModal extends ModalDialog {
-  constructor() {
-  super();
-  }
 
-  hide() {
-  super.hide();
-  }
-
-  show(opener) {
-  super.show(opener);
-  this.showActiveMedia();
-  }
-
-  showActiveMedia() {
-  this.querySelectorAll(`[data-media-id]:not([data-media-id="${this.openedBy.getAttribute("data-media-id")}"])`).forEach((element)
-  => {
-  element.classList.remove('active');
-  }
-  )
-  const activeMedia = this.querySelector(`[data-media-id="${this.openedBy.getAttribute("data-media-id")}"]`);
-  const activeMediaTemplate = activeMedia.querySelector('template');
-  const activeMediaContent = activeMediaTemplate ? activeMediaTemplate.content : null;
-  activeMedia.classList.add('active');
-  activeMedia.scrollIntoView();
-
-  const container = this.querySelector('[role="document"]');
-  container.scrollLeft = (activeMedia.width - container.clientWidth) / 2;
-
-  if (activeMedia.nodeName == 'DEFERRED-MEDIA' && activeMediaContent && activeMediaContent.querySelector('.js-youtube'))
-  activeMedia.loadContent();
-  }
-  }
-
-  customElements.define('product-modal', ProductModal);
-</script>
 <script src="{{ 'product-model.js' | asset_url }}" defer></>
-
-<script type="text/javascript">
-
+<script>
   $(document).ready(function() {
+
     setTimeout(function() {
       AOS.init({
         offset: -200
@@ -804,7 +658,6 @@
       }
 
     });
-
     $(".qty-btn.left").click(function(e){
       var elInput = $($(this).parent().find("input"));
       if(parseInt(elInput.val()) >=2 )
@@ -815,11 +668,24 @@
       var elInput = $($(this).parent().find("input"));
       elInput.val(parseInt(elInput.val())+1);
     });
+    
+   $(".video-1 video").get(0).onended = function() {
+        $(".video-image-1").removeClass("hidden");
+        $(".video-1 video").addClass("hidden");
+    };
 
     $(".video-2 video").get(0).onended = function() {
         $(".video-image-2").removeClass("hidden");
         $(".video-2 video").addClass("hidden");
     };
+
+ $(".video-image-1").click(function(e)
+    {
+        $(".video-image-1").addClass("hidden");
+        $(".video-1 video").removeClass("hidden");
+        $(".video-1 video").get(0).play();
+        
+    });
 
     $(".video-image-2").click(function(e)
     {
@@ -836,77 +702,5 @@
         }, 600, "swing");
       }
     }
-
-    $('a.anchor').on('click', function(event) {
-      event.preventDefault();
-      smoothScrollingTo(this.hash);
-    });
-    if ($('.mh').length) {
-      $('.mh').matchHeight(true);
-    }
-    if ($('.review-slider .review-item').length) {
-      $('.review-slider').slick({
-        slidesToShow: 3.5,
-        slidesToScroll: 1,
-        arrows: true,
-        fade: false,
-        dots: false,
-        draggable: true,
-        appendArrows: '.slick-arrow-nav',
-        autoplay: false,
-        infinite: false,
-        responsive: [{
-            breakpoint: 414,
-            settings: {
-              slidesToShow: 1.1,
-              slidesToScroll: 1,
-            }
-          },
-          {
-            breakpoint: 667,
-            settings: {
-              slidesToShow: 1.2,
-              slidesToScroll: 1,
-            }
-          },
-          {
-            breakpoint: 737,
-            settings: {
-              slidesToShow: 1.7,
-              slidesToScroll: 1,
-            }
-          },
-          {
-            breakpoint: 814,
-            settings: {
-              slidesToShow: 1.5,
-              slidesToScroll: 1,
-            }
-          },
-          {
-            breakpoint: 1025,
-            settings: {
-              slidesToShow: 2.5,
-              slidesToScroll: 1,
-            }
-          },
-          {
-            breakpoint: 1600,
-            settings: {
-              slidesToShow: 3.5,
-              slidesToScroll: 1,
-            }
-          },
-          {
-            breakpoint: 2561,
-            settings: {
-              slidesToShow: 3.5,
-              slidesToScroll: 1,
-            }
-          },
-        ]
-      });
-    }
-
   });
 </script>
