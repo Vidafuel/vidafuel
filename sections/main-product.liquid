@@ -383,16 +383,7 @@
           {%- endform -%}
         </div>
       </div>
-    </div>
-      
-     {% if product.metafields.yotpo.reviews_count and product.metafields.yotpo.reviews_count != "0" %}
-<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-<span itemprop="itemReviewed">{{ product.title }}</span>
-has a rating of <span itemprop="ratingValue">{{ product.metafields.yotpo.reviews_average }}</span> stars
-based on <span itemprop="ratingCount">{{ product.metafields.yotpo.reviews_count }}</span> reviews.
-</div>
-{% endif %}  
-      
+    </div>      
   </div>
 
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
