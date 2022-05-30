@@ -320,12 +320,7 @@
                     </button>
                     {%- comment -%} YOTPO APP STAR RATING https://support.yotpo.com/en/article/shopify-installing-yotpo#manual-installation-a-step-by-step-guide {%- endcomment -%}
                     <div class="yotpo bottomLine" data-product-id="{{ product.id }}">
-                    </div>
-                    
-
-                    
-                    
-                    
+                    </div>      
                     {%- if block.settings.show_dynamic_checkout -%}
                       {{ form | payment_button }}
                     {%- endif -%}
