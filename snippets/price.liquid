@@ -86,8 +86,15 @@
       {{ 'products.product.on_sale' | t }}
     </span>
 
-    <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
-      {{ 'products.product.sold_out' | t }}
-    </span>
+    {% if product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' %} 
+        <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
+            {{ 'products.product.unavailable' | t }}
+        </span>
+    {% else %}
+        <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
+        {{ 'products.product.sold_out' | t }}
+        </span>
+    {% endif %}
+
   {%- endif -%}
 </div>
