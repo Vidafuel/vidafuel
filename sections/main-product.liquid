@@ -300,7 +300,7 @@
                   {% endif %}
 
 
-                    {% if product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' %} 
+                    {% if product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' or product.handle == 'protein-juice-berry' %} 
                         {% assign soldOutBtnTxt = "Out of stock – click here to be notified when back in stock" %} 
                     {% endif %}
                     
@@ -314,12 +314,12 @@
                             name="add" 
                         {% endunless %}
                       class="addtocart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
-                    {% if product.selected_or_first_available_variant.available == false %}{% unless product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' %}disabled{% endunless %}{% endif %}
+                    {% if product.selected_or_first_available_variant.available == false %}{% unless product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' or product.handle == 'protein-juice-berry' %}disabled{% endunless %}{% endif %}
                     >
                         <span>
                           {%- if product.selected_or_first_available_variant.available -%}
                             {{ 'products.product.add_to_cart' | t }}
-                          {%- elsif product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' -%}
+                          {%- elsif product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' or product.handle == 'protein-juice-berry' -%}
                             {{ soldOutBtnTxt }}
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
