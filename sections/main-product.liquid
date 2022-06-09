@@ -496,21 +496,29 @@
 
     .klaviyo_modal .klaviyo_inner {
         top: 20px !important;
+        background-color: #fff;
+        font-family: "Trade Gothic Next", sans-serif;
     }
 
     .klaviyo_modal .klaviyo_header {
-        color: #065069;
+        color: rgb(18, 18, 18);
     }
 
     .klaviyo_modal .klaviyo_subheader {
-        color: #065069;
+        color: rgb(18, 18, 18);
     }
 
     .klaviyo_modal .klaviyo_submit_button,
     .klaviyo_modal .klaviyo_submit_button span {
-        background-color: #4BBDAA;
+        background-color: rgb(123, 204, 200);
         background-image: none;
         border-radius: 2px;
+    }
+
+    .klaviyo_modal .klaviyo_submit_button:hover:not(.btn-fake),
+    .klaviyo_modal .klaviyo_submit_button span:hover:not(.btn-fake) {
+        box-shadow: 0 0 0 0.2rem rgb(123, 204, 200);
+        background-color: rgb(123, 204, 200) !important;
     }
 
     .klaviyo_modal .klaviyo_fieldset {
