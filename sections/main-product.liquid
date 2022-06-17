@@ -306,13 +306,13 @@
                     
                   <div class="product-form__buttons">
                     <button
-                        {% unless product.selected_or_first_available_variant.available %} 
+                    {%- comment -%} {% unless product.selected_or_first_available_variant.available %} {%- endcomment -%}
                             onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });"
                             type="button"
-                        {% else %} 
+                        {% comment %} 
                             type="submit" 
                             name="add" 
-                        {% endunless %}
+                        {% endcomment %}
                       class="addtocart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                     {% if product.selected_or_first_available_variant.available == false %}{% unless product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' or product.handle == 'protein-juice-berry' %}disabled{% endunless %}{% endif %}
                     >
