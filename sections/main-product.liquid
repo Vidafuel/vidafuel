@@ -612,18 +612,13 @@
 <script type="application/ld+json">
   {
     {% if product.metafields.yotpo.reviews_count and product.metafields.yotpo.reviews_count != "0" %}
-
     "@context": "http://schema.org",
     "@type": "Product",
     "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue":{{ product.metafields.yotpo.reviews_average }},
         "reviewCount": {{ product.metafields.yotpo.reviews_count }},
-
   {% endif %}
-
-
-  
     "@context": "http://schema.org/",
     "@type": "Product",
     "name": {{ product.title | json }},
