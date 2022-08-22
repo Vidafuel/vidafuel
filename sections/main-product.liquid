@@ -625,6 +625,13 @@
     {% if product.selected_or_first_available_variant.sku != blank -%}
       "sku": {{ product.selected_or_first_available_variant.sku | json }},
     {%- endif %}
+    {% if product.metafields.yotpo.reviews_count and product.metafields.yotpo.reviews_count != "0" %}
+    "@type": "Review",
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue":{{ product.metafields.yotpo.reviews_average }},
+        "reviewCount": {{ product.metafields.yotpo.reviews_count }}
+  {% endif %},
     "brand": {
       "@type": "Thing",
       "name": {{ product.vendor | json }}
