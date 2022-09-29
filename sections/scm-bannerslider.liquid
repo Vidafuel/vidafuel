@@ -1,0 +1,33 @@
+<div data="scmBannerSlider" data-id="{{ section.settings.scm_banner_slider }}" style="display: none;"></div>
+{% schema %}
+{
+  "name": "Smartify Slider",
+  "settings": [
+    {
+      "type": "select",
+      "id": "scm_banner_slider",
+      "label": "Choose slider",
+      "options": [
+                {
+          "value": "1017",
+          "label": "Fronts Slider"
+        },                {
+          "value": "1025",
+          "label": "Nutrition Slider"
+        },                {
+          "value": "1286",
+          "label": "MEALS"
+        },                {
+          "value": "1326",
+          "label": "Meals"
+        }              ]
+      ,
+      "default": "1017"
+          }
+  ],
+  "presets": [{
+    "name": "Smartify Banner Slider",
+    "category": "Smartify Slider"
+  }]
+}
+{% endschema %}
