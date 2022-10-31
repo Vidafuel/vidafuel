@@ -1,3 +1,7 @@
+{% if content_for_header contains 'shopifyorderlimits.s3.amazonaws.com' %}
 {% if shop.permanent_domain == 'vidafuel.myshopify.com' %}
-  <script src="https://shopifyorderlimits.s3.amazonaws.com/limits/vidafuel.myshopify.com?v=55j&r=20200523153942&shop=vidafuel.myshopify.com"></script>
+<script src="https://shopifyorderlimits.s3.amazonaws.com/limits/vidafuel.myshopify.com?v=55j&r=20211119220111&shop=vidafuel.myshopify.com"></script>
+{% endif %}
+{% else %}
+<script type="text/javascript">console.error("MinMaxify is deactivated for this website. Please don't forget to remove minmaxify-head.liquid still being referenced by theme.liquid")</script>
 {% endif %}

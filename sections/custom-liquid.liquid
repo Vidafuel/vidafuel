@@ -1,0 +1,83 @@
+{{ 'component-reviews.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.custom_background %}
+  <style>
+    .review-section {
+      padding-top: 8.25%;
+      position: relative;
+    }
+
+    .review-section::before {
+      content: "";
+      position: absolute;
+      top: calc(8.25vw - 2px);
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #fbfcec;
+      pointer-events: none;
+    }
+
+    .review-section::after {
+      content: "";
+      background-image: url('{{ 'cpd_waves_04.svg' | asset_url }}');
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding-bottom: 8.25%;
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+  </style>
+
+  <div class="review-section"{% if section.settings.background_color %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
+    {% unless section.settings.full_width == false %}<div class="page-width">{% endunless %}
+    {{ section.settings.custom_liquid }}
+    {% unless section.settings.full_width == false %}</div>{% endunless %}
+  </div>
+{% else %}
+  {{ section.settings.custom_liquid }}
+{% endif %}
+
+{% schema %}
+{
+  "name": "t:sections.custom-liquid.name",
+  "tag": "section",
+  "class": "spaced-section--full-width custom-liquid",
+  "settings": [
+    {
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "t:sections.custom-liquid.settings.custom_liquid.label",
+      "info": "t:sections.custom-liquid.settings.custom_liquid.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_background",
+      "label": "Custom background",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#fff",
+      "info": "Background color behind the custom background"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.custom-liquid.presets.name"
+    }
+  ]
+}
+{% endschema %}

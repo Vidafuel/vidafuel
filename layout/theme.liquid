@@ -1,362 +1,312 @@
 <!doctype html>
-<!--[if IE 9]> <html class="ie9 no-js" lang="{{ shop.locale }}"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html class="no-js" lang="{{ shop.locale }}">
-  <!--<![endif]-->
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+    <head>
+        {% if handle contains 'no-access' %}
+            <meta name="robots" content="noindex">
+        {% endif %}
+        <!-- Google Optimize -->
+        <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KQ6ZSXP"></script>
+        <!-- Google Optimize -->
 
-  <head>
         <!-- Global site tag (gtag.js) - Google Analytics 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154868718-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154868718-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-154868718-1');
-  </script>-->
-    
-        
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KNQ2TM4');</script>
-<!-- End Google Tag Manager -->
-    
+        gtag('config', 'UA-154868718-1');
+        </script>
+        -->
 
-    <!-- anti-flicker snippet (recommended)  
-<style>.async-hide { opacity: 0 !important} </style>
-<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-})(window,document.documentElement,'async-hide','dataLayer',4000,
-{'GTM-KNQ2TM4':true});</script>
-    anti-flicker snippet (recommended)  -->
+        <!-- Google Tag Manager -->
+            <script>
+(function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer'
+            ? '&l=' + l
+            : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-KNQ2TM4');
+</script>
+        <!-- End Google Tag Manager -->
 
-<!-- Added by AVADA SEO Suite -->
-{%- comment -%} {% include 'avada-seo' %}{%- endcomment -%}
-<!-- /Added by AVADA SEO Suite -->
+        <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="theme-color" content="">
 
-{%- comment -%}
-    {% if request.path contains '/collection' %}
-    <meta name='robots' content="noindex">
-    <script>
-      // window.location.replace("https://dev-nouri.myshopify.com/pages/products");
-    </script>
-    {% endif %}
-{%- endcomment -%}
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="{{ settings.color_button }}">
-    {%- if request.path == '/collections' or request.path == '/collections/all' -%}
-      <link rel="canonical" href="https://vidafuel.com/products">
-    {%- elsif request.path == '/products' -%}
-      <link rel="canonical" href="https://vidafuel.com/products">
-    {%- else -%}
-      <link rel="canonical" href="{{ canonical_url }}">
-    {%- endif -%}
+        {%- if request.path == '/collections' or request.path == '/collections/all' -%}
+            <link rel="canonical" href="https://vidafuel.com/products">
+        {%- elsif request.path == '/products' -%}
+            <link rel="canonical" href="https://vidafuel.com/products">
+        {%- else -%}
+            <link rel="canonical" href="{{ canonical_url }}">
+        {%- endif -%}
 
-    {%- if settings.favicon != blank -%}
-    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
-    {%- endif -%}
+        <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
-    {%- capture seo_title -%}
-    {%- if template == 'search' and search.performed == true -%}
-      {{ 'general.search.heading' | t: count: search.results_count }}: {{ 'general.search.results_with_count' | t: terms:
-    search.terms, count: search.results_count }}
-    {%- elsif request.path == '/products' -%}
-      {{ 'Products' }}
-    {%- else -%}
-      {{ page_title }}
-    {%- endif -%}
-    {%- if current_tags -%}
-    {%- assign meta_tags = current_tags | join: ', ' -%} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
-    {%- endif -%}
-    {%- if current_page != 1 -%}
-    &ndash; {{ 'general.meta.page' | t: page: current_page }}
-    {%- endif -%}
-    {%- assign escaped_page_title = page_title | escape -%}
-    {%- endcapture -%}
+        {%- if settings.favicon != blank -%}
+            <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+        {%- endif -%}
 
-    {%- if request.path == '/products' -%}
-      <title>{{ settings.product_pg_meta_title }}</title>
-    {%- elsif request.path contains 'tagged/dietitian-toolbox' -%}
-      <title>{{ settings.dietitian_toolbox_pg_meta_title }}</title>
-    {%- elsif request.path contains 'tagged/meet-the-team' -%}
-      <title>{{ settings.meet_the_team_pg_meta_title }}</title>
-    {%- elsif request.path contains 'tagged/protein' -%}
-      <title>{{ settings.protein_pg_meta_title }}</title>
-    {%- else -%}
-      <title>{{ seo_title | strip }}</title>
-    {%- endif -%}
+        {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
+            <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+        {%- endunless -%}
 
-    {%- if request.path == '/products' -%}
-      <meta name="description" content="{{ settings.product_pg_meta_descrip }}">
-    {%- elsif request.path contains 'tagged/dietitian-toolbox' -%}
-      <meta name="description" content="{{ settings.dietitian_toolbox_pg_meta_descrip }}">
-    {%- elsif request.path contains 'tagged/meet-the-team' -%}
-      <meta name="description" content="{{ settings.meet_the_team_pg_meta_descrip }}">
-    {%- elsif request.path contains 'tagged/protein' -%}
-      <meta name="description" content="{{ settings.protein_pg_meta_descrip }}">
-    {%- else -%}
-      <meta name="description" content="{{ page_description | escape }}">
-    {%- endif -%}
+        <title>
+            {%- if request.path == '/products' -%}
+                Products
+            {%- else -%}
+                {{ page_title }}
+            {%- endif -%}
+            {%- if current_tags %}
+                &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+            {%- if current_page != 1 %}
+                &ndash; Page {{ current_page }}{% endif -%}
+            {%- unless page_title contains shop.name %}
+                &ndash; {{ shop.name }}{% endunless -%}
+        </title>
 
-    {% include 'social-meta-tags' %}
-
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/solid.js"
-      integrity="sha384-IA6YnujJIO+z1m4NKyAGvZ9Wmxrd4Px8WFqhFcgRmwLaJaiwijYgApVpo1MV8p77"
-      crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/regular.js"
-      integrity="sha384-Uc9toywOA44owltk1MWl0lQZ+L0mBzJkLQcdif6+JtG9izvok9DLJtCZX57Uq3k2"
-      crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js"
-      integrity="sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS"
-      crossorigin="anonymous"></script>
-
-    {% unless template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
-		{{ 'styles.min.css' | asset_url | stylesheet_tag }}
-    {% endunless %}
-
-    <script>
-      var theme = {
-        strings: {
-          addToCart: {{ 'products.product.add_to_cart' | t | json }},
-      soldOut: {{ 'products.product.sold_out' | t | json }},
-      unavailable: {{ 'products.product.unavailable' | t | json }},
-      regularPrice: {{ 'products.product.regular_price' | t | json }},
-      sale: {{ 'products.product.on_sale' | t | json }},
-      showMore: {{ 'general.filters.show_more' | t | json }},
-      showLess: {{ 'general.filters.show_less' | t | json }},
-      addressError: {{ 'sections.map.address_error' | t | json }},
-      addressNoResults: {{ 'sections.map.address_no_results' | t | json }},
-      addressQueryLimit: {{ 'sections.map.address_query_limit_html' | t | json }},
-      authError: {{ 'sections.map.auth_error_html' | t | json }},
-      newWindow: {{ 'general.accessibility.link_messages.new_window' | t | json }},
-      external: {{ 'general.accessibility.link_messages.external' | t | json }},
-      newWindowExternal: {{ 'general.accessibility.link_messages.new_window_and_external' | t | json }}
-      },
-      moneyFormat: {{ shop.money_format | json }}
-    }
-
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-    </script>
-
-    <!--[if (lte IE 9) ]>{{ 'match-media.min.js' | asset_url | script_tag }}<![endif]-->
-
-    {%- if template.directory == 'customers' -%}
-    <!--[if (gt IE 9)|!(IE)]><!-->
-    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
-    <!--<![endif]-->
-    <!--[if lte IE 9]><script src="{{ 'shopify_common.js' | shopify_asset_url }}"></script><![endif]-->
-    {%- endif -%}
-
-    <!--[if (gt IE 9)|!(IE)]><!-->
-    <script src="{{ 'lazysizes.js' | asset_url }}" async="async"></script>
-    <!--<![endif]-->
-    <!--[if lte IE 9]><script src="{{ 'lazysizes.min.js' | asset_url }}"></script><![endif]-->
-
-    <!--[if (gt IE 9)|!(IE)]><!-->
-    {% unless template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
-    <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
-    <!--<![endif]-->
-    <!--[if lte IE 9]><script src="{{ 'vendor.js' | asset_url }}"></script><![endif]-->
-   	{% endunless %}
-    <!--[if (gt IE 9)|!(IE)]><!-->
-    <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
-    <!--<![endif]-->
-    <!--[if lte IE 9]><script src="{{ 'theme.js' | asset_url }}"></script><![endif]-->
-
-    <!-- YOTPO reviews widget -->
-    <script
-      type="text/javascript">(function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/DQkSVEOOfTk6RwUP3XUIMXJSc60azZRBfpfLxYtV/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();</script>
-    {{ content_for_header }}
-    
-    
-	<script data-obct type = "text/javascript">
-  	/** DO NOT MODIFY THIS CODE**/
-  	!function(_window, _document) {
-    	var OB_ADV_ID = '000d6b1eb616047ef5b7362caea4a5c711';
-    	if (_window.obApi) {
-      	var toArray = function(object) {
-        	return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];
-      	};
-      	_window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));
-      	return;
-    	}
-   	 var api = _window.obApi = function() {
-    	  api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);
-   	 };
-    	api.version = '1.1';
-    	api.loaded = true;
-    	api.marketerId = OB_ADV_ID;
-    	api.queue = [];
-    	var tag = _document.createElement('script');
-    	tag.async = true;
-    	tag.src = '//amplify.outbrain.com/cp/obtp.js';
-    	tag.type = 'text/javascript';
-    	var script = _document.getElementsByTagName('script')[0];
-    	script.parentNode.insertBefore(tag, script);
-  	}(window, document);
-
-  	obApi('track', 'PAGE_VIEW');
-	</script>
-
-    
-	{% if template contains 'campaign_proteindrinks' %}
-      {%- include 'bold-options-hybrid' -%}
-      {% for product in collections.all.products %}
-       	{% if product.id == 1928836186154 or product.id == 4373693726762 or product.id == 4373694283818 %}
-		   {%- include 'bold-product' with product, hide_action: 'header' -%}
+        {% if page_description %}
+            <meta name="description" content="{{ page_description | escape }}">
         {% endif %}
-      {% endfor %}
-      {% include 'bold-common' %}
-      {% include 'bold-ro-init' %}
-      {{ 'bold.css' | asset_url | stylesheet_tag }}
-      {{ 'vidafuel.scss.css' | asset_url | stylesheet_tag }}
-   	{% else %}
-      {%- include 'bold-options-hybrid' -%}
-      {%- include 'bold-product' with product, hide_action: 'header' -%}
-      {% include 'bold-common' %}
-      {% include 'bold-ro-init' %}
-      {{ 'bold.css' | asset_url | stylesheet_tag }}
-      {{ 'vidafuel.scss.css' | asset_url | stylesheet_tag }}
-    {% endif %}
 
+        {% render 'meta-tags' %}
 
-    {% include 'minmaxify-head' %}
+        <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
 
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <meta name="google-site-verification" content="a6HtKogePX6wHMs7l9B1QsVCUyPxt5cUTn16e26KbOc" />
-    <meta name="ahrefs-site-verification" content="b70c2387d853a0c2788d1c5f4c39a0837310db1438e8e2b6db5c94fc3c2a0234">
-    <meta name="google-site-verification" content="oRxTR7VYWxz1XUAFEFKcuRw1vjntnOrygfRDsqkPJQc" />
-    {% include 'hulkcode_common' %}{% if template contains 'product' or template contains 'cart' or template contains 'campaign_proteindrinks' %}
-    <script src='https://volumediscount.hulkapps.com/api/v2/frontend/hulkcode.js' defer='defer'></script>{% endif %}{%
-    include 'orichi_multi_pixel' %}
-    {% if request.path contains 'collections/all' %}
-    <meta name="robots" content="noindex">
-    {% endif %}
-    <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/qYB4cBxqqH8uHOo2X-8OYw" async></script>
-</head>
-  <body class="template-{{ template | split: '.' | first }}">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNQ2TM4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    {% unless template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
-	    <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t
-	      }}</a>
+        {{ content_for_header }}
+        {%- render 'bold-common' -%}
+        {%- render 'bold-ro-init' -%}
+        {%- liquid
+      assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
+      assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
+      assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
+    %}
 
-        <div id="SearchDrawer" class="search-bar drawer drawer--top" role="dialog" aria-modal="true"
-          aria-label="{{ 'general.search.placeholder' | t }}">
-          <div class="search-bar__table">
-            <div class="search-bar__table-cell search-bar__form-wrapper">
-              <form class="search search-bar__form" action="/search" method="get" role="search">
-                <input class="search__input search-bar__input" type="search" name="q" value="{{ search.terms | escape }}"
-                  placeholder="{{ 'general.search.placeholder' | t }}" aria-label="{{ 'general.search.placeholder' | t }}">
-                <button class="search-bar__submit search__submit btn--link" type="submit">
-                  {% include 'icon-search' %}
-                  <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
-                </button>
-              </form>
-            </div>
-            <div class="search-bar__table-cell text-right">
-              <button type="button" class="btn--link search-bar__close js-drawer-close">
-                {% include 'icon-close' %}
-                <span class="icon__fallback-text">{{ 'general.search.close' | t }}</span>
-              </button>
-            </div>
-          </div>
-        </div>
-		{% section 'header' %}
-	{% endunless %}
-    <div class="page-container" id="PageContainer">
+        {% style %}
+            {{ settings.type_body_font | font_face: font_display: 'swap' }}
+            {{ body_font_bold | font_face: font_display: 'swap' }}
+            {{ body_font_italic | font_face: font_display: 'swap' }}
+            {{ body_font_bold_italic | font_face: font_display: 'swap' }}
+            {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
-      <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1">
-        
-        <!-- <h1 style="z-index: 9;position: absolute;">{{ template.name }}</h1> -->
+            :root {
+                --font-body-family: 
+                {{ settings.type_body_font.family }},
+                {{ settings.type_body_font.fallback_families }};
+                --font-body-style: {{ settings.type_body_font.style }};
+                --font-body-weight: {{ settings.type_body_font.weight }};
 
-        {% if template contains 'wholesale' %}
-          {% if customer %}
-        {% if customer.tags contains 'wholesale' %}
-        {{ content_for_layout }}
-        {% else %}
-        {% include 'wholesale-note' %}
+                --font-heading-family: 
+                {{ settings.type_header_font.family }},
+                {{ settings.type_header_font.fallback_families }};
+                --font-heading-style: {{ settings.type_header_font.style }};
+                --font-heading-weight: {{ settings.type_header_font.weight }};
+
+                --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
+                --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};
+
+                --color-base-text: 
+                {{ settings.colors_text.red }},
+                {{ settings.colors_text.green }}, {{ settings.colors_text.blue }};
+                --color-base-background-1: 
+                {{ settings.colors_background_1.red }},
+                {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};
+                --color-base-background-2: 
+                {{ settings.colors_background_2.red }},
+                {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};
+                --color-base-solid-button-labels: 
+                {{ settings.colors_solid_button_labels.red }},
+                {{ settings.colors_solid_button_labels.green }}, {{ settings.colors_solid_button_labels.blue }};
+                --color-base-outline-button-labels: 
+                {{ settings.colors_outline_button_labels.red }},
+                {{ settings.colors_outline_button_labels.green }}, {{ settings.colors_outline_button_labels.blue }};
+                --color-base-accent-1: 
+                {{ settings.colors_accent_1.red }},
+                {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};
+                --color-base-accent-2: 
+                {{ settings.colors_accent_2.red }},
+                {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
+                --color-base-tertiary: 
+                {{ settings.colors_tertiary.red }},
+                {{ settings.colors_tertiary.green }}, {{ settings.colors_tertiary.blue }};
+                --payment-terms-background-color: {{ settings.colors_background_1 }};
+
+                --gradient-base-background-1: {% if settings.gradient_background_1 != blank %}
+                    {{ settings.gradient_background_1 }}{% else %}
+                    {{ settings.colors_background_1 }}{% endif %};
+                --gradient-base-background-2: {% if settings.gradient_background_2 != blank %}
+                    {{ settings.gradient_background_2 }}{% else %}
+                    {{ settings.colors_background_2 }}{% endif %};
+                --gradient-base-accent-1: {% if settings.gradient_accent_1 != blank %}
+                    {{ settings.gradient_accent_1 }}{% else %}
+                    {{ settings.colors_accent_1 }}{% endif %};
+                --gradient-base-accent-2: {% if settings.gradient_accent_2 != blank %}
+                    {{ settings.gradient_accent_2 }}{% else %}
+                    {{ settings.colors_accent_2 }}{% endif %};
+
+                --page-width: {{ settings.page_width | divided_by: 10 }}rem;
+                --page-width-margin: {% if settings.page_width == '1600' %}
+                    2{% else %}
+                    0{% endif %}rem;
+            }
+
+            *,
+            *::before,
+            *::after {
+                box-sizing: inherit;
+            }
+
+            html {
+                box-sizing: border-box;
+                font-size: calc(var(--font-body-scale) * 62.5%);
+                height: 100%;
+            }
+
+            body {
+                display: grid;
+                grid-template-rows: auto auto 1fr auto;
+                grid-template-columns: 100%;
+                min-height: 100%;
+                margin: 0;
+                font-size: 1.5rem;
+                letter-spacing: 0.06rem;
+                line-height: calc(1 + 0.8 / var(--font-body-scale));
+                font-family: var(--font-body-family);
+                font-style: var(--font-body-style);
+                font-weight: var(--font-body-weight);
+            }
+
+            @media screen and (min-width: 750px) {
+                body {
+                    font-size: 1.6rem;
+                }
+            }
+        {% endstyle %}
+
+        {{ 'base.css' | asset_url | stylesheet_tag }}
+
+        {%- unless settings.type_body_font.system? -%}
+            <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
+        {%- endunless -%}
+        {%- unless settings.type_header_font.system? -%}
+            <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
+        {%- endunless -%}
+
+        {%- if settings.predictive_search_enabled -%}
+            <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
+        {%- endif -%}
+
+        <script>
+            document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+        </script>
+        <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/qYB4cBxqqH8uHOo2X-8OYw" async></script>
+
+        {%- comment -%}
+            CUSTOM FONTS see base.css
+        {%- endcomment -%}
+        <link rel="stylesheet" href="https://use.typekit.net/xbq8sxe.css">
+        {%- comment -%}
+            YOTPO REVIEWS APP https://support.yotpo.com/en/article/shopify-installing-yotpo#manual-installation-a-step-by-step-guide
+        {%- endcomment -%}
+        <script type="text/javascript">
+            (function e() {
+                var e = document.createElement("script");
+                e.type = "text/javascript",
+                e.async = true,
+                e.src = "//staticw2.yotpo.com/DQkSVEOOfTk6RwUP3XUIMXJSc60azZRBfpfLxYtV/widget.js";
+                var t = document.getElementsByTagName("script")[0];
+                t.parentNode.insertBefore(e, t)
+            })();
+        </script>
+        {%- comment -%}
+            KLAVIYO
+        {%- endcomment -%}
+        <script async type="text/javascript" src="//static.klaviyo.com/onsite/js/klaviyo.js?company_id=Q9a84Y"></script>
+        <script>
+            var _learnq = _learnq || [];
+            if ('{{ customer.email }}') {
+                _learnq.push([
+                    'identify', {
+                        '$email': '{{ customer.email }}'
+                    }
+                ]);
+            }
+        </script>
+        {% if template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
+            <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
         {% endif %}
-        {% else %}
-        {% include 'wholesale-note' %}
+    </head>
+
+    <body class="gradient">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNQ2TM4" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        {% unless template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
+            <a class="skip-to-content-link button visually-hidden" href="#MainContent">
+                {{ "accessibility.skip_to_text" | t }}
+            </a>
+        {% endunless %}
+        {% section 'announcement-bar' %}
+        {% unless template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
+            {% section 'header' %}
+        {% endunless %}
+        {% if request.path == '/collections' %}
+            {% assign mainClass = 'collections' %}
+        {% elsif request.path == '/products' %}
+            {% assign mainClass = 'products' %}
         {% endif %}
-        {% else%}
-        {{ content_for_layout }}
-        {% endif %}
-      </main>
-	{% unless template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon"  %}
-      {% section 'footer' %}
-	{% endunless %}
-    </div>
-    <script src="https://cdn.attn.tv/vidafuel/dtag.js"></script>
-    <script>
-      jQuery(function ($) {
+        <main id="MainContent" class="{{ mainClass }} content-for-layout focus-none" role="main" tabindex="-1">
 
-        // reviews nav link
-        $('.site-nav a[href="#yotpo-testimonials"]').on('click tap', function (e) {
-          e.stopPropagation();
-          e.preventDefault();
-          $('#yotpo-testimonials').show(0).addClass('yotpo-modal-active');
-        });
+            {% capture captured_page %}
+                {{ content_for_layout }}
+            {% endcapture %}
+            {% include 'password-protect' %}
+        </main>
+        {% unless template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
+            {% section 'footer' %}
+        {% endunless %}
+        <ul hidden>
+            <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
+        </ul>
 
-      });
-    </script>
+        <script>
+            window.shopUrl = '{{ shop.url }}';
+            window.routes = {
+                cart_add_url: '{{ routes.cart_add_url }}',
+                cart_change_url: '{{ routes.cart_change_url }}',
+                cart_update_url: '{{ routes.cart_update_url }}',
+                predictive_search_url: '{{ routes.predictive_search_url }}'
+            };
 
-    {% render 'special-offers' %}
+            window.cartStrings = {
+                error: `{{ 'sections.cart.cart_error' | t }}`,
+                quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`
+            }
 
-    {% comment %}
-    Klaviyo Tracking Tag
-    {% endcomment %}
+            window.variantStrings = {
+                addToCart: `{{ 'products.product.add_to_cart' | t }}`,
+                soldOut: `{{ 'products.product.sold_out' | t }}`,
+                unavailable: `{{ 'products.product.unavailable' | t }}`
+            }
 
-    <script>
-      /*
-         window.addEventListener("klaviyoForms", function (e) {
-        if (e.detail.type == 'submit') {
-          ga('send', 'event', 'Klaviyo form', 'form_submit', e.detail.XfN77h);
-        }
-      }); 
-      */
-    </script>
+            window.accessibilityStrings = {
+                shareSuccess: `{{ 'general.share.success_message' | t }}`
+            }
+        </script>
 
-    <script>
-      window.addEventListener("klaviyoForms", function (e) {
-        if (e.detail.type == 'open') {
-          ga('send', 'event', 'Klaviyo form', 'form_open', e.detail.XfN77h);
-        }
-        if (e.detail.type == 'submit') {
-          ga('send', 'event', 'Klaviyo form', 'form_submit', e.detail.XfN77h);
-        }
-      });
-    </script>
-    {% comment %}
-    END Klaviyo Tracking Tag
-    {% endcomment %}
+        {%- if settings.predictive_search_enabled -%}
+            <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+        {%- endif -%}
 
-    {% comment %}
-    LinkedIn Tag
-    {% endcomment %}
-    <script
-      type="text/javascript"> _linkedin_partner_id = "2634580"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id);</script>
-    <script
-      type="text/javascript"> (function () { var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript"; b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s); })();</script>
-    <noscript> <img height="1" width="1" style="display:none;" alt=""
-        src="https://px.ads.linkedin.com/collect/?pid=2634580&fmt=gif" /> </noscript>
-    {% comment %}
-    END LinkedIn Tag
-    {% endcomment %}
-
-    
-
-  {% include 'adroll' %}
-</body>
+        {% include 'adroll' %}
+    </body>
 </html>
