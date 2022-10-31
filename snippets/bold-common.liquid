@@ -96,24 +96,24 @@ It may be overwritten and any customizations would be lost.
    {%- endif -%}
    {%- comment -%} product page {%- endcomment -%}
    window.BOLD.common.Shopify.saveProduct({{ product.handle | json }}, {{ product.id | json }});
-   {%- for variant in product.variants -%}{%- assign csp_metafield_namespace = variant.id | prepend: "csp" -%}window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, { product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{ variant.metafields.bold_rp.rp_group_id }}', csp_metafield: {{ product.metafields[csp_metafield_namespace] | json }}});{%- endfor -%}
+   {%- for variant in product.variants -%}{%- assign csp_metafield_namespace = variant.id | prepend: "csp" -%}window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, { product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{variant.metafields.bold_rp.rp_group_id}}', csp_metafield: {{ product.metafields[csp_metafield_namespace] | json }}});{%- endfor -%}
    {%- comment -%} BOLD APPS INSTALLED {%- endcomment -%}
    {%- assign bold_apps_installed = shop | map: 'metafields' | map: 'bold_apps_installed' | first -%}
    window.BOLD.apps_installed = {{ bold_apps_installed | json }} || {};
-   {%- unless bold_apps_installed contains 'Customer Pricing' or bold_apps_installed contains 'Product Bundles' or bold_apps_installed contains 'Product Discount' or bold_apps_installed contains 'Quantity Breaks' or bold_apps_installed contains 'Custom Order' or bold_apps_installed contains 'Order Manager' or bold_apps_installed contains 'The Motivator' -%}
+   {%- unless bold_apps_installed contains 'Customer Pricing' or bold_apps_installed contains 'Product Bundles' or bold_apps_installed contains 'Product Discount' or bold_apps_installed contains 'Quantity Breaks' or bold_apps_installed contains 'Custom Order' or bold_apps_installed contains 'Order Manager' or bold_apps_installed contains 'The Motivator'-%}
        {%- comment -%} collection page {%- endcomment -%}
        {%- for product in collection.products -%}
            window.BOLD.common.Shopify.saveProduct({{ product.handle | json }}, {{ product.id | json }});
-           {%- for variant in product.variants -%}{%- assign csp_metafield_namespace = variant.id | prepend: "csp" -%}window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, { product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{ variant.metafields.bold_rp.rp_group_id }}', csp_metafield: {{ product.metafields[csp_metafield_namespace] | json }}});{%- endfor -%}
+           {%- for variant in product.variants -%}{%- assign csp_metafield_namespace = variant.id | prepend: "csp" -%}window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, { product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{variant.metafields.bold_rp.rp_group_id}}', csp_metafield: {{ product.metafields[csp_metafield_namespace] | json }}});{%- endfor -%}
        {%- endfor -%}
        {%- comment -%} search page {%- endcomment -%}
        {%- for product in search.results -%}
            window.BOLD.common.Shopify.saveProduct({{ product.handle | json }}, {{ product.id | json }});
-           {%- for variant in product.variants -%}{%- assign csp_metafield_namespace = variant.id | prepend: "csp" -%}window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, { product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{ variant.metafields.bold_rp.rp_group_id }}', csp_metafield: {{ product.metafields[csp_metafield_namespace] | json }}});{%- endfor -%}
+           {%- for variant in product.variants -%}{%- assign csp_metafield_namespace = variant.id | prepend: "csp" -%}window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, { product_id: {{ product.id | json }}, product_handle: {{ product.handle | json }}, price: {{ variant.price | json }}, group_id: '{{variant.metafields.bold_rp.rp_group_id}}', csp_metafield: {{ product.metafields[csp_metafield_namespace] | json }}});{%- endfor -%}
        {%- endfor -%}
    {%- endunless -%}
    {%- comment -%} cart page {%- endcomment -%}
-   {%- for item in cart.items -%}{%- assign csp_metafield_namespace = item.variant_id | prepend: "csp" -%}window.BOLD.common.Shopify.saveVariant({{ item.variant_id | json }}, { product_id: {{ item.product.id | json }}, product_handle: {{ item.product.handle | json }}, price: {{ item.variant.price | json }}, group_id: '{{ item.variant.metafields.bold_rp.rp_group_id }}', csp_metafield: {{ item.product.metafields[csp_metafield_namespace] | json }}});{%- endfor -%}
+   {%- for item in cart.items -%}{%- assign csp_metafield_namespace = item.variant_id | prepend: "csp" -%}window.BOLD.common.Shopify.saveVariant({{ item.variant_id | json }}, { product_id: {{ item.product.id | json }}, product_handle: {{ item.product.handle | json }}, price: {{ item.variant.price | json }}, group_id: '{{item.variant.metafields.bold_rp.rp_group_id}}', csp_metafield: {{ item.product.metafields[csp_metafield_namespace] | json }}});{%- endfor -%}
    {%- comment -%} metafields {%- endcomment -%}
    window.BOLD.common.Shopify.metafields = window.BOLD.common.Shopify.metafields || {};
    {%- assign metafield_namespaces_to_load = 'bold_rp,bold_csp_defaults' | split: ',' -%}
