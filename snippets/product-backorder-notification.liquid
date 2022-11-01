@@ -1,8 +1,10 @@
-{%- comment -%} USING METAFIELDS! https://www.sunriseintegration.com/learn/using-the-new-shopify-metafields-day-2 {%-endcomment -%}
+{%- comment -%}
+    USING METAFIELDS! https://www.sunriseintegration.com/learn/using-the-new-shopify-metafields-day-2
+{%- endcomment -%}
 {% if product.metafields.vidafields.backorder_product == true and product.metafields.vidafields.backorder_text != blank %}
-<p class="backorder-notice h2">
-  <strong>Backorder Notice:</strong>
-  <br>
-  {{ product.metafields.vidafields.backorder_text.value }}
-</p>
+    <h3>
+        <span style="color: #ff2a00;">
+            <strong>{{ product.metafields.vidafields.backorder_text.value }}</strong>
+        </span>
+    </h3>
 {% endif %}
