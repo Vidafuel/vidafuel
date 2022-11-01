@@ -302,11 +302,13 @@
                   {% endif %}
                   <div class="product-form__buttons">
                     <button
-                      type="submit"
-                      name="add"
-                      class="addtocart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
-                    {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
-                    >
+                        type="submit"
+                        name="add"
+                        class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+                        {% if product.selected_or_first_available_variant.available == false %}
+                          disabled
+                        {% endif %}
+                      >
                         <span>
                           {%- if product.selected_or_first_available_variant.available -%}
                             {{ 'products.product.add_to_cart' | t }}
@@ -315,11 +317,17 @@
                           {%- endif -%}
                         </span>
                         <div class="loading-overlay__spinner hidden">
-                          <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            class="spinner"
+                            viewBox="0 0 66 66"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
                             <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                           </svg>
                         </div>
-                    </button>
+                      </button>
                     {%- comment -%} YOTPO APP STAR RATING https://support.yotpo.com/en/article/shopify-installing-yotpo#manual-installation-a-step-by-step-guide {%- endcomment -%}
                     <div class="yotpo bottomLine" data-product-id="{{ product.id }}">
                     </div>
