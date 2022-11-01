@@ -298,39 +298,35 @@
                       {{ block.settings.button_pretext }}
                     </div>
                   {% endif %}
-
-
-                    {% if product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' or product.handle == 'protein-juice-berry' %} 
-                        {% assign soldOutBtnTxt = "Out of stock – click here to be notified when back in stock" %} 
-                    {% endif %}
                     
                   <div class="product-form__buttons">
-                  {%- comment -%} uncomment type="submit" & name="add" to re-enable add to cart button {%- endcomment -%}
-                    <button
-                            onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });"
-                            type="button"
-                        {% comment %} 
-                            type="submit" 
-                            name="add" 
-                        {% endcomment %}
-                      class="addtocart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
-                    {% if product.selected_or_first_available_variant.available == false %}{% unless product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' or product.handle == 'protein-juice-berry' %}disabled{% endunless %}{% endif %}
-                    >
+                                        <button
+                        type="submit"
+                        name="add"
+                        class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+                        {% if product.selected_or_first_available_variant.available == false %}
+                          disabled
+                        {% endif %}
+                      >
                         <span>
                           {%- if product.selected_or_first_available_variant.available -%}
                             {{ 'products.product.add_to_cart' | t }}
-                          {%- elsif product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' or product.handle == 'protein-juice-berry' -%}
-                            {{ soldOutBtnTxt }}
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
                           {%- endif -%}
                         </span>
                         <div class="loading-overlay__spinner hidden">
-                          <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            class="spinner"
+                            viewBox="0 0 66 66"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
                             <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                           </svg>
                         </div>
-                    </button>
+                      </button>
                     {%- comment -%} YOTPO APP STAR RATING https://support.yotpo.com/en/article/shopify-installing-yotpo#manual-installation-a-step-by-step-guide {%- endcomment -%}
                     <div class="yotpo bottomLine" data-product-id="{{ product.id }}">
                     </div>      

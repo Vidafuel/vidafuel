@@ -212,11 +212,7 @@ window.BOLD.common.Shopify.saveProduct({{ product_card_product.handle | json }},
 
       <div class="card__badge">
         {%- if product_card_product.available == false -%}
-        {% if product_card_product.handle == 'protein-juice-orange' or product_card_product.handle == 'collagen-protein-drink-2-pack' or product_card_product.handle == 'protein-juice-berry' %}
-            <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.unavailable' | t }}</span>
-        {%- else -%}
-            <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span>
-        {%- endif -%}
+              <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span>
         {%- elsif product_card_product.compare_at_price > product_card_product.price and product_card_product.available -%}
           <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">{{ 'products.product.on_sale' | t }}</span>
         {%- endif -%}
