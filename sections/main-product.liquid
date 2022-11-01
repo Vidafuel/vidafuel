@@ -299,27 +299,27 @@
                     </div>
                   {% endif %}
 
-
-                    {% if product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' or product.handle == 'protein-juice-berry' %} 
+                    {% if product.metafields.vidafields.backorder_product == true %}
                         {% assign soldOutBtnTxt = "Out of stock – click here to be notified when back in stock" %} 
                     {% endif %}
                     
                   <div class="product-form__buttons">
                   {%- comment -%} uncomment type="submit" & name="add" to re-enable add to cart button {%- endcomment -%}
                     <button
-                            onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });"
-                            type="button"
-                        {% comment %} 
-                            type="submit" 
-                            name="add" 
-                        {% endcomment %}
+                      {% if product.metafields.vidafields.backorder_product == true %}
+                      onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });"
+                      type="button"
+                      {% else %}
+                      type="submit" 
+                      name="add" 
+                      {% endif %}
                       class="addtocart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                     {% if product.selected_or_first_available_variant.available == false %}{% unless product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' or product.handle == 'protein-juice-berry' %}disabled{% endunless %}{% endif %}
                     >
                         <span>
-                          {%- if product.selected_or_first_available_variant.available -%}
+                          {%- if product.selected_or_first_available_variant.available and product.metafields.vidafields.backorder_product == false -%}
                             {{ 'products.product.add_to_cart' | t }}
-                          {%- elsif product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' or product.handle == 'protein-juice-berry' -%}
+                          {%- elsif product.metafields.vidafields.backorder_product == true -%}
                             {{ soldOutBtnTxt }}
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
