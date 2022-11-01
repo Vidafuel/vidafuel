@@ -298,39 +298,35 @@
                       {{ block.settings.button_pretext }}
                     </div>
                   {% endif %}
-
-
-                    {% if product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' or product.handle == 'protein-juice-berry' %} 
-                        {% assign soldOutBtnTxt = "Out of stock – click here to be notified when back in stock" %} 
-                    {% endif %}
                     
                   <div class="product-form__buttons">
-                  {%- comment -%} uncomment type="submit" & name="add" to re-enable add to cart button {%- endcomment -%}
-                    <button
-                            onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });"
-                            type="button"
-                        {% comment %} 
-                            type="submit" 
-                            name="add" 
-                        {% endcomment %}
-                      class="addtocart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
-                    {% if product.selected_or_first_available_variant.available == false %}{% unless product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' or product.handle == 'protein-juice-berry' %}disabled{% endunless %}{% endif %}
-                    >
+                                        <button
+                        type="submit"
+                        name="add"
+                        class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+                        {% if product.selected_or_first_available_variant.available == false %}
+                          disabled
+                        {% endif %}
+                      >
                         <span>
                           {%- if product.selected_or_first_available_variant.available -%}
                             {{ 'products.product.add_to_cart' | t }}
-                          {%- elsif product.handle == 'protein-juice-orange' or product.handle == 'collagen-protein-drink-2-pack' or product.handle == 'protein-juice-berry' -%}
-                            {{ soldOutBtnTxt }}
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
                           {%- endif -%}
                         </span>
                         <div class="loading-overlay__spinner hidden">
-                          <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            class="spinner"
+                            viewBox="0 0 66 66"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
                             <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                           </svg>
                         </div>
-                    </button>
+                      </button>
                     {%- comment -%} YOTPO APP STAR RATING https://support.yotpo.com/en/article/shopify-installing-yotpo#manual-installation-a-step-by-step-guide {%- endcomment -%}
                     <div class="yotpo bottomLine" data-product-id="{{ product.id }}">
                     </div>      
@@ -453,85 +449,6 @@
     </modal-dialog>
   {%- endfor -%}
 </section>
-
-{% comment %} klaviyo modal form {% endcomment %} 
-<div class="klaviyo_modal" id="k_id_modal_request" style="display:none;">
-    <div class="klaviyo_inner">
-        <a href="#" class="klaviyo_close_modal klaviyo_header_close">×</a>
-        <form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate"
-            class="klaviyo_subscription_form">
-            <input type="hidden" name="g" value="JQgHNX">
-            <div class="klaviyo_fieldset">
-                <p class="klaviyo_header">Want to know when this product is back in stock?</p>
-                <p class="klaviyo_subheader">Enter your email below and we will let you know when this product is
-                    available.</p>
-            </div>
-            <div class="klaviyo_fieldset">
-                <div class="klaviyo_field_group">
-                    <label for="k_id_modal_$email">Email Address</label>
-                    <input type="email" id="k_id_modal_$email" name="email">
-                </div>
-            </div>
-            <div class="klaviyo_fine_print"></div>
-            <div class="klaviyo_form_actions">
-                <button type="submit" class="klaviyo_submit_button">
-                    <span>Please Let Me Know</span>
-                </button>
-            </div>
-            <div class="klaviyo_below_submit"></div>
-        </form>
-        <div class="klaviyo_messages">
-            <div class="success_message" style="display:none;">Thank you! We'll let you know.</div>
-            <div class="error_message" style="display:none;"></div>
-        </div>
-    </div>
-</div>
-{% comment %} klaviyo modal form css {% endcomment %}
-<style>
-    @media only screen and (min-width: 750px) {
-        .main-content {
-            padding-top: 25px;
-        }
-    }
-
-    .klaviyo_modal .klaviyo_inner {
-        top: 20px !important;
-        background-color: #fff;
-        font-family: "Trade Gothic Next", sans-serif;
-    }
-
-    .klaviyo_modal .klaviyo_header {
-        color: rgb(18, 18, 18);
-    }
-
-    .klaviyo_modal .klaviyo_subheader {
-        color: rgb(18, 18, 18);
-    }
-
-    .klaviyo_modal .klaviyo_submit_button,
-    .klaviyo_modal .klaviyo_submit_button span {
-        background-color: rgb(123, 204, 200);
-        background-image: none;
-        border-radius: 2px;
-    }
-
-    .klaviyo_modal .klaviyo_submit_button:hover:not(.btn-fake),
-    .klaviyo_modal .klaviyo_submit_button span:hover:not(.btn-fake) {
-        box-shadow: 0 0 0 0.2rem rgb(123, 204, 200);
-        background-color: rgb(123, 204, 200) !important;
-    }
-
-    .klaviyo_modal .klaviyo_fieldset {
-        border-top: none;
-    }
-</style>
-{% comment %} klaviyo modal form scripts {% endcomment %}
-<script type="text/javascript">
-    KlaviyoSubscribe.attachToForms('#k_id_modal_request', {
-        hide_form_on_success: true
-    });
-</script>
-<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
 
 {% javascript %}
   class ProductModal extends ModalDialog {
