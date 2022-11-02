@@ -2536,6 +2536,10 @@ details-disclosure > details {
 	}
 }
 
+.custom-h1 {
+	font-size: 41px;
+}
+
 .heading-2 {
 	font-size: calc(var(--font-heading-scale) * 2.5rem);
 	margin: inherit;
