@@ -46,7 +46,7 @@
               >
             {%- endif -%}
           </div>
-          {%- if section.settings.image_01_title != blank -%}<p class="label trade_gothic_compressed_bold color-{{ section.settings.color_scheme }}">{{ section.settings.image_01_title }}</p>{% endif %}
+          {%- if section.settings.image_01_title != blank -%}<p class="label trade_gothic_compressed_bold color-foreground">{{ section.settings.image_01_title }}</p>{% endif %}
           {%- if section.settings.image_01_link != blank -%}</a>{% endif %}
           </div>
         </li>
@@ -74,7 +74,7 @@
                 >
               {%- endif -%}
             </div>
-            {%- if section.settings.image_02_title != blank -%}<p class="label trade_gothic_compressed_bold color-{{ section.settings.color_scheme }}">{{ section.settings.image_02_title }}</p>{% endif %}
+            {%- if section.settings.image_02_title != blank -%}<p class="label trade_gothic_compressed_bold color-foreground">{{ section.settings.image_02_title }}</p>{% endif %}
             {%- if section.settings.image_02_link != blank -%}</a>{% endif %}
           </div>
         </li>
@@ -101,7 +101,7 @@
                 >
               {%- endif -%}
             </div>
-          {%- if section.settings.image_03_title != blank -%}<p class="label trade_gothic_compressed_bold color-{{ section.settings.color_scheme }}">{{ section.settings.image_03_title }}</p>{% endif %}
+          {%- if section.settings.image_03_title != blank -%}<p class="label trade_gothic_compressed_bold color-foreground">{{ section.settings.image_03_title }}</p>{% endif %}
           {%- if section.settings.image_03_link != blank -%}</a>{% endif %}
           </div>
         </li>
@@ -128,7 +128,7 @@
                 >
               {%- endif -%}
             </div>
-            {%- if section.settings.image_04_title != blank -%}<p class="label trade_gothic_compressed_bold color-{{ section.settings.color_scheme }}">{{ section.settings.image_04_title }}</p>{% endif %}
+            {%- if section.settings.image_04_title != blank -%}<p class="label trade_gothic_compressed_bold color-foreground">{{ section.settings.image_04_title }}</p>{% endif %}
             {%- if section.settings.image_04_link != blank -%}</a>{% endif %}
           </div>
         </li>
@@ -155,7 +155,7 @@
                 >
               {%- endif -%}
             </div>
-            {%- if section.settings.image_05_title != blank -%}<p class="label trade_gothic_compressed_bold color-{{ section.settings.color_scheme }}">{{ section.settings.image_05_title }}</p>{% endif %}
+            {%- if section.settings.image_05_title != blank -%}<p class="label trade_gothic_compressed_bold color-foreground">{{ section.settings.image_05_title }}</p>{% endif %}
             {%- if section.settings.image_05_link != blank -%}</a>{% endif %}
           </div>
         </li>
@@ -182,7 +182,7 @@
               >
             {%- endif -%}
           </div>
-          {%- if section.settings.image_06_title != blank -%}<p class="label trade_gothic_compressed_bold color-{{ section.settings.color_scheme }}">{{ section.settings.image_06_title }}</p>{% endif %}
+          {%- if section.settings.image_06_title != blank -%}<p class="label trade_gothic_compressed_bold color-foreground">{{ section.settings.image_06_title }}</p>{% endif %}
           {%- if section.settings.image_06_link != blank -%}</a>{% endif %}
           </div>
         </li>
@@ -209,7 +209,11 @@
                 >
               {%- endif -%}
             </div>
-            {%- if section.settings.image_07_title != blank -%}<p class="label trade_gothic_compressed_bold color-{{ section.settings.color_scheme }}">{{ section.settings.image_07_title }}</p>{% endif %}
+            {%- if section.settings.image_07_title != blank -%}
+              <p class="label trade_gothic_compressed_bold color-foreground">
+                {{ section.settings.image_07_title }}
+              </p>
+            {% endif %}
             {%- if section.settings.image_07_link != blank -%}</a>{% endif %}
           </div>
         </li>
@@ -236,7 +240,11 @@
                 >
               {%- endif -%}
             </div>
-            {%- if section.settings.image_08_title != blank -%}<p class="label trade_gothic_compressed_bold">{{ section.settings.image_08_title }}</p>{% endif %}
+            {%- if section.settings.image_08_title != blank -%}
+              <p class="label trade_gothic_compressed_bold color-foreground">
+              {{ section.settings.image_08_title }}
+            </p>
+          {% endif %}
             {%- if section.settings.image_08_link != blank -%}</a>{% endif %}
           </div>
         </li>
@@ -247,9 +255,9 @@
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'heading' -%}
-              <h2 class="image-with-text__heading h1 {% if block.settings.heading_font != 'default' %}{{ block.settings.heading_font }}{% endif %}" {{ block.shopify_attributes }}>
-                {{ block.settings.heading | escape }}
-              </h2>
+              <div class="image-with-text__heading h1 {% if block.settings.heading_font != 'default' %}{{ block.settings.heading_font }}{% endif %}" {{ block.shopify_attributes }}>
+                {{ block.settings.heading }}
+              </div>
             {%- when 'text' -%}
               <div class="image-with-text__text rte {% if block.settings.text_font != 'default' %}{{ block.settings.text_font }}{% endif %} {% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %} {% if block.settings.text_color != 'default' %}{{ block.settings.text_color }}{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
@@ -503,9 +511,9 @@
       "limit": 1,
       "settings": [
         {
-          "type": "text",
+          "type": "richtext",
           "id": "heading",
-          "default": "Images with text",
+          "default": "<p>Developed by dietitians to deliver essential nutrients when you need them most</p>",
           "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
         },
         {

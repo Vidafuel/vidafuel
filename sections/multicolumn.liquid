@@ -33,6 +33,13 @@
               }
             </style>
           {% endif %}
+          {% if block.settings.icon_color != '#cdda01' %}
+            <style>
+              .{{ section.id }} .icon {
+                fill: {{ block.settings.icon_color }};
+              }
+            </style>
+          {% endif %}
           <li class="multicolumn-list__item {% if section.settings.columns != 'default' %} {{ section.settings.columns }}{% endif %} grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
             <div class="multicolumn-card">
               {%- if block.settings.image != blank -%}
@@ -84,17 +91,18 @@
                   {% endif %}
                 </div>
               {%- endif -%}
+              {%- unless block.settings.text == blank -%}
               <div class="multicolumn-card__info{% if block.settings.custom_liquid != blank %} custom-liquid__info{% endif %}">
                 {% if section.settings.icon_enable %} <div class="icon__enable">{% endif %}
                 {%- if block.settings.title != blank and block.settings.title_top == false and block.settings.custom_liquid == blank -%}
                   {% if section.settings.icon_enable %}
                     {% render 'icon-accordion', icon: block.settings.icon %}
                   {% endif %}
-                  <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.title_size != 'default' %}{{ block.settings.title_size }}{% endif %}" {% if block.settings.column_custom_text_color %}style="color:{{ block.settings.copy_color }}"{% endif %}>
+                  <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% else %}default-size{% endif %} {% if block.settings.title_size != 'default' %}{{ block.settings.title_size }}{% endif %}" {% if block.settings.column_custom_text_color %}style="color:{{ block.settings.copy_color }}"{% endif %}>
                     {{ block.settings.title }}
                   </h3>
                 {%- endif -%}
-                {% if section.settings.icon_enable %} </div>{% endif %}
+                {% if section.settings.icon_enable %}</div>{% endif %}
                 {%- if block.settings.text != blank -%}
                   <div class="rte {% if block.settings.text_color_primary %}color-foreground-accent-1 {% endif %}{% if block.settings.p_bullets %} p_bullets {% endif %}{% if block.settings.text_font != 'default' %} {{ block.settings.text_font }}{% endif %}{% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %}" {% if block.settings.column_custom_text_color %}style="color:{{ block.settings.copy_color }}"{% endif %}>
                     {{ block.settings.text }}
@@ -148,6 +156,7 @@
                   {{ block.settings.custom_liquid }}
                 {%- endif -%}
               </div>
+              {%- endunless -%}
             </div>
           </li>
         {%- endfor -%}
@@ -721,6 +730,12 @@
           "type": "color",
           "id": "p_bullets_color",
           "label": "Bullet color",
+          "default": "#cdda01"
+        },
+        {
+          "type": "color",
+          "id": "icon_color",
+          "label": "Icon color",
           "default": "#cdda01"
         },
         {

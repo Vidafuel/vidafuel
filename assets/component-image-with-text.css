@@ -34,7 +34,7 @@
 }
 
 @media screen and (max-width: 749px) {
-.image-with-text__grid {
+	.image-with-text__grid {
 		padding-top: 4rem;
 	}
 }
@@ -67,6 +67,7 @@
 	font-size: 20px;
 	background-color: unset;
 	text-decoration: none;
+	line-height: normal;
 }
 
 @media screen and (min-width: 750px) {
@@ -208,7 +209,8 @@
 }
 
 .waves-button {
-	box-shadow: 0 0 0 .1rem rgba(var(--color-button),var(--alpha-button-border));
+	box-shadow: 0 0 0 0.1rem
+		rgba(var(--color-button), var(--alpha-button-border));
 }
 
 .image-with-text__content > :first-child:is(.image-with-text__heading) {
@@ -232,6 +234,10 @@
 	z-index: 1;
 }
 
+.image-with-text__heading p {
+	margin-bottom: 0.5em;
+}
+
 .image-with-text__text p {
 	margin-top: 0;
 	margin-bottom: 1rem;
@@ -239,7 +245,7 @@
 
 /* CUSTOM CSS */
 .images-with-text .multicolumn-list {
-	padding-top: 4rem ;
+	padding-top: 4rem;
 	padding-bottom: 4rem;
 }
 

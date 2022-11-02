@@ -6,8 +6,8 @@
         "ccea9b7c-bc59-423f-962f-fb479244665d": {
           "type": "text",
           "settings": {
-            "title": "Discover the power of concentrated macronutrients",
-            "text": "The easiest way to nourish your day",
+            "title": "High quality nutrition is now possible in a 2oz shot",
+            "text": "",
             "button_label": "Shop Now",
             "button_link": "\/products",
             "color_scheme": "background-1"
@@ -35,190 +35,6 @@
         "full_width": true
       }
     },
-    "1641834224a94d856f": {
-      "type": "multicolumn",
-      "blocks": {
-        "16418342231ac13c89-0": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "<p>Low volume<\/p>",
-            "icon": "check_mark",
-            "text": "<p>Quick & easy to consume<\/p>",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "default",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "text_color_primary": false
-          }
-        },
-        "16418342231ac13c89-1": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "<p>Powerful<\/p>",
-            "icon": "silhouette",
-            "text": "<p>High value nutrition<\/p>",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "default",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "text_color_primary": false
-          }
-        },
-        "16418342231ac13c89-2": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "<p>Optimized<\/p>",
-            "icon": "heart",
-            "text": "<p>Delivers macronutrients without the extra sugar, fat and calories<\/p>",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "default",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "text_color_primary": false
-          }
-        },
-        "e59229b5-1a1c-46ca-a575-992d0ab5c191": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "<p>Economical<\/p>",
-            "icon": "price_tag",
-            "text": "<p>Biggest bang for your buck<\/p>",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "title_size": "default",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "text_color_primary": false
-          }
-        }
-      },
-      "block_order": [
-        "16418342231ac13c89-0",
-        "16418342231ac13c89-1",
-        "16418342231ac13c89-2",
-        "e59229b5-1a1c-46ca-a575-992d0ab5c191"
-      ],
-      "settings": {
-        "title": "The benefits of Vidafuel concentrated nutrition",
-        "title_center": true,
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "columns": "four",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "flex_align_center": false,
-        "desktop_no_spacing": true,
-        "icon_enable": true,
-        "full_width_section": false
-      }
-    },
-    "1639503887e884ceb3": {
-      "type": "images-with-text",
-      "blocks": {
-        "16395038879d66b692-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Developed by dietitians to deliver essential nutrients when you need them most",
-            "heading_font": "trade_gothic_compressed_bold"
-          }
-        },
-        "847081ef-8696-42f1-ad5e-a315d489674c": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "SHOP NOW",
-            "button_link": "\/products",
-            "button_font": "default"
-          }
-        }
-      },
-      "block_order": [
-        "16395038879d66b692-0",
-        "847081ef-8696-42f1-ad5e-a315d489674c"
-      ],
-      "settings": {
-        "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
-        "height": "adapt",
-        "desktop_no_spacing": true,
-        "color_scheme": "background-2",
-        "layout": "text_first",
-        "mobile_text_first": true,
-        "section_width": "full_width",
-        "image_01": "shopify:\/\/shop_images\/DIALYSIS.png",
-        "image_01_title": "CKD\/DIALYSIS",
-        "image_01_link": "https:\/\/vidafuel.com\/pages\/protein-drinks-for-dialysis-patients",
-        "image_02": "shopify:\/\/shop_images\/DIABETES.png",
-        "image_02_title": "BARIATRIC",
-        "image_02_link": "https:\/\/vidafuel.com\/pages\/bariatric-protein-nutrition",
-        "image_03": "shopify:\/\/shop_images\/ACTIVE-AGING.png",
-        "image_03_title": "ACTIVE AGING",
-        "image_03_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
-        "image_04": "shopify:\/\/shop_images\/POST-SURGERY-RECOVERY.png",
-        "image_04_title": "POST-SURGERY RECOVERY",
-        "image_04_link": "https:\/\/vidafuel.com\/pages\/post-surgery-protein",
-        "image_05": "shopify:\/\/shop_images\/GERIATRIC-NUTRITION.png",
-        "image_05_title": "GERIATRIC NUTRITION",
-        "image_05_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
-        "image_06": "shopify:\/\/shop_images\/CANCER.png",
-        "image_06_title": "CANCER",
-        "image_06_link": "https:\/\/vidafuel.com\/pages\/protein-cancer-patients",
-        "image_07": "shopify:\/\/shop_images\/ATHLETICS.png",
-        "image_07_title": "FITNESS \/ ATHLETICS",
-        "image_07_link": "https:\/\/vidafuel.com\/pages\/protein-for-athletes",
-        "image_08_title": "",
-        "image_08_link": ""
-      }
-    },
     "1639505258119ea558": {
       "type": "multicolumn",
       "blocks": {
@@ -226,9 +42,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/shot_hand-horizontal.webp",
-            "image_url": "",
+            "image_url": "shopify:\/\/pages\/healthcare-professionals",
             "title": "",
-            "icon": "check_mark",
+            "icon": "none",
             "text": "",
             "link_label": "",
             "link_type": "link",
@@ -245,6 +61,7 @@
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
             "text_color_primary": true
           }
         },
@@ -254,7 +71,7 @@
             "image_url": "",
             "title": "<p>Meet your daily protein booster<\/p>",
             "icon": "none",
-            "text": "<p><\/p><p><strong>16g protein per 2oz shot<br\/><\/strong>One shot per day is all you need!<\/p><p><\/p><p><strong>Powerful blend of whey + collagen protein<br\/><\/strong>To support muscle mass & strength, joint & bone health<\/p><p><\/p><p><strong>Contains all 20 amino acids<\/strong>, <br\/>Complete protein <\/p><p><\/p><p><strong>No artificial sweeteners, ever <\/strong><\/p><p><\/p><p><\/p>",
+            "text": "<p><strong>16g protein per 2oz shot<br\/><\/strong>One shot per day is all you need!<\/p><p><\/p><p><strong>Powerful blend of whey + collagen protein<br\/><\/strong>To support muscle mass & strength, joint & bone health<\/p><p><\/p><p><strong>Contains all 20 amino acids<\/strong>, <br\/>Complete protein <\/p><p><\/p><p><strong>No artificial sweeteners, ever <\/strong><\/p><p><\/p><p><\/p>",
             "link_label": "SHOP PROTEIN DRINKS",
             "link_type": "link",
             "link": "https:\/\/vidafuel.com\/products",
@@ -262,7 +79,7 @@
             "custom_liquid": "",
             "liquid_background": "#ffffff",
             "column_custom_text_color": false,
-            "copy_color": "#000000",
+            "copy_color": "#333333",
             "title_font": "default",
             "title_size": "heading-2",
             "text_font": "default",
@@ -270,6 +87,7 @@
             "title_top": false,
             "p_bullets": true,
             "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
             "text_color_primary": false
           }
         }
@@ -295,6 +113,167 @@
         "full_width_section": true
       }
     },
+    "1641834224a94d856f": {
+      "type": "multicolumn",
+      "blocks": {
+        "16418342231ac13c89-0": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "<p>Low volume<\/p>",
+            "icon": "check_mark",
+            "text": "<p>Quick & easy to consume<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_custom_text_color": false,
+            "copy_color": "#565656",
+            "title_font": "default",
+            "title_size": "heading-2",
+            "text_font": "default",
+            "text_size": "heading-3",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#e68227",
+            "text_color_primary": false
+          }
+        },
+        "16418342231ac13c89-2": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "<p>Dietitian developed<\/p>",
+            "icon": "heart",
+            "text": "<p>Optimizes to deliver essential macronutrients without the extra sugar, fat and calories<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_custom_text_color": false,
+            "copy_color": "#565656",
+            "title_font": "default",
+            "title_size": "heading-2",
+            "text_font": "default",
+            "text_size": "heading-3",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "e59229b5-1a1c-46ca-a575-992d0ab5c191": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "<p>Economical<\/p>",
+            "icon": "price_tag",
+            "text": "<p>Biggest bang for your buck<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_custom_text_color": false,
+            "copy_color": "#565656",
+            "title_font": "default",
+            "title_size": "heading-2",
+            "text_font": "default",
+            "text_size": "heading-3",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        }
+      },
+      "block_order": [
+        "16418342231ac13c89-0",
+        "16418342231ac13c89-2",
+        "e59229b5-1a1c-46ca-a575-992d0ab5c191"
+      ],
+      "settings": {
+        "title": "The Easiest Way to Nourish Your Day",
+        "title_center": true,
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "columns": "default",
+        "background_style": "secondary",
+        "button_label": "Read More",
+        "button_link": "shopify:\/\/blogs\/nutrition-wellness\/protein-drink-is-good-for-diabetics",
+        "swipe_on_mobile": false,
+        "flex_align_center": false,
+        "desktop_no_spacing": true,
+        "icon_enable": true,
+        "full_width_section": false
+      }
+    },
+    "1639503887e884ceb3": {
+      "type": "images-with-text",
+      "blocks": {
+        "16395038879d66b692-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><em><strong>Developed by dietitians<\/strong><\/em> to deliver essential nutrients when you need them most<\/p>",
+            "heading_font": "trade_gothic_condensed"
+          }
+        },
+        "847081ef-8696-42f1-ad5e-a315d489674c": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_font": "trade_gothic_bold"
+          }
+        }
+      },
+      "block_order": [
+        "16395038879d66b692-0",
+        "847081ef-8696-42f1-ad5e-a315d489674c"
+      ],
+      "settings": {
+        "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
+        "height": "adapt",
+        "desktop_no_spacing": false,
+        "color_scheme": "background-2",
+        "layout": "text_first",
+        "mobile_text_first": true,
+        "section_width": "full_width",
+        "image_01": "shopify:\/\/shop_images\/DIALYSIS.png",
+        "image_01_title": "CKD\/DIALYSIS",
+        "image_01_link": "https:\/\/vidafuel.com\/pages\/protein-drinks-for-dialysis-patients",
+        "image_02": "shopify:\/\/shop_images\/DIABETES.png",
+        "image_02_title": "BARIATRIC",
+        "image_02_link": "https:\/\/vidafuel.com\/pages\/bariatric-protein-nutrition",
+        "image_03": "shopify:\/\/shop_images\/ACTIVE-AGING.png",
+        "image_03_title": "ACTIVE AGING",
+        "image_03_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
+        "image_04": "shopify:\/\/shop_images\/POST-SURGERY-RECOVERY.png",
+        "image_04_title": "POST-SURGERY RECOVERY",
+        "image_04_link": "https:\/\/vidafuel.com\/pages\/post-surgery-protein",
+        "image_05": "shopify:\/\/shop_images\/GERIATRIC-NUTRITION.png",
+        "image_05_title": "GERIATRIC NUTRITION",
+        "image_05_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
+        "image_06": "shopify:\/\/shop_images\/CANCER.png",
+        "image_06_title": "CANCER",
+        "image_06_link": "https:\/\/vidafuel.com\/pages\/protein-cancer-patients",
+        "image_07": "shopify:\/\/shop_images\/ATHLETICS.png",
+        "image_07_title": "FITNESS \/ ATHLETICS",
+        "image_07_link": "shopify:\/\/pages\/protein-for-athletes",
+        "image_08": "shopify:\/\/shop_images\/DIABETES.png",
+        "image_08_title": "GENERAL WELLNESS",
+        "image_08_link": "https:\/\/vidafuel.com\/blogs\/nutrition-wellness\/how-to-protect-against-infection-with-protein"
+      }
+    },
     "1647969963a76480fb": {
       "type": "video",
       "settings": {
@@ -317,9 +296,9 @@
   },
   "order": [
     "16420790196f1cba40",
+    "1639505258119ea558",
     "1641834224a94d856f",
     "1639503887e884ceb3",
-    "1639505258119ea558",
     "1647969963a76480fb",
     "16420895372c7ae66d"
   ]
