@@ -70,6 +70,7 @@
     },
     "1640121497f0b3cd4b": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "1640121497ce050c54-0": {
           "type": "heading",
@@ -109,6 +110,7 @@
     },
     "164012152966eb2d65": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "subtitle": "Subscribe & Save 15%!",
