@@ -1,4 +1,3 @@
-
 .yotpo-reviews-carousel .carousel-display-wrapper .scroller {
 	padding: 2rem 0;
 	max-width: 100%;
@@ -19,16 +18,16 @@
 	.carousel-display-wrapper
 	#carousel-top-panel
 	.headline {
-    color: #cddb00 !important;
-    font-family: trade-gothic-next-compressed,sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 40px !important;
-    letter-spacing: 0.5px;
-    line-height: 48px;
-    text-transform: uppercase;
-    padding-top: 0;
-    position: relative;
+	color: #cddb00 !important;
+	font-family: trade-gothic-next-compressed, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 40px !important;
+	letter-spacing: 0.5px;
+	line-height: 48px;
+	text-transform: uppercase;
+	padding-top: 0;
+	position: relative;
 }
 
 .yotpo-reviews-carousel
@@ -266,4 +265,6 @@
 	}
 }
 
-
+.yotpo .yotpo-testimonials-btn span {
+	font-size: 1.6rem;
+}
