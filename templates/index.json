@@ -290,7 +290,7 @@
         "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"32\" \n data-header-customisation-text=\"Loved &amp; trusted by thousands of customers\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"both\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"0\" \n data-autoplay-speed=\"3000\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
         "custom_background": true,
         "background_color": "#7bccc8",
-        "full_width": true
+        "full_width": false
       }
     }
   },
