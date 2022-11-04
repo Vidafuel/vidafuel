@@ -124,7 +124,7 @@
 		.carousel-display-wrapper
 		.yotpo-carousel
 		.single-carousel {
-		transform: translateX(-88px);
+		/* transform: translateX(-110px); */
 	}
 }
 .yotpo-reviews-carousel
