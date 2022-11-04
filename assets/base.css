@@ -683,7 +683,13 @@ h6:empty {
 	margin-bottom: 4.5rem;
 	white-space: nowrap;
 }
-
+.icon {
+	align-self: center;
+	fill: rgb(var(--color-foreground));
+	height: calc(var(--font-heading-scale) * 3.5rem);
+	margin-right: calc(var(--font-heading-scale) * 0.8rem);
+	width: calc(var(--font-heading-scale) * 3.5rem);
+}
 .link-with-icon .icon {
 	width: 1.5rem;
 	margin-left: 1rem;

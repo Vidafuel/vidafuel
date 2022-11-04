@@ -364,13 +364,6 @@
 	display: flex;
 	flex: 1;
 }
-.icon {
-	align-self: center;
-	fill: rgb(var(--color-foreground));
-	height: calc(var(--font-heading-scale) * 3.5rem);
-	margin-right: calc(var(--font-heading-scale) * 0.8rem);
-	width: calc(var(--font-heading-scale) * 3.5rem);
-}
 .center .icon__enable {
 	flex-direction: column;
 }
