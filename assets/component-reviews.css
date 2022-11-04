@@ -111,20 +111,20 @@
 	padding-bottom: 0;
 }
 
-@media screen and (max-width: 373px) {
+/* @media screen and (max-width: 373px) {
 	.yotpo-reviews-carousel
 		.carousel-display-wrapper
 		.yotpo-carousel
 		.single-carousel {
 		margin-right: 80px !important;
 	}
-}
+} */
 @media screen and (min-width: 374px) {
 	.yotpo-reviews-carousel
 		.carousel-display-wrapper
 		.yotpo-carousel
 		.single-carousel {
-		/* transform: translateX(-110px); */
+		transform: translateX(-110px);
 	}
 }
 .yotpo-reviews-carousel
