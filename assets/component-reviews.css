@@ -285,18 +285,37 @@
 	}
 }
 
+/* reviews side tab */
 .yotpo .yotpo-testimonials-btn span {
 	font-size: 1.6rem;
+	color: #e68227;
+	font-weight: 600;
+}
+.yotpo .yotpo-testimonials-btn {
+	border-right: 3px solid #e68227;
+	border-bottom: 3px solid #e68227;
+	border-left: 3px solid #e68227;
+	border-bottom-right-radius: var(--border-radius);
+	border-bottom-left-radius: var(--border-radius);
+	transition: all 0.1s linear;
+}
+.yotpo .yotpo-testimonials-btn:hover {
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	border-left: 3px solid #fff;
+	outline: 3px solid #e68227;
+}
+.yotpo .yotpo-testimonials-btn:hover span {
+	line-height: 1.1;
 }
 
+/* reviews modal */
 .yotpo-modal-logo {
 	display: none;
 }
-
 .yotpo-modal-header .modal-title {
 	margin-top: 0;
 }
-
 .yotpo .yotpo-icon-cross {
 	top: 0;
 }
