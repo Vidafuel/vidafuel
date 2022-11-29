@@ -73,6 +73,7 @@
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
             "text_color_primary": false
           }
         },
@@ -99,6 +100,7 @@
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
             "text_color_primary": false
           }
         },
@@ -124,6 +126,7 @@
             "title_top": false,
             "p_bullets": true,
             "p_bullets_color": "#7bccc8",
+            "icon_color": "#cdda01",
             "text_color_primary": true
           }
         }
@@ -175,6 +178,7 @@
             "title_top": false,
             "p_bullets": true,
             "p_bullets_color": "#121212",
+            "icon_color": "#cdda01",
             "text_color_primary": false
           }
         },
@@ -201,6 +205,7 @@
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
             "text_color_primary": false
           }
         },
@@ -215,8 +220,8 @@
             "link_type": "link",
             "link": "",
             "modal_liquid": "",
-            "custom_liquid": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/shell.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"19971200\",\n    formId: \"03a444a5-8a44-42ff-b7bd-34263b9df190\"\n  });\n<\/script>",
-            "liquid_background": "#ffffff",
+            "custom_liquid": "<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/embed\/v2.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"19971200\",\n    formId: \"03a444a5-8a44-42ff-b7bd-34263b9df190\"\n  });\n<\/script>",
+            "liquid_background": "#fff",
             "column_custom_text_color": false,
             "copy_color": "#000000",
             "title_font": "default",
@@ -226,6 +231,7 @@
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
             "text_color_primary": false
           }
         }
@@ -334,6 +340,7 @@
             "title_top": true,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
             "text_color_primary": false
           }
         },
@@ -360,6 +367,7 @@
             "title_top": true,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
             "text_color_primary": false
           }
         }
@@ -391,7 +399,7 @@
         "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"337882256,129641668,177810157,129641815,150141923,129641641\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"1\" \n data-autoplay-speed=\"7500\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
         "custom_background": false,
         "background_color": "#ffffff",
-        "full_width": false
+        "page_width": false
       }
     },
     "1639506526d4856680": {
@@ -420,6 +428,7 @@
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
             "text_color_primary": false
           }
         }
@@ -443,6 +452,12 @@
         "icon_enable": false,
         "full_width_section": false
       }
+    },
+    "e80db62f-1c32-470c-a2d1-21565021648e": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form"
+      }
     }
   },
   "order": [
@@ -454,6 +469,7 @@
     "16395061492d0dea2e",
     "163950623206c4ca1f",
     "164328693248fb79aa",
-    "1639506526d4856680"
+    "1639506526d4856680",
+    "e80db62f-1c32-470c-a2d1-21565021648e"
   ]
 }
