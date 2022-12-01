@@ -91,7 +91,6 @@
                   {% endif %}
                 </div>
               {%- endif -%}
-              {%- unless block.settings.text == blank -%}
               <div class="multicolumn-card__info{% if block.settings.custom_liquid != blank %} custom-liquid__info{% endif %}">
                 {% if section.settings.icon_enable %} <div class="icon__enable">{% endif %}
                 {%- if block.settings.title != blank and block.settings.title_top == false and block.settings.custom_liquid == blank -%}
@@ -156,7 +155,6 @@
                   {{ block.settings.custom_liquid }}
                 {%- endif -%}
               </div>
-              {%- endunless -%}
             </div>
           </li>
         {%- endfor -%}
