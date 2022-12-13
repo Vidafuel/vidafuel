@@ -383,7 +383,6 @@ body,
 }
 
 .hidden {
-	display: none !important;
 }
 
 .visually-hidden {
@@ -599,7 +598,7 @@ table:not([class]) th {
 }
 
 .hidden {
-	display: none !important;
+
 }
 
 @media screen and (max-width: 749px) {
