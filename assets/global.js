@@ -739,6 +739,7 @@ for(var i=0; i < elList.length; i++){
     this.classList.add('hidden');
     for(var x=0; x < video.length; x++){
       video[x].classList.remove('hidden');
+      video[x].play();
     }
   
   });
