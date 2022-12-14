@@ -728,3 +728,18 @@ class VariantRadios extends VariantSelects {
 }
 
 customElements.define('variant-radios', VariantRadios);
+
+
+const elList = document.getElementsByClassName("video-image-2");
+const video = document.getElementsByTagName('video');
+
+/* video LP */
+for(var i=0; i < elList.length; i++){
+  elList[i].addEventListener('click', function () {
+    this.classList.add('hidden');
+    for(var x=0; x < video.length; x++){
+      video[x].classList.remove('hidden');
+    }
+  
+  });
+}
