@@ -120,30 +120,29 @@
     "1641834224a94d856f": {
       "type": "multicolumn",
       "blocks": {
-        "16418342231ac13c89-0": {
+        "9660befc-5b26-4cd0-95f9-cf7d056ec4dd": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Vidafuel-logo-official_79005c8e-b930-42b8-8182-f69ac0cdf413.png",
             "image_url": "",
             "title": "",
-            "icon": "none",
-            "text": "<p>2oz <br\/>16g protein<br\/>4g sugar<\/p>",
+            "icon": "check_mark",
+            "text": "",
             "link_label": "",
             "link_type": "link",
             "link": "",
             "modal_liquid": "",
             "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": true,
-            "copy_color": "#ffffff",
+            "liquid_background": "#fff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
             "title_font": "default",
             "col_title_size": "default",
             "text_font": "default",
-            "text_size": "heading-3",
+            "text_size": "default",
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
-            "icon_color": "#e68227",
+            "icon_color": "#cdda01",
             "text_color_primary": false
           }
         },
@@ -199,6 +198,111 @@
             "text_color_primary": false
           }
         },
+        "432f280a-9789-4549-9b82-7adb5f397ce0": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "",
+            "icon": "check_mark",
+            "text": "",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "16418342231ac13c89-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vidafuel-logo-official_79005c8e-b930-42b8-8182-f69ac0cdf413.png",
+            "image_url": "",
+            "title": "",
+            "icon": "none",
+            "text": "<p>2oz <br\/>16g protein<br\/>4g sugar<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_custom_text_color": true,
+            "copy_color": "#ffffff",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "heading-3",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#e68227",
+            "text_color_primary": false
+          }
+        },
+        "6d9b4e00-7497-4792-95dd-88c530b1da3c": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "",
+            "icon": "check_mark",
+            "text": "",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "514c0564-ee9c-4946-b0a1-ac1f1d385ec7": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "",
+            "icon": "check_mark",
+            "text": "",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
         "577c20c8-4973-470b-b8c8-c07527deb5b7": {
           "type": "column",
           "settings": {
@@ -228,16 +332,20 @@
         }
       },
       "block_order": [
-        "16418342231ac13c89-0",
+        "9660befc-5b26-4cd0-95f9-cf7d056ec4dd",
         "16418342231ac13c89-2",
         "e59229b5-1a1c-46ca-a575-992d0ab5c191",
+        "432f280a-9789-4549-9b82-7adb5f397ce0",
+        "16418342231ac13c89-0",
+        "6d9b4e00-7497-4792-95dd-88c530b1da3c",
+        "514c0564-ee9c-4946-b0a1-ac1f1d385ec7",
         "577c20c8-4973-470b-b8c8-c07527deb5b7"
       ],
       "settings": {
         "title": "Less is more.",
         "title_size": "heading-1",
         "title_color": "#ffffff",
-        "bk_image": "shopify:\/\/shop_images\/vidafuel-Protein-Drink-Protein-powder-Protein-bar.webp",
+        "bk_image": "shopify:\/\/shop_images\/vidafuel-Protein-Drink-Protein-powder-Protein-bar_e98cc4cc-c21f-45d5-a617-ec73577f95d1.webp",
         "section_height": "large",
         "title_center": true,
         "image_width": "half",
@@ -246,12 +354,12 @@
         "columns": "four",
         "background_style": "secondary",
         "card_bk_none": true,
-        "button_label": "Read More",
+        "button_label": "",
         "button_link": "shopify:\/\/blogs\/nutrition-wellness\/protein-drink-is-good-for-diabetics",
         "swipe_on_mobile": false,
         "flex_align_center": false,
         "desktop_no_spacing": true,
-        "icon_enable": true,
+        "icon_enable": false,
         "full_width_section": false
       }
     },
