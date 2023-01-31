@@ -134,11 +134,38 @@
             "icon_color": "#cdda01",
             "text_color_primary": false
           }
+        },
+        "d05bd40a-434e-4583-883e-8c227a0d14ec": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "",
+            "icon": "check_mark",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
         }
       },
       "block_order": [
         "16395052587fb2d08a-0",
-        "16395052587fb2d08a-2"
+        "16395052587fb2d08a-2",
+        "d05bd40a-434e-4583-883e-8c227a0d14ec"
       ],
       "settings": {
         "title": "",
@@ -164,10 +191,10 @@
     "6bfa2099-00ed-467f-b99b-33fda7955494": {
       "type": "video",
       "settings": {
-        "heading": "heading",
+        "heading": "",
         "video_url": "",
         "video_embed_custom": "<iframe src='https:\/\/iframe.mediadelivery.net\/embed\/92600\/20c5e350-f3af-4718-bbe7-5de10c451852?autoplay=true&loop=true' loading='lazy' style='border: none; position: absolute; top: 0; height: 100%; width: 100%;' allow='accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;' allowfullscreen='true'><\/iframe>",
-        "description": "alt text exdd",
+        "description": "",
         "full_width": false,
         "video_cover": false
       }
