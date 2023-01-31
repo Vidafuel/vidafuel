@@ -35,6 +35,50 @@
         "full_width": true
       }
     },
+    "f29ced55-701c-43f8-8463-3f20083fda15": {
+      "type": "collage",
+      "blocks": {
+        "ad57bb60-39cc-4c04-a53c-3e88913b1af8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/0A0A0492_copy-2.webp",
+            "image_padding": false,
+            "color_scheme": "none"
+          }
+        },
+        "89700d35-faf2-4870-b8b6-32785160d0b3": {
+          "type": "text",
+          "settings": {
+            "title": "One shot per day is all you need!",
+            "text": "To support muscle mass & strength, joint & bone health",
+            "button_label": "",
+            "button_link": "",
+            "color_scheme": "background-1"
+          }
+        },
+        "f809d592-46ee-47cf-943c-2d0c5baa9c98": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Meet_your_daily_protein_booster.webp",
+            "image_padding": true,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "ad57bb60-39cc-4c04-a53c-3e88913b1af8",
+        "89700d35-faf2-4870-b8b6-32785160d0b3",
+        "f809d592-46ee-47cf-943c-2d0c5baa9c98"
+      ],
+      "settings": {
+        "heading": "Meet your daily protein booster",
+        "desktop_layout": "right",
+        "background_color_scheme": "default",
+        "mobile_layout": "column",
+        "remove_top_spacing": false,
+        "full_width": false
+      }
+    },
     "1639505258119ea558": {
       "type": "multicolumn",
       "blocks": {
@@ -591,11 +635,11 @@
     "1639503887e884ceb3": {
       "type": "images-with-text",
       "blocks": {
-        "16395038879d66b692-0": {
-          "type": "heading",
+        "231f6501-1705-4359-a72b-4967587827df": {
+          "type": "image",
           "settings": {
-            "heading": "<p><em><strong>Developed by dietitians<\/strong><\/em> to deliver essential nutrients when you need them most<\/p>",
-            "heading_font": "trade_gothic_condensed"
+            "image": "shopify:\/\/shop_images\/IMG_3307.webp",
+            "image_ratio": "adapt"
           }
         },
         "847081ef-8696-42f1-ad5e-a315d489674c": {
@@ -605,19 +649,11 @@
             "button_link": "shopify:\/\/collections\/all",
             "button_font": "trade_gothic_bold"
           }
-        },
-        "231f6501-1705-4359-a72b-4967587827df": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_3307.webp",
-            "image_ratio": "adapt"
-          }
         }
       },
       "block_order": [
-        "16395038879d66b692-0",
-        "847081ef-8696-42f1-ad5e-a315d489674c",
-        "231f6501-1705-4359-a72b-4967587827df"
+        "231f6501-1705-4359-a72b-4967587827df",
+        "847081ef-8696-42f1-ad5e-a315d489674c"
       ],
       "settings": {
         "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
@@ -655,11 +691,48 @@
     },
     "1647969963a76480fb": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "Vidafuel Wellness Protein Drink delivers 16g of protein in a small 2oz shot",
         "cover_image": "shopify:\/\/shop_images\/Vidafuel-vs-Protien-Powder.webp",
         "video_url": "https:\/\/youtu.be\/SEbPehKRtZo",
         "description": "Video comparing Vidafuel with a regular protein powder.",
+        "full_width": false
+      }
+    },
+    "bbb28046-9da0-414e-9315-b719dba86fce": {
+      "type": "collage",
+      "blocks": {
+        "template--17829330583866__bbb28046-9da0-414e-9315-b719dba86fce-167518817969823fe9-1": {
+          "type": "product",
+          "settings": {
+            "product": "collagen-protein-drink-2-pack",
+            "second_image": true,
+            "image_padding": true,
+            "secondary_background": false
+          }
+        },
+        "template--17829330583866__bbb28046-9da0-414e-9315-b719dba86fce-167518817969823fe9-0": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/Vidafuel-vs-Protien-Powder.webp",
+            "video_url": "https:\/\/youtu.be\/SEbPehKRtZo",
+            "description": "Describe the video",
+            "image_padding": false,
+            "video_small_desktop": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17829330583866__bbb28046-9da0-414e-9315-b719dba86fce-167518817969823fe9-1",
+        "template--17829330583866__bbb28046-9da0-414e-9315-b719dba86fce-167518817969823fe9-0"
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "right",
+        "background_color_scheme": "default",
+        "mobile_layout": "collage",
+        "remove_top_spacing": false,
         "full_width": false
       }
     },
@@ -675,12 +748,14 @@
   },
   "order": [
     "16420790196f1cba40",
+    "f29ced55-701c-43f8-8463-3f20083fda15",
     "1639505258119ea558",
     "6bfa2099-00ed-467f-b99b-33fda7955494",
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219",
     "1641834224a94d856f",
     "1639503887e884ceb3",
     "1647969963a76480fb",
+    "bbb28046-9da0-414e-9315-b719dba86fce",
     "16420895372c7ae66d"
   ]
 }
