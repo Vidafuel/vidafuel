@@ -1,11 +1,50 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
+{% if section.settings.bk_image != empty %}
+{% assign background_style = 'bk-image' %}
+   {% style %}
+      .background-bk-image {
+        position: relative;
+        overflow: hidden;
+      }
+      .multicolumn-bk-image {
+        max-width: 100vw;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+      }
+  {% endstyle %}
+{% else %}
+    {% assign background_style = section.settings.background_style %}
+{% endif %}
 
-<div class="multicolumn background-{{ section.settings.background_style }} {% if section.settings.background_style == 'gradient-1' %} gradient color-accent-1{% elsif section.settings.background_style == 'gradient-2' %} gradient color-accent-2{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}">
+{% liquid
+  if section.settings.title_color != "#0000000"
+    assign title_color_style = 'style="color:' | append: section.settings.title_color | append: '""' 
+  endif
+%}
+<div class="multicolumn background-{{ background_style }} multicolumn--{{ section.settings.section_height }} {% if section.settings.background_style == 'gradient-1' %} gradient color-accent-1{% elsif section.settings.background_style == 'gradient-2' %} gradient color-accent-2{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}">
+  {% if section.settings.bk_image != blank %}
+  <img
+    srcset="{%- if section.settings.bk_image.width >= 275 -%}{{ section.settings.bk_image | image_url: width: 275 }} 275w,{%- endif -%}
+      {%- if section.settings.bk_image.width >= 550 -%}{{ section.settings.bk_image | image_url: width: 550 }} 550w,{%- endif -%}
+      {%- if section.settings.bk_image.width >= 710 -%}{{ section.settings.bk_image | image_url: width: 710 }} 710w,{%- endif -%}
+      {%- if section.settings.bk_image.width >= 1420 -%}{{ section.settings.bk_image | image_url: width: 1420 }} 1420w,{%- endif -%}
+      {{ section.settings.bk_image | image_url }} {{ section.settings.bk_image.width }}w"
+    src="{{ section.settings.bk_image | image_url: width: 550 }}"
+    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+    alt="{{ section.settings.bk_image.alt }}"
+    height="{{ section.settings.bk_image.height }}"
+    width="{{ section.settings.bk_image.width }}"
+    class="multicolumn-bk-image"
+    loading="lazy"
+  >
+  {% endif %}
   <div {% if section.settings.full_width_section != true %}class="page-width"{% endif %}>
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.full_width_section %}--full-width{% else %}{% endif %} {% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
-      <h2 class="title{% if section.settings.title_center %} center{% endif %}">
+      <h2 class="title{% if section.settings.title_center %} center{% endif %}{% if section.settings.title_size != 'default' %} {{ section.settings.title_size }}{% endif %}" {{ title_color_style }}>
         {{ section.settings.title | escape }}
       </h2>
       {%- if section.settings.button_label != blank and section.settings.swipe_on_mobile -%}
@@ -41,7 +80,7 @@
             </style>
           {% endif %}
           <li class="multicolumn-list__item {% if section.settings.columns != 'default' %} {{ section.settings.columns }}{% endif %} grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
-            <div class="multicolumn-card">
+            <div class="multicolumn-card{% if section.settings.card_bk_none %} multicolumn-card-bk_none{% endif %}">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
@@ -50,7 +89,7 @@
                   <a href="{{ block.settings.image_url }}">
                 {% endif %}
                   {%- if block.settings.title != blank and block.settings.title_top -%}
-                    <h3 class="title-wrapper {% if section.settings.full_width_section %}full-width {% endif %}{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.title_size != 'default' %}{{ block.settings.title_size }}{% endif %}">
+                    <h3 class="title-wrapper {% if section.settings.full_width_section %}full-width {% endif %}{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.col_title_size != 'default' %}{{ block.settings.col_title_size }}{% endif %}">
                       {{ block.settings.title }}
                     </h3>
                   {%- endif -%}
@@ -97,7 +136,7 @@
                   {% if section.settings.icon_enable %}
                     {% render 'icon-accordion', icon: block.settings.icon %}
                   {% endif %}
-                  <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% else %}default-size{% endif %} {% if block.settings.title_size != 'default' %}{{ block.settings.title_size }}{% endif %}" {% if block.settings.column_custom_text_color %}style="color:{{ block.settings.copy_color }}"{% endif %}>
+                  <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% else %}default-size{% endif %} {% if block.settings.col_title_size != 'default' %}{{ block.settings.col_title_size }}{% endif %}" {% if block.settings.column_custom_text_color %}style="color:{{ block.settings.copy_color }}"{% endif %}>
                     {{ block.settings.title }}
                   </h3>
                 {%- endif -%}
@@ -146,7 +185,7 @@
                 {%- endif -%}
                 {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}
                   <div class="custom-liquid" style="background-color:{{ block.settings.liquid_background }};">
-                    <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.title_size != 'default' %}{{ block.settings.title_size }}{% endif %}" {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}style="color:#000;"{% endif %}>
+                    <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.col_title_size != 'default' %}{{ block.settings.col_title_size }}{% endif %}" {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}style="color:#000;"{% endif %}>
                       {{ block.settings.title }}
                     </h3>
                     {{ block.settings.custom_liquid }}
@@ -194,6 +233,69 @@
       "id": "title",
       "default": "Multicolumn",
       "label": "t:sections.multicolumn.settings.title.label"
+    },
+    {
+      "type": "select",
+      "id": "title_size",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "heading-1",
+          "label": "h1"
+        },
+        {
+          "value": "heading-2",
+          "label": "h2"
+        },
+        {
+          "value": "heading-3",
+          "label": "h3"
+        },
+        {
+          "value": "heading-5",
+          "label": "h5"
+        }
+      ],
+      "default": "default",
+      "label": "Heading size"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title text color",
+      "default": "#000000"
+    },
+    {
+      "type": "image_picker",
+      "id": "bk_image",
+      "label": "Section backgrounnd image"
+    },
+    {
+      "type": "select",
+      "id": "section_height",
+      "options": [
+        {
+        "value": "xsmall",
+        "label": "Xsmall"
+        },
+      {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium",
+      "label": "Section height"
     },
     {
       "type": "checkbox",
@@ -309,6 +411,12 @@
       ],
       "default": "primary",
       "label": "t:sections.multicolumn.settings.background_style.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_bk_none",
+      "label": "Card background none",
+      "default": false
     },
     {
       "type": "text",
@@ -615,7 +723,7 @@
         },
         {
           "type": "select",
-          "id": "title_size",
+          "id": "col_title_size",
           "options": [
             {
               "value": "default",
