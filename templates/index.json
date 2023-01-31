@@ -164,10 +164,10 @@
     "6bfa2099-00ed-467f-b99b-33fda7955494": {
       "type": "video",
       "settings": {
-        "heading": "",
-        "cover_image": "shopify:\/\/shop_images\/Screenshot_2023-01-31_at_8.23.30_AM.png",
-        "video_url": "https:\/\/youtu.be\/YNMooRGZFG8",
-        "description": "",
+        "heading": "heading",
+        "video_url": "",
+        "video_embed_custom": "<iframe src='https:\/\/iframe.mediadelivery.net\/embed\/92600\/20c5e350-f3af-4718-bbe7-5de10c451852?autoplay=true&loop=true' loading='lazy' style='border: none; position: absolute; top: 0; height: 100%; width: 100%;' allow='accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;' allowfullscreen='true'><\/iframe>",
+        "description": "alt text exdd",
         "full_width": false,
         "video_cover": false
       }
@@ -398,7 +398,7 @@
         "title": "Less is more.",
         "title_size": "heading-1",
         "title_color": "#ffffff",
-        "bk_image": "shopify:\/\/shop_images\/vidafuel-Protein-Drink-Protein-powder-Protein-bar_2.webp",
+        "bk_image": "shopify:\/\/shop_images\/vidafuel-Protein-Drink-Protein-powder-Protein-bar-3.webp",
         "section_height": "large",
         "title_center": true,
         "image_width": "half",
@@ -422,7 +422,7 @@
         "231f6501-1705-4359-a72b-4967587827df": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_3307.webp",
+            "image": "shopify:\/\/shop_images\/Artboard_de8e50e1-e988-4547-9f31-416e7393994b.webp",
             "image_ratio": "adapt"
           }
         },
@@ -480,9 +480,10 @@
         "heading": "Vidafuel Wellness Protein Drink delivers 16g of protein in a small 2oz shot",
         "cover_image": "shopify:\/\/shop_images\/Vidafuel-vs-Protien-Powder.webp",
         "video_url": "https:\/\/youtu.be\/SEbPehKRtZo",
+        "video_embed_custom": "",
         "description": "Video comparing Vidafuel with a regular protein powder.",
         "full_width": false,
-        "video_cover": false
+        "video_cover": true
       }
     },
     "bbb28046-9da0-414e-9315-b719dba86fce": {
