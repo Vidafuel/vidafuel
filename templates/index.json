@@ -117,6 +117,124 @@
         "full_width_section": true
       }
     },
+    "6bfa2099-00ed-467f-b99b-33fda7955494": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "cover_image": "shopify:\/\/shop_images\/Screenshot_2023-01-31_at_8.23.30_AM.png",
+        "video_url": "https:\/\/youtu.be\/YNMooRGZFG8",
+        "description": "",
+        "full_width": false
+      }
+    },
+    "9d5b6c17-e9cd-46b4-aff8-1da6fc816219": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-0": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "<p>Low volume<\/p>",
+            "icon": "check_mark",
+            "text": "<p>Quick & easy to consume<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-1": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "<p>Dietitian developed<\/p>",
+            "icon": "heart",
+            "text": "<p>Optimized to deliver essential macronutrients without the extra sugar, fat and calories<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-2": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "<p>Economical<\/p>",
+            "icon": "price_tag",
+            "text": "<p>Biggest bang for your buck<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#e68227",
+            "text_color_primary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-0",
+        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-1",
+        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-2"
+      ],
+      "settings": {
+        "title": "Vidafuel Nutrition: The easiest way to nourish your day",
+        "title_size": "default",
+        "title_color": "#000000",
+        "section_height": "medium",
+        "title_center": true,
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "columns": "default",
+        "background_style": "secondary",
+        "card_bk_none": false,
+        "button_label": "Read More",
+        "button_link": "shopify:\/\/blogs\/nutrition-wellness\/protein-drink-is-good-for-diabetics",
+        "swipe_on_mobile": false,
+        "flex_align_center": false,
+        "desktop_no_spacing": true,
+        "icon_enable": true,
+        "full_width_section": false
+      }
+    },
     "1641834224a94d856f": {
       "type": "multicolumn",
       "blocks": {
@@ -550,6 +668,8 @@
   "order": [
     "16420790196f1cba40",
     "1639505258119ea558",
+    "6bfa2099-00ed-467f-b99b-33fda7955494",
+    "9d5b6c17-e9cd-46b4-aff8-1da6fc816219",
     "1641834224a94d856f",
     "1639503887e884ceb3",
     "1647969963a76480fb",
