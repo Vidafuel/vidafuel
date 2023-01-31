@@ -5,7 +5,10 @@
 		}
 	],
 	"settings": {
-		"minify.minifyExistingOnSave": true,
-		"liquid.format.enable": false
+		"liquid.format.enable": false,
+		"notebook.showFoldingControls": "always",
+		"editor.folding": true,
+		"editor.showFoldingControls": "always",
+		"editor.foldingStrategy": "indentation",
 	}
 }
