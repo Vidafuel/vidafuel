@@ -34,12 +34,14 @@
   </style>
 
   <div class="review-section"{% if section.settings.background_color %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
-    {% unless section.settings.page_width == false %}<div class="page-width">{% endunless %}
+    {% unless section.settings.page_width %}<div class="page-width">{% endunless %}
     {{ section.settings.custom_liquid }}
     {% unless section.settings.page_width == false %}</div>{% endunless %}
   </div>
 {% else %}
-  {{ section.settings.custom_liquid }}
+  {% if section.settings.page_width %}<div class="page-width">{% endif %}
+    {{ section.settings.custom_liquid }}
+  {% if section.settings.page_width == false %}</div>{% endif %}
 {% endif %}
 
 {% schema %}
