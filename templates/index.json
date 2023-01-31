@@ -146,58 +146,6 @@
             "text_color_primary": false
           }
         },
-        "16418342231ac13c89-2": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "<p>Protein Drink<\/p>",
-            "icon": "none",
-            "text": "<p>8oz<br\/>12g protein<br\/>16g sugar<\/p>",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": true,
-            "copy_color": "#ffffff",
-            "title_font": "default",
-            "col_title_size": "default",
-            "text_font": "default",
-            "text_size": "heading-3",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "icon_color": "#cdda01",
-            "text_color_primary": false
-          }
-        },
-        "e59229b5-1a1c-46ca-a575-992d0ab5c191": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "<p>Protein Powder<\/p>",
-            "icon": "none",
-            "text": "<p>12oz<br\/>20g protein<br\/>8g sugar<\/p>",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": true,
-            "copy_color": "#ffffff",
-            "title_font": "default",
-            "col_title_size": "default",
-            "text_font": "default",
-            "text_size": "heading-3",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "icon_color": "#cdda01",
-            "text_color_primary": false
-          }
-        },
         "432f280a-9789-4549-9b82-7adb5f397ce0": {
           "type": "column",
           "settings": {
@@ -224,14 +172,13 @@
             "text_color_primary": false
           }
         },
-        "16418342231ac13c89-0": {
+        "e59229b5-1a1c-46ca-a575-992d0ab5c191": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Vidafuel-logo-official_79005c8e-b930-42b8-8182-f69ac0cdf413.png",
             "image_url": "",
-            "title": "",
+            "title": "<p>Protein Powder<\/p>",
             "icon": "none",
-            "text": "<p>2oz <br\/>16g protein<br\/>4g sugar<\/p>",
+            "text": "<p>12oz<br\/>20g protein<br\/>8g sugar<\/p>",
             "link_label": "",
             "link_type": "link",
             "link": "",
@@ -243,15 +190,15 @@
             "title_font": "default",
             "col_title_size": "default",
             "text_font": "default",
-            "text_size": "heading-3",
+            "text_size": "heading-5",
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
-            "icon_color": "#e68227",
+            "icon_color": "#cdda01",
             "text_color_primary": false
           }
         },
-        "6d9b4e00-7497-4792-95dd-88c530b1da3c": {
+        "e4489dfa-8fae-456f-94b9-bc30c1841f60": {
           "type": "column",
           "settings": {
             "image_url": "",
@@ -303,10 +250,166 @@
             "text_color_primary": false
           }
         },
+        "16418342231ac13c89-2": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "<p><strong>Protein Drink<\/strong><\/p>",
+            "icon": "none",
+            "text": "<p>8oz<br\/>12g protein<br\/>16g sugar<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_custom_text_color": true,
+            "copy_color": "#ffffff",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "heading-5",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "3d39dd2f-86d9-4aef-8663-257641b92e0c": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "",
+            "icon": "check_mark",
+            "text": "",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "6d9b4e00-7497-4792-95dd-88c530b1da3c": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "",
+            "icon": "check_mark",
+            "text": "",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "16418342231ac13c89-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vidafuel-logo-official_79005c8e-b930-42b8-8182-f69ac0cdf413.png",
+            "image_url": "",
+            "title": "",
+            "icon": "none",
+            "text": "<p>2oz <br\/>16g protein<br\/>4g sugar<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_custom_text_color": true,
+            "copy_color": "#ffffff",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "heading-5",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#e68227",
+            "text_color_primary": false
+          }
+        },
+        "0cfefdb6-112f-4334-ac8e-f67d67d0b65e": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "",
+            "icon": "check_mark",
+            "text": "",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "de21b9f6-a153-4671-991e-8bf0f98758f1": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "",
+            "icon": "check_mark",
+            "text": "",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "default",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
         "577c20c8-4973-470b-b8c8-c07527deb5b7": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/placeholder-img-nacelle-store.webp",
             "image_url": "",
             "title": "<p>Protein Bar<\/p>",
             "icon": "none",
@@ -322,7 +425,7 @@
             "title_font": "default",
             "col_title_size": "default",
             "text_font": "default",
-            "text_size": "default",
+            "text_size": "heading-5",
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
@@ -333,12 +436,16 @@
       },
       "block_order": [
         "9660befc-5b26-4cd0-95f9-cf7d056ec4dd",
-        "16418342231ac13c89-2",
-        "e59229b5-1a1c-46ca-a575-992d0ab5c191",
         "432f280a-9789-4549-9b82-7adb5f397ce0",
-        "16418342231ac13c89-0",
-        "6d9b4e00-7497-4792-95dd-88c530b1da3c",
+        "e59229b5-1a1c-46ca-a575-992d0ab5c191",
+        "e4489dfa-8fae-456f-94b9-bc30c1841f60",
         "514c0564-ee9c-4946-b0a1-ac1f1d385ec7",
+        "16418342231ac13c89-2",
+        "3d39dd2f-86d9-4aef-8663-257641b92e0c",
+        "6d9b4e00-7497-4792-95dd-88c530b1da3c",
+        "16418342231ac13c89-0",
+        "0cfefdb6-112f-4334-ac8e-f67d67d0b65e",
+        "de21b9f6-a153-4671-991e-8bf0f98758f1",
         "577c20c8-4973-470b-b8c8-c07527deb5b7"
       ],
       "settings": {
