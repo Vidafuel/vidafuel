@@ -16,6 +16,12 @@
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'video' -%}
+      {% style %}
+        .embed-container {
+            cursor: none;
+            pointer-events: none;
+        }
+      {% endstyle %}
     {% if block.settings.video_small_desktop %}
       {% assign videoSmallDesktop = 'video_small_desktop' %}
     {% else %}
