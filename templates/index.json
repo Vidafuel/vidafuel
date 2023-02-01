@@ -147,7 +147,7 @@
             "link": "",
             "modal_liquid": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "column_custom_text_color": false,
             "copy_color": "#000000",
             "title_font": "default",
@@ -193,7 +193,7 @@
       "settings": {
         "heading": "",
         "video_url": "",
-        "video_embed_custom": "<iframe src='https:\/\/iframe.mediadelivery.net\/embed\/92600\/20c5e350-f3af-4718-bbe7-5de10c451852?autoplay=true&loop=true' loading='lazy' style='border: none; position: absolute; top: 0; height: 100%; width: 100%;' allow='accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;' allowfullscreen='true'><\/iframe>",
+        "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/20c5e350-f3af-4718-bbe7-5de10c451852?autoplay=true&loop=true&muted=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"><\/iframe>",
         "description": "",
         "full_width": false,
         "video_cover": false

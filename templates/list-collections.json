@@ -10,8 +10,48 @@
         "image_padding": false
       }
     },
+    "f2cbb7a1-bb3e-4518-92e4-336cf040f604": {
+      "type": "image-with-text",
+      "blocks": {
+        "1e959739-d620-48ce-8d8e-358aab6bb9a7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wellness Protein Drinks",
+            "heading_font": "trade_gothic_bold",
+            "heading_size": "default"
+          }
+        },
+        "template--17829330649402__f2cbb7a1-bb3e-4518-92e4-336cf040f604-167520981149a2be7e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Delicious protein drinks<\/strong><\/p><p>Increasing your daily protein intake has never been easier! Vidafuel Wellness is the first concentrated protein drink that delivers a whopping 16g of high quality protein in a quick 2oz shot. You can take it straight or add it to your favorite beverage for an extra protein boost. Developed by Dietitians, the Vidafuel protein drink contains a powerful blend of collagen and whey protein, plus all 20 amino acids! Vidafuel Wellness comes in two delightful flavors with NO artificial sweeteners or colors.<\/p>",
+            "text_font": "default",
+            "text_size": "default",
+            "text_color": "default",
+            "p_bullets": false
+          }
+        }
+      },
+      "block_order": [
+        "1e959739-d620-48ce-8d8e-358aab6bb9a7",
+        "template--17829330649402__f2cbb7a1-bb3e-4518-92e4-336cf040f604-167520981149a2be7e-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/71a7561d-1905-4885-b22b-000845695d7f?autoplay=true&loop=true&muted=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"><\/iframe>",
+        "image_link": "",
+        "height": "adapt",
+        "color_scheme": "background-2",
+        "background_scheme": "default",
+        "layout": "text_first",
+        "section_width": "full_width",
+        "desktop_no_spacing": false,
+        "remove_top_margin": true
+      }
+    },
     "1640121428e4293882": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "1640121428738d06ed-0": {
           "type": "heading",
@@ -39,6 +79,7 @@
       "settings": {
         "section_id": "drinks",
         "image": "shopify:\/\/shop_images\/Stop-Motion-Pour720.gif",
+        "video_embed_custom": "",
         "image_link": "",
         "height": "adapt",
         "color_scheme": "background-2",
@@ -68,148 +109,56 @@
         "show_rating": false
       }
     },
-    "1640121497f0b3cd4b": {
-      "type": "image-with-text",
-      "disabled": true,
+    "e86bee96-f4ee-4b45-a1a0-5b2b9dc85d75": {
+      "type": "collage",
       "blocks": {
-        "1640121497ce050c54-0": {
-          "type": "heading",
+        "template--17829330649402__e86bee96-f4ee-4b45-a1a0-5b2b9dc85d75-16752097284e118704-0": {
+          "type": "video",
           "settings": {
-            "heading": "Healthy Snacks",
-            "heading_font": "default",
-            "heading_size": "default"
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video",
+            "image_padding": false,
+            "video_small_desktop": false
           }
         },
-        "1640121497ce050c54-1": {
-          "type": "text",
+        "template--17829330649402__e86bee96-f4ee-4b45-a1a0-5b2b9dc85d75-16752097284e118704-1": {
+          "type": "product",
           "settings": {
-            "text": "<p><\/p><p><strong>Healthy snacks! Chips, crisps, and variety packs. <\/strong><\/p><p>Our dietitians took your favorite snacks and put a healthier spin on them by simplifying the ingredients and cutting down on the bad stuff. Our nutrition products are portion-controlled, with the benefits of fewer calories, sugar, salt, and fat in other snack foods*. We also maintain a balance of minerals such as potassium and phosphorus, making our snacks kidney-friendly!<\/p>",
-            "text_font": "default",
-            "text_size": "default",
-            "text_color": "default",
-            "p_bullets": false
+            "product": "",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "template--17829330649402__e86bee96-f4ee-4b45-a1a0-5b2b9dc85d75-16752097284e118704-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
           }
         }
       },
       "block_order": [
-        "1640121497ce050c54-0",
-        "1640121497ce050c54-1"
+        "template--17829330649402__e86bee96-f4ee-4b45-a1a0-5b2b9dc85d75-16752097284e118704-0",
+        "template--17829330649402__e86bee96-f4ee-4b45-a1a0-5b2b9dc85d75-16752097284e118704-1",
+        "template--17829330649402__e86bee96-f4ee-4b45-a1a0-5b2b9dc85d75-16752097284e118704-2"
       ],
       "settings": {
-        "section_id": "snacks",
-        "image": "shopify:\/\/shop_images\/VidaFuel_Snacks.png",
-        "image_link": "",
-        "height": "adapt",
-        "color_scheme": "background-2",
-        "background_scheme": "default",
-        "layout": "image_first",
-        "section_width": "full_width",
-        "desktop_no_spacing": true,
-        "remove_top_margin": false
-      }
-    },
-    "164012152966eb2d65": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "subtitle": "Subscribe & Save 15%!",
-        "center_headers": false,
-        "collection": "snacks",
-        "products_to_show": 12,
-        "show_view_all": false,
-        "swipe_on_mobile": true,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_purchase_options": false,
-        "show_vendor": false,
-        "show_rating": false
-      }
-    },
-    "16401224468d9b8dcf": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "16401224463b454216-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "What's New?",
-            "heading_font": "default",
-            "heading_size": "heading-1"
-          }
-        }
-      },
-      "block_order": [
-        "16401224463b454216-0"
-      ],
-      "settings": {
-        "section_id": "new",
-        "image": "shopify:\/\/shop_images\/Chip_Graphic_Website_Asset_Full.png",
-        "image_link": "",
-        "height": "small",
-        "color_scheme": "background-2",
-        "background_scheme": "default",
-        "layout": "image_first",
-        "section_width": "full_width",
-        "desktop_no_spacing": false,
-        "remove_top_margin": false
-      }
-    },
-    "16401225429970e504": {
-      "type": "featured-product",
-      "disabled": true,
-      "blocks": {
-        "1640122542dea8d13b-1": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "1640122542dea8d13b-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "1640122542dea8d13b-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "1640122542dea8d13b-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false
-          }
-        },
-        "6a815fd7-8d1f-443c-b889-0ef1ad061d95": {
-          "type": "rating",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "1640122542dea8d13b-1",
-        "1640122542dea8d13b-3",
-        "1640122542dea8d13b-5",
-        "1640122542dea8d13b-6",
-        "6a815fd7-8d1f-443c-b889-0ef1ad061d95"
-      ],
-      "settings": {
-        "product": "holiday-boxes-2020",
-        "secondary_background": false,
-        "hide_variants": false,
-        "enable_video_looping": false
+        "heading": "Multimedia collage",
+        "desktop_layout": "left",
+        "background_color_scheme": "default",
+        "mobile_layout": "collage",
+        "remove_top_spacing": false,
+        "full_width": false
       }
     }
   },
   "order": [
     "main",
+    "f2cbb7a1-bb3e-4518-92e4-336cf040f604",
     "1640121428e4293882",
     "16401214947620309f",
-    "1640121497f0b3cd4b",
-    "164012152966eb2d65",
-    "16401224468d9b8dcf",
-    "16401225429970e504"
+    "e86bee96-f4ee-4b45-a1a0-5b2b9dc85d75"
   ]
 }
