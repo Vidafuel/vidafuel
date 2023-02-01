@@ -1,7 +1,7 @@
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 {% if section.settings.video_embed_custom != empty %}
- {% assign loaded = 'loaded="true"' %}
+ 
 {% endif %}
 <div class="video-section{% unless section.settings.full_width %} page-width{% endunless %}">
   <div{% if section.settings.full_width %} class="page-width"{% endif %}>
@@ -38,6 +38,9 @@
   </noscript>
    {% if section.settings.video_embed_custom %}
     <div class='embed-container'>
+      {% comment %}
+        https://panel.bunny.net/stream
+      {% endcomment %}
       {{ section.settings.video_embed_custom }}
     </div>
    {% else %}

@@ -93,6 +93,13 @@
             width="{{ section.settings.image.width }}"
             height="{{ section.settings.image.height }}"
           >
+        {%- elsif section.settings.video_embed_custom -%}
+          <div class='embed-container'>
+            {% comment %}
+              https://panel.bunny.net/stream
+            {% endcomment %}
+            {{ section.settings.video_embed_custom }}
+          </div>
         {%- else -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
@@ -137,7 +144,13 @@
     {
       "type": "image_picker",
       "id": "image",
-      "label": "t:sections.image-with-text.settings.image.label"
+      "label": "t:sections.image-with-text.settings.image.label",
+      "info": "** MUST CHOOSE EITHER IMAGE OR VIDEO EMBED"
+    },
+    {
+      "type": "liquid",
+      "id": "video_embed_custom",
+      "label": "Video embed custom"
     },
     {
       "type": "url",
@@ -533,6 +546,18 @@
           "id": "button_inverse",
           "label": "Button color inverse",
           "default": false
+        }
+      ]
+    },
+    {
+      "type": "liquid",
+      "name": "Liquid",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "video_embed_custom",
+          "label": "Video embed custom"
         }
       ]
     }
