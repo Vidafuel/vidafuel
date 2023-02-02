@@ -20,6 +20,9 @@
     >
   {%- endif -%}
   <div class="image-with-text__grid grid grid--gapless grid--1-col grid--2-col-tablet {% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}{% if section.settings.mobile_text_first %} mobile--reverse{% endif %} {% if section.settings.section_width == 'full_width' %}page-width{% endif %}">
+    <div class="grid__item grid__item-title">
+      <h2 class="grid grid--2-col grid--4-col-tablet image-with-text__title">{{ section.settings.heading }}</h2>
+    </div>
     <div class="grid__item">
       <ul class="multicolumn-list grid grid--2-col grid--4-col-tablet">
         <li class="multicolumn-list__item grid__item center">
@@ -303,6 +306,12 @@
   "name": "Images with text",
   "class": "spaced-section spaced-section--full-width",
   "settings": [
+     {
+      "type": "text",
+      "id": "heading",
+      "default": "Title",
+      "label": "Title"
+     },
      {
       "type": "image_picker",
       "id": "bk_image",
