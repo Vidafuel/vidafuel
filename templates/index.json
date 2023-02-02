@@ -6,7 +6,7 @@
         "ccea9b7c-bc59-423f-962f-fb479244665d": {
           "type": "text",
           "settings": {
-            "title": "<em>Developed by dietitians<\/em> to deliver essential nutrients when you need them most",
+            "title": "High quality nutrition is now possible in a 2oz shot",
             "text": "The easiest way to nourish your day",
             "button_label": "Shop Now",
             "button_link": "\/products",
@@ -39,16 +39,99 @@
         "4cb7c79d-929c-4921-9723-4e266dc4dc4b"
       ],
       "settings": {
-        "heading": "",
+        "heading": "TESTTITLE",
         "desktop_layout": "right",
         "background_color_scheme": "waves",
         "mobile_layout": "column",
         "remove_top_spacing": true,
-        "full_width": true
+        "full_width": false
+      }
+    },
+    "1639505258119ea558": {
+      "type": "multicolumn",
+      "blocks": {
+        "16395052587fb2d08a-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/0A0A0492_copy-2.webp",
+            "image_url": "shopify:\/\/pages\/healthcare-professionals",
+            "title": "",
+            "icon": "none",
+            "text": "",
+            "link_label": "",
+            "link_type": "link",
+            "link": "\/products",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_custom_text_color": false,
+            "copy_color": "#000000",
+            "title_font": "proxima_nova_light",
+            "col_title_size": "default",
+            "text_font": "trade_gothic_compressed_bold",
+            "text_size": "h2",
+            "title_top": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": true
+          }
+        },
+        "16395052587fb2d08a-2": {
+          "type": "column",
+          "settings": {
+            "image_url": "",
+            "title": "<p>Meet your daily protein booster<\/p>",
+            "icon": "none",
+            "text": "<p><strong>16g protein per 2oz shot<br\/><\/strong>One shot per day is all you need!<\/p><p><\/p><p><strong>Powerful blend of whey + collagen protein<br\/><\/strong>To support muscle mass & strength, joint & bone health<\/p><p><\/p><p><strong>Contains all 20 amino acids<\/strong><\/p><p><\/p><p><strong>No artificial sweeteners, ever <\/strong><\/p><p><\/p><p><\/p>",
+            "link_label": "SHOP PROTEIN DRINKS",
+            "link_type": "link",
+            "link": "https:\/\/vidafuel.com\/products",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_custom_text_color": false,
+            "copy_color": "#333333",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "text_size": "heading-3",
+            "title_top": false,
+            "p_bullets": true,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        }
+      },
+      "block_order": [
+        "16395052587fb2d08a-0",
+        "16395052587fb2d08a-2"
+      ],
+      "settings": {
+        "title": "",
+        "title_size": "default",
+        "title_color": "#000000",
+        "section_height": "medium",
+        "title_center": false,
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "columns": "default",
+        "background_style": "none",
+        "card_bk_none": false,
+        "button_label": "",
+        "button_link": "\/products",
+        "swipe_on_mobile": false,
+        "flex_align_center": false,
+        "desktop_no_spacing": false,
+        "icon_enable": false,
+        "full_width_section": true
       }
     },
     "f29ced55-701c-43f8-8463-3f20083fda15": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "ad57bb60-39cc-4c04-a53c-3e88913b1af8": {
           "type": "image",
@@ -227,17 +310,6 @@
         "full_width_section": false
       }
     },
-    "6bfa2099-00ed-467f-b99b-33fda7955494": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "",
-        "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/20c5e350-f3af-4718-bbe7-5de10c451852?autoplay=true&loop=true&muted=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"><\/iframe>",
-        "description": "",
-        "full_width": false,
-        "video_cover": false
-      }
-    },
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219": {
       "type": "multicolumn",
       "blocks": {
@@ -346,6 +418,17 @@
         "full_width_section": false
       }
     },
+    "6bfa2099-00ed-467f-b99b-33fda7955494": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "video_url": "",
+        "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/20c5e350-f3af-4718-bbe7-5de10c451852?autoplay=true&loop=true&muted=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"><\/iframe>",
+        "description": "",
+        "full_width": false,
+        "video_cover": false
+      }
+    },
     "1639503887e884ceb3": {
       "type": "images-with-text",
       "blocks": {
@@ -370,12 +453,13 @@
         "847081ef-8696-42f1-ad5e-a315d489674c"
       ],
       "settings": {
+        "heading": "<em>Developed by dietitians<\/em> to deliver essential nutrients when you need them most",
         "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
         "height": "adapt",
         "desktop_no_spacing": false,
         "color_scheme": "background-2",
         "layout": "text_first",
-        "mobile_text_first": true,
+        "mobile_text_first": false,
         "section_width": "full_width",
         "image_01": "shopify:\/\/shop_images\/DIABETES.png",
         "image_01_title": "GENERAL WELLNESS",
@@ -461,128 +545,18 @@
         "background_color": "#7bccc8",
         "page_width": false
       }
-    },
-    "1639505258119ea558": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "16395052587fb2d08a-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/0A0A0492_copy-2.webp",
-            "image_url": "shopify:\/\/pages\/healthcare-professionals",
-            "title": "",
-            "icon": "none",
-            "text": "",
-            "link_label": "",
-            "link_type": "link",
-            "link": "\/products",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "proxima_nova_light",
-            "col_title_size": "default",
-            "text_font": "trade_gothic_compressed_bold",
-            "text_size": "h2",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "icon_color": "#cdda01",
-            "text_color_primary": true
-          }
-        },
-        "16395052587fb2d08a-2": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "<p>Meet your daily protein booster<\/p>",
-            "icon": "none",
-            "text": "<p><strong>16g protein per 2oz shot<br\/><\/strong>One shot per day is all you need!<\/p><p><\/p><p><strong>Powerful blend of whey + collagen protein<br\/><\/strong>To support muscle mass & strength, joint & bone health<\/p><p><\/p><p><strong>Contains all 20 amino acids<\/strong><\/p><p><\/p><p><strong>No artificial sweeteners, ever <\/strong><\/p><p><\/p><p><\/p>",
-            "link_label": "SHOP PROTEIN DRINKS",
-            "link_type": "link",
-            "link": "https:\/\/vidafuel.com\/products",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#333333",
-            "title_font": "default",
-            "col_title_size": "default",
-            "text_font": "default",
-            "text_size": "heading-3",
-            "title_top": false,
-            "p_bullets": true,
-            "p_bullets_color": "#cdda01",
-            "icon_color": "#cdda01",
-            "text_color_primary": false
-          }
-        },
-        "d05bd40a-434e-4583-883e-8c227a0d14ec": {
-          "type": "column",
-          "settings": {
-            "image_url": "",
-            "title": "",
-            "icon": "check_mark",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "col_title_size": "default",
-            "text_font": "default",
-            "text_size": "default",
-            "title_top": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "icon_color": "#cdda01",
-            "text_color_primary": false
-          }
-        }
-      },
-      "block_order": [
-        "16395052587fb2d08a-0",
-        "16395052587fb2d08a-2",
-        "d05bd40a-434e-4583-883e-8c227a0d14ec"
-      ],
-      "settings": {
-        "title": "",
-        "title_size": "default",
-        "title_color": "#000000",
-        "section_height": "medium",
-        "title_center": false,
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "columns": "default",
-        "background_style": "none",
-        "card_bk_none": false,
-        "button_label": "",
-        "button_link": "\/products",
-        "swipe_on_mobile": false,
-        "flex_align_center": false,
-        "desktop_no_spacing": false,
-        "icon_enable": false,
-        "full_width_section": true
-      }
     }
   },
   "order": [
     "16420790196f1cba40",
+    "1639505258119ea558",
     "f29ced55-701c-43f8-8463-3f20083fda15",
     "1641834224a94d856f",
-    "6bfa2099-00ed-467f-b99b-33fda7955494",
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219",
+    "6bfa2099-00ed-467f-b99b-33fda7955494",
     "1639503887e884ceb3",
     "1647969963a76480fb",
     "bbb28046-9da0-414e-9315-b719dba86fce",
-    "16420895372c7ae66d",
-    "1639505258119ea558"
+    "16420895372c7ae66d"
   ]
 }
