@@ -183,7 +183,7 @@
         "16418342231ac13c89-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Protein-shot.webp",
+            "image": "shopify:\/\/shop_images\/Protein-shot_3a8850ba-f4f1-4e7e-a6bc-d212cea01835.webp",
             "image_url": "",
             "title": "",
             "icon": "none",
@@ -267,7 +267,7 @@
         "577c20c8-4973-470b-b8c8-c07527deb5b7": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Protein-bar.webp",
+            "image": "shopify:\/\/shop_images\/Protein-bar_a8282a19-70dc-48a6-981c-a5d3f038673f.webp",
             "image_url": "",
             "title": "<p>Protein Bar<\/p>",
             "icon": "none",
@@ -307,7 +307,7 @@
         "section_height": "large",
         "title_center": true,
         "image_width": "half",
-        "col_img_contain": false,
+        "col_img_contain": true,
         "image_ratio": "adapt",
         "column_alignment": "left",
         "columns": "four",
