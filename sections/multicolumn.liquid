@@ -107,7 +107,7 @@
                   {% endif %}
                     <div class="media media--transparent media--{{ section.settings.image_ratio }}"
                       {% if section.settings.image_ratio == 'adapt' %}
-                        style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 200 }}%;"
+                        style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
                       {% endif %}>
                       <img
                         srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | image_url: width: 275 }} 275w,{%- endif -%}
@@ -123,6 +123,9 @@
                         height="{{ block.settings.image.height }}"
                         width="{{ block.settings.image.width }}"
                         loading="lazy"
+                        {% if section.settings.col_img_contain %}
+                          style="object-fit:contain;"
+                        {% endif %}
                       >
                     </div>
                   {% if block.settings.image_url != blank %}
@@ -322,6 +325,11 @@
       ],
       "default": "full",
       "label": "t:sections.multicolumn.settings.image_width.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "col_img_contain",
+      "label": "Column image contain"
     },
     {
       "type": "select",
