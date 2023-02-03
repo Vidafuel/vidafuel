@@ -71,6 +71,7 @@
             "text_font": "trade_gothic_compressed_bold",
             "text_size": "h2",
             "title_top": false,
+            "col_content_reverse": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
             "icon_color": "#cdda01",
@@ -97,6 +98,7 @@
             "text_font": "default",
             "text_size": "heading-3",
             "title_top": false,
+            "col_content_reverse": false,
             "p_bullets": true,
             "p_bullets_color": "#cdda01",
             "icon_color": "#cdda01",
@@ -180,6 +182,7 @@
         "16418342231ac13c89-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Protein-shot.webp",
             "image_url": "",
             "title": "",
             "icon": "none",
@@ -197,6 +200,7 @@
             "text_font": "default",
             "text_size": "heading-5",
             "title_top": false,
+            "col_content_reverse": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
             "icon_color": "#e68227",
@@ -206,6 +210,7 @@
         "16418342231ac13c89-2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Protein-Drink.webp",
             "image_url": "",
             "title": "<p><strong>Protein Drink<\/strong><\/p>",
             "icon": "none",
@@ -223,6 +228,7 @@
             "text_font": "default",
             "text_size": "heading-5",
             "title_top": false,
+            "col_content_reverse": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
             "icon_color": "#cdda01",
@@ -232,6 +238,7 @@
         "e59229b5-1a1c-46ca-a575-992d0ab5c191": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Protein-Powder.webp",
             "image_url": "",
             "title": "<p>Protein Powder<\/p>",
             "icon": "none",
@@ -249,6 +256,7 @@
             "text_font": "default",
             "text_size": "heading-5",
             "title_top": false,
+            "col_content_reverse": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
             "icon_color": "#cdda01",
@@ -258,6 +266,7 @@
         "577c20c8-4973-470b-b8c8-c07527deb5b7": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Protein-bar.webp",
             "image_url": "",
             "title": "<p>Protein Bar<\/p>",
             "icon": "none",
@@ -275,6 +284,7 @@
             "text_font": "default",
             "text_size": "heading-5",
             "title_top": false,
+            "col_content_reverse": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
             "icon_color": "#cdda01",
@@ -299,7 +309,7 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "columns": "four",
-        "background_style": "secondary",
+        "background_style": "none",
         "card_bk_none": true,
         "button_label": "",
         "button_link": "shopify:\/\/blogs\/nutrition-wellness\/protein-drink-is-good-for-diabetics",
@@ -333,6 +343,7 @@
             "text_font": "default",
             "text_size": "default",
             "title_top": false,
+            "col_content_reverse": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
             "icon_color": "#cdda01",
@@ -359,6 +370,7 @@
             "text_font": "default",
             "text_size": "default",
             "title_top": false,
+            "col_content_reverse": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
             "icon_color": "#cdda01",
@@ -385,6 +397,7 @@
             "text_font": "default",
             "text_size": "default",
             "title_top": false,
+            "col_content_reverse": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
             "icon_color": "#e68227",
