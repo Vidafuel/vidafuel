@@ -80,7 +80,7 @@
             </style>
           {% endif %}
           <li class="multicolumn-list__item {% if section.settings.columns != 'default' %} {{ section.settings.columns }}{% endif %} grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
-            <div class="multicolumn-card{% if section.settings.card_bk_none %} multicolumn-card-bk_none{% endif %}">
+            <div class="multicolumn-card{% if section.settings.card_bk_none %} multicolumn-card-bk_none{% endif %}{% if block.settings.col_content_reverse %} multicolumn__col-reverse{% endif %}">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
@@ -107,7 +107,7 @@
                   {% endif %}
                     <div class="media media--transparent media--{{ section.settings.image_ratio }}"
                       {% if section.settings.image_ratio == 'adapt' %}
-                        style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
+                        style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 200 }}%;"
                       {% endif %}>
                       <img
                         srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | image_url: width: 275 }} 275w,{%- endif -%}
@@ -825,6 +825,11 @@
           "type": "checkbox",
           "id": "title_top",
           "label": "Heading above image"
+        },
+        {
+          "type": "checkbox",
+          "id": "col_content_reverse",
+          "label": "Column text above image"
         },
         {
           "type": "checkbox",
