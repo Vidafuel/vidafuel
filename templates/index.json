@@ -122,7 +122,7 @@
         "column_alignment": "left",
         "columns": "default",
         "background_style": "none",
-        "card_bk_none": false,
+        "card_bk_none": true,
         "button_label": "",
         "button_link": "\/products",
         "swipe_on_mobile": false,
@@ -183,11 +183,11 @@
         "16418342231ac13c89-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Protein-shot_f2298944-0b9c-4455-8606-b11b63d9752a.webp",
+            "image": "shopify:\/\/shop_images\/Protein-shot_020cb9e4-8c6b-4679-8ae3-f989044db288.webp",
             "image_url": "",
             "title": "",
             "icon": "none",
-            "text": "<p>2oz <br\/>16g protein<br\/>4g sugar<\/p>",
+            "text": "<p><\/p><p>2oz <br\/>16g protein<br\/>4g sugar<\/p>",
             "link_label": "",
             "link_type": "link",
             "link": "",
