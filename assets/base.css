@@ -2520,8 +2520,16 @@ details-disclosure > details {
 
 /* CUSTOM CSS */
 
+.flex-align-normal {
+	align-items: normal;
+}
+
 .flex-align-center {
 	align-items: center;
+}
+
+.flex-align-end {
+	align-items: flex-end;
 }
 
 .flex-justify-center {

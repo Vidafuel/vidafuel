@@ -59,24 +59,23 @@
       {%- endif -%}
     </div>
     <slider-component class="slider-mobile-gutter">
-      <ul class="multicolumn-list {% if section.settings.full_width_section %}full-width {% endif %}{% if section.settings.flex_align_center %}flex-align-center {% endif %} grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %} {{ section.id }}"
+      <ul class="multicolumn-list {% if section.settings.full_width_section %}full-width {% endif %}{{ section.settings.vertical_alignment }} grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %} {{ section.id }}"
         id="Slider-{{ section.id }}"
         role="list"
       >
         {%- liquid
           assign highest_ratio = 0
           for block in section.blocks
-            if block.settings.image.aspect_ratio > highest_ratio
+          # echo '• ' | append: block.settings.image.aspect_ratio
+            if block.settings.image_max_width
+              assign highest_ratio = block.settings.image_max_width
+            elsif block.settings.image.aspect_ratio > highest_ratio
               assign highest_ratio = block.settings.image.aspect_ratio
             endif
           endfor
         -%}
-        
-  
-        
-        
+                <h1>{{ block.settings.image.aspect_ratio }}</h1>
         {%- for block in section.blocks -%}
-                    
 
             {% case block.type %}
               {% when 'column' %}
@@ -126,11 +125,6 @@
           <li class="multicolumn-list__item {% if section.settings.columns != 'default' %} {{ section.settings.columns }}{% endif %} grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
             <div class="multicolumn-card{% if section.settings.card_bk_none %} multicolumn-card-bk_none{% endif %}{% if block.settings.col_content_reverse %} multicolumn__col-reverse{% endif %}">
               {%- if block.settings.image != blank -%}
-              
-              
-          
-              
-              
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
                 {% endif %}
@@ -155,7 +149,9 @@
                     <a href="{{ block.settings.image_url }}">
                   {% endif %}
                     <div class="media media--transparent media--{{ section.settings.image_ratio }}"
-                      {% if section.settings.image_ratio == 'adapt' %}
+                      {% if block.settings.image_max_height != 0 %}
+                        style="padding-bottom: {{ block.settings.image_max_height | divided_by: 3 }}%;"
+                      {% elsif section.settings.image_ratio == 'adapt' %}
                         style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
                       {% endif %}>
                       <img
@@ -180,85 +176,87 @@
                   {% endif %}
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info{% if block.settings.custom_liquid != blank %} custom-liquid__info{% endif %}">
-                {% if section.settings.icon_enable %} <div class="icon__enable">{% endif %}
-                {%- if block.settings.title != blank and block.settings.title_top == false and block.settings.custom_liquid == blank -%}
-                  {% if section.settings.icon_enable %}
-                    {% render 'icon-accordion', icon: block.settings.icon %}
-                  {% endif %}
-                  <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% else %}default-size{% endif %} {% if block.settings.col_title_size != 'default' %}{{ block.settings.col_title_size }}{% endif %}" {% if block.settings.column_custom_text_color %}style="color:{{ block.settings.copy_color }}"{% endif %}>
-                    {{ block.settings.title }}
-                  </h3>
-                {%- endif -%}
-                {% if block.settings.title_image != blank %}
-                <img
-                  srcset="{%- if block.settings.title_image.width >= 275 -%}{{ block.settings.title_image | image_url: width: 275 }} 275w,{%- endif -%}
-                    {%- if block.settings.title_image.width >= 550 -%}{{ block.settings.title_image | image_url: width: 550 }} 550w,{%- endif -%}
-                    {%- if block.settings.title_image.width >= 710 -%}{{ block.settings.title_image | image_url: width: 710 }} 710w,{%- endif -%}
-                    {%- if block.settings.title_image.width >= 1420 -%}{{ block.settings.title_image | image_url: width: 1420 }} 1420w,{%- endif -%}
-                    {{ block.settings.title_image | image_url }} {{ block.settings.title_image.width }}w"
-                  src="{{ block.settings.title_image | image_url: width: 550 }}"
-                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                  alt="{{ block.settings.title_image.alt }}"
-                  height="56"
-                  width="225"
-                  loading="lazy"
-                >
-                {% endif %}
-                {% if section.settings.icon_enable %}</div>{% endif %}
-                {%- if block.settings.text != blank -%}
-                  <div class="rte {% if block.settings.text_color_primary %}color-foreground-accent-1 {% endif %}{% if block.settings.p_bullets %} p_bullets {% endif %}{% if block.settings.text_font != 'default' %} {{ block.settings.text_font }}{% endif %}{% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %}" {% if block.settings.column_custom_text_color %}style="color:{{ block.settings.copy_color }}"{% endif %}>
-                    {{ block.settings.text }}
-                  </div>
-                {%- endif -%}
-                {%- if block.settings.link_type == 'link' -%}
-                  {%- if block.settings.link_label != blank -%}
-                    <a class="button button--primary" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
-                  {%- endif -%}
-                {%- else -%}
-                  <modal-opener class="multicolumn-card-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
-                    <button id="ProductPopup-{{ block.id }}" class="button button--primary multicolumn-card-popup-modal__button" type="button"
-                      aria-haspopup="dialog">{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></button>
-                  </modal-opener>
-                  <modal-dialog id="PopupModal-{{ block.id }}" class="multicolumn-card-popup-modal" {{ block.shopify_attributes }}>
-                    <div role="dialog" aria-label="{{ block.settings.link_label }}" aria-modal="true" class="multicolumn-card-popup-modal__content"
-                      tabindex="-1">
-                      <button id="ModalClose-{{ block.id }}" type="button" class="multicolumn-card-popup-modal__toggle"
-                        aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
-                      <div class="multicolumn-card-popup-modal__content-info">
-                        {% if block.settings.modal_image != blank %}
-                        <img
-                          srcset="{%- if block.settings.modal_image.width >= 275 -%}{{ block.settings.modal_image | image_url: width: 275 }} 275w,{%- endif -%}
-                            {%- if block.settings.modal_image.width >= 550 -%}{{ block.settings.modal_image | image_url: width: 550 }} 550w,{%- endif -%}
-                            {%- if block.settings.modal_image.width >= 710 -%}{{ block.settings.modal_image | image_url: width: 710 }} 710w,{%- endif -%}
-                            {%- if block.settings.modal_image.width >= 1420 -%}{{ block.settings.modal_image | image_url: width: 1420 }} 1420w,{%- endif -%}
-                            {{ block.settings.modal_image | image_url }} {{ block.settings.modal_image.width }}w"
-                          src="{{ block.settings.modal_image | image_url: width: 550 }}"
-                          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                          alt="{{ block.settings.modal_image.alt }}"
-                          height="{{ block.settings.modal_image.height }}"
-                          width="{{ block.settings.modal_image.width }}"
-                          loading="lazy"
-                        >
-                        {% endif %}
-                        {% if block.settings.modal_liquid %}
-                          {{ block.settings.modal_liquid }}
-                        {% endif %}
-                      </div>
-                    </div>
-                  </modal-dialog>
-                {%- endif -%}
-                {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}
-                  <div class="custom-liquid" style="background-color:{{ block.settings.liquid_background }};">
-                    <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.col_title_size != 'default' %}{{ block.settings.col_title_size }}{% endif %}" {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}style="color:#000;"{% endif %}>
+              {%- if block.settings.title != blank or section.settings.icon_enable or block.settings.title_image != blank or block.settings.custom_liquid != blank -%}
+                <div class="multicolumn-card__info{% if block.settings.custom_liquid != blank %} custom-liquid__info{% endif %}">
+                  {% if section.settings.icon_enable %} <div class="icon__enable">{% endif %}
+                  {%- if block.settings.title != blank and block.settings.title_top == false and block.settings.custom_liquid == blank -%}
+                    {% if section.settings.icon_enable %}
+                      {% render 'icon-accordion', icon: block.settings.icon %}
+                    {% endif %}
+                    <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% else %}default-size{% endif %} {% if block.settings.col_title_size != 'default' %}{{ block.settings.col_title_size }}{% endif %}" {% if block.settings.column_custom_text_color %}style="color:{{ block.settings.copy_color }}"{% endif %}>
                       {{ block.settings.title }}
                     </h3>
+                  {%- endif -%}
+                  {% if block.settings.title_image != blank %}
+                  <img
+                    srcset="{%- if block.settings.title_image.width >= 275 -%}{{ block.settings.title_image | image_url: width: 275 }} 275w,{%- endif -%}
+                      {%- if block.settings.title_image.width >= 550 -%}{{ block.settings.title_image | image_url: width: 550 }} 550w,{%- endif -%}
+                      {%- if block.settings.title_image.width >= 710 -%}{{ block.settings.title_image | image_url: width: 710 }} 710w,{%- endif -%}
+                      {%- if block.settings.title_image.width >= 1420 -%}{{ block.settings.title_image | image_url: width: 1420 }} 1420w,{%- endif -%}
+                      {{ block.settings.title_image | image_url }} {{ block.settings.title_image.width }}w"
+                    src="{{ block.settings.title_image | image_url: width: 550 }}"
+                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                    alt="{{ block.settings.title_image.alt }}"
+                    height="56"
+                    width="225"
+                    loading="lazy"
+                  >
+                  {% endif %}
+                  {% if section.settings.icon_enable %}</div>{% endif %}
+                  {%- if block.settings.text != blank -%}
+                    <div class="rte {% if block.settings.text_color_primary %}color-foreground-accent-1 {% endif %}{% if block.settings.p_bullets %} p_bullets {% endif %}{% if block.settings.text_font != 'default' %} {{ block.settings.text_font }}{% endif %}{% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %}" {% if block.settings.column_custom_text_color %}style="color:{{ block.settings.copy_color }}"{% endif %}>
+                      {{ block.settings.text }}
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.link_type == 'link' -%}
+                    {%- if block.settings.link_label != blank -%}
+                      <a class="button button--primary" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
+                    {%- endif -%}
+                  {%- else -%}
+                    <modal-opener class="multicolumn-card-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
+                      <button id="ProductPopup-{{ block.id }}" class="button button--primary multicolumn-card-popup-modal__button" type="button"
+                        aria-haspopup="dialog">{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></button>
+                    </modal-opener>
+                    <modal-dialog id="PopupModal-{{ block.id }}" class="multicolumn-card-popup-modal" {{ block.shopify_attributes }}>
+                      <div role="dialog" aria-label="{{ block.settings.link_label }}" aria-modal="true" class="multicolumn-card-popup-modal__content"
+                        tabindex="-1">
+                        <button id="ModalClose-{{ block.id }}" type="button" class="multicolumn-card-popup-modal__toggle"
+                          aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
+                        <div class="multicolumn-card-popup-modal__content-info">
+                          {% if block.settings.modal_image != blank %}
+                          <img
+                            srcset="{%- if block.settings.modal_image.width >= 275 -%}{{ block.settings.modal_image | image_url: width: 275 }} 275w,{%- endif -%}
+                              {%- if block.settings.modal_image.width >= 550 -%}{{ block.settings.modal_image | image_url: width: 550 }} 550w,{%- endif -%}
+                              {%- if block.settings.modal_image.width >= 710 -%}{{ block.settings.modal_image | image_url: width: 710 }} 710w,{%- endif -%}
+                              {%- if block.settings.modal_image.width >= 1420 -%}{{ block.settings.modal_image | image_url: width: 1420 }} 1420w,{%- endif -%}
+                              {{ block.settings.modal_image | image_url }} {{ block.settings.modal_image.width }}w"
+                            src="{{ block.settings.modal_image | image_url: width: 550 }}"
+                            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                            alt="{{ block.settings.modal_image.alt }}"
+                            height="{{ block.settings.modal_image.height }}"
+                            width="{{ block.settings.modal_image.width }}"
+                            loading="lazy"
+                          >
+                          {% endif %}
+                          {% if block.settings.modal_liquid %}
+                            {{ block.settings.modal_liquid }}
+                          {% endif %}
+                        </div>
+                      </div>
+                    </modal-dialog>
+                  {%- endif -%}
+                  {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}
+                    <div class="custom-liquid" style="background-color:{{ block.settings.liquid_background }};">
+                      <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.col_title_size != 'default' %}{{ block.settings.col_title_size }}{% endif %}" {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}style="color:#000;"{% endif %}>
+                        {{ block.settings.title }}
+                      </h3>
+                      {{ block.settings.custom_liquid }}
+                    </div>
+                  {% else %}
                     {{ block.settings.custom_liquid }}
-                  </div>
-                {% else %}
-                  {{ block.settings.custom_liquid }}
-                {%- endif -%}
-              </div>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
             </div>
           </li>
         {%- endfor -%}
@@ -506,10 +504,24 @@
       "label": "t:sections.multicolumn.settings.swipe_on_mobile.label"
     },
     {
-      "type": "checkbox",
-      "id": "flex_align_center",
-      "label": "Vertically center align",
-      "default": false
+      "type": "select",
+      "id": "vertical_alignment",
+      "label": "Vertical alignment",
+      "options": [
+        {
+          "label": "Default",
+          "value": "flex-align-normal"
+        },
+        {
+          "label": "Center",
+          "value": "flex-align-center"
+        },
+        {
+          "label": "Bottom",
+          "value": "flex-align-end"
+        }
+      ],
+      "default": "flex-align-normal"
     },
     {
       "type": "checkbox",
