@@ -86,18 +86,18 @@
                 {% endif %}
               {% if block.settings.image_max_height != 0 %}
                 {% style %}
-                .multicolumn-image.{{ imgID }} {
+               #Slider-{{ section.id }} .multicolumn-image.{{ imgID }} {
                   {{ imageContain }}
                 }
                   @media screen and (min-width: 750px) {
-                        .multicolumn-image.{{ imgID }} {
+                       #Slider-{{ section.id }} .multicolumn-image.{{ imgID }} {
                           top: unset !important;
                           bottom: 0;
                           object-position: bottom;
                         }
                     }
                 @media screen and (min-width: 990px) {
-                        .multicolumn-image.{{ imgID }} {
+                        #Slider-{{ section.id }} .multicolumn-image.{{ imgID }} {
                           max-height: {{ block.settings.image_max_height }}px;
                           top: unset !important;
                           bottom: 0;
