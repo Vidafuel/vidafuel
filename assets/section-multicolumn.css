@@ -219,7 +219,7 @@
 	}
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
 	.multicolumn-list.slider,
 	.multicolumn-list.grid--4-col-desktop {
 		padding: 0;
@@ -534,4 +534,11 @@
 .multicolumn__col-reverse {
 	display: flex;
 	flex-direction: column-reverse;
+}
+@media screen and (min-width: 750px) {
+	.multicolumn__img-height-set {
+		bottom: 0;
+		top: unset;
+		object-fit: contain;
+	}
 }

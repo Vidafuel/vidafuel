@@ -76,21 +76,36 @@
         
         
         {%- for block in section.blocks -%}
-          
-          
-          
-          
-          
-          {% liquid
-            case block.type
-              when 'column'
-              if section.settings.col_img_contain
-                assign imageContain = 'object-fit: contain;'
-              endif
-              assign imageHeight = block.settings.image_max_height
-              assign imageStyle = 'style="bottom:0;top:unset;max-height:' | append: imageHeight | append: 'px;' | append: imageContain | append: '"'
-            endcase 
-          %}
+                    
+
+            {% case block.type %}
+              {% when 'column' %}
+                {% assign imgID = 'col-' | append: forloop.index %}
+                {% if section.settings.col_img_contain %}
+                  {% assign imageContain = 'object-fit: contain;' %}
+                {% endif %}
+              {% if block.settings.image_max_height != 0 %}
+                {% style %}
+                .multicolumn-image.{{ imgID }} {
+                  {{ imageContain }}
+                }
+                  @media screen and (min-width: 750px) {
+                        .multicolumn-image.{{ imgID }} {
+                          top: unset !important;
+                          bottom: 0;
+                          object-position: bottom;
+                        }
+                    }
+                @media screen and (min-width: 990px) {
+                        .multicolumn-image.{{ imgID }} {
+                          max-height: {{ block.settings.image_max_height }}px;
+                          top: unset !important;
+                          bottom: 0;
+                        }
+                    }
+                {% endstyle %}
+              {% endif %}
+            {% endcase %}
           
           
           
@@ -157,8 +172,7 @@
                         height="{{ block.settings.image.height }}"
                         width="{{ block.settings.image.width }}"
                         loading="lazy"
-                        class="multicolumn-image"
-                        {{ imageStyle }}
+                        class="multicolumn-image {{ imgID }}"
                       >
                     </div>
                   {% if block.settings.image_url != blank %}
