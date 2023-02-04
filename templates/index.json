@@ -185,7 +185,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Protein-shot-widest.webp",
             "image_url": "",
-            "image_max_height": 110,
+            "image_max_height": 113,
             "title": "",
             "title_image": "shopify:\/\/shop_images\/Vidafuel-logo-official_79005c8e-b930-42b8-8182-f69ac0cdf413.png",
             "icon": "none",
@@ -215,7 +215,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Protein-Drink-sm-wide.webp",
             "image_url": "",
-            "image_max_height": 223,
+            "image_max_height": 300,
             "title": "<p><strong>Protein Drink<\/strong><\/p>",
             "icon": "none",
             "text": "<p>8oz<br\/>12g protein<br\/>16g sugar<\/p>",
@@ -244,7 +244,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Protein-Powder_9bb763ca-3a71-4f99-a831-4612f2cd92f8.webp",
             "image_url": "",
-            "image_max_height": 333,
+            "image_max_height": 379,
             "title": "<p>Protein Powder<\/p>",
             "icon": "none",
             "text": "<p>12oz<br\/>20g protein<br\/>8g sugar<\/p>",
@@ -273,7 +273,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Protein-bar_478648bf-579b-4ac1-8b89-f3dcc2d700d8.webp",
             "image_url": "",
-            "image_max_height": 74,
+            "image_max_height": 100,
             "title": "<p>Protein Bar<\/p>",
             "icon": "none",
             "text": "<p>12g protein<br\/>16g sugar<br\/>200 calories<\/p>",
@@ -320,8 +320,8 @@
         "button_label": "",
         "button_link": "shopify:\/\/blogs\/nutrition-wellness\/protein-drink-is-good-for-diabetics",
         "swipe_on_mobile": false,
-        "flex_align_center": true,
-        "desktop_no_spacing": true,
+        "flex_align_center": false,
+        "desktop_no_spacing": false,
         "icon_enable": false,
         "full_width_section": false
       }
