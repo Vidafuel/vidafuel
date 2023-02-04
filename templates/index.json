@@ -183,11 +183,12 @@
         "16418342231ac13c89-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Protein-shot_020cb9e4-8c6b-4679-8ae3-f989044db288.webp",
+            "image": "shopify:\/\/shop_images\/Protein-shot-widest.webp",
             "image_url": "",
             "title": "",
+            "title_image": "shopify:\/\/shop_images\/Vidafuel-logo-official_79005c8e-b930-42b8-8182-f69ac0cdf413.png",
             "icon": "none",
-            "text": "<p><\/p><p>2oz <br\/>16g protein<br\/>4g sugar<\/p>",
+            "text": "<p>2oz <br\/>16g protein<br\/>4g sugar<\/p>",
             "link_label": "",
             "link_type": "link",
             "link": "",
