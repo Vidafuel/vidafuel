@@ -143,6 +143,21 @@
                     {{ block.settings.title }}
                   </h3>
                 {%- endif -%}
+                {% if block.settings.title_image != blank %}
+                <img
+                  srcset="{%- if block.settings.title_image.width >= 275 -%}{{ block.settings.title_image | image_url: width: 275 }} 275w,{%- endif -%}
+                    {%- if block.settings.title_image.width >= 550 -%}{{ block.settings.title_image | image_url: width: 550 }} 550w,{%- endif -%}
+                    {%- if block.settings.title_image.width >= 710 -%}{{ block.settings.title_image | image_url: width: 710 }} 710w,{%- endif -%}
+                    {%- if block.settings.title_image.width >= 1420 -%}{{ block.settings.title_image | image_url: width: 1420 }} 1420w,{%- endif -%}
+                    {{ block.settings.title_image | image_url }} {{ block.settings.title_image.width }}w"
+                  src="{{ block.settings.title_image | image_url: width: 550 }}"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="{{ block.settings.title_image.alt }}"
+                  height="56"
+                  width="225"
+                  loading="lazy"
+                >
+                {% endif %}
                 {% if section.settings.icon_enable %}</div>{% endif %}
                 {%- if block.settings.text != blank -%}
                   <div class="rte {% if block.settings.text_color_primary %}color-foreground-accent-1 {% endif %}{% if block.settings.p_bullets %} p_bullets {% endif %}{% if block.settings.text_font != 'default' %} {{ block.settings.text_font }}{% endif %}{% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %}" {% if block.settings.column_custom_text_color %}style="color:{{ block.settings.copy_color }}"{% endif %}>
@@ -492,6 +507,11 @@
           "type": "richtext",
           "id": "title",
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "title_image",
+          "label": "Title image"
         },
         {
           "type": "select",
