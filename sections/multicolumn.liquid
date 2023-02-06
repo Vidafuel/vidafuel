@@ -74,9 +74,7 @@
             endif
           endfor
         -%}
-                <h1>{{ block.settings.image.aspect_ratio }}</h1>
         {%- for block in section.blocks -%}
-
             {% case block.type %}
               {% when 'column' %}
                 {% assign imgID = 'col-' | append: forloop.index %}
@@ -105,9 +103,6 @@
                 {% endstyle %}
               {% endif %}
             {% endcase %}
-          
-          
-          
           {% if block.settings.p_bullets_color != '#cdda01' %}
             <style>
               .{{ section.id }} .p_bullets p::before {
@@ -122,21 +117,22 @@
               }
             </style>
           {% endif %}
-          <li class="multicolumn-list__item {% if section.settings.columns != 'default' %} {{ section.settings.columns }}{% endif %} grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
+          
+          <li class="multicolumn-list__item {% if section.settings.columns != 'default' %} {{ section.settings.columns }}{% endif %} grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{% if block.settings.image_link_url != blank %} full-width-link_container{% endif %}" {{ block.shopify_attributes }}>
             <div class="multicolumn-card{% if section.settings.card_bk_none %} multicolumn-card-bk_none{% endif %}{% if block.settings.col_content_reverse %} multicolumn__col-reverse{% endif %}">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
                 {% endif %}
-                {% if block.settings.image_url != blank %}
-                  <a href="{{ block.settings.image_url }}">
+                {% if block.settings.image_link_url != blank %}
+                  <a href="{{ block.settings.image_link_url }}" class="full-width-link">
                 {% endif %}
                 {%- if block.settings.title != blank and block.settings.title_top -%}
                   <h3 class="title-wrapper {% if section.settings.full_width_section %}full-width {% endif %}{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.col_title_size != 'default' %}{{ block.settings.col_title_size }}{% endif %}">
                     {{ block.settings.title }}
                   </h3>
                 {%- endif -%}
-                {% if block.settings.image_url != blank %}
+                {% if block.settings.image_link_url != blank %}
                   </a>
                 {% endif %}
                 {% if spaced_image and section.settings.full_width_section %}
@@ -555,7 +551,7 @@
         },
         {
           "type": "url",
-          "id": "image_url",
+          "id": "image_link_url",
           "label": "Image link"
         },
         {
