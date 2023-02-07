@@ -20,16 +20,10 @@
 {% else %}
     {% assign background_style = section.settings.background_style %}
 {% endif %}
-
-
-{% if section.settings.col_img_contain %}
-  
-{% endif %}
-
-                        
+          
 {% liquid
-  if section.settings.title_color != "#0000000"
-    assign title_color_style = 'style="color:' | append: section.settings.title_color | append: '""' 
+  if section.settings.heading_color != "#0000000"
+    assign heading_color_style = 'style="color:' | append: section.settings.heading_color | append: '""' 
   endif
 %}
 <div class="multicolumn background-{{ background_style }} multicolumn--{{ section.settings.section_height }} {% if section.settings.background_style == 'gradient-1' %} gradient color-accent-1{% elsif section.settings.background_style == 'gradient-2' %} gradient color-accent-2{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}">
@@ -51,7 +45,7 @@
   {% endif %}
   <div {% if section.settings.full_width_section != true %}class="page-width"{% endif %}>
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.full_width_section %}--full-width{% else %}{% endif %} {% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
-      <h2 class="title{% if section.settings.title_center %} center{% endif %}{% if section.settings.title_size != 'default' %} {{ section.settings.title_size }}{% endif %}" {{ title_color_style }}>
+      <h2 class="title{% if section.settings.title_center %} center{% endif %}{% if section.settings.title_size != 'default' %} {{ section.settings.title_size }}{% endif %}" {{ heading_color_style }}>
         {{ section.settings.title | escape }}
       </h2>
       {%- if section.settings.button_label != blank and section.settings.swipe_on_mobile -%}
@@ -78,38 +72,65 @@
             {% case block.type %}
               {% when 'column' %}
                 {% assign imgID = 'col-' | append: forloop.index %}
+                {% comment %}
+                  COLUMN image contain
+                {% endcomment %}
                 {% if section.settings.col_img_contain %}
                   {% assign imageContain = 'object-fit: contain;' %}
                 {% endif %}
+                
+              {% comment %} VARIABLES {% endcomment %}
+              {% liquid
+                assign textColorPrimary = ''
+                assign pBullets = ''
+                assign textFont = ''
+                assign textSize = 'default'
+                assign columnCustomTextColor = ''
+              %}
+                
+              {% comment %} BULLETS text color {% endcomment %}
+              {%- if block.settings.column_custom_text_color -%} 
+                {% assign columnCustomTextColorCLASS = 'column-custom-text-color' %}
+                {% assign columnCustomTextColor = '.column-custom-text-color strong{color:' | append: block.settings.copy_color | append: '}' %}
+              {%- endif -%}
+              
               {% if block.settings.image_max_height != 0 %}
                 {% style %}
-               #Slider-{{ section.id }} .multicolumn-image.{{ imgID }} {
-                  {{ imageContain }}
-                }
+                  #Slider-{{ section.id }} {{ columnCustomTextColor }}
+                  #Slider-{{ section.id }} .multicolumn-image.{{ imgID }} {
+                    {{ imageContain }}
+                  }
                   @media screen and (min-width: 750px) {
-                       #Slider-{{ section.id }} .multicolumn-image.{{ imgID }} {
-                          top: unset !important;
-                          bottom: 0;
-                          object-position: bottom;
-                        }
+                    #Slider-{{ section.id }} .multicolumn-image.{{ imgID }} {
+                      top: unset !important;
+                      bottom: 0;
+                      object-position: bottom;
                     }
-                @media screen and (min-width: 990px) {
-                        #Slider-{{ section.id }} .multicolumn-image.{{ imgID }} {
-                          max-height: {{ block.settings.image_max_height }}px;
-                          top: unset !important;
-                          bottom: 0;
-                        }
+                  }
+                  @media screen and (min-width: 990px) {
+                    #Slider-{{ section.id }} .multicolumn-image.{{ imgID }} {
+                      max-height: {{ block.settings.image_max_height }}px;
+                      top: unset !important;
+                      bottom: 0;
                     }
+                  }
                 {% endstyle %}
               {% endif %}
             {% endcase %}
+          
+          {% comment %} BULLETS text color {% endcomment %}
           {% if block.settings.p_bullets_color != '#cdda01' %}
-            <style>
-              .{{ section.id }} .p_bullets p::before {
-                background: {{ block.settings.p_bullets_color }};
-              }
-            </style>
+            {% style %}
+                .{{ section.id }} .p_bullets p::before {
+                  background: {{ block.settings.p_bullets_color }};
+                }
+                .{{ customTextColorClass }} {
+                  color: p_bullets_color_text;
+                }
+            {% endstyle %}
           {% endif %}
+          
+          {% comment %} BULLETS icon color {% endcomment %}
           {% if block.settings.icon_color != '#cdda01' %}
             <style>
               .{{ section.id }} .icon {
@@ -117,6 +138,23 @@
               }
             </style>
           {% endif %}
+          
+          {%- if block.settings.text_color_primary -%}
+            {% assign textColorPrimary = 'color-foreground-accent-1' %}  
+          {%- endif -%}
+          
+          {%- if block.settings.p_bullets -%} 
+            {% assign pBullets = 'p_bullets' %}
+          {%- endif -%}
+          
+          {%- if block.settings.text_font != 'default' -%}
+            {% assign textFont = block.settings.text_font %}
+          {%- endif -%}
+          
+          {%- if block.settings.text_size != 'default' -%} 
+            {% assign textSize = block.settings.text_size %}
+          {%- endif -%}
+          
           
           <li class="multicolumn-list__item {% if section.settings.columns != 'default' %} {{ section.settings.columns }}{% endif %} grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{% if block.settings.image_link_url != blank %} full-width-link_container{% endif %}" {{ block.shopify_attributes }}>
             <div class="multicolumn-card{% if section.settings.card_bk_none %} multicolumn-card-bk_none{% endif %}{% if block.settings.col_content_reverse %} multicolumn__col-reverse{% endif %}">
@@ -172,38 +210,65 @@
                   {% endif %}
                 </div>
               {%- endif -%}
-              {%- if block.settings.title != blank or section.settings.icon_enable or block.settings.title_image != blank or block.settings.custom_liquid != blank -%}
                 <div class="multicolumn-card__info{% if block.settings.custom_liquid != blank %} custom-liquid__info{% endif %}">
-                  {% if section.settings.icon_enable %} <div class="icon__enable">{% endif %}
-                  {%- if block.settings.title != blank and block.settings.title_top == false and block.settings.custom_liquid == blank -%}
+                  
+                  {% comment %} ICON div {% endcomment %}
+                  {% if section.settings.icon_enable %}
+                    <div class="icon__enable">
+                  {% endif %}
+                  
+                  {% comment %} ICON element {% endcomment %}
+                  {%- if block.settings.title_top == false and block.settings.custom_liquid == blank -%}
                     {% if section.settings.icon_enable %}
                       {% render 'icon-accordion', icon: block.settings.icon %}
                     {% endif %}
-                    <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% else %}default-size{% endif %} {% if block.settings.col_title_size != 'default' %}{{ block.settings.col_title_size }}{% endif %}" {% if block.settings.column_custom_text_color %}style="color:{{ block.settings.copy_color }}"{% endif %}>
-                      {{ block.settings.title }}
-                    </h3>
                   {%- endif -%}
-                  {% if block.settings.title_image != blank %}
-                  <img
-                    srcset="{%- if block.settings.title_image.width >= 275 -%}{{ block.settings.title_image | image_url: width: 275 }} 275w,{%- endif -%}
-                      {%- if block.settings.title_image.width >= 550 -%}{{ block.settings.title_image | image_url: width: 550 }} 550w,{%- endif -%}
-                      {%- if block.settings.title_image.width >= 710 -%}{{ block.settings.title_image | image_url: width: 710 }} 710w,{%- endif -%}
-                      {%- if block.settings.title_image.width >= 1420 -%}{{ block.settings.title_image | image_url: width: 1420 }} 1420w,{%- endif -%}
-                      {{ block.settings.title_image | image_url }} {{ block.settings.title_image.width }}w"
-                    src="{{ block.settings.title_image | image_url: width: 550 }}"
-                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-                    alt="{{ block.settings.title_image.alt }}"
-                    height="56"
-                    width="225"
-                    loading="lazy"
-                  >
+                  
+                    {% comment %} TITLE element {% endcomment %}
+                    {%- if block.settings.title != blank -%}
+                        <h3 class="
+                          {% if block.settings.title_font != 'default' %}
+                            {{ block.settings.title_font }} 
+                          {% else %}
+                            default-size
+                          {% endif %} 
+                          {% if block.settings.col_title_size != 'default' %}
+                            {{ block.settings.col_title_size }}
+                          {% endif %}">
+                        {{ block.settings.title }}
+                      </h3>
+                    {%- endif -%}
+                    
+                    {% comment %} IMAGE element {% endcomment %}
+                    {% if block.settings.title_image != blank %}
+                      <img
+                        srcset="{%- if block.settings.title_image.width >= 275 -%}{{ block.settings.title_image | image_url: width: 275 }} 275w,{%- endif -%}
+                          {%- if block.settings.title_image.width >= 550 -%}{{ block.settings.title_image | image_url: width: 550 }} 550w,{%- endif -%}
+                          {%- if block.settings.title_image.width >= 710 -%}{{ block.settings.title_image | image_url: width: 710 }} 710w,{%- endif -%}
+                          {%- if block.settings.title_image.width >= 1420 -%}{{ block.settings.title_image | image_url: width: 1420 }} 1420w,{%- endif -%}
+                          {{ block.settings.title_image | image_url }} {{ block.settings.title_image.width }}w"
+                        src="{{ block.settings.title_image | image_url: width: 550 }}"
+                        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                        alt="{{ block.settings.title_image.alt }}"
+                        height="56"
+                        width="225"
+                        loading="lazy"
+                      >
+                    {% endif %}
+                                      
+                  {% comment %} ICON /div {% endcomment %}
+                  {% if section.settings.icon_enable %}
+                    </div>
                   {% endif %}
-                  {% if section.settings.icon_enable %}</div>{% endif %}
+                  
+                  {% comment %} TEXT element {% endcomment %}
                   {%- if block.settings.text != blank -%}
-                    <div class="rte {% if block.settings.text_color_primary %}color-foreground-accent-1 {% endif %}{% if block.settings.p_bullets %} p_bullets {% endif %}{% if block.settings.text_font != 'default' %} {{ block.settings.text_font }}{% endif %}{% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %}" {% if block.settings.column_custom_text_color %}style="color:{{ block.settings.copy_color }}"{% endif %}>
+                    <div class="rte {{ textColorPrimary }} {{ pBullets }} {{ textFont }} {{ textSize }} {{ columnCustomTextColorCLASS }}">
                       {{ block.settings.text }}
                     </div>
                   {%- endif -%}
+                  
+                  {% comment %} LINK element {% endcomment %}
                   {%- if block.settings.link_type == 'link' -%}
                     {%- if block.settings.link_label != blank -%}
                       <a class="button button--primary" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
@@ -252,7 +317,6 @@
                     {{ block.settings.custom_liquid }}
                   {%- endif -%}
                 </div>
-              {%- endif -%}
             </div>
           </li>
         {%- endfor -%}
@@ -294,6 +358,12 @@
       "label": "t:sections.multicolumn.settings.title.label"
     },
     {
+      "type": "checkbox",
+      "id": "title_center",
+      "label": "Center heading",
+      "default": false
+    },
+    {
       "type": "select",
       "id": "title_size",
       "options": [
@@ -324,7 +394,7 @@
     {
       "type": "color",
       "id": "title_color",
-      "label": "Title text color",
+      "label": "Heading text color",
       "default": "#000000"
     },
     {
@@ -355,12 +425,6 @@
       ],
       "default": "medium",
       "label": "Section height"
-    },
-    {
-      "type": "checkbox",
-      "id": "title_center",
-      "label": "Center heading",
-      "default": false
     },
     {
       "type": "select",
