@@ -133,49 +133,64 @@
         "full_width_section": true
       }
     },
-    "f29ced55-701c-43f8-8463-3f20083fda15": {
-      "type": "collage",
-      "disabled": true,
+    "1639503887e884ceb3": {
+      "type": "images-with-text",
       "blocks": {
-        "ad57bb60-39cc-4c04-a53c-3e88913b1af8": {
+        "231f6501-1705-4359-a72b-4967587827df": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/0A0A0492_copy-2.webp",
-            "image_padding": false,
-            "color_scheme": "none"
+            "image": "shopify:\/\/shop_images\/Artboard_de8e50e1-e988-4547-9f31-416e7393994b.webp",
+            "image_ratio": "adapt"
           }
         },
-        "89700d35-faf2-4870-b8b6-32785160d0b3": {
-          "type": "text",
+        "847081ef-8696-42f1-ad5e-a315d489674c": {
+          "type": "button",
+          "disabled": true,
           "settings": {
-            "title": "One shot per day is all you need!",
-            "text": "To support muscle mass & strength, joint & bone health",
-            "button_label": "",
-            "button_link": "",
-            "color_scheme": "background-1"
-          }
-        },
-        "f809d592-46ee-47cf-943c-2d0c5baa9c98": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Meet_your_daily_protein_booster.webp",
-            "image_padding": true,
-            "color_scheme": "background-1"
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_font": "trade_gothic_bold"
           }
         }
       },
       "block_order": [
-        "ad57bb60-39cc-4c04-a53c-3e88913b1af8",
-        "89700d35-faf2-4870-b8b6-32785160d0b3",
-        "f809d592-46ee-47cf-943c-2d0c5baa9c98"
+        "231f6501-1705-4359-a72b-4967587827df",
+        "847081ef-8696-42f1-ad5e-a315d489674c"
       ],
       "settings": {
-        "heading": "Meet your daily protein booster",
-        "desktop_layout": "right",
-        "background_color_scheme": "default",
-        "mobile_layout": "column",
-        "remove_top_spacing": false,
-        "full_width": false
+        "heading": "<center>\n<em>Developed by dietitians<\/em> to deliver essential nutrients when you need them most<\/center>",
+        "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
+        "height": "adapt",
+        "desktop_no_spacing": true,
+        "center_image_and_icons": true,
+        "color_scheme": "background-2",
+        "layout": "text_first",
+        "mobile_text_first": false,
+        "section_width": "full_width",
+        "image_01": "shopify:\/\/shop_images\/DIABETES.png",
+        "image_01_title": "GENERAL WELLNESS",
+        "image_01_link": "https:\/\/vidafuel.com\/pages\/protein-drinks-for-dialysis-patients",
+        "image_02": "shopify:\/\/shop_images\/POST-SURGERY-RECOVERY.png",
+        "image_02_title": "RECOVERY",
+        "image_02_link": "https:\/\/vidafuel.com\/pages\/bariatric-protein-nutrition",
+        "image_03": "shopify:\/\/shop_images\/ACTIVE-AGING.png",
+        "image_03_title": "ACTIVE AGING",
+        "image_03_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
+        "image_04": "shopify:\/\/shop_images\/DIABETES.png",
+        "image_04_title": "BARIATRIC",
+        "image_04_link": "https:\/\/vidafuel.com\/pages\/post-surgery-protein",
+        "image_05": "shopify:\/\/shop_images\/ATHLETICS.png",
+        "image_05_title": "FITNESS \/ ATHLETICS",
+        "image_05_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
+        "image_06": "shopify:\/\/shop_images\/CANCER.png",
+        "image_06_title": "CANCER",
+        "image_06_link": "https:\/\/vidafuel.com\/pages\/protein-cancer-patients",
+        "image_07": "shopify:\/\/shop_images\/GERIATRIC-NUTRITION.png",
+        "image_07_title": "GERIATRIC NUTRITION",
+        "image_07_link": "shopify:\/\/pages\/protein-for-athletes",
+        "image_08": "shopify:\/\/shop_images\/DIALYSIS.png",
+        "image_08_title": "CKD\/DIALYSIS",
+        "image_08_link": "https:\/\/vidafuel.com\/blogs\/nutrition-wellness\/how-to-protect-against-infection-with-protein"
       }
     },
     "1641834224a94d856f": {
@@ -310,19 +325,20 @@
         "title_center": true,
         "title_size": "heading-1",
         "title_color": "#ffffff",
+        "bk_image": "shopify:\/\/shop_images\/less-is-more-background_523d6412-a4f9-4749-9ecf-50e07c12ab8d.webp",
         "section_height": "large",
         "image_width": "full",
         "col_img_contain": true,
         "image_ratio": "portrait",
         "column_alignment": "center",
         "columns": "four",
-        "background_style": "gradient-1",
+        "background_style": "primary",
         "card_bk_none": true,
         "button_label": "",
         "button_link": "shopify:\/\/blogs\/nutrition-wellness\/protein-drink-is-good-for-diabetics",
         "swipe_on_mobile": false,
         "vertical_alignment": "flex-align-end",
-        "desktop_no_spacing": false,
+        "desktop_no_spacing": true,
         "icon_enable": false,
         "full_width_section": false
       }
@@ -450,64 +466,13 @@
         "video_cover": false
       }
     },
-    "1639503887e884ceb3": {
-      "type": "images-with-text",
-      "blocks": {
-        "231f6501-1705-4359-a72b-4967587827df": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Artboard_de8e50e1-e988-4547-9f31-416e7393994b.webp",
-            "image_ratio": "adapt"
-          }
-        },
-        "847081ef-8696-42f1-ad5e-a315d489674c": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/all",
-            "button_font": "trade_gothic_bold"
-          }
-        }
-      },
-      "block_order": [
-        "231f6501-1705-4359-a72b-4967587827df",
-        "847081ef-8696-42f1-ad5e-a315d489674c"
-      ],
+    "16420895372c7ae66d": {
+      "type": "custom-liquid",
       "settings": {
-        "heading": "<center>\n<em>Developed by dietitians<\/em> to deliver essential nutrients when you need them most<\/center>",
-        "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
-        "height": "adapt",
-        "desktop_no_spacing": false,
-        "center_image_and_icons": true,
-        "color_scheme": "background-2",
-        "layout": "text_first",
-        "mobile_text_first": false,
-        "section_width": "full_width",
-        "image_01": "shopify:\/\/shop_images\/DIABETES.png",
-        "image_01_title": "GENERAL WELLNESS",
-        "image_01_link": "https:\/\/vidafuel.com\/pages\/protein-drinks-for-dialysis-patients",
-        "image_02": "shopify:\/\/shop_images\/POST-SURGERY-RECOVERY.png",
-        "image_02_title": "RECOVERY",
-        "image_02_link": "https:\/\/vidafuel.com\/pages\/bariatric-protein-nutrition",
-        "image_03": "shopify:\/\/shop_images\/ACTIVE-AGING.png",
-        "image_03_title": "ACTIVE AGING",
-        "image_03_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
-        "image_04": "shopify:\/\/shop_images\/DIABETES.png",
-        "image_04_title": "BARIATRIC",
-        "image_04_link": "https:\/\/vidafuel.com\/pages\/post-surgery-protein",
-        "image_05": "shopify:\/\/shop_images\/ATHLETICS.png",
-        "image_05_title": "FITNESS \/ ATHLETICS",
-        "image_05_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
-        "image_06": "shopify:\/\/shop_images\/CANCER.png",
-        "image_06_title": "CANCER",
-        "image_06_link": "https:\/\/vidafuel.com\/pages\/protein-cancer-patients",
-        "image_07": "shopify:\/\/shop_images\/GERIATRIC-NUTRITION.png",
-        "image_07_title": "GERIATRIC NUTRITION",
-        "image_07_link": "shopify:\/\/pages\/protein-for-athletes",
-        "image_08": "shopify:\/\/shop_images\/DIALYSIS.png",
-        "image_08_title": "CKD\/DIALYSIS",
-        "image_08_link": "https:\/\/vidafuel.com\/blogs\/nutrition-wellness\/how-to-protect-against-infection-with-protein"
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" data-header-customisation-enabled=\"1\"\n    data-header-customisation-color=\"#cddb00\" data-header-customisation-font-size=\"18\"\n    data-header-customisation-text=\"LOVED &amp; TRUSTED BY THOUSANDS OF CUSTOMERS\"\n    data-header-customisation-alignment=\"left\" data-background-color=\"transparent\" data-mode=\"top_rated\"\n    data-type=\"both\" data-count=\"9\" data-show-bottomline=\"1\" data-show-navigation=\"1\">&nbsp;<\/div>",
+        "custom_background": true,
+        "background_color": "#7bccc8",
+        "page_width": false
       }
     },
     "1647969963a76480fb": {
@@ -559,27 +524,17 @@
         "remove_top_spacing": false,
         "full_width": false
       }
-    },
-    "16420895372c7ae66d": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" data-header-customisation-enabled=\"1\"\n    data-header-customisation-color=\"#cddb00\" data-header-customisation-font-size=\"18\"\n    data-header-customisation-text=\"LOVED &amp; TRUSTED BY THOUSANDS OF CUSTOMERS\"\n    data-header-customisation-alignment=\"left\" data-background-color=\"transparent\" data-mode=\"top_rated\"\n    data-type=\"both\" data-count=\"9\" data-show-bottomline=\"1\" data-show-navigation=\"1\">&nbsp;<\/div>",
-        "custom_background": true,
-        "background_color": "#7bccc8",
-        "page_width": false
-      }
     }
   },
   "order": [
     "16420790196f1cba40",
     "1639505258119ea558",
-    "f29ced55-701c-43f8-8463-3f20083fda15",
+    "1639503887e884ceb3",
     "1641834224a94d856f",
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219",
     "6bfa2099-00ed-467f-b99b-33fda7955494",
-    "1639503887e884ceb3",
+    "16420895372c7ae66d",
     "1647969963a76480fb",
-    "bbb28046-9da0-414e-9315-b719dba86fce",
-    "16420895372c7ae66d"
+    "bbb28046-9da0-414e-9315-b719dba86fce"
   ]
 }
