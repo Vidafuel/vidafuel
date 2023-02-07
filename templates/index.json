@@ -479,6 +479,7 @@
         "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
         "height": "adapt",
         "desktop_no_spacing": false,
+        "center_image_and_icons": true,
         "color_scheme": "background-2",
         "layout": "text_first",
         "mobile_text_first": false,
