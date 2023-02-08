@@ -51,6 +51,10 @@
         if block.settings.column_custom_text_color
           assign columnCustomTextColorCLASS = 'column-custom-text-color'
         endif 
+        # COLUMN bullets
+        if block.settings.p_bullets
+          assign pBullets = 'p_bullets'
+        endif
     endcase
   endfor
 %}
@@ -76,10 +80,6 @@
           
           {%- if block.settings.text_color_primary -%}
             {% assign textColorPrimary = 'color-foreground-accent-1' %}  
-          {%- endif -%}
-          
-          {%- if block.settings.p_bullets -%} 
-            {% assign pBullets = 'p_bullets' %}
           {%- endif -%}
           
           {%- if block.settings.text_font != 'default' -%}
