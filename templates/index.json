@@ -88,7 +88,7 @@
             "title": "<p>Meet your daily protein booster<\/p>",
             "icon": "none",
             "text": "<p><strong>16g protein per 2oz shot<br\/><\/strong>One shot per day is all you need!<\/p><p><\/p><p><strong>Powerful blend of whey + collagen protein<br\/><\/strong>To support muscle mass & strength, joint & bone health<\/p><p><\/p><p><strong>Contains all 20 amino acids<\/strong><\/p><p><\/p><p><strong>No artificial sweeteners, ever<\/strong><\/p>",
-            "col_custom_css": "@media screen and (max-width: 750px) {\n. template--17829432885562__1639505258119ea558 img.multicolumn-image.col-2 {\n  transform: scale(1.5);\n  transform-origin: right top;\n}\n. template--17829432885562__1639505258119ea558 .multicolumn-card__info {\n  display: none;\n} \n}",
+            "col_custom_css": "@media (max-width: 750px) {\n#Slider-template--17888246366522__1639505258119ea558 img.multicolumn-image {\n    transform: scale(1.5);\n    transform-origin: right top;\n}\n.template--17888246366522__1639505258119ea558 .multicolumn-card__info {\n    display: none;\n}\n}",
             "link_label": "SHOP PROTEIN DRINKS",
             "link_type": "link",
             "link": "https:\/\/vidafuel.com\/products",
@@ -229,7 +229,7 @@
         "image_overlay_opacity": 0,
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
-        "show_text_below": false
+        "show_text_below": true
       }
     },
     "1641834224a94d856f": {
@@ -273,7 +273,7 @@
             "image": "shopify:\/\/shop_images\/Protein-Drink-sm-wide.webp",
             "image_link_url": "",
             "image_max_height": 301,
-            "title": "<p><strong>Leading Protein Shake<\/strong><\/p>",
+            "title": "<p><strong>Protein Shake<\/strong><\/p>",
             "icon": "none",
             "text": "<p><strong>8oz serving <br\/><\/strong>16g protein<br\/>22g sugar<\/p>",
             "col_custom_css": "",
@@ -304,7 +304,7 @@
             "image": "shopify:\/\/shop_images\/Protein-Powder_9bb763ca-3a71-4f99-a831-4612f2cd92f8.webp",
             "image_link_url": "",
             "image_max_height": 378,
-            "title": "<p><strong>Leading Protein Powder<\/strong><\/p>",
+            "title": "<p><strong>Protein Powder<\/strong><\/p>",
             "icon": "none",
             "text": "<p><strong>12oz serving<br\/><\/strong>20g protein<br\/>8g sugar<br\/><em>*artificial sweeteners<\/em><\/p>",
             "col_custom_css": "",
@@ -335,7 +335,7 @@
             "image": "shopify:\/\/shop_images\/Protein-bar_478648bf-579b-4ac1-8b89-f3dcc2d700d8.webp",
             "image_link_url": "",
             "image_max_height": 100,
-            "title": "<p><strong>Leading Protein Bar<\/strong><\/p>",
+            "title": "<p><strong>Protein Bar<\/strong><\/p>",
             "icon": "none",
             "text": "<p><strong>50g serving<br\/><\/strong>14g protein<br\/>16g sugar<\/p>",
             "col_custom_css": "",
