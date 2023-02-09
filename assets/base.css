@@ -1976,10 +1976,10 @@ input[type="checkbox"] {
 	position: sticky;
 	top: 0;
 }
-
-.shopify-section-header-hidden {
+/* uncomment to allow top nav to animate/hide on scroll */
+/* .shopify-section-header-hidden {
 	transform: translateY(-100%);
-}
+} */
 
 #shopify-section-header.animate {
 	transition: transform 0.15s ease-out;
