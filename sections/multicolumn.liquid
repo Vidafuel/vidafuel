@@ -62,10 +62,13 @@
     endcase
   endfor
 %}
-
+          {% if block.settings.col_custom_css != empty %}
+            <style>
+              {{ columnCustomCSS }}
+            </style>
+          {% endif %}
           {% if block.settings.p_bullets_color != '#cdda01' %}
             {% style %}
-                {{ columnCustomCSS }}
                 .{{ section.id }} .p_bullets p::before {
                   background: {{ block.settings.p_bullets_color }};
                 }
