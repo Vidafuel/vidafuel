@@ -59,6 +59,14 @@
         if block.settings.p_bullets
           assign pBullets = 'p_bullets'
         endif
+        # COLUMN description text size
+        if block.settings.description_text_size != 'default'
+          assign textSize = block.settings.description_text_size
+        endif
+        # COLUMN description text font
+        if block.settings.text_font != 'default'
+          assign textFont = block.settings.text_font
+        endif
     endcase
   endfor
 %}
@@ -90,14 +98,6 @@
           {%- if block.settings.text_color_primary -%}
             {% assign textColorPrimary = 'color-foreground-accent-1' %}  
           {%- endif -%}
-          
-          {%- if block.settings.text_font != 'default' -%}
-            {% assign textFont = block.settings.text_font %}
-          {%- endif -%}
-          
-          {%- if block.settings.text_size != 'default' -%} 
-            {% assign textSize = block.settings.text_size %}
-          {%- endif -%}
 
 
 <div class="multicolumn background-{{ background_style }} multicolumn--{{ section.settings.section_height }} {% if section.settings.background_style == 'gradient-1' %} gradient color-accent-1{% elsif section.settings.background_style == 'gradient-2' %} gradient color-accent-2{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}">
@@ -120,7 +120,7 @@
   <div {% if section.settings.full_width_section != true %}class="page-width"{% endif %}>
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.full_width_section %}--full-width{% else %}{% endif %} {% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
       <h2 class="title{% if section.settings.title_center %} center{% endif %}{% if section.settings.title_size != 'default' %} {{ section.settings.title_size }}{% endif %}" {{ heading_color_style }}>
-        {{ section.settings.title | escape }}
+        {{ section.settings.title }}
       </h2>
       {%- if section.settings.button_label != blank and section.settings.swipe_on_mobile -%}
         <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
@@ -265,7 +265,7 @@
                     </div>
                   {% endif %}
                   
-                  {% comment %} TEXT element {% endcomment %}
+                  {% comment %} COLUMN text/description element {% endcomment %}
                   {%- if block.settings.text != blank -%}
                     <div class="rte {{ textColorPrimary }} {{ pBullets }} {{ textFont }} {{ textSize }} {{ columnCustomTextColorCLASS }}">
                       {{ block.settings.text }}
@@ -964,7 +964,7 @@
         },
         {
           "type": "select",
-          "id": "text_size",
+          "id": "description_text_size",
           "options": [
             {
               "value": "default",
