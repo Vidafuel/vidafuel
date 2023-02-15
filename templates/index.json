@@ -168,6 +168,7 @@
         "section_height": "xsmall",
         "image_width": "full",
         "col_img_contain": false,
+        "col_img_left_align": false,
         "image_ratio": "adapt",
         "column_alignment": "center",
         "columns": "default",
@@ -437,6 +438,7 @@
         "section_height": "medium",
         "image_width": "full",
         "col_img_contain": false,
+        "col_img_left_align": false,
         "image_ratio": "adapt",
         "column_alignment": "left",
         "columns": "default",
@@ -476,9 +478,9 @@
     "c6325ea0-a755-4f14-a3a1-77533eef78c0": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -20px;\n    transform: translateX(-145px);\n    width: 100%;\n    font-size: 14px;\n}\nli.multicolumn-list__item:nth-last-of-type(2) {\n    position: relative;\n    overflow-x: visible;\n}\n@media screen and (min-width: 750px) {\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -33px;\n    transform: translateX(-150px)\n}\n}\n\/*\nli.multicolumn-list__item:nth-child(n + 2) .column-custom-text-color {\n    color: dimgrey !important;\n}\n*\/\n#shopify-section-template--17888246366522__1641834224a94d856f li.multicolumn-list__item:nth-child(1) .multicolumn-card {\n    border: 2px solid #fff;\n    border-radius: 21px;\n}\n<\/style>",
+        "custom_liquid": "<style>\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -20px;\n    transform: translateX(-145px);\n    width: 100%;\n    font-size: 14px;\n}\nli.multicolumn-list__item:nth-last-of-type(2) {\n    position: relative;\n    overflow-x: visible;\n}\n@media screen and (min-width: 750px) {\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -33px;\n    transform: translateX(-150px)\n}\n}\n\/*\nli.multicolumn-list__item:nth-child(n + 2) .column-custom-text-color {\n    color: dimgrey !important;\n}\n*\/\n#shopify-section-template--17888246366522__1641834224a94d856f li.multicolumn-list__item:nth-child(1) .multicolumn-card {\n    border: 2px solid #fff;\n    border-radius: 21px;\n}\n\n<\/style>",
         "custom_background": false,
-        "background_color": "#fff",
+        "background_color": "#ffffff",
         "page_width": false
       }
     },
@@ -523,7 +525,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Protein-Drink-sm-wide.webp",
-            "image_mobile": "shopify:\/\/shop_images\/Protein-Drink-sm-wide.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Protein-Drink-sm-contained.webp",
             "image_link_url": "",
             "image_max_height": 301,
             "title": "",
@@ -637,11 +639,12 @@
         "section_height": "large",
         "image_width": "full",
         "col_img_contain": true,
+        "col_img_left_align": true,
         "image_ratio": "portrait",
-        "column_alignment": "center",
+        "column_alignment": "left",
         "columns": "four",
         "background_style": "primary",
-        "card_bk_none": false,
+        "card_bk_none": true,
         "button_label": "",
         "button_link": "shopify:\/\/blogs\/nutrition-wellness\/protein-drink-is-good-for-diabetics",
         "swipe_on_mobile": true,
