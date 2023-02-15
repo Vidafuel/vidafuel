@@ -306,3 +306,8 @@
 	top: 7px;
 	left: 0;
 }
+
+.image-border {
+	border: 4px solid #fff;
+	border-radius: 10px;
+}

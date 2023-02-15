@@ -336,13 +336,15 @@
               {% assign image = block.settings.image %}
               <div class="grid__item">
               {% comment %} {%- if block.settings.image_link != blank -%}<a href="{{ block.settings.image_link }}" class="image-link">{% endif %} {% endcomment %}
-              <div class="image-with-text__media{% if block.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}"
+              {% if block.settings.image_border %}
+                {% assign imageBorder = ' image-border' %}
+              {% endif %}
+              <div class="image-with-text__media{% if block.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}{{ imageBorder }}"
                       {% if block.settings.image_ratio == 'adapt' %}
                         style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
                       {% endif %}>
                 {%- if block.settings.image != blank -%}
                 {{ image | image_url: width: nil | image_tag }}
-               
                 {%- else -%}
                   {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                 {%- endif -%}
@@ -867,6 +869,12 @@
           ],
           "default": "adapt",
           "label": "Image ratio"
+        },
+        {
+          "type": "checkbox",
+          "id": "image_border",
+          "default": false,
+          "label": "Image border"
         }
       ]
     }
