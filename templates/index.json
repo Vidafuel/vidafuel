@@ -452,9 +452,29 @@
         "custom_css_mobile": ".multicolumn-list__item:nth-of-type(2) {\n    display: none;\n}"
       }
     },
+    "74fa5447-bc0b-4d94-98c3-7d95c82d3456": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17888246366522__74fa5447-bc0b-4d94-98c3-7d95c82d3456-1676486834a1a53c4f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>DEV EXAMPLE:<\/strong><\/em><\/p><p><em>Comparison image alternative:<\/em><\/p>",
+            "rich_text_size": "lg"
+          }
+        }
+      },
+      "block_order": [
+        "template--17888246366522__74fa5447-bc0b-4d94-98c3-7d95c82d3456-1676486834a1a53c4f-1"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "text_align_center": true,
+        "text_color": "default"
+      }
+    },
     "1641834224a94d856f": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "16418342231ac13c89-0": {
           "type": "column",
@@ -597,7 +617,7 @@
         "577c20c8-4973-470b-b8c8-c07527deb5b7"
       ],
       "settings": {
-        "title": "<strong>Less is more.<\/strong>",
+        "title": "<strong>Less is more.<\/strong><br><span>Vidafuel enables you to boost your daily nutrition in just 2 ounces.<\/span>",
         "title_center": true,
         "title_size": "heading-1",
         "title_color": "#ffffff",
@@ -632,6 +652,7 @@
     "1647969963a76480fb",
     "bbb28046-9da0-414e-9315-b719dba86fce",
     "1639505258119ea558",
+    "74fa5447-bc0b-4d94-98c3-7d95c82d3456",
     "1641834224a94d856f"
   ]
 }
