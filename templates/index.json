@@ -473,6 +473,15 @@
         "text_color": "default"
       }
     },
+    "c6325ea0-a755-4f14-a3a1-77533eef78c0": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -33px;\n    transform: translateX(-80px)\n}\n<\/style>",
+        "custom_background": false,
+        "background_color": "#fff",
+        "page_width": false
+      }
+    },
     "1641834224a94d856f": {
       "type": "multicolumn",
       "blocks": {
@@ -552,7 +561,7 @@
             "image_max_height": 378,
             "title": "<p><strong>Protein Powder<\/strong><\/p>",
             "icon": "none",
-            "text": "<p><strong>12oz serving<br\/><\/strong>20g protein<br\/>8g sugar<br\/><em>*artificial sweeteners<\/em><\/p>",
+            "text": "<p><strong>12oz serving<br\/><\/strong>20g protein<br\/>8g sugar<\/p>",
             "link_label": "",
             "link_type": "link",
             "link": "",
@@ -616,6 +625,9 @@
         "e59229b5-1a1c-46ca-a575-992d0ab5c191",
         "577c20c8-4973-470b-b8c8-c07527deb5b7"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "title": "<strong>Less is more.<\/strong><br><span style=\"font-size: 2rem;\">Vidafuel enables you to boost your daily nutrition in just 2 ounces.<\/span>",
         "title_center": true,
@@ -653,6 +665,7 @@
     "bbb28046-9da0-414e-9315-b719dba86fce",
     "1639505258119ea558",
     "74fa5447-bc0b-4d94-98c3-7d95c82d3456",
+    "c6325ea0-a755-4f14-a3a1-77533eef78c0",
     "1641834224a94d856f"
   ]
 }
