@@ -585,3 +585,14 @@
 .column-border-padding li {
 	padding: 0.5em 0;
 }
+
+@media screen and (max-width: 990px) {
+	.multicolumn-image__desktop {
+		display: none !important;
+	}
+}
+@media screen and (min-width: 989px) {
+	.multicolumn-image__mobile {
+		display: none !important;
+	}
+}

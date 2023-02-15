@@ -175,21 +175,22 @@
   }
 }
 
+.banner__content--flex-start {
+  align-items: flex-start;
+}
+
+.banner__content--flex-start .banner__box {
+  padding-top: 1em;
+}
+
 @media screen and (min-width: 750px) {
   .banner__content {
-    padding-bottom: 5rem;
     padding-top: 5rem;
   }
-
   .banner__content--center {
     align-items: center;
   }
-
-  .banner__content--flex-start {
-    align-items: flex-start;
-    padding-bottom: 15rem;
-  }
-
+  
   .banner__content--flex-end {
     align-items: flex-end;
     padding-top: 15rem;
@@ -300,6 +301,10 @@
     width: auto;
     max-width: 71rem;
     min-width: 45rem;
+  }
+  
+  .banner__content--flex-start .banner__box {
+    padding: 1rem 5rem;
   }
 
   .banner__box > .banner__buttons:only-child .button {
