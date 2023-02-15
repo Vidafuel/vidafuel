@@ -617,7 +617,7 @@
         "577c20c8-4973-470b-b8c8-c07527deb5b7"
       ],
       "settings": {
-        "title": "<strong>Less is more.<\/strong><br><span>Vidafuel enables you to boost your daily nutrition in just 2 ounces.<\/span>",
+        "title": "<strong>Less is more.<\/strong><br><span style=\"font-size: 2rem;\">Vidafuel enables you to boost your daily nutrition in just 2 ounces.<\/span>",
         "title_center": true,
         "title_size": "heading-1",
         "title_color": "#ffffff",
