@@ -581,3 +581,7 @@
 		bottom: 0;
 	}
 }
+
+.column-border-padding li {
+	padding: 0.5em 0;
+}
