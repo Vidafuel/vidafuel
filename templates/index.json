@@ -478,7 +478,7 @@
     "c6325ea0-a755-4f14-a3a1-77533eef78c0": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -20px;\n    transform: translateX(-145px);\n    width: 100%;\n    font-size: 14px;\n}\nli.multicolumn-list__item:nth-last-of-type(2) {\n    position: relative;\n    overflow-x: visible;\n}\n@media screen and (min-width: 750px) {\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -33px;\n    transform: translateX(-150px)\n}\n}\n\/*\nli.multicolumn-list__item:nth-child(n + 2) .column-custom-text-color {\n    color: dimgrey !important;\n}\n*\/\n#shopify-section-template--17888246366522__1641834224a94d856f li.multicolumn-list__item:nth-child(1) .multicolumn-card {\n    border: 2px solid #fff;\n    border-radius: 21px;\n}\n\n<\/style>",
+        "custom_liquid": "<style>\n\/*\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -20px;\n    transform: translateX(-145px);\n    width: 100%;\n    font-size: 14px;\n}\n*\/\nli.multicolumn-list__item:nth-last-of-type(2) {\n    position: relative;\n    overflow-x: visible;\n}\n@media screen and (min-width: 750px) {\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -33px;\n    transform: translateX(-150px)\n}\n}\n\/*\nli.multicolumn-list__item:nth-child(n + 2) .column-custom-text-color {\n    color: dimgrey !important;\n}\n*\/\n#shopify-section-template--17888246366522__1641834224a94d856f li.multicolumn-list__item:nth-child(1) .multicolumn-card {\n    border: 2px solid #fff;\n    border-radius: 21px;\n}\n\n<\/style>",
         "custom_background": false,
         "background_color": "#ffffff",
         "page_width": false
@@ -558,7 +558,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Protein-Powder_9bb763ca-3a71-4f99-a831-4612f2cd92f8.webp",
-            "image_mobile": "shopify:\/\/shop_images\/Protein-Powder_bdbe94c0-8059-4027-bbec-45df584f9fb2.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Protein-Powder-contain.webp",
             "image_link_url": "",
             "image_max_height": 378,
             "title": "",
@@ -591,7 +591,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Protein-bar_478648bf-579b-4ac1-8b89-f3dcc2d700d8.webp",
-            "image_mobile": "shopify:\/\/shop_images\/Protein-bar_478648bf-579b-4ac1-8b89-f3dcc2d700d8.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Protein-bar-contain-4.webp",
             "image_link_url": "",
             "image_max_height": 100,
             "title": "",
