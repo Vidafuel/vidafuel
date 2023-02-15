@@ -54,12 +54,12 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/shot_colors.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein-To-support-muscle-mass-_-strength-joint-_-bone-health-No-artificial-sweeteners-ever-16g-protein-per-2oz-shot-One-shot-per-day-is-all-vou-need-C_017d9da5-d4aa-4a78-bcf4-fb08e7a24699.webp",
             "image_link_url": "",
             "image_max_height": 0,
             "title": "",
             "icon": "none",
             "text": "",
-            "col_custom_css": "",
             "link_label": "",
             "link_type": "link",
             "link": "\/products",
@@ -69,6 +69,8 @@
             "column_custom_text_color": false,
             "column_copy_color": "#000000",
             "column_title_color": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
             "title_font": "proxima_nova_light",
             "col_title_size": "default",
             "text_font": "trade_gothic_compressed_bold",
@@ -88,7 +90,6 @@
             "title": "",
             "icon": "none",
             "text": "<p><strong>16g protein per 2oz shot<br\/><\/strong>One shot per day is all you need!<\/p><p><\/p><p><strong>Powerful blend of whey + collagen protein<br\/><\/strong>To support muscle mass & strength, joint & bone health<\/p><p><\/p><p><strong>Contains all 20 amino acids<\/strong><\/p><p><\/p><p><strong>No artificial sweeteners, ever<\/strong><\/p>",
-            "col_custom_css": "@media (max-width: 750px) {\n#Slider-template--17829432885562__1639505258119ea558 .multicolumn-card__info {\n    display: none;\n}\n#Slider-template--17829432885562__1639505258119ea558 .multicolumn-card__image-wrapper img {\n    transform: scale(1.5);\n    transform-origin: right top;\n}\n}",
             "link_label": "SHOP PROTEIN DRINKS",
             "link_type": "link",
             "link": "https:\/\/vidafuel.com\/products",
@@ -98,6 +99,8 @@
             "column_custom_text_color": true,
             "column_copy_color": "#000000",
             "column_title_color": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
             "title_font": "default",
             "col_title_size": "default",
             "text_font": "default",
@@ -137,7 +140,8 @@
         "vertical_alignment": "flex-align-normal",
         "desktop_no_spacing": false,
         "icon_enable": false,
-        "full_width_section": true
+        "full_width_section": true,
+        "custom_css_mobile": ".multicolumn-list__item:nth-of-type(2) {\n    display: none;\n}"
       }
     },
     "1639503887e884ceb3": {
@@ -209,7 +213,7 @@
         "template--17888246366522__770c828d-39df-4a2a-ae1f-0c8051b01d55-16759673636f940f6e-0": {
           "type": "heading",
           "settings": {
-            "heading": "Less is more.",
+            "heading": "<strong>Less is more.<\/strong>",
             "heading_size": "medium"
           }
         }
@@ -222,30 +226,31 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/vidafuel-comparison.webp",
-        "image_height": "medium",
+        "image_height": "large",
         "adapt_height_first_image": true,
         "desktop_text_box_position": "flex-start",
         "show_text_box": false,
         "image_overlay_opacity": 0,
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
-        "show_text_below": true
+        "show_text_below": false
       }
     },
     "1641834224a94d856f": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "16418342231ac13c89-0": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Protein-shot-widest.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Protein-shot-widest.webp",
             "image_link_url": "",
             "image_max_height": 113,
             "title": "",
             "title_image": "shopify:\/\/shop_images\/vidafuel-logo-nacelle-store.webp",
             "icon": "none",
             "text": "<p><strong>Protein Shot<\/strong><\/p><p><strong>2oz serving<\/strong><br\/>16g protein<br\/>4g sugar<\/p>",
-            "col_custom_css": "",
             "link_label": "",
             "link_type": "link",
             "link": "",
@@ -255,6 +260,8 @@
             "column_custom_text_color": true,
             "column_copy_color": "#000000",
             "column_title_color": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
             "title_font": "default",
             "col_title_size": "heading-1",
             "text_font": "default",
@@ -271,12 +278,12 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Protein-Drink-sm-wide.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Protein-Drink-sm-wide.webp",
             "image_link_url": "",
             "image_max_height": 301,
             "title": "<p><strong>Protein Shake<\/strong><\/p>",
             "icon": "none",
             "text": "<p><strong>8oz serving <br\/><\/strong>16g protein<br\/>22g sugar<\/p>",
-            "col_custom_css": "",
             "link_label": "",
             "link_type": "link",
             "link": "",
@@ -286,6 +293,8 @@
             "column_custom_text_color": true,
             "column_copy_color": "#000000",
             "column_title_color": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
             "title_font": "default",
             "col_title_size": "heading-2",
             "text_font": "default",
@@ -302,12 +311,12 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Protein-Powder_9bb763ca-3a71-4f99-a831-4612f2cd92f8.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Protein-Powder_bdbe94c0-8059-4027-bbec-45df584f9fb2.webp",
             "image_link_url": "",
             "image_max_height": 378,
             "title": "<p><strong>Protein Powder<\/strong><\/p>",
             "icon": "none",
             "text": "<p><strong>12oz serving<br\/><\/strong>20g protein<br\/>8g sugar<br\/><em>*artificial sweeteners<\/em><\/p>",
-            "col_custom_css": "",
             "link_label": "",
             "link_type": "link",
             "link": "",
@@ -317,6 +326,8 @@
             "column_custom_text_color": true,
             "column_copy_color": "#000000",
             "column_title_color": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
             "title_font": "default",
             "col_title_size": "heading-2",
             "text_font": "default",
@@ -333,12 +344,12 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Protein-bar_478648bf-579b-4ac1-8b89-f3dcc2d700d8.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Protein-bar_478648bf-579b-4ac1-8b89-f3dcc2d700d8.webp",
             "image_link_url": "",
             "image_max_height": 100,
             "title": "<p><strong>Protein Bar<\/strong><\/p>",
             "icon": "none",
             "text": "<p><strong>50g serving<br\/><\/strong>14g protein<br\/>16g sugar<\/p>",
-            "col_custom_css": "",
             "link_label": "",
             "link_type": "link",
             "link": "",
@@ -348,6 +359,8 @@
             "column_custom_text_color": true,
             "column_copy_color": "#000000",
             "column_title_color": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
             "title_font": "default",
             "col_title_size": "heading-2",
             "text_font": "default",
@@ -387,7 +400,8 @@
         "vertical_alignment": "flex-align-end",
         "desktop_no_spacing": true,
         "icon_enable": false,
-        "full_width_section": false
+        "full_width_section": false,
+        "custom_css_mobile": ""
       }
     },
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219": {
@@ -400,7 +414,6 @@
             "title": "<p><strong>Low volume<\/strong><\/p>",
             "icon": "check_mark",
             "text": "<p>Quick & easy to consume<\/p>",
-            "col_custom_css": "",
             "link_label": "",
             "link_type": "link",
             "link": "",
@@ -410,6 +423,8 @@
             "column_custom_text_color": false,
             "column_copy_color": "#000000",
             "column_title_color": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
             "title_font": "default",
             "col_title_size": "default",
             "text_font": "default",
@@ -429,7 +444,6 @@
             "title": "<p><strong>Dietitian developed<\/strong><\/p>",
             "icon": "heart",
             "text": "<p>Optimized to deliver essential macronutrients without the extra sugar, fat and calories<\/p>",
-            "col_custom_css": "",
             "link_label": "",
             "link_type": "link",
             "link": "",
@@ -439,6 +453,8 @@
             "column_custom_text_color": false,
             "column_copy_color": "#000000",
             "column_title_color": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
             "title_font": "default",
             "col_title_size": "default",
             "text_font": "default",
@@ -458,7 +474,6 @@
             "title": "<p><strong>Economical<\/strong><\/p>",
             "icon": "price_tag",
             "text": "<p>Biggest bang for your buck<\/p>",
-            "col_custom_css": "",
             "link_label": "",
             "link_type": "link",
             "link": "",
@@ -468,6 +483,8 @@
             "column_custom_text_color": false,
             "column_copy_color": "#000000",
             "column_title_color": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
             "title_font": "default",
             "col_title_size": "default",
             "text_font": "default",
@@ -505,7 +522,8 @@
         "vertical_alignment": "flex-align-normal",
         "desktop_no_spacing": true,
         "icon_enable": true,
-        "full_width_section": false
+        "full_width_section": false,
+        "custom_css_mobile": ""
       }
     },
     "6bfa2099-00ed-467f-b99b-33fda7955494": {
