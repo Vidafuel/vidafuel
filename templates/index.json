@@ -458,7 +458,7 @@
         "template--17888246366522__74fa5447-bc0b-4d94-98c3-7d95c82d3456-1676486834a1a53c4f-1": {
           "type": "text",
           "settings": {
-            "text": "<p><em><strong>DEV EXAMPLE:<\/strong><\/em><\/p><p><em>Comparison image alternative:<\/em><\/p>",
+            "text": "<p><a href=\"https:\/\/vidafuel.myshopify.com\/?preview_theme_id=143760785722\" title=\"https:\/\/vidafuel.myshopify.com\/?preview_theme_id=143760785722\"><em><strong>DEV EXAMPLE<\/strong><\/em><\/a><em><strong>:<\/strong><\/em><\/p><p><em>Comparison image alternative:<\/em><\/p>",
             "rich_text_size": "lg"
           }
         }
@@ -639,7 +639,7 @@
         "col_img_contain": true,
         "image_ratio": "portrait",
         "column_alignment": "center",
-        "columns": "default",
+        "columns": "four",
         "background_style": "primary",
         "card_bk_none": true,
         "button_label": "",
