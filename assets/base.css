@@ -488,7 +488,7 @@ h1,
 h2,
 .h2 {
 	font-weight: unset;
-	font-size: calc(var(--font-heading-scale) * 3rem);
+	font-size: calc(var(--font-heading-scale) * 2rem);
 }
 
 @media only screen and (min-width: 750px) {
