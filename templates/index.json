@@ -103,7 +103,7 @@
             "column_border_color": "#ffffff",
             "title_font": "default",
             "col_title_size": "default",
-            "text_font": "default",
+            "text_font": "trade_gothic",
             "description_text_size": "default",
             "title_top": false,
             "col_content_reverse": false,
@@ -119,7 +119,8 @@
         "16395052587fb2d08a-2"
       ],
       "custom_css": [
-
+        ".spaced-section {margin-top: 0;}",
+        ".multicolumn.background-bk-image.multicolumn--medium {padding-top: 1em;}"
       ],
       "settings": {
         "title": "<strong>Meet your daily protein booster<\/strong>",
@@ -137,7 +138,7 @@
         "button_label": "",
         "button_link": "\/products",
         "swipe_on_mobile": false,
-        "vertical_alignment": "flex-align-normal",
+        "vertical_alignment": "flex-align-center",
         "desktop_no_spacing": false,
         "icon_enable": false,
         "full_width_section": true,
