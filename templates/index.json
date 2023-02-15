@@ -58,71 +58,7 @@
         "image_overlay_opacity": 0,
         "color_scheme": "background-1",
         "stack_images_on_mobile": true,
-        "show_text_below": true,
         "show_text_position": "default"
-      }
-    },
-    "1639503887e884ceb3": {
-      "type": "images-with-text",
-      "blocks": {
-        "231f6501-1705-4359-a72b-4967587827df": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Artboard_de8e50e1-e988-4547-9f31-416e7393994b.webp",
-            "image_ratio": "adapt"
-          }
-        },
-        "847081ef-8696-42f1-ad5e-a315d489674c": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/all",
-            "button_font": "trade_gothic_bold"
-          }
-        }
-      },
-      "block_order": [
-        "231f6501-1705-4359-a72b-4967587827df",
-        "847081ef-8696-42f1-ad5e-a315d489674c"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "heading": "<center><strong><em>Developed by dietitians<\/em> to deliver essential nutrients when you need them most<\/strong><\/center>",
-        "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
-        "height": "adapt",
-        "desktop_no_spacing": true,
-        "center_image_and_icons": true,
-        "color_scheme": "background-2",
-        "layout": "text_first",
-        "mobile_text_first": false,
-        "section_width": "full_width",
-        "image_01": "shopify:\/\/shop_images\/DIABETES.png",
-        "image_01_title": "GENERAL WELLNESS",
-        "image_01_link": "https:\/\/vidafuel.com\/pages\/protein-drinks-for-dialysis-patients",
-        "image_02": "shopify:\/\/shop_images\/POST-SURGERY-RECOVERY.png",
-        "image_02_title": "RECOVERY",
-        "image_02_link": "https:\/\/vidafuel.com\/pages\/bariatric-protein-nutrition",
-        "image_03": "shopify:\/\/shop_images\/ACTIVE-AGING.png",
-        "image_03_title": "ACTIVE AGING",
-        "image_03_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
-        "image_04": "shopify:\/\/shop_images\/DIABETES.png",
-        "image_04_title": "BARIATRIC",
-        "image_04_link": "https:\/\/vidafuel.com\/pages\/post-surgery-protein",
-        "image_05": "shopify:\/\/shop_images\/ATHLETICS.png",
-        "image_05_title": "FITNESS \/ ATHLETICS",
-        "image_05_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
-        "image_06": "shopify:\/\/shop_images\/CANCER.png",
-        "image_06_title": "CANCER",
-        "image_06_link": "https:\/\/vidafuel.com\/pages\/protein-cancer-patients",
-        "image_07": "shopify:\/\/shop_images\/GERIATRIC-NUTRITION.png",
-        "image_07_title": "GERIATRIC NUTRITION",
-        "image_07_link": "shopify:\/\/pages\/protein-for-athletes",
-        "image_08": "shopify:\/\/shop_images\/DIALYSIS.png",
-        "image_08_title": "CKD\/DIALYSIS",
-        "image_08_link": "https:\/\/vidafuel.com\/blogs\/nutrition-wellness\/how-to-protect-against-infection-with-protein"
       }
     },
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219": {
@@ -247,6 +183,69 @@
         "custom_css_mobile": ""
       }
     },
+    "1639503887e884ceb3": {
+      "type": "images-with-text",
+      "blocks": {
+        "231f6501-1705-4359-a72b-4967587827df": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_de8e50e1-e988-4547-9f31-416e7393994b.webp",
+            "image_ratio": "adapt"
+          }
+        },
+        "847081ef-8696-42f1-ad5e-a315d489674c": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_font": "trade_gothic_bold"
+          }
+        }
+      },
+      "block_order": [
+        "231f6501-1705-4359-a72b-4967587827df",
+        "847081ef-8696-42f1-ad5e-a315d489674c"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "<center><strong><em>Developed by dietitians<\/em> to deliver essential nutrients when you need them most<\/strong><\/center>",
+        "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
+        "height": "adapt",
+        "desktop_no_spacing": true,
+        "center_image_and_icons": true,
+        "color_scheme": "background-2",
+        "layout": "text_first",
+        "mobile_text_first": false,
+        "section_width": "full_width",
+        "image_01": "shopify:\/\/shop_images\/DIABETES.png",
+        "image_01_title": "GENERAL WELLNESS",
+        "image_01_link": "https:\/\/vidafuel.com\/pages\/protein-drinks-for-dialysis-patients",
+        "image_02": "shopify:\/\/shop_images\/POST-SURGERY-RECOVERY.png",
+        "image_02_title": "RECOVERY",
+        "image_02_link": "https:\/\/vidafuel.com\/pages\/bariatric-protein-nutrition",
+        "image_03": "shopify:\/\/shop_images\/ACTIVE-AGING.png",
+        "image_03_title": "ACTIVE AGING",
+        "image_03_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
+        "image_04": "shopify:\/\/shop_images\/DIABETES.png",
+        "image_04_title": "BARIATRIC",
+        "image_04_link": "https:\/\/vidafuel.com\/pages\/post-surgery-protein",
+        "image_05": "shopify:\/\/shop_images\/ATHLETICS.png",
+        "image_05_title": "FITNESS \/ ATHLETICS",
+        "image_05_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
+        "image_06": "shopify:\/\/shop_images\/CANCER.png",
+        "image_06_title": "CANCER",
+        "image_06_link": "https:\/\/vidafuel.com\/pages\/protein-cancer-patients",
+        "image_07": "shopify:\/\/shop_images\/GERIATRIC-NUTRITION.png",
+        "image_07_title": "GERIATRIC NUTRITION",
+        "image_07_link": "shopify:\/\/pages\/protein-for-athletes",
+        "image_08": "shopify:\/\/shop_images\/DIALYSIS.png",
+        "image_08_title": "CKD\/DIALYSIS",
+        "image_08_link": "https:\/\/vidafuel.com\/blogs\/nutrition-wellness\/how-to-protect-against-infection-with-protein"
+      }
+    },
     "770c828d-39df-4a2a-ae1f-0c8051b01d55": {
       "type": "image-banner",
       "blocks": {
@@ -281,7 +280,6 @@
         "image_overlay_opacity": 0,
         "color_scheme": "background-1",
         "stack_images_on_mobile": false,
-        "show_text_below": false,
         "show_text_position": "top"
       }
     },
@@ -626,8 +624,8 @@
   "order": [
     "16420790196f1cba40",
     "37a31859-d026-4732-b82b-1347b5f52e18",
-    "1639503887e884ceb3",
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219",
+    "1639503887e884ceb3",
     "770c828d-39df-4a2a-ae1f-0c8051b01d55",
     "6bfa2099-00ed-467f-b99b-33fda7955494",
     "16420895372c7ae66d",
