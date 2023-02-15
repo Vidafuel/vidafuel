@@ -191,7 +191,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Artboard_de8e50e1-e988-4547-9f31-416e7393994b.webp",
-            "image_ratio": "adapt"
+            "image_ratio": "adapt",
+            "image_border": true
           }
         },
         "847081ef-8696-42f1-ad5e-a315d489674c": {
@@ -478,7 +479,7 @@
     "c6325ea0-a755-4f14-a3a1-77533eef78c0": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n\/*\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -20px;\n    transform: translateX(-145px);\n    width: 100%;\n    font-size: 14px;\n}\n*\/\nli.multicolumn-list__item:nth-last-of-type(2) {\n    position: relative;\n    overflow-x: visible;\n}\n@media screen and (min-width: 750px) {\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -33px;\n    transform: translateX(-150px)\n}\n}\n\/*\nli.multicolumn-list__item:nth-child(n + 2) .column-custom-text-color {\n    color: dimgrey !important;\n}\n*\/\n#shopify-section-template--17888246366522__1641834224a94d856f li.multicolumn-list__item:nth-child(1) .multicolumn-card {\n    border: 2px solid #fff;\n    border-radius: 21px;\n}\n\n<\/style>",
+        "custom_liquid": "<style>\n\/*\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -20px;\n    transform: translateX(-145px);\n    width: 100%;\n    font-size: 14px;\n}\n*\/\nli.multicolumn-list__item:nth-last-of-type(2) {\n    position: relative;\n    overflow-x: visible;\n}\n@media screen and (min-width: 750px) {\n\/*\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -33px;\n    transform: translateX(-150px)\n}\n*\/\n}\n\/*\nli.multicolumn-list__item:nth-child(n + 2) .column-custom-text-color {\n    color: dimgrey !important;\n}\n*\/\n#shopify-section-template--17888246366522__1641834224a94d856f li.multicolumn-list__item:nth-child(1) .multicolumn-card {\n    border: 2px solid #fff;\n    border-radius: 21px;\n}\n\n<\/style>",
         "custom_background": false,
         "background_color": "#ffffff",
         "page_width": false
@@ -490,7 +491,7 @@
         "16418342231ac13c89-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Protein-shot-widest.webp",
+            "image": "shopify:\/\/shop_images\/Protein-shot_f2298944-0b9c-4455-8606-b11b63d9752a.webp",
             "image_mobile": "shopify:\/\/shop_images\/Protein-shot_f2298944-0b9c-4455-8606-b11b63d9752a.webp",
             "image_link_url": "",
             "image_max_height": 113,
@@ -524,7 +525,7 @@
         "16418342231ac13c89-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Protein-Drink-sm-wide.webp",
+            "image": "shopify:\/\/shop_images\/Protein-Drink-sm-contained.webp",
             "image_mobile": "shopify:\/\/shop_images\/Protein-Drink-sm-contained.webp",
             "image_link_url": "",
             "image_max_height": 301,
@@ -590,7 +591,7 @@
         "577c20c8-4973-470b-b8c8-c07527deb5b7": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Protein-bar_478648bf-579b-4ac1-8b89-f3dcc2d700d8.webp",
+            "image": "shopify:\/\/shop_images\/Protein-bar-contain-4.webp",
             "image_mobile": "shopify:\/\/shop_images\/Protein-bar-contain-4.webp",
             "image_link_url": "",
             "image_max_height": 100,
