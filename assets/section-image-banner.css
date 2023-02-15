@@ -170,6 +170,14 @@
 }
 
 @media screen and (max-width: 749px) {
+  .banner--mobile-top:not(.banner--stacked) .banner__media {
+    position: relative;
+    display: flex;
+    order: 2;
+  }
+  .banner--mobile-top:not(.banner--stacked) .banner__content {
+      order: 1;
+    }
   .banner--mobile-bottom:not(.banner--stacked) .banner__content {
     order: 2;
   }
