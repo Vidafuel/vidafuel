@@ -120,7 +120,8 @@
       ],
       "custom_css": [
         ".spaced-section {margin-top: 0;}",
-        ".multicolumn.background-bk-image.multicolumn--medium {padding-top: 1em;}"
+        ".multicolumn.background-bk-image.multicolumn--medium {padding-top: 1em; padding-bottom: 0;}",
+        ".multicolumn-list__item {margin-bottom: 0;}"
       ],
       "settings": {
         "title": "<strong>Meet your daily protein booster<\/strong>",
