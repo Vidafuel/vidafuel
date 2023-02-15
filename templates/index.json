@@ -47,8 +47,316 @@
         "full_width": true
       }
     },
+    "37a31859-d026-4732-b82b-1347b5f52e18": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein-To-support-muscle-mass-_-strength-joint-_-bone-health-No-artificial-sweeteners-ever-16g-protein-per-2oz-shot-One-shot-per-day-is-all-vou-need-C.webp",
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "show_text_position": "default"
+      }
+    },
+    "1639503887e884ceb3": {
+      "type": "images-with-text",
+      "blocks": {
+        "231f6501-1705-4359-a72b-4967587827df": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_de8e50e1-e988-4547-9f31-416e7393994b.webp",
+            "image_ratio": "adapt"
+          }
+        },
+        "847081ef-8696-42f1-ad5e-a315d489674c": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_font": "trade_gothic_bold"
+          }
+        }
+      },
+      "block_order": [
+        "231f6501-1705-4359-a72b-4967587827df",
+        "847081ef-8696-42f1-ad5e-a315d489674c"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "<center><strong><em>Developed by dietitians<\/em> to deliver essential nutrients when you need them most<\/strong><\/center>",
+        "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
+        "height": "adapt",
+        "desktop_no_spacing": true,
+        "center_image_and_icons": true,
+        "color_scheme": "background-2",
+        "layout": "text_first",
+        "mobile_text_first": false,
+        "section_width": "full_width",
+        "image_01": "shopify:\/\/shop_images\/DIABETES.png",
+        "image_01_title": "GENERAL WELLNESS",
+        "image_01_link": "https:\/\/vidafuel.com\/pages\/protein-drinks-for-dialysis-patients",
+        "image_02": "shopify:\/\/shop_images\/POST-SURGERY-RECOVERY.png",
+        "image_02_title": "RECOVERY",
+        "image_02_link": "https:\/\/vidafuel.com\/pages\/bariatric-protein-nutrition",
+        "image_03": "shopify:\/\/shop_images\/ACTIVE-AGING.png",
+        "image_03_title": "ACTIVE AGING",
+        "image_03_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
+        "image_04": "shopify:\/\/shop_images\/DIABETES.png",
+        "image_04_title": "BARIATRIC",
+        "image_04_link": "https:\/\/vidafuel.com\/pages\/post-surgery-protein",
+        "image_05": "shopify:\/\/shop_images\/ATHLETICS.png",
+        "image_05_title": "FITNESS \/ ATHLETICS",
+        "image_05_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
+        "image_06": "shopify:\/\/shop_images\/CANCER.png",
+        "image_06_title": "CANCER",
+        "image_06_link": "https:\/\/vidafuel.com\/pages\/protein-cancer-patients",
+        "image_07": "shopify:\/\/shop_images\/GERIATRIC-NUTRITION.png",
+        "image_07_title": "GERIATRIC NUTRITION",
+        "image_07_link": "shopify:\/\/pages\/protein-for-athletes",
+        "image_08": "shopify:\/\/shop_images\/DIALYSIS.png",
+        "image_08_title": "CKD\/DIALYSIS",
+        "image_08_link": "https:\/\/vidafuel.com\/blogs\/nutrition-wellness\/how-to-protect-against-infection-with-protein"
+      }
+    },
+    "9d5b6c17-e9cd-46b4-aff8-1da6fc816219": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-0": {
+          "type": "column",
+          "settings": {
+            "image_link_url": "",
+            "title": "<p><strong>Low volume<\/strong><\/p>",
+            "icon": "check_mark",
+            "text": "<p>Quick & easy to consume<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_custom_text_color": false,
+            "column_copy_color": "#000000",
+            "column_title_color": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "description_text_size": "default",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-1": {
+          "type": "column",
+          "settings": {
+            "image_link_url": "",
+            "title": "<p><strong>Dietitian developed<\/strong><\/p>",
+            "icon": "heart",
+            "text": "<p>Optimized to deliver essential macronutrients without the extra sugar, fat and calories<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_custom_text_color": false,
+            "column_copy_color": "#000000",
+            "column_title_color": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "description_text_size": "default",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-2": {
+          "type": "column",
+          "settings": {
+            "image_link_url": "",
+            "title": "<p><strong>Economical<\/strong><\/p>",
+            "icon": "price_tag",
+            "text": "<p>Biggest bang for your buck<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_custom_text_color": false,
+            "column_copy_color": "#000000",
+            "column_title_color": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_font": "default",
+            "col_title_size": "default",
+            "text_font": "default",
+            "description_text_size": "default",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#e68227",
+            "text_color_primary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-0",
+        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-1",
+        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-2"
+      ],
+      "settings": {
+        "title": "<strong>Vidafuel Nutrition: The easiest way to nourish your day<\/strong>",
+        "title_center": true,
+        "title_size": "default",
+        "title_color": "#000000",
+        "section_height": "xsmall",
+        "image_width": "full",
+        "col_img_contain": false,
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "columns": "default",
+        "background_style": "secondary",
+        "card_bk_none": false,
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "vertical_alignment": "flex-align-normal",
+        "desktop_no_spacing": true,
+        "icon_enable": true,
+        "full_width_section": false,
+        "custom_css_mobile": ""
+      }
+    },
+    "770c828d-39df-4a2a-ae1f-0c8051b01d55": {
+      "type": "image-banner",
+      "blocks": {
+        "template--17888246366522__770c828d-39df-4a2a-ae1f-0c8051b01d55-16759673636f940f6e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Less is more.<\/strong>",
+            "heading_size": "medium"
+          }
+        },
+        "fe618b4c-80d6-4a6b-8b5c-25d43f5387cd": {
+          "type": "text",
+          "settings": {
+            "text": "Our novel protein shot is the quickest & easiest way to nourish your day."
+          }
+        }
+      },
+      "block_order": [
+        "template--17888246366522__770c828d-39df-4a2a-ae1f-0c8051b01d55-16759673636f940f6e-0",
+        "fe618b4c-80d6-4a6b-8b5c-25d43f5387cd"
+      ],
+      "custom_css": [
+        "h1.banner__heading.h1 {color: #000;}",
+        ".banner__text {color: #000; font-size: 2rem;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/vidafuel-comparison.webp",
+        "image_height": "large",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "flex-start",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "show_text_position": "top"
+      }
+    },
+    "6bfa2099-00ed-467f-b99b-33fda7955494": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "video_url": "",
+        "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/88e40cb0-2d32-4645-b4f3-0315277eb94b?autoplay=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"><\/iframe>",
+        "description": "",
+        "full_width": true,
+        "video_cover": false
+      }
+    },
+    "16420895372c7ae66d": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" data-header-customisation-enabled=\"1\"\n    data-header-customisation-color=\"#cddb00\" data-header-customisation-font-size=\"18\"\n    data-header-customisation-text=\"LOVED &amp; TRUSTED BY THOUSANDS OF CUSTOMERS\"\n    data-header-customisation-alignment=\"left\" data-background-color=\"transparent\" data-mode=\"top_rated\"\n    data-type=\"both\" data-count=\"9\" data-show-bottomline=\"1\" data-show-navigation=\"1\">&nbsp;<\/div>",
+        "custom_background": true,
+        "background_color": "#7bccc8",
+        "page_width": false
+      }
+    },
+    "1647969963a76480fb": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "Vidafuel Wellness Protein Drink delivers 16g of protein in a small 2oz shot",
+        "cover_image": "shopify:\/\/shop_images\/Vidafuel-vs-Protien-Powder.webp",
+        "video_url": "https:\/\/youtu.be\/SEbPehKRtZo",
+        "video_embed_custom": "",
+        "description": "Video comparing Vidafuel with a regular protein powder.",
+        "full_width": false,
+        "video_cover": true
+      }
+    },
+    "bbb28046-9da0-414e-9315-b719dba86fce": {
+      "type": "collage",
+      "blocks": {
+        "template--17829330583866__bbb28046-9da0-414e-9315-b719dba86fce-167518817969823fe9-1": {
+          "type": "product",
+          "settings": {
+            "product": "collagen-protein-drink-2-pack",
+            "second_image": true,
+            "image_padding": true,
+            "secondary_background": false
+          }
+        },
+        "template--17829330583866__bbb28046-9da0-414e-9315-b719dba86fce-167518817969823fe9-0": {
+          "type": "video",
+          "settings": {
+            "video_url": "",
+            "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/5c0af45e-f939-4e0f-bf61-3c48ca1a5f22?autoplay=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"><\/iframe>",
+            "description": "Describe the video",
+            "image_padding": false,
+            "video_small_desktop": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17829330583866__bbb28046-9da0-414e-9315-b719dba86fce-167518817969823fe9-1",
+        "template--17829330583866__bbb28046-9da0-414e-9315-b719dba86fce-167518817969823fe9-0"
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "right",
+        "background_color_scheme": "default",
+        "mobile_layout": "column",
+        "remove_top_spacing": false,
+        "full_width": true
+      }
+    },
     "1639505258119ea558": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "16395052587fb2d08a-0": {
           "type": "column",
@@ -144,98 +452,6 @@
         "icon_enable": false,
         "full_width_section": true,
         "custom_css_mobile": ".multicolumn-list__item:nth-of-type(2) {\n    display: none;\n}"
-      }
-    },
-    "1639503887e884ceb3": {
-      "type": "images-with-text",
-      "blocks": {
-        "231f6501-1705-4359-a72b-4967587827df": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Artboard_de8e50e1-e988-4547-9f31-416e7393994b.webp",
-            "image_ratio": "adapt"
-          }
-        },
-        "847081ef-8696-42f1-ad5e-a315d489674c": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/all",
-            "button_font": "trade_gothic_bold"
-          }
-        }
-      },
-      "block_order": [
-        "231f6501-1705-4359-a72b-4967587827df",
-        "847081ef-8696-42f1-ad5e-a315d489674c"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "heading": "<center><strong><em>Developed by dietitians<\/em> to deliver essential nutrients when you need them most<\/strong><\/center>",
-        "bk_image": "shopify:\/\/shop_images\/icons-background.jpg",
-        "height": "adapt",
-        "desktop_no_spacing": true,
-        "center_image_and_icons": true,
-        "color_scheme": "background-2",
-        "layout": "text_first",
-        "mobile_text_first": false,
-        "section_width": "full_width",
-        "image_01": "shopify:\/\/shop_images\/DIABETES.png",
-        "image_01_title": "GENERAL WELLNESS",
-        "image_01_link": "https:\/\/vidafuel.com\/pages\/protein-drinks-for-dialysis-patients",
-        "image_02": "shopify:\/\/shop_images\/POST-SURGERY-RECOVERY.png",
-        "image_02_title": "RECOVERY",
-        "image_02_link": "https:\/\/vidafuel.com\/pages\/bariatric-protein-nutrition",
-        "image_03": "shopify:\/\/shop_images\/ACTIVE-AGING.png",
-        "image_03_title": "ACTIVE AGING",
-        "image_03_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
-        "image_04": "shopify:\/\/shop_images\/DIABETES.png",
-        "image_04_title": "BARIATRIC",
-        "image_04_link": "https:\/\/vidafuel.com\/pages\/post-surgery-protein",
-        "image_05": "shopify:\/\/shop_images\/ATHLETICS.png",
-        "image_05_title": "FITNESS \/ ATHLETICS",
-        "image_05_link": "https:\/\/vidafuel.com\/pages\/geriatric-nutrition",
-        "image_06": "shopify:\/\/shop_images\/CANCER.png",
-        "image_06_title": "CANCER",
-        "image_06_link": "https:\/\/vidafuel.com\/pages\/protein-cancer-patients",
-        "image_07": "shopify:\/\/shop_images\/GERIATRIC-NUTRITION.png",
-        "image_07_title": "GERIATRIC NUTRITION",
-        "image_07_link": "shopify:\/\/pages\/protein-for-athletes",
-        "image_08": "shopify:\/\/shop_images\/DIALYSIS.png",
-        "image_08_title": "CKD\/DIALYSIS",
-        "image_08_link": "https:\/\/vidafuel.com\/blogs\/nutrition-wellness\/how-to-protect-against-infection-with-protein"
-      }
-    },
-    "770c828d-39df-4a2a-ae1f-0c8051b01d55": {
-      "type": "image-banner",
-      "blocks": {
-        "template--17888246366522__770c828d-39df-4a2a-ae1f-0c8051b01d55-16759673636f940f6e-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Less is more.<\/strong>",
-            "heading_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "template--17888246366522__770c828d-39df-4a2a-ae1f-0c8051b01d55-16759673636f940f6e-0"
-      ],
-      "custom_css": [
-        "h1.banner__heading.h1 {color: #000;}"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/vidafuel-comparison.webp",
-        "image_height": "large",
-        "adapt_height_first_image": true,
-        "desktop_text_box_position": "flex-start",
-        "show_text_box": false,
-        "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
       }
     },
     "1641834224a94d856f": {
@@ -405,209 +621,19 @@
         "full_width_section": false,
         "custom_css_mobile": ""
       }
-    },
-    "9d5b6c17-e9cd-46b4-aff8-1da6fc816219": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-0": {
-          "type": "column",
-          "settings": {
-            "image_link_url": "",
-            "title": "<p><strong>Low volume<\/strong><\/p>",
-            "icon": "check_mark",
-            "text": "<p>Quick & easy to consume<\/p>",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "column_copy_color": "#000000",
-            "column_title_color": "#000000",
-            "column_border_color_enable": false,
-            "column_border_color": "#ffffff",
-            "title_font": "default",
-            "col_title_size": "default",
-            "text_font": "default",
-            "description_text_size": "default",
-            "title_top": false,
-            "col_content_reverse": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "icon_color": "#cdda01",
-            "text_color_primary": false
-          }
-        },
-        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-1": {
-          "type": "column",
-          "settings": {
-            "image_link_url": "",
-            "title": "<p><strong>Dietitian developed<\/strong><\/p>",
-            "icon": "heart",
-            "text": "<p>Optimized to deliver essential macronutrients without the extra sugar, fat and calories<\/p>",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "column_copy_color": "#000000",
-            "column_title_color": "#000000",
-            "column_border_color_enable": false,
-            "column_border_color": "#ffffff",
-            "title_font": "default",
-            "col_title_size": "default",
-            "text_font": "default",
-            "description_text_size": "default",
-            "title_top": false,
-            "col_content_reverse": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "icon_color": "#cdda01",
-            "text_color_primary": false
-          }
-        },
-        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-2": {
-          "type": "column",
-          "settings": {
-            "image_link_url": "",
-            "title": "<p><strong>Economical<\/strong><\/p>",
-            "icon": "price_tag",
-            "text": "<p>Biggest bang for your buck<\/p>",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "column_copy_color": "#000000",
-            "column_title_color": "#000000",
-            "column_border_color_enable": false,
-            "column_border_color": "#ffffff",
-            "title_font": "default",
-            "col_title_size": "default",
-            "text_font": "default",
-            "description_text_size": "default",
-            "title_top": false,
-            "col_content_reverse": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "icon_color": "#e68227",
-            "text_color_primary": false
-          }
-        }
-      },
-      "block_order": [
-        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-0",
-        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-1",
-        "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-2"
-      ],
-      "settings": {
-        "title": "<strong>Vidafuel Nutrition: The easiest way to nourish your day<\/strong>",
-        "title_center": true,
-        "title_size": "default",
-        "title_color": "#000000",
-        "section_height": "xsmall",
-        "image_width": "full",
-        "col_img_contain": false,
-        "image_ratio": "adapt",
-        "column_alignment": "center",
-        "columns": "default",
-        "background_style": "secondary",
-        "card_bk_none": false,
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "vertical_alignment": "flex-align-normal",
-        "desktop_no_spacing": true,
-        "icon_enable": true,
-        "full_width_section": false,
-        "custom_css_mobile": ""
-      }
-    },
-    "6bfa2099-00ed-467f-b99b-33fda7955494": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "",
-        "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/88e40cb0-2d32-4645-b4f3-0315277eb94b?autoplay=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"><\/iframe>",
-        "description": "",
-        "full_width": true,
-        "video_cover": false
-      }
-    },
-    "16420895372c7ae66d": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" data-header-customisation-enabled=\"1\"\n    data-header-customisation-color=\"#cddb00\" data-header-customisation-font-size=\"18\"\n    data-header-customisation-text=\"LOVED &amp; TRUSTED BY THOUSANDS OF CUSTOMERS\"\n    data-header-customisation-alignment=\"left\" data-background-color=\"transparent\" data-mode=\"top_rated\"\n    data-type=\"both\" data-count=\"9\" data-show-bottomline=\"1\" data-show-navigation=\"1\">&nbsp;<\/div>",
-        "custom_background": true,
-        "background_color": "#7bccc8",
-        "page_width": false
-      }
-    },
-    "1647969963a76480fb": {
-      "type": "video",
-      "disabled": true,
-      "settings": {
-        "heading": "Vidafuel Wellness Protein Drink delivers 16g of protein in a small 2oz shot",
-        "cover_image": "shopify:\/\/shop_images\/Vidafuel-vs-Protien-Powder.webp",
-        "video_url": "https:\/\/youtu.be\/SEbPehKRtZo",
-        "video_embed_custom": "",
-        "description": "Video comparing Vidafuel with a regular protein powder.",
-        "full_width": false,
-        "video_cover": true
-      }
-    },
-    "bbb28046-9da0-414e-9315-b719dba86fce": {
-      "type": "collage",
-      "blocks": {
-        "template--17829330583866__bbb28046-9da0-414e-9315-b719dba86fce-167518817969823fe9-1": {
-          "type": "product",
-          "settings": {
-            "product": "collagen-protein-drink-2-pack",
-            "second_image": true,
-            "image_padding": true,
-            "secondary_background": false
-          }
-        },
-        "template--17829330583866__bbb28046-9da0-414e-9315-b719dba86fce-167518817969823fe9-0": {
-          "type": "video",
-          "settings": {
-            "video_url": "",
-            "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/5c0af45e-f939-4e0f-bf61-3c48ca1a5f22?autoplay=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"><\/iframe>",
-            "description": "Describe the video",
-            "image_padding": false,
-            "video_small_desktop": false
-          }
-        }
-      },
-      "block_order": [
-        "template--17829330583866__bbb28046-9da0-414e-9315-b719dba86fce-167518817969823fe9-1",
-        "template--17829330583866__bbb28046-9da0-414e-9315-b719dba86fce-167518817969823fe9-0"
-      ],
-      "settings": {
-        "heading": "",
-        "desktop_layout": "right",
-        "background_color_scheme": "default",
-        "mobile_layout": "column",
-        "remove_top_spacing": false,
-        "full_width": true
-      }
     }
   },
   "order": [
     "16420790196f1cba40",
-    "1639505258119ea558",
+    "37a31859-d026-4732-b82b-1347b5f52e18",
     "1639503887e884ceb3",
-    "770c828d-39df-4a2a-ae1f-0c8051b01d55",
-    "1641834224a94d856f",
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219",
+    "770c828d-39df-4a2a-ae1f-0c8051b01d55",
     "6bfa2099-00ed-467f-b99b-33fda7955494",
     "16420895372c7ae66d",
     "1647969963a76480fb",
-    "bbb28046-9da0-414e-9315-b719dba86fce"
+    "bbb28046-9da0-414e-9315-b719dba86fce",
+    "1639505258119ea558",
+    "1641834224a94d856f"
   ]
 }
