@@ -35,12 +35,12 @@
       assign wrapperClasses = 'flex-align-center'
     endif
     # TEXT/IMAGE first/second
-    if section.settings.layout == 'text_first'
+    if section.settings.layout == 'icons_first'
       assign wrapperClasses =  wrapperClasses | append: ' image-with-text__grid--reverse'
     endif
     # MOBILE text/image first/second
-    if section.settings.mobile_text_first
-      assign wrapperClasses = wrapperClasses | append: ' mobile--reverse' 
+    if section.settings.mobile_icons_first
+      assign wrapperClasses = wrapperClasses | append: ' mobile--icons-first' 
     endif
     # FULL WIDTH
     if section.settings.section_width == 'full_width'
@@ -76,9 +76,56 @@
   {%- endif -%}
   <div class="image-with-text__grid grid grid--gapless grid--1-col grid--2-col-tablet {{ imagesWithTextWrapperCLASSES }}">
     <div class="grid__item grid__item-title">
-      <h2 class="grid grid--2-col grid--4-col-tablet image-with-text__title">{{ section.settings.heading }}</h2>
+      <h2 class="grid grid--2-col grid--4-col-tablet image-with-text__title{% if section.settings.heading_size != 'default' %} {{ section.settings.heading_size }}{% endif %}">{{ section.settings.heading }}</h2>
     </div>
-    <div class="grid__item">
+    <div class="grid__item grid__item-image">
+      <div class="image-with-text__content image-with-text__content--{{ section.settings.height }}">
+        {%- liquid
+          assign highest_ratio = 0
+          for block in section.blocks
+            if block.settings.image.aspect_ratio > highest_ratio
+              assign highest_ratio = block.settings.image.aspect_ratio
+            endif
+          endfor
+        -%}
+        {%- for block in section.blocks -%}
+          {% case block.type %}
+            {%- when 'heading' -%}
+              <div class="image-with-text__heading h1 {% if block.settings.heading_font != 'default' %}{{ block.settings.heading_font }}{% endif %}" {{ block.shopify_attributes }}>
+                {{ block.settings.heading }}
+              </div>
+            {%- when 'text' -%}
+              <div class="image-with-text__text rte {% if block.settings.text_font != 'default' %}{{ block.settings.text_font }}{% endif %} {% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %} {% if block.settings.text_color != 'default' %}{{ block.settings.text_color }}{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+            {%- when 'button' -%}
+              {%- if block.settings.button_label != blank -%}
+                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} {% if block.settings.button_font != 'default' %}{{ block.settings.button_font }}{% endif %}" {{ block.shopify_attributes }}>
+                  {{ block.settings.button_label | escape }}
+                </a>
+              {%- endif -%}
+            {% when 'image' %}
+              {% assign image = block.settings.image %}
+              <div class="grid__item">
+              {% comment %} {%- if block.settings.image_link != blank -%}<a href="{{ block.settings.image_link }}" class="image-link">{% endif %} {% endcomment %}
+              {% if block.settings.image_border %}
+                {% assign imageBorder = ' image-border' %}
+              {% endif %}
+              <div class="image-with-text__media{% if block.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}{{ imageBorder }}"
+                      {% if block.settings.image_ratio == 'adapt' %}
+                        style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
+                      {% endif %}>
+                {%- if block.settings.image != blank -%}
+                {{ image | image_url: width: nil | image_tag }}
+                {%- else -%}
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+              </div>
+              {%- if block.settings.image_link != blank -%}</a>{% endif %}
+            </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    <div class="grid__item grid__item-icons">
       <ul class="multicolumn-list grid grid--2-col grid--2-col-tablet grid--4-col-desktop">
         <li class="multicolumn-list__item grid__item center">
           {%- comment -%} IMAGE ONE {%- endcomment -%}
@@ -308,53 +355,6 @@
         </li>
       </ul>
     </div>
-    <div class="grid__item">
-      <div class="image-with-text__content image-with-text__content--{{ section.settings.height }}">
-        {%- liquid
-          assign highest_ratio = 0
-          for block in section.blocks
-            if block.settings.image.aspect_ratio > highest_ratio
-              assign highest_ratio = block.settings.image.aspect_ratio
-            endif
-          endfor
-        -%}
-        {%- for block in section.blocks -%}
-          {% case block.type %}
-            {%- when 'heading' -%}
-              <div class="image-with-text__heading h1 {% if block.settings.heading_font != 'default' %}{{ block.settings.heading_font }}{% endif %}" {{ block.shopify_attributes }}>
-                {{ block.settings.heading }}
-              </div>
-            {%- when 'text' -%}
-              <div class="image-with-text__text rte {% if block.settings.text_font != 'default' %}{{ block.settings.text_font }}{% endif %} {% if block.settings.text_size != 'default' %}{{ block.settings.text_size }}{% endif %} {% if block.settings.text_color != 'default' %}{{ block.settings.text_color }}{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
-            {%- when 'button' -%}
-              {%- if block.settings.button_label != blank -%}
-                <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} {% if block.settings.button_font != 'default' %}{{ block.settings.button_font }}{% endif %}" {{ block.shopify_attributes }}>
-                  {{ block.settings.button_label | escape }}
-                </a>
-              {%- endif -%}
-            {% when 'image' %}
-              {% assign image = block.settings.image %}
-              <div class="grid__item">
-              {% comment %} {%- if block.settings.image_link != blank -%}<a href="{{ block.settings.image_link }}" class="image-link">{% endif %} {% endcomment %}
-              {% if block.settings.image_border %}
-                {% assign imageBorder = ' image-border' %}
-              {% endif %}
-              <div class="image-with-text__media{% if block.settings.image != blank %} media{% else %} image-with-text__media--placeholder placeholder{% endif %}{{ imageBorder }}"
-                      {% if block.settings.image_ratio == 'adapt' %}
-                        style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                      {% endif %}>
-                {%- if block.settings.image != blank -%}
-                {{ image | image_url: width: nil | image_tag }}
-                {%- else -%}
-                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                {%- endif -%}
-              </div>
-              {%- if block.settings.image_link != blank -%}</a>{% endif %}
-            </div>
-          {%- endcase -%}
-        {%- endfor -%}
-      </div>
-    </div>
   </div>
 </div>
 
@@ -443,7 +443,7 @@
           "label": "t:sections.image-with-text.settings.layout.options__1.label"
         },
         {
-          "value": "text_first",
+          "value": "icons_first",
           "label": "t:sections.image-with-text.settings.layout.options__2.label"
         }
       ],
@@ -453,8 +453,8 @@
     },
     {
       "type": "checkbox",
-      "id": "mobile_text_first",
-      "label": "Mobile text first",
+      "id": "mobile_icons_first",
+      "label": "Mobile icons first",
       "default": false
     },
     {
@@ -472,6 +472,34 @@
       ],
       "default": "normal",
       "label": "Section width"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "heading-1",
+          "label": "h1"
+        },
+        {
+          "value": "heading-2",
+          "label": "h2"
+        },
+        {
+          "value": "heading-3",
+          "label": "h3"
+        },
+        {
+          "value": "heading-5",
+          "label": "h5"
+        }
+      ],
+      "default": "default",
+      "label": "Heading size"
     },
     {
       "type": "image_picker",
