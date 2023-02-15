@@ -180,7 +180,7 @@
         "desktop_no_spacing": true,
         "icon_enable": true,
         "full_width_section": false,
-        "custom_css_mobile": ""
+        "custom_css_mobile": ".multicolumn.desktop_no_spacing {\n    padding-bottom: 0;\n}"
       }
     },
     "1639503887e884ceb3": {
