@@ -11,6 +11,7 @@
   assign textSize = 'default'
   assign titleClasses       = ''
   assign imageClass = ''
+  assign imageLeftAlignCLASS = ''
   # #
   # SECTION logic
   # #
@@ -26,6 +27,9 @@
   endif
   if section.settings.col_img_contain
     assign imageContainCLASS = 'image-contain'
+  endif
+  if section.settings.col_img_left_align
+    assign imageLeftAlignCLASS = ' left-align'
   endif
 
   # #
@@ -229,7 +233,7 @@
                               height="{{ block.settings.image_mobile.height }}"
                               width="{{ block.settings.image_mobile.width }}"
                               loading="lazy"
-                              class="multicolumn-image {{ imgID }} {{ imageClass }} {{ imageContainCLASS }}"
+                              class="multicolumn-image {{ imgID }} {{ imageClass }} {{ imageContainCLASS }}{{ imageLeftAlignCLASS }}"
                               style="max-height:{{ imageHeight }}px;"
                             >
                         </div>
@@ -300,8 +304,8 @@
                           src="{{ block.settings.title_image | image_url: width: 550 }}"
                           sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
                           alt="{{ block.settings.title_image.alt }}"
-                          height="56"
-                          width="225"
+                          height="43"
+                          width="175"
                           loading="lazy"
                         >
                       {% endif %}
@@ -502,6 +506,11 @@
       "type": "checkbox",
       "id": "col_img_contain",
       "label": "Column image contain"
+    },
+    {
+      "type": "checkbox",
+      "id": "col_img_left_align",
+      "label": "Column image left align"
     },
     {
       "type": "select",

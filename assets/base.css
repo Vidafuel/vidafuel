@@ -488,7 +488,7 @@ h1,
 h2,
 .h2 {
 	font-weight: unset;
-	font-size: calc(var(--font-heading-scale) * 2rem);
+	font-size: calc(var(--font-heading-scale) * 1.45rem);
 }
 
 @media only screen and (min-width: 750px) {
@@ -1253,6 +1253,11 @@ summary::-webkit-details-marker {
 	object-fit: cover;
 	object-position: center center;
 	transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.media>img.left-align {
+	object-position: left center;
+	padding: 0 2.5rem;
 }
 
 .media--square {
