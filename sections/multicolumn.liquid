@@ -61,7 +61,6 @@
         
         # COLUMN custom css
         if block.settings.col_custom_css != empty
-          assign columnCustomCSS = block.settings.col_custom_css
         endif
         # COLUMN bullets
         if block.settings.p_bullets
@@ -94,12 +93,9 @@
               color: {{ section.settings.column_description_color }};
             }
             {% endif %}
-            {% if block.settings.col_custom_css != empty %}
-                {% assign columnCustomCSSClass = ' column-custom-css' %}
-                .column-custom-css {{ columnCustomCSS }}
-            {% endif %}
+          
             {% if section.settings.custom_css_mobile != empty %}
-              @media screen and (max-width: 750px) {
+              @media screen and (max-width: 749px) {
                 #shopify-section-{{ section.id }} {{ section.settings.custom_css_mobile }}
               }
             {% endif %}
