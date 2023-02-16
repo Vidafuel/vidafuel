@@ -84,10 +84,10 @@
     "c6325ea0-a755-4f14-a3a1-77533eef78c0": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n@media screen and (max-width: 749px) {\n#Banner-template--17888246366522__37a31859-d026-4732-b82b-1347b5f52e18 {   \n max-height: 330px;\n}\n#Banner-template--17888246366522__37a31859-d026-4732-b82b-1347b5f52e18 .media > img {\n    object-fit: cover;\n    object-position: 90%;\n}\n}\n\n@media screen and (min-width: 750px) {\n#Banner-template--17888246366522__37a31859-d026-4732-b82b-1347b5f52e18\n.media > img {\nheight: auto;\n}\n}\n\n#shopify-section-template--17888246366522__1641834224a94d856f li.multicolumn-list__item:nth-child(1) .multicolumn-card {\n    border: 2px solid #fff;\n    border-radius: 21px;\n}\n\n<\/style>",
+        "custom_liquid": "<style>\n@media screen and (max-width: 749px) {\n#Banner-template--17888246366522__37a31859-d026-4732-b82b-1347b5f52e18 {   \n min-height: 330px;\n}\n#Banner-template--17888246366522__37a31859-d026-4732-b82b-1347b5f52e18 .media > img {\n    object-fit: cover;\n    object-position: 90%;\n}\n}\n\n@media screen and (min-width: 750px) {\n#Banner-template--17888246366522__37a31859-d026-4732-b82b-1347b5f52e18\n.media > img {\nheight: auto;\n}\n}\n\n#shopify-section-template--17888246366522__1641834224a94d856f li.multicolumn-list__item:nth-child(1) .multicolumn-card {\n    border: 2px solid #fff;\n    border-radius: 21px;\n}\n\n<\/style>",
         "custom_background": false,
         "background_color": "#ffffff",
-        "page_width": true
+        "page_width": false
       }
     },
     "37a31859-d026-4732-b82b-1347b5f52e18": {
@@ -95,7 +95,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein-To-support-muscle-mass-_-strength-joint-_-bone-health-No-artificial-sweeteners-ever-16g-protein-per-2oz-shot-One-shot-per-day-is-all-vou-need-C_c1c0dcfc-4083-4806-9e92-f4782bfd2131.webp",
         "image_height": "large",
-        "adapt_height_first_image": false,
+        "adapt_height_first_image": true,
         "desktop_text_box_position": "center",
         "show_text_box": false,
         "image_overlay_opacity": 0,
