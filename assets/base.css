@@ -2592,9 +2592,17 @@ details-disclosure > details {
 	margin: inherit;
 }
 
+.heading-2 strong {
+	font-size: calc(var(--font-heading-scale) * 2.4rem);
+}
+
 @media only screen and (min-width: 750px) {
 	.heading-2 {
 		font-size: calc(var(--font-heading-scale) * 2.4rem);
+	}
+	
+	.heading-2 strong {
+		font-size: calc(var(--font-heading-scale) * 2.6rem);
 	}
 }
 
@@ -2602,9 +2610,35 @@ details-disclosure > details {
 	font-size: calc(var(--font-heading-scale) * 1.7rem);
 }
 
+.heading-3 strong {
+	font-size: calc(var(--font-heading-scale) * 1.9rem);
+}
+
 @media only screen and (min-width: 750px) {
 	.heading-3 {
 		font-size: calc(var(--font-heading-scale) * 1.8rem);
+	}
+	
+	.heading-3 strong {
+		font-size: calc(var(--font-heading-scale) * 2rem);
+	}
+}
+
+.heading-4 {
+	font-size: calc(var(--font-heading-scale) * 1.5rem);
+}
+
+.heading-4 strong {
+	font-size: calc(var(--font-heading-scale) * 1.7rem);
+}
+
+@media only screen and (min-width: 750px) {
+	.heading-4 {
+		font-size: calc(var(--font-heading-scale) * 1.7rem);
+	}
+	
+	.heading-4 strong {
+		font-size: calc(var(--font-heading-scale) * 1.9rem);
 	}
 }
 
@@ -2612,9 +2646,17 @@ details-disclosure > details {
 	font-size: calc(var(--font-heading-scale) * 1.2rem);
 }
 
+.heading-5 strong {
+	font-size: calc(var(--font-heading-scale) * 1.4rem);
+}
+
 @media only screen and (min-width: 750px) {
 	.heading-5 {
 		font-size: calc(var(--font-heading-scale) * 1.3rem);
+	}
+	
+	.heading-5 strong {
+		font-size: calc(var(--font-heading-scale) * 1.5rem);
 	}
 }
 

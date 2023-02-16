@@ -7,9 +7,7 @@
   assign imageContainCLASS = ''
   assign textColorPrimary = ''
   assign pBullets = ''
-  assign textFont = ''
-  assign textSize = 'default'
-  assign titleClasses       = ''
+  assign columnHeadingClasses       = ''
   assign imageClass = ''
   assign imageLeftAlignCLASS = ''
   # #
@@ -32,6 +30,18 @@
     assign imageLeftAlignCLASS = ' left-align'
   endif
 
+  # COLUMN heading size
+  if section.settings.column_heading_size != 'default' 
+    assign columnHeadingSize = section.settings.column_heading_size 
+  endif
+  # COLUMN description text size
+  if section.settings.column_description_size != 'default'
+    assign columnDescriptionSize = ' ' | append: section.settings.column_description_size
+  else
+    assign columnDescriptionSize = ' default'
+  endif
+  
+  
   # #
   # COLUMN logic
   # #
@@ -39,21 +49,14 @@
     case block.type
       when 'column'
         assign imgID = 'col-' | append: forloop.index
+        assign columnHeadingClasses = ''
         
-        if block.settings.title_font != 'default' 
-          assign titleClasses = block.settings.title_font 
-        else
-          assign titleClasses = 'default-size '
-        endif
-        if block.settings.col_title_size != 'default' 
-          assign titleClasses = titleClasses | append: block.settings.col_title_size 
-        endif
         if block.settings.column_title_color != '#000000'
           assign columnTitleColorCLASS = 'title-color-custom'
-          assign titleClasses = titleClasses | append: ' ' | append: columnTitleColorCLASS
+          assign columnHeadingClasses = columnHeadingClasses | append: ' ' | append: columnTitleColorCLASS
         endif
         if block.settings.column_custom_text_color
-          assign columnCustomTextColorCLASS = 'column-custom-text-color'
+          assign columnCustomTextColorCLASS = ' column-custom-text-color'
         endif 
         # COLUMN custom css
         if block.settings.col_custom_css != empty
@@ -61,16 +64,18 @@
         endif
         # COLUMN bullets
         if block.settings.p_bullets
-          assign pBullets = 'p_bullets'
+          assign pBullets = ' p_bullets'
         endif
-        # COLUMN description text size
-        if block.settings.description_text_size != 'default'
-          assign textSize = block.settings.description_text_size
-        endif
+        
+        
+        
+
+        
+        
         # COLUMN description text font
-        if block.settings.text_font != 'default'
-          assign textFont = block.settings.text_font
-        endif
+        # if block.settings.text_font != 'default'
+        #   assign textFont = block.settings.text_font
+        # endif
         if block.settings.column_border_color_enable
           assign columnsPadding = ' column-border-padding'
         endif
@@ -93,7 +98,7 @@
               .{{ section.id }} .p_bullets p::before {
                 background: {{ block.settings.p_bullets_color }};
               }
-              .{{ customTextColorClass }} {
+              .{{ columnCustomTextColorCLASS }} {
                 color: p_bullets_color_text;
               }
             {% endif %}
@@ -105,7 +110,7 @@
             </style>
           
           {%- if block.settings.text_color_primary -%}
-            {% assign textColorPrimary = 'color-foreground-accent-1' %}  
+            {% assign textColorPrimary = ' color-foreground-accent-1' %}  
           {%- endif -%}
 
 <div class="multicolumn background-{{ background_style }} multicolumn--{{ section.settings.section_height }} {% if section.settings.background_style == 'gradient-1' %} gradient color-accent-1{% elsif section.settings.background_style == 'gradient-2' %} gradient color-accent-2{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}">
@@ -165,11 +170,10 @@
                 if block.settings.col_custom_css != empty
                   assign columnCustomCSSClass = ' column-custom-css'
                 endif
-
               %}
 
-            <li class="multicolumn-list__item {% if section.settings.columns != 'default' %} {{ section.settings.columns }}{% endif %} grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{% if block.settings.image_link_url != blank %} full-width-link_container{% endif %}{{ columnCustomCSSClass }}" {% if block.settings.column_border_color_enable %}style="border: 2px solid {{ columnBorderColor }};border-radius: 6px;"{% endif %} {{ block.shopify_attributes }}>
-              <div class="multicolumn-card{% if section.settings.card_bk_none %} multicolumn-card-bk_none{% endif %}{% if block.settings.col_content_reverse %} multicolumn__col-reverse{% endif %}">
+            <li class="multicolumn-list__item {% if section.settings.columns != 'default' %} {{ section.settings.columns }}{% endif %} grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{% if block.settings.image_link_url != blank %} full-width-link_container{% endif %}{{ columnCustomCSSClass }}" {{ block.shopify_attributes }}>
+              <div class="multicolumn-card{% if section.settings.card_bk_none %} multicolumn-card-bk_none{% endif %}{% if block.settings.col_content_reverse %} multicolumn__col-reverse{% endif %}" {% if block.settings.column_border_color_enable %}style="border: 2px solid {{ columnBorderColor }};border-radius: 6px;"{% endif %}>
                 {%- if block.settings.image != blank -%}
                   {% liquid
                     if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' 
@@ -286,7 +290,7 @@
                     {%- if block.settings.title_top == false and block.settings.custom_liquid == blank -%}
                       {% if section.settings.icon_enable %}
                       {% comment %} COLUMN icon {% endcomment %}
-                        {% if block.settings.column_icon_color_custom != '#ffffff' %}
+                        {% if block.settings.column_icon_color_custom != '#000000' %}
                           {% render 'icon-accordion', icon: block.settings.icon, iconColor: block.settings.column_icon_color_custom %}
                         {% else %}
                           {% render 'icon-accordion', icon: block.settings.icon %}
@@ -296,7 +300,7 @@
                     
                       {% comment %} TITLE element {% endcomment %}
                       {%- if block.settings.title != blank -%}
-                          <h3 class="{{ titleClasses }} {{ columnTitleColorCLASS }}">
+                          <h3 class="{{ columnHeadingSize }}{{ columnTitleColorCLASS }}">
                           {{ block.settings.title }}
                         </h3>
                       {%- endif -%}
@@ -325,7 +329,7 @@
                     
                     {% comment %} COLUMN text/description element {% endcomment %}
                     {%- if block.settings.text != blank -%}
-                      <div class="rte {{ textColorPrimary }} {{ pBullets }} {{ textFont }} {{ textSize }} {{ columnCustomTextColorCLASS }}">
+                      <div class="rte{{ textColorPrimary }}{{ pBullets }}{{ columnDescriptionSize }}{{ columnCustomTextColorCLASS }}">
                         {{ block.settings.text }}
                       </div>
                     {%- endif -%}
@@ -430,6 +434,8 @@
     {
       "type": "select",
       "id": "title_size",
+      "default": "default",
+      "label": "Heading size",
       "options": [
         {
           "value": "default",
@@ -451,9 +457,7 @@
           "value": "heading-5",
           "label": "h5"
         }
-      ],
-      "default": "default",
-      "label": "Heading size"
+      ]
     },
     {
       "type": "color",
@@ -469,12 +473,14 @@
     {
       "type": "select",
       "id": "section_height",
+      "default": "medium",
+      "label": "Section height",
       "options": [
         {
         "value": "xsmall",
         "label": "Xsmall"
         },
-      {
+        {
           "value": "small",
           "label": "Small"
         },
@@ -486,9 +492,71 @@
           "value": "large",
           "label": "Large"
         }
-      ],
-      "default": "medium",
-      "label": "Section height"
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Column settings"
+    },
+    {
+      "type": "select",
+      "id": "column_heading_size",
+      "default": "default",
+      "label": "Heading size",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "heading-1",
+          "label": "h1"
+        },
+        {
+          "value": "heading-2",
+          "label": "h2"
+        },
+        {
+          "value": "heading-3",
+          "label": "h3"
+        },
+        {
+          "value": "heading-4",
+          "label": "h4"
+        },
+        {
+          "value": "heading-5",
+          "label": "h5"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "column_description_size",
+      "default": "default",
+      "label": "Description size",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "heading-1",
+          "label": "h1"
+        },
+        {
+          "value": "heading-2",
+          "label": "h2"
+        },
+        {
+          "value": "heading-3",
+          "label": "h3"
+        },
+        {
+          "value": "heading-5",
+          "label": "h5"
+        }
+      ]
     },
     {
       "type": "select",
@@ -919,7 +987,7 @@
           "type": "color",
           "id": "column_icon_color_custom",
           "label": "Custom icon color",
-          "default": "#ffffff"
+          "default": "#000000"
         },
         {
           "type": "checkbox",
@@ -932,150 +1000,6 @@
           "id": "column_border_color",
           "label": "Column border color",
           "default": "#ffffff"
-        },
-        {
-          "type": "select",
-          "id": "title_font",
-          "options": [
-            {
-              "value": "default",
-              "label": "Default"
-            },
-            {
-              "value": "proxima_nova_light",
-              "label": "Proxima Nova Light"
-            },
-            {
-              "value": "trade_gothic",
-              "label": "Trade Gothic"
-            },
-            {
-              "value": "trade_gothic_bold",
-              "label": "Trade Gothic Bold"
-            },
-            {
-              "value": "trade_gothic_bold_condensed",
-              "label": "Trade Gothic Bold Condensed"
-            },
-            {
-              "value": "trade_gothic_condensed",
-              "label": "Trade Gothic Condensed"
-            },
-            {
-              "value": "trade_gothic_condensed_bold",
-              "label": "Trade Gothic Condensed Bold"
-            },
-            {
-              "value": "trade_gothic_compressed_bold",
-              "label": "Trade Gothic Compressed Bold"
-            },
-            {
-              "value": "trade_gothic_condensed_heavy",
-              "label": "Trade Gothic Condensed Heavy"
-            }
-          ],
-          "default": "default",
-          "label": "Heading font"
-        },
-        {
-          "type": "select",
-          "id": "col_title_size",
-          "options": [
-            {
-              "value": "default",
-              "label": "Default"
-            },
-            {
-              "value": "heading-1",
-              "label": "h1"
-            },
-            {
-              "value": "heading-2",
-              "label": "h2"
-            },
-            {
-              "value": "heading-3",
-              "label": "h3"
-            },
-            {
-              "value": "heading-5",
-              "label": "h5"
-            }
-          ],
-          "default": "default",
-          "label": "Heading size"
-        },
-        {
-          "type": "select",
-          "id": "text_font",
-          "options": [
-            {
-              "value": "default",
-              "label": "Default"
-            },
-            {
-              "value": "proxima_nova_light",
-              "label": "Proxima Nova Light"
-            },
-            {
-              "value": "trade_gothic",
-              "label": "Trade Gothic"
-            },
-            {
-              "value": "trade_gothic_bold",
-              "label": "Trade Gothic Bold"
-            },
-            {
-              "value": "trade_gothic_bold_condensed",
-              "label": "Trade Gothic Bold Condensed"
-            },
-            {
-              "value": "trade_gothic_condensed",
-              "label": "Trade Gothic Condensed"
-            },
-            {
-              "value": "trade_gothic_condensed_bold",
-              "label": "Trade Gothic Condensed Bold"
-            },
-            {
-              "value": "trade_gothic_compressed_bold",
-              "label": "Trade Gothic Compressed Bold"
-            },
-            {
-              "value": "trade_gothic_condensed_heavy",
-              "label": "Trade Gothic Condensed Heavy"
-            }
-          ],
-          "default": "default",
-          "label": "Description font"
-        },
-        {
-          "type": "select",
-          "id": "description_text_size",
-          "options": [
-            {
-              "value": "default",
-              "label": "Default"
-            },
-            {
-              "value": "heading-1",
-              "label": "h1"
-            },
-            {
-              "value": "h2",
-              "label": "h2"
-            },
-            {
-              "value": "heading-3",
-              "label": "h3"
-            },
-            {
-              "value": "heading-5",
-              "label": "h5"
-            }
-          ],
-          "default": "default",
-          "label": "Description size"
         },
         {
           "type": "checkbox",
