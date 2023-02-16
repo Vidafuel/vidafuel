@@ -29,6 +29,17 @@
   if section.settings.col_img_left_align
     assign imageLeftAlignCLASS = ' left-align'
   endif
+  
+  # COLUMN custom text color
+  if section.settings.column_custom_text_color
+    assign columnCustomTextColorCLASS = ' column-custom-text-color'
+    if section.settings.column_heading_color != '#000000'
+      assign columnTitleColorCLASS = 'title-color-custom'
+      assign columnHeadingClasses = ' ' | append: section.settings.column_heading_color
+    endif
+  else
+    assign columnCustomTextColorCLASS = ''
+  endif 
 
   # COLUMN heading size
   if section.settings.column_heading_size != 'default' 
@@ -49,15 +60,7 @@
     case block.type
       when 'column'
         assign imgID = 'col-' | append: forloop.index
-        assign columnHeadingClasses = ''
         
-        if block.settings.column_title_color != '#000000'
-          assign columnTitleColorCLASS = 'title-color-custom'
-          assign columnHeadingClasses = columnHeadingClasses | append: ' ' | append: columnTitleColorCLASS
-        endif
-        if block.settings.column_custom_text_color
-          assign columnCustomTextColorCLASS = ' column-custom-text-color'
-        endif 
         # COLUMN custom css
         if block.settings.col_custom_css != empty
           assign columnCustomCSS = block.settings.col_custom_css
@@ -82,12 +85,21 @@
     endcase
   endfor
 %}
-          {% if block.settings.col_custom_css != empty %}
-            <style class="column-custom-css-styles">
-              .column-custom-css {{ columnCustomCSS }}
-            </style>
-          {% endif %}
-          <style class="custom-multicolumn-section-styles">
+          <style class="column-inset-styles">
+            {% if section.settings.column_heading_color != '#000000' %}
+            .title-color-custom {
+                color: {{ section.settings.column_heading_color }};
+              }
+            {% endif %}
+            {% if section.settings.column_description_color != '#000000' %}
+            .column-custom-text-color > * {
+              color: {{ section.settings.column_description_color }};
+            }
+            {% endif %}
+            {% if block.settings.col_custom_css != empty %}
+                {% assign columnCustomCSSClass = ' column-custom-css' %}
+                .column-custom-css {{ columnCustomCSS }}
+            {% endif %}
             {% if section.settings.custom_css_mobile != empty %}
               @media screen and (max-width: 750px) {
                 #shopify-section-{{ section.id }} {{ section.settings.custom_css_mobile }}
@@ -107,7 +119,7 @@
                   fill: {{ block.settings.icon_color }};
                 }
             {% endif %}
-            </style>
+          </style>
           
           {%- if block.settings.text_color_primary -%}
             {% assign textColorPrimary = ' color-foreground-accent-1' %}  
@@ -167,9 +179,9 @@
                   assign columnBorderColor = block.settings.column_border_color
                 endif
                 # COLUMN custom css class
-                if block.settings.col_custom_css != empty
-                  assign columnCustomCSSClass = ' column-custom-css'
-                endif
+                # if block.settings.col_custom_css != empty
+                #   assign columnCustomCSSClass = ' column-custom-css'
+                # endif
               %}
 
             <li class="multicolumn-list__item {% if section.settings.columns != 'default' %} {{ section.settings.columns }}{% endif %} grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{% if block.settings.image_link_url != blank %} full-width-link_container{% endif %}{{ columnCustomCSSClass }}" {{ block.shopify_attributes }}>
@@ -180,16 +192,8 @@
                       assign spaced_image = true
                     endif
                   %}
-                  {% if block.settings.column_title_color != '#000000' %}
-                    <style class="column-inset-styles">
-                      .title-color-custom {
-                        color: {{ block.settings.column_title_color }};
-                      }
-                      .column-custom-text-color {
-                        color: {{ block.settings.column_copy_color }};
-                      }
-                    </style>
-                  {% endif %}
+                
+                  
                   {% comment %} SECTION link {% endcomment %}
                   {% if block.settings.image_link_url != blank %}
                     <a href="{{ block.settings.image_link_url }}" class="full-width-link">
@@ -557,6 +561,24 @@
           "label": "h5"
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "column_custom_text_color",
+      "label": "Column custom text color",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "column_description_color",
+      "label": "Column text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "column_heading_color",
+      "label": "Column heading color",
+      "default": "#000000"
     },
     {
       "type": "select",
@@ -964,24 +986,6 @@
         {
           "type": "header",
           "content": "Column settings"
-        },
-        {
-          "type": "checkbox",
-          "id": "column_custom_text_color",
-          "label": "Column custom text color",
-          "default": false
-        },
-        {
-          "type": "color",
-          "id": "column_copy_color",
-          "label": "Column text color",
-          "default": "#000000"
-        },
-        {
-          "type": "color",
-          "id": "column_title_color",
-          "label": "Column title color",
-          "default": "#000000"
         },
         {
           "type": "color",
