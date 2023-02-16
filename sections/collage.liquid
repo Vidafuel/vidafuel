@@ -173,7 +173,8 @@
             {%- endif -%}
           </div>
 
-        {%- when 'collection'-%}
+        
+          {%- when 'collection'-%}
           <div class="collage-card collage-collection color-{{ block.settings.color_scheme }}{% if focus_card_left %} collage-card--left{% elsif focus_card_right %} collage-card--right{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.collection != blank -%}
                 <a href="{{ block.settings.collection.url }}" class="card animate-arrow">
@@ -381,7 +382,7 @@
             <div class="collage-content collage-card__text-wrapper">
               <div class="card__text-spacing">
                 {%- if block.settings.title != blank -%}
-                  <h2 class="collage-cart__heading">{{ block.settings.title }}</h2>
+                  <h2 class="collage-cart__heading{% if block.settings.heading_size != 'default' %} {{ block.settings.heading_size }}{% endif %}">{{ block.settings.title }}</h2>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="collage-card__text">
@@ -663,6 +664,34 @@
           "type": "text",
           "id": "title",
           "label": "Title"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "heading-1",
+              "label": "h1"
+            },
+            {
+              "value": "heading-2",
+              "label": "h2"
+            },
+            {
+              "value": "heading-3",
+              "label": "h3"
+            },
+            {
+              "value": "heading-5",
+              "label": "h5"
+            }
+          ],
+          "default": "default",
+          "label": "Heading size"
         },
         {
           "type": "textarea",
