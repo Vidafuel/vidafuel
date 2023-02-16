@@ -18,6 +18,7 @@ slider-component {
   .slider.slider--mobile {
     position: relative;
     flex-wrap: inherit;
+    align-items: flex-start;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
