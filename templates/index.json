@@ -77,7 +77,7 @@
         "desktop_no_spacing": true,
         "icon_enable": false,
         "full_width_section": true,
-        "custom_css_mobile": ".background-bk-image {\n    min-height: 30vh;\n}\n.multicolumn-bk-image {\n    transform: translateX(-150px);\n}"
+        "custom_css_mobile": ".background-bk-image {\n    min-height: 36vh;\n}\n.multicolumn-bk-image {\n    transform: translateX(-150px);\n}"
       }
     },
     "37a31859-d026-4732-b82b-1347b5f52e18": {
