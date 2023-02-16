@@ -144,12 +144,12 @@
         "template--17829330583866__9d5b6c17-e9cd-46b4-aff8-1da6fc816219-16751822750b1f4731-2"
       ],
       "settings": {
-        "title": "<strong>Vidafuel Nutrition: The easiest way to nourish your day<\/strong>",
+        "title": "<strong>Vidafuel Nutrition:<br>The easiest way to nourish your day<\/strong>",
         "title_center": true,
         "title_size": "heading-2",
-        "title_color": "#000000",
+        "main_heading_text_color": "#000000",
         "section_height": "xsmall",
-        "column_heading_size": "default",
+        "column_heading_size": "heading-3",
         "column_description_size": "default",
         "column_custom_text_color": false,
         "column_description_color": "#000000",
@@ -298,7 +298,7 @@
         "title": "<strong>Less is more.<\/strong><br><span style=\"font-size: 2rem;\">Vidafuel enables you to boost your daily nutrition in just 2 ounces.<\/span>",
         "title_center": true,
         "title_size": "heading-1",
-        "title_color": "#ffffff",
+        "main_heading_text_color": "#000000",
         "bk_image": "shopify:\/\/shop_images\/less-is-more-background_523d6412-a4f9-4749-9ecf-50e07c12ab8d.webp",
         "section_height": "large",
         "column_heading_size": "default",
@@ -394,7 +394,7 @@
       "settings": {
         "heading": "",
         "video_url": "",
-        "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/88e40cb0-2d32-4645-b4f3-0315277eb94b?autoplay=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"><\/iframe>",
+        "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/88e40cb0-2d32-4645-b4f3-0315277eb94b?autoplay=true&loop=true&muted=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"><\/iframe>",
         "description": "",
         "full_width": true,
         "video_cover": false
@@ -553,7 +553,7 @@
         "title": "<strong>Meet your daily protein booster<\/strong>",
         "title_center": true,
         "title_size": "heading-2",
-        "title_color": "#000000",
+        "main_heading_text_color": "#000000",
         "section_height": "medium",
         "column_heading_size": "default",
         "column_description_size": "default",
