@@ -7,7 +7,6 @@
   assign imageContainCLASS = ''
   assign textColorPrimary = ''
   assign pBullets = ''
-  assign columnHeadingClasses       = ''
   assign imageClass = ''
   assign imageLeftAlignCLASS = ''
   # #
@@ -20,8 +19,8 @@
     assign background_style = section.settings.background_style
   endif
   # SECTION heading color
-  if section.settings.heading_color != "#0000000"
-    assign heading_color_style = 'style="color:' | append: section.settings.heading_color | append: '""' 
+  if section.settings.main_heading_text_color != "#0000000"
+    assign heading_color_style = 'style="color:' | append: section.settings.main_heading_text_color | append: '""' 
   endif
   if section.settings.col_img_contain
     assign imageContainCLASS = 'image-contain'
@@ -35,7 +34,6 @@
     assign columnCustomTextColorCLASS = ' column-custom-text-color'
     if section.settings.column_heading_color != '#000000'
       assign columnTitleColorCLASS = 'title-color-custom'
-      assign columnHeadingClasses = ' ' | append: section.settings.column_heading_color
     endif
   else
     assign columnCustomTextColorCLASS = ''
@@ -333,7 +331,7 @@
                     
                     {% comment %} COLUMN text/description element {% endcomment %}
                     {%- if block.settings.text != blank -%}
-                      <div class="rte{{ textColorPrimary }}{{ pBullets }}{{ columnDescriptionSize }}{{ columnCustomTextColorCLASS }}">
+                      <div class="rte multicolumn-card__info-description{{ textColorPrimary }}{{ pBullets }}{{ columnDescriptionSize }}{{ columnCustomTextColorCLASS }}">
                         {{ block.settings.text }}
                       </div>
                     {%- endif -%}
@@ -465,8 +463,8 @@
     },
     {
       "type": "color",
-      "id": "title_color",
-      "label": "Heading text color",
+      "id": "main_heading_text_color",
+      "label": "Main heading text color",
       "default": "#000000"
     },
     {

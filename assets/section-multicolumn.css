@@ -176,10 +176,6 @@
 	margin-right: 2.5rem;
 }
 
-.multicolumn-card__info > :nth-child(2) {
-	margin-top: 2rem;
-}
-
 .multicolumn-list__item.center .media--adapt,
 .multicolumn-list__item .media--adapt img {
 	width: auto;
@@ -283,6 +279,10 @@
 
 .multicolumn-card__info {
 	padding: 2.5rem 2.5rem;
+}
+
+.multicolumn-card__info-description {
+	margin-top: 0;
 }
 
 .multicolumn-card__info.custom-liquid__info {
