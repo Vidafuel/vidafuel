@@ -50,6 +50,7 @@
     },
     "09ce1af3-7f6f-4041-80cb-67c508a49c9a": {
       "type": "multicolumn",
+      "disabled": true,
       "settings": {
         "title": "",
         "title_center": false,
@@ -80,9 +81,17 @@
         "custom_css_mobile": ".background-bk-image {\n    min-height: 40vh;\n}\n.multicolumn-bk-image {\n    transform: translateX(-190px);\n}"
       }
     },
+    "c6325ea0-a755-4f14-a3a1-77533eef78c0": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n@media screen and (max-width: 749px) {\n#Banner-template--17888246366522__37a31859-d026-4732-b82b-1347b5f52e18 {   \n max-height: 330px;\n}\n#Banner-template--17888246366522__37a31859-d026-4732-b82b-1347b5f52e18 .media > img {\n    object-fit: cover;\n    object-position: 90%;\n}\n}\n\n@media screen and (min-width: 750px) {\n#Banner-template--17888246366522__37a31859-d026-4732-b82b-1347b5f52e18\n.media > img {\nheight: auto;\n}\n}\n\n#shopify-section-template--17888246366522__1641834224a94d856f li.multicolumn-list__item:nth-child(1) .multicolumn-card {\n    border: 2px solid #fff;\n    border-radius: 21px;\n}\n\n<\/style>",
+        "custom_background": false,
+        "background_color": "#ffffff",
+        "page_width": true
+      }
+    },
     "37a31859-d026-4732-b82b-1347b5f52e18": {
       "type": "image-banner",
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein-To-support-muscle-mass-_-strength-joint-_-bone-health-No-artificial-sweeteners-ever-16g-protein-per-2oz-shot-One-shot-per-day-is-all-vou-need-C_c1c0dcfc-4083-4806-9e92-f4782bfd2131.webp",
         "image_height": "large",
@@ -328,7 +337,7 @@
 
       ],
       "settings": {
-        "title": "<strong>Less is more.<\/strong><br><span style=\"font-size: 2rem;\">Vidafuel enables you to boost your daily nutrition in just 2 ounces.<\/span>",
+        "title": "<strong>Less is more.<\/strong><br><span style=\"font-size: 1.75rem; line-height: 10px;\">Vidafuel enables you to boost your daily nutrition in just 2 ounces.<\/span>",
         "title_center": true,
         "title_size": "heading-1",
         "main_heading_text_color": "#000000",
@@ -610,21 +619,12 @@
         "full_width_section": true,
         "custom_css_mobile": ".multicolumn-list__item:nth-of-type(2) {\n    display: none;\n}"
       }
-    },
-    "c6325ea0-a755-4f14-a3a1-77533eef78c0": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<style>\n\/*\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -20px;\n    transform: translateX(-145px);\n    width: 100%;\n    font-size: 14px;\n}\n*\/\nli.multicolumn-list__item:nth-last-of-type(2) {\n    position: relative;\n    overflow-x: visible;\n}\n@media screen and (min-width: 750px) {\n\/*\nli.multicolumn-list__item:nth-last-of-type(2) .multicolumn-card__image-wrapper:after {\n    content: \"*artificial sweeteners\";\n    position: absolute;\n    bottom: -33px;\n    transform: translateX(-150px)\n}\n*\/\n}\n\/*\nli.multicolumn-list__item:nth-child(n + 2) .column-custom-text-color {\n    color: dimgrey !important;\n}\n*\/\n#shopify-section-template--17888246366522__1641834224a94d856f li.multicolumn-list__item:nth-child(1) .multicolumn-card {\n    border: 2px solid #fff;\n    border-radius: 21px;\n}\n\n<\/style>",
-        "custom_background": false,
-        "background_color": "#ffffff",
-        "page_width": false
-      }
     }
   },
   "order": [
     "16420790196f1cba40",
     "09ce1af3-7f6f-4041-80cb-67c508a49c9a",
+    "c6325ea0-a755-4f14-a3a1-77533eef78c0",
     "37a31859-d026-4732-b82b-1347b5f52e18",
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219",
     "1641834224a94d856f",
@@ -633,7 +633,6 @@
     "bbb28046-9da0-414e-9315-b719dba86fce",
     "16420895372c7ae66d",
     "770c828d-39df-4a2a-ae1f-0c8051b01d55",
-    "1639505258119ea558",
-    "c6325ea0-a755-4f14-a3a1-77533eef78c0"
+    "1639505258119ea558"
   ]
 }
