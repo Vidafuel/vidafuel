@@ -7,7 +7,7 @@
           "type": "text",
           "settings": {
             "title": "<strong>High quality nutrition is now possible in a 2oz shot<\/strong>",
-            "heading_size": "default",
+            "heading_size": "heading-2",
             "text": "The easiest way to nourish your day",
             "button_label": "Shop Now",
             "button_link": "\/products",
@@ -48,17 +48,50 @@
         "full_width": true
       }
     },
+    "09ce1af3-7f6f-4041-80cb-67c508a49c9a": {
+      "type": "multicolumn",
+      "settings": {
+        "title": "",
+        "title_center": false,
+        "title_size": "default",
+        "main_heading_text_color": "#000000",
+        "bk_image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein-To-support-muscle-mass-_-strength-joint-_-bone-health-No-artificial-sweeteners-ever-16g-protein-per-2oz-shot-One-shot-per-day-is-all-vou-need-C_c1c0dcfc-4083-4806-9e92-f4782bfd2131.webp",
+        "section_height": "large",
+        "column_heading_size": "default",
+        "column_description_size": "default",
+        "column_custom_text_color": false,
+        "column_description_color": "#000000",
+        "column_heading_color": "#000000",
+        "image_width": "full",
+        "col_img_contain": true,
+        "col_img_left_align": true,
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "columns": "default",
+        "background_style": "primary",
+        "card_bk_none": true,
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true,
+        "vertical_alignment": "flex-align-end",
+        "desktop_no_spacing": true,
+        "icon_enable": false,
+        "full_width_section": true,
+        "custom_css_mobile": ".background-bk-image {\n    min-height: 30vh;\n}\n.multicolumn-bk-image {\n    transform: translateX(-150px);\n}"
+      }
+    },
     "37a31859-d026-4732-b82b-1347b5f52e18": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein-To-support-muscle-mass-_-strength-joint-_-bone-health-No-artificial-sweeteners-ever-16g-protein-per-2oz-shot-One-shot-per-day-is-all-vou-need-C.webp",
-        "image_height": "medium",
-        "adapt_height_first_image": true,
+        "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein-To-support-muscle-mass-_-strength-joint-_-bone-health-No-artificial-sweeteners-ever-16g-protein-per-2oz-shot-One-shot-per-day-is-all-vou-need-C_c1c0dcfc-4083-4806-9e92-f4782bfd2131.webp",
+        "image_height": "large",
+        "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": false,
         "image_overlay_opacity": 0,
         "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
+        "stack_images_on_mobile": false,
         "show_text_position": "default"
       }
     },
@@ -591,6 +624,7 @@
   },
   "order": [
     "16420790196f1cba40",
+    "09ce1af3-7f6f-4041-80cb-67c508a49c9a",
     "37a31859-d026-4732-b82b-1347b5f52e18",
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219",
     "1641834224a94d856f",
