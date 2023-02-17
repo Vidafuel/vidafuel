@@ -56,8 +56,8 @@
   for block in section.blocks
     case block.type
       when 'column'
-        assign imgID = 'col-' | append: forloop.index
-        
+        assign columnID = 'col-' | append: forloop.index
+
         # COLUMN custom css
         if block.settings.col_custom_css != empty
         endif
@@ -118,6 +118,7 @@
           {% case block.type %}
             {% when 'column' %}
               {% liquid
+                
                 if block.settings.image_max_height != 0
                   assign imageClass = 'custom-height-image'
                   assign imageHeight = block.settings.image_max_height
@@ -188,7 +189,7 @@
                               height="{{ block.settings.image_mobile.height }}"
                               width="{{ block.settings.image_mobile.width }}"
                               loading="lazy"
-                              class="multicolumn-image {{ imgID }} {{ imageClass }} {{ imageContainCLASS }}{{ imageLeftAlignCLASS }}"
+                              class="multicolumn-image {{ columnID }} {{ imageClass }} {{ imageContainCLASS }}{{ imageLeftAlignCLASS }}"
                               style="max-height:{{ imageHeight }}px;"
                             >
                         </div>
@@ -214,7 +215,7 @@
                               height="{{ block.settings.image.height }}"
                               width="{{ block.settings.image.width }}"
                               loading="lazy"
-                              class="multicolumn-image {{ imgID }} {{ imageClass }} {{ imageContainCLASS }}{{ imageLeftAlignCLASS }}"
+                              class="multicolumn-image {{ columnID }} {{ imageClass }} {{ imageContainCLASS }}{{ imageLeftAlignCLASS }}"
                               style="max-height:{{ imageHeight }}px;"
                             >
                         </div>
@@ -226,8 +227,9 @@
                     {% endif %}
                   </div>
                 {%- endif -%}
+                
                 {% if block.settings.title != blank or block.settings.title_image != blank or block.settings.text != blank %}
-                  <div class="multicolumn-card__info{% if block.settings.custom_liquid != blank %} custom-liquid__info{% endif %}">
+                  <div class="multicolumn-card__info{% if block.settings.custom_liquid != blank %} custom-liquid__info{% endif %} {{ block.settings.column_text_alignment }}">
                     
                     {% comment %} ICON div {% endcomment %}
                     {% if section.settings.icon_enable %}
@@ -360,12 +362,12 @@
     </div>
   </div>
 </div>
-{{ section.settings.column_descrip_color }}
+
 <style class="column-inset-styles">
   #shopify-section-{{ section.id }} .column-heading-color {
       color: {{ section.settings.column_heading_color }};
     }
-
+  
   {% if section.settings.column_descrip_color != '#000000' %}
   .column-descrip-color > * {
     color: {{ section.settings.column_descrip_color }};
@@ -908,6 +910,26 @@
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "label": "t:sections.multicolumn.blocks.column.settings.text.label",
           "info": "Formatting tip on the description: Pressing Shift-Enter will go down a line, and will not create the gap between two lines like Enter does because Shift-Enter does not create a new paragraph."
+        },
+        {
+          "type": "select",
+          "id": "column_text_alignment",
+          "label": "Column text alignment",
+          "default": "center",
+          "options": [
+            {
+              "label": "Left",
+              "value": "left"
+            },
+            {
+              "label": "Center",
+              "value": "center"
+            },
+            {
+              "label": "Right",
+              "value": "right"
+            }
+          ]
         },
         {
           "type": "header",
