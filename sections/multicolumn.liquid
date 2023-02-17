@@ -155,7 +155,7 @@
               %}
 
             <li class="multicolumn-list__item {% if section.settings.columns != 'default' %} {{ section.settings.columns }}{% endif %} grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{% if block.settings.image_link_url != blank %} full-width-link_container{% endif %}{{ columnCustomCSSClass }}" {{ block.shopify_attributes }}>
-              <div class="multicolumn-card{% if section.settings.card_bk_none %} multicolumn-card-bk_none{% endif %}{% if block.settings.col_content_reverse %} multicolumn__col-reverse{% endif %} flex-align-{{ block.settings.column_elements_alignment }}" {% if block.settings.column_border_color_enable %}style="border: 3px solid {{ columnBorderColor }};border-radius: 6px;"{% endif %}>
+              <div class="multicolumn-card{% if section.settings.card_bk_none %} multicolumn-card-bk_none{% endif %}{% if block.settings.col_content_reverse %} multicolumn__col-reverse{% endif %} flex-align-{{ block.settings.column_elements_alignment }}" {% if block.settings.column_border_color_enable %}style="border: 2px solid {{ columnBorderColor }};border-radius: 6px;"{% endif %}>
                 {%- if block.settings.image != blank -%}
                   {% liquid
                     if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' 
