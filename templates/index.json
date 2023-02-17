@@ -632,7 +632,6 @@
     },
     "16420895372c7ae66d": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" data-header-customisation-enabled=\"1\"\n    data-header-customisation-color=\"#cddb00\" data-header-customisation-font-size=\"18\"\n    data-header-customisation-text=\"LOVED &amp; TRUSTED BY THOUSANDS OF CUSTOMERS\"\n    data-header-customisation-alignment=\"left\" data-background-color=\"transparent\" data-mode=\"top_rated\"\n    data-type=\"both\" data-count=\"9\" data-show-bottomline=\"1\" data-show-navigation=\"1\">&nbsp;<\/div>",
         "custom_background": true,
