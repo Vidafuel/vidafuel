@@ -30,15 +30,14 @@
   endif
   
   # COLUMN custom text color
-  if section.settings.column_custom_text_color
-    assign columnCustomTextColorCLASS = ' column-custom-text-color'
-    if section.settings.column_heading_color != '#000000'
-      assign columnTitleColorCLASS = 'title-color-custom'
-    endif
+  if section.settings.column_custom_text_color == true
+    assign columnHeadingColorCLASS = ' column-heading-color'
+    assign columnDescripColorCLASS = ' column-descrip-color'
   else
-    assign columnCustomTextColorCLASS = ''
+    assign columnHeadingColorCLASS = ''
+    assign columnDescripColorCLASS = ''
   endif 
-
+  
   # COLUMN heading size
   if section.settings.column_heading_size != 'default' 
     assign columnHeadingSize = section.settings.column_heading_size 
@@ -66,16 +65,6 @@
         if block.settings.p_bullets
           assign pBullets = ' p_bullets'
         endif
-        
-        
-        
-
-        
-        
-        # COLUMN description text font
-        # if block.settings.text_font != 'default'
-        #   assign textFont = block.settings.text_font
-        # endif
         if block.settings.column_border_color_enable
           assign columnsPadding = ' column-border-padding'
         endif
@@ -156,7 +145,7 @@
                   
                   {% comment %} SECTION title {% endcomment %}
                   {%- if block.settings.title != blank and block.settings.title_top -%}
-                    <h3 class="title-wrapper {{ columnTitleColorCLASS }}">
+                    <h3 class="title-wrapper">
                       {{ block.settings.title }}
                     </h3>
                   {%- endif -%}
@@ -257,9 +246,9 @@
                       {% endif %}
                     {%- endif -%}
                     
-                      {% comment %} TITLE element {% endcomment %}
+                      {% comment %} COLUMN title element {% endcomment %}
                       {%- if block.settings.title != blank -%}
-                          <h3 class="{{ columnHeadingSize }}{{ columnTitleColorCLASS }}">
+                          <h3 class="{{ columnHeadingSize }}{{ columnHeadingColorCLASS }}">
                           {{ block.settings.title }}
                         </h3>
                       {%- endif -%}
@@ -288,7 +277,7 @@
                     
                     {% comment %} COLUMN text/description element {% endcomment %}
                     {%- if block.settings.text != blank -%}
-                      <div class="rte multicolumn-card__info-description{{ textColorPrimary }}{{ pBullets }}{{ columnDescriptionSize }}{{ columnCustomTextColorCLASS }}">
+                      <div class="rte multicolumn-card__info-description{{ textColorPrimary }}{{ pBullets }}{{ columnDescriptionSize }}{{ columnDescripColorCLASS }}">
                         {{ block.settings.text }}
                       </div>
                     {%- endif -%}
@@ -371,16 +360,15 @@
     </div>
   </div>
 </div>
-
+{{ section.settings.column_descrip_color }}
 <style class="column-inset-styles">
-  {% if section.settings.column_heading_color != '#000000' %}
-  .title-color-custom {
+  #shopify-section-{{ section.id }} .column-heading-color {
       color: {{ section.settings.column_heading_color }};
     }
-  {% endif %}
-  {% if section.settings.column_description_color != '#000000' %}
-  .column-custom-text-color > * {
-    color: {{ section.settings.column_description_color }};
+
+  {% if section.settings.column_descrip_color != '#000000' %}
+  .column-descrip-color > * {
+    color: {{ section.settings.column_descrip_color }};
   }
   {% endif %}
 
@@ -398,7 +386,7 @@
     .{{ section.id }} .p_bullets p::before {
       background: {{ block.settings.p_bullets_color }};
     }
-    .{{ columnCustomTextColorCLASS }} {
+    .{{ columnDescripColorCLASS }} {
       color: p_bullets_color_text;
     }
   {% endif %}
@@ -566,7 +554,7 @@
     },
     {
       "type": "color",
-      "id": "column_description_color",
+      "id": "column_descrip_color",
       "label": "Column text color",
       "default": "#000000"
     },
