@@ -512,7 +512,7 @@
         "desktop_no_spacing": true,
         "icon_enable": false,
         "page_width": "page-width",
-        "custom_css": "",
+        "custom_css": "#shopify-section-{{ section.id }} .multicolumn-list {\n    justify-content: center;\n}",
         "custom_css_mobile": ""
       }
     },
