@@ -90,8 +90,8 @@
     loading="lazy"
   >
   {% endif %}
-  <div {% if section.settings.full_width_section != true %}class="page-width"{% endif %}>
-    <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.full_width_section %}--full-width{% else %}{% endif %} {% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
+  <div class="{{ section.settings.page_width }}">
+    <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.page_width == 'full-width' %}--full-width{% endif %} {% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
       <h2 class="title{% if section.settings.title_center %} center{% endif %}{% if section.settings.title_size != 'default' %} {{ section.settings.title_size }}{% endif %}" {{ heading_color_style }}>
         {{ section.settings.title }}
       </h2>
@@ -100,7 +100,7 @@
       {%- endif -%}
     </div>
     <slider-component class="slider-mobile-gutter">
-      <ul class="multicolumn-list {% if section.settings.full_width_section %}full-width {% endif %}{{ section.settings.vertical_alignment }} grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %} {{ section.id }}{{ columnsPadding }}"
+      <ul class="multicolumn-list {% if section.settings.page_width == 'full-width' %}full-width {% endif %}{{ section.settings.vertical_alignment }} grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %} {{ section.id }}{{ columnsPadding }}"
         id="Slider-{{ section.id }}"
         role="list"
       >
@@ -156,7 +156,7 @@
                     </a>
                   {% endif %}
                   
-                  {% if spaced_image and section.settings.full_width_section %}
+                  {% if spaced_image and section.settings.page_width == 'full-width' %}
                     {% assign spacing = '' %}
                   {% elsif section.settings.image_width != 'full' or spaced_image %}
                     {% assign spacing = 'multicolumn-card-spacing' %}
@@ -742,10 +742,24 @@
       "info": "Assign the icon in each added column."
     },
     {
-      "type": "checkbox",
-      "id": "full_width_section",
-      "label": "Full width section",
-      "default": false
+      "type": "select",
+      "id": "page_width",
+      "label": "Page width",
+      "default": "page-width",
+      "options": [
+        {
+          "label": "Page width",
+          "value": "page-width"
+        },
+        {
+          "label": "Page width small",
+          "value": "page-width-small"
+        },
+        {
+          "label": "Full width",
+          "value": "full-width"
+        }
+      ]
     },
     {
       "type": "liquid",

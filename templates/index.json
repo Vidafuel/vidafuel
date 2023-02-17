@@ -55,6 +55,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/arrow-down-right_784bc221-02d1-4211-98dc-a9597b87d0c6.webp",
+            "image_mobile": "shopify:\/\/shop_images\/arrow-down-right_784bc221-02d1-4211-98dc-a9597b87d0c6.webp",
             "image_link_url": "",
             "image_max_height": 150,
             "title": "<p><strong>Powerful blend of whey + collagen protein<\/strong><\/p>",
@@ -105,10 +106,37 @@
             "text_color_primary": false
           }
         },
-        "6ab0fc8a-11a8-4d0e-8c5f-0bc19c9a5172": {
+        "b64643d5-80dc-45b5-a275-aebcff048fb4": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/arrow-up-right_c80c4c8d-1059-4af4-a7e3-6f9fb66ed4c5.webp",
+            "image_link_url": "",
+            "image_max_height": 150,
+            "title": "<p><strong>No artificial sweeteners, ever<\/strong><\/p>",
+            "icon": "none",
+            "text": "",
+            "column_text_alignment": "left",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "6ab0fc8a-11a8-4d0e-8c5f-0bc19c9a5172": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/arrow-up-left_c0f486f8-5f75-4e21-a19d-ee0cbdbe8c3a.webp",
             "image_link_url": "",
             "image_max_height": 150,
             "title": "<p><strong>Contains all 20 amino acids<\/strong><\/p>",
@@ -131,47 +159,20 @@
             "icon_color": "#cdda01",
             "text_color_primary": false
           }
-        },
-        "b64643d5-80dc-45b5-a275-aebcff048fb4": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/arrow-up-left_c0f486f8-5f75-4e21-a19d-ee0cbdbe8c3a.webp",
-            "image_link_url": "",
-            "image_max_height": 150,
-            "title": "<p><strong>No artificial sweeteners, ever<\/strong><\/p>",
-            "icon": "none",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "column_text_alignment": "left",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_icon_color_custom": "#000000",
-            "column_border_color_enable": false,
-            "column_border_color": "#ffffff",
-            "title_top": false,
-            "col_content_reverse": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "icon_color": "#cdda01",
-            "text_color_primary": false
-          }
         }
       },
       "block_order": [
         "2f23c9c4-c202-497e-b91d-cb61288a282c",
         "0cb6dff4-9fec-46d2-829d-a4b88d393f2b",
-        "6ab0fc8a-11a8-4d0e-8c5f-0bc19c9a5172",
-        "b64643d5-80dc-45b5-a275-aebcff048fb4"
+        "b64643d5-80dc-45b5-a275-aebcff048fb4",
+        "6ab0fc8a-11a8-4d0e-8c5f-0bc19c9a5172"
       ],
       "settings": {
         "title": "<strong>Meet your daily protein booster<\/strong>",
         "title_center": true,
         "title_size": "heading-2",
         "main_heading_text_color": "#000000",
-        "bk_image": "shopify:\/\/shop_images\/vidafuel-powerful-shot-centered.webp",
+        "bk_image": "shopify:\/\/shop_images\/vidafuel-powerful-shot-centered-2.webp",
         "section_height": "large",
         "column_heading_size": "heading-3",
         "column_description_size": "default",
@@ -180,9 +181,9 @@
         "column_heading_color": "#7bccc8",
         "image_width": "full",
         "col_img_contain": true,
-        "col_img_left_align": true,
+        "col_img_left_align": false,
         "image_ratio": "adapt",
-        "column_alignment": "center",
+        "column_alignment": "left",
         "columns": "default",
         "background_style": "primary",
         "card_bk_none": true,
@@ -192,8 +193,8 @@
         "vertical_alignment": "flex-align-end",
         "desktop_no_spacing": true,
         "icon_enable": false,
-        "full_width_section": false,
-        "custom_css": "#shopify-section-{{ section.id }} .multicolumn-bk-image \n{\n    bottom: unset;\n    top: 0;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list__item .multicolumn-card\n{\n  display: flex;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__info \n{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    flex: 0 0 60%;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__image-wrapper\n{\n    display: flex;\n    flex: 0 1 40%;\n    flex-direction: column;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list__item:nth-child(odd) .multicolumn-card__image-wrapper {\n    order: 2;\n}\n\n\/* BACKGROUND COLORS dev \n#shopify-section-{{ section.id }} .multicolumn-card__image-wrapper {\n    background: red;\n}\n#shopify-section-{{ section.id }} .multicolumn-card__info {\n  background: yellow;\n}\n*\/",
+        "page_width": "page-width-small",
+        "custom_css": "#shopify-section-{{ section.id }} .multicolumn-bk-image \n{\n    bottom: unset;\n    top: 0;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list {\n    align-items: start;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list__item .multicolumn-card\n{\n  display: flex;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__info \n{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    flex: 0 0 60%;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__image-wrapper\n{\n    display: flex;\n    flex: 0 1 40%;\n    flex-direction: column;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list__item:nth-child(odd) .multicolumn-card__image-wrapper {\n    order: 2;\n}\n\n\/* BACKGROUND COLORS dev \n#shopify-section-{{ section.id }} .multicolumn-card__image-wrapper {\n    background: red;\n}\n#shopify-section-{{ section.id }} .multicolumn-card__info {\n  background: yellow;\n}\n*\/",
         "custom_css_mobile": ".background-bk-image {\n    min-height: 40vh;\n}\n.multicolumn-bk-image {\n    transform: translateX(-190px);\n}"
       }
     },
@@ -329,7 +330,7 @@
         "vertical_alignment": "flex-align-normal",
         "desktop_no_spacing": true,
         "icon_enable": true,
-        "full_width_section": false,
+        "page_width": "page-width",
         "custom_css": "",
         "custom_css_mobile": ".multicolumn.desktop_no_spacing {\n    padding-bottom: 0;\n}"
       }
@@ -486,7 +487,7 @@
         "vertical_alignment": "flex-align-end",
         "desktop_no_spacing": true,
         "icon_enable": false,
-        "full_width_section": false,
+        "page_width": "page-width",
         "custom_css": "",
         "custom_css_mobile": ""
       }
@@ -743,7 +744,7 @@
         "vertical_alignment": "flex-align-center",
         "desktop_no_spacing": false,
         "icon_enable": false,
-        "full_width_section": true,
+        "page_width": "page-width",
         "custom_css": "",
         "custom_css_mobile": ".multicolumn-list__item:nth-of-type(2) {\n    display: none;\n}"
       }
