@@ -236,7 +236,7 @@
 	}
 
 	.grid--2-col-tablet .multicolumn-list__item.four {
-		max-width: 25%;
+		max-width: 20%;
 	}
 
 	.background-none .grid--2-col-tablet .multicolumn-list__item {
@@ -572,9 +572,6 @@
 
 @media screen and (max-width: 749px) {
 	.multicolumn-bk-image__desktop {
-		display: none;
-	}
-	.multicolumn-bk-image__mobile {
 		display: none;
 	}
 }
