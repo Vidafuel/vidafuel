@@ -180,7 +180,7 @@
         "title_size": "heading-2",
         "main_heading_text_color": "#000000",
         "bk_image": "shopify:\/\/shop_images\/vidafuel-powerful-shot-centered-4.webp",
-        "bk_image_mobile": "shopify:\/\/shop_images\/vidafuel-powerful-shot-centered-mobile-5.png",
+        "bk_image_mobile": "shopify:\/\/shop_images\/vidafuel-powerful-shot-centered-mobile-7.webp",
         "section_height": "large",
         "column_heading_size": "heading-3",
         "column_description_size": "heading-3",
@@ -488,7 +488,7 @@
         "h2.title.center.heading-1 {line-height: 30px;}"
       ],
       "settings": {
-        "title": "<strong>Less is more.<\/strong><br><br><span style=\"font-size: 1.75rem; line-height: 10px;\">Vidafuel enables you to boost your daily nutrition in just 2 ounces.<\/span>",
+        "title": "<strong>Less is more.<\/strong><br><br><span style=\"font-size: 1.75rem; line-height: 10px;\">A quicker & easier way to boost your daily nutrition.<\/span>",
         "title_center": true,
         "title_size": "heading-1",
         "main_heading_text_color": "#000000",
@@ -544,7 +544,7 @@
         "847081ef-8696-42f1-ad5e-a315d489674c"
       ],
       "custom_css": [
-
+        ".image-with-text__title {padding: 0 1rem;}"
       ],
       "settings": {
         "heading": "<center><strong><em>Developed by dietitians<\/em> to deliver essential nutrients<br>when you need them most<\/strong><\/center>",
