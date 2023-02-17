@@ -54,7 +54,9 @@
         "2f23c9c4-c202-497e-b91d-cb61288a282c": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/arrow-down-right_784bc221-02d1-4211-98dc-a9597b87d0c6.webp",
             "image_link_url": "",
+            "image_max_height": 150,
             "title": "<p>Powerful blend of whey + collagen protein<\/p>",
             "icon": "check_mark",
             "text": "<p>To support muscle mass & strength, join & bone health<\/p>",
@@ -78,7 +80,9 @@
         "0cb6dff4-9fec-46d2-829d-a4b88d393f2b": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/arrow-down-left_98ff4b39-e605-4080-bdbf-b0367f721a22.webp",
             "image_link_url": "",
+            "image_max_height": 150,
             "title": "<p>16g protein per 20z shot<\/p>",
             "icon": "check_mark",
             "text": "<p>One shot per day is all you need!<\/p>",
@@ -102,7 +106,9 @@
         "6ab0fc8a-11a8-4d0e-8c5f-0bc19c9a5172": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/arrow-up-right_c80c4c8d-1059-4af4-a7e3-6f9fb66ed4c5.webp",
             "image_link_url": "",
+            "image_max_height": 150,
             "title": "<p>Contains all 20 amino acids<\/p>",
             "icon": "check_mark",
             "text": "<p>To support energy production, immune function, and nutrient absorption.<\/p>",
@@ -126,7 +132,9 @@
         "b64643d5-80dc-45b5-a275-aebcff048fb4": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/arrow-up-left_c0f486f8-5f75-4e21-a19d-ee0cbdbe8c3a.webp",
             "image_link_url": "",
+            "image_max_height": 150,
             "title": "<p>No artificial sweeteners, ever<\/p>",
             "icon": "check_mark",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -181,7 +189,7 @@
         "desktop_no_spacing": true,
         "icon_enable": false,
         "full_width_section": false,
-        "custom_css": "#shopify-section-{{ section.id }} .multicolumn-bk-image \n{\n    bottom: unset;\n    top: 0;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list__item .multicolumn-card\n{\n  display: flex;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__info \n{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    flex: 0 0 60%;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__image-wrapper\n{\n    display: flex;\n    flex: 0 1 40%;\n    flex-direction: column;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list__item:nth-child(odd) .multicolumn-card__image-wrapper {\n    border: 8px solid blue;\n    order: 2;\n}\n\n\/* BACKGROUND COLORS dev \n#shopify-section-{{ section.id }} .multicolumn-card__image-wrapper {\n    background: red;\n}\n#shopify-section-{{ section.id }} .multicolumn-card__info {\n  background: yellow;\n}\n*\/",
+        "custom_css": "#shopify-section-{{ section.id }} .multicolumn-bk-image \n{\n    bottom: unset;\n    top: 0;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list__item .multicolumn-card\n{\n  display: flex;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__info \n{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    flex: 0 0 60%;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__image-wrapper\n{\n    display: flex;\n    flex: 0 1 40%;\n    flex-direction: column;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list__item:nth-child(odd) .multicolumn-card__image-wrapper {\n    order: 2;\n}\n\n\/* BACKGROUND COLORS dev \n#shopify-section-{{ section.id }} .multicolumn-card__image-wrapper {\n    background: red;\n}\n#shopify-section-{{ section.id }} .multicolumn-card__info {\n  background: yellow;\n}\n*\/",
         "custom_css_mobile": ".background-bk-image {\n    min-height: 40vh;\n}\n.multicolumn-bk-image {\n    transform: translateX(-190px);\n}"
       }
     },
