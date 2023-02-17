@@ -50,13 +50,116 @@
     },
     "09ce1af3-7f6f-4041-80cb-67c508a49c9a": {
       "type": "multicolumn",
-      "disabled": true,
+      "blocks": {
+        "2f23c9c4-c202-497e-b91d-cb61288a282c": {
+          "type": "column",
+          "settings": {
+            "image_link_url": "",
+            "title": "<p>Powerful blend of whey + collagen protein<\/p>",
+            "icon": "check_mark",
+            "text": "<p>To support muscle mass & strength, join & bone health<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "0cb6dff4-9fec-46d2-829d-a4b88d393f2b": {
+          "type": "column",
+          "settings": {
+            "image_link_url": "",
+            "title": "<p>16g protein per 20z shot<\/p>",
+            "icon": "check_mark",
+            "text": "<p>One shot per day is all you need!<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "6ab0fc8a-11a8-4d0e-8c5f-0bc19c9a5172": {
+          "type": "column",
+          "settings": {
+            "image_link_url": "",
+            "title": "<p>Contains all 20 amino acids<\/p>",
+            "icon": "check_mark",
+            "text": "<p>To support energy production, immune function, and nutrient absorption.<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "b64643d5-80dc-45b5-a275-aebcff048fb4": {
+          "type": "column",
+          "settings": {
+            "image_link_url": "",
+            "title": "<p>No artificial sweeteners, ever<\/p>",
+            "icon": "check_mark",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        }
+      },
+      "block_order": [
+        "2f23c9c4-c202-497e-b91d-cb61288a282c",
+        "0cb6dff4-9fec-46d2-829d-a4b88d393f2b",
+        "6ab0fc8a-11a8-4d0e-8c5f-0bc19c9a5172",
+        "b64643d5-80dc-45b5-a275-aebcff048fb4"
+      ],
       "settings": {
         "title": "",
         "title_center": false,
         "title_size": "default",
         "main_heading_text_color": "#000000",
-        "bk_image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein-To-support-muscle-mass-_-strength-joint-_-bone-health-No-artificial-sweeteners-ever-16g-protein-per-2oz-shot-One-shot-per-day-is-all-vou-need-C_c1c0dcfc-4083-4806-9e92-f4782bfd2131.webp",
+        "bk_image": "shopify:\/\/shop_images\/vidafuel-powerful-shot-centered.webp",
         "section_height": "large",
         "column_heading_size": "default",
         "column_description_size": "default",
@@ -77,7 +180,8 @@
         "vertical_alignment": "flex-align-end",
         "desktop_no_spacing": true,
         "icon_enable": false,
-        "full_width_section": true,
+        "full_width_section": false,
+        "custom_css": "#shopify-section-{{ section.id }} .multicolumn-bk-image \n{\n    bottom: unset;\n    top: 0;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list__item .multicolumn-card\n{\n  display: flex;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__info \n{\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    flex: 0 0 60%;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__image-wrapper\n{\n    display: flex;\n    flex: 0 1 40%;\n    flex-direction: column;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list__item:nth-child(odd) .multicolumn-card__image-wrapper {\n    border: 8px solid blue;\n    order: 2;\n}\n\n\/* BACKGROUND COLORS dev \n#shopify-section-{{ section.id }} .multicolumn-card__image-wrapper {\n    background: red;\n}\n#shopify-section-{{ section.id }} .multicolumn-card__info {\n  background: yellow;\n}\n*\/",
         "custom_css_mobile": ".background-bk-image {\n    min-height: 40vh;\n}\n.multicolumn-bk-image {\n    transform: translateX(-190px);\n}"
       }
     },
@@ -211,6 +315,7 @@
         "desktop_no_spacing": true,
         "icon_enable": true,
         "full_width_section": false,
+        "custom_css": "",
         "custom_css_mobile": ".multicolumn.desktop_no_spacing {\n    padding-bottom: 0;\n}"
       }
     },
@@ -363,6 +468,7 @@
         "desktop_no_spacing": true,
         "icon_enable": false,
         "full_width_section": false,
+        "custom_css": "",
         "custom_css_mobile": ""
       }
     },
@@ -617,6 +723,7 @@
         "desktop_no_spacing": false,
         "icon_enable": false,
         "full_width_section": true,
+        "custom_css": "",
         "custom_css_mobile": ".multicolumn-list__item:nth-of-type(2) {\n    display: none;\n}"
       }
     }
