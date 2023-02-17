@@ -82,42 +82,7 @@
     endcase
   endfor
 %}
-          <style class="column-inset-styles">
-            {% if section.settings.column_heading_color != '#000000' %}
-            .title-color-custom {
-                color: {{ section.settings.column_heading_color }};
-              }
-            {% endif %}
-            {% if section.settings.column_description_color != '#000000' %}
-            .column-custom-text-color > * {
-              color: {{ section.settings.column_description_color }};
-            }
-            {% endif %}
-          
-            {% if section.settings.custom_css_mobile != empty %}
-              @media screen and (max-width: 749px) {
-                #shopify-section-{{ section.id }} {{ section.settings.custom_css_mobile }}
-              }
-            {% endif %}
-            {% if block.settings.p_bullets %}
 
-              .{{ section.id }} .p_bullets p::before {
-                background: {{ block.settings.p_bullets_color }};
-              }
-              .{{ columnCustomTextColorCLASS }} {
-                color: p_bullets_color_text;
-              }
-            {% endif %}
-            {% if block.settings.icon_color != '#cdda01' %}
-                .{{ section.id }} .icon {
-                  fill: {{ block.settings.icon_color }};
-                }
-            {% endif %}
-          </style>
-          
-          {%- if block.settings.text_color_primary -%}
-            {% assign textColorPrimary = ' color-foreground-accent-1' %}  
-          {%- endif -%}
 
 <div class="multicolumn background-{{ background_style }} multicolumn--{{ section.settings.section_height }} {% if section.settings.background_style == 'gradient-1' %} gradient color-accent-1{% elsif section.settings.background_style == 'gradient-2' %} gradient color-accent-2{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}">
   {% if section.settings.bk_image != blank %}
@@ -172,10 +137,6 @@
                 if block.settings.column_border_color_enable
                   assign columnBorderColor = block.settings.column_border_color
                 endif
-                # COLUMN custom css class
-                # if block.settings.col_custom_css != empty
-                #   assign columnCustomCSSClass = ' column-custom-css'
-                # endif
               %}
 
             <li class="multicolumn-list__item {% if section.settings.columns != 'default' %} {{ section.settings.columns }}{% endif %} grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{% if block.settings.image_link_url != blank %} full-width-link_container{% endif %}{{ columnCustomCSSClass }}" {{ block.shopify_attributes }}>
@@ -410,6 +371,47 @@
     </div>
   </div>
 </div>
+
+<style class="column-inset-styles">
+  {% if section.settings.column_heading_color != '#000000' %}
+  .title-color-custom {
+      color: {{ section.settings.column_heading_color }};
+    }
+  {% endif %}
+  {% if section.settings.column_description_color != '#000000' %}
+  .column-custom-text-color > * {
+    color: {{ section.settings.column_description_color }};
+  }
+  {% endif %}
+
+  {% if section.settings.custom_css != empty %}
+    @media screen and (min-width: 750px) {
+      {{ section.settings.custom_css }}
+    }
+  {% endif %}
+  {% if section.settings.custom_css_mobile != empty %}
+    @media screen and (max-width: 749px) {
+      #shopify-section-{{ section.id }} {{ section.settings.custom_css_mobile }}
+    }
+  {% endif %}
+  {% if block.settings.p_bullets %}
+    .{{ section.id }} .p_bullets p::before {
+      background: {{ block.settings.p_bullets_color }};
+    }
+    .{{ columnCustomTextColorCLASS }} {
+      color: p_bullets_color_text;
+    }
+  {% endif %}
+  {% if block.settings.icon_color != '#cdda01' %}
+      .{{ section.id }} .icon {
+        fill: {{ block.settings.icon_color }};
+      }
+  {% endif %}
+</style>
+
+{%- if block.settings.text_color_primary -%}
+  {% assign textColorPrimary = ' color-foreground-accent-1' %}  
+{%- endif -%}
 
 {% schema %}
 {
@@ -756,10 +758,16 @@
       "default": false
     },
     {
+      "type": "liquid",
+      "id": "custom_css",
+      "label": "Custom css desktop",
+      "info": "For desktop only. No <style></style> tag required."
+    },
+    {
       "type": "textarea",
       "id": "custom_css_mobile",
       "label": "Custom css mobile",
-      "info": "No <style></style> tag required."
+      "info": "For mobile only. No <style></style> tag required."
     }
   ],
   "blocks": [
@@ -990,7 +998,7 @@
         {
           "type": "checkbox",
           "id": "column_border_color_enable",
-          "label": "Column border color",
+          "label": "Enable column border color",
           "default": false
         },
         {
