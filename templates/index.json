@@ -594,6 +594,15 @@
         "video_cover": false
       }
     },
+    "16420895372c7ae66d": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" data-header-customisation-enabled=\"1\"\n    data-header-customisation-color=\"#cddb00\" data-header-customisation-font-size=\"18\"\n    data-header-customisation-text=\"LOVED &amp; TRUSTED BY THOUSANDS OF CUSTOMERS\"\n    data-header-customisation-alignment=\"left\" data-background-color=\"transparent\" data-mode=\"top_rated\"\n    data-type=\"both\" data-count=\"9\" data-show-bottomline=\"1\" data-show-navigation=\"1\">&nbsp;<\/div>",
+        "custom_background": true,
+        "background_color": "#7bccc8",
+        "page_width": false
+      }
+    },
     "bbb28046-9da0-414e-9315-b719dba86fce": {
       "type": "collage",
       "blocks": {
@@ -628,15 +637,6 @@
         "mobile_layout": "column",
         "remove_top_spacing": false,
         "full_width": true
-      }
-    },
-    "16420895372c7ae66d": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" data-header-customisation-enabled=\"1\"\n    data-header-customisation-color=\"#cddb00\" data-header-customisation-font-size=\"18\"\n    data-header-customisation-text=\"LOVED &amp; TRUSTED BY THOUSANDS OF CUSTOMERS\"\n    data-header-customisation-alignment=\"left\" data-background-color=\"transparent\" data-mode=\"top_rated\"\n    data-type=\"both\" data-count=\"9\" data-show-bottomline=\"1\" data-show-navigation=\"1\">&nbsp;<\/div>",
-        "custom_background": true,
-        "background_color": "#7bccc8",
-        "page_width": false
       }
     },
     "770c828d-39df-4a2a-ae1f-0c8051b01d55": {
@@ -789,8 +789,8 @@
     "1641834224a94d856f",
     "1639503887e884ceb3",
     "6bfa2099-00ed-467f-b99b-33fda7955494",
-    "bbb28046-9da0-414e-9315-b719dba86fce",
     "16420895372c7ae66d",
+    "bbb28046-9da0-414e-9315-b719dba86fce",
     "770c828d-39df-4a2a-ae1f-0c8051b01d55",
     "1639505258119ea558"
   ]
