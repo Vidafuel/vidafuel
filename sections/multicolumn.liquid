@@ -123,6 +123,11 @@
                   assign imageClass = 'custom-height-image'
                   assign imageHeight = block.settings.image_max_height
                 endif
+                if block.settings.column_image_position != 'center center'
+                  assign columnImagePosition = block.settings.column_image_position
+                else 
+                  assign columnImagePosition = "center center"
+                endif
                 # COLUMN border
                 if block.settings.column_border_color_enable
                   assign columnBorderColor = block.settings.column_border_color
@@ -190,7 +195,7 @@
                               width="{{ block.settings.image_mobile.width }}"
                               loading="lazy"
                               class="multicolumn-image {{ columnID }} {{ imageClass }} {{ imageContainCLASS }}{{ imageLeftAlignCLASS }}"
-                              style="max-height:{{ imageHeight }}px;"
+                              style="max-height:{{ imageHeight }}px;object-position:{{ columnImagePosition }}"
                             >
                         </div>
                       {% endif %}
@@ -216,7 +221,7 @@
                               width="{{ block.settings.image.width }}"
                               loading="lazy"
                               class="multicolumn-image {{ columnID }} {{ imageClass }} {{ imageContainCLASS }}{{ imageLeftAlignCLASS }}"
-                              style="max-height:{{ imageHeight }}px;"
+                              style="max-height:{{ imageHeight }}px;object-position:{{ columnImagePosition }}"
                             >
                         </div>
                       {% endif %}
@@ -798,6 +803,26 @@
           "type": "number",
           "id": "image_max_height",
           "label": "Image max height"
+        },
+        {
+          "type": "select",
+          "id": "column_image_position",
+          "label": "Column image position",
+          "default": "center center",
+          "options": [
+            {
+              "label": "Default",
+              "value": "center center"
+            },
+            {
+              "label": "Left",
+              "value": "left"
+            },
+            {
+              "label": "Right",
+              "value": "right"
+            }
+          ]
         },
         {
           "type": "header",
