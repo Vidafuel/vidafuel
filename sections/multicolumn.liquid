@@ -86,7 +86,23 @@
     alt="{{ section.settings.bk_image.alt }}"
     height="{{ section.settings.bk_image.height }}"
     width="{{ section.settings.bk_image.width }}"
-    class="multicolumn-bk-image"
+    class="multicolumn-bk-image multicolumn-bk-image__desktop"
+    loading="lazy"
+  >
+  {% endif %}
+  {% if section.settings.bk_image_mobile != blank %}
+  <img
+    srcset="{%- if section.settings.bk_image_mobile.width >= 275 -%}{{ section.settings.bk_image_mobile | image_url: width: 275 }} 275w,{%- endif -%}
+      {%- if section.settings.bk_image_mobile.width >= 550 -%}{{ section.settings.bk_image_mobile | image_url: width: 550 }} 550w,{%- endif -%}
+      {%- if section.settings.bk_image_mobile.width >= 710 -%}{{ section.settings.bk_image_mobile | image_url: width: 710 }} 710w,{%- endif -%}
+      {%- if section.settings.bk_image_mobile.width >= 1420 -%}{{ section.settings.bk_image_mobile | image_url: width: 1420 }} 1420w,{%- endif -%}
+      {{ section.settings.bk_image_mobile | image_url }} {{ section.settings.bk_image_mobile.width }}w"
+    src="{{ section.settings.bk_image_mobile | image_url: width: 550 }}"
+    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+    alt="{{ section.settings.bk_image_mobile.alt }}"
+    height="{{ section.settings.bk_image_mobile.height }}"
+    width="{{ section.settings.bk_image_mobile.width }}"
+    class="multicolumn-bk-image multicolumn-bk-image__mobile"
     loading="lazy"
   >
   {% endif %}
@@ -464,6 +480,11 @@
       "type": "image_picker",
       "id": "bk_image",
       "label": "Section backgrounnd image"
+    },
+    {
+      "type": "image_picker",
+      "id": "bk_image_mobile",
+      "label": "Section backgrounnd image mobile"
     },
     {
       "type": "select",

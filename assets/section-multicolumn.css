@@ -564,6 +564,21 @@
 	}
 }
 
+@media screen and (min-width: 750px) {
+	.multicolumn-bk-image__mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 749px) {
+	.multicolumn-bk-image__desktop {
+		display: none;
+	}
+	.multicolumn-bk-image__mobile {
+		display: none;
+	}
+}
+
 .image-contain {
 	object-fit: contain !important;
 }
