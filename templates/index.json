@@ -597,7 +597,7 @@
     "16420895372c7ae66d": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" data-header-customisation-enabled=\"1\"\n    data-header-customisation-color=\"#cddb00\" data-header-customisation-font-size=\"18\"\n    data-header-customisation-text=\"LOVED &amp; TRUSTED BY THOUSANDS OF CUSTOMERS\"\n    data-header-customisation-alignment=\"left\" data-background-color=\"transparent\" data-mode=\"top_rated\"\n    data-type=\"both\" data-count=\"9\" data-show-bottomline=\"1\" data-show-navigation=\"1\">&nbsp;<\/div>",
+        "custom_liquid": "<div \n\tclass=\"yotpo yotpo-reviews-carousel\" \n\tdata-header-customisation-enabled=\"1\" \n\tdata-header-customisation-color=\"#cddb00\" \n\tdata-header-customisation-font-size=\"18\" \n\tdata-header-customisation-text=\"LOVED &amp; TRUSTED BY THOUSANDS OF CUSTOMERS\" \n\tdata-header-customisation-alignment=\"left\" \n\tdata-background-color=\"transparent\" \n\tdata-mode=\"manual\" \n\tdata-type=\"both\" \n\tdata-review-ids=\"129641753,227804089,129641815,172255085,150141923\"  \n\tdata-show-bottomline=\"1\"  \n\tdata-autoplay-enabled=\"1\"  \n\tdata-autoplay-speed=\"3000\"  \n\tdata-show-navigation=\"1\">&nbsp;<\/div>",
         "custom_background": true,
         "background_color": "#7bccc8",
         "page_width": false
