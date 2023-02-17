@@ -339,7 +339,7 @@
         "image_ratio": "adapt",
         "column_alignment": "center",
         "columns": "default",
-        "background_style": "secondary",
+        "background_style": "primary",
         "background_style_color": "",
         "card_bk_none": false,
         "button_label": "",
