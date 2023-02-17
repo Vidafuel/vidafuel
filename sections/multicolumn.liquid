@@ -13,10 +13,14 @@
   # SECTION logic
   # #
   # SECTION background image
-  if section.settings.bk_image != empty
-    assign background_style = 'bk-image'
+  if section.settings.bk_image
+    assign backgroundStyle = 'bk-image'
+  elsif section.settings.background_style == 'custom_bk_color'
+    assign backgroundStyle = section.settings.background_style
+    assign backgroundStyleCLASS = 'background-custom_bk_color'
+    assign backgroundStyleColor = section.settings.background_style_color
   else
-    assign background_style = section.settings.background_style
+    assign backgroundStyle = section.settings.background_style
   endif
   # SECTION heading color
   if section.settings.main_heading_text_color != "#0000000"
@@ -73,7 +77,7 @@
 %}
 
 
-<div class="multicolumn background-{{ background_style }} multicolumn--{{ section.settings.section_height }} {% if section.settings.background_style == 'gradient-1' %} gradient color-accent-1{% elsif section.settings.background_style == 'gradient-2' %} gradient color-accent-2{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}">
+<div class="multicolumn background-{{ backgroundStyle }} multicolumn--{{ section.settings.section_height }} {% if section.settings.background_style == 'gradient-1' %} gradient color-accent-1{% elsif section.settings.background_style == 'gradient-2' %} gradient color-accent-2{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.desktop_no_spacing %} desktop_no_spacing{% endif %}">
   {% if section.settings.bk_image != blank %}
   <img
     srcset="{%- if section.settings.bk_image.width >= 275 -%}{{ section.settings.bk_image | image_url: width: 275 }} 275w,{%- endif -%}
@@ -385,6 +389,11 @@
 </div>
 
 <style class="column-inset-styles">
+  {% if section.settings.background_style == 'custom_bk_color' %}
+    #shopify-section-{{ section.id }} .{{ backgroundStyleCLASS }} {
+      background-color: {{ backgroundStyleColor }};
+    }
+  {% endif %}
   #shopify-section-{{ section.id }} .column-heading-color {
       color: {{ section.settings.column_heading_color }};
     }
@@ -479,12 +488,12 @@
     {
       "type": "image_picker",
       "id": "bk_image",
-      "label": "Section backgrounnd image"
+      "label": "Section background image"
     },
     {
       "type": "image_picker",
       "id": "bk_image_mobile",
-      "label": "Section backgrounnd image mobile"
+      "label": "Section background image mobile"
     },
     {
       "type": "select",
@@ -706,10 +715,20 @@
         {
           "value": "gradient-2",
           "label": "Show accent 2 as section background"
+        },
+        {
+          "value": "custom_bk_color",
+          "label": "Custom background color"
         }
       ],
       "default": "primary",
       "label": "t:sections.multicolumn.settings.background_style.label"
+    },
+    {
+      "type": "color",
+      "id": "background_style_color",
+      "label": "Background color",
+      "info": "Secondary background must be set to 'Custom background color'"
     },
     {
       "type": "checkbox",
