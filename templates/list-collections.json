@@ -18,7 +18,7 @@
           "type": "heading",
           "settings": {
             "heading": "Shop",
-            "heading_size": "h1",
+            "heading_size": "h0",
             "heading_font": "default"
           }
         }
