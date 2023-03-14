@@ -2,7 +2,6 @@
   "sections": {
     "main": {
       "type": "main-list-collections",
-      "disabled": true,
       "settings": {
         "title": "Collections",
         "sort": "alphabetical",
@@ -18,7 +17,7 @@
           "type": "heading",
           "settings": {
             "heading": "Shop",
-            "heading_size": "h0",
+            "heading_size": "h1",
             "heading_font": "default"
           }
         }
