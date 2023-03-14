@@ -603,7 +603,7 @@
           "settings": {
             "button_label": "Shop Now",
             "button_link": "\/products",
-            "button_style_secondary": false
+            "button_style_secondary": true
           }
         }
       },
@@ -611,7 +611,7 @@
         "template--17829432885562__f97fa88b-fb2d-45a8-a75d-a811f34c6b4d-167881411193eb6837-2"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "full_width": true,
         "text_align_center": true,
         "text_color": "default"
