@@ -610,6 +610,10 @@
       "block_order": [
         "template--17829432885562__f97fa88b-fb2d-45a8-a75d-a811f34c6b4d-167881411193eb6837-2"
       ],
+      "custom_css": [
+        ".button--secondary {border: 1px solid #fff; color: #fff; box-shadow: 0 0 0 0.1rem #fff;}",
+        ".button--secondary:hover {box-shadow: 0 0 0 0.2rem #fff;}"
+      ],
       "settings": {
         "color_scheme": "background-2",
         "full_width": true,
