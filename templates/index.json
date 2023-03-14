@@ -519,6 +519,25 @@
         "custom_css_mobile": "#shopify-section-{{ section.id }} .slider.slider--mobile .slider__slide {\n    padding-top: 30px;\n}\n#shopify-section-{{ section.id }} .multicolumn-list__item:nth-child(1) .multicolumn-card {\n    position: relative;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__image-wrapper {\n    padding-bottom: 22px;\n}\n\n#shopify-section-{{ section.id }} .col-3 .multicolumn-card:after {\n    content: \"* artificial sweeteners\";\n    position: absolute;\n    bottom: 0;\n    font-size: 14px;\n    width: 100%;\n    transform: translateX(32px);\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list__item:nth-child(1) .multicolumn-card:before {\n    content: \"\";\n    background-image: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0922\/1906\/files\/vidafuel-protein-shot-checkmark-5.webp?v=1676649903);\n    position: absolute;\n    width: 50%;\n    height: 25%;\n    background-repeat: no-repeat;\n    background-size: 50%;\n    background-position: top center;\n    top: -30px;\n    left: 25%;\n}"
       }
     },
+    "495a4603-2f82-403d-8335-492e932044a0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "center_headers": false,
+        "collection": "wellness-supplements",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_purchase_options": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
     "1639503887e884ceb3": {
       "type": "images-with-text",
       "blocks": {
@@ -814,6 +833,7 @@
     "37a31859-d026-4732-b82b-1347b5f52e18",
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219",
     "1641834224a94d856f",
+    "495a4603-2f82-403d-8335-492e932044a0",
     "1639503887e884ceb3",
     "6bfa2099-00ed-467f-b99b-33fda7955494",
     "f97fa88b-fb2d-45a8-a75d-a811f34c6b4d",
