@@ -485,7 +485,8 @@
         "577c20c8-4973-470b-b8c8-c07527deb5b7"
       ],
       "custom_css": [
-        "h2.title.center.heading-1 {line-height: 30px;}"
+        "h2.title.center.heading-1 {line-height: 30px;}",
+        ".button--primary {border: 2px solid #fff; background-color: #fff; color: rgba(var(--color-button), var(--alpha-button-border));}"
       ],
       "settings": {
         "title": "<strong>Less is more.<\/strong><br><br><span style=\"font-size: 1.75rem; line-height: 10px;\">A quicker & easier way to boost your daily nutrition.<\/span>",
