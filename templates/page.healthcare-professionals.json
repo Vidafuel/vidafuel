@@ -7,8 +7,45 @@
         "page_title_background": "shopify:\/\/shop_images\/topBG.png"
       }
     },
+    "631996c3-a387-419d-b3a8-04a7d26d1971": {
+      "type": "collage",
+      "blocks": {
+        "a6e4e75a-b0b1-491e-b413-7384f5a68c21": {
+          "type": "text",
+          "settings": {
+            "title": "Dietitian developed for compliance & optimal nutrition",
+            "heading_size": "default",
+            "text": "16g of complete protein in a 2oz shot",
+            "button_label": "",
+            "button_link": "",
+            "color_scheme": "background-1"
+          }
+        },
+        "7713be27-9156-4ebc-8db8-f6f724e9ca9d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-for-optimal-nutrition.webp",
+            "image_padding": false,
+            "color_scheme": "none"
+          }
+        }
+      },
+      "block_order": [
+        "a6e4e75a-b0b1-491e-b413-7384f5a68c21",
+        "7713be27-9156-4ebc-8db8-f6f724e9ca9d"
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "right",
+        "background_color_scheme": "waves",
+        "mobile_layout": "column",
+        "remove_top_spacing": true,
+        "full_width": true
+      }
+    },
     "1639156556f1f7aaff": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "163915655632d9adf3-0": {
           "type": "heading",
@@ -555,6 +592,7 @@
   },
   "order": [
     "main",
+    "631996c3-a387-419d-b3a8-04a7d26d1971",
     "1639156556f1f7aaff",
     "163915671883655487",
     "164014386357a60c4a",
