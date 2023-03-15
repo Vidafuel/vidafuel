@@ -186,7 +186,7 @@
           "settings": {
             "image_link_url": "",
             "column_image_position": "center center",
-            "title": "<p>REQUEST 15% OFF FOR YOUR PATIENTS!<\/p>",
+            "title": "<p><strong>REQUEST 15% OFF FOR YOUR PATIENTS!<\/strong><\/p>",
             "icon": "none",
             "text": "<p>Post Surgery Recovery<\/p><p>Cancer<\/p><p>CKD Dialysis<\/p><p>Geriatric Nutrition<\/p><p>Fitness \/ Athletics<\/p>",
             "column_elements_alignment": "center",
@@ -213,10 +213,10 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Wellness-Protein-Drink-2-Pack-Citrus-and-Berry-15-percent-off.webp",
             "image_link_url": "",
-            "image_max_height": 450,
+            "image_max_height": 470,
             "column_image_position": "center center",
             "title": "",
-            "icon": "check_mark",
+            "icon": "none",
             "text": "",
             "column_elements_alignment": "normal",
             "column_text_alignment": "center",
