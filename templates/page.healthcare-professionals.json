@@ -33,6 +33,9 @@
         "163915655632d9adf3-0",
         "163915655632d9adf3-1"
       ],
+      "custom_css": [
+        ".image-with-text__grid {align-items: center;}"
+      ],
       "settings": {
         "section_id": "",
         "image": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-_-optimal-nutrition.webp",
@@ -45,7 +48,7 @@
         "layout": "text_first",
         "section_width": "full_width",
         "desktop_no_spacing": false,
-        "remove_top_margin": true
+        "remove_top_margin": false
       }
     },
     "163915671883655487": {
