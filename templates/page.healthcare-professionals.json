@@ -14,16 +14,16 @@
           "type": "heading",
           "settings": {
             "heading": "Dietitian developed for compliance & optimal nutrition",
-            "heading_font": "trade_gothic_bold_condensed",
-            "heading_size": "heading-1"
+            "heading_font": "default",
+            "heading_size": "default"
           }
         },
         "163915655632d9adf3-1": {
           "type": "text",
           "settings": {
             "text": "<p>16g of complete protein in a 2oz shot<\/p>",
-            "text_font": "proxima_nova_light",
-            "text_size": "h2",
+            "text_font": "default",
+            "text_size": "default",
             "text_color": "default",
             "p_bullets": false
           }
@@ -120,7 +120,7 @@
             "column_image_position": "center center",
             "title": "",
             "icon": "none",
-            "text": "<p><strong>16g of complete protein in 2oz<br\/><\/strong>One shot per day it's all you need<\/p><p><strong>Whey + Collagen protein<br\/><\/strong>To support muscle mass & strength<\/p><p><strong>No artificial sweeteners, ever<\/strong><br\/>Patient approved taste<\/p><p><strong>Contains all 20 amino acids<\/strong><br\/>To keep immune system strong<\/p>",
+            "text": "<p><strong>16g of protein per 2oz serving<br\/><\/strong>Complete protein with all 20 amino acids<\/p><p><strong>Whey + Collagen protein<br\/><\/strong>To support muscle mass & strength<\/p><p><strong>No artificial sweeteners, ever<\/strong><br\/>Patient approved taste<\/p><p><strong>Smoothie-like textures<\/strong><br\/>Easy to consume, no dilution required<\/p>",
             "column_elements_alignment": "normal",
             "column_text_alignment": "left",
             "link_label": "",
