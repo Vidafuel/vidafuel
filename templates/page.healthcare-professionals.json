@@ -145,7 +145,7 @@
         "16391567181da7a84b-2"
       ],
       "custom_css": [
-
+        "p {text-align:left;}"
       ],
       "settings": {
         "title": "",
