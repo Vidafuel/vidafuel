@@ -66,7 +66,7 @@
             "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0922\/1906\/files\/VF_ProteinSpecificFlyer_Back_Aug_2021.jpg?v=1628250284",
             "modal_image": "shopify:\/\/shop_images\/Vidafuel-Protein-Specific-Flyer.jpg",
             "modal_liquid": "",
-            "custom_liquid": "",
+            "custom_liquid": "<style>.rte:after {display:none;}<\/style>",
             "liquid_background": "#ffffff",
             "column_icon_color_custom": "#000000",
             "column_border_color_enable": false,
@@ -526,6 +526,18 @@
       "settings": {
         "heading": "Contact form"
       }
+    },
+    "cd8922a7-a490-4ea9-aacb-f533df21371d": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form"
+      }
+    },
+    "d81bb5c9-a1c7-471f-9598-65b9a63e6054": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form"
+      }
     }
   },
   "order": [
@@ -538,6 +550,8 @@
     "163950623206c4ca1f",
     "164328693248fb79aa",
     "1639506526d4856680",
-    "e80db62f-1c32-470c-a2d1-21565021648e"
+    "e80db62f-1c32-470c-a2d1-21565021648e",
+    "cd8922a7-a490-4ea9-aacb-f533df21371d",
+    "d81bb5c9-a1c7-471f-9598-65b9a63e6054"
   ]
 }
