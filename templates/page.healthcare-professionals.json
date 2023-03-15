@@ -368,6 +368,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/vidafuel-white-paper_3c400647-fb84-4248-94ea-41afe449eab8.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/vidafuel-white-paper_3c400647-fb84-4248-94ea-41afe449eab8.jpg",
             "image_link_url": "",
             "image_max_height": 400,
             "column_image_position": "center center",
@@ -398,6 +399,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-_-optimal-nutrition.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-_-optimal-nutrition.webp",
             "image_link_url": "",
             "image_max_height": 400,
             "column_image_position": "center center",
