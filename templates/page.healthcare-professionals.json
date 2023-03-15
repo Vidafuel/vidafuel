@@ -242,8 +242,8 @@
           "settings": {
             "image_link_url": "",
             "column_image_position": "center center",
-            "title": "<p>FILL OUT THE FORM TO GET A COUPON<br\/>FOR YOUR PATIENTS<\/p>",
-            "icon": "check_mark",
+            "title": "<p><strong>FILL OUT THE FORM TO GET A COUPON<br\/>FOR YOUR PATIENTS<\/strong><\/p>",
+            "icon": "none",
             "text": "",
             "column_elements_alignment": "normal",
             "column_text_alignment": "center",
