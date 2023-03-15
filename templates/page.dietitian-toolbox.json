@@ -29,8 +29,7 @@
         "show_text_box": false,
         "image_overlay_opacity": 0,
         "color_scheme": "accent-2",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
+        "stack_images_on_mobile": true
       }
     },
     "16395061492d0dea2e": {
@@ -69,7 +68,6 @@
         "164814251216894cba-0": {
           "type": "column",
           "settings": {
-            "image_url": "",
             "title": "<p>Bone Health<\/p>",
             "icon": "check_mark",
             "text": "<p>Nutrition and exercise guides for supporting bone strength & health.<\/p>",
@@ -79,11 +77,6 @@
             "modal_liquid": "",
             "custom_liquid": "",
             "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "text_font": "default",
-            "text_size": "default",
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
@@ -93,7 +86,6 @@
         "e554d5e0-b8a2-44fc-b90f-145d8440659d": {
           "type": "column",
           "settings": {
-            "image_url": "",
             "title": "<p>Protein 101 Guide<br\/>& Crossword Puzzle<\/p>",
             "icon": "none",
             "text": "<p>A quick and easy guide on what protein is and why it matters to you.<\/p>",
@@ -103,11 +95,6 @@
             "modal_liquid": "",
             "custom_liquid": "",
             "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "text_font": "default",
-            "text_size": "default",
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
@@ -117,7 +104,6 @@
         "2ba415b3-4242-4916-8f25-615afedc966f": {
           "type": "column",
           "settings": {
-            "image_url": "",
             "title": "<p>Protein as Protection<\/p>",
             "icon": "check_mark",
             "text": "<p>Educate patients on how to protect<br\/>themselves through adequate protein intake.<\/p>",
@@ -127,11 +113,6 @@
             "modal_liquid": "<div class=\"klaviyo-form-YdhXGM\"><\/div>",
             "custom_liquid": "",
             "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "text_font": "default",
-            "text_size": "default",
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
@@ -141,7 +122,6 @@
         "3f7b2f6e-6d4d-4472-82ed-6ac90ce575e5": {
           "type": "column",
           "settings": {
-            "image_url": "",
             "title": "<p>How to Choose a Protein Supplement<\/p>",
             "icon": "none",
             "text": "<p>A guide to help your patients choose the right protein supplement for their needs<\/p>",
@@ -151,11 +131,6 @@
             "modal_liquid": "<div class=\"klaviyo-form-TpmmvQ\"><\/div>",
             "custom_liquid": "",
             "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "text_font": "default",
-            "text_size": "default",
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
@@ -165,7 +140,6 @@
         "164814251216894cba-1": {
           "type": "column",
           "settings": {
-            "image_url": "",
             "title": "<p>Osteopenia and Osteoporosis<\/p>",
             "icon": "check_mark",
             "text": "<p>A guide on prevention, detection and the latest research findings.<\/p>",
@@ -175,11 +149,6 @@
             "modal_liquid": "<div class=\"klaviyo-form-WjCPW7\"><\/div>",
             "custom_liquid": "",
             "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "text_font": "default",
-            "text_size": "default",
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
@@ -189,7 +158,6 @@
         "164814251216894cba-2": {
           "type": "column",
           "settings": {
-            "image_url": "",
             "title": "<p>Hospitalization Passport<\/p>",
             "icon": "check_mark",
             "text": "<p>Share with your renal patients to help them track important health information<\/p>",
@@ -199,11 +167,6 @@
             "modal_liquid": "<div class=\"klaviyo-form-SdVLKx\"><\/div>",
             "custom_liquid": "",
             "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "text_font": "default",
-            "text_size": "default",
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
@@ -213,7 +176,6 @@
         "1113ca4a-ba4c-456a-b9a9-2b87263027aa": {
           "type": "column",
           "settings": {
-            "image_url": "",
             "title": "<p>DIY Bulletin Board on Bone<br\/>Health<\/p>",
             "icon": "check_mark",
             "text": "<p>A quick way to add educational<br\/>material to your clinic lobby<\/p>",
@@ -223,11 +185,6 @@
             "modal_liquid": "",
             "custom_liquid": "",
             "liquid_background": "#ffffff",
-            "column_custom_text_color": false,
-            "copy_color": "#000000",
-            "title_font": "default",
-            "text_font": "default",
-            "text_size": "default",
             "title_top": false,
             "p_bullets": false,
             "p_bullets_color": "#cdda01",
@@ -255,10 +212,8 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
-        "flex_align_center": false,
         "desktop_no_spacing": false,
-        "icon_enable": false,
-        "full_width_section": false
+        "icon_enable": false
       }
     },
     "164814138497719715": {

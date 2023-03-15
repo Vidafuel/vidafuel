@@ -63,7 +63,7 @@
         assign columnID = 'col-' | append: forloop.index
 
         # COLUMN custom css
-        if block.settings.col_custom_css != empty
+        if block.settings.col_custom_css != blank
         endif
         # COLUMN bullets
         if block.settings.p_bullets
@@ -155,7 +155,7 @@
                   assign columnBorderColor = block.settings.column_border_color
                 endif
               %}
-
+            {% comment %} LIST ITEM {% endcomment %}
             <li class="multicolumn-list__item {{ columnIdNew }} {% if section.settings.columns != 'default' %} {{ section.settings.columns }}{% endif %} grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{% if block.settings.image_link_url != blank %} full-width-link_container{% endif %}{{ columnCustomCSSClass }}" {{ block.shopify_attributes }}>
               <div class="multicolumn-card{% if section.settings.card_bk_none %} multicolumn-card-bk_none{% endif %}{% if block.settings.col_content_reverse %} multicolumn__col-reverse{% endif %} flex-align-{{ block.settings.column_elements_alignment }}" {% if block.settings.column_border_color_enable %}style="border: 2px solid {{ columnBorderColor }};border-radius: 6px;"{% endif %}>
                 {%- if block.settings.image != blank -%}
@@ -255,7 +255,7 @@
                   </div>
                 {%- endif -%}
                 
-                {% if block.settings.title != blank or block.settings.title_image != blank or block.settings.text != blank %}
+                {% if block.settings.title != blank or block.settings.title_image != blank or block.settings.text != blank or block.settings.custom_liquid != blank %}
                   <div class="multicolumn-card__info{% if block.settings.custom_liquid != blank %} custom-liquid__info{% endif %} {{ block.settings.column_text_alignment }}">
                     
                     {% comment %} ICON div {% endcomment %}
@@ -276,14 +276,14 @@
                     {%- endif -%}
                     
                       {% comment %} COLUMN title element {% endcomment %}
-                      {%- if block.settings.title != blank -%}
-                          <h3 class="{{ columnHeadingSize }}{{ columnHeadingColorCLASS }}">
+                      {%- if block.settings.title != blank and block.settings.title_top == false -%}
+                          <h3 class="COLUMN-TITLE {{ columnHeadingSize }}{{ columnHeadingColorCLASS }}">
                           {{ block.settings.title }}
                         </h3>
                       {%- endif -%}
                       
                       {% comment %} IMAGE element {% endcomment %}
-                      {% if block.settings.title_image != blank %}
+                      {% if block.settings.title_image != blank and block.settings.title_top == false %}
                         <img
                           srcset="{%- if block.settings.title_image.width >= 275 -%}{{ block.settings.title_image | image_url: width: 275 }} 275w,{%- endif -%}
                             {%- if block.settings.title_image.width >= 550 -%}{{ block.settings.title_image | image_url: width: 550 }} 550w,{%- endif -%}
@@ -317,6 +317,9 @@
                         <a class="button button--primary" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
                       {%- endif -%}
                     {%- else -%}
+                    
+                    
+                    {% comment %} MODAL start {% endcomment %}
                       <modal-opener class="multicolumn-card-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                         <button id="ProductPopup-{{ block.id }}" class="button button--primary multicolumn-card-popup-modal__button" type="button"
                           aria-haspopup="dialog">{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></button>
@@ -348,17 +351,22 @@
                           </div>
                         </div>
                       </modal-dialog>
+                      {% comment %} MODAL end {% endcomment %}
+                      
+                      
                     {%- endif -%}
-                    {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}
+                    
+                    {% if block.settings.custom_liquid != blank %}
                       <div class="custom-liquid" style="background-color:{{ block.settings.liquid_background }};">
-                        <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.col_title_size != 'default' %}{{ block.settings.col_title_size }}{% endif %}" {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}style="color:#000;"{% endif %}>
+                        {% comment %} <h3 class="{% if block.settings.title_font != 'default' %}{{ block.settings.title_font }} {% endif %} {% if block.settings.col_title_size != 'default' %}{{ block.settings.col_title_size }}{% endif %}" {% if block.settings.custom_liquid != blank and block.settings.liquid_background != blank %}style="color:#000;"{% endif %}>
                           {{ block.settings.title }}
-                        </h3>
+                        </h3> {% endcomment %}
                         {{ block.settings.custom_liquid }}
                       </div>
                     {% else %}
                       {{ block.settings.custom_liquid }}
                     {%- endif -%}
+                    
                   </div>
                 {% endif %}
               </div>
@@ -396,39 +404,47 @@
       background-color: {{ backgroundStyleColor }};
     }
   {% endif %}
-  #shopify-section-{{ section.id }} .column-heading-color {
-      color: {{ section.settings.column_heading_color }};
-    }
+    #shopify-section-{{ section.id }} .column-heading-color {
+        color: {{ section.settings.column_heading_color }};
+      }
   
   {% if section.settings.column_descrip_color != '#000000' %}
-  .column-descrip-color > * {
-    color: {{ section.settings.column_descrip_color }};
-  }
+    .column-descrip-color > * {
+      color: {{ section.settings.column_descrip_color }};
+    }
   {% endif %}
 
-  {% if section.settings.custom_css != empty %}
+  {% if section.settings.custom_css != blank %}
     @media screen and (min-width: 750px) {
       {{ section.settings.custom_css }}
     }
   {% endif %}
-  {% if section.settings.custom_css_mobile != empty %}
+  
+  {% if section.settings.custom_css_mobile != blank %}
     @media screen and (max-width: 749px) {
       {{ section.settings.custom_css_mobile }}
     }
   {% endif %}
-  {% if block.settings.p_bullets %}
-    .{{ section.id }} .p_bullets p::before {
-      background: {{ block.settings.p_bullets_color }};
-    }
-    .{{ columnDescripColorCLASS }} {
-      color: p_bullets_color_text;
-    }
-  {% endif %}
-  {% if block.settings.icon_color != '#cdda01' %}
+  
+  {% for block in section.blocks %}
+    
+    {% if block.settings.p_bullets %}
+      .{{ section.id }} .p_bullets p::before {
+        background: {{ block.settings.p_bullets_color }};
+      }
+      .{{ columnDescripColorCLASS }} {
+        color: p_bullets_color_text;
+      }
+    {% endif %}
+  
+  
+  {% if block.settings.icon_color != blank %}
       .{{ section.id }} .icon {
         fill: {{ block.settings.icon_color }};
       }
   {% endif %}
+{% endfor %}
+
 </style>
 
 {%- if block.settings.text_color_primary -%}
