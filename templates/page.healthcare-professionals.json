@@ -86,8 +86,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/shot_hand-horizontal.webp",
+            "image_mobile": "shopify:\/\/shop_images\/shot_hand-horizontal.webp",
             "image_link_url": "",
-            "image_max_height": 200,
+            "image_max_height": 0,
             "column_image_position": "center center",
             "title": "",
             "icon": "none",
@@ -214,7 +215,7 @@
             "image": "shopify:\/\/shop_images\/Wellness-Protein-Drink-2-Pack-Citrus-and-Berry-15-percent-off.webp",
             "image_mobile": "shopify:\/\/shop_images\/Wellness-Protein-Drink-2-Pack-Citrus-and-Berry-15-percent-off.webp",
             "image_link_url": "",
-            "image_max_height": 450,
+            "image_max_height": 0,
             "column_image_position": "center center",
             "title": "",
             "icon": "none",
@@ -299,7 +300,7 @@
         "icon_enable": false,
         "page_width": "page-width-small",
         "custom_css": "",
-        "custom_css_mobile": ""
+        "custom_css_mobile": ".multicolumn-list {\n    padding-top: 0 !important;\n}"
       }
     },
     "1640123076cbff58b5": {
