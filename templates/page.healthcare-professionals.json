@@ -212,6 +212,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Wellness-Protein-Drink-2-Pack-Citrus-and-Berry-15-percent-off.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Wellness-Protein-Drink-2-Pack-Citrus-and-Berry-15-percent-off.webp",
             "image_link_url": "",
             "image_max_height": 450,
             "column_image_position": "center center",
@@ -538,7 +539,7 @@
       "type": "contact-form",
       "custom_css": [
         ".title {text-align: center;}",
-        ".contact__button{text-align:center}"
+        ".contact__button {text-align: center;}"
       ],
       "settings": {
         "heading": "Contact Us"

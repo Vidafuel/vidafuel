@@ -200,8 +200,8 @@
 
 @media screen and (min-width: 750px) {
 	.image-with-text__title {
-				flex: 1 0 100%;
-				margin: 5rem 0 3rem;
+		flex: 1 0 100%;
+		margin: 5rem 0 3rem;
 	}
 }
 
@@ -232,8 +232,7 @@
 }
 
 .waves-button {
-	box-shadow: 0 0 0 0.1rem
-		rgba(var(--color-button), var(--alpha-button-border));
+	box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
 }
 
 .image-with-text__content > :first-child:is(.image-with-text__heading) {

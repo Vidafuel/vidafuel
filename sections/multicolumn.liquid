@@ -111,16 +111,18 @@
   >
   {% endif %}
   <div class="{{ section.settings.page_width }}">
-    <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.page_width == 'full-width' %}--full-width{% endif %} {% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
-      <h2 class="title{% if section.settings.title_center %} center{% endif %}{% if section.settings.title_size != 'default' %} {{ section.settings.title_size }}{% endif %}" {{ heading_color_style }}>
-        {{ section.settings.title }}
-      </h2>
-      {% comment %}
-      {%- if section.settings.button_label != blank and section.settings.swipe_on_mobile -%}
-        <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
-      {%- endif -%}
-      {% endcomment %}
-    </div>
+    {% if section.settings.title != blank %}
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.page_width == 'full-width' %}--full-width{% endif %} {% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
+        <h2 class="title{% if section.settings.title_center %} center{% endif %}{% if section.settings.title_size != 'default' %} {{ section.settings.title_size }}{% endif %}" {{ heading_color_style }}>
+          {{ section.settings.title }}
+        </h2>
+        {% comment %}
+        {%- if section.settings.button_label != blank and section.settings.swipe_on_mobile -%}
+          <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
+        {%- endif -%}
+        {% endcomment %}
+      </div>
+    {% endif %}
     <slider-component class="slider-mobile-gutter">
       <ul class="multicolumn-list {% if section.settings.page_width == 'full-width' %}full-width {% endif %}{{ section.settings.vertical_alignment }} grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %} {{ section.id }}{{ columnsPadding }}"
         id="Slider-{{ section.id }}"
@@ -217,7 +219,9 @@
                               width="{{ block.settings.image_mobile.width }}"
                               loading="lazy"
                               class="multicolumn-image {{ columnID }} {{ imageClass }} {{ imageContainCLASS }}{{ imageLeftAlignCLASS }}"
+                              {% if block.settings.image_max_height != 0 %}
                               style="max-height:{{ imageHeight }}px;object-position:{{ columnImagePosition }}"
+                              {% endif %}
                             >
                         </div>
                       {% endif %}
@@ -243,7 +247,9 @@
                               width="{{ block.settings.image.width }}"
                               loading="lazy"
                               class="multicolumn-image {{ columnID }} {{ imageClass }} {{ imageContainCLASS }}{{ imageLeftAlignCLASS }}"
+                              {% if block.settings.image_max_height != 0 %}
                               style="max-height:{{ imageHeight }}px;object-position:{{ columnImagePosition }}"
+                              {% endif %}
                             >
                         </div>
                       {% endif %}
