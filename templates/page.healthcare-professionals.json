@@ -464,7 +464,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/metro-medical.png",
+            "image_mobile": "shopify:\/\/shop_images\/metro-medical.png",
             "image_link_url": "",
+            "image_max_height": 140,
             "column_image_position": "center center",
             "title": "<p>DISTRIBUTED BY<\/p>",
             "icon": "check_mark",
@@ -516,7 +518,7 @@
         "button_link": "",
         "swipe_on_mobile": false,
         "vertical_alignment": "flex-align-normal",
-        "desktop_no_spacing": false,
+        "desktop_no_spacing": true,
         "icon_enable": false,
         "page_width": "page-width",
         "custom_css": "",
