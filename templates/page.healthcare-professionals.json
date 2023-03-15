@@ -431,6 +431,9 @@
         "163950623263ceff12-0",
         "163950623263ceff12-1"
       ],
+      "custom_css": [
+        ".multicolumn-card-popup-modal__content-info {padding: 0;}"
+      ],
       "settings": {
         "title": "",
         "title_center": false,
