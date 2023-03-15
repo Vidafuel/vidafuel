@@ -282,7 +282,7 @@
         "column_descrip_color": "#121212",
         "column_heading_color": "#000000",
         "image_width": "full",
-        "col_img_contain": true,
+        "col_img_contain": false,
         "col_img_left_align": false,
         "image_ratio": "portrait",
         "column_alignment": "left",
@@ -453,15 +453,6 @@
         "custom_css_mobile": ""
       }
     },
-    "164328693248fb79aa": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"337882256,129641668,177810157,129641815,150141923,129641641\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"1\" \n data-autoplay-speed=\"7500\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
-        "custom_background": false,
-        "background_color": "#ffffff",
-        "page_width": false
-      }
-    },
     "1639506526d4856680": {
       "type": "multicolumn",
       "blocks": {
@@ -528,19 +519,19 @@
         "custom_css_mobile": ""
       }
     },
+    "164328693248fb79aa": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-background-color=\"transparent\" \n data-mode=\"manual\" \n data-type=\"both\" \n data-review-ids=\"337882256,129641668,177810157,129641815,150141923,129641641\" \n data-show-bottomline=\"1\" \n data-autoplay-enabled=\"1\" \n data-autoplay-speed=\"7500\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
+        "custom_background": false,
+        "background_color": "#ffffff",
+        "page_width": false
+      }
+    },
     "e80db62f-1c32-470c-a2d1-21565021648e": {
       "type": "contact-form",
       "settings": {
         "heading": "Contact form"
-      }
-    },
-    "36a21294-5622-4227-b0b8-e7332e45aea1": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<style>.multicolumn-list__item:first-of-type .p_bullets p:before {\n    display: none;\n}\n.multicolumn-list__item:first-of-type .p_bullets p {\n    text-align: left;\n}<\/style>",
-        "custom_background": false,
-        "background_color": "#fff",
-        "page_width": false
       }
     }
   },
@@ -552,9 +543,8 @@
     "1640123076cbff58b5",
     "16395061492d0dea2e",
     "163950623206c4ca1f",
-    "164328693248fb79aa",
     "1639506526d4856680",
-    "e80db62f-1c32-470c-a2d1-21565021648e",
-    "36a21294-5622-4227-b0b8-e7332e45aea1"
+    "164328693248fb79aa",
+    "e80db62f-1c32-470c-a2d1-21565021648e"
   ]
 }
