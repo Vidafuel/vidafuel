@@ -536,8 +536,12 @@
     },
     "e80db62f-1c32-470c-a2d1-21565021648e": {
       "type": "contact-form",
+      "custom_css": [
+        ".title {text-align: center;}",
+        ".contact__button{text-align:center}"
+      ],
       "settings": {
-        "heading": "Contact form"
+        "heading": "Contact Us"
       }
     }
   },
