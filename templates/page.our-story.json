@@ -12,10 +12,10 @@
     "170a635b-76b7-4a71-a06f-7de06fd42d79": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div data=\"scmBannerSlider\" data-id=\"25953\" style=\"display: none;\"><\/div>\n<style>\n[u=\"slides\"] > div {\n    display: flex;\n    align-items: flex-start;\n    justify-content: end;\n}\n<\/style>",
-        "custom_background": true,
+        "custom_liquid": "<style>\n[u=\"slides\"] > div {\n    display: flex;\n    align-items: flex-start;\n    justify-content: end;\n}\n#slider25953_container .sca-banner-full-style {\n    border: 2px solid #7ec8c3;\n}\n<\/style>\n<div data=\"scmBannerSlider\" data-id=\"25953\" style=\"display: none;\"><\/div>",
+        "custom_background": false,
         "background_color": "#e3e4e6",
-        "page_width": true
+        "page_width": false
       }
     },
     "1641929597955d3766": {
@@ -26,11 +26,19 @@
         "background_color": "#ffffff",
         "page_width": false
       }
+    },
+    "b2846e1a-0528-4ca5-8831-9ad1c4230927": {
+      "type": "scm-bannerslider",
+      "disabled": true,
+      "settings": {
+        "scm_banner_slider": "1017"
+      }
     }
   },
   "order": [
     "main",
     "170a635b-76b7-4a71-a06f-7de06fd42d79",
-    "1641929597955d3766"
+    "1641929597955d3766",
+    "b2846e1a-0528-4ca5-8831-9ad1c4230927"
   ]
 }
