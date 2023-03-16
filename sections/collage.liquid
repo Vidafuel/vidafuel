@@ -35,7 +35,7 @@
 {%- endfor -%}
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<div class="collage-wrapper {% unless section.settings.full_width %}page-width{% endunless %}{% if section.settings.heading == blank %} no-heading{% endif %} {% if section.settings.background_color_scheme != 'default' %}{{ scheme }}{% endif %} {% if section.settings.remove_top_spacing %} remove_top_spacing{% else %} spaced-section{% endif %}">
+<div class="collage-wrapper {% unless section.settings.full_width or scheme == 'collage__media--background' %}page-width{% endunless %}{% if section.settings.heading == blank %} no-heading{% endif %} {% if section.settings.background_color_scheme != 'default' %}{{ scheme }}{% endif %} {% if section.settings.remove_top_spacing %} remove_top_spacing{% else %} spaced-section{% endif %}">
     {%- if section.settings.background_color_scheme_image != blank -%}
     <img
       srcset="{%- if section.settings.background_color_scheme_image.width >= 165 -%}{{ section.settings.background_color_scheme_image | image_url: width: 165 }} 165w,{%- endif -%}
