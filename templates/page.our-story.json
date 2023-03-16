@@ -1,0 +1,118 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "page_title_background": "shopify:\/\/shop_images\/home-reviews-bk.jpg"
+      }
+    },
+    "1641929597955d3766": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"Reviews from real customers\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
+        "custom_background": false,
+        "background_color": "#ffffff",
+        "page_width": false
+      }
+    },
+    "ed025ce0-f82a-48f5-83cf-0c673c515e32": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18355210125626__ed025ce0-f82a-48f5-83cf-0c673c515e32-1678974050f1b76a01-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vidafuel-owner-bette-and-mother.jpg",
+            "image_link_url": "",
+            "column_image_position": "center center",
+            "title": "",
+            "icon": "check_mark",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "column_elements_alignment": "normal",
+            "column_text_alignment": "center",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "template--18355210125626__ed025ce0-f82a-48f5-83cf-0c673c515e32-1678974050f1b76a01-2": {
+          "type": "column",
+          "settings": {
+            "image_link_url": "",
+            "column_image_position": "center center",
+            "title": "",
+            "icon": "check_mark",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "column_elements_alignment": "normal",
+            "column_text_alignment": "center",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18355210125626__ed025ce0-f82a-48f5-83cf-0c673c515e32-1678974050f1b76a01-0",
+        "template--18355210125626__ed025ce0-f82a-48f5-83cf-0c673c515e32-1678974050f1b76a01-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "title_center": false,
+        "title_size": "default",
+        "main_heading_text_color": "#000000",
+        "section_height": "medium",
+        "column_heading_size": "default",
+        "column_description_size": "default",
+        "column_custom_text_color": false,
+        "column_descrip_color": "#000000",
+        "column_heading_color": "#000000",
+        "image_width": "full",
+        "col_img_contain": false,
+        "col_img_left_align": false,
+        "image_ratio": "circle",
+        "column_alignment": "left",
+        "columns": "default",
+        "background_style": "primary",
+        "background_style_color": "",
+        "card_bk_none": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "vertical_alignment": "flex-align-normal",
+        "desktop_no_spacing": false,
+        "icon_enable": false,
+        "page_width": "page-width",
+        "custom_css": "",
+        "custom_css_mobile": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1641929597955d3766",
+    "ed025ce0-f82a-48f5-83cf-0c673c515e32"
+  ]
+}
