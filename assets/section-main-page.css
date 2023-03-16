@@ -1,12 +1,11 @@
 .page-title {
-  margin-top: 4rem;
+	margin-top: 4rem;
 }
 
-
 .page-title_media {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: rgb(var(--color-background));
+	margin-top: 0;
+	margin-bottom: 0;
+	color: rgb(var(--color-background));
 }
 
 .page-title_media-container {
@@ -50,4 +49,15 @@
 		height: 100%;
 		width: 100%;
 	}
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+	align-items: start;
+}
+
+.media > img.main-page__featured-image {
+	object-fit: contain;
 }

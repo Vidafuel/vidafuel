@@ -3,7 +3,10 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "page_title_background": "shopify:\/\/shop_images\/home-reviews-bk.jpg"
+        "page_featured_image": "shopify:\/\/shop_images\/vidafuel-owner-bette-and-mother.webp",
+        "featured_image_ratio": "circle",
+        "page_width": "page-width--full-width",
+        "background_color": "#e3e4e6"
       }
     },
     "1641929597955d3766": {
