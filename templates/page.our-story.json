@@ -12,7 +12,7 @@
     "170a635b-76b7-4a71-a06f-7de06fd42d79": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n[u=\"slides\"] > div {\n    display: flex !important;\n    align-items: flex-start !important;\n    justify-content: end !important;\n}\n#slider25953_container .sca-banner-full-style {\n    border: 2px solid #7ec8c3 !important;\n}\n#slider25953_container .sca-banner-full-style p {\nfont-family: \"trade-gothic-next-condensed\", sans-serif !important;\nfont-size: 1.6rem !important;\n}\n#slider25953_container .sca-banner-full-left-style {\n    padding: 2em !important;\n}\n<\/style>\n<div data=\"scmBannerSlider\" data-id=\"25953\" style=\"display: none;\"><\/div>",
+        "custom_liquid": "<style>\n[u=\"slides\"] img {\n    margin-left: 7em;\n}\n#slider25953_container .sca-banner-full-left-style {\n    top: 21%;\n}\n#slider25953_container .sca-banner-full-style {\n    border: 2px solid #7ec8c3 !important;\n}\n#slider25953_container .sca-banner-full-style p {\nfont-family: \"trade-gothic-next-condensed\", sans-serif !important;\nfont-size: 1.6rem !important;\n}\n#slider25953_container .sca-banner-full-left-style {\n    padding: 2em !important;\n}\n<\/style>\n<div data=\"scmBannerSlider\" data-id=\"25953\" style=\"display: none;\"><\/div>",
         "custom_background": false,
         "background_color": "#e3e4e6",
         "page_width": false
