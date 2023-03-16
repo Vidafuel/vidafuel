@@ -26,7 +26,8 @@
 {% if page.template_suffix != empty %}
   {% assign template_page = true %}
 {% endif %}
-<div {% if section.settings.background_color != '#ffffff' %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
+<div class="page-container" {% if section.settings.background_color != '#ffffff' %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
+  
   {% comment %}
     Title section
   {% endcomment %}
@@ -97,7 +98,14 @@
     {
       "type": "image_picker",
       "id": "page_title_background",
-      "label": "Title background"
+      "label": "Title background",
+      "info": "Or choose a background color below:"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
     },
     {
       "type": "image_picker",
@@ -147,12 +155,6 @@
           "label": "Full width"
         }
       ]
-    },
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background color",
-      "default": "#ffffff"
     }
   ],
   "presets": [
