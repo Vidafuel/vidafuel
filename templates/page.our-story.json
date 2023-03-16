@@ -9,6 +9,15 @@
         "page_width": "page-width--full-width"
       }
     },
+    "170a635b-76b7-4a71-a06f-7de06fd42d79": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div data=\"scmBannerSlider\" data-id=\"25953\" style=\"display: none;\"><\/div>\n<style>\n[u=\"slides\"] > div {\n    display: flex;\n    align-items: flex-start;\n    justify-content: end;\n}\n<\/style>",
+        "custom_background": true,
+        "background_color": "#e3e4e6",
+        "page_width": true
+      }
+    },
     "1641929597955d3766": {
       "type": "custom-liquid",
       "settings": {
@@ -17,50 +26,11 @@
         "background_color": "#ffffff",
         "page_width": false
       }
-    },
-    "57df3c9a-7587-4a8d-9686-f285ab9bd4cc": {
-      "type": "image-banner",
-      "blocks": {
-        "template--18355210125626__57df3c9a-7587-4a8d-9686-f285ab9bd4cc-1678999825688d7e29-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "template--18355210125626__57df3c9a-7587-4a8d-9686-f285ab9bd4cc-1678999825688d7e29-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        }
-      },
-      "block_order": [
-        "template--18355210125626__57df3c9a-7587-4a8d-9686-f285ab9bd4cc-1678999825688d7e29-0",
-        "template--18355210125626__57df3c9a-7587-4a8d-9686-f285ab9bd4cc-1678999825688d7e29-1"
-      ],
-      "settings": {
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_position": "default"
-      }
-    },
-    "63fc3ef1-c164-419a-94d3-c81a91c1b76b": {
-      "type": "scm-bannerslider",
-      "settings": {
-        "scm_banner_slider": "1025"
-      }
     }
   },
   "order": [
     "main",
-    "1641929597955d3766",
-    "57df3c9a-7587-4a8d-9686-f285ab9bd4cc",
-    "63fc3ef1-c164-419a-94d3-c81a91c1b76b"
+    "170a635b-76b7-4a71-a06f-7de06fd42d79",
+    "1641929597955d3766"
   ]
 }
