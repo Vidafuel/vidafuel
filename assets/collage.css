@@ -511,3 +511,25 @@
 .collage-video__modal-video iframe {
 	position: static;
 }
+
+
+.collage__media--background {
+    position: relative;
+    overflow: hidden;
+}
+
+.collage__media--background_img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: auto;
+	z-index: -1;
+}
+
+@media screen and (min-width: 750px) {
+	.collage__media--background_img {
+		height: 100%;
+		width: 100%;
+	}
+}

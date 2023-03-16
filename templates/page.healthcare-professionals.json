@@ -14,7 +14,7 @@
           "type": "text",
           "settings": {
             "title": "Dietitian developed for compliance & optimal nutrition",
-            "heading_size": "default",
+            "heading_size": "heading-2",
             "text": "16g of complete protein in a 2oz shot",
             "button_label": "",
             "button_link": "",
@@ -25,7 +25,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-for-optimal-nutrition.webp",
-            "image_padding": false,
+            "image_padding": true,
             "color_scheme": "none"
           }
         }
@@ -37,7 +37,8 @@
       "settings": {
         "heading": "",
         "desktop_layout": "right",
-        "background_color_scheme": "waves",
+        "background_color_scheme": "image",
+        "background_color_scheme_image": "shopify:\/\/shop_images\/healthcare-bg_244be7a3-a564-4485-afaa-29b1d557d158.jpg",
         "mobile_layout": "column",
         "remove_top_spacing": true,
         "full_width": true
