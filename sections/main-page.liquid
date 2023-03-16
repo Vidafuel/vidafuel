@@ -26,6 +26,10 @@
 {% if page.template_suffix != empty %}
   {% assign template_page = true %}
 {% endif %}
+<div {% if section.settings.background_color != '#ffffff' %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
+  {% comment %}
+    Title section
+  {% endcomment %}
   <div class="{% if template_page and section.settings.page_title_background != blank %}main-page__media--background main-page-title{% else %}page-width page-width--narrow{% endif %}">
     {%- if template_page and section.settings.page_title_background != blank -%}
       <img srcset="{%- if section.settings.page_title_background.width >= 165 -%}{{ section.settings.page_title_background | image_url: width: 165 }} 165w,{%- endif -%}
@@ -42,17 +46,22 @@
         class="main-page__media--background_img"
         width="{{ section.settings.page_title_background.width }}" 
         height="{{ section.settings.page_title_background.height }}">
+    {%- endif -%}
     <div class="page-title{% if template_page and section.settings.page_title_background != blank %}_media{% endif %}-container page-width page-width--narrow">
-      {%- endif -%}
       <h1 class="page-title{% if template_page and section.settings.page_title_background != blank %}_media{% else %} main-page-title center{% endif %} h0">
         {{ page.title | escape }}
       </h1>
     </div>
   </div>
-  <h1>{{ inner_container_width }}</h1>
-    <div class="{{ section.settings.page_width }}" {% if section.settings.background_color != '#ffffff' %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
-    
+  
+  {% comment %}
+    Featured image/text section
+  {% endcomment %}
+  <div class="{{ section.settings.page_width }}">
     <div class="{{ inner_container_width }} {{ page_content_container }}">
+      {% comment %}
+        Featured image
+      {% endcomment %}
       {% if section.settings.page_featured_image %}
       <div class="media media--transparent media--{{ image_ratio }}">
         <img srcset="{%- if section.settings.page_featured_image.width >= 165 -%}{{ section.settings.page_featured_image | image_url: width: 165 }} 165w,{%- endif -%}
@@ -75,8 +84,9 @@
         {{ page.content }}
       </div>
     </div>
-    
   </div>
+  
+</div>
 
 {% schema %}
 {
