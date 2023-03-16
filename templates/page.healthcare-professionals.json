@@ -25,6 +25,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-for-optimal-nutrition.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-_-optimal-nutrition_2.webp",
             "image_padding": true,
             "color_scheme": "none"
           }
