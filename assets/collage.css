@@ -511,41 +511,20 @@
 .collage-video__modal-video iframe {
 	position: static;
 }
-
-
-
+/* Image work */
+/* Image work */
+/* Image work */
+/* Image work */
+/* Image work */
 .collage__media--background {
 	position: relative;
 	padding-top: 4rem;
 }
-  @media (max-width: 450px) {
-    .collage__media--background {
-      text-align: center;
-    }
-			.collage__media--background .collage {
-		grid-template-rows: 1fr 2fr;
-		padding: 2rem calc(4rem / var(--font-body-scale)) 5rem;
-	}
+
+.collage__media--background .collage-card__image {
+	padding: 0;
 }
-@media screen and (min-width: 750px) {
-	.collage__media--background {
-		padding-bottom: 4rem;
-	}
-	.collage__media--background .collage {
-		grid-template-columns: 1fr 1fr;
-	}
-}
-@media screen and (min-width: 990px) {
-	.collage__media--background {
-		padding-top: 6rem;
-		padding-bottom: 6rem;
-	}
-		.collage__media--background .collage {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-}
-	
-	.collage__media--background_img {
+.collage__media--background_img {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -553,14 +532,60 @@
 	height: 100%;
 	width: auto;
 	z-index: -1;
+	max-width: 100vw;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 990px) {
+	.collage__media--background {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+	.collage__media--background .collage {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 769px) {
 	.collage__media--background_img {
 		height: 100%;
 		width: 100%;
 	}
+
+	.collage__media--background {
+		padding-bottom: 4rem;
+	}
+	.collage__media--background .collage {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.collage-content.media > img.collage-card__image-mobile {
+		display: none !important;
+		object-fit: contain;
+	}
 }
+
+@media screen and (max-width: 768px) {
+	.collage-content.media > img.collage-card__image {
+		display: none !important;
+	}
+	.media > img.collage-card__image-mobile {
+		object-fit: contain;
+	}
+	.collage__media--background .collage {
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr;
+		padding: 2rem calc(4rem / var(--font-body-scale)) 5rem;
+	}
+	.collage-card.collage-text {
+		grid-row: 1 / span 1;
+		grid-column: 1 / span 1;
+		text-align: center;
+	}
+	.collage-card:not(.collage-text) {
+		grid-row: 2 / span 1;
+		grid-column: 1 / span 1;
+	}
+}
+
 /* 
 	.collage__media--background {
 		width: 100%;
