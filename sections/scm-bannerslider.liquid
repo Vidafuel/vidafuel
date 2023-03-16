@@ -1,4 +1,6 @@
-<div data="scmBannerSlider" data-id="{{ section.settings.scm_banner_slider }}" style="display: none;"></div>
+<div class="container-scm-slider" style="display: inline-block;">
+  <div data="scmBannerSlider" data-id="{{ section.settings.scm_banner_slider }}" style="display: none;"></div>
+</div>
 {% schema %}
 {
   "name": "SmartifyApps Slider",
@@ -6,8 +8,12 @@
     {
       "type": "select",
       "id": "scm_banner_slider",
-      "label": "Choose slider",
+      "label": "Choose a slider",
       "options": [
+        {
+          "value": "",
+          "label": "Choose a slider"
+        },
                 {
           "value": "1017",
           "label": "Fronts Slider"
@@ -20,6 +26,9 @@
         },                {
           "value": "1326",
           "label": "Meals"
+        },                {
+          "value": "25953",
+          "label": "Dietitians"
         }              ],
       "default": "1017"
     }
