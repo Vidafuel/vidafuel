@@ -1,6 +1,8 @@
 {{ 'flickity.min.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'flickity.min.js' | asset_url }}" defer></script>
-<script src="{{ 'slider.js' | asset_url }}" defer="defer"></script>
+{% liquid
+	assign slider_speed = section.settings.autoplay_speed
+%}
 {{ 'section-slider.css' | asset_url | stylesheet_tag }}
 
 {% if section.settings.custom_background %}
@@ -40,7 +42,7 @@
 {% if section.blocks.size > 0 %}
   <div class="carousel-wrapper" {% if section.settings.background_color %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
 
-    <div class="main-carousel" data-flickity='{ "autoPlay": "{{ section.settings.autoplay_speed }}" }'>
+    <div class="main-carousel" data-flickity='{ "contain": "true", "draggable": true, "wrapAround": true, "autoPlay": {{ slider_speed }} }'>
 
       {% for block in section.blocks %}
         <div class="carousel-cell">
