@@ -77,3 +77,6 @@
 .media > img.main-page__featured-image {
 	object-fit: contain;
 }
+.justify-bottom > img {
+	bottom:0;
+}

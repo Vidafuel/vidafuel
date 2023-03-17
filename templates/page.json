@@ -1,50 +1,10 @@
 {
   "sections": {
-    "d2231838-ab24-4aeb-b7e1-6ae16a57f372": {
-      "type": "rich-text",
-      "blocks": {
-        "template--18331800207674__d2231838-ab24-4aeb-b7e1-6ae16a57f372-1679069490332f5951-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1",
-            "heading_font": "default"
-          }
-        },
-        "template--18331800207674__d2231838-ab24-4aeb-b7e1-6ae16a57f372-1679069490332f5951-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
-            "rich_text_size": "default"
-          }
-        },
-        "template--18331800207674__d2231838-ab24-4aeb-b7e1-6ae16a57f372-1679069490332f5951-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "template--18331800207674__d2231838-ab24-4aeb-b7e1-6ae16a57f372-1679069490332f5951-0",
-        "template--18331800207674__d2231838-ab24-4aeb-b7e1-6ae16a57f372-1679069490332f5951-1",
-        "template--18331800207674__d2231838-ab24-4aeb-b7e1-6ae16a57f372-1679069490332f5951-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "text_align_center": true,
-        "text_color": "default"
-      }
-    },
     "main": {
       "type": "main-page",
       "settings": {
         "page_title_background": "shopify:\/\/shop_images\/home-reviews-bk.jpg",
         "page_title_background_justification": "justify-bottom",
-        "page_featured_image": "shopify:\/\/shop_images\/Vidafuel_Blog_Post_1080x1080_5.jpg",
         "featured_image_ratio": "circle",
         "page_width": "page-width",
         "background_color": "#ffffff"
@@ -61,7 +21,6 @@
     }
   },
   "order": [
-    "d2231838-ab24-4aeb-b7e1-6ae16a57f372",
     "main",
     "1641929597955d3766"
   ]

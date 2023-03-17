@@ -15,11 +15,6 @@
 {% liquid
   assign page_content_container = ''
   
-  # if section.settings.page_title_background_justification != 'default'
-  # else
-  #   assign page_title_background_justification = 'default '
-  # endif
-  
   if section.settings.page_featured_image
     assign page_content_container = 'grid-container'
   endif
@@ -38,7 +33,6 @@
   {% assign template_page = true %}
 {% endif %}
 <div class="page-container">
-  <pre>Please work now!: {{ section.settings.page_title_background_justification }}</pre>
   {% comment %}
   Title section
   {% endcomment %}<div class="{{ section.settings.page_title_background_justification }} {% if template_page and section.settings.page_title_background != blank %}main-page__media--background main-page-title{% else %}page-width page-width--narrow{% endif %}">
