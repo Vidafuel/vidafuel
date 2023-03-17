@@ -42,7 +42,7 @@
   <pre>{{ section.settings.page_title_background_justification }}</pre>
   {% comment %}
   Title section
-  {% endcomment %}<div class="{{ title_background_justification }} {% if template_page and section.settings.page_title_background != blank %}main-page__media--background main-page-title{% else %}page-width page-width--narrow{% endif %}">
+  {% endcomment %}<div class="{{ section.settings.page_title_background_justification }} {% if template_page and section.settings.page_title_background != blank %}main-page__media--background main-page-title{% else %}page-width page-width--narrow{% endif %}">
     {%- if template_page and section.settings.page_title_background != blank -%}
       <img
         srcset="{%- if section.settings.page_title_background.width >= 165 -%}

@@ -4,7 +4,7 @@
       "type": "main-page",
       "settings": {
         "page_title_background": "shopify:\/\/shop_images\/home-reviews-bk.jpg",
-        "page_title_background_justification": "bottom",
+        "page_title_background_justification": "justify-bottom",
         "featured_image_ratio": "adapt",
         "page_width": "page-width",
         "background_color": "#ffffff"
