@@ -9,31 +9,6 @@
         "page_width": "page-width--full-width"
       }
     },
-    "170a635b-76b7-4a71-a06f-7de06fd42d79": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<style>\n[u=\"slides\"] img {\n    margin-left: 7em;\n}\n#slider25953_container .sca-banner-full-left-style {\n    top: 21% !important;\n}\n#slider25953_container .sca-banner-full-style {\n    border: 2px solid #7ec8c3 !important;\n}\n#slider25953_container .sca-banner-full-style p {\nfont-family: \"trade-gothic-next-condensed\", sans-serif !important;\nfont-size: 1.6rem !important;\nfont-style:italic !important;\n}\n#slider25953_container .sca-banner-full-left-style {\n    padding: 2em !important;\n}\na.full-shop-now {\n    background-color: rgb(123, 204, 200) !important;\n    font-family: \"trade-gothic-next-condensed\", sans-serif !important;\n    padding: 0.9rem 3rem 1.1rem !important;\n    height: unset !important;\n}\n\na.full-shop-now:hover {\n    box-shadow: 0 0 0 0.2rem\n\t\trgba(var(--color-button), var(--alpha-button-border)) !important;\n}\n\n<\/style>\n<div data=\"scmBannerSlider\" data-id=\"25953\" style=\"display: none;\"><\/div>",
-        "custom_background": true,
-        "background_color": "#e3e4e6",
-        "page_width": false
-      }
-    },
-    "1641929597955d3766": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"Reviews from real customers\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
-        "custom_background": false,
-        "background_color": "#ffffff",
-        "page_width": false
-      }
-    },
-    "b2846e1a-0528-4ca5-8831-9ad1c4230927": {
-      "type": "scm-bannerslider",
-      "disabled": true,
-      "settings": {
-        "scm_banner_slider": "1017"
-      }
-    },
     "e0985153-fa59-4a99-a482-a811475d1996": {
       "type": "slider",
       "blocks": {
@@ -91,15 +66,42 @@
       "settings": {
         "autoplay": true,
         "autoplay_speed": "5000",
-        "text_size": "medium"
+        "text_size": "medium",
+        "custom_background": true,
+        "background_color": "#e3e4e6"
+      }
+    },
+    "170a635b-76b7-4a71-a06f-7de06fd42d79": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n[u=\"slides\"] img {\n    margin-left: 7em;\n}\n#slider25953_container .sca-banner-full-left-style {\n    top: 21% !important;\n}\n#slider25953_container .sca-banner-full-style {\n    border: 2px solid #7ec8c3 !important;\n}\n#slider25953_container .sca-banner-full-style p {\nfont-family: \"trade-gothic-next-condensed\", sans-serif !important;\nfont-size: 1.6rem !important;\nfont-style:italic !important;\n}\n#slider25953_container .sca-banner-full-left-style {\n    padding: 2em !important;\n}\na.full-shop-now {\n    background-color: rgb(123, 204, 200) !important;\n    font-family: \"trade-gothic-next-condensed\", sans-serif !important;\n    padding: 0.9rem 3rem 1.1rem !important;\n    height: unset !important;\n}\n\na.full-shop-now:hover {\n    box-shadow: 0 0 0 0.2rem\n\t\trgba(var(--color-button), var(--alpha-button-border)) !important;\n}\n\n<\/style>\n<div data=\"scmBannerSlider\" data-id=\"25953\" style=\"display: none;\"><\/div>",
+        "custom_background": true,
+        "background_color": "#e3e4e6",
+        "page_width": false
+      }
+    },
+    "1641929597955d3766": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"Reviews from real customers\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
+        "custom_background": false,
+        "background_color": "#ffffff",
+        "page_width": false
+      }
+    },
+    "b2846e1a-0528-4ca5-8831-9ad1c4230927": {
+      "type": "scm-bannerslider",
+      "disabled": true,
+      "settings": {
+        "scm_banner_slider": "1017"
       }
     }
   },
   "order": [
     "main",
+    "e0985153-fa59-4a99-a482-a811475d1996",
     "170a635b-76b7-4a71-a06f-7de06fd42d79",
     "1641929597955d3766",
-    "b2846e1a-0528-4ca5-8831-9ad1c4230927",
-    "e0985153-fa59-4a99-a482-a811475d1996"
+    "b2846e1a-0528-4ca5-8831-9ad1c4230927"
   ]
 }

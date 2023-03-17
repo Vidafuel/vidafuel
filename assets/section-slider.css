@@ -16,3 +16,6 @@
 .carousel-cell__image {
 	flex: 0 0 50%;
 }
+.carousel-cell:not(.is-selected) {
+  opacity: 0.2;
+}
