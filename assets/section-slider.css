@@ -101,8 +101,7 @@
 		margin: 1em;
 	}
 }
-.carousel__image-wrap {
-}
+
 @media screen and (min-width: 750px) {
 	.carousel__image-wrap {
 		flex: 1 0 1px;
@@ -120,11 +119,7 @@
 	max-width: 100%;
 	height: auto;
 }
-/* @media screen and (min-width: 750px) {
-	.carousel__image {
-		height: auto;
-	}
-} */
+
 @media screen and (min-width: 750px) {
 	.carousel__button-wrap {
 		flex: 1 0 100%;
