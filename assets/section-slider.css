@@ -1,4 +1,3 @@
-
 .carousel-wrapper {
 	padding: 4em 2em;
 }
@@ -61,7 +60,13 @@
 	margin-bottom: 0;
 }
 .carousel__subtitle {
+	margin: 0;
 	font-style: italic;
+}
+@media screen and (min-width: 750px) {
+	.carousel__subtitle {
+		margin: 1em 2em;
+	}
 }
 .carousel__image {
 	border-radius: 10px;
@@ -70,4 +75,17 @@
 	max-width: 100%;
 }
 @media screen and (min-width: 750px) {
+	.carousel__image {
+		object-fit: unset;
+		max-width: unset;
+	}
+}
+
+.flickity-button {
+	top: 24%;
+}
+@media screen and (min-width: 750px) {
+	.flickity-button {
+		top: 50%;
+	}
 }
