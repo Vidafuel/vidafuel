@@ -580,7 +580,7 @@
 		grid-column: 1 / span 1;
 		text-align: center;
 	}
-	.collage-card:not(.collage-text) {
+	.collage-card:not(.collage-text):not(.collage-video) {
 		grid-row: 2 / span 1;
 		grid-column: 1 / span 1;
 	}

@@ -39,6 +39,9 @@
         "6fc10e7f-096e-49a2-9c81-1e158cd62f31",
         "4cb7c79d-929c-4921-9723-4e266dc4dc4b"
       ],
+      "custom_css": [
+        ".embed-container {border-radius: var(--border-radius);}"
+      ],
       "settings": {
         "heading": "",
         "desktop_layout": "right",
@@ -205,31 +208,6 @@
         "page_width": "page-width-small",
         "custom_css": "#shopify-section-{{ section.id }} .multicolumn-bk-image \n{\n  bottom: unset;\n  top: 0;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list {\n  align-items: start;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list__item .multicolumn-card\n{\n  display: flex;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__info \n{\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  flex: 0 0 60%;\n  background: rgb(255 255 255 \/ 79%);\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__image-wrapper\n{\n  display: flex;\n  flex: 0 1 40%;\n  flex-direction: column;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list__item:nth-child(odd) .multicolumn-card__image-wrapper {\n  order: 2;\n}\n\n#shopify-section-{{ section.id }} .column-heading-color {\n  margin: 0;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__info p {\n  margin-top: 0;\n}\n\n\/*\n#shopify-section-{{ section.id }} .multicolumn-list__item:nth-child(odd) {\n  display: flex;\n  justify-content: end;\n}\n*\/",
         "custom_css_mobile": "#shopify-section-{{ section.id }} .background-bk-image {\n    min-height: 40vh;\n}\n\n#shopify-section-{{ section.id }} .title-wrapper-with-link {\n    margin-top: 0;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-bk-image {\n    transform: translate(-119px, 50px);\n}\n\n#shopify-section-{{ section.id }} .col-1 {\n    order: 1;\n}\n\n#shopify-section-{{ section.id }} .col-3 {\n    order: 2;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__info-description {\n    font-size: 18px;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__info {\n    padding-bottom: 90px;\n}"
-      }
-    },
-    "c6325ea0-a755-4f14-a3a1-77533eef78c0": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<style>\n@media screen and (max-width: 749px) {\n#Banner-template--17888246366522__37a31859-d026-4732-b82b-1347b5f52e18 {   \n min-height: 330px;\n}\n#Banner-template--17888246366522__37a31859-d026-4732-b82b-1347b5f52e18 .media > img {\n    object-fit: cover;\n    object-position: 90%;\n}\n}\n\n@media screen and (min-width: 750px) {\n#Banner-template--17888246366522__37a31859-d026-4732-b82b-1347b5f52e18\n.media > img {\nheight: auto;\n}\n}\n\n#shopify-section-template--17888246366522__1641834224a94d856f li.multicolumn-list__item:nth-child(1) .multicolumn-card {\n    border: 2px solid #fff;\n    border-radius: 21px;\n}\n\n<\/style>",
-        "custom_background": false,
-        "background_color": "#ffffff",
-        "page_width": false
-      }
-    },
-    "37a31859-d026-4732-b82b-1347b5f52e18": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein-To-support-muscle-mass-_-strength-joint-_-bone-health-No-artificial-sweeteners-ever-16g-protein-per-2oz-shot-One-shot-per-day-is-all-vou-need-C_c1c0dcfc-4083-4806-9e92-f4782bfd2131.webp",
-        "image_height": "large",
-        "adapt_height_first_image": true,
-        "desktop_text_box_position": "center",
-        "show_text_box": false,
-        "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": false,
-        "show_text_position": "default"
       }
     },
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219": {
@@ -703,7 +681,7 @@
         "desktop_layout": "right",
         "background_color_scheme": "default",
         "mobile_layout": "column",
-        "remove_top_spacing": false,
+        "remove_top_spacing": true,
         "full_width": true
       }
     }
@@ -711,8 +689,6 @@
   "order": [
     "16420790196f1cba40",
     "09ce1af3-7f6f-4041-80cb-67c508a49c9a",
-    "c6325ea0-a755-4f14-a3a1-77533eef78c0",
-    "37a31859-d026-4732-b82b-1347b5f52e18",
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219",
     "1641834224a94d856f",
     "495a4603-2f82-403d-8335-492e932044a0",
