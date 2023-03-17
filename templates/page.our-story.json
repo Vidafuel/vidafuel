@@ -33,12 +33,70 @@
       "settings": {
         "scm_banner_slider": "1017"
       }
+    },
+    "e0985153-fa59-4a99-a482-a811475d1996": {
+      "type": "slider",
+      "blocks": {
+        "template--18355210125626__e0985153-fa59-4a99-a482-a811475d1996-1679009904b959dd1e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Meet_Vanessa.jpg",
+            "alignment": "top",
+            "title": "Vanessa",
+            "subheading": "Tell your brand's story through video and images",
+            "link": "shopify:\/\/collections\/wellness-supplements"
+          }
+        },
+        "template--18355210125626__e0985153-fa59-4a99-a482-a811475d1996-1679009904b959dd1e-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Meet_Julie_Shopify_1080x1080_c6d31496-08d8-42b7-963f-f39063c2aa51.jpg",
+            "alignment": "top",
+            "title": "Julie",
+            "subheading": "Tell your brand's story through video and images",
+            "link": "shopify:\/\/products\/collagen-protein-drink-2-pack"
+          }
+        },
+        "0745705d-128b-4d90-a421-22f023137ad8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1080x1080_SM.jpg",
+            "alignment": "top",
+            "title": "Ellen",
+            "subheading": "Tell your brand's story through video and images",
+            "link": ""
+          }
+        },
+        "58cd9d56-4395-48e7-a1b7-b8dfc8d5a1b5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vidafuel_Blog_Post_1080x1080_5.jpg",
+            "alignment": "top",
+            "title": "Dana",
+            "subheading": "Tell your brand's story through video and images",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18355210125626__e0985153-fa59-4a99-a482-a811475d1996-1679009904b959dd1e-0",
+        "template--18355210125626__e0985153-fa59-4a99-a482-a811475d1996-1679009904b959dd1e-1",
+        "0745705d-128b-4d90-a421-22f023137ad8",
+        "58cd9d56-4395-48e7-a1b7-b8dfc8d5a1b5"
+      ],
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": "5000",
+        "slideshow_height": "small",
+        "text_size": "medium"
+      }
     }
   },
   "order": [
     "main",
     "170a635b-76b7-4a71-a06f-7de06fd42d79",
     "1641929597955d3766",
-    "b2846e1a-0528-4ca5-8831-9ad1c4230927"
+    "b2846e1a-0528-4ca5-8831-9ad1c4230927",
+    "e0985153-fa59-4a99-a482-a811475d1996"
   ]
 }
