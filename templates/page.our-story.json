@@ -3,10 +3,12 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "background_color": "#e3e4e6",
+        "page_title_background": "shopify:\/\/shop_images\/home-reviews-background.jpg",
+        "page_title_background_justification": "default",
         "page_featured_image": "shopify:\/\/shop_images\/vidafuel-owner-bette-and-mother.webp",
         "featured_image_ratio": "circle",
-        "page_width": "page-width"
+        "page_width": "page-width",
+        "background_color": "#e3e4e6"
       }
     },
     "e0985153-fa59-4a99-a482-a811475d1996": {
