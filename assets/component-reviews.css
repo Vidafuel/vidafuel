@@ -3,6 +3,11 @@
 	overflow: hidden;
 }
 
+.yotpo-reviews-carousel .carousel-display-wrapper {
+	padding-right: 0;
+	padding-left: 0;
+}
+
 .yotpo-reviews-carousel .carousel-display-wrapper .scroller {
 	padding: 2rem 0;
 }
