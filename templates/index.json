@@ -497,8 +497,54 @@
         "custom_css_mobile": "#shopify-section-{{ section.id }} .slider.slider--mobile .slider__slide {\n    padding-top: 30px;\n}\n#shopify-section-{{ section.id }} .multicolumn-list__item:nth-child(1) .multicolumn-card {\n    position: relative;\n}\n\n#shopify-section-{{ section.id }} .multicolumn-card__image-wrapper {\n    padding-bottom: 22px;\n}\n\n#shopify-section-{{ section.id }} .col-3 .multicolumn-card:after {\n    content: \"* artificial sweeteners\";\n    position: absolute;\n    bottom: 0;\n    font-size: 14px;\n    width: 100%;\n    transform: translateX(32px);\n}\n\n#shopify-section-{{ section.id }} .multicolumn-list__item:nth-child(1) .multicolumn-card:before {\n    content: \"\";\n    background-image: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0922\/1906\/files\/vidafuel-protein-shot-checkmark-5.webp?v=1676649903);\n    position: absolute;\n    width: 50%;\n    height: 25%;\n    background-repeat: no-repeat;\n    background-size: 50%;\n    background-position: top center;\n    top: -30px;\n    left: 25%;\n}"
       }
     },
+    "98914b8f-5bc6-4fdf-8f95-121613f29034": {
+      "type": "collage",
+      "blocks": {
+        "f51a8831-c232-4ff6-8551-b52f54a7cede": {
+          "type": "product",
+          "settings": {
+            "product": "protein-juice-berry",
+            "second_image": true,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "0942b745-799d-4260-aedf-6bc5d4536cb7": {
+          "type": "product",
+          "settings": {
+            "product": "protein-juice-orange",
+            "second_image": true,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "template--18355180732730__98914b8f-5bc6-4fdf-8f95-121613f29034-1679076570ad25ea93-1": {
+          "type": "product",
+          "settings": {
+            "product": "collagen-protein-drink-2-pack",
+            "second_image": true,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        }
+      },
+      "block_order": [
+        "f51a8831-c232-4ff6-8551-b52f54a7cede",
+        "0942b745-799d-4260-aedf-6bc5d4536cb7",
+        "template--18355180732730__98914b8f-5bc6-4fdf-8f95-121613f29034-1679076570ad25ea93-1"
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "right",
+        "background_color_scheme": "default",
+        "mobile_layout": "collage",
+        "remove_top_spacing": false,
+        "full_width": false
+      }
+    },
     "495a4603-2f82-403d-8335-492e932044a0": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "subtitle": "",
@@ -691,6 +737,7 @@
     "09ce1af3-7f6f-4041-80cb-67c508a49c9a",
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219",
     "1641834224a94d856f",
+    "98914b8f-5bc6-4fdf-8f95-121613f29034",
     "495a4603-2f82-403d-8335-492e932044a0",
     "34ad2d72-2905-4a45-a8b2-b6905743bdde",
     "1639503887e884ceb3",
