@@ -6,14 +6,12 @@
 
 {% liquid
   assign page_content_container = ''
-  assign inner_container_width = 'default'
   
   if section.settings.page_featured_image
     assign page_content_container = 'grid-container'
   endif
   
   if section.settings.page_width == 'page-width--full-width'
-    assign inner_container_width = 'page-width'
   endif
   
   assign image_ratio = section.settings.featured_image_ratio
@@ -26,7 +24,7 @@
 {% if page.template_suffix != empty %}
   {% assign template_page = true %}
 {% endif %}
-<div class="page-container" {% if section.settings.background_color != '#ffffff' %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
+<div class="page-container">
   
   {% comment %}
     Title section
@@ -58,8 +56,8 @@
   {% comment %}
     Featured image/text section
   {% endcomment %}
-  <div class="{{ section.settings.page_width }}">
-    <div class="{{ inner_container_width }} {{ page_content_container }}">
+  <div class="page-featured-content" {% if section.settings.background_color != '#ffffff' %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
+    <div class="{{ section.settings.page_width }} {{ page_content_container }}">
       {% comment %}
         Featured image
       {% endcomment %}

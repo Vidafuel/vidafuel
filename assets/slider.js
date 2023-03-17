@@ -4,6 +4,7 @@ var flkty = new Flickity(elem, {
 	contain: true,
 	draggable: true,
 	wrapAround: true,
+	autoPlay: 5500,
 })
 
 // element argument can be a selector string
