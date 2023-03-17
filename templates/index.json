@@ -500,15 +500,6 @@
     "98914b8f-5bc6-4fdf-8f95-121613f29034": {
       "type": "collage",
       "blocks": {
-        "template--18355180732730__98914b8f-5bc6-4fdf-8f95-121613f29034-1679076570ad25ea93-1": {
-          "type": "product",
-          "settings": {
-            "product": "collagen-protein-drink-2-pack",
-            "second_image": false,
-            "image_padding": false,
-            "secondary_background": false
-          }
-        },
         "f51a8831-c232-4ff6-8551-b52f54a7cede": {
           "type": "product",
           "settings": {
@@ -526,16 +517,25 @@
             "image_padding": false,
             "secondary_background": false
           }
+        },
+        "template--18355180732730__98914b8f-5bc6-4fdf-8f95-121613f29034-1679076570ad25ea93-1": {
+          "type": "product",
+          "settings": {
+            "product": "collagen-protein-drink-2-pack",
+            "second_image": true,
+            "image_padding": false,
+            "secondary_background": false
+          }
         }
       },
       "block_order": [
-        "template--18355180732730__98914b8f-5bc6-4fdf-8f95-121613f29034-1679076570ad25ea93-1",
         "f51a8831-c232-4ff6-8551-b52f54a7cede",
-        "0942b745-799d-4260-aedf-6bc5d4536cb7"
+        "0942b745-799d-4260-aedf-6bc5d4536cb7",
+        "template--18355180732730__98914b8f-5bc6-4fdf-8f95-121613f29034-1679076570ad25ea93-1"
       ],
       "settings": {
-        "heading": "Multimedia collage",
-        "desktop_layout": "left",
+        "heading": "",
+        "desktop_layout": "right",
         "background_color_scheme": "default",
         "mobile_layout": "collage",
         "remove_top_spacing": false,
