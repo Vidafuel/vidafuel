@@ -40,7 +40,7 @@
 {% if section.blocks.size > 0 %}
   <div class="carousel-wrapper" {% if section.settings.background_color %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
 
-    <div class="main-carousel" data-flickity>
+    <div class="main-carousel" data-flickity='{ "autoPlay": "{{ section.settings.autoplay_speed }}" }'>
 
       {% for block in section.blocks %}
         <div class="carousel-cell">

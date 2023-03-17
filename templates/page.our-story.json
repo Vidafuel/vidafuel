@@ -65,7 +65,7 @@
       ],
       "settings": {
         "autoplay": true,
-        "autoplay_speed": "5000",
+        "autoplay_speed": "10000",
         "text_size": "medium",
         "custom_background": true,
         "background_color": "#e3e4e6"
