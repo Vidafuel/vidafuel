@@ -24,7 +24,7 @@
         "text_size": "medium",
         "custom_background": false,
         "background_color_scheme": "waves",
-        "background_color": "#7bccc8"
+        "background_color": "rgba(0,0,0,0)"
       }
     },
     "16420790196f1cba40": {
@@ -72,7 +72,7 @@
       "settings": {
         "heading": "",
         "desktop_layout": "right",
-        "background_color_scheme": "waves",
+        "background_color_scheme": "default",
         "mobile_layout": "column",
         "remove_top_spacing": true,
         "full_width": true
