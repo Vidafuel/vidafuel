@@ -6,6 +6,12 @@
 	else
 		assign slider_speed = 'false'
 	endif
+  
+   if section.settings.background_color_scheme == 'waves' 
+   render 'background-waves' 
+ elsif section.settings.background_color_scheme == 'mighty' 
+   render 'background-mighty' 
+ endif 
 %}
 {{ 'section-slider.css' | asset_url | stylesheet_tag }}
 
@@ -182,6 +188,26 @@
         "id": "custom_background",
         "label": "Custom background",
         "default": false
+      }, {
+        "type": "select",
+        "id": "background_color_scheme",
+        "options": [
+          {
+            "value": "default",
+            "label": "Default"
+          }, {
+            "value": "waves",
+            "label": "Waves"
+          }, {
+            "value": "mighty",
+            "label": "Mighty"
+          }, {
+            "value": "image",
+            "label": "Image"
+          }
+        ],
+        "default": "default",
+        "label": "Background scheme"
       }, {
         "type": "color",
         "id": "background_color",
