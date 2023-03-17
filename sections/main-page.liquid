@@ -1,11 +1,25 @@
-<link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+<link
+  rel="stylesheet"
+  href="{{ 'section-main-page.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'">
+<link
+  rel="stylesheet"
+  href="{{ 'component-rte.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'">
 
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
 {% liquid
   assign page_content_container = ''
+  
+  # if section.settings.page_title_background_justification != 'default'
+    assign page_title_background_justification = section.settings.page_title_background_justification
+  # else
+  #   assign page_title_background_justification = 'default '
+  # endif
   
   if section.settings.page_featured_image
     assign page_content_container = 'grid-container'
@@ -25,26 +39,32 @@
   {% assign template_page = true %}
 {% endif %}
 <div class="page-container">
-  
+<pre>{{ page_title_background_justification }}</pre>
   {% comment %}
-    Title section
-  {% endcomment %}
-  <div class="{% if template_page and section.settings.page_title_background != blank %}main-page__media--background main-page-title{% else %}page-width page-width--narrow{% endif %}">
+  Title section
+  {% endcomment %}<div class="{{ page_title_background_justification }}{% if template_page and section.settings.page_title_background != blank %}main-page__media--background main-page-title{% else %}page-width page-width--narrow{% endif %}">
     {%- if template_page and section.settings.page_title_background != blank -%}
-      <img srcset="{%- if section.settings.page_title_background.width >= 165 -%}{{ section.settings.page_title_background | image_url: width: 165 }} 165w,{%- endif -%}
-              {%- if section.settings.page_title_background.width >= 360 -%}{{ section.settings.page_title_background | image_url: width: 360 }} 360w,{%- endif -%}
-              {%- if section.settings.page_title_background.width >= 535 -%}{{ section.settings.page_title_background | image_url: width: 535 }} 535w,{%- endif -%}
-              {%- if section.settings.page_title_background.width >= 750 -%}{{ section.settings.page_title_background | image_url: width: 750 }} 750w,{%- endif -%}
-              {%- if section.settings.page_title_background.width >= 1070 -%}{{ section.settings.page_title_background | image_url: width: 1070 }} 1070w,{%- endif -%}
-              {%- if section.settings.page_title_background.width >= 1500 -%}{{ section.settings.page_title_background | image_url: width: 1500 }} 1500w,{%- endif -%}
-              {{ section.settings.page_title_background | image_url }} {{ section.settings.page_title_background.width }}w"
-        src="{{ section.settings.page_title_background | image_url: width: 1500 }}"
-        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-        alt="{{ section.settings.page_title_background.alt | escape }}" 
-        loading="lazy" 
-        class="main-page__media--background_img"
-        width="{{ section.settings.page_title_background.width }}" 
-        height="{{ section.settings.page_title_background.height }}">
+      <img
+        srcset="{%- if section.settings.page_title_background.width >= 165 -%}
+        {{ section.settings.page_title_background | image_url: width: 165 }} 165w,{%- endif -%}
+      {%- if section.settings.page_title_background.width >= 360 -%}
+        {{ section.settings.page_title_background | image_url: width: 360 }} 360w,{%- endif -%}
+      {%- if section.settings.page_title_background.width >= 535 -%}
+        {{ section.settings.page_title_background | image_url: width: 535 }} 535w,{%- endif -%}
+      {%- if section.settings.page_title_background.width >= 750 -%}
+        {{ section.settings.page_title_background | image_url: width: 750 }} 750w,{%- endif -%}
+      {%- if section.settings.page_title_background.width >= 1070 -%}
+        {{ section.settings.page_title_background | image_url: width: 1070 }} 1070w,{%- endif -%}
+      {%- if section.settings.page_title_background.width >= 1500 -%}
+        {{ section.settings.page_title_background | image_url: width: 1500 }} 1500w,{%- endif -%}
+      {{ section.settings.page_title_background | image_url }} {{ section.settings.page_title_background.width }}w"
+      src="{{ section.settings.page_title_background | image_url: width: 1500 }}"
+      sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+      alt="{{ section.settings.page_title_background.alt | escape }}"
+      loading="lazy"
+      class="main-page__media--background_img"
+      width="{{ section.settings.page_title_background.width }}"
+      height="{{ section.settings.page_title_background.height }}">
     {%- endif -%}
     <div class="page-title{% if template_page and section.settings.page_title_background != blank %}_media{% endif %}-container page-width page-width--narrow">
       <h1 class="page-title{% if template_page and section.settings.page_title_background != blank %}_media{% else %} main-page-title center{% endif %} h0">
@@ -52,30 +72,36 @@
       </h1>
     </div>
   </div>
-  
+
   {% comment %}
-    Featured image/text section
-  {% endcomment %}
-  <div class="page-featured-content" {% if section.settings.background_color != '#ffffff' %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
+  Featured image/text section
+  {% endcomment %}<div class="page-featured-content" {% if section.settings.background_color != '#ffffff' %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
     <div class="{{ section.settings.page_width }} {{ page_content_container }}">
       {% comment %}
-        Featured image
+      Featured image
       {% endcomment %}
       {% if section.settings.page_featured_image %}
-      <div class="media media--transparent media--{{ image_ratio }}">
-        <img srcset="{%- if section.settings.page_featured_image.width >= 165 -%}{{ section.settings.page_featured_image | image_url: width: 165 }} 165w,{%- endif -%}
-          {%- if section.settings.page_featured_image.width >= 360 -%}{{ section.settings.page_featured_image | image_url: width: 360 }} 360w,{%- endif -%}
-          {%- if section.settings.page_featured_image.width >= 535 -%}{{ section.settings.page_featured_image | image_url: width: 535 }} 535w,{%- endif -%}
-          {%- if section.settings.page_featured_image.width >= 750 -%}{{ section.settings.page_featured_image | image_url: width: 750 }} 750w,{%- endif -%}
-          {%- if section.settings.page_featured_image.width >= 1070 -%}{{ section.settings.page_featured_image | image_url: width: 1070 }} 1070w,{%- endif -%}
-          {%- if section.settings.page_featured_image.width >= 1500 -%}{{ section.settings.page_featured_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+        <div class="media media--transparent media--{{ image_ratio }}">
+          <img
+            srcset="{%- if section.settings.page_featured_image.width >= 165 -%}
+            {{ section.settings.page_featured_image | image_url: width: 165 }} 165w,{%- endif -%}
+          {%- if section.settings.page_featured_image.width >= 360 -%}
+            {{ section.settings.page_featured_image | image_url: width: 360 }} 360w,{%- endif -%}
+          {%- if section.settings.page_featured_image.width >= 535 -%}
+            {{ section.settings.page_featured_image | image_url: width: 535 }} 535w,{%- endif -%}
+          {%- if section.settings.page_featured_image.width >= 750 -%}
+            {{ section.settings.page_featured_image | image_url: width: 750 }} 750w,{%- endif -%}
+          {%- if section.settings.page_featured_image.width >= 1070 -%}
+            {{ section.settings.page_featured_image | image_url: width: 1070 }} 1070w,{%- endif -%}
+          {%- if section.settings.page_featured_image.width >= 1500 -%}
+            {{ section.settings.page_featured_image | image_url: width: 1500 }} 1500w,{%- endif -%}
           {{ section.settings.page_featured_image | image_url }} {{ section.settings.page_featured_image.width }}w"
           src="{{ section.settings.page_featured_image | image_url: width: 1500 }}"
           sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
-          alt="{{ section.settings.page_featured_image.alt | escape }}" 
-          loading="lazy" 
+          alt="{{ section.settings.page_featured_image.alt | escape }}"
+          loading="lazy"
           class="main-page__featured-image"
-          width="{{ section.settings.page_featured_image.width | divided_by: 2 }}" 
+          width="{{ section.settings.page_featured_image.width | divided_by: 2 }}"
           height="{{ section.settings.page_featured_image.height | divided_by: 2 }}">
         </div>
       {% endif %}
@@ -84,81 +110,91 @@
       </div>
     </div>
   </div>
-  
+
 </div>
 
 {% schema %}
-{
-  "name": "Main page",
-  "tag": "section",
-  "class": "page",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "page_title_background",
-      "label": "Title background",
-      "info": "Or choose a background color below:"
-    },
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background color",
-      "default": "#ffffff"
-    },
-    {
-      "type": "image_picker",
-      "id": "page_featured_image",
-      "label": "Featured image"
-    },
-    {
-      "type": "select",
-      "id": "featured_image_ratio",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "Adapt"
-        },
-        {
-          "value": "portrait",
-          "label": "Portrait"
-        },
-        {
-          "value": "square",
-          "label": "Square"
-        },
-        {
-          "value": "circle",
-          "label": "Circle"
-        }
-      ],
-      "default": "adapt",
-      "label": "Image ratio"
-    },
-    {
-      "type": "select",
-      "id": "page_width",
-      "default": "page-width",
-      "label": "Page width",
-      "options": [
-        {
-          "value": "page-width",
-          "label": "Page width"
-        },
-        {
-          "value": "page-width--narrow",
-          "label": "Narrow"
-        },
-        {
-          "value": "page-width--full-width",
-          "label": "Full width"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "t:sections.page.presets.name"
-    }
-  ]
-}
+  {
+    "name": "Main page",
+    "tag": "section",
+    "class": "page",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "page_title_background",
+        "label": "Title background"
+      },
+      {
+        "type": "select",
+        "id": "page_title_background_justification",
+        "label": "Title background justify",
+        "default": "default",
+        "options": [
+          {
+            "value": "default",
+            "label": "Default"
+          }, {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+      {
+        "type": "image_picker",
+        "id": "page_featured_image",
+        "label": "Featured image"
+      },
+      {
+        "type": "select",
+        "id": "featured_image_ratio",
+        "options": [
+          {
+            "value": "adapt",
+            "label": "Adapt"
+          }, {
+            "value": "portrait",
+            "label": "Portrait"
+          }, {
+            "value": "square",
+            "label": "Square"
+          }, {
+            "value": "circle",
+            "label": "Circle"
+          }
+        ],
+        "default": "adapt",
+        "label": "Featured image ratio"
+      }, {
+        "type": "header",
+        "content": "Page settings"
+      }, {
+        "type": "select",
+        "id": "page_width",
+        "default": "page-width",
+        "label": "Page width",
+        "options": [
+          {
+            "value": "page-width",
+            "label": "Page width"
+          }, {
+            "value": "page-width--narrow",
+            "label": "Narrow"
+          }, {
+            "value": "page-width--full-width",
+            "label": "Full width"
+          }
+        ]
+      }, {
+        "type": "color",
+        "id": "background_color",
+        "label": "Page background color",
+        "default": "#ffffff"
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.page.presets.name"
+      }
+    ]
+  }
 {% endschema %}
