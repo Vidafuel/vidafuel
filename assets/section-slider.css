@@ -13,7 +13,19 @@
 .carousel-title__wrap {
 	position: relative;
 	text-align: center;
+	padding: 0;
 }
+	.carousel-title__wrap > * {
+		font-size: 1.5em;
+		margin: 0;
+		padding: 2em 0 0;
+	}
+@media screen and (min-width: 750px) {
+	.carousel-title__wrap > * {
+		font-size: initial;
+	}
+}
+
 
 .carousel-cell {
 	width: 100%; /* full width */
