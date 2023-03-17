@@ -22,7 +22,9 @@
 	}
 @media screen and (min-width: 750px) {
 	.carousel-title__wrap > * {
-		font-size: initial;
+		font-size: calc(var(--font-heading-scale) * 4rem);
+		padding: 0;
+		margin: 0.83em 0;
 	}
 }
 
@@ -88,7 +90,7 @@
 .carousel__image {
 	border-radius: 10px;
 	object-fit: contain;
-	object-position: bottom;
+	object-position: center;
 	max-width: 100%;
 }
 @media screen and (min-width: 750px) {
@@ -99,7 +101,7 @@
 }
 
 .flickity-button {
-	top: 24%;
+	top: 100%;
 }
 @media screen and (min-width: 750px) {
 	.flickity-button {
