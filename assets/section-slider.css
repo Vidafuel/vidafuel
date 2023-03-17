@@ -1,0 +1,23 @@
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 160px; /* height of carousel */
+  margin-right: 10px;
+}
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+/* carousel height, as percentage of width */
+.carousel {
+  padding-bottom: 33.3%;
+}
+
+/* viewport inherit size from carousel */
+.carousel .flickity-viewport {
+  position: absolute;
+  width: 100%;
+}
+
+/* cell inherit height from carousel */
+.carousel-cell {
+  height: 100%;
+}

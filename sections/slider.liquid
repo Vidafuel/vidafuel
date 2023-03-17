@@ -1,19 +1,15 @@
 <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
 <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js" async></script>
-
-
-
-
-<div data-section-id="{{ section.id }}" data-section-type="slideshow-section">
+{{ 'section-slider.css' | asset_url | stylesheet_tag }}
 
   {% if section.blocks.size > 0 %}
     <div class="carousel-wrapper">
 
-				<div data-flickity class="carousel"> 
+				<div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true, "adaptiveHeight": true }'> 
 					
 					{% for block in section.blocks %}
 						<div class="carousel-cell">
-							<img src="{{ block.settings.image | image_url: width: 100 }}" alt="">
+							<img src="{{ block.settings.image | image_url: width: 300 }}" alt="">
 							<div class="slideshow__text-wrap{% if block.settings.title != blank or block.settings.subheading != blank %} slideshow__overlay{% endif %}">
 								<div class="slideshow__text-content">
 									<div class="page-width">
@@ -40,15 +36,12 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
 					{% endfor %}
 				</div>
 			
     </div>
   {% endif %}
-
-</div>
 
 {% schema %}
   {
