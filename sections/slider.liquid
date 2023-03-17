@@ -1,15 +1,24 @@
 {{ 'flickity.min.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'flickity.min.js' | asset_url }}" defer></script>
 {% liquid
-	assign slider_speed = section.settings.autoplay_speed
+	if section.settings.autoplay
+		assign slider_speed = section.settings.autoplay_speed
+	else
+		assign slider_speed = 'false'
+	endif
 %}
 {{ 'section-slider.css' | asset_url | stylesheet_tag }}
 
 {% if section.settings.custom_background %}
   <style>
     .carousel-wrapper {
-      padding-top: 8.25%;
+      padding-top: 0;
       position: relative;
+    }
+    @media screen and (min-width: 750px) {
+      .carousel-wrapper {
+        padding-top: 8.25%;
+      }
     }
 
     .carousel-wrapper::before {
@@ -80,8 +89,9 @@
                 {% endif %}
               </div>
             </div>
-
-            {{ block.settings.image | image_url: width: 400 | image_tag: class: 'carousel__image' }}
+            <div class="carousel__image-wrap">
+              {{ block.settings.image | image_url: width: 400 | image_tag: class: 'carousel__image' }}
+            </div>
 
           </div>
         </div>

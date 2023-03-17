@@ -1,5 +1,11 @@
 .page-featured-content {
-	padding: 5rem;
+	padding-left: calc(4rem / var(--font-body-scale));
+	padding-right: calc(4rem / var(--font-body-scale));
+}
+@media screen and (min-width: 750px) {
+	.page-featured-content {
+		padding: 5rem;
+	}
 }
 
 .page-title {
@@ -57,9 +63,16 @@
 
 .grid-container {
 	display: grid;
-	grid-template-columns: 1fr 3fr;
-	gap: 6rem;
+	grid-template-columns: 1fr;
+	gap: 2rem;
 	align-items: start;
+}
+
+@media screen and (min-width: 750px) {
+	.grid-container {
+		grid-template-columns: 1fr 3fr;
+			gap: 6rem;
+	}
 }
 
 .media > img.main-page__featured-image {
