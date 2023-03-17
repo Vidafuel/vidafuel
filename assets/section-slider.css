@@ -1,23 +1,18 @@
+.main-carousel:focus-visible {
+	box-shadow: none;
+}
 .carousel-cell {
-  width: 100%; /* full width */
-  height: 160px; /* height of carousel */
-  margin-right: 10px;
+  width: 60%; /* full width */
+  margin-right: 20rem;
+	  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.carousel-cell.is-selected {
-  background: #ED2;
+.carousel-cell__wrap {
+	display: flex;
+	justify-content: space-around;
 }
-/* carousel height, as percentage of width */
-.carousel {
-  padding-bottom: 33.3%;
-}
-
-/* viewport inherit size from carousel */
-.carousel .flickity-viewport {
-  position: absolute;
-  width: 100%;
-}
-
-/* cell inherit height from carousel */
-.carousel-cell {
-  height: 100%;
+.slideshow__text-wrap,
+.carousel-cell__image {
+	flex: 0 0 50%;
 }
