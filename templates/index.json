@@ -23,6 +23,7 @@
         "autoplay_speed": "5000",
         "text_size": "medium",
         "custom_background": false,
+        "background_color_scheme": "waves",
         "background_color": "#7bccc8"
       }
     },
