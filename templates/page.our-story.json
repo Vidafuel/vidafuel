@@ -42,8 +42,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Meet_Vanessa.jpg",
             "alignment": "top",
-            "title": "Vanessa",
-            "subheading": "Tell your brand's story through video and images",
+            "title": "Vanessa Rojas-Bautista, RDN",
+            "subheading": "\"All of the positions I have previously had as a dietitian have prepared me for the amazing career I now have with Vidafuel. As a renal dietitian, I would assess dialysis patients’ nutritional status and recommend medication and nutritional changes to help them reach their monthly goals.\"",
             "link": "shopify:\/\/collections\/wellness-supplements"
           }
         },
@@ -52,8 +52,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Meet_Julie_Shopify_1080x1080_c6d31496-08d8-42b7-963f-f39063c2aa51.jpg",
             "alignment": "top",
-            "title": "Julie",
-            "subheading": "Tell your brand's story through video and images",
+            "title": "Julie Ruff, RD",
+            "subheading": "\"I love that Vidafuel products were created with people’s overall health and wellness in mind. As a dietitian, I tend to zoom in on ingredients to find out what exactly I am putting in my body or recommending for my patients. When I discovered Vidafuel Wellness Protein Drinks, I was so excited to find a nutrition supplement that was not filled with artificial sweeteners, not to mention Vidafuel is one of the only renal-friendly food companies out there.\"",
             "link": "shopify:\/\/products\/collagen-protein-drink-2-pack"
           }
         },
@@ -62,8 +62,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1080x1080_SM.jpg",
             "alignment": "top",
-            "title": "Ellen",
-            "subheading": "Tell your brand's story through video and images",
+            "title": "Ellen Paterson, RDN",
+            "subheading": "\"I was compelled to work with Vidafuel when the opportunity arose — a company whose mission is to help people with chronic or life-threatening diseases live longer, healthier lives.\"",
             "link": ""
           }
         },
@@ -72,7 +72,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Vidafuel_Blog_Post_1080x1080_5.jpg",
             "alignment": "top",
-            "title": "Dana",
+            "title": "Dana Trotta, MS, RDN, CSR",
             "subheading": "\"With Vidafuel, I get the chance to work in a dynamic setting and educate patients on our products, as well as act as a resource for dietitians who are interested in offering our products in their clinics. I also take the time to research up to date best practices and translate it into a real-world approach for clinicians and patients.\"",
             "link": ""
           }
@@ -87,7 +87,6 @@
       "settings": {
         "autoplay": true,
         "autoplay_speed": "5000",
-        "slideshow_height": "small",
         "text_size": "medium"
       }
     }
