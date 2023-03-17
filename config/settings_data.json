@@ -25,26 +25,15 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "FREE SHIPPING ON ORDERS $50+",
-              "color_scheme": "accent-2",
-              "link": "\/products"
-            }
-          },
-          "230cd44c-c506-4349-a7fc-d2f3153f2caf": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "text": "ENJOY 20% OFF SWEET SNACKS WITH CODE SWEETSNACKS20 UNTIL 3\/18",
-              "color_scheme": "accent-2",
-              "link": ""
+              "text": "UNLOCK  15% OFF  YOUR FIRST ORDER",
+              "color_scheme": "background-2",
+              "link": "shopify:\/\/collections\/wellness-supplements"
             }
           }
         },
         "block_order": [
-          "announcement-bar-0",
-          "230cd44c-c506-4349-a7fc-d2f3153f2caf"
+          "announcement-bar-0"
         ],
         "settings": {
         }
