@@ -16,7 +16,7 @@
   assign page_content_container = ''
   
   # if section.settings.page_title_background_justification != 'default'
-    assign page_title_background_justification = section.settings.page_title_background_justification
+    assign title_background_justification = section.settings.page_title_background_justification
   # else
   #   assign page_title_background_justification = 'default '
   # endif
@@ -39,10 +39,10 @@
   {% assign template_page = true %}
 {% endif %}
 <div class="page-container">
-<pre>{{ page_title_background_justification }}</pre>
+  <pre>{{ section.settings.page_title_background_justification }}</pre>
   {% comment %}
   Title section
-  {% endcomment %}<div class="{{ page_title_background_justification }}{% if template_page and section.settings.page_title_background != blank %}main-page__media--background main-page-title{% else %}page-width page-width--narrow{% endif %}">
+  {% endcomment %}<div class="{{ title_background_justification }} {% if template_page and section.settings.page_title_background != blank %}main-page__media--background main-page-title{% else %}page-width page-width--narrow{% endif %}">
     {%- if template_page and section.settings.page_title_background != blank -%}
       <img
         srcset="{%- if section.settings.page_title_background.width >= 165 -%}
@@ -127,17 +127,17 @@
       {
         "type": "select",
         "id": "page_title_background_justification",
-        "label": "Title background justify",
-        "default": "default",
         "options": [
           {
             "value": "default",
             "label": "Default"
           }, {
-            "value": "bottom",
+            "value": "justify-bottom",
             "label": "Bottom"
           }
-        ]
+        ],
+        "default": "default",
+        "label": "Title background justify"
       },
       {
         "type": "image_picker",
