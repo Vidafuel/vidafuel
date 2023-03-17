@@ -71,6 +71,7 @@
         "autoplay_speed": "5000",
         "text_size": "medium",
         "custom_background": true,
+        "background_color_scheme": "mighty",
         "background_color": "#e3e4e6"
       }
     },
