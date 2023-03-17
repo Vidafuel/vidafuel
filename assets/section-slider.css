@@ -10,7 +10,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: opacity 0.2 linear;
+	transition: opacity 0.2 linear 0;
 }
 .carousel-cell__wrap {
 	display: flex;
@@ -22,7 +22,7 @@
 }
 
 .carousel-cell:not(.is-selected) {
-	transition: opacity 0.2 linear;
+	transition: opacity 0.2 linear 0;
 	opacity: 0.2;
 }
 
