@@ -4,12 +4,17 @@
 
 @media screen and (min-width: 750px) {
 	.main-carousel {
-		padding: 4em 0;
+		padding: 2em 0;
 	}
 }
 .main-carousel:focus-visible {
 	box-shadow: none;
 }
+.carousel-title__wrap {
+	position: relative;
+	text-align: center;
+}
+
 .carousel-cell {
 	width: 100%; /* full width */
 	display: flex;

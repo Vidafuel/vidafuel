@@ -50,7 +50,13 @@
 
 {% if section.blocks.size > 0 %}
   <div class="carousel-wrapper" {% if section.settings.background_color %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
-
+		{% if section.settings.carousel_title != blank %}
+    <div class="carousel-title__wrap">
+      <h2 class="h1">
+        <strong>{{ section.settings.carousel_title }}</strong>
+      </h2>
+    </div>
+				{% endif %}
     <div class="main-carousel" data-flickity='{ "contain": "true", "draggable": true, "wrapAround": true, "autoPlay": {{ slider_speed }} }'>
 
       {% for block in section.blocks %}
@@ -107,6 +113,11 @@
     "class": "index-section index-section--flush",
     "max_blocks": 4,
     "settings": [
+			{
+				"type": "text",
+				"id": "carousel_title",
+				"label": "Carousel title"
+			},
       {
         "type": "checkbox",
         "id": "autoplay",
