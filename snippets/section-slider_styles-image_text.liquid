@@ -1,0 +1,36 @@
+{% style %}
+
+.hero__content-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    left: 0;
+    padding: 1.25rem;
+    top: 0;
+    width: 100%
+}
+ @media screen and (min-width: 750px) {
+    .hero__content-container {
+      padding: 3.75rem;
+      position: absolute;
+    }
+}
+  @media screen and (min-width: 750px) {
+    .hero__slide-container {
+      position: relative;
+      width: 100%;
+    }
+    .hero__slide-image {
+      width: 100vw;
+    }
+    .ratio-box img {
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+{% endstyle %}

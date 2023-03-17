@@ -7,16 +7,18 @@
           "type": "image_text",
           "settings": {
             "title": "Slide one!",
-            "text": "Slide one text here. . .",
-            "image": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-_-optimal-nutrition_2.webp"
+            "text": "<p><strong>Slide one text here. . .<\/strong><\/p><p>subtext like this<\/p>",
+            "image": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-_-optimal-nutrition_2.webp",
+            "background_image": "shopify:\/\/shop_images\/healthcare-bg_244be7a3-a564-4485-afaa-29b1d557d158.jpg"
           }
         },
         "8d2dd284-02d3-4887-92ba-68a8cf9f868f": {
           "type": "image_text",
           "settings": {
             "title": "Slide 2",
-            "text": "slide 2 text here. . .",
-            "image": "shopify:\/\/shop_images\/vidafuel-powerful-shot-centered-2.webp"
+            "text": "<p>slide 2 text here. . .<\/p>",
+            "image": "shopify:\/\/shop_images\/vidafuel-powerful-shot-centered-2.webp",
+            "background_image": "shopify:\/\/shop_images\/less-is-more-background_523d6412-a4f9-4749-9ecf-50e07c12ab8d.webp"
           }
         }
       },
@@ -25,12 +27,12 @@
         "8d2dd284-02d3-4887-92ba-68a8cf9f868f"
       ],
       "settings": {
-        "carousel_title": "ex title",
-        "autoplay": true,
-        "autoplay_speed": "5000",
+        "carousel_title": "",
+        "autoplay": false,
+        "autoplay_speed": "10000",
         "text_size": "medium",
         "custom_background": false,
-        "background_color_scheme": "waves",
+        "background_color_scheme": "default",
         "background_color": "rgba(0,0,0,0)"
       }
     },

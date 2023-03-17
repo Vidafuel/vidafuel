@@ -17,6 +17,23 @@
 	else
 		assign scheme = ''
 	endif 
+	
+	for block in section.blocks
+		case block.type
+			when 'image' 
+				if forloop.first
+					render 'section-slider_styles-quote'
+				endif
+			when 'video'
+				if forloop.first
+					render 'section-slider_styles-video'
+				endif
+			when 'image_text'
+				if forloop.first
+					render 'section-slider_styles-image_text'
+				endif
+		endcase
+	endfor
 
 	if section.settings.background_color != '#ffffff'
 		assign background_color = ' style="background-color:' | append: section.settings.background_color | append: ';"'
@@ -38,64 +55,80 @@
     <div class="main-carousel" data-flickity='{ "contain": "true", "prevNextButtons": false, "draggable": true, "wrapAround": true, "autoPlay": {{ slider_speed }} }'>
 
       {% for block in section.blocks %}
-        <div class="carousel-cell">
-          <div class="carousel-cell__wrap">
+        <div class="carousel-cell carousel-cell__{{ block.type }}">
 
-            {% case block.type %}
-              {% when 'image_text' %}
-								{{ block.settings.title }}<br>
-								{{ block.settings.text }}
-								{{ block.settings.image | image_url: width: 200 | image_tag }}
-								
-              {% when 'image' %} {% comment %} Image aka Quote lol {% endcomment %}
-								
-								{% unless block.settings.title == blank %}
-									<div class="carousel__title-wrap">
-										<h2 class="carousel__title{% if settings.link != blank %} carousel__title--has-link{% endif %}{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">
-											<strong>{{ block.settings.title | escape }}</strong>
-										</h2>
-									</div>
-								{% endunless %}
+          {% case block.type %}
+            {% when 'image_text' %}
+            <div class="hero__slide-container">
+              {% if block.settings.background_image != blank %}
+                <div class="hero__slide-image">
+                  <div class="ratio-box" style="padding-top:38.55%;">
+                    {{ block.settings.background_image | image_url: width: 1080 | image_tag: widths: '180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048' }}
+                  </div>
+                </div>
+              {% endif %}
+              <div class="hero__content-container">
+                <div class="hero__content hero__content--left">
+                  <h2 class="heading-2">
+                    <strong>{{ block.settings.title }}</strong>
+                  </h2>
+                  <p>{{ block.settings.text }}</p>
+                </div>
+                <div class="hero__image">
+                  {{ block.settings.image | image_url: width: 200 | image_tag }}
+                </div>
+              </div>
 
-								{% unless block.settings.image == blank %}
-									<div class="carousel__image-wrap">
-										{{ block.settings.image | image_url: width: 400 | image_tag: class: 'carousel__image' }}
-									</div>
-								{% endunless %}
+            </div>
+            {% when 'image' %}
+            {% comment %} Image aka Quote lol {% endcomment %}
+            <div class="carousel-cell__wrap-quote">
+              {% unless block.settings.title == blank %}
+                <div class="carousel__title-wrap">
+                  <h2 class="carousel__title{% if settings.link != blank %} carousel__title--has-link{% endif %}{% if section.settings.text_size == 'large' %} mega-title--large{% endif %}">
+                    <strong>{{ block.settings.title | escape }}</strong>
+                  </h2>
+                </div>
+              {% endunless %}
 
-								{% unless block.settings.subheading == blank %}
-									<div class="carousel__text-wrap{% if block.settings.title != blank or block.settings.subheading != blank %} carousel__overlay{% endif %}">
-										<div class="carousel__text-content">
-											<blockquote class="carousel__subtitle{% if section.settings.text_size == 'large' %} mega-subtitle--large{% endif %}">
-												{{ block.settings.subheading | escape }}
-											</blockquote>
-										</div>
-									</div>
-								{% endunless %}
+              {% unless block.settings.image == blank %}
+                <div class="carousel__image-wrap">
+                  {{ block.settings.image | image_url: width: 400 | image_tag: class: 'carousel__image' }}
+                </div>
+              {% endunless %}
 
-								{% unless block.settings.link == blank %}
-									<div class="carousel__button-wrap">
-										<a href="{{ block.settings.link }}" class="button button--primary">
-											{{ block.settings.button_label | escape }}
-										</a>
-									</div>
-								{% endunless %}
+              {% unless block.settings.subheading == blank %}
+                <div class="carousel__text-wrap{% if block.settings.title != blank or block.settings.subheading != blank %} carousel__overlay{% endif %}">
+                  <div class="carousel__text-content">
+                    <blockquote class="carousel__subtitle{% if section.settings.text_size == 'large' %} mega-subtitle--large{% endif %}">
+                      {{ block.settings.subheading | escape }}
+                    </blockquote>
+                  </div>
+                </div>
+              {% endunless %}
 
-              {% when 'video' %}
-								{{ block.settings.title }}
-								{% unless block.settings.video_type == 'background' %}
-									<div class="carousel__video-control--play-wrapper{% if block.settings.title != blank or block.settings.subheading != blank %} carousel__video-control--play-wrapper--push{% endif %}">
-										<button
-											type="button"
-											class="text-link carousel__video-control carousel__video-control--play"
-											data-controls="SlideshowVideo-{{ block.id }}">
-										</button>
-									</div>
-								{% endunless %}
-            {% endcase %}
+              {% unless block.settings.link == blank %}
+                <div class="carousel__button-wrap">
+                  <a href="{{ block.settings.link }}" class="button button--primary">
+                    {{ block.settings.button_label | escape }}
+                  </a>
+                </div>
+              {% endunless %}
+            </div>
+            {% when 'video' %}
+            <div class="carousel-cell__wrap-video">
+              {{ block.settings.title }}
+              {% unless block.settings.video_type == 'background' %}
+                <div class="carousel__video-control--play-wrapper{% if block.settings.title != blank or block.settings.subheading != blank %} carousel__video-control--play-wrapper--push{% endif %}">
+                  <button
+                    type="button"
+                    class="text-link carousel__video-control carousel__video-control--play"
+                    data-controls="SlideshowVideo-{{ block.id }}"></button>
+                </div>
+              {% endunless %}
+            </div>
+          {% endcase %}
 
-
-          </div>
         </div>
       {% endfor %}
     </div>
@@ -303,15 +336,18 @@
             "default": "Your title",
             "label": "Title"
           }, {
-						"type": "textarea",
-						"id": "text",
-						"default": "Textarea text here. . .",
-						"label": "Text"
-					}, {
-						"type": "image_picker",
-						"id": "image",
-						"label": "Image"
-					}
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+          }, {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "image_picker",
+            "id": "background_image",
+            "label": "Background image"
+          }
         ]
       }
     ],
