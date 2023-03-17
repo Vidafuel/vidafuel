@@ -1,5 +1,32 @@
 {
   "sections": {
+    "f220bd03-2791-4a88-98a7-a943a6ae5566": {
+      "type": "slider",
+      "blocks": {
+        "template--18355180732730__f220bd03-2791-4a88-98a7-a943a6ae5566-167907733574e5167c-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-_-optimal-nutrition_2.webp",
+            "alignment": "top",
+            "title": "Image slide",
+            "subheading": "Tell your brand's story through video and images",
+            "link": "\/products",
+            "button_label": "Button label"
+          }
+        }
+      },
+      "block_order": [
+        "template--18355180732730__f220bd03-2791-4a88-98a7-a943a6ae5566-167907733574e5167c-0"
+      ],
+      "settings": {
+        "carousel_title": "ex title",
+        "autoplay": true,
+        "autoplay_speed": "5000",
+        "text_size": "medium",
+        "custom_background": false,
+        "background_color": "#7bccc8"
+      }
+    },
     "16420790196f1cba40": {
       "type": "collage",
       "blocks": {
@@ -733,6 +760,7 @@
     }
   },
   "order": [
+    "f220bd03-2791-4a88-98a7-a943a6ae5566",
     "16420790196f1cba40",
     "09ce1af3-7f6f-4041-80cb-67c508a49c9a",
     "9d5b6c17-e9cd-46b4-aff8-1da6fc816219",
