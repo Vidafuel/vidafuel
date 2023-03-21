@@ -76,7 +76,8 @@
         "792851cb-e4b4-4bbe-9821-00b87ccc8fec"
       ],
       "settings": {
-        "enable_sticky_info": false,
+        "enable_sticky_info": true,
+        "product_slider_flickity": true,
         "hide_variants": false,
         "enable_video_looping": false
       }
