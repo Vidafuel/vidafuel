@@ -7,6 +7,13 @@
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 
+{% if section.settings.product_slider_flickity %}
+    {{ 'flickity.min.css' | asset_url | stylesheet_tag }}
+    <script src="{{ 'flickity.min.js' | asset_url }}" defer></script>
+    {{ 'section-slider.css' | asset_url | stylesheet_tag }}
+    {% render 'main-product-flickity-styles' %}
+{% endif %}
+
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -25,22 +32,48 @@
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
         </a>
-        <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
-          {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
-          {%- if product.selected_or_first_available_variant.featured_media != null -%}
-            {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-            <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-              {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-            </li>
-          {%- endif -%}
-          {%- for media in product.media -%}
-            {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+        
+        
+        {% if section.settings.product_slider_flickity %}
+        
+        
+          <ul class="product__media-list grid--peek list-unstyled main-carousel" data-flickity='{ "contain": "true", "draggable": true, "wrapAround": true }'>
+            {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
+            {%- for media in product.media -%}
+                <li class="product__media-item grid__item slider__slide carousel-cell{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
+                  {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
+                </li>
+            {%- endfor -%}
+          </ul>
+        
+        
+        
+        {% else %}
+        
+        
+        
+          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
+            {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
+            
+            {%- if product.selected_or_first_available_variant.featured_media != null -%}
+              {%- assign media = product.selected_or_first_available_variant.featured_media -%}
               <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-                {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
+                {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
               </li>
-            {%- endunless -%}
-          {%- endfor -%}
-        </ul>
+            {%- endif -%}
+            
+            
+            {%- for media in product.media -%}
+              {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+                <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
+                  {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
+                </li>
+              {%- endunless -%}
+            {%- endfor -%}
+            
+            
+          </ul>
+        {% endif %}
         {%- assign filtered_media_size = product.media.size | minus: variant_images.size | plus: 1 -%}
         <div class="slider-buttons no-js-hidden{% if product.media.size < 2 or section.settings.hide_variants and filtered_media_size < 2 %} small-hide{% endif %}">
           <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
@@ -116,7 +149,7 @@
             endif
             assign blockClass = block.settings.heading | replace_first: " ", "-"
           %}
-          {% assign variable = value %}
+          
             <div class="product__accordion accordion {{ blockClass | downcase }}" {{ block.shopify_attributes }}>
               <details id="Details-{{ block.id }}-{{ section.id }}" {{ attrName }}>
                 <summary>
@@ -438,13 +471,13 @@
           {{ block.settings.page.content }}
           {% if block.settings.show_nutrition_facts and product.metafields.vidafields.nutrition_facts != blank %}
             <img
-              srcset="{% if nutrition_facts_image.width >= 288 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '288x' }} 288w,{% endif %}
-                      {% if product.metafields.vidafields.nutrition_facts.width >= 576 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '576x' }} 576w,{% endif %}
-                      {% if product.metafields.vidafields.nutrition_facts.width >= 750 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '750x' }} 750w,{% endif %}
-                      {% if product.metafields.vidafields.nutrition_facts.width >= 1100 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '1100x' }} 1100w,{% endif %}
-                      {% if product.metafields.vidafields.nutrition_facts.width >= 1500 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '1500x' }} 1500w,{% endif %}
-                      {{ product.metafields.vidafields.nutrition_facts | img_url: 'master' }} {{ product.metafields.vidafields.nutrition_facts.width }}w"
-              src="{{ product.metafields.vidafields.nutrition_facts | img_url: '1500x' }}"
+              srcset="{% if nutrition_facts_image.width >= 288 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 288 }} 288w,{% endif %}
+                      {% if product.metafields.vidafields.nutrition_facts.width >= 576 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 576 }} 576w,{% endif %}
+                      {% if product.metafields.vidafields.nutrition_facts.width >= 750 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 750 }} 750w,{% endif %}
+                      {% if product.metafields.vidafields.nutrition_facts.width >= 1100 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 1100 }} 1100w,{% endif %}
+                      {% if product.metafields.vidafields.nutrition_facts.width >= 1500 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 1500 }} 1500w,{% endif %}
+                      {{ product.metafields.vidafields.nutrition_facts | image_url }} {{ product.metafields.vidafields.nutrition_facts.width }}w"
+              src="{{ product.metafields.vidafields.nutrition_facts | image_url: width: 1500 }}"
               sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: 0.64 | round }}px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
               loading="lazy" width="576" height="100%" alt="{{ product.metafields.vidafields.nutrition_facts.alt | escape }}">
           {% endif %}
@@ -655,7 +688,7 @@
 {%- comment -%} YOTPO APP WIDGET {%- endcomment -%}
 <div class="yotpo yotpo-main-widget" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}"
   data-url="{{ shop.url }}{{ product.url }}"
-  data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
+  data-image-url="{{ product.featured_image | product_img_url: 'large' | replace: '?', '%3F' | replace: '&', '%26' }}"
   data-price="{{ variant.price | money_without_currency }}" data-currency="{{ shop.currency }}"
   data-description="{{ product.description | escape }}">
 </div>
@@ -663,14 +696,14 @@
 <script type="text/javascript">
   var _learnq = _learnq || [];
   var item = {
-    Name: {{ product.title|json }},
-    ProductID: {{ product.id|json }},
-    Categories: {{ product.collections|map:'title'|json }},
-    ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+    Name: {{ product.title | json }},
+    ProductID: {{ product.id | json }},
+    Categories: {{ product.collections | map: 'title' | json }},
+    ImageURL: "https:{{ product.featured_image.src | image_url: width: 600, height: 600 }}",
     URL: "{{ shop.secure_url }}{{ product.url }}",
-    Brand: {{ product.vendor|json }},
-    Price: {{ product.price|money|json }},
-    CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+    Brand: {{ product.vendor | json }},
+    Price: {{ product.price | money | json }},
+    CompareAtPrice: {{ product.compare_at_price_max | money | json }}
   };
   _learnq.push(['track', 'Viewed Product', item]);
   _learnq.push(['trackViewedItem', {
@@ -1002,6 +1035,12 @@
       "type": "header",
       "content": "t:sections.main-product.settings.header.content",
       "info": "t:sections.main-product.settings.header.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "product_slider_flickity",
+      "label": "Product image slider",
+      "default": false
     },
     {
       "type": "checkbox",
