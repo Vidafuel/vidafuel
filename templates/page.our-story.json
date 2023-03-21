@@ -42,12 +42,12 @@
         "image": "shopify:\/\/shop_images\/Artboard_de8e50e1-e988-4547-9f31-416e7393994b.webp",
         "video_embed_custom": "",
         "image_link": "",
-        "height": "adapt",
+        "height": "small",
         "color_scheme": "background-1",
         "background_scheme": "default",
         "layout": "image_first",
-        "section_width": "normal",
-        "desktop_no_spacing": false,
+        "section_width": "full_width",
+        "desktop_no_spacing": true,
         "remove_top_margin": false
       }
     },
@@ -112,7 +112,7 @@
         "text_size": "medium",
         "custom_background": true,
         "background_color_scheme": "mighty",
-        "background_color": "#e3e4e6"
+        "background_color": "rgba(0,0,0,0)"
       }
     },
     "1641929597955d3766": {
