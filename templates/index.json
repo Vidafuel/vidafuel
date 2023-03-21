@@ -733,6 +733,7 @@
     },
     "f220bd03-2791-4a88-98a7-a943a6ae5566": {
       "type": "slider",
+      "disabled": true,
       "blocks": {
         "d048f9ce-47f1-4817-bb10-42bef4491b07": {
           "type": "image_text",
