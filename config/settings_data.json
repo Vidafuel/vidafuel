@@ -28,7 +28,7 @@
             "settings": {
               "text": "UNLOCK  15% OFF  YOUR FIRST ORDER",
               "color_scheme": "background-2",
-              "link": "\/products"
+              "link": "\/discount\/FIRSTORDER15?redirect=\/products"
             }
           }
         },
