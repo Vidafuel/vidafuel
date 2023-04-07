@@ -504,7 +504,7 @@
           "type": "product",
           "settings": {
             "product": "protein-juice-berry",
-            "second_image": true,
+            "second_image": false,
             "image_padding": false,
             "secondary_background": false
           }
@@ -513,7 +513,7 @@
           "type": "product",
           "settings": {
             "product": "protein-juice-orange",
-            "second_image": true,
+            "second_image": false,
             "image_padding": false,
             "secondary_background": false
           }
@@ -522,7 +522,7 @@
           "type": "product",
           "settings": {
             "product": "collagen-protein-drink-2-pack",
-            "second_image": true,
+            "second_image": false,
             "image_padding": false,
             "secondary_background": false
           }
