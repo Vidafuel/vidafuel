@@ -317,37 +317,38 @@
     "291abee6-8810-4927-bf09-cd8f6e0d06e1": {
       "type": "collage",
       "blocks": {
-        "template--14297236799530__291abee6-8810-4927-bf09-cd8f6e0d06e1-1680885668eeb2db60-0": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": "Describe the video",
-            "image_padding": false,
-            "video_small_desktop": false
-          }
-        },
         "template--14297236799530__291abee6-8810-4927-bf09-cd8f6e0d06e1-1680885668eeb2db60-1": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "collagen-protein-drink-2-pack",
             "second_image": false,
             "image_padding": false,
             "secondary_background": false
           }
         },
-        "template--14297236799530__291abee6-8810-4927-bf09-cd8f6e0d06e1-1680885668eeb2db60-2": {
-          "type": "collection",
+        "405659d0-709e-4dcd-aa7b-251c7286ce93": {
+          "type": "product",
           "settings": {
-            "collection": "",
+            "product": "protein-juice-berry",
+            "second_image": false,
             "image_padding": false,
-            "color_scheme": "background-1"
+            "secondary_background": false
+          }
+        },
+        "0af3b5d6-af40-40a5-afbb-e69783a48c20": {
+          "type": "product",
+          "settings": {
+            "product": "protein-juice-orange",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
           }
         }
       },
       "block_order": [
-        "template--14297236799530__291abee6-8810-4927-bf09-cd8f6e0d06e1-1680885668eeb2db60-0",
         "template--14297236799530__291abee6-8810-4927-bf09-cd8f6e0d06e1-1680885668eeb2db60-1",
-        "template--14297236799530__291abee6-8810-4927-bf09-cd8f6e0d06e1-1680885668eeb2db60-2"
+        "405659d0-709e-4dcd-aa7b-251c7286ce93",
+        "0af3b5d6-af40-40a5-afbb-e69783a48c20"
       ],
       "settings": {
         "heading": "Multimedia collage",
