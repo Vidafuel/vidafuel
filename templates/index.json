@@ -313,6 +313,50 @@
         "background_color": "#7bccc8",
         "full_width": true
       }
+    },
+    "291abee6-8810-4927-bf09-cd8f6e0d06e1": {
+      "type": "collage",
+      "blocks": {
+        "template--14297236799530__291abee6-8810-4927-bf09-cd8f6e0d06e1-1680885668eeb2db60-0": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video",
+            "image_padding": false,
+            "video_small_desktop": false
+          }
+        },
+        "template--14297236799530__291abee6-8810-4927-bf09-cd8f6e0d06e1-1680885668eeb2db60-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "template--14297236799530__291abee6-8810-4927-bf09-cd8f6e0d06e1-1680885668eeb2db60-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--14297236799530__291abee6-8810-4927-bf09-cd8f6e0d06e1-1680885668eeb2db60-0",
+        "template--14297236799530__291abee6-8810-4927-bf09-cd8f6e0d06e1-1680885668eeb2db60-1",
+        "template--14297236799530__291abee6-8810-4927-bf09-cd8f6e0d06e1-1680885668eeb2db60-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "desktop_layout": "left",
+        "background_color_scheme": "default",
+        "mobile_layout": "collage",
+        "remove_top_spacing": false,
+        "full_width": false
+      }
     }
   },
   "order": [
@@ -321,6 +365,7 @@
     "1639503887e884ceb3",
     "1639505258119ea558",
     "1647969963a76480fb",
-    "16420895372c7ae66d"
+    "16420895372c7ae66d",
+    "291abee6-8810-4927-bf09-cd8f6e0d06e1"
   ]
 }
