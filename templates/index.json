@@ -537,7 +537,7 @@
         "heading": "",
         "desktop_layout": "right",
         "background_color_scheme": "default",
-        "mobile_layout": "column",
+        "mobile_layout": "collage",
         "remove_top_spacing": false,
         "full_width": false
       }
