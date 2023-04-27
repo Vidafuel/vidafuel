@@ -2455,7 +2455,6 @@ details[open] > .header__icon--menu .icon-hamburger {
 	top: -1px;
 	background: var(--color-base-background-1);
 	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-	box-shadow: 0 3px 7px -6px #000;
 	animation: 1s ease-out 0s 1 slideInFromTop;
 }
 
@@ -2468,7 +2467,6 @@ details[open] > .header__icon--menu .icon-hamburger {
 }
 
 .header-tab .tab-container img {
-	width: 125px;
 	max-width: 70%;
 }
 
