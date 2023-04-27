@@ -1,11 +1,14 @@
 {% if section.settings.header_tab %}
   <div class="header-tab">
     <div class="tab-container tab-container--right">
-      <a href="{{ section.settings.header_tab_link }}" class="nav-addition amazon-link" target="_blank">
-        <cite><strong>{{ section.settings.header_tab_text }}</strong></cite>
-        {% comment %} <img src="https://cdn.shopify.com/s/files/1/0922/1906/files/Amazon.com-Logo-sm.svg?9396" alt="amazon logo"> {% endcomment %}
+      {% if section.settings.header_tab_link != blank %}
+        <a href="{{ section.settings.header_tab_link }}" class="nav-addition amazon-link" target="_blank">
+          <cite><strong>{{ section.settings.header_tab_text }}</strong></cite>
+          {{ section.settings.header_tab_image | image_url: width: 200 | image_tag: widths: '180, 360, 540, 720' }}
+        </a>
+      {% else %}
         {{ section.settings.header_tab_image | image_url: width: 200 | image_tag: widths: '180, 360, 540, 720' }}
-      </a>
+      {% endif %}
     </div>
   </div>
 {% endif %}
