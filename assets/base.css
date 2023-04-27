@@ -2465,9 +2465,14 @@ details[open] > .header__icon--menu .icon-hamburger {
 .header-tab .tab-container cite {
 	font-size: 70%;
 }
-
 .header-tab .tab-container img {
-	max-width: 70%;
+    max-width: 110px;
+    height: auto;
+}
+@media screen and (min-width: 1024px) {
+	.header-tab .tab-container img {
+		max-width: 70%;
+	}	
 }
 
 .header-tab .nav-addition {
