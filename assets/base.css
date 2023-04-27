@@ -2452,7 +2452,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 
 .header-tab .tab-container {
 	position: absolute;
-	top: -20px;
+	top: -25px;
 	background: var(--color-base-background-1);
 	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 	animation: 1s ease-out 0s 1 slideInFromTop;
