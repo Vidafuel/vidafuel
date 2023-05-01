@@ -2467,7 +2467,7 @@ details[open] > .header__icon--menu .icon-hamburger {
     max-width: 80px;
     height: auto;
 }
-@media only screen and (min-width: 750px) {
+@media only screen and (max-width: 1023px) {
 		.header-tab .tab-container img {
 		max-width: 100px;
 	}	
