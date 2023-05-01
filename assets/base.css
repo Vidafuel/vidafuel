@@ -2469,6 +2469,11 @@ details[open] > .header__icon--menu .icon-hamburger {
     max-width: 110px;
     height: auto;
 }
+@media only screen and (min-width: 750px) {
+		.header-tab .tab-container img {
+		max-width: 150px;
+	}	
+}
 @media screen and (min-width: 1024px) {
 	.header-tab .tab-container img {
 		max-width: 150px;
@@ -2489,10 +2494,6 @@ details[open] > .header__icon--menu .icon-hamburger {
 
 	.header-tab .tab-container cite {
 		font-size: 100%;
-	}
-
-	.header-tab .tab-container img {
-		max-width: 100%;
 	}
 }
 
