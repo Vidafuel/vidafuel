@@ -2467,8 +2467,13 @@ details[open] > .header__icon--menu .icon-hamburger {
     max-width: 80px;
     height: auto;
 }
+@media only screen and (min-width: 750px) {
+		.header-tab .tab-container img {
+		max-width: 100px;
+	}	
+}
 @media screen and (min-width: 1024px) {
-	.header-tab .tab-container--right {
+		.header-tab .tab-container--right {
 		right: 25px;
 	}
 	.header-tab .tab-container img {
