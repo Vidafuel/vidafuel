@@ -2457,24 +2457,20 @@ details[open] > .header__icon--menu .icon-hamburger {
 	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 	animation: 1s ease-out 0s 1 slideInFromTop;
 }
-
-.header-tab .tab-container--right {
-	right: 0;
-}
-
 .header-tab .tab-container cite {
 	font-size: 70%;
 }
+.header-tab .tab-container--right {
+	right: 0;
+}
 .header-tab .tab-container img {
-    max-width: 110px;
+    max-width: 80px;
     height: auto;
 }
-@media only screen and (min-width: 750px) {
-		.header-tab .tab-container img {
-		max-width: 150px;
-	}	
-}
 @media screen and (min-width: 1024px) {
+	.header-tab .tab-container--right {
+		right: 25px;
+	}
 	.header-tab .tab-container img {
 		max-width: 150px;
 	}	
