@@ -2471,7 +2471,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 }
 @media screen and (min-width: 1024px) {
 	.header-tab .tab-container img {
-		max-width: 70%;
+		max-width: 150px;
 	}	
 }
 
