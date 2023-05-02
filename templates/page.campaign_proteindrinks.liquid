@@ -12,16 +12,11 @@
   .announcement-bar {
   	display:none;
 }
-  
-  .landing-page-section .banner-container::before {
-    background-image: url('{{ 'cpd_waves_01.svg' | asset_url }}');
-      }
+  /* Want it back? See "cpd_waves_01.svg" below */
   .landing-page-section .support-section .pill-label .round-btn{
     background-image: url('{{ 'cpd_ui_down_arrow_white.svg' | asset_url }}');
       }
-  .landing-page-section .mighty-section::after{
-    background-image: url('{{ 'cpd_waves_02.svg' | asset_url }}');
-      }
+  /* Want it back? See "cpd_waves_02.svg" below */
   .landing-page-section .video .img-placeholder::before{
     background-image: url('{{ 'cpd_ui_play_btn.svg' | asset_url }}');
       }
@@ -223,6 +218,16 @@
    }
   }
 </style>
+{% comment %}
+  cpd_waves_02.svg
+  .landing-page-section .mighty-section::after{
+    background-image: url('{{ 'cpd_waves_02.svg' | asset_url }}');
+      }
+  cpd_waves_01.svg
+  .landing-page-section .banner-container::before {
+    background-image: url('{{ 'cpd_waves_01.svg' | asset_url }}');
+      }
+{% endcomment %}
 <main>
     <nav id="menu">
       <div class="grid-container">
