@@ -159,11 +159,11 @@
 }
 
 .color-text-accent-1 {
-	color: rgb(var(--color-base-accent-1));
+	color: rgb(var(--color-base-accent-1)) !important;
 }
 
 .color-text-accent-2 {
-	color: rgb(var(--color-base-accent-2));
+	color: rgb(var(--color-base-accent-2)) !important;
 }
 
 :root {
