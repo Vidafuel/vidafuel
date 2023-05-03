@@ -11,6 +11,18 @@
         "background_color": "#ffffff"
       }
     },
+    "a2dc69c6-c408-406e-8747-f4284124d5a5": {
+      "type": "custom-liquid",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "custom_liquid": "{% style %}\n.collage-cart__heading {\nfont-family: trade-gothic-next-compressed,sans-serif;\nfont-weight: 700;\nfont-size: 40px;\ntext-transform: uppercase;\n}\n{% endstyle %}",
+        "custom_background": false,
+        "background_color": "#fff",
+        "page_width": false
+      }
+    },
     "631996c3-a387-419d-b3a8-04a7d26d1971": {
       "type": "collage",
       "blocks": {
@@ -18,8 +30,8 @@
           "type": "text",
           "settings": {
             "title": "Dietitian developed for compliance & optimal nutrition",
-            "heading_size": "heading-1",
-            "text": "16g of complete protein in a 2oz shot",
+            "heading_size": "default",
+            "text": "16g of complete protein<br>in a 2oz serving",
             "button_label": "",
             "button_link": "",
             "color_scheme": "background-1"
@@ -40,7 +52,7 @@
         "7713be27-9156-4ebc-8db8-f6f724e9ca9d"
       ],
       "custom_css": [
-        ".collage-cart__heading {font-weight: 700;}"
+
       ],
       "settings": {
         "heading": "",
@@ -601,6 +613,7 @@
   },
   "order": [
     "main",
+    "a2dc69c6-c408-406e-8747-f4284124d5a5",
     "631996c3-a387-419d-b3a8-04a7d26d1971",
     "1639156556f1f7aaff",
     "163915671883655487",
