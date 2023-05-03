@@ -504,3 +504,33 @@ noscript .localization-selector.link {
 .footer .disclosure__link--active {
   text-decoration: underline;
 }
+
+
+.footer__custom-background {
+  padding-top: 8.25%;
+  position: relative;
+}
+
+.footer__custom-background::before {
+  content: "";
+  position: absolute;
+  top: calc(8.25vw - 2px);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fbfcec;
+  pointer-events: none;
+}
+
+.footer__custom-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 8.25%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 1;
+}

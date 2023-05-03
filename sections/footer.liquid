@@ -77,9 +77,21 @@
                     {%- endif -%}
                   </div>
                 {%- when 'liquid' -%}
-                  {% if block.settings.liquid != blank %}
-                    {{ block.settings.liquid }}
+                  
+                  {% if block.settings.custom_background %}
+                    <div class="footer__custom-background"{% if block.settings.background_color %}style="background-color:{{ block.settings.background_color }};"{% endif %}>
+                      {% unless block.settings.page_width %}<div class="page-width">{% endunless %}
+                        {% if block.settings.liquid != blank %}
+                          {{ block.settings.liquid }}
+                        {% endif %}
+                      {% unless block.settings.page_width == false %}</div>{% endunless %}
+                    </div>
+                  {% else %}
+                    {% if block.settings.liquid != blank %}
+                      {{ block.settings.liquid }}
+                    {% endif %}
                   {% endif %}
+                  
                 {%- endcase -%}
             </div>
           {%- endfor -%}
@@ -376,6 +388,19 @@
 
   customElements.define('localization-form', LocalizationForm);
 {% endjavascript %}
+
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+  {%- when 'liquid' -%}
+    {% if block.settings.custom_background %}
+      {% style %}
+          .footer__custom-background::after {
+            background-image: url('{{ 'cpd_waves_04.svg' | asset_url }}');
+          }
+      {% endstyle %}
+    {% endif %}
+  {%- endcase -%}
+{%- endfor -%}
 
 {% schema %}
 {
