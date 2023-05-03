@@ -184,6 +184,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {% if template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
       <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     {% endif %}
+  {%- render 'bold-subscription-widget' -%}
 </head>
 
   <body class="gradient">
