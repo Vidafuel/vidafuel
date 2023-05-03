@@ -18,6 +18,7 @@
       "settings": {
         "section_id": "",
         "video_embed_custom": "",
+        "image_no_placeholder": true,
         "image_link": "",
         "height": "small",
         "color_scheme": "background-2",
