@@ -488,12 +488,20 @@
 }
 
 .multicolumn-card-popup-modal__content-info {
-	padding: 0 1rem;
+	padding: 0;
 }
 
 @media screen and (min-width: 750px) {
 	.multicolumn-card-popup-modal__content-info {
 		padding: 0 4.4rem;
+	}
+}
+
+@media screen and (max-width: 749px) {
+	.multicolumn-card-popup-modal__content-info {
+		height: 90%;
+		display: flex;
+		align-items: center;
 	}
 }
 
@@ -522,9 +530,15 @@
 	position: sticky;
 	padding: 1.2rem;
 	z-index: 2;
-	top: 1.5rem;
+	top: 0;
 	width: 4rem;
 	margin: 0 0 0 auto;
+}
+
+@media screen and (min-width: 750px) {
+	.multicolumn-card-popup-modal__toggle {
+			top: 1.5rem;
+	}
 }
 
 .multicolumn-card-popup-modal__toggle:hover {
