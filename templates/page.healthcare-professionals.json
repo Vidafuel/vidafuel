@@ -31,7 +31,7 @@
           "settings": {
             "title": "Dietitian developed for compliance & optimal nutrition",
             "heading_size": "default",
-            "text": "16g of complete protein<br>in a 2oz serving",
+            "text": "16g of complete protein\nper 2oz serving",
             "button_label": "",
             "button_link": "",
             "color_scheme": "background-1"
@@ -62,52 +62,6 @@
         "mobile_layout": "column",
         "remove_top_spacing": true,
         "full_width": true
-      }
-    },
-    "1639156556f1f7aaff": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "163915655632d9adf3-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Dietitian developed for compliance & optimal nutrition",
-            "heading_font": "default",
-            "heading_size": "default"
-          }
-        },
-        "163915655632d9adf3-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>16g of complete protein in a 2oz shot<\/p>",
-            "text_font": "default",
-            "text_size": "default",
-            "text_color": "default",
-            "p_bullets": false
-          }
-        }
-      },
-      "block_order": [
-        "163915655632d9adf3-0",
-        "163915655632d9adf3-1"
-      ],
-      "custom_css": [
-        ".image-with-text__grid {align-items: center;}",
-        ".image-with-text {min-height: 82vh;}"
-      ],
-      "settings": {
-        "section_id": "",
-        "image": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-_-optimal-nutrition.webp",
-        "video_embed_custom": "",
-        "image_link": "shopify:\/\/products\/collagen-protein-drink-2-pack",
-        "bk_image": "shopify:\/\/shop_images\/healthcare-bg.jpg",
-        "height": "medium",
-        "color_scheme": "background-2",
-        "background_scheme": "default",
-        "layout": "text_first",
-        "section_width": "full_width",
-        "desktop_no_spacing": false,
-        "remove_top_margin": false
       }
     },
     "163915671883655487": {
@@ -615,7 +569,6 @@
     "main",
     "a2dc69c6-c408-406e-8747-f4284124d5a5",
     "631996c3-a387-419d-b3a8-04a7d26d1971",
-    "1639156556f1f7aaff",
     "163915671883655487",
     "164014386357a60c4a",
     "1640123076cbff58b5",
