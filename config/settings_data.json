@@ -56,6 +56,17 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "193675c9-f0ef-486e-9ce2-c2bd920283dd": {
+            "type": "liquid",
+            "settings": {
+              "liquid": "<div class=\"yotpo yotpo-reviews-carousel\"  data-header-customisation-enabled=\"1\"  data-header-customisation-color=\"#56575f\"  data-header-customisation-font-size=\"18\"  data-header-customisation-text=\"Reviews from real customers\"  data-header-customisation-alignment=\"left\"  data-background-color=\"transparent\"  data-mode=\"top_rated\"  data-type=\"both\"  data-count=\"9\"  data-show-bottomline=\"1\" data-show-navigation=\"1\">&nbsp;<\/div>"
+            }
+          }
+        },
+        "block_order": [
+          "193675c9-f0ef-486e-9ce2-c2bd920283dd"
+        ],
         "settings": {
           "color_scheme": "background-1",
           "footer_bkgnd_color": "#ffffff",
