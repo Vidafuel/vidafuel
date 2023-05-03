@@ -119,7 +119,7 @@
     "1641929597955d3766": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% style %}\n.footer__custom-background {\nbackground-color: #7BCCC8;\n}\n{% endstyle %}",
+        "custom_liquid": "{% style %}\n.footer__custom-background {\nbackground-color: #7BCCC8 !important;\n}\n{% endstyle %}",
         "custom_background": true,
         "background_color": "#7bccc8",
         "page_width": true
