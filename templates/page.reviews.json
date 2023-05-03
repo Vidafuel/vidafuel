@@ -1,0 +1,38 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "page_title_background": "shopify:\/\/shop_images\/home-reviews-bk.jpg",
+        "page_title_background_justification": "justify-bottom",
+        "featured_image_ratio": "circle",
+        "page_width": "page-width--narrow",
+        "background_color": "#ffffff"
+      }
+    },
+    "50c77a3e-f788-45e9-a29a-3118304149bc": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script type=\"text\/javascript\">\n          (function e(){var e=document.createElement(\"script\");e.type=\"text\/javascript\",e.async=!0,\n              e.src=\"\/\/staticw2.yotpo.com\/DQkSVEOOfTk6RwUP3XUIMXJSc60azZRBfpfLxYtV\/widget.js\";var t=document.getElementsByTagName(\"script\")[0];\n              t.parentNode.insertBefore(e,t)})();\n          <\/script>\n          <div id='yotpo-testimonials-custom-tab'><\/div>",
+        "custom_background": false,
+        "background_color": "#fff",
+        "page_width": true
+      }
+    },
+    "1641929597955d3766": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"Reviews from real customers\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
+        "custom_background": false,
+        "background_color": "#ffffff",
+        "page_width": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "50c77a3e-f788-45e9-a29a-3118304149bc",
+    "1641929597955d3766"
+  ]
+}

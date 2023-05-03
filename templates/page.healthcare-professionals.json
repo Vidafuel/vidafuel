@@ -11,6 +11,18 @@
         "background_color": "#ffffff"
       }
     },
+    "a2dc69c6-c408-406e-8747-f4284124d5a5": {
+      "type": "custom-liquid",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "custom_liquid": "{% style %}\n.collage-cart__heading {\n  font-family: trade-gothic-next-compressed,sans-serif;\n  font-weight: 700;\n  font-size: 48px;\n  text-transform: uppercase;\n}\n.collage-card__text > p {\n    font-size: 23px;\n}\n@media (max-width: 1023px) {\n  .collage-cart__heading {\n    font-size: 42px;\n  }\n}\n@media (orientation: landscape) and (max-width: 926px) {\n  .collage-cart__heading {\n    font-size: 40px;\n  }\n}\n@media (max-width: 768px) {\n  .collage-cart__heading {\n    font-size: 40px;\n  }\n.collage-card__text > p {\n    font-size: 18px;\n}\n}\n@media (max-width: 450px) {\n  .collage-cart__heading {\n    font-size: 30px;\n  }\n}\n{% endstyle %}",
+        "custom_background": false,
+        "background_color": "#ffffff",
+        "page_width": false
+      }
+    },
     "631996c3-a387-419d-b3a8-04a7d26d1971": {
       "type": "collage",
       "blocks": {
@@ -19,7 +31,7 @@
           "settings": {
             "title": "Dietitian developed for compliance & optimal nutrition",
             "heading_size": "default",
-            "text": "16g of complete protein<br>in a 2oz serving",
+            "text": "16g of complete protein\nper 2oz serving",
             "button_label": "",
             "button_link": "",
             "color_scheme": "background-1"
@@ -50,52 +62,6 @@
         "mobile_layout": "column",
         "remove_top_spacing": true,
         "full_width": true
-      }
-    },
-    "1639156556f1f7aaff": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "163915655632d9adf3-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Dietitian developed for compliance & optimal nutrition",
-            "heading_font": "default",
-            "heading_size": "default"
-          }
-        },
-        "163915655632d9adf3-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>16g of complete protein in a 2oz shot<\/p>",
-            "text_font": "default",
-            "text_size": "default",
-            "text_color": "default",
-            "p_bullets": false
-          }
-        }
-      },
-      "block_order": [
-        "163915655632d9adf3-0",
-        "163915655632d9adf3-1"
-      ],
-      "custom_css": [
-        ".image-with-text__grid {align-items: center;}",
-        ".image-with-text {min-height: 82vh;}"
-      ],
-      "settings": {
-        "section_id": "",
-        "image": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-_-optimal-nutrition.webp",
-        "video_embed_custom": "",
-        "image_link": "shopify:\/\/products\/collagen-protein-drink-2-pack",
-        "bk_image": "shopify:\/\/shop_images\/healthcare-bg.jpg",
-        "height": "medium",
-        "color_scheme": "background-2",
-        "background_scheme": "default",
-        "layout": "text_first",
-        "section_width": "full_width",
-        "desktop_no_spacing": false,
-        "remove_top_margin": false
       }
     },
     "163915671883655487": {
@@ -166,7 +132,7 @@
             "column_image_position": "center center",
             "title": "",
             "icon": "none",
-            "text": "<p><strong>16g of protein per 2oz serving<br\/><\/strong>Complete protein with all 20 amino acids<\/p><p><strong>Whey + Collagen protein<br\/><\/strong>To support muscle mass & strength<\/p><p><strong>No artificial sweeteners, ever<\/strong><br\/>Patient approved taste<\/p><p><strong>Smoothie-like textures<\/strong><br\/>Easy to consume, no dilution required<\/p>",
+            "text": "<p><strong>Novel smoothie-like texture<br\/><\/strong>Easier to consume, no dilution required<\/p><p><strong>16g of protein per 2oz serving<br\/><\/strong>Complete protein with all 20 amino acids<\/p><p><strong>Whey + Collagen protein<br\/><\/strong>To support muscle mass & strength<\/p><p><strong>No artificial sweeteners, ever<\/strong><br\/>Patient approved taste<\/p>",
             "column_elements_alignment": "normal",
             "column_text_alignment": "left",
             "link_label": "",
@@ -223,7 +189,7 @@
         "icon_enable": false,
         "page_width": "page-width",
         "custom_css": "",
-        "custom_css_mobile": ""
+        "custom_css_mobile": "#shopify-section-template--16801834893626__163915671883655487 {\n    margin-top: 2rem;\n}\n.multicolumn.desktop_no_spacing {\n    padding: 2rem 0 0 !important;\n}\nul#Slider-template--16801834893626__163915671883655487 {\n    padding-bottom: 2rem;\n}"
       }
     },
     "164014386357a60c4a": {
@@ -256,6 +222,33 @@
             "text_color_primary": false
           }
         },
+        "1640143863f88f8f3f-2": {
+          "type": "column",
+          "settings": {
+            "image_link_url": "",
+            "column_image_position": "center center",
+            "title": "",
+            "icon": "none",
+            "text": "",
+            "column_elements_alignment": "normal",
+            "column_text_alignment": "center",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "<h3 class=\" column-heading-color\"><p><strong>FILL OUT THE FORM<br>TO GET A COUPON<br>FOR YOUR PATIENTS<\/strong><\/p>\n<\/h3>\n<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/embed\/v2.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"19971200\",\n    formId: \"03a444a5-8a44-42ff-b7bd-34263b9df190\"\n  });\n<\/script>",
+            "liquid_background": "#ffffff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
         "1640143863f88f8f3f-1": {
           "type": "column",
           "settings": {
@@ -285,46 +278,19 @@
             "icon_color": "#cdda01",
             "text_color_primary": false
           }
-        },
-        "1640143863f88f8f3f-2": {
-          "type": "column",
-          "settings": {
-            "image_link_url": "",
-            "column_image_position": "center center",
-            "title": "",
-            "icon": "none",
-            "text": "",
-            "column_elements_alignment": "normal",
-            "column_text_alignment": "center",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "<h3 class=\" column-heading-color\"><p><strong>FILL OUT THE FORM<br>TO GET A COUPON<br>FOR YOUR PATIENTS<\/strong><\/p>\n<\/h3>\n<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/embed\/v2.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"19971200\",\n    formId: \"03a444a5-8a44-42ff-b7bd-34263b9df190\"\n  });\n<\/script>",
-            "liquid_background": "#ffffff",
-            "column_icon_color_custom": "#000000",
-            "column_border_color_enable": false,
-            "column_border_color": "#ffffff",
-            "title_top": false,
-            "col_content_reverse": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "icon_color": "#cdda01",
-            "text_color_primary": false
-          }
         }
       },
       "block_order": [
         "1640143863f88f8f3f-0",
-        "1640143863f88f8f3f-1",
-        "1640143863f88f8f3f-2"
+        "1640143863f88f8f3f-2",
+        "1640143863f88f8f3f-1"
       ],
       "settings": {
         "title": "",
         "title_center": false,
         "title_size": "default",
         "main_heading_text_color": "#121212",
-        "section_height": "small",
+        "section_height": "xsmall",
         "column_heading_size": "default",
         "column_description_size": "default",
         "column_custom_text_color": true,
@@ -372,7 +338,7 @@
         "heading": "",
         "desktop_layout": "left",
         "background_color_scheme": "default",
-        "mobile_layout": "collage",
+        "mobile_layout": "column",
         "remove_top_spacing": false,
         "full_width": false
       }
@@ -485,7 +451,7 @@
         "title_center": false,
         "title_size": "default",
         "main_heading_text_color": "#000000",
-        "section_height": "medium",
+        "section_height": "xsmall",
         "column_heading_size": "default",
         "column_description_size": "default",
         "column_custom_text_color": false,
@@ -588,18 +554,6 @@
         "page_width": false
       }
     },
-    "a2dc69c6-c408-406e-8747-f4284124d5a5": {
-      "type": "custom-liquid",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "custom_liquid": "{% style %}\n.collage-cart__heading {\n  font-family: trade-gothic-next-compressed,sans-serif;\n  font-weight: 700;\n  font-size: 48px;\n  text-transform: uppercase;\n}\n@media (max-width: 1023px) {\n  .collage-cart__heading {\n    font-size: 42px;\n  }\n}\n@media (orientation: landscape) and (max-width: 926px) {\n  .collage-cart__heading {\n    font-size: 40px;\n  }\n}\n@media (max-width: 768px) {\n  .collage-cart__heading {\n    font-size: 40px;\n  }\n}\n@media (max-width: 450px) {\n  .collage-cart__heading {\n    font-size: 30px;\n  }\n}\n{% endstyle %}",
-        "custom_background": false,
-        "background_color": "#ffffff",
-        "page_width": false
-      }
-    },
     "e80db62f-1c32-470c-a2d1-21565021648e": {
       "type": "contact-form",
       "custom_css": [
@@ -613,8 +567,8 @@
   },
   "order": [
     "main",
+    "a2dc69c6-c408-406e-8747-f4284124d5a5",
     "631996c3-a387-419d-b3a8-04a7d26d1971",
-    "1639156556f1f7aaff",
     "163915671883655487",
     "164014386357a60c4a",
     "1640123076cbff58b5",
@@ -622,7 +576,6 @@
     "163950623206c4ca1f",
     "1639506526d4856680",
     "164328693248fb79aa",
-    "a2dc69c6-c408-406e-8747-f4284124d5a5",
     "e80db62f-1c32-470c-a2d1-21565021648e"
   ]
 }
