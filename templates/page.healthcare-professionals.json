@@ -222,6 +222,33 @@
             "text_color_primary": false
           }
         },
+        "1640143863f88f8f3f-2": {
+          "type": "column",
+          "settings": {
+            "image_link_url": "",
+            "column_image_position": "center center",
+            "title": "",
+            "icon": "none",
+            "text": "",
+            "column_elements_alignment": "normal",
+            "column_text_alignment": "center",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "<h3 class=\" column-heading-color\"><p><strong>FILL OUT THE FORM<br>TO GET A COUPON<br>FOR YOUR PATIENTS<\/strong><\/p>\n<\/h3>\n<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/embed\/v2.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"19971200\",\n    formId: \"03a444a5-8a44-42ff-b7bd-34263b9df190\"\n  });\n<\/script>",
+            "liquid_background": "#ffffff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
         "1640143863f88f8f3f-1": {
           "type": "column",
           "settings": {
@@ -251,39 +278,12 @@
             "icon_color": "#cdda01",
             "text_color_primary": false
           }
-        },
-        "1640143863f88f8f3f-2": {
-          "type": "column",
-          "settings": {
-            "image_link_url": "",
-            "column_image_position": "center center",
-            "title": "",
-            "icon": "none",
-            "text": "",
-            "column_elements_alignment": "normal",
-            "column_text_alignment": "center",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "<h3 class=\" column-heading-color\"><p><strong>FILL OUT THE FORM<br>TO GET A COUPON<br>FOR YOUR PATIENTS<\/strong><\/p>\n<\/h3>\n<script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/embed\/v2.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"19971200\",\n    formId: \"03a444a5-8a44-42ff-b7bd-34263b9df190\"\n  });\n<\/script>",
-            "liquid_background": "#ffffff",
-            "column_icon_color_custom": "#000000",
-            "column_border_color_enable": false,
-            "column_border_color": "#ffffff",
-            "title_top": false,
-            "col_content_reverse": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "icon_color": "#cdda01",
-            "text_color_primary": false
-          }
         }
       },
       "block_order": [
         "1640143863f88f8f3f-0",
-        "1640143863f88f8f3f-1",
-        "1640143863f88f8f3f-2"
+        "1640143863f88f8f3f-2",
+        "1640143863f88f8f3f-1"
       ],
       "settings": {
         "title": "",
