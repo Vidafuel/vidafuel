@@ -25,13 +25,15 @@
 {%- for block in section.blocks -%}
   {%- case block.type -%}
   {%- when 'liquid' -%}
+    
+    <div class="pre-footer">
+      
     {% if block.settings.custom_background %}
       {% style %}
           .footer__custom-background::after {
             background-image: url('{{ 'cpd_waves_04.svg' | asset_url }}');
           }
       {% endstyle %}
-                        
       <div class="footer__custom-background"{% if block.settings.background_color %}style="background-color:{{ block.settings.background_color }};"{% endif %}>
           {% if block.settings.liquid != blank %}
             {{ block.settings.liquid }}
@@ -45,6 +47,9 @@
       {% endif %}
       
     {% endif %}
+    
+    </div>
+    
   {%- endcase -%}
 {%- endfor -%}
 
