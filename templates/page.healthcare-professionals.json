@@ -189,7 +189,7 @@
         "icon_enable": false,
         "page_width": "page-width",
         "custom_css": "",
-        "custom_css_mobile": "#shopify-section-template--16801834893626__163915671883655487 {\n    margin-top: 2rem;\n}\n.multicolumn.desktop_no_spacing {\n    padding: 2rem 0 0 !important;\n}"
+        "custom_css_mobile": "#shopify-section-template--16801834893626__163915671883655487 {\n    margin-top: 2rem;\n}\n.multicolumn.desktop_no_spacing {\n    padding: 2rem 0 0 !important;\n}\nul#Slider-template--16801834893626__163915671883655487 {\n    padding-bottom: 3rem;\n}"
       }
     },
     "164014386357a60c4a": {
