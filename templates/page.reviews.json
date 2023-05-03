@@ -1,33 +1,25 @@
 {
   "sections": {
-    "ba4bb42a-e675-4671-8808-55a126ba4951": {
-      "type": "image-with-text",
+    "2040ba9e-8924-407d-a856-9a050f7ebe30": {
+      "type": "rich-text",
       "blocks": {
-        "template--18973623943482__ba4bb42a-e675-4671-8808-55a126ba4951-16831343784145d769-0": {
+        "template--18973623943482__2040ba9e-8924-407d-a856-9a050f7ebe30-1683136056f6001deb-0": {
           "type": "heading",
           "settings": {
             "heading": "CUSTOMER REVIEWS",
-            "heading_font": "trade_gothic_compressed_bold",
-            "heading_size": "heading-1"
+            "heading_size": "h1",
+            "heading_font": "trade_gothic_compressed_bold"
           }
         }
       },
       "block_order": [
-        "template--18973623943482__ba4bb42a-e675-4671-8808-55a126ba4951-16831343784145d769-0"
+        "template--18973623943482__2040ba9e-8924-407d-a856-9a050f7ebe30-1683136056f6001deb-0"
       ],
       "settings": {
-        "section_id": "",
-        "image": "shopify:\/\/shop_images\/Wellness-Protein-Drink-2-Pack-Citrus-and-Berry.webp",
-        "video_embed_custom": "",
-        "image_no_placeholder": false,
-        "image_link": "",
-        "height": "small",
         "color_scheme": "background-2",
-        "background_scheme": "waves",
-        "layout": "text_first",
-        "section_width": "full_width",
-        "desktop_no_spacing": true,
-        "remove_top_margin": true
+        "full_width": true,
+        "text_align_center": true,
+        "text_color": "default"
       }
     },
     "main": {
@@ -63,7 +55,7 @@
     }
   },
   "order": [
-    "ba4bb42a-e675-4671-8808-55a126ba4951",
+    "2040ba9e-8924-407d-a856-9a050f7ebe30",
     "main",
     "50c77a3e-f788-45e9-a29a-3118304149bc",
     "1641929597955d3766"
