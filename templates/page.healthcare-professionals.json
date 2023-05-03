@@ -40,7 +40,7 @@
         "7713be27-9156-4ebc-8db8-f6f724e9ca9d"
       ],
       "custom_css": [
-
+        ".collage-cart__heading {font-weight: 700;}"
       ],
       "settings": {
         "heading": "",
