@@ -8,7 +8,7 @@
 
 .footer__content-top {
   padding-bottom: 5rem;
-  padding-top: 5rem;
+  padding-top: 2rem;
   display: block;
 }
 
@@ -697,7 +697,6 @@ noscript .localization-selector.link {
 
 	.yotpo.yotpo-reviews-carousel {
 		max-width: 100% !important;
-		padding: 1em 0 4rem;
 	}
 
 	.yotpo-reviews-carousel .carousel-display-wrapper #carousel-top-panel {
