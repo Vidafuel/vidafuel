@@ -189,7 +189,7 @@
         "icon_enable": false,
         "page_width": "page-width",
         "custom_css": "",
-        "custom_css_mobile": ""
+        "custom_css_mobile": "#shopify-section-template--16801834893626__163915671883655487 {\n    margin-top: 2rem;\n}"
       }
     },
     "164014386357a60c4a": {
