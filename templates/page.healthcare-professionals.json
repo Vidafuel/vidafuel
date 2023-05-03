@@ -11,18 +11,6 @@
         "background_color": "#ffffff"
       }
     },
-    "a2dc69c6-c408-406e-8747-f4284124d5a5": {
-      "type": "custom-liquid",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "custom_liquid": "{% style %}\n.collage-cart__heading {\n  font-family: trade-gothic-next-compressed,sans-serif;\n  font-weight: 700;\n  font-size: 42px;\n  text-transform: uppercase;\n}\n@media (max-width: 1023px) {\n  .collage-cart__heading {\n    font-size: 40px;\n  }\n}\n@media (orientation: landscape) and (max-width: 926px) {\n  .collage-cart__heading {\n    font-size: 40px;\n  }\n}\n@media (max-width: 768px) {\n  .collage-cart__heading {\n    font-size: 40px;\n  }\n}\n@media (max-width: 450px) {\n  .collage-cart__heading {\n    font-size: 30px;\n  }\n}\n{% endstyle %}",
-        "custom_background": false,
-        "background_color": "#fff",
-        "page_width": false
-      }
-    },
     "631996c3-a387-419d-b3a8-04a7d26d1971": {
       "type": "collage",
       "blocks": {
@@ -600,6 +588,18 @@
         "page_width": false
       }
     },
+    "a2dc69c6-c408-406e-8747-f4284124d5a5": {
+      "type": "custom-liquid",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "custom_liquid": "{% style %}\n.collage-cart__heading {\n  font-family: trade-gothic-next-compressed,sans-serif;\n  font-weight: 700;\n  font-size: 48px;\n  text-transform: uppercase;\n}\n@media (max-width: 1023px) {\n  .collage-cart__heading {\n    font-size: 42px;\n  }\n}\n@media (orientation: landscape) and (max-width: 926px) {\n  .collage-cart__heading {\n    font-size: 40px;\n  }\n}\n@media (max-width: 768px) {\n  .collage-cart__heading {\n    font-size: 40px;\n  }\n}\n@media (max-width: 450px) {\n  .collage-cart__heading {\n    font-size: 30px;\n  }\n}\n{% endstyle %}",
+        "custom_background": false,
+        "background_color": "#fff",
+        "page_width": false
+      }
+    },
     "e80db62f-1c32-470c-a2d1-21565021648e": {
       "type": "contact-form",
       "custom_css": [
@@ -613,7 +613,6 @@
   },
   "order": [
     "main",
-    "a2dc69c6-c408-406e-8747-f4284124d5a5",
     "631996c3-a387-419d-b3a8-04a7d26d1971",
     "1639156556f1f7aaff",
     "163915671883655487",
@@ -623,6 +622,7 @@
     "163950623206c4ca1f",
     "1639506526d4856680",
     "164328693248fb79aa",
+    "a2dc69c6-c408-406e-8747-f4284124d5a5",
     "e80db62f-1c32-470c-a2d1-21565021648e"
   ]
 }
