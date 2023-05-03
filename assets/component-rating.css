@@ -21,7 +21,7 @@
 @media screen and (max-width: 749px) {
   .card-wrapper .rating-star {
     --letter-spacing: 0.3;
-    font-size: 14.5px;
+    font-size: 14.5px !important;
   }
 }
 
