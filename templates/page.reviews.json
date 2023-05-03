@@ -23,7 +23,7 @@
         "color_scheme": "background-2",
         "background_scheme": "waves",
         "layout": "image_first",
-        "section_width": "normal",
+        "section_width": "full_width",
         "desktop_no_spacing": true,
         "remove_top_margin": false
       }
