@@ -100,7 +100,7 @@
             {% endcomment %}
             {{ section.settings.video_embed_custom }}
           </div>
-        {%- else if section.settings.image_no_placeholder !== true -%}
+        {%- elsif section.settings.image_no_placeholder != true -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
       </div>
