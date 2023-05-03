@@ -343,7 +343,7 @@
                                 {%- if block.settings.modal_image.width >= 1420 -%}{{ block.settings.modal_image | image_url: width: 1420 }} 1420w,{%- endif -%}
                                 {{ block.settings.modal_image | image_url }} {{ block.settings.modal_image.width }}w"
                               src="{{ block.settings.modal_image | image_url: width: 550 }}"
-                              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px)"
                               alt="{{ block.settings.modal_image.alt }}"
                               height="{{ block.settings.modal_image.height }}"
                               width="{{ block.settings.modal_image.width }}"
