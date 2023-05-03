@@ -65,10 +65,18 @@
               "background_color": "#fff",
               "page_width": false
             }
+          },
+          "f8471416-6242-44a0-aea4-11dccbd12e4c": {
+            "type": "text",
+            "settings": {
+              "heading": "TEST Heading",
+              "subtext": "<p>TEST Share store details, promotions, or brand content with your customers.<\/p>"
+            }
           }
         },
         "block_order": [
-          "193675c9-f0ef-486e-9ce2-c2bd920283dd"
+          "193675c9-f0ef-486e-9ce2-c2bd920283dd",
+          "f8471416-6242-44a0-aea4-11dccbd12e4c"
         ],
         "settings": {
           "color_scheme": "background-1",
