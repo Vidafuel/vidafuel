@@ -22,6 +22,37 @@
 </style>
 {% endif %}
 
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+  {%- when 'liquid' -%}
+    
+    <div class="pre-footer">
+      
+    {% if block.settings.custom_background %}
+      {% style %}
+          .footer__custom-background::after {
+            background-image: url('{{ 'cpd_waves_04.svg' | asset_url }}');
+          }
+      {% endstyle %}
+      <div class="footer__custom-background"{% if block.settings.background_color %}style="background-color:{{ block.settings.background_color }};"{% endif %}>
+          {% if block.settings.liquid != blank %}
+            {{ block.settings.liquid }}
+          {% endif %}
+      </div>
+      
+    {% else %}
+    
+      {% if block.settings.liquid != blank %}
+        {{ block.settings.liquid }}
+      {% endif %}
+      
+    {% endif %}
+    
+    </div>
+    
+  {%- endcase -%}
+{%- endfor -%}
+
 <footer class="footer color-{{ section.settings.color_scheme }}{% if section.settings.footer_bkgnd_color != 'rgba(0,0,0,0)' %} footer-bkgnd-color{% else%} gradient{% endif %}">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
@@ -64,7 +95,7 @@
                     {%- if block.settings.image != blank -%}
                       {%- assign image_size = block.settings.image_width | append: 'x' -%}
                       <img
-                        srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
+                        srcset= "{{ block.settings.image | image_url: image_size }}, {{ block.settings.image | image_url: image_size, scale: 2 }} 2x"
                         src="{{ block.settings.image | image_url: width: 400 }}"
                         alt="{{ block.settings.image.alt | escape }}"
                         loading="lazy"
@@ -453,6 +484,36 @@
             }
           ],
           "default": "center"
+        }
+      ]
+    },
+    {
+      "type": "liquid",
+      "name": "Custom Liquid",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "liquid",
+          "label": "Custom Liquid"
+        },
+        {
+          "type": "checkbox",
+          "id": "custom_background",
+          "label": "Custom background",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background color",
+          "default": "#fff",
+          "info": "Background color behind the custom background"
+        },
+        {
+          "type": "checkbox",
+          "id": "page_width",
+          "label": "Page width",
+          "default": false
         }
       ]
     }
