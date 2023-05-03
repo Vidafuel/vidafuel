@@ -189,7 +189,7 @@
         "icon_enable": false,
         "page_width": "page-width",
         "custom_css": "",
-        "custom_css_mobile": "#shopify-section-template--16801834893626__163915671883655487 {\n    margin-top: 2rem;\n}"
+        "custom_css_mobile": "#shopify-section-template--16801834893626__163915671883655487 {\n    margin-top: 2rem;\n}\n.multicolumn.desktop_no_spacing {\n    padding: 2rem 0 0;\n}"
       }
     },
     "164014386357a60c4a": {
@@ -290,7 +290,7 @@
         "title_center": false,
         "title_size": "default",
         "main_heading_text_color": "#121212",
-        "section_height": "small",
+        "section_height": "xsmall",
         "column_heading_size": "default",
         "column_description_size": "default",
         "column_custom_text_color": true,
