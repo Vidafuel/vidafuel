@@ -338,8 +338,7 @@
                           <div class="multicolumn-card-popup-modal__content-info">
                             {% if block.settings.modal_image != blank %}
                             <img
-                              srcset="{%- if block.settings.modal_image.width >= 275 -%}{{ block.settings.modal_image | image_url: width: 275 }} 275w,{%- endif -%}
-                                {%- if block.settings.modal_image.width >= 550 -%}{{ block.settings.modal_image | image_url: width: 550 }} 550w,{%- endif -%}
+                              srcset="
                                 {%- if block.settings.modal_image.width >= 710 -%}{{ block.settings.modal_image | image_url: width: 710 }} 710w,{%- endif -%}
                                 {%- if block.settings.modal_image.width >= 1420 -%}{{ block.settings.modal_image | image_url: width: 1420 }} 1420w,{%- endif -%}
                                 {{ block.settings.modal_image | image_url }} {{ block.settings.modal_image.width }}w"
