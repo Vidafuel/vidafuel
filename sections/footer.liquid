@@ -22,6 +22,34 @@
 </style>
 {% endif %}
 
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+  {%- when 'liquid' -%}
+    {% if block.settings.custom_background %}
+      {% style %}
+          .footer__custom-background::after {
+            background-image: url('{{ 'cpd_waves_04.svg' | asset_url }}');
+          }
+      {% endstyle %}
+                        
+      <div class="footer__custom-background"{% if block.settings.background_color %}style="background-color:{{ block.settings.background_color }};"{% endif %}>
+        {% unless block.settings.page_width %}<div class="page-width">{% endunless %}
+          {% if block.settings.liquid != blank %}
+            {{ block.settings.liquid }}
+          {% endif %}
+        {% unless block.settings.page_width == false %}</div>{% endunless %}
+      </div>
+      
+    {% else %}
+    
+      {% if block.settings.liquid != blank %}
+        {{ block.settings.liquid }}
+      {% endif %}
+      
+    {% endif %}
+  {%- endcase -%}
+{%- endfor -%}
+
 <footer class="footer color-{{ section.settings.color_scheme }}{% if section.settings.footer_bkgnd_color != 'rgba(0,0,0,0)' %} footer-bkgnd-color{% else%} gradient{% endif %}">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
@@ -76,22 +104,6 @@
                       {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                     {%- endif -%}
                   </div>
-                {%- when 'liquid' -%}
-                  
-                  {% if block.settings.custom_background %}
-                    <div class="footer__custom-background"{% if block.settings.background_color %}style="background-color:{{ block.settings.background_color }};"{% endif %}>
-                      {% unless block.settings.page_width %}<div class="page-width">{% endunless %}
-                        {% if block.settings.liquid != blank %}
-                          {{ block.settings.liquid }}
-                        {% endif %}
-                      {% unless block.settings.page_width == false %}</div>{% endunless %}
-                    </div>
-                  {% else %}
-                    {% if block.settings.liquid != blank %}
-                      {{ block.settings.liquid }}
-                    {% endif %}
-                  {% endif %}
-                  
                 {%- endcase -%}
             </div>
           {%- endfor -%}
@@ -388,19 +400,6 @@
 
   customElements.define('localization-form', LocalizationForm);
 {% endjavascript %}
-
-{%- for block in section.blocks -%}
-  {%- case block.type -%}
-  {%- when 'liquid' -%}
-    {% if block.settings.custom_background %}
-      {% style %}
-          .footer__custom-background::after {
-            background-image: url('{{ 'cpd_waves_04.svg' | asset_url }}');
-          }
-      {% endstyle %}
-    {% endif %}
-  {%- endcase -%}
-{%- endfor -%}
 
 {% schema %}
 {
