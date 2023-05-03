@@ -166,6 +166,10 @@
 	color: rgb(var(--color-base-accent-2)) !important;
 }
 
+.color-text-accent-white {
+	color: #fff !important;
+}
+
 :root {
 	--border-radius: 10px;
 	--border-radius-button: 5px;
