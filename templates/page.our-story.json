@@ -41,6 +41,7 @@
         "section_id": "",
         "image": "shopify:\/\/shop_images\/Artboard_de8e50e1-e988-4547-9f31-416e7393994b.webp",
         "video_embed_custom": "",
+        "image_no_placeholder": false,
         "image_link": "",
         "height": "small",
         "color_scheme": "background-1",
@@ -118,10 +119,10 @@
     "1641929597955d3766": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"Reviews from real customers\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
+        "custom_liquid": "<div style=\"border:10px solid #000;height:300px;\"><\/div>",
         "custom_background": true,
         "background_color": "#7bccc8",
-        "page_width": false
+        "page_width": true
       }
     }
   },
