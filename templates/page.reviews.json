@@ -5,7 +5,8 @@
       "settings": {
         "page_title_background": "shopify:\/\/shop_images\/home-reviews-bk.jpg",
         "page_title_background_justification": "justify-bottom",
-        "featured_image_ratio": "circle",
+        "page_featured_image": "shopify:\/\/shop_images\/Screenshot_2023-01-31_at_8.23.30_AM.png",
+        "featured_image_ratio": "adapt",
         "page_width": "page-width--narrow",
         "background_color": "#ffffff"
       }
@@ -15,7 +16,7 @@
       "settings": {
         "custom_liquid": "<script type=\"text\/javascript\">\n          (function e(){var e=document.createElement(\"script\");e.type=\"text\/javascript\",e.async=!0,\n              e.src=\"\/\/staticw2.yotpo.com\/DQkSVEOOfTk6RwUP3XUIMXJSc60azZRBfpfLxYtV\/widget.js\";var t=document.getElementsByTagName(\"script\")[0];\n              t.parentNode.insertBefore(e,t)})();\n          <\/script>\n          <div id='yotpo-testimonials-custom-tab'><\/div>",
         "custom_background": false,
-        "background_color": "#fff",
+        "background_color": "#ffffff",
         "page_width": true
       }
     },
