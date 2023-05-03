@@ -553,7 +553,7 @@
         "title_center": false,
         "title_size": "default",
         "main_heading_text_color": "#000000",
-        "section_height": "medium",
+        "section_height": "xsmall",
         "column_heading_size": "default",
         "column_description_size": "default",
         "column_custom_text_color": false,
@@ -596,7 +596,7 @@
       "settings": {
         "custom_liquid": "{% style %}\n.collage-cart__heading {\n  font-family: trade-gothic-next-compressed,sans-serif;\n  font-weight: 700;\n  font-size: 48px;\n  text-transform: uppercase;\n}\n@media (max-width: 1023px) {\n  .collage-cart__heading {\n    font-size: 42px;\n  }\n}\n@media (orientation: landscape) and (max-width: 926px) {\n  .collage-cart__heading {\n    font-size: 40px;\n  }\n}\n@media (max-width: 768px) {\n  .collage-cart__heading {\n    font-size: 40px;\n  }\n}\n@media (max-width: 450px) {\n  .collage-cart__heading {\n    font-size: 30px;\n  }\n}\n{% endstyle %}",
         "custom_background": false,
-        "background_color": "#fff",
+        "background_color": "#ffffff",
         "page_width": false
       }
     },
