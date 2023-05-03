@@ -13,6 +13,17 @@
   --font-size: 1.4;
 }
 
+.card-wrapper .rating-star {
+  --letter-spacing: 0.7;
+  --font-size: 1.4;
+}
+
+@media screen and (max-width: 749px) {
+  .card-wrapper .rating-star {
+    --letter-spacing: 0.3;
+  }
+}
+
 .rating-star {
   --percent: calc(
     (
