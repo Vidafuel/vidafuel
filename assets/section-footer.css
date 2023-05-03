@@ -551,6 +551,7 @@ noscript .localization-selector.link {
 	.carousel-display-wrapper
 	.yotpo-carousel
 	.small-version {
+  width: 315px;
 	padding-bottom: 2em;
 	display: flex !important;
 	flex-wrap: wrap;
