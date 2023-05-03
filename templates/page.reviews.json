@@ -27,7 +27,7 @@
         "layout": "text_first",
         "section_width": "full_width",
         "desktop_no_spacing": true,
-        "remove_top_margin": false
+        "remove_top_margin": true
       }
     },
     "main": {
