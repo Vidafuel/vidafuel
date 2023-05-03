@@ -76,6 +76,10 @@
                       {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                     {%- endif -%}
                   </div>
+                {%- when 'liquid' -%}
+                  {% if block.settings.liquid != blank %}
+                    {{ block.settings.liquid }}
+                  {% endif %}
                 {%- endcase -%}
             </div>
           {%- endfor -%}
