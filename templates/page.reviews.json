@@ -17,8 +17,9 @@
       ],
       "settings": {
         "section_id": "",
+        "image": "shopify:\/\/shop_images\/Wellness-Protein-Drink-2-Pack-Citrus-and-Berry.webp",
         "video_embed_custom": "",
-        "image_no_placeholder": true,
+        "image_no_placeholder": false,
         "image_link": "",
         "height": "small",
         "color_scheme": "background-2",
