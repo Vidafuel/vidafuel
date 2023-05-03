@@ -564,9 +564,9 @@
 }
 
 @media screen and (max-width: 768px) {
-	.collage-content.media > img.collage-card__image {
+	/* .collage-content.media > img.collage-card__image {
 		display: none !important;
-	}
+	} */
 	.media > img.collage-card__image-mobile {
 		object-fit: contain;
 	}
