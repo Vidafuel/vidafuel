@@ -100,7 +100,7 @@
             {% endcomment %}
             {{ section.settings.video_embed_custom }}
           </div>
-        {%- else -%}
+        {%- else if section.settings.image_no_placeholder !== true -%}
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
       </div>
@@ -151,6 +151,13 @@
       "type": "liquid",
       "id": "video_embed_custom",
       "label": "Video embed custom"
+    },
+    {
+      "type": "checkbox",
+      "id": "image_no_placeholder",
+      "default": false,
+      "label": "Remove placeholder image",
+      "info": "If no image added and no custom video embed you can remove the placeholder image."
     },
     {
       "type": "url",
