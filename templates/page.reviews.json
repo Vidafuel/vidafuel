@@ -1,11 +1,41 @@
 {
   "sections": {
+    "ba4bb42a-e675-4671-8808-55a126ba4951": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18973623943482__ba4bb42a-e675-4671-8808-55a126ba4951-16831343784145d769-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "CUSTOMER REVIEWS",
+            "heading_font": "trade_gothic_compressed_bold",
+            "heading_size": "heading-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--18973623943482__ba4bb42a-e675-4671-8808-55a126ba4951-16831343784145d769-0"
+      ],
+      "settings": {
+        "section_id": "",
+        "video_embed_custom": "",
+        "image_link": "",
+        "height": "small",
+        "color_scheme": "background-2",
+        "background_scheme": "waves",
+        "layout": "image_first",
+        "section_width": "full_width",
+        "desktop_no_spacing": true,
+        "remove_top_margin": false
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "page_title_background": "shopify:\/\/shop_images\/home-reviews-bk.jpg",
         "page_title_background_justification": "justify-bottom",
-        "featured_image_ratio": "circle",
+        "page_featured_image": "shopify:\/\/shop_images\/Wellness-Protein-Drink-2-Pack-Citrus-and-Berry.webp",
+        "featured_image_ratio": "square",
         "page_width": "page-width--narrow",
         "background_color": "#ffffff"
       }
@@ -15,7 +45,7 @@
       "settings": {
         "custom_liquid": "<script type=\"text\/javascript\">\n          (function e(){var e=document.createElement(\"script\");e.type=\"text\/javascript\",e.async=!0,\n              e.src=\"\/\/staticw2.yotpo.com\/DQkSVEOOfTk6RwUP3XUIMXJSc60azZRBfpfLxYtV\/widget.js\";var t=document.getElementsByTagName(\"script\")[0];\n              t.parentNode.insertBefore(e,t)})();\n          <\/script>\n          <div id='yotpo-testimonials-custom-tab'><\/div>",
         "custom_background": false,
-        "background_color": "#fff",
+        "background_color": "#ffffff",
         "page_width": true
       }
     },
@@ -31,6 +61,7 @@
     }
   },
   "order": [
+    "ba4bb42a-e675-4671-8808-55a126ba4951",
     "main",
     "50c77a3e-f788-45e9-a29a-3118304149bc",
     "1641929597955d3766"
