@@ -708,44 +708,8 @@
         "desktop_layout": "right",
         "background_color_scheme": "default",
         "mobile_layout": "column",
-        "remove_top_spacing": true,
+        "remove_top_spacing": false,
         "full_width": true
-      }
-    },
-    "f220bd03-2791-4a88-98a7-a943a6ae5566": {
-      "type": "slider",
-      "blocks": {
-        "d048f9ce-47f1-4817-bb10-42bef4491b07": {
-          "type": "image_text",
-          "settings": {
-            "title": "Slide one!",
-            "text": "<p><strong>Slide one text here. . .<\/strong><\/p><p>subtext like this<\/p>",
-            "image": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-_-optimal-nutrition_2.webp",
-            "background_image": "shopify:\/\/shop_images\/healthcare-bg_244be7a3-a564-4485-afaa-29b1d557d158.jpg"
-          }
-        },
-        "8d2dd284-02d3-4887-92ba-68a8cf9f868f": {
-          "type": "image_text",
-          "settings": {
-            "title": "Slide 2",
-            "text": "<p>slide 2 text here. . .<\/p>",
-            "image": "shopify:\/\/shop_images\/vidafuel-powerful-shot-centered-2.webp",
-            "background_image": "shopify:\/\/shop_images\/less-is-more-background_523d6412-a4f9-4749-9ecf-50e07c12ab8d.webp"
-          }
-        }
-      },
-      "block_order": [
-        "d048f9ce-47f1-4817-bb10-42bef4491b07",
-        "8d2dd284-02d3-4887-92ba-68a8cf9f868f"
-      ],
-      "settings": {
-        "carousel_title": "",
-        "autoplay": false,
-        "autoplay_speed": "10000",
-        "text_size": "medium",
-        "custom_background": false,
-        "background_color_scheme": "default",
-        "background_color": "rgba(0,0,0,0)"
       }
     }
   },
@@ -760,7 +724,6 @@
     "1639503887e884ceb3",
     "6bfa2099-00ed-467f-b99b-33fda7955494",
     "f97fa88b-fb2d-45a8-a75d-a811f34c6b4d",
-    "bbb28046-9da0-414e-9315-b719dba86fce",
-    "f220bd03-2791-4a88-98a7-a943a6ae5566"
+    "bbb28046-9da0-414e-9315-b719dba86fce"
   ]
 }
