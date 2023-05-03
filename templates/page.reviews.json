@@ -27,7 +27,7 @@
         "custom_liquid": "<script type=\"text\/javascript\">\n          (function e(){var e=document.createElement(\"script\");e.type=\"text\/javascript\",e.async=!0,\n              e.src=\"\/\/staticw2.yotpo.com\/DQkSVEOOfTk6RwUP3XUIMXJSc60azZRBfpfLxYtV\/widget.js\";var t=document.getElementsByTagName(\"script\")[0];\n              t.parentNode.insertBefore(e,t)})();\n          <\/script>\n          <div id='yotpo-testimonials-custom-tab'><\/div>",
         "custom_background": false,
         "background_color": "#fff",
-        "page_width": false
+        "page_width": true
       }
     }
   },
