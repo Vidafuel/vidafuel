@@ -5,7 +5,7 @@
       <meta name="robots" content="noindex">
     {% endif %}
     <!-- Google Optimize -->
-    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KQ6ZSXP" async></script>
+    {% comment %} <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KQ6ZSXP" async></script> {% endcomment %}
     
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -194,15 +194,10 @@
       {% assign mainClass = 'products' %}
     {% endif %}
     <main id="MainContent" class="{{ mainClass }} content-for-layout focus-none" role="main" tabindex="-1">
-          <pre>{{ settings.type_header_font }}</pre>
-          {% style %}
-            {{ settings.type_header_font | font_face }}
-          {% endstyle %}
-          
-    {% capture captured_page %}
-      {{ content_for_layout }}
-    {% endcapture %}
-    {% include 'password-protect' %}
+      {% capture captured_page %}
+        {{ content_for_layout }}
+      {% endcapture %}
+      {% include 'password-protect' %}
     </main>
     {% unless template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
       {% section 'footer' %}
