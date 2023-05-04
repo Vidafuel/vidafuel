@@ -644,7 +644,7 @@
       "settings": {
         "heading": "",
         "video_url": "",
-        "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/88e40cb0-2d32-4645-b4f3-0315277eb94b?autoplay=true&loop=true&muted=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"><\/iframe>",
+        "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/88e40cb0-2d32-4645-b4f3-0315277eb94b?autoplay=true&loop=true&muted=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\"><\/iframe>",
         "description": "",
         "full_width": true,
         "video_cover": false
