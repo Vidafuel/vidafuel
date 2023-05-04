@@ -21,7 +21,7 @@
 	.carousel-display-wrapper
 	.yotpo-carousel
 	.carousel-review-body {
-	font-family: "trade-gothic-next-condensed", sans-serif !important;
+	font-family: var(--font-body-family) !important;
 }
 
 .yotpo-reviews-carousel
@@ -29,7 +29,7 @@
 	#carousel-top-panel
 	.headline {
 	color: #cddb00 !important;
-	font-family: trade-gothic-next-compressed, sans-serif;
+	font-family: var(--font-body-family);
 	font-weight: 700;
 	font-style: normal;
 	font-size: 40px !important;

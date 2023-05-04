@@ -528,7 +528,7 @@ noscript .localization-selector.link {
 	.carousel-display-wrapper
 	.yotpo-carousel
 	.carousel-review-body {
-	font-family: "trade-gothic-next-condensed", sans-serif !important;
+	font-family: "trade-gothic-next", sans-serif !important;
 }
 
 .yotpo-reviews-carousel
@@ -536,7 +536,7 @@ noscript .localization-selector.link {
 	#carousel-top-panel
 	.headline {
 	color: #cddb00 !important;
-	font-family: trade-gothic-next-compressed, sans-serif;
+	font-family: 'trade-gothic-next', sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	font-size: 40px !important;
