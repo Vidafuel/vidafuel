@@ -17,17 +17,17 @@
 
       gtag('config', 'UA-154868718-1');
     </script>
--->
+    -->
     
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KNQ2TM4');</script>
-<!-- End Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KNQ2TM4');</script>
+    <!-- End Google Tag Manager -->
     
-        <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
@@ -184,8 +184,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {% if template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
       <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     {% endif %}
-  {%- render 'bold-subscription-widget' -%}
-</head>
+    {%- render 'bold-subscription-widget' -%}
+  </head>
 
   <body class="gradient">
     <!-- Google Tag Manager (noscript) -->
@@ -207,11 +207,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       {% assign mainClass = 'products' %}
     {% endif %}
     <main id="MainContent" class="{{ mainClass }} content-for-layout focus-none" role="main" tabindex="-1">
-      
-{% capture captured_page %}
-  {{ content_for_layout }}
-{% endcapture %}
-{% include 'password-protect' %}
+          <pre>{{ settings.type_header_font }}</pre>
+          {% style %}
+            {{ settings.type_header_font | font_face }}
+          {% endstyle %}
+          
+    {% capture captured_page %}
+      {{ content_for_layout }}
+    {% endcapture %}
+    {% include 'password-protect' %}
     </main>
     {% unless template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
       {% section 'footer' %}
