@@ -18,7 +18,7 @@
           "type": "video",
           "settings": {
             "video_url": "",
-            "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/71a7561d-1905-4885-b22b-000845695d7f?autoplay=true&loop=true&muted=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"><\/iframe>",
+            "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/71a7561d-1905-4885-b22b-000845695d7f?autoplay=true&loop=true&muted=true\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\"><\/iframe>",
             "description": "Describe the video",
             "image_padding": false,
             "video_small_desktop": false
