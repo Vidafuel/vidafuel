@@ -551,6 +551,15 @@ noscript .localization-selector.link {
 	position: relative;
 }
 
+@media screen and (max-width: 749px) {
+  .yotpo-reviews-carousel
+	.carousel-display-wrapper
+	#carousel-top-panel
+	.headline {
+    font-size: 33px !important;
+  }
+}
+
 .yotpo-reviews-carousel
 	.carousel-display-wrapper
 	.yotpo-carousel
