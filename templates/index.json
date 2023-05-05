@@ -644,7 +644,7 @@
       "settings": {
         "heading": "",
         "video_url": "",
-        "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/88e40cb0-2d32-4645-b4f3-0315277eb94b?autoplay=true&loop=true&muted=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"><\/iframe>",
+        "video_embed_custom": "<video playsinline autoplay muted loop preload=\"auto\" id=\"myVideo\" width=\"100%\"><source src=\"https:\/\/vidafuel-video.b-cdn.net\/Vidafuel-Banner.mp4\" \/><p>Your browser doesn't support HTML video. Here is a<a href=\"https:\/\/iframe.mediadelivery.net\/play\/92600\/88e40cb0-2d32-4645-b4f3-0315277eb94b\">link to the video<\/a> instead.<\/p><\/video>",
         "description": "",
         "full_width": true,
         "video_cover": false
@@ -692,7 +692,7 @@
           "type": "video",
           "settings": {
             "video_url": "",
-            "video_embed_custom": "<iframe src=\"https:\/\/iframe.mediadelivery.net\/embed\/92600\/5c0af45e-f939-4e0f-bf61-3c48ca1a5f22?autoplay=true&loop=true&muted=true\" loading=\"lazy\" style=\"border: none; position: absolute; top: 0; height: 100%; width: 100%;\" allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;\" allowfullscreen=\"true\"><\/iframe>",
+            "video_embed_custom": "<video playsinline autoplay muted loop preload=\"auto\" id=\"myVideo\" width=\"100%\"><source src=\"https:\/\/vidafuel-video.b-cdn.net\/Vidafuel-vs-Protein-Powders.mp4\" \/><p>Your browser doesn't support HTML video. Here is a<a href=\"https:\/\/iframe.mediadelivery.net\/play\/92600\/5c0af45e-f939-4e0f-bf61-3c48ca1a5f22\">link to the video<\/a> instead.<\/p><\/video>",
             "description": "Describe the video",
             "image_padding": false,
             "video_small_desktop": false
