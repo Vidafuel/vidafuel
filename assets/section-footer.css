@@ -869,3 +869,8 @@ noscript .localization-selector.link {
   background-repeat: no-repeat;
   z-index: 1;
 }
+
+.yotpo-reviews-carousel .carousel-tool-tip .yotpo-tool-tip {
+  bottom: 0;
+  top: unset !important;
+}
