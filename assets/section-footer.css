@@ -531,8 +531,9 @@ noscript .localization-selector.link {
 .yotpo-reviews-carousel
 	.carousel-display-wrapper
 	.yotpo-carousel
-	.carousel-review-body {
-	font-family: "trade-gothic-next", sans-serif !important;
+	.carousel-review-body,
+  div.tool-tip-header {
+	font-family: "trade-gothic-next-condensed", sans-serif !important;
 }
 
 .yotpo-reviews-carousel
@@ -881,4 +882,13 @@ noscript .localization-selector.link {
   background-position: top;
   background-repeat: no-repeat;
   z-index: 1;
+}
+.yotpo .yotpo-tool-tip .tool-tip-header .header-blue, .yotpo .yotpo-tool-tip-question .tool-tip-header .header-blue, .yotpo .yotpo-tool-tip-answer .tool-tip-header .header-blue {
+  color: #4f4f4f;
+}
+@media screen and (min-width: 750px) {
+  .yotpo-corner:not(.yotpo-hidden) + .label-with-tooltip .yotpo-tool-tip {
+      transform: translateY(-100px);
+      background-color: #fff;
+  }
 }
