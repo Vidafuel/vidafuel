@@ -1,6 +1,10 @@
 /* .footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
 } */
+.carousel-reviews-bottom-line, 
+span.yotpo-num-of-reviews {
+  font-family: var(--font-body-family);
+}
 
 .footer:not(.color-background-1) {
   border-top: none;
@@ -536,7 +540,7 @@ noscript .localization-selector.link {
 	#carousel-top-panel
 	.headline {
 	color: #cddb00 !important;
-	font-family: 'trade-gothic-next', sans-serif;
+	font-family: var(--font-heading-family);
 	font-weight: 700;
 	font-style: normal;
 	font-size: 40px !important;

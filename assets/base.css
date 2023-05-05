@@ -1,5 +1,27 @@
 /* custom fonts  */
-@import url("https://use.typekit.net/xbq8sxe.css");
+/* @import url("https://use.typekit.net/xbq8sxe.css"); OLD: too many fonts loaded */
+@import url("https://use.typekit.net/mvk3adf.css");
+
+/* Trade Gothic Next LT Pro Regular */
+.trade_gothic {
+	font-family: "trade-gothic-next", sans-serif !important;
+	font-weight: 400 !important;
+	font-style: normal;
+}
+
+/* Trade Gothic Next LT Pro Bold */
+.trade_gothic_bold {
+	font-family: "trade-gothic-next", sans-serif !important;
+	font-weight: 700 !important;
+	font-style: normal;
+}
+
+/* Trade Gothic Next LT Pro Bold Compressed */
+.trade_gothic_compressed_bold {
+	font-family: "trade-gothic-next-compressed", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
 
 /* Color custom properties */
 :root,
@@ -195,53 +217,35 @@
 	font-style: normal;
 }
 
-/* Trade Gothic Next LT Pro Regular */
-.trade_gothic {
-	font-family: "trade-gothic-next", sans-serif !important;
-	font-weight: 400 !important;
-	font-style: normal;
-}
-
-/* Trade Gothic Next LT Pro Bold */
-.trade_gothic_bold {
-	font-family: "trade-gothic-next", sans-serif !important;
-	font-weight: 700 !important;
-	font-style: normal;
-}
 
 /* Trade Gothic Next LT Pro Bold Condensed */
-.trade_gothic_bold_condensed {
+/* .trade_gothic_bold_condensed {
 	font-family: "trade-gothic-next-condensed", sans-serif !important;
 	font-weight: 700 !important;
 	font-style: normal;
-}
+} */
 
 /* Trade Gothic Next LT Pro Condensed */
-.trade_gothic_condensed {
+/* .trade_gothic_condensed {
 	font-family: "trade-gothic-next-condensed", sans-serif !important;
 	font-weight: 400 !important;
 	font-style: normal;
-}
+} */
 
 /* Trade Gothic Next LT Pro Bold Condensed */
-.trade_gothic_condensed_bold {
+/* .trade_gothic_condensed_bold {
 	font-family: "trade-gothic-next-condensed", sans-serif !important;
 	font-weight: 700 !important;
 	font-style: normal;
-}
+} */
 
-/* Trade Gothic Next LT Pro Bold Compressed */
-.trade_gothic_compressed_bold {
-	font-family: "trade-gothic-next-compressed", sans-serif !important;
-	font-weight: 700 !important;
-	font-style: normal;
-}
+
 /* Trade Gothic Next LT Pro Heavy Condensed */
-.trade_gothic_condensed_heavy {
+/* .trade_gothic_condensed_heavy {
 	font-family: "trade-gothic-next-condensed", sans-serif !important;
 	font-weight: 800 !important;
 	font-style: normal;
-}
+} */
 
 /* END custom fonts  */
 
@@ -468,14 +472,14 @@ h5,
 .h2,
 .h3,
 .h4,
-.h5 {
+.h5,
+.headline {
 	font-family: var(--font-heading-family);
 	font-style: var(--font-heading-style);
 	font-weight: var(--font-heading-weight);
 	letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
 	color: rgb(var(--color-foreground));
 	line-height: calc(1 + 0.1 / max(1, var(--font-heading-scale)));
-	text-transform: uppercase;
 }
 
 .h0 {
@@ -492,6 +496,7 @@ h1,
 .h1 {
 	font-weight: unset;
 	font-size: calc(var(--font-heading-scale) * 3.5rem);
+	text-transform: uppercase;
 }
 
 @media only screen and (min-width: 750px) {
@@ -506,6 +511,7 @@ h2,
 .h2 {
 	font-weight: unset;
 	font-size: calc(var(--font-heading-scale) * 1.45rem);
+	text-transform: uppercase;
 }
 
 .h2 {
@@ -2589,12 +2595,12 @@ details-disclosure > details {
 }
 
 .heading-1 {
-	font-size: calc(var(--font-heading-scale) * 3.5rem);
+	font-size: calc(var(--font-heading-scale) * 2.75rem);
 }
 
 @media only screen and (min-width: 750px) {
 	.heading-1 {
-		font-size: calc(var(--font-heading-scale) * 4rem);
+		font-size: calc(var(--font-heading-scale) * 3.4rem);
 	}
 }
 
@@ -2607,18 +2613,18 @@ details-disclosure > details {
 	margin: inherit;
 }
 
-.heading-2 strong {
+/* .heading-2 strong {
 	font-size: calc(var(--font-heading-scale) * 2.3rem);
-}
+} */
 
 @media only screen and (min-width: 750px) {
 	.heading-2 {
 		font-size: calc(var(--font-heading-scale) * 2.4rem);
 	}
 
-	.heading-2 strong {
+	/* .heading-2 strong {
 		font-size: calc(var(--font-heading-scale) * 2.6rem);
-	}
+	} */
 }
 
 .heading-3 {

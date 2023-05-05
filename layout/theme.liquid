@@ -73,11 +73,13 @@
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
       :root {
-        --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+        /* --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }}; */
+        --font-body-family: 'proxima-nova', sans-serif;
         --font-body-style: {{ settings.type_body_font.style }};
         --font-body-weight: {{ settings.type_body_font.weight }};
 
-        --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+        /* --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }}; */
+        --font-heading-family: 'trade-gothic-next-compressed', sans-serif;
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
 
@@ -153,7 +155,7 @@
     <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/qYB4cBxqqH8uHOo2X-8OYw" async></script>
     
     {%- comment -%} CUSTOM FONTS see base.css {%- endcomment -%}
-    <link rel="stylesheet" href="https://use.typekit.net/xbq8sxe.css">
+    {% comment %} <link rel="stylesheet" href="https://use.typekit.net/xbq8sxe.css"> {% endcomment %}
 
     <script type="text/javascript">
       (function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/DQkSVEOOfTk6RwUP3XUIMXJSc60azZRBfpfLxYtV/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();
