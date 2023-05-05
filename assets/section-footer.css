@@ -872,5 +872,5 @@ noscript .localization-selector.link {
 
 .yotpo-reviews-carousel .carousel-tool-tip .yotpo-tool-tip {
   bottom: 0;
-  top: unset !important;
+  top: 160px !important;
 }
