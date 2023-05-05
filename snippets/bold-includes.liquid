@@ -10,4 +10,8 @@ THIS IS A GENERATED ASSET OF INCLUDES FOR INSTALLED BOLD APPLICATIONS SO DO NOT 
 <script>
     window.BOLD.common.cacheParams.recurring_orders = 1681837773;
 </script>
-{{ 'https://ro.boldapps.net/v2_ui/js/ro.js' | script_tag }}
+{% comment %}
+    APP UPDATE TODO: Update code in `assets/ro.js` if update
+    original: {{ 'https://ro.boldapps.net/v2_ui/js/ro.js' | script_tag }}
+{% endcomment %}
+<script src="{{ 'ro.js' | asset_url }}" defer></script>

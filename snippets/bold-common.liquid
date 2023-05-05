@@ -126,4 +126,8 @@ It may be overwritten and any customizations would be lost.
 </script>
 
 {%- comment -%} INCLUDE APP SCRIPTS BELOW {%- endcomment -%}
-{{ 'https://ro.boldapps.net/v2_ui/js/ro.js' | script_tag }}
+{% comment %}
+    APP UPDATE TODO: Update code in `assets/ro.js` if update
+    original: {{ 'https://ro.boldapps.net/v2_ui/js/ro.js' | script_tag }}
+{% endcomment %}
+<script src="{{ 'ro.js' | asset_url }}" defer></script>
