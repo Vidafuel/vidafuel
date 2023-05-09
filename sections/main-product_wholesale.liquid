@@ -321,8 +321,7 @@
                         </div>
                     </button>
                     {%- comment -%} YOTPO APP STAR RATING https://support.yotpo.com/en/article/shopify-installing-yotpo#manual-installation-a-step-by-step-guide {%- endcomment -%}
-                    <div class="yotpo bottomLine" data-product-id="{{ product.id }}">
-                    </div>
+
                     {%- if block.settings.show_dynamic_checkout -%}
                       {{ form | payment_button }}
                     {%- endif -%}
@@ -426,29 +425,21 @@
           <h1 class="h2">{{ block.settings.page.title }}</h1>
           {{ block.settings.page.content }}
           {% if block.settings.show_nutrition_facts and product.metafields.vidafields.nutrition_facts != blank %}
-            <img
-              srcset="{% if nutrition_facts_image.width >= 288 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '288x' }} 288w,{% endif %}
-                      {% if product.metafields.vidafields.nutrition_facts.width >= 576 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '576x' }} 576w,{% endif %}
-                      {% if product.metafields.vidafields.nutrition_facts.width >= 750 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '750x' }} 750w,{% endif %}
-                      {% if product.metafields.vidafields.nutrition_facts.width >= 1100 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '1100x' }} 1100w,{% endif %}
-                      {% if product.metafields.vidafields.nutrition_facts.width >= 1500 %}{{ product.metafields.vidafields.nutrition_facts | img_url: '1500x' }} 1500w,{% endif %}
-                      {{ product.metafields.vidafields.nutrition_facts | img_url: 'master' }} {{ product.metafields.vidafields.nutrition_facts.width }}w"
-              src="{{ product.metafields.vidafields.nutrition_facts | img_url: '1500x' }}"
+            <img srcset="{% if nutrition_facts_image.width >= 288 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 288 }} 288w,{% endif %}
+                      {% if product.metafields.vidafields.nutrition_facts.width >= 576 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 576 }} 576w,{% endif %}
+                      {% if product.metafields.vidafields.nutrition_facts.width >= 750 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 750 }} 750w,{% endif %}
+                      {% if product.metafields.vidafields.nutrition_facts.width >= 1100 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 1100 }} 1100w,{% endif %}
+                      {% if product.metafields.vidafields.nutrition_facts.width >= 1500 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 1500 }} 1500w,{% endif %}
+                      {{ product.metafields.vidafields.nutrition_facts | image_url }} {{ product.metafields.vidafields.nutrition_facts.width }}w"
+              src="{{ product.metafields.vidafields.nutrition_facts | image_url: width: 1500 }}"
               sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: 0.64 | round }}px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
-              loading="lazy" width="576" height="100%" alt="{{ product.metafields.vidafields.nutrition_facts.alt | escape }}">
+              loading="lazy" width="576" height="100" alt="{{ product.metafields.vidafields.nutrition_facts.alt | escape }}">
           {% endif %}
         </div>
       </div>
     </modal-dialog>
   {%- endfor -%}
 </section>
-{%- comment -%} YOTPO APP WIDGET {%- endcomment -%}
-<div class="yotpo yotpo-main-widget" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}"
-  data-url="{{ shop.url }}{{ product.url }}"
-  data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
-  data-price="{{ variant.price | money_without_currency }}" data-currency="{{ shop.currency }}"
-  data-description="{{ product.description | escape }}">
-</div>
 {% else %}
 {{ pages.no-access.content }}
 {% endif %}
@@ -570,14 +561,14 @@
 <script type="text/javascript">
   var _learnq = _learnq || [];
   var item = {
-    Name: {{ product.title|json }},
-    ProductID: {{ product.id|json }},
-    Categories: {{ product.collections|map:'title'|json }},
-    ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+    Name: {{ product.title | json }},
+    ProductID: {{ product.id | json }},
+    Categories: {{ product.collections | map: 'title' | json }},
+    ImageURL: "https:{{ product.featured_image.src | image_url: width: 600, height: 600 }}",
     URL: "{{ shop.secure_url }}{{ product.url }}",
-    Brand: {{ product.vendor|json }},
-    Price: {{ product.price|money|json }},
-    CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+    Brand: {{ product.vendor | json }},
+    Price: {{ product.price | money | json }},
+    CompareAtPrice: {{ product.compare_at_price_max | money | json }}
   };
   _learnq.push(['track', 'Viewed Product', item]);
   _learnq.push(['trackViewedItem', {
