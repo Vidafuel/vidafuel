@@ -677,13 +677,6 @@
 		]    
 	}
 </script>
-{%- comment -%} yotpo Reviews Widget {%- endcomment -%}
-<div class="yotpo yotpo-main-widget" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}"
-	data-url="{{ shop.url }}{{ product.url }}"
-	data-image-url="{{ product.featured_image | product_img_url: 'large' | replace: '?', '%3F' | replace: '&', '%26' }}"
-	data-price="{{ variant.price | money_without_currency }}" data-currency="{{ shop.currency }}"
-	data-description="{{ product.description | escape }}">
-</div>
 
 {%- comment -%} KLAVIYO Viewed Product Tracking: https://help.klaviyo.com/hc/en-us/articles/115005080407 {%- endcomment -%}
 <script type="text/javascript">
