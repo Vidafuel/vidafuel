@@ -166,13 +166,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     {%- comment -%} CUSTOM FONTS see base.css {%- endcomment -%}
     <link rel="stylesheet" href="https://use.typekit.net/xbq8sxe.css">
+    {% comment %} yotpo 3.0 script {% endcomment %}
     <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/DQkSVEOOfTk6RwUP3XUIMXJSc60azZRBfpfLxYtV" async></script>
 
-    {%- comment -%} Yotpo JS 
+    {%- comment -%} 
+    Yotpo JS 
+    Link: https://support.yotpo.com/en/article/shopify-installing-yotpo-reviews-on-a-vintage-theme#1-add-yotpos-javascript-required
+    {%- endcomment -%}
     <script type="text/javascript" async>
       (function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/DQkSVEOOfTk6RwUP3XUIMXJSc60azZRBfpfLxYtV/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();
     </script>
-    {%- endcomment -%}
+    
     {%- comment -%} KLAVIYO {%- endcomment -%}
     <script async type="text/javascript" src="//static.klaviyo.com/onsite/js/klaviyo.js?company_id=Q9a84Y"></script>
     <script>

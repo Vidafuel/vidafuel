@@ -55,6 +55,7 @@
                         height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
                       >
                     {% endif %}
+                    {% comment %} yotpo 3.0 widget {% endcomment %}
                     <div class="yotpo-widget-instance" data-yotpo-instance-id="#INSTACE_ID#" data-yotpo-product-id="{{ product.id }}" data-yotpo-cart-product-id="{{ item.product.id }}" data-yotpo-section-id="{{ template.name }}"></div>
                   </td>
 
