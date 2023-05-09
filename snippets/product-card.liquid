@@ -67,7 +67,11 @@ window.BOLD.common.Shopify.saveProduct({{ product_card_product.handle | json }},
       {%- endif -%}
 
       {%- if show_purchase_options == false -%}
-        {% render 'price', product: product_card_product, price_class: '', show_purchase_options: true %}  
+        <div class="flex-container">
+          {% render 'price', product: product_card_product, price_class: '', show_purchase_options: true %}  
+          {% comment %} yotpo 3.0 widget {% endcomment %}
+          <div class="yotpo-widget-instance yotpo-review" data-yotpo-instance-id="397249" data-yotpo-product-id="{{ product_card_product.id }}" data-yotpo-cart-product-id="{{ item.product.id }}" data-yotpo-section-id="{{ template.name }}"></div>
+        </div>
       {% endif %}
       {%- if show_purchase_options -%}
         <div class="grid flex-justify-center flex-align-center product-form__input product-form__quantity" {{ block.shopify_attributes }}>
@@ -132,7 +136,6 @@ window.BOLD.common.Shopify.saveProduct({{ product_card_product.handle | json }},
               {% render 'price', product: product_card_product, price_class: '', show_purchase_options: false %}
               {%- if show_rating -%}
                 {%- comment -%} YOTPO APP STAR RATING https://support.yotpo.com/en/article/shopify-installing-yotpo#manual-installation-a-step-by-step-guide {%- endcomment -%}
-
               {%- endif -%}
               {%- if block.settings.show_dynamic_checkout -%}
                 {{ form | payment_button }}
@@ -222,6 +225,4 @@ window.BOLD.common.Shopify.saveProduct({{ product_card_product.handle | json }},
       </div>
     </div>
   </div>
-  {% comment %} yotpo 3.0 widget {% endcomment %}
-  <div class="yotpo-widget-instance" data-yotpo-instance-id="397249" data-yotpo-product-id="{{ product_card_product.id }}" data-yotpo-cart-product-id="{{ item.product.id }}" data-yotpo-section-id="{{ template.name }}"></div>
 </div>
