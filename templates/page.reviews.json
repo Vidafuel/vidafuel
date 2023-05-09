@@ -36,6 +36,7 @@
     },
     "50c77a3e-f788-45e9-a29a-3118304149bc": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<script type=\"text\/javascript\">\n          (function e(){var e=document.createElement(\"script\");e.type=\"text\/javascript\",e.async=!0,\n              e.src=\"\/\/staticw2.yotpo.com\/DQkSVEOOfTk6RwUP3XUIMXJSc60azZRBfpfLxYtV\/widget.js\";var t=document.getElementsByTagName(\"script\")[0];\n              t.parentNode.insertBefore(e,t)})();\n          <\/script>\n          <div id='yotpo-testimonials-custom-tab'><\/div>",
         "custom_background": false,
@@ -45,6 +46,7 @@
     },
     "1641929597955d3766": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\"  data-header-customisation-enabled=\"1\"  data-header-customisation-color=\"#56575f\"  data-header-customisation-font-size=\"18\"  data-header-customisation-text=\"Reviews from real customers\"  data-header-customisation-alignment=\"left\"  data-background-color=\"transparent\"  data-mode=\"top_rated\"  data-type=\"both\"  data-count=\"9\"  data-show-bottomline=\"1\"  data-show-navigation=\"1\">&nbsp;<\/div>",
         "custom_background": false,
