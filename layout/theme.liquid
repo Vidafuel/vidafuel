@@ -167,7 +167,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {%- comment -%} CUSTOM FONTS see base.css {%- endcomment -%}
     <link rel="stylesheet" href="https://use.typekit.net/xbq8sxe.css">
 
-    <script type="text/javascript">
+    <script type="text/javascript" async>
       (function e() { var e = document.createElement("script"); e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/DQkSVEOOfTk6RwUP3XUIMXJSc60azZRBfpfLxYtV/widget.js"; var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) })();
     </script>
     {%- comment -%} KLAVIYO {%- endcomment -%}
@@ -181,7 +181,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     </script>
     {% if template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
-      <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="//code.jquery.com/jquery-3.3.1.min.js" async></script>
     {% endif %}
   {%- render 'bold-subscription-widget' -%}
 </head>
