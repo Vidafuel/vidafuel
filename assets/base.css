@@ -2739,3 +2739,18 @@ details-disclosure > details {
 	visibility: visible;
 	border: 2px solid white;
 }
+
+@media only screen and (max-width: 769px) {
+  .flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+}
+
+@media only screen and (min-width: 770px) {
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+}

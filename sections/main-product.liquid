@@ -107,10 +107,13 @@
 					{%- when 'title' -%}
 						<h1 class="product__title" {{ block.shopify_attributes }}>
 							{{ product.title | escape }}
+							          {% comment %} yotpo 3.0 widget {% endcomment %}
 						</h1>
 					{%- when 'price' -%}
-						<div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+						<div class="no-js-hidden flex-container" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
 							{%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+							{% comment %} yotpo 3.0 widget {% endcomment %}
+          		<div class="yotpo-widget-instance yotpo-review" data-yotpo-instance-id="397249" data-yotpo-product-id="{{ product.id }}" data-yotpo-cart-product-id="{{ item.product.id }}" data-yotpo-section-id="{{ template.name }}"></div>
 						</div>
 						{%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
 							<div class="product__tax caption rte">
@@ -420,7 +423,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="yotpo-widget-instance" data-yotpo-instance-id="#INSTACE_ID#" data-yotpo-product-id="{{ product.id }}" data-yotpo-cart-product-id="{{ item.product.id }}" data-yotpo-section-id="{{ template.name }}"></div>
+
 
 	</div>
 
