@@ -356,8 +356,7 @@
 												</div>
 										</button>
 										{%- comment -%} YOTPO APP STAR RATING https://support.yotpo.com/en/article/shopify-installing-yotpo#manual-installation-a-step-by-step-guide {%- endcomment -%}
-										<div class="yotpo bottomLine" data-product-id="{{ product.id }}">
-										</div>      
+
 										{%- if block.settings.show_dynamic_checkout -%}
 											{{ form | payment_button }}
 										{%- endif -%}
@@ -421,6 +420,8 @@
 				</div>
 			</div>
 		</div>
+		<div class="yotpo-widget-instance" data-yotpo-instance-id="#INSTACE_ID#" data-yotpo-product-id="{{ product.id }}" data-yotpo-cart-product-id="{{ item.product.id }}" data-yotpo-section-id="{{ template.name }}"></div>
+
 	</div>
 
 	<product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
@@ -676,13 +677,14 @@
 		]    
 	}
 </script>
-{%- comment -%} YOTPO APP WIDGET {%- endcomment -%}
+{%- comment -%} YOTPO APP WIDGET 
 <div class="yotpo yotpo-main-widget" data-product-id="{{ product.id }}" data-name="{{ product.title | escape }}"
 	data-url="{{ shop.url }}{{ product.url }}"
 	data-image-url="{{ product.featured_image | product_img_url: 'large' | replace: '?', '%3F' | replace: '&', '%26' }}"
 	data-price="{{ variant.price | money_without_currency }}" data-currency="{{ shop.currency }}"
 	data-description="{{ product.description | escape }}">
 </div>
+{%- endcomment -%}
 {%- comment -%} KLAVIYO Viewed Product Tracking: https://help.klaviyo.com/hc/en-us/articles/115005080407 {%- endcomment -%}
 <script type="text/javascript">
 	var _learnq = _learnq || [];

@@ -48,13 +48,14 @@
                       {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
                       <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
                       <img class="cart-item__image"
-                        src="{{ item.image | img_url: '300x' }}"
+                        src="{{ item.image | image_url: width: 300 }}"
                         alt="{{ item.image.alt | escape }}"
                         loading="lazy"
                         width="150"
                         height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
                       >
                     {% endif %}
+                    <div class="yotpo-widget-instance" data-yotpo-instance-id="#INSTACE_ID#" data-yotpo-product-id="{{ product.id }}" data-yotpo-cart-product-id="{{ item.product.id }}" data-yotpo-section-id="{{ template.name }}"></div>
                   </td>
 
                   <td class="cart-item__details">
@@ -81,7 +82,7 @@
                       </div>
                     {%- else -%}
                       <div class="product-option">
-                        <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" data-item-key="{{item.key}}" style="display:none !important;"></span>{{ item.original_price | money }}
+                        <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" data-item-key="{{ item.key }}" style="display:none !important;"></span>{{ item.original_price | money }}
                       </div>
                     {%- endif -%}
 
@@ -95,7 +96,7 @@
                             </div>
                           {%- endfor -%}
                         {%- endif -%}
-                        <span class="bold_ro_desc" data-product-id="{{item.id}}-{{ forloop.index0 }}"></span>
+                        <span class="bold_ro_desc" data-product-id="{{ item.id }}-{{ forloop.index0 }}"></span>
                         <span class="bold_load_cart_item_properties"></span>
                         {% comment %}
                         {%- for property in item.properties -%}
@@ -244,12 +245,12 @@
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end">
-                            <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" data-item-key="{{item.key}}" style="display:none !important;"></span>{{ item.final_line_price | money }}
+                            <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" data-item-key="{{ item.key }}" style="display:none !important;"></span>{{ item.final_line_price | money }}
                           </dd>
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" data-item-key="{{item.key}}" style="display:none !important;"></span>{{ item.original_line_price | money }}
+                          <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" data-item-key="{{ item.key }}" style="display:none !important;"></span>{{ item.original_line_price | money }}
                         </span>
                       {%- endif -%}
 
