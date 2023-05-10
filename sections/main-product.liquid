@@ -134,14 +134,14 @@
 					{%- when 'custom_liquid' -%}
 						{{ block.settings.custom_liquid }}
 					{%- when 'collapsible_tab' -%}
-					{% liquid
-						if block.settings.heading contains 'Benefits'
-							assign attrName = 'open'
-						else
-							assign attrName = ''
-						endif
-						assign blockClass = block.settings.heading | replace_first: " ", "-"
-					%}
+						{% liquid
+							if block.settings.heading contains 'Benefits'
+								assign attrName = 'open'
+							else
+								assign attrName = ''
+							endif
+							assign blockClass = block.settings.heading | replace_first: " ", "-"
+						%}
 					
 						<div class="product__accordion accordion {{ blockClass | downcase }}" {{ block.shopify_attributes }}>
 							<details id="Details-{{ block.id }}-{{ section.id }}" {{ attrName }}>
@@ -315,22 +315,18 @@
 									</svg>
 									<span class="product-form__error-message"></span>
 								</div>
-
 								{%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
 									<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
-									<div class="ro_widget"></div>
 									{% if block.settings.show_button_pretext %}
 										<div class="product-form_buttons-pretext">
 											{{ block.settings.button_pretext }}
 										</div>
 									{% endif %}
-
-										{% if product.metafields.vidafields.backorder_product == true %}
-												{% assign soldOutBtnTxt = product.metafields.vidafields.backorder_product_btn_text %} 
-										{% endif %}
-										
+									{% if product.metafields.vidafields.backorder_product == true %}
+											{% assign soldOutBtnTxt = product.metafields.vidafields.backorder_product_btn_text %} 
+									{% endif %}
 									<div class="product-form__buttons">
-									{%- comment -%} uncomment type="submit" & name="add" to re-enable add to cart button {%- endcomment -%}
+										{%- comment -%} uncomment type="submit" & name="add" to re-enable add to cart button {%- endcomment -%}
 										<button
 											{% if product.metafields.vidafields.backorder_product == true %}
 											onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });"
@@ -365,11 +361,8 @@
 									</div>
 								{%- endform -%}
 							</product-form>
-
 							{{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
-
 							{%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
-
 							<pickup-availability class="product__pickup-availabilities no-js-hidden"
 								{% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %} available{% endif %}
 								data-root-url="{{ routes.root_url }}"
@@ -422,14 +415,10 @@
 				</div>
 			</div>
 		</div>
-
-
 	</div>
-
 	<product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
 		<div class="product-media-modal__dialog" role="dialog" aria-label="{{ 'products.modal.label' | t }}" aria-modal="true" tabindex="-1">
 			<button id="ModalClose-{{ section.id }}" type="button" class="product-media-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
-
 			<div class="product-media-modal__content" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
 				{%- liquid
 					if product.selected_or_first_available_variant.featured_media != null
@@ -437,7 +426,6 @@
 						render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants
 					endif
 				-%}
-
 				{%- for media in product.media -%}
 					{%- liquid
 						if section.settings.hide_variants and variant_images contains media.src
