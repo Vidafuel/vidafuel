@@ -3,14 +3,26 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
           }
         },
-        "price": {
-          "type": "price",
+        "1cf278a2-ddd7-4431-8c4d-94845d7f5762": {
+          "type": "shopify:\/\/apps\/bold-subscriptions\/blocks\/bsub-widget-block\/9ceb49f0-5fe5-4b5e-943d-f8af8985167d",
           "settings": {
+            "primary_color": "#7bccc8",
+            "secondary_color": "#7DBA63",
+            "header_text": "",
+            "one_time_text": "One-time Purchase",
+            "recurring_text": "Subscribe and Save",
+            "frequency_header": "Delivery Frequency",
+            "frequency_text": "delivery"
           }
         },
         "variant_picker": {
@@ -65,8 +77,9 @@
         }
       },
       "block_order": [
-        "title",
         "price",
+        "title",
+        "1cf278a2-ddd7-4431-8c4d-94845d7f5762",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -100,7 +113,7 @@
         "07f30ab2-42fe-476f-9e7b-07211a450642": {
           "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
-            "product": "{{product}}"
+            "product": ""
           }
         }
       },
