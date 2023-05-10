@@ -281,7 +281,6 @@
 								</variant-selects>
 							{%- endif -%}
 						{%- endunless -%}
-
 						<noscript class="product-form__noscript-wrapper-{{ section.id }}">
 							<div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
 								<label class="form__label" for="Variants-{{ section.id }}">{{ 'products.product.product_variants' | t }}</label>
@@ -452,16 +451,15 @@
 					<h1 class="h2">{{ block.settings.page.title }}</h1>
 					{{ block.settings.page.content }}
 					{% if block.settings.show_nutrition_facts and product.metafields.vidafields.nutrition_facts != blank %}
-						<img
-							srcset="{% if nutrition_facts_image.width >= 288 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 288 }} 288w,{% endif %}
-											{% if product.metafields.vidafields.nutrition_facts.width >= 576 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 576 }} 576w,{% endif %}
-											{% if product.metafields.vidafields.nutrition_facts.width >= 750 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 750 }} 750w,{% endif %}
-											{% if product.metafields.vidafields.nutrition_facts.width >= 1100 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 1100 }} 1100w,{% endif %}
-											{% if product.metafields.vidafields.nutrition_facts.width >= 1500 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 1500 }} 1500w,{% endif %}
-											{{ product.metafields.vidafields.nutrition_facts | image_url }} {{ product.metafields.vidafields.nutrition_facts.width }}w"
+						<img srcset="{% if product.metafields.vidafields.nutrition_facts.width >= 288 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 288 }} 288w,{% endif %}
+							{% if product.metafields.vidafields.nutrition_facts.width >= 576 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 576 }} 576w,{% endif %}
+							{% if product.metafields.vidafields.nutrition_facts.width >= 750 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 750 }} 750w,{% endif %}
+							{% if product.metafields.vidafields.nutrition_facts.width >= 1100 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 1100 }} 1100w,{% endif %}
+							{% if product.metafields.vidafields.nutrition_facts.width >= 1500 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 1500 }} 1500w,{% endif %}
+							{{ product.metafields.vidafields.nutrition_facts | image_url }} {{ product.metafields.vidafields.nutrition_facts.width }}w"
 							src="{{ product.metafields.vidafields.nutrition_facts | image_url: width: 1500 }}"
 							sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: 0.64 | round }}px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
-							loading="lazy" width="576" height="100%" alt="{{ product.metafields.vidafields.nutrition_facts.alt | escape }}">
+							loading="lazy" width="576" height="100" alt="{{ product.metafields.vidafields.nutrition_facts.alt | escape }}">
 					{% endif %}
 				</div>
 			</div>
@@ -546,7 +544,7 @@
 				hide_form_on_success: true
 		});
 </script>
-<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js" defer></script>
 
 {% javascript %}
 	class ProductModal extends ModalDialog {
@@ -633,7 +631,7 @@
 		{% if seo_media -%}
 			{%- assign media_size = seo_media.preview_image.width | append: 'x' -%}
 			"image": [
-				{{ seo_media | img_url: media_size | prepend: "https:" | json }}
+				{{ seo_media | image_url: media_size | prepend: "https:" | json }}
 			],
 		{%- endif %}
 		"description": {{ product.description | strip_html | json }},
