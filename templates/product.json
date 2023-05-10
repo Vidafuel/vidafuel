@@ -16,9 +16,9 @@
         "1cf278a2-ddd7-4431-8c4d-94845d7f5762": {
           "type": "shopify:\/\/apps\/bold-subscriptions\/blocks\/bsub-widget-block\/9ceb49f0-5fe5-4b5e-943d-f8af8985167d",
           "settings": {
-            "primary_color": "#7bccc8",
+            "primary_color": "#3B63FF",
             "secondary_color": "#7DBA63",
-            "header_text": "",
+            "header_text": "Purchase Options",
             "one_time_text": "One-time Purchase",
             "recurring_text": "Subscribe and Save",
             "frequency_header": "Delivery Frequency",
@@ -89,10 +89,27 @@
         "792851cb-e4b4-4bbe-9821-00b87ccc8fec"
       ],
       "settings": {
-        "enable_sticky_info": true,
+        "enable_sticky_info": false,
         "product_slider_flickity": true,
         "hide_variants": false,
         "enable_video_looping": false
+      }
+    },
+    "1683743096a06e73ee": {
+      "type": "apps",
+      "blocks": {
+        "3bee4ad4-de9c-4cbf-acd1-5d734acab05b": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "3bee4ad4-de9c-4cbf-acd1-5d734acab05b"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "product-recommendations": {
@@ -106,28 +123,11 @@
         "show_vendor": false,
         "show_rating": false
       }
-    },
-    "168367306734b87c57": {
-      "type": "apps",
-      "blocks": {
-        "07f30ab2-42fe-476f-9e7b-07211a450642": {
-          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-          "settings": {
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "07f30ab2-42fe-476f-9e7b-07211a450642"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
-    "product-recommendations",
-    "168367306734b87c57"
+    "1683743096a06e73ee",
+    "product-recommendations"
   ]
 }
