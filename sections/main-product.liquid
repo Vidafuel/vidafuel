@@ -6,25 +6,20 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
-
 {% if section.settings.product_slider_flickity %}
 		{{ 'flickity.min.css' | asset_url | stylesheet_tag }}
 		<script src="{{ 'flickity.min.js' | asset_url }}" defer></script>
 		{{ 'section-slider.css' | asset_url | stylesheet_tag }}
 		{% render 'main-product-flickity-styles' %}
 {% endif %}
-
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
-
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
-
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
 	{{ 'component-product-model.css' | asset_url | stylesheet_tag }}
 	<link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
 	<link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
-
 <section class="page-width">
 	<div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
 		<div class="grid__item product__media-wrapper">
@@ -545,7 +540,6 @@
 	</script>
 	<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js" defer></script>
 {% endif %}
-
 {% javascript %}
 	class ProductModal extends ModalDialog {
 		constructor() {
@@ -582,7 +576,6 @@
 
 	customElements.define('product-modal', ProductModal);
 {% endjavascript %}
-
 <script>
 	document.addEventListener('DOMContentLoaded', function() {
 		function isIE() {
@@ -605,14 +598,12 @@
 		});
 	});
 </script>
-
 {%- if first_3d_model -%}
 	<script type="application/json" id="ProductJSON-{{ product.id }}">
 		{{ product.media | where: 'media_type', 'model' | json }}
 	</script>
 	<script src="{{ 'product-model.js' | asset_url }}" defer></script>
 {%- endif -%}
-
 {%- liquid
 	if product.selected_or_first_available_variant.featured_media
 		assign seo_media = product.selected_or_first_available_variant.featured_media
@@ -620,7 +611,6 @@
 		assign seo_media = product.featured_media
 	endif
 -%}
-
 <script type="application/ld+json">
 	{
 		"@context": "http://schema.org/",
@@ -664,7 +654,6 @@
 		]    
 	}
 </script>
-
 {%- comment -%} KLAVIYO Viewed Product Tracking: https://help.klaviyo.com/hc/en-us/articles/115005080407 {%- endcomment -%}
 <script type="text/javascript">
 	var _learnq = _learnq || [];
@@ -692,7 +681,6 @@
 		}
 	}]);
 </script>
-
 {% schema %}
 {
 	"name": "t:sections.main-product.name",
