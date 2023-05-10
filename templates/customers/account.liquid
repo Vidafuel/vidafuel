@@ -3,7 +3,7 @@
 <div class="customer account">
   <div>
     <h1>{{ 'customer.account.title' | t }}
-<p><a href="/pages/my-subscriptions" class="text-link">My Subscriptions</a></p></h1>
+    <p><a href="/pages/my-subscriptions" class="text-link">My Subscriptions</a></p></h1>
     <p><a href="/tools/checkout/front_end/login" class="text-link">Manage Subscription</a></p>
     <a href="{{ routes.account_logout_url }}">
       <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 18 19">
@@ -108,9 +108,7 @@
 
     <div>
       <h2>{{ 'customer.account.details' | t }}</h2>
-
       <p><a href="http://vidafuel.myshopify.com/tools/checkout/front_end/login" class="text-link">Manage Subscription</a></p>
-
       {{ customer.default_address | format_address }}
 
       <a href="{{ routes.account_addresses_url }}">
