@@ -70,9 +70,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     
     {{ content_for_header }}
-    {{ 'bsub.scss.css' | asset_url | stylesheet_tag }}
-{%- render 'bold-common' -%}
-    {%- render 'bold-ro-init' -%}
+
+  {{ 'bsub.js' | asset_url | script_tag }}
+{{ 'bsub.css' | asset_url | stylesheet_tag }}
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
