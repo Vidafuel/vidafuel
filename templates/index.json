@@ -30,7 +30,7 @@
         "4cb7c79d-929c-4921-9723-4e266dc4dc4b"
       ],
       "custom_css": [
-        ".embed-container {border-radius: var(--border-radius);}"
+
       ],
       "settings": {
         "heading": "",
