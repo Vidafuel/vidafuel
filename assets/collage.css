@@ -585,7 +585,9 @@
 		grid-column: 1 / span 1;
 	} */
 }
-
+.embed-container {
+  border-radius: var(--border-radius);
+}
 /* 
 	.collage__media--background {
 		width: 100%;
