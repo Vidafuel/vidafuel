@@ -68,8 +68,9 @@
     width="{{ section.settings.background_color_scheme_image.width }}"
     height="{{ section.settings.background_color_scheme_image.height }}">
   {%- endif -%}
-  <h2 class="collage-wrapper-title">{{ section.settings.heading | escape }}</h2>
-
+  {% if section.settings.heading != blank %}
+    <h2 class="collage-wrapper-title">{{ section.settings.heading | escape }}</h2>
+  {% endif %}
   <div class="collage {{ videoSmallDesktop }} collage--{{ section.settings.desktop_layout }}{% if section.settings.background_color_scheme != 'default' %} page-width{% endif %}{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
     {%- for block in section.blocks -%}
 
