@@ -38,16 +38,16 @@
           "settings": {
           }
         },
+        "1646771339cae9b76a-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
         "1646771339cae9b76a-2": {
           "type": "text",
           "settings": {
             "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
-          }
-        },
-        "1646771339cae9b76a-3": {
-          "type": "price",
-          "settings": {
           }
         },
         "1646771339cae9b76a-4": {
@@ -77,8 +77,8 @@
       "block_order": [
         "1646771339cae9b76a-0",
         "1646771339cae9b76a-1",
-        "1646771339cae9b76a-2",
         "1646771339cae9b76a-3",
+        "1646771339cae9b76a-2",
         "1646771339cae9b76a-4",
         "1646771339cae9b76a-5",
         "1646771339cae9b76a-6",
