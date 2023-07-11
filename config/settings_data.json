@@ -25,7 +25,7 @@
     "checkout_body_background_color": "#f5f5f5",
     "checkout_sidebar_background_color": "#ffffff",
     "checkout_accent_color": "#7bccc8",
-    "checkout_button_color": "#ffffff",
+    "checkout_button_color": "#7bccc8",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
