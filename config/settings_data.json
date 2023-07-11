@@ -20,6 +20,8 @@
     "social_instagram_link": "https:\/\/www.instagram.com\/vidafuel_nutrition\/",
     "favicon": "shopify:\/\/shop_images\/vidafuel-favicon.png",
     "checkout_logo_image": "shopify:\/\/shop_images\/vidafuel-logo-web-clearbg.webp",
+    "checkout_body_background_image": "shopify:\/\/shop_images\/less-is-more-background.webp",
+    "checkout_body_background_color": "#7bccc8",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
