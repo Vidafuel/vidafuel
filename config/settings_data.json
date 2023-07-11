@@ -19,6 +19,7 @@
     "social_facebook_link": "https:\/\/www.facebook.com\/VidaFuel\/",
     "social_instagram_link": "https:\/\/www.instagram.com\/vidafuel_nutrition\/",
     "favicon": "shopify:\/\/shop_images\/vidafuel-favicon.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/vidafuel-logo-web-clearbg.webp",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
