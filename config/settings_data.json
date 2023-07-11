@@ -22,7 +22,7 @@
     "checkout_header_image": "shopify:\/\/shop_images\/icons-background.jpg",
     "checkout_logo_image": "shopify:\/\/shop_images\/vidafuel-logo-web-clearbg.webp",
     "checkout_logo_size": "small",
-    "checkout_body_background_color": "#ededed",
+    "checkout_body_background_color": "#f5f5f5",
     "checkout_sidebar_background_color": "#ffffff",
     "checkout_accent_color": "#7bccc8",
     "checkout_button_color": "#7bccc8",
