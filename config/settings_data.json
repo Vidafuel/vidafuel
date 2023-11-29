@@ -33,6 +33,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "UNLOCK  15% OFF  YOUR FIRST ORDER",
               "color_scheme": "background-2",
