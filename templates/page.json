@@ -32,7 +32,7 @@
         "page_title_background_justification": "default",
         "page_featured_image": "{{ page.metafields.custom.featured_image.value }}",
         "featured_image_ratio": "portrait",
-        "page_width": "page-width--full-width",
+        "page_width": "page-width",
         "background_color": "#ffffff"
       }
     },
