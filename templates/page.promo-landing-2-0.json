@@ -8,6 +8,7 @@
         "page_title_background_justification": "default",
         "page_featured_image": "{{ page.metafields.custom.featured_image.value }}",
         "featured_image_ratio": "square",
+        "desktop_swap_columns": true,
         "page_width": "page-width",
         "background_color": "#ffffff"
       }
