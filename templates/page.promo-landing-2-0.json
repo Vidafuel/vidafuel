@@ -152,7 +152,7 @@
         "image_ratio": "portrait",
         "column_alignment": "left",
         "columns": "default",
-        "background_style": "gradient-1",
+        "background_style": "none",
         "background_style_color": "",
         "card_bk_none": false,
         "button_label": "",
