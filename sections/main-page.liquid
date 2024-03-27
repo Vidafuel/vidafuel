@@ -18,6 +18,12 @@
   if section.settings.page_featured_image
     assign page_content_container = 'grid-container'
   endif
+
+  assign page_content_container_swap = ''
+  
+  if section.settings.desktop_swap_columns
+    assign page_content_container_swap = 'grid-container__swap-cols'
+  endif
   
   if section.settings.page_width == 'page-width--full-width'
   endif
@@ -73,7 +79,7 @@
   {% comment %}
   Featured image/text section
   {% endcomment %}<div class="page-featured-content" {% if section.settings.background_color != '#ffffff' %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
-    <div class="{{ section.settings.page_width }} {{ page_content_container }}">
+    <div class="{{ section.settings.page_width }} {{ page_content_container }} {{ page_content_container_swap }}">
       {% comment %}
       Featured image
       {% endcomment %}
@@ -170,7 +176,14 @@
       }, {
         "type": "header",
         "content": "Page settings"
-      }, {
+      }, 
+      {
+        "type": "checkbox",
+        "id": "desktop_swap_columns",
+        "label": "Desktop swap columns",
+        "default": false
+      },
+      {
         "type": "select",
         "id": "page_width",
         "default": "page-width",
