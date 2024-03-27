@@ -133,7 +133,7 @@
         "1640143863f88f8f3f-2"
       ],
       "custom_css": [
-        ".custom-liquid {box-shadow: none;}"
+        ".custom-liquid {box-shadow: none; padding-top: 0;}"
       ],
       "settings": {
         "title": "",
