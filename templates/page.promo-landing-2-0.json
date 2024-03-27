@@ -198,33 +198,6 @@
     "164014386357a60c4a": {
       "type": "multicolumn",
       "blocks": {
-        "1640143863f88f8f3f-0": {
-          "type": "column",
-          "settings": {
-            "image_link_url": "",
-            "column_image_position": "center center",
-            "title": "<p><strong>REQUEST 15% OFF FOR YOUR PATIENTS!<\/strong><\/p>",
-            "icon": "none",
-            "text": "<p><strong>Post Surgery Recovery<\/strong><\/p><p><strong>Cancer<\/strong><\/p><p><strong>CKD Dialysis<\/strong><\/p><p><strong>Geriatric Nutrition<\/strong><\/p><p><strong>Fitness \/ Athletics<\/strong><\/p>",
-            "column_elements_alignment": "normal",
-            "column_text_alignment": "left",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_icon_color_custom": "#000000",
-            "column_border_color_enable": false,
-            "column_border_color": "#ffffff",
-            "title_top": false,
-            "col_content_reverse": false,
-            "p_bullets": true,
-            "p_bullets_color": "#ffffff",
-            "icon_color": "rgba(0,0,0,0)",
-            "text_color_primary": false
-          }
-        },
         "1640143863f88f8f3f-2": {
           "type": "column",
           "settings": {
@@ -240,7 +213,7 @@
             "link": "",
             "modal_liquid": "",
             "custom_liquid": "<div class=\"powr-form-builder\" id=\"2cda6fa0_1711575909\"><\/div><script src=\"https:\/\/www.powr.io\/powr.js?platform=shopify\"><\/script>",
-            "liquid_background": "#ffffff",
+            "liquid_background": "rgba(0,0,0,0)",
             "column_icon_color_custom": "#000000",
             "column_border_color_enable": false,
             "column_border_color": "#ffffff",
@@ -255,7 +228,7 @@
         "1640143863f88f8f3f-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Wellness-Protein-Drink-2-Pack-Citrus-and-Berry-15-percent-off.webp",
+            "image": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-_-optimal-nutrition.webp",
             "image_mobile": "shopify:\/\/shop_images\/Wellness-Protein-Drink-2-Pack-Citrus-and-Berry-15-percent-off.webp",
             "image_link_url": "",
             "image_max_height": 0,
@@ -284,7 +257,6 @@
         }
       },
       "block_order": [
-        "1640143863f88f8f3f-0",
         "1640143863f88f8f3f-2",
         "1640143863f88f8f3f-1"
       ],
