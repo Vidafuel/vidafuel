@@ -14,19 +14,6 @@
         "background_color": "#ffffff"
       }
     },
-    "custom_liquid_iw4RRY": {
-      "type": "custom-liquid",
-      "custom_css": [
-        ".flex {display: flex;}",
-        ".flex-two-thirds {flex: 1 0 60%;}"
-      ],
-      "settings": {
-        "custom_liquid": "<div class=\"flex\"><div class=\"flex-two-thirds\">{{ pages.gelatein-prosource.content }}\n<\/div><div class=\"flex-img\"><\/div><\/div>",
-        "custom_background": false,
-        "background_color": "#f5f5f5",
-        "page_width": true
-      }
-    },
     "1641929597955d3766": {
       "type": "custom-liquid",
       "settings": {
@@ -39,7 +26,6 @@
   },
   "order": [
     "main",
-    "custom_liquid_iw4RRY",
     "1641929597955d3766"
   ]
 }
