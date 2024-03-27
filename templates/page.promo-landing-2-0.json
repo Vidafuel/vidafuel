@@ -2,11 +2,11 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "page_title_background": "shopify:\/\/shop_images\/topBG.png",
         "page_title_background_justification": "default",
-        "featured_image_ratio": "adapt",
+        "page_featured_image": "{{ page.metafields.custom.featured_image.value }}",
+        "featured_image_ratio": "square",
         "page_width": "page-width",
         "background_color": "#ffffff"
       }
