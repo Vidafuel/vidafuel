@@ -11,6 +11,45 @@
         "background_color": "#ffffff"
       }
     },
+    "rich_text_qiRk6F": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PkgX6t": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1",
+            "heading_font": "default"
+          }
+        },
+        "text_KQUQRa": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "rich_text_size": "default"
+          }
+        },
+        "button_mryFhV": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PkgX6t",
+        "text_KQUQRa",
+        "button_mryFhV"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "text_align_center": true,
+        "text_color": "default"
+      }
+    },
     "a2dc69c6-c408-406e-8747-f4284124d5a5": {
       "type": "custom-liquid",
       "custom_css": [
@@ -568,6 +607,7 @@
   },
   "order": [
     "main",
+    "rich_text_qiRk6F",
     "a2dc69c6-c408-406e-8747-f4284124d5a5",
     "631996c3-a387-419d-b3a8-04a7d26d1971",
     "163915671883655487",
