@@ -75,7 +75,10 @@
 }
 
 @media screen and (min-width: 750px) {
-	.grid-container__swap-cols .media {
+	.grid-container__swap-cols {
+		grid-template-columns: 3fr 1fr;
+	}
+  .grid-container__swap-cols .media {
 		order: 1
 	}
 }
