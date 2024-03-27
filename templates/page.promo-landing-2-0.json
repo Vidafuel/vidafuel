@@ -160,12 +160,12 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
-        "vertical_alignment": "flex-align-center",
+        "vertical_alignment": "flex-align-normal",
         "desktop_no_spacing": true,
         "icon_enable": false,
         "page_width": "page-width",
         "custom_css": "",
-        "custom_css_mobile": ".multicolumn-list {\n    padding-top: 0 !important;\n}"
+        "custom_css_mobile": ""
       }
     },
     "163915671883655487": {
