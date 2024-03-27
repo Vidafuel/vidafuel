@@ -3,6 +3,7 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "page_title_hide": true,
         "page_title_background": "shopify:\/\/shop_images\/topBG.png",
         "page_title_background_justification": "default",
         "page_featured_image": "{{ page.metafields.custom.featured_image.value }}",
