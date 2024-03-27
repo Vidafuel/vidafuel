@@ -3,7 +3,8 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "page_title_background_justification": "justify-bottom",
+        "page_title_background": "shopify:\/\/shop_images\/healthcare-bg_244be7a3-a564-4485-afaa-29b1d557d158.jpg",
+        "page_title_background_justification": "default",
         "page_featured_image": "shopify:\/\/shop_images\/bit.ly_3vtxX4O.png",
         "featured_image_ratio": "square",
         "page_width": "page-width--full-width",
@@ -18,10 +19,20 @@
         "background_color": "#ffffff",
         "page_width": false
       }
+    },
+    "custom_liquid_iw4RRY": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "custom_background": false,
+        "background_color": "#fff",
+        "page_width": false
+      }
     }
   },
   "order": [
     "main",
-    "1641929597955d3766"
+    "1641929597955d3766",
+    "custom_liquid_iw4RRY"
   ]
 }
