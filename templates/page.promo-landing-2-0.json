@@ -16,6 +16,7 @@
       "blocks": {
         "heading_PkgX6t": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Talk about your brand",
             "heading_size": "h1",
@@ -25,12 +26,13 @@
         "text_KQUQRa": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "<p>TEST <\/p>",
             "rich_text_size": "default"
           }
         },
         "button_mryFhV": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Button label",
             "button_link": "",
