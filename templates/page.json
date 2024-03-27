@@ -6,7 +6,7 @@
       "settings": {
         "page_title_background": "shopify:\/\/shop_images\/healthcare-bg_244be7a3-a564-4485-afaa-29b1d557d158.jpg",
         "page_title_background_justification": "default",
-        "page_featured_image": "shopify:\/\/shop_images\/bit.ly_3vtxX4O.png",
+        "page_featured_image": "{{ page.metafields.custom.featured_image.value }}",
         "featured_image_ratio": "square",
         "page_width": "page-width--full-width",
         "background_color": "#ffffff"
