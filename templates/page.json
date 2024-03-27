@@ -2,6 +2,10 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "custom_css": [
+        ".grid-container {grid-template-columns: 3fr 1fr;}",
+        ".media {order: 1;}"
+      ],
       "settings": {
         "page_title_background_justification": "default",
         "page_featured_image": "{{ page.metafields.custom.featured_image.value }}",
