@@ -67,6 +67,105 @@
         "full_width": true
       }
     },
+    "164014386357a60c4a": {
+      "type": "multicolumn",
+      "blocks": {
+        "1640143863f88f8f3f-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-_-optimal-nutrition.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Wellness-Protein-Drink-2-Pack-Citrus-and-Berry-15-percent-off.webp",
+            "image_link_url": "",
+            "image_max_height": 0,
+            "column_image_position": "center center",
+            "title": "",
+            "icon": "none",
+            "text": "",
+            "column_elements_alignment": "normal",
+            "column_text_alignment": "center",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "1640143863f88f8f3f-2": {
+          "type": "column",
+          "settings": {
+            "image_link_url": "",
+            "column_image_position": "center center",
+            "title": "",
+            "icon": "none",
+            "text": "",
+            "column_elements_alignment": "normal",
+            "column_text_alignment": "center",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "<div class=\"powr-form-builder\" id=\"2cda6fa0_1711575909\"><\/div><script src=\"https:\/\/www.powr.io\/powr.js?platform=shopify\"><\/script>",
+            "liquid_background": "rgba(0,0,0,0)",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        }
+      },
+      "block_order": [
+        "1640143863f88f8f3f-1",
+        "1640143863f88f8f3f-2"
+      ],
+      "custom_css": [
+        ".custom-liquid {box-shadow: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "title_center": false,
+        "title_size": "default",
+        "main_heading_text_color": "#121212",
+        "section_height": "xsmall",
+        "column_heading_size": "default",
+        "column_description_size": "default",
+        "column_custom_text_color": true,
+        "column_descrip_color": "#2c2c2c",
+        "column_heading_color": "#2c2c2c",
+        "image_width": "full",
+        "col_img_contain": true,
+        "col_img_left_align": false,
+        "image_ratio": "portrait",
+        "column_alignment": "left",
+        "columns": "default",
+        "background_style": "gradient-1",
+        "background_style_color": "",
+        "card_bk_none": false,
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "vertical_alignment": "flex-align-normal",
+        "desktop_no_spacing": true,
+        "icon_enable": false,
+        "page_width": "page-width",
+        "custom_css": "",
+        "custom_css_mobile": ".multicolumn-list {\n    padding-top: 0 !important;\n}"
+      }
+    },
     "163915671883655487": {
       "type": "multicolumn",
       "blocks": {
@@ -193,105 +292,6 @@
         "page_width": "page-width",
         "custom_css": "",
         "custom_css_mobile": "#shopify-section-template--16801834893626__163915671883655487 {\n    margin-top: 2rem;\n}\n.multicolumn.desktop_no_spacing {\n    padding: 2rem 0 0 !important;\n}\nul#Slider-template--16801834893626__163915671883655487 {\n    padding-bottom: 2rem;\n}"
-      }
-    },
-    "164014386357a60c4a": {
-      "type": "multicolumn",
-      "blocks": {
-        "1640143863f88f8f3f-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Dietitian-developed-for-compliance-_-optimal-nutrition.webp",
-            "image_mobile": "shopify:\/\/shop_images\/Wellness-Protein-Drink-2-Pack-Citrus-and-Berry-15-percent-off.webp",
-            "image_link_url": "",
-            "image_max_height": 0,
-            "column_image_position": "center center",
-            "title": "",
-            "icon": "none",
-            "text": "",
-            "column_elements_alignment": "normal",
-            "column_text_alignment": "center",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_icon_color_custom": "#000000",
-            "column_border_color_enable": false,
-            "column_border_color": "#ffffff",
-            "title_top": false,
-            "col_content_reverse": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "icon_color": "#cdda01",
-            "text_color_primary": false
-          }
-        },
-        "1640143863f88f8f3f-2": {
-          "type": "column",
-          "settings": {
-            "image_link_url": "",
-            "column_image_position": "center center",
-            "title": "",
-            "icon": "none",
-            "text": "",
-            "column_elements_alignment": "normal",
-            "column_text_alignment": "center",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "<div class=\"powr-form-builder\" id=\"2cda6fa0_1711575909\"><\/div><script src=\"https:\/\/www.powr.io\/powr.js?platform=shopify\"><\/script>",
-            "liquid_background": "rgba(0,0,0,0)",
-            "column_icon_color_custom": "#000000",
-            "column_border_color_enable": false,
-            "column_border_color": "#ffffff",
-            "title_top": false,
-            "col_content_reverse": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "icon_color": "#cdda01",
-            "text_color_primary": false
-          }
-        }
-      },
-      "block_order": [
-        "1640143863f88f8f3f-1",
-        "1640143863f88f8f3f-2"
-      ],
-      "custom_css": [
-        ".custom-liquid {box-shadow: none;}"
-      ],
-      "settings": {
-        "title": "",
-        "title_center": false,
-        "title_size": "default",
-        "main_heading_text_color": "#121212",
-        "section_height": "xsmall",
-        "column_heading_size": "default",
-        "column_description_size": "default",
-        "column_custom_text_color": true,
-        "column_descrip_color": "#2c2c2c",
-        "column_heading_color": "#2c2c2c",
-        "image_width": "full",
-        "col_img_contain": true,
-        "col_img_left_align": false,
-        "image_ratio": "portrait",
-        "column_alignment": "left",
-        "columns": "default",
-        "background_style": "gradient-1",
-        "background_style_color": "",
-        "card_bk_none": false,
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "vertical_alignment": "flex-align-normal",
-        "desktop_no_spacing": true,
-        "icon_enable": false,
-        "page_width": "page-width-small",
-        "custom_css": "",
-        "custom_css_mobile": ".multicolumn-list {\n    padding-top: 0 !important;\n}"
       }
     },
     "1640123076cbff58b5": {
@@ -548,8 +548,8 @@
     "main",
     "a2dc69c6-c408-406e-8747-f4284124d5a5",
     "631996c3-a387-419d-b3a8-04a7d26d1971",
-    "163915671883655487",
     "164014386357a60c4a",
+    "163915671883655487",
     "1640123076cbff58b5",
     "16395061492d0dea2e",
     "163950623206c4ca1f",
