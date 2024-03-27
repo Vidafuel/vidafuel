@@ -18,10 +18,52 @@
         "background_color": "#ffffff",
         "page_width": false
       }
+    },
+    "rich_text_NU86xd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Wyj8KC": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1",
+            "heading_font": "default"
+          }
+        },
+        "text_hAQppx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Test<\/p>",
+            "rich_text_size": "default"
+          }
+        },
+        "button_Gx8Qep": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Wyj8KC",
+        "text_hAQppx",
+        "button_Gx8Qep"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "text_align_center": true,
+        "text_color": "default"
+      }
     }
   },
   "order": [
     "main",
-    "1641929597955d3766"
+    "1641929597955d3766",
+    "rich_text_NU86xd"
   ]
 }
