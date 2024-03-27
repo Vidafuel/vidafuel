@@ -74,6 +74,12 @@
 	}
 }
 
+@media screen and (min-width: 750px) {
+	.grid-container__swap-cols {
+		grid-template-columns: 3fr 1fr;
+	}
+}
+
 .media > img.main-page__featured-image {
 	object-fit: contain;
 }
