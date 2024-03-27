@@ -260,6 +260,9 @@
         "1640143863f88f8f3f-2",
         "1640143863f88f8f3f-1"
       ],
+      "custom_css": [
+        ".custom-liquid {box-shadow: none;}"
+      ],
       "settings": {
         "title": "",
         "title_center": false,
