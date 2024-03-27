@@ -3,10 +3,10 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "page_title_background": "shopify:\/\/shop_images\/home-reviews-bk.jpg",
         "page_title_background_justification": "justify-bottom",
-        "featured_image_ratio": "circle",
-        "page_width": "page-width",
+        "page_featured_image": "shopify:\/\/shop_images\/bit.ly_3vtxX4O.png",
+        "featured_image_ratio": "square",
+        "page_width": "page-width--full-width",
         "background_color": "#ffffff"
       }
     },
