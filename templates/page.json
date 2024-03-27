@@ -23,7 +23,7 @@
     "custom_liquid_iw4RRY": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "<div>this<\/div>",
         "custom_background": false,
         "background_color": "#fff",
         "page_width": false
