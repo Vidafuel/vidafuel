@@ -35,7 +35,10 @@
 <div class="page-container">
   {% comment %}
   Title section
-  {% endcomment %}<div class="{{ section.settings.page_title_background_justification }} {% if template_page and section.settings.page_title_background != blank %}main-page__media--background main-page-title{% else %}page-width page-width--narrow{% endif %}">
+  {% endcomment %}
+  
+  {% if section.settings.page_title_hide != true %}
+  <div class="{{ section.settings.page_title_background_justification }} {% if template_page and section.settings.page_title_background != blank %}main-page__media--background main-page-title{% else %}page-width page-width--narrow{% endif %}">
     {%- if template_page and section.settings.page_title_background != blank -%}
       <img
         srcset="{%- if section.settings.page_title_background.width >= 165 -%}
@@ -65,7 +68,8 @@
       </h1>
     </div>
   </div>
-
+  {% endif %}
+  
   {% comment %}
   Featured image/text section
   {% endcomment %}<div class="page-featured-content" {% if section.settings.background_color != '#ffffff' %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
@@ -112,6 +116,12 @@
     "tag": "section",
     "class": "page",
     "settings": [
+      {
+        "type": "checkbox",
+        "id": "page_title_hide",
+        "label": "Page title hide",
+        "default": false
+      },
       {
         "type": "image_picker",
         "id": "page_title_background",
