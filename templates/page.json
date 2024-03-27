@@ -26,7 +26,7 @@
         "custom_liquid": "<div>this<\/div>",
         "custom_background": false,
         "background_color": "#fff",
-        "page_width": false
+        "page_width": true
       }
     }
   },
