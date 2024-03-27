@@ -11,57 +11,6 @@
         "background_color": "#ffffff"
       }
     },
-    "image_with_text_4DgHTe": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_GVXayF": {
-          "type": "heading",
-          "settings": {
-            "heading": "To order a sample kit of Gelatein® or ProSource® please visit medtrition.com\/samples or simply scan the QR code.",
-            "heading_font": "trade_gothic_bold",
-            "heading_size": "heading-3"
-          }
-        },
-        "text_V6VBcE": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Each sample kit will contain the following:<\/strong><\/p><ul><li>2 OF EACH FLAVOR OF GELATEIN®<br\/>(fruit punch, orange, lime and grape)<br\/><br\/><\/li><li>2 PACKETS OF EACH FLAVOR OF PROSOUCE® NOCARB<br\/>(neutral and berry punch).<\/li><\/ul><p>When on the Medtrition sample page please list the source of learning as Pentec Health and when asked select the Pentec Sample Kit.<\/p><h6>REFERENCES<\/h6><ol><li><h6>Liu P, Ma F, Wang Q, He S. The effects of oral nutritional supplements in patients with maintenance dialysis therapy: A systematic review and meta-analysis of randomized clinical trials. PLOS ONE | https:\/\/doi.org\/10.1371\/journal.pone.0203706 September 13, 2018<\/h6><\/li><\/ol>",
-            "text_font": "default",
-            "text_size": "default",
-            "text_color": "default",
-            "p_bullets": false
-          }
-        },
-        "button_AKtpGz": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_font": "default",
-            "button_style_secondary": false,
-            "button_inverse": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_GVXayF",
-        "text_V6VBcE",
-        "button_AKtpGz"
-      ],
-      "settings": {
-        "section_id": "",
-        "video_embed_custom": "",
-        "image_no_placeholder": false,
-        "image_link": "",
-        "height": "small",
-        "color_scheme": "background-1",
-        "background_scheme": "default",
-        "layout": "text_first",
-        "section_width": "normal",
-        "desktop_no_spacing": false,
-        "remove_top_margin": false
-      }
-    },
     "a2dc69c6-c408-406e-8747-f4284124d5a5": {
       "type": "custom-liquid",
       "custom_css": [
@@ -619,7 +568,6 @@
   },
   "order": [
     "main",
-    "image_with_text_4DgHTe",
     "a2dc69c6-c408-406e-8747-f4284124d5a5",
     "631996c3-a387-419d-b3a8-04a7d26d1971",
     "163915671883655487",
