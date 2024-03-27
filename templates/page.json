@@ -1,5 +1,27 @@
 {
   "sections": {
+    "rich_text_wczf9n": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Y3Cwz3": {
+          "type": "heading",
+          "settings": {
+            "heading": "To order a sample kit of Gelatein® or ProSource® please visit medtrition.com\/samples or simply scan the QR code.",
+            "heading_size": "h2",
+            "heading_font": "default"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Y3Cwz3"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "text_align_center": false,
+        "text_color": "default"
+      }
+    },
     "main": {
       "type": "main-page",
       "custom_css": [
@@ -25,6 +47,7 @@
     }
   },
   "order": [
+    "rich_text_wczf9n",
     "main",
     "1641929597955d3766"
   ]
