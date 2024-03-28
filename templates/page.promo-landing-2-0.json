@@ -184,8 +184,8 @@
             "title": "Small but Mighty",
             "heading_size": "default",
             "text": "Not all proteins are equal.\nSee how Vidafuel is superior.",
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Amino Acid Profile",
+            "button_link": "{{ page.url }}",
             "color_scheme": "background-1"
           }
         },
