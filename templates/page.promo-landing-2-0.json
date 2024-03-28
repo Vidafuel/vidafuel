@@ -451,7 +451,7 @@
         "vertical_alignment": "flex-align-end",
         "desktop_no_spacing": false,
         "icon_enable": false,
-        "page_width": "page-width",
+        "page_width": "page-width-small",
         "custom_css": "",
         "custom_css_mobile": ""
       }
