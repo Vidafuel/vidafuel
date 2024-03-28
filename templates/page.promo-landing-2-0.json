@@ -296,7 +296,7 @@
         "desktop_no_spacing": true,
         "icon_enable": false,
         "page_width": "page-width-small",
-        "custom_css": ".multicolumn.background-none.multicolumn--xsmall.no-heading.desktop_no_spacing {\n    padding-bottom: 0;\n}\n#shopify-section-template--22467206742330__163915671883655487 h3 {\n  text-align: right;\n}",
+        "custom_css": ".multicolumn.background-none.multicolumn--xsmall.no-heading.desktop_no_spacing {\n    padding-bottom: 0;\n}\n#shopify-section-template--22467206742330__163915671883655487 h3 {\n  text-align: right;\n}\n#shopify-section-template--22467206742330__163915671883655487 modal-opener {\n  float: right;\n}",
         "custom_css_mobile": "#shopify-section-template--22467206742330__163915671883655487 {\n    margin-top: 2rem;\n}\n.multicolumn.desktop_no_spacing {\n    padding: 2rem 0 0 !important;\n}\nul#Slider-template--22467206742330__164014386357a60c4a {\n    padding-bottom: 2rem;\n}"
       }
     },
