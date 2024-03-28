@@ -463,11 +463,10 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/metro-medical.png",
-            "image_mobile": "shopify:\/\/shop_images\/metro-medical.png",
             "image_link_url": "",
-            "image_max_height": 0,
-            "column_image_position": "center center",
-            "title": "<p>DISTRIBUTED BY<\/p>",
+            "image_max_height": 50,
+            "column_image_position": "right",
+            "title": "",
             "icon": "check_mark",
             "text": "",
             "column_elements_alignment": "center",
@@ -488,14 +487,45 @@
             "icon_color": "#cdda01",
             "text_color_primary": false
           }
+        },
+        "column_i6DNez": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mckesson_logo.webp",
+            "image_mobile": "shopify:\/\/shop_images\/mckesson_logo.webp",
+            "image_link_url": "",
+            "image_max_height": 50,
+            "column_image_position": "left",
+            "title": "",
+            "icon": "check_mark",
+            "text": "",
+            "column_elements_alignment": "normal",
+            "column_text_alignment": "center",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
         }
       },
       "block_order": [
-        "16395065260cbd3902-0"
+        "16395065260cbd3902-0",
+        "column_i6DNez"
       ],
       "settings": {
-        "title": "",
-        "title_center": false,
+        "title": "DISTRIBUTED BY",
+        "title_center": true,
         "title_size": "default",
         "main_heading_text_color": "#000000",
         "section_height": "xsmall",
