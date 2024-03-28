@@ -206,6 +206,7 @@
         "text_d6Rkwa",
         "text_PKWRan"
       ],
+      "disabled": true,
       "custom_css": [
         ".collage-wrapper-title {font-size: 48px; font-family: trade-gothic-next-compressed, sans-serif; text-transform: uppercase; text-align: center;}",
         ".collage-card__image {object-fit: contain;}",
@@ -229,6 +230,7 @@
         "16391567181da7a84b-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_14d997ef-1d53-4ad9-b2d5-0ef61d1ccbdb.webp",
             "image_link_url": "",
             "image_max_height": 0,
             "column_image_position": "center center",
@@ -343,7 +345,6 @@
         "column_M7dtcQ",
         "16391567181da7a84b-2"
       ],
-      "disabled": true,
       "custom_css": [
         ".multicolumn-card-popup-modal__button {margin-top: 0;}"
       ],
