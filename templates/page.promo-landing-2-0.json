@@ -302,6 +302,9 @@
     },
     "image_banner_XErKeB": {
       "type": "image-banner",
+      "custom_css": [
+        ".banner__content {padding-top: 0;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_Copy.webp",
         "image_height": "small",
