@@ -210,6 +210,7 @@
         ".collage-wrapper-title {font-size: 48px; font-family: trade-gothic-next-compressed, sans-serif; text-transform: uppercase; text-align: center;}",
         ".collage-card__image {object-fit: contain;}",
         ".collage-content {position: relative; width: unset; height: unset;}",
+        ".card__text-spacing {padding-top: 0;}",
         ".button {margin-top: 0; min-height: unset;}",
         ".list-p {margin-top: 0;}"
       ],
