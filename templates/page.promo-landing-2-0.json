@@ -207,7 +207,8 @@
         "text_PKWRan"
       ],
       "custom_css": [
-        ".collage-card__image {object-fit: contain;}"
+        ".collage-card__image {object-fit: contain;}",
+        ".button {margin-top: 0;}"
       ],
       "settings": {
         "heading": "Small but Mighty",
