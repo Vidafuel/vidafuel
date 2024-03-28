@@ -307,6 +307,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_Copy.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_Copy.webp",
             "image_padding": false,
             "color_scheme": "none"
           }
