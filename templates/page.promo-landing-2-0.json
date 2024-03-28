@@ -304,7 +304,7 @@
         "column_descrip_color": "#585858",
         "column_heading_color": "#585858",
         "image_width": "full",
-        "col_img_contain": true,
+        "col_img_contain": false,
         "col_img_left_align": false,
         "image_ratio": "adapt",
         "column_alignment": "left",
