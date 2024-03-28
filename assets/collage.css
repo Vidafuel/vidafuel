@@ -199,8 +199,7 @@
 	overflow: hidden;
 }
 
-.card .icon-wrap.collage-card__arrow,
-.collage-card__image {
+.card .icon-wrap.collage-card__arrow, {
 	display: none;
 }
 
@@ -242,7 +241,6 @@
 }
 
 @media screen and (min-width: 750px) {
-  
 	.collage-card--left .collage-card__no-image,
 	.collage-card--right .collage-card__no-image,
 	.collage-card--left .placeholder-svg,
@@ -559,8 +557,6 @@
 	.collage__media--background .collage {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-
-  .collage-content.media>img.collage-card__image-mobile
 	.collage-content.media > img.collage-card__image-mobile {
 		display: none !important;
 		object-fit: contain;
