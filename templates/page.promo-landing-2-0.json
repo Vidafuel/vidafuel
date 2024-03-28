@@ -321,7 +321,7 @@
         "background_color_scheme": "default",
         "mobile_layout": "column",
         "remove_top_spacing": true,
-        "full_width": true
+        "full_width": false
       }
     },
     "1640123076cbff58b5": {
