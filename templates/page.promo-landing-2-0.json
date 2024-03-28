@@ -381,10 +381,10 @@
       "settings": {
         "heading": "",
         "desktop_layout": "right",
-        "background_color_scheme": "default",
+        "background_color_scheme": "image",
         "mobile_layout": "collage",
         "remove_top_spacing": false,
-        "full_width": false
+        "full_width": true
       }
     },
     "16395061492d0dea2e": {
