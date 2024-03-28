@@ -181,7 +181,7 @@
         "text_d6Rkwa": {
           "type": "text",
           "settings": {
-            "title": "Small but Mighty",
+            "title": "",
             "heading_size": "heading-3",
             "text": "Not all proteins are equal.<br>\nSee how Vidafuel is superior.",
             "button_label": "Amino Acid Profile",
@@ -207,6 +207,7 @@
         "text_PKWRan"
       ],
       "custom_css": [
+        ".collage-wrapper-title {font-size: 48px; font-family: trade-gothic-next-compressed, sans-serif; text-transform: uppercase; text-align: center;}",
         ".collage-card__image {object-fit: contain;}",
         ".button {margin-top: 0; min-height: unset;}",
         ".list-p {margin-top: 0;}"
