@@ -195,7 +195,7 @@
             "title": "",
             "heading_size": "default",
             "text": "<ul>\n<li>\n<strong>Novel smoothie-like texture<\/strong>\n<p class=\"list-p\">Easier to consume, no dilution required<\/p>\n<\/li>\n<li>\n<strong>16g of protein per 2oz serving<\/strong>\n<p class=\"list-p\">Complete protein with all 20 amino acids<\/p>\n<\/li>\n<li>\n<strong>Whey + Collagen protein<\/strong>\n<p class=\"list-p\">To support muscle mass & strength<\/p>\n<\/li>\n<li>\n<strong>No artificial sweeteners, ever<\/strong>\n<p class=\"list-p\">Patient approved taste and reduced GI distress<\/p>\n<\/li>\n<\/ul>",
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "color_scheme": "none"
           }
@@ -208,7 +208,8 @@
       ],
       "custom_css": [
         ".collage-card__image {object-fit: contain;}",
-        ".button {margin-top: 0;}"
+        ".button {margin-top: 0; min-height: unset;}",
+        ".list-p {margin-top: 0;}"
       ],
       "settings": {
         "heading": "Small but Mighty",
