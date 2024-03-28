@@ -198,6 +198,33 @@
             "text_color_primary": false
           }
         },
+        "16391567181da7a84b-2": {
+          "type": "column",
+          "settings": {
+            "image_link_url": "",
+            "column_image_position": "center center",
+            "title": "",
+            "icon": "none",
+            "text": "<p><strong>Novel smoothie-like texture<br\/><\/strong>Easier to consume, no dilution required<\/p><p><strong>16g of protein per 2oz serving<br\/><\/strong>Complete protein with all 20 amino acids<\/p><p><strong>Whey + Collagen protein<br\/><\/strong>To support muscle mass & strength<\/p><p><strong>No artificial sweeteners, ever<\/strong><br\/>Patient approved taste and reduced GI distress<\/p>",
+            "column_elements_alignment": "normal",
+            "column_text_alignment": "left",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": true,
+            "p_bullets_color": "#7bccc8",
+            "icon_color": "#cdda01",
+            "text_color_primary": true
+          }
+        },
         "16391567181da7a84b-0": {
           "type": "column",
           "disabled": true,
@@ -229,39 +256,12 @@
             "icon_color": "#cdda01",
             "text_color_primary": false
           }
-        },
-        "16391567181da7a84b-2": {
-          "type": "column",
-          "settings": {
-            "image_link_url": "",
-            "column_image_position": "center center",
-            "title": "",
-            "icon": "none",
-            "text": "<p><strong>Novel smoothie-like texture<br\/><\/strong>Easier to consume, no dilution required<\/p><p><strong>16g of protein per 2oz serving<br\/><\/strong>Complete protein with all 20 amino acids<\/p><p><strong>Whey + Collagen protein<br\/><\/strong>To support muscle mass & strength<\/p><p><strong>No artificial sweeteners, ever<\/strong><br\/>Patient approved taste and reduced GI distress<\/p>",
-            "column_elements_alignment": "normal",
-            "column_text_alignment": "left",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#ffffff",
-            "column_icon_color_custom": "#000000",
-            "column_border_color_enable": false,
-            "column_border_color": "#ffffff",
-            "title_top": false,
-            "col_content_reverse": false,
-            "p_bullets": true,
-            "p_bullets_color": "#7bccc8",
-            "icon_color": "#cdda01",
-            "text_color_primary": true
-          }
         }
       },
       "block_order": [
         "16391567181da7a84b-1",
-        "16391567181da7a84b-0",
-        "16391567181da7a84b-2"
+        "16391567181da7a84b-2",
+        "16391567181da7a84b-0"
       ],
       "custom_css": [
         ".multicolumn-card-popup-modal__button {margin-top: 0;}"
@@ -278,7 +278,7 @@
         "column_descrip_color": "#585858",
         "column_heading_color": "#585858",
         "image_width": "full",
-        "col_img_contain": true,
+        "col_img_contain": false,
         "col_img_left_align": false,
         "image_ratio": "adapt",
         "column_alignment": "left",
@@ -289,7 +289,7 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false,
-        "vertical_alignment": "flex-align-center",
+        "vertical_alignment": "flex-align-normal",
         "desktop_no_spacing": true,
         "icon_enable": false,
         "page_width": "page-width-small",
