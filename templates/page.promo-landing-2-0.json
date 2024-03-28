@@ -44,7 +44,6 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/criatividade-3_9.png",
-            "image_mobile": "shopify:\/\/shop_images\/criatividade-3_9.png",
             "image_padding": true,
             "color_scheme": "none"
           }
