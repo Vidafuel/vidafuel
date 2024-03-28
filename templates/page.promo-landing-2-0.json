@@ -206,6 +206,9 @@
         "text_d6Rkwa",
         "text_PKWRan"
       ],
+      "custom_css": [
+        ".collage-card__image {object-fit: contain;}"
+      ],
       "settings": {
         "heading": "Small but Mighty",
         "desktop_layout": "left",
