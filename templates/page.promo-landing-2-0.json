@@ -349,6 +349,17 @@
     "1640123076cbff58b5": {
       "type": "collage",
       "blocks": {
+        "text_bAwkD8": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "heading_size": "default",
+            "text": "",
+            "button_label": "Button label",
+            "button_link": "",
+            "color_scheme": "background-1"
+          }
+        },
         "164012307670ab9899-0": {
           "type": "video",
           "settings": {
@@ -361,6 +372,7 @@
         }
       },
       "block_order": [
+        "text_bAwkD8",
         "164012307670ab9899-0"
       ],
       "custom_css": [
@@ -368,7 +380,7 @@
       ],
       "settings": {
         "heading": "",
-        "desktop_layout": "left",
+        "desktop_layout": "right",
         "background_color_scheme": "default",
         "mobile_layout": "column",
         "remove_top_spacing": false,
