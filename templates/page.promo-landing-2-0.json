@@ -194,7 +194,7 @@
           "settings": {
             "title": "",
             "heading_size": "default",
-            "text": "<ul>\n<li>Novel smoothie-like texture\nEasier to consume, no dilution required\n<\/li>\n<li>16g of protein per 2oz serving\nComplete protein with all 20 amino acids<\/li>\n<li> Whey + Collagen protein\nTo support muscle mass & strength<\/li>\n<li>No artificial sweeteners, ever\nPatient approved taste<\/li>\n<\/ul>",
+            "text": "<ul>\n<li>\n<strong>Novel smoothie-like texture<\/strong>\n<p class=\"list-p\">Easier to consume, no dilution required<\/p>\n<\/li>\n<li>\n<strong>16g of protein per 2oz serving<\/strong>\n<p class=\"list-p\">Complete protein with all 20 amino acids<\/p>\n<\/li>\n<li>\n<strong>Whey + Collagen protein<\/strong>\n<p class=\"list-p\">To support muscle mass & strength<\/p>\n<\/li>\n<li>\n<strong>No artificial sweeteners, ever<\/strong>\n<p class=\"list-p\">Patient approved taste and reduced GI distress<\/p>\n<\/li>\n<\/ul>",
             "button_label": "Button label",
             "button_link": "",
             "color_scheme": "none"
