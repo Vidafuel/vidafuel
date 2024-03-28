@@ -194,7 +194,7 @@
           "settings": {
             "title": "",
             "heading_size": "default",
-            "text": "<ul>\n<li>Novel smoothie-like texture\nEasier to consume, no dilution required\n<\/li>\n<li>16g of protein per 2oz serving\nComplete protein with all 20 amino acids<\/li>\n<li> Whey + Collagen protein\nTo support muscle mass & strength<\/li>\n<\/ul>",
+            "text": "<ul>\n<li>Novel smoothie-like texture\nEasier to consume, no dilution required\n<\/li>\n<li>16g of protein per 2oz serving\nComplete protein with all 20 amino acids<\/li>\n<li> Whey + Collagen protein\nTo support muscle mass & strength<\/li>\n<li>No artificial sweeteners, ever\nPatient approved taste<\/li>\n<\/ul>",
             "button_label": "Button label",
             "button_link": "",
             "color_scheme": "none"
@@ -338,6 +338,7 @@
         "column_M7dtcQ",
         "16391567181da7a84b-2"
       ],
+      "disabled": true,
       "custom_css": [
         ".multicolumn-card-popup-modal__button {margin-top: 0;}"
       ],
