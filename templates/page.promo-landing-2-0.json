@@ -218,7 +218,7 @@
         "heading": "Small but Mighty",
         "desktop_layout": "left",
         "background_color_scheme": "default",
-        "mobile_layout": "column",
+        "mobile_layout": "collage",
         "remove_top_spacing": true,
         "full_width": true
       }
