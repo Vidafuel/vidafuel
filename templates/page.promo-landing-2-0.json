@@ -186,7 +186,7 @@
             "text": "Not all proteins are equal.\nSee how Vidafuel is superior.",
             "button_label": "Amino Acid Profile",
             "button_link": "{{ page.url }}",
-            "color_scheme": "background-2"
+            "color_scheme": "none"
           }
         },
         "text_PKWRan": {
@@ -194,10 +194,10 @@
           "settings": {
             "title": "",
             "heading_size": "default",
-            "text": "Novel smoothie-like texture\nEasier to consume, no dilution required\n\n16g of protein per 2oz serving\nComplete protein with all 20 amino acids\n\nWhey + Collagen protein\nTo support muscle mass & strength\n\nNo artificial sweeteners, ever\nPatient approved taste and reduced GI distress",
+            "text": "<ul>\n<li>Novel smoothie-like texture\nEasier to consume, no dilution required\n<\/li>\n<li>16g of protein per 2oz serving\nComplete protein with all 20 amino acids<\/li>\n<li> Whey + Collagen protein\nTo support muscle mass & strength<\/li>\n<\/ul>",
             "button_label": "Button label",
             "button_link": "",
-            "color_scheme": "background-1"
+            "color_scheme": "none"
           }
         }
       },
@@ -212,7 +212,7 @@
       "settings": {
         "heading": "Small but Mighty",
         "desktop_layout": "left",
-        "background_color_scheme": "mighty",
+        "background_color_scheme": "default",
         "mobile_layout": "column",
         "remove_top_spacing": true,
         "full_width": true
