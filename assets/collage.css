@@ -199,7 +199,8 @@
 	overflow: hidden;
 }
 
-.card .icon-wrap.collage-card__arrow {
+.card .icon-wrap.collage-card__arrow,
+.collage-card__image {
 	display: none;
 }
 
@@ -241,6 +242,7 @@
 }
 
 @media screen and (min-width: 750px) {
+  
 	.collage-card--left .collage-card__no-image,
 	.collage-card--right .collage-card__no-image,
 	.collage-card--left .placeholder-svg,
@@ -557,6 +559,10 @@
 	.collage__media--background .collage {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+  .collage-card__image {
+    display: block;
+  }
+  .collage-content.media>img.collage-card__image-mobile
 	.collage-content.media > img.collage-card__image-mobile {
 		display: none !important;
 		object-fit: contain;
