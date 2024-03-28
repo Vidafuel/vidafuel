@@ -34,7 +34,7 @@
           "settings": {
             "title": "Dietitian developed for compliance & optimal nutrition",
             "heading_size": "default",
-            "text": "16g of complete protein\nper 2oz serving",
+            "text": "16g of complete protein<br>\nper 2oz serving",
             "button_label": "",
             "button_link": "",
             "color_scheme": "background-1"
