@@ -174,19 +174,19 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_14d997ef-1d53-4ad9-b2d5-0ef61d1ccbdb.webp",
-            "image_padding": true,
-            "color_scheme": "background-1"
+            "image_padding": false,
+            "color_scheme": "none"
           }
         },
         "text_d6Rkwa": {
           "type": "text",
           "settings": {
             "title": "Small but Mighty",
-            "heading_size": "default",
+            "heading_size": "heading-3",
             "text": "Not all proteins are equal.\nSee how Vidafuel is superior.",
             "button_label": "Amino Acid Profile",
             "button_link": "{{ page.url }}",
-            "color_scheme": "background-1"
+            "color_scheme": "background-2"
           }
         },
         "text_PKWRan": {
@@ -289,7 +289,7 @@
             "link": "",
             "modal_liquid": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "column_icon_color_custom": "#000000",
             "column_border_color_enable": false,
             "column_border_color": "#ffffff",
@@ -580,7 +580,7 @@
             "link": "",
             "modal_liquid": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "column_icon_color_custom": "#000000",
             "column_border_color_enable": false,
             "column_border_color": "#ffffff",
