@@ -300,6 +300,21 @@
         "custom_css_mobile": "#shopify-section-template--22467206742330__163915671883655487 {\n    margin-top: 2rem;\n}\n.multicolumn.desktop_no_spacing {\n    padding: 2rem 0 0 !important;\n}\nul#Slider-template--22467206742330__164014386357a60c4a {\n    padding-bottom: 2rem;\n}"
       }
     },
+    "image_banner_XErKeB": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_Copy.webp",
+        "image_2": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_Copy.webp",
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_position": "default"
+      }
+    },
     "collage_9wm3kV": {
       "type": "collage",
       "blocks": {
@@ -614,6 +629,7 @@
     "631996c3-a387-419d-b3a8-04a7d26d1971",
     "164014386357a60c4a",
     "163915671883655487",
+    "image_banner_XErKeB",
     "collage_9wm3kV",
     "1640123076cbff58b5",
     "16395061492d0dea2e",
