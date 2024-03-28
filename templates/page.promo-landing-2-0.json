@@ -364,7 +364,7 @@
           "type": "video",
           "settings": {
             "video_url": "",
-            "video_embed_custom": "<video playsinline autoplay muted loop preload=\"auto\" id=\"myVideo\" width=\"100%\"><source src=\"https:\/\/vidafuel.b-cdn.net\/vidafuel_Berry%20Delight_Video.mp4\" \/><p>Your browser doesn't support HTML video. Here is a<a href=\"https:\/\/iframe.mediadelivery.net\/play\/92600\/9a3b6d3e-4bd6-4d21-9166-5bba7d4ed49a\">link to the video<\/a> instead.<\/p><\/video>",
+            "video_embed_custom": "<video playsinline autoplay muted loop preload=\"auto\" id=\"vidafuel_berry_delight_video\" width=\"100%\"><source src=\"https:\/\/vidafuel.b-cdn.net\/vidafuel_Berry%20Delight_Video.mp4\" \/><p>Your browser doesn't support HTML video. Here is a<a href=\"https:\/\/iframe.mediadelivery.net\/play\/92600\/9a3b6d3e-4bd6-4d21-9166-5bba7d4ed49a\">link to the video<\/a> instead.<\/p><\/video>",
             "description": "Describe the video",
             "image_padding": false,
             "video_small_desktop": true
