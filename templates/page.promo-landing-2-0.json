@@ -167,63 +167,6 @@
         "custom_css_mobile": ""
       }
     },
-    "collage_9wm3kV": {
-      "type": "collage",
-      "blocks": {
-        "image_Cr4C6A": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_14d997ef-1d53-4ad9-b2d5-0ef61d1ccbdb.webp",
-            "image_padding": false,
-            "color_scheme": "none"
-          }
-        },
-        "text_d6Rkwa": {
-          "type": "text",
-          "settings": {
-            "title": "",
-            "heading_size": "heading-3",
-            "text": "Not all proteins are equal.<br>\nSee how Vidafuel is superior.",
-            "button_label": "Amino Acid Profile",
-            "button_link": "{{ page.url }}",
-            "color_scheme": "none"
-          }
-        },
-        "text_PKWRan": {
-          "type": "text",
-          "settings": {
-            "title": "",
-            "heading_size": "default",
-            "text": "<ul>\n<li>\n<strong>Novel smoothie-like texture<\/strong>\n<p class=\"list-p\">Easier to consume, no dilution required<\/p>\n<\/li>\n<li>\n<strong>16g of protein per 2oz serving<\/strong>\n<p class=\"list-p\">Complete protein with all 20 amino acids<\/p>\n<\/li>\n<li>\n<strong>Whey + Collagen protein<\/strong>\n<p class=\"list-p\">To support muscle mass & strength<\/p>\n<\/li>\n<li>\n<strong>No artificial sweeteners, ever<\/strong>\n<p class=\"list-p\">Patient approved taste and reduced GI distress<\/p>\n<\/li>\n<\/ul>",
-            "button_label": "",
-            "button_link": "",
-            "color_scheme": "none"
-          }
-        }
-      },
-      "block_order": [
-        "image_Cr4C6A",
-        "text_d6Rkwa",
-        "text_PKWRan"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".collage-wrapper-title {font-size: 48px; font-family: trade-gothic-next-compressed, sans-serif; text-transform: uppercase; text-align: center;}",
-        ".collage-card__image {object-fit: contain;}",
-        ".collage-content {position: relative; width: unset; height: unset;}",
-        ".card__text-spacing {padding-top: 0;}",
-        ".button {margin-top: 0; min-height: unset;}",
-        ".list-p {margin-top: 0;}"
-      ],
-      "settings": {
-        "heading": "Small but Mighty",
-        "desktop_layout": "left",
-        "background_color_scheme": "default",
-        "mobile_layout": "column",
-        "remove_top_spacing": true,
-        "full_width": true
-      }
-    },
     "163915671883655487": {
       "type": "multicolumn",
       "blocks": {
@@ -257,6 +200,7 @@
         },
         "16391567181da7a84b-0": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_14d997ef-1d53-4ad9-b2d5-0ef61d1ccbdb.webp",
             "image_mobile": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_14d997ef-1d53-4ad9-b2d5-0ef61d1ccbdb.webp",
@@ -348,9 +292,36 @@
         "vertical_alignment": "flex-align-center",
         "desktop_no_spacing": true,
         "icon_enable": false,
-        "page_width": "page-width",
+        "page_width": "page-width-small",
         "custom_css": "",
         "custom_css_mobile": "#shopify-section-template--16801834893626__163915671883655487 {\n    margin-top: 2rem;\n}\n.multicolumn.desktop_no_spacing {\n    padding: 2rem 0 0 !important;\n}\nul#Slider-template--16801834893626__163915671883655487 {\n    padding-bottom: 2rem;\n}"
+      }
+    },
+    "collage_9wm3kV": {
+      "type": "collage",
+      "blocks": {
+        "image_Cr4C6A": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_14d997ef-1d53-4ad9-b2d5-0ef61d1ccbdb.webp",
+            "image_padding": false,
+            "color_scheme": "none"
+          }
+        }
+      },
+      "block_order": [
+        "image_Cr4C6A"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "left",
+        "background_color_scheme": "default",
+        "mobile_layout": "column",
+        "remove_top_spacing": true,
+        "full_width": true
       }
     },
     "1640123076cbff58b5": {
@@ -638,8 +609,8 @@
     "a2dc69c6-c408-406e-8747-f4284124d5a5",
     "631996c3-a387-419d-b3a8-04a7d26d1971",
     "164014386357a60c4a",
-    "collage_9wm3kV",
     "163915671883655487",
+    "collage_9wm3kV",
     "1640123076cbff58b5",
     "16395061492d0dea2e",
     "163950623206c4ca1f",
