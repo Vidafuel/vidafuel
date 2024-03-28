@@ -497,7 +497,7 @@
             "image_max_height": 45,
             "column_image_position": "left",
             "title": "",
-            "icon": "check_mark",
+            "icon": "none",
             "text": "",
             "column_elements_alignment": "normal",
             "column_text_alignment": "left",
