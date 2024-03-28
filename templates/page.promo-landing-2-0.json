@@ -350,11 +350,11 @@
         ".multicolumn-card-popup-modal__button {margin-top: 0;}"
       ],
       "settings": {
-        "title": "",
-        "title_center": false,
+        "title": "Small but Mighty",
+        "title_center": true,
         "title_size": "default",
         "main_heading_text_color": "#000000",
-        "section_height": "large",
+        "section_height": "xsmall",
         "column_heading_size": "heading-2",
         "column_description_size": "default",
         "column_custom_text_color": false,
