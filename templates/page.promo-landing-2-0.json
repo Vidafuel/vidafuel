@@ -265,7 +265,7 @@
       ],
       "custom_css": [
         ".multicolumn-card-popup-modal__button {margin-top: 0;}",
-        ".multicolumn-list {align-items: baseline; padding-top: 0;}",
+        ".multicolumn-list {align-items: baseline; padding-top: 0; padding-bottom: 0;}",
         "h2 {margin-bottom: 0; font-weight: bold;}",
         "h3 {font-size: 22px;}"
       ],
