@@ -254,12 +254,40 @@
             "icon_color": "#cdda01",
             "text_color_primary": true
           }
+        },
+        "column_M7dtcQ": {
+          "type": "column",
+          "settings": {
+            "image_link_url": "",
+            "column_image_position": "center center",
+            "title": "",
+            "icon": "check_mark",
+            "text": "",
+            "column_elements_alignment": "normal",
+            "column_text_alignment": "center",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
         }
       },
       "block_order": [
         "16391567181da7a84b-1",
         "16391567181da7a84b-0",
-        "16391567181da7a84b-2"
+        "16391567181da7a84b-2",
+        "column_M7dtcQ"
       ],
       "custom_css": [
         ".multicolumn-card-popup-modal__button {margin-top: 0;}"
