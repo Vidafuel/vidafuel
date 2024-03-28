@@ -170,6 +170,36 @@
     "163915671883655487": {
       "type": "multicolumn",
       "blocks": {
+        "16391567181da7a84b-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein.webp",
+            "image_mobile": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein.webp",
+            "image_link_url": "",
+            "image_max_height": 0,
+            "column_image_position": "center center",
+            "title": "",
+            "icon": "none",
+            "text": "",
+            "column_elements_alignment": "center",
+            "column_text_alignment": "center",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#ffffff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
         "16391567181da7a84b-1": {
           "type": "column",
           "settings": {
@@ -198,25 +228,22 @@
             "text_color_primary": false
           }
         },
-        "16391567181da7a84b-0": {
+        "column_M7dtcQ": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein.webp",
-            "image_mobile": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein.webp",
             "image_link_url": "",
-            "image_max_height": 0,
             "column_image_position": "center center",
             "title": "",
-            "icon": "none",
+            "icon": "check_mark",
             "text": "",
-            "column_elements_alignment": "center",
+            "column_elements_alignment": "normal",
             "column_text_alignment": "center",
             "link_label": "",
             "link_type": "link",
             "link": "",
             "modal_liquid": "",
             "custom_liquid": "",
-            "liquid_background": "#ffffff",
+            "liquid_background": "#fff",
             "column_icon_color_custom": "#000000",
             "column_border_color_enable": false,
             "column_border_color": "#ffffff",
@@ -254,40 +281,13 @@
             "icon_color": "#cdda01",
             "text_color_primary": true
           }
-        },
-        "column_M7dtcQ": {
-          "type": "column",
-          "settings": {
-            "image_link_url": "",
-            "column_image_position": "center center",
-            "title": "",
-            "icon": "check_mark",
-            "text": "",
-            "column_elements_alignment": "normal",
-            "column_text_alignment": "center",
-            "link_label": "",
-            "link_type": "link",
-            "link": "",
-            "modal_liquid": "",
-            "custom_liquid": "",
-            "liquid_background": "#fff",
-            "column_icon_color_custom": "#000000",
-            "column_border_color_enable": false,
-            "column_border_color": "#ffffff",
-            "title_top": false,
-            "col_content_reverse": false,
-            "p_bullets": false,
-            "p_bullets_color": "#cdda01",
-            "icon_color": "#cdda01",
-            "text_color_primary": false
-          }
         }
       },
       "block_order": [
-        "16391567181da7a84b-1",
         "16391567181da7a84b-0",
-        "16391567181da7a84b-2",
-        "column_M7dtcQ"
+        "16391567181da7a84b-1",
+        "column_M7dtcQ",
+        "16391567181da7a84b-2"
       ],
       "custom_css": [
         ".multicolumn-card-popup-modal__button {margin-top: 0;}"
@@ -318,7 +318,7 @@
         "vertical_alignment": "flex-align-center",
         "desktop_no_spacing": true,
         "icon_enable": false,
-        "page_width": "page-width",
+        "page_width": "full-width",
         "custom_css": "",
         "custom_css_mobile": "#shopify-section-template--16801834893626__163915671883655487 {\n    margin-top: 2rem;\n}\n.multicolumn.desktop_no_spacing {\n    padding: 2rem 0 0 !important;\n}\nul#Slider-template--16801834893626__163915671883655487 {\n    padding-bottom: 2rem;\n}"
       }
