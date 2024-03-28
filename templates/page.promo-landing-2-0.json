@@ -183,7 +183,7 @@
           "settings": {
             "title": "Small but Mighty",
             "heading_size": "heading-3",
-            "text": "Not all proteins are equal.\nSee how Vidafuel is superior.",
+            "text": "Not all proteins are equal.<br>\nSee how Vidafuel is superior.",
             "button_label": "Amino Acid Profile",
             "button_link": "{{ page.url }}",
             "color_scheme": "none"
