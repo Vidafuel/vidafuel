@@ -265,7 +265,8 @@
       ],
       "custom_css": [
         ".multicolumn-card-popup-modal__button {margin-top: 0;}",
-        ".multicolumn-list {align-items: baseline; padding-top: 0;}"
+        ".multicolumn-list {align-items: baseline; padding-top: 0;}",
+        ".title {margin-bottom: 0;}"
       ],
       "settings": {
         "title": "Small but Mighty",
