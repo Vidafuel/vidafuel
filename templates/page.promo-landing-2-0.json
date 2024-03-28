@@ -264,7 +264,8 @@
         "16391567181da7a84b-0"
       ],
       "custom_css": [
-        ".multicolumn-card-popup-modal__button {margin-top: 0;}"
+        ".multicolumn-card-popup-modal__button {margin-top: 0;}",
+        ".multicolumn-list {align-items: baseline;}"
       ],
       "settings": {
         "title": "",
