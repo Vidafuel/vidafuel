@@ -290,7 +290,7 @@
         "vertical_alignment": "flex-align-center",
         "desktop_no_spacing": true,
         "icon_enable": false,
-        "page_width": "page-width",
+        "page_width": "full-width",
         "custom_css": "",
         "custom_css_mobile": "#shopify-section-template--16801834893626__163915671883655487 {\n    margin-top: 2rem;\n}\n.multicolumn.desktop_no_spacing {\n    padding: 2rem 0 0 !important;\n}\nul#Slider-template--16801834893626__163915671883655487 {\n    padding-bottom: 2rem;\n}"
       }
