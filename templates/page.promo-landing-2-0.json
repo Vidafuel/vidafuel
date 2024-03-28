@@ -167,56 +167,52 @@
         "custom_css_mobile": ""
       }
     },
-    "image_with_text_ggKmmD": {
-      "type": "image-with-text",
+    "collage_9wm3kV": {
+      "type": "collage",
       "blocks": {
-        "heading_GhcaWC": {
-          "type": "heading",
+        "image_Cr4C6A": {
+          "type": "image",
           "settings": {
-            "heading": "Image with text",
-            "heading_font": "default",
-            "heading_size": "default"
+            "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_14d997ef-1d53-4ad9-b2d5-0ef61d1ccbdb.webp",
+            "image_padding": true,
+            "color_scheme": "background-1"
           }
         },
-        "text_cWnUGm": {
+        "text_d6Rkwa": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_font": "default",
-            "text_size": "default",
-            "text_color": "default",
-            "p_bullets": false
-          }
-        },
-        "button_GHBKz9": {
-          "type": "button",
-          "settings": {
+            "title": "Small but Mighty",
+            "heading_size": "default",
+            "text": "Not all proteins are equal.\nSee how Vidafuel is superior.",
             "button_label": "Button label",
             "button_link": "",
-            "button_font": "default",
-            "button_style_secondary": false,
-            "button_inverse": false
+            "color_scheme": "background-1"
+          }
+        },
+        "text_PKWRan": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "heading_size": "default",
+            "text": "Novel smoothie-like texture\nEasier to consume, no dilution required\n\n16g of protein per 2oz serving\nComplete protein with all 20 amino acids\n\nWhey + Collagen protein\nTo support muscle mass & strength\n\nNo artificial sweeteners, ever\nPatient approved taste and reduced GI distress",
+            "button_label": "Button label",
+            "button_link": "",
+            "color_scheme": "background-1"
           }
         }
       },
       "block_order": [
-        "heading_GhcaWC",
-        "text_cWnUGm",
-        "button_GHBKz9"
+        "image_Cr4C6A",
+        "text_d6Rkwa",
+        "text_PKWRan"
       ],
       "settings": {
-        "section_id": "",
-        "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_14d997ef-1d53-4ad9-b2d5-0ef61d1ccbdb.webp",
-        "video_embed_custom": "",
-        "image_no_placeholder": false,
-        "image_link": "",
-        "height": "small",
-        "color_scheme": "background-1",
-        "background_scheme": "default",
-        "layout": "text_first",
-        "section_width": "normal",
-        "desktop_no_spacing": true,
-        "remove_top_margin": true
+        "heading": "Small but Mighty",
+        "desktop_layout": "left",
+        "background_color_scheme": "mighty",
+        "mobile_layout": "column",
+        "remove_top_spacing": true,
+        "full_width": true
       }
     },
     "163915671883655487": {
@@ -658,7 +654,7 @@
     "a2dc69c6-c408-406e-8747-f4284124d5a5",
     "631996c3-a387-419d-b3a8-04a7d26d1971",
     "164014386357a60c4a",
-    "image_with_text_ggKmmD",
+    "collage_9wm3kV",
     "163915671883655487",
     "1640123076cbff58b5",
     "16395061492d0dea2e",
