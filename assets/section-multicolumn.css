@@ -201,7 +201,12 @@
 		padding: 0;
 	}
 
-	.multicolumn-list:not(.slider):not(.full-width),
+	/* .multicolumn-list:not(.slider):not(.full-width),
+	.multicolumn-list.full-width .multicolumn-card__info {
+		padding: 4rem calc(4rem / var(--font-body-scale)) 5rem;
+	} */
+
+  	.multicolumn-list:not(.slider):not(.full-width),
 	.multicolumn-list.full-width .multicolumn-card__info {
 		padding: 4rem calc(4rem / var(--font-body-scale)) 5rem;
 	}
