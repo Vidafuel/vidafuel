@@ -167,13 +167,64 @@
         "custom_css_mobile": ""
       }
     },
+    "image_with_text_ggKmmD": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GhcaWC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_font": "default",
+            "heading_size": "default"
+          }
+        },
+        "text_cWnUGm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_font": "default",
+            "text_size": "default",
+            "text_color": "default",
+            "p_bullets": false
+          }
+        },
+        "button_GHBKz9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_font": "default",
+            "button_style_secondary": false,
+            "button_inverse": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GhcaWC",
+        "text_cWnUGm",
+        "button_GHBKz9"
+      ],
+      "settings": {
+        "section_id": "",
+        "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_14d997ef-1d53-4ad9-b2d5-0ef61d1ccbdb.webp",
+        "video_embed_custom": "",
+        "image_no_placeholder": false,
+        "image_link": "",
+        "height": "small",
+        "color_scheme": "background-1",
+        "background_scheme": "default",
+        "layout": "text_first",
+        "section_width": "normal",
+        "desktop_no_spacing": true,
+        "remove_top_margin": true
+      }
+    },
     "163915671883655487": {
       "type": "multicolumn",
       "blocks": {
         "16391567181da7a84b-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Powerful-blend-of-whey-collagen-protein_14d997ef-1d53-4ad9-b2d5-0ef61d1ccbdb.webp",
             "image_link_url": "",
             "image_max_height": 0,
             "column_image_position": "center center",
@@ -607,6 +658,7 @@
     "a2dc69c6-c408-406e-8747-f4284124d5a5",
     "631996c3-a387-419d-b3a8-04a7d26d1971",
     "164014386357a60c4a",
+    "image_with_text_ggKmmD",
     "163915671883655487",
     "1640123076cbff58b5",
     "16395061492d0dea2e",
