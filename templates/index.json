@@ -82,7 +82,7 @@
             "column_image_position": "center center",
             "title": "<p><strong>16g protein per 2oz shot<\/strong><\/p>",
             "icon": "none",
-            "text": "<p>One shot per day is all you need!<\/p>",
+            "text": "<p>One shot per day is all you need!<\/p><p><\/p>",
             "column_elements_alignment": "center",
             "column_text_alignment": "left",
             "link_label": "",
