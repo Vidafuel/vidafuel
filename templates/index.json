@@ -49,7 +49,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/arrow-down-right_784bc221-02d1-4211-98dc-a9597b87d0c6.webp",
             "image_link_url": "",
-            "image_max_height": 110,
+            "image_max_height": 140,
             "column_image_position": "center center",
             "title": "<p><strong>Powerful blend of whey + collagen protein<\/strong><\/p>",
             "icon": "none",
@@ -76,9 +76,9 @@
         "0cb6dff4-9fec-46d2-829d-a4b88d393f2b": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/arrow-down-left_98ff4b39-e605-4080-bdbf-b0367f721a22.webp",
+            "image": "shopify:\/\/shop_images\/arrow-down-left_d95a8055-f0f5-45e6-99c4-e82356730974.webp",
             "image_link_url": "",
-            "image_max_height": 110,
+            "image_max_height": 140,
             "column_image_position": "center center",
             "title": "<p><strong>16g protein per 2oz shot<\/strong><\/p>",
             "icon": "none",
@@ -107,7 +107,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/arrow-up-right_c80c4c8d-1059-4af4-a7e3-6f9fb66ed4c5.webp",
             "image_link_url": "",
-            "image_max_height": 125,
+            "image_max_height": 140,
             "column_image_position": "center center",
             "title": "<p><strong>No artificial<br\/>sweeteners, ever<\/strong><\/p>",
             "icon": "none",
@@ -136,7 +136,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/arrow-up-left_c0f486f8-5f75-4e21-a19d-ee0cbdbe8c3a.webp",
             "image_link_url": "",
-            "image_max_height": 125,
+            "image_max_height": 140,
             "column_image_position": "center center",
             "title": "<p><strong>Contains all 20 amino acids<\/strong><\/p>",
             "icon": "none",
