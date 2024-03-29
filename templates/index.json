@@ -168,6 +168,7 @@
         "6ab0fc8a-11a8-4d0e-8c5f-0bc19c9a5172"
       ],
       "custom_css": [
+        ".multicolumn-card {background: none;}",
         ".multicolumn-card__info {background: rgb(255 255 255 \/ 79%);}"
       ],
       "settings": {
