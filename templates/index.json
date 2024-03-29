@@ -196,7 +196,7 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": true,
-        "vertical_alignment": "flex-align-normal",
+        "vertical_alignment": "flex-align-center",
         "desktop_no_spacing": true,
         "icon_enable": false,
         "page_width": "page-width-small",
