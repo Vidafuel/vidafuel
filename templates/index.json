@@ -183,7 +183,7 @@
         "image_width": "full",
         "col_img_contain": true,
         "col_img_left_align": false,
-        "image_ratio": "portrait",
+        "image_ratio": "adapt",
         "column_alignment": "center",
         "columns": "default",
         "background_style": "none",
