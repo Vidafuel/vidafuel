@@ -418,8 +418,8 @@
         "column_yC3pQ3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cardinal-health-logo.webp",
-            "image_mobile": "shopify:\/\/shop_images\/cardinal-health-logo.webp",
+            "image": "shopify:\/\/shop_images\/cardinal-health-logo_15d7d2fd-e6ea-406b-86be-2000e9c509a1.webp",
+            "image_mobile": "shopify:\/\/shop_images\/cardinal-health-logo_15d7d2fd-e6ea-406b-86be-2000e9c509a1.webp",
             "image_link_url": "",
             "image_max_height": 80,
             "column_image_position": "right",
@@ -448,8 +448,8 @@
         "column_wyUXJz": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mckesson_logo_eff984b9-ed00-40b0-9430-d3dcbcc71d4a.webp",
-            "image_mobile": "shopify:\/\/shop_images\/mckesson_logo_eff984b9-ed00-40b0-9430-d3dcbcc71d4a.webp",
+            "image": "shopify:\/\/shop_images\/mckesson_logo_26c28749-815c-413d-9217-3738b8ccfe2c.webp",
+            "image_mobile": "shopify:\/\/shop_images\/mckesson_logo_26c28749-815c-413d-9217-3738b8ccfe2c.webp",
             "image_link_url": "",
             "image_max_height": 80,
             "column_image_position": "left",
@@ -541,7 +541,7 @@
             "image": "shopify:\/\/shop_images\/metro-medical.webp",
             "image_mobile": "shopify:\/\/shop_images\/metro-medical.webp",
             "image_link_url": "",
-            "image_max_height": 80,
+            "image_max_height": 88,
             "column_image_position": "center center",
             "title": "",
             "icon": "none",
