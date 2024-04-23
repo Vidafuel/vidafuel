@@ -540,7 +540,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/cardinal-health-logo.png",
             "image_mobile": "shopify:\/\/shop_images\/cardinal-health-logo.png",
-            "image_link_url": "",
+            "image_link_url": "https:\/\/www.cardinalhealth.com\/en.html",
             "image_max_height": 70,
             "column_image_position": "center center",
             "title": "",
@@ -575,7 +575,7 @@
       ],
       "custom_css": [
         ".multicolumn-list {justify-content: center;}",
-        ".multicolumn-list__item {margin-top: 2rem}"
+        ".multicolumn-list__item {margin-top: 2rem;}"
       ],
       "settings": {
         "title": "DISTRIBUTED BY",
