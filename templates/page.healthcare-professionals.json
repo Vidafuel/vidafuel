@@ -418,10 +418,10 @@
         "column_yC3pQ3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cardinal-health-logo.png",
-            "image_mobile": "shopify:\/\/shop_images\/cardinal-health-logo.png",
+            "image": "shopify:\/\/shop_images\/cardinal-health-logo.webp",
+            "image_mobile": "shopify:\/\/shop_images\/cardinal-health-logo.webp",
             "image_link_url": "",
-            "image_max_height": 82,
+            "image_max_height": 80,
             "column_image_position": "right",
             "title": "",
             "icon": "none",
@@ -448,10 +448,10 @@
         "column_wyUXJz": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mckesson_logo.webp",
-            "image_mobile": "shopify:\/\/shop_images\/mckesson_logo.webp",
+            "image": "shopify:\/\/shop_images\/mckesson_logo_eff984b9-ed00-40b0-9430-d3dcbcc71d4a.webp",
+            "image_mobile": "shopify:\/\/shop_images\/mckesson_logo_eff984b9-ed00-40b0-9430-d3dcbcc71d4a.webp",
             "image_link_url": "",
-            "image_max_height": 47,
+            "image_max_height": 80,
             "column_image_position": "left",
             "title": "",
             "icon": "check_mark",
@@ -478,10 +478,10 @@
         "column_X9BpEf": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/henry-schein-logo.png",
-            "image_mobile": "shopify:\/\/shop_images\/henry-schein-logo.png",
+            "image": "shopify:\/\/shop_images\/henry-schein-logo.webp",
+            "image_mobile": "shopify:\/\/shop_images\/henry-schein-logo.webp",
             "image_link_url": "",
-            "image_max_height": 51,
+            "image_max_height": 80,
             "column_image_position": "right",
             "title": "",
             "icon": "check_mark",
@@ -508,10 +508,10 @@
         "column_Lhg6JL": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/simply-medical-logo.png",
+            "image": "shopify:\/\/shop_images\/simply-medical-logo.webp",
             "image_mobile": "shopify:\/\/shop_images\/simply-medical-logo.png",
             "image_link_url": "",
-            "image_max_height": 59,
+            "image_max_height": 80,
             "column_image_position": "left",
             "title": "",
             "icon": "check_mark",
@@ -538,10 +538,10 @@
         "16395065260cbd3902-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/metro-medical.png",
-            "image_mobile": "shopify:\/\/shop_images\/metro-medical.png",
+            "image": "shopify:\/\/shop_images\/metro-medical.webp",
+            "image_mobile": "shopify:\/\/shop_images\/metro-medical.webp",
             "image_link_url": "",
-            "image_max_height": 55,
+            "image_max_height": 80,
             "column_image_position": "center center",
             "title": "",
             "icon": "none",
