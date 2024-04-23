@@ -536,11 +536,107 @@
             "icon_color": "#cdda01",
             "text_color_primary": false
           }
+        },
+        "column_8CUX46": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/henry-schein-logo.png",
+            "image_mobile": "shopify:\/\/shop_images\/henry-schein-logo.png",
+            "image_link_url": "",
+            "image_max_height": 55,
+            "column_image_position": "right",
+            "title": "",
+            "icon": "check_mark",
+            "text": "",
+            "column_elements_alignment": "normal",
+            "column_text_alignment": "center",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "column_6Ntkpi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/simply-medical-logo.png",
+            "image_mobile": "shopify:\/\/shop_images\/simply-medical-logo.png",
+            "image_link_url": "",
+            "image_max_height": 55,
+            "column_image_position": "left",
+            "title": "",
+            "icon": "check_mark",
+            "text": "",
+            "column_elements_alignment": "normal",
+            "column_text_alignment": "center",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
+        },
+        "column_cnRCNR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cardinal-health-logo.png",
+            "image_mobile": "shopify:\/\/shop_images\/cardinal-health-logo.png",
+            "image_link_url": "",
+            "image_max_height": 75,
+            "column_image_position": "center center",
+            "title": "",
+            "icon": "check_mark",
+            "text": "",
+            "column_elements_alignment": "normal",
+            "column_text_alignment": "center",
+            "link_label": "",
+            "link_type": "link",
+            "link": "",
+            "modal_liquid": "",
+            "custom_liquid": "",
+            "liquid_background": "#fff",
+            "column_icon_color_custom": "#000000",
+            "column_border_color_enable": false,
+            "column_border_color": "#ffffff",
+            "title_top": false,
+            "col_content_reverse": false,
+            "p_bullets": false,
+            "p_bullets_color": "#cdda01",
+            "icon_color": "#cdda01",
+            "text_color_primary": false
+          }
         }
       },
       "block_order": [
         "16395065260cbd3902-0",
-        "column_i6DNez"
+        "column_i6DNez",
+        "column_8CUX46",
+        "column_6Ntkpi",
+        "column_cnRCNR"
+      ],
+      "custom_css": [
+        ".multicolumn-list {justify-content: center;}"
       ],
       "settings": {
         "title": "DISTRIBUTED BY",
