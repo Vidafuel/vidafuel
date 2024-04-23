@@ -574,7 +574,8 @@
         "column_yC3pQ3"
       ],
       "custom_css": [
-        ".multicolumn-list {justify-content: center;}"
+        ".multicolumn-list {justify-content: center;}",
+        ".multicolumn-list__item {margin-top: 2rem}"
       ],
       "settings": {
         "title": "DISTRIBUTED BY",
