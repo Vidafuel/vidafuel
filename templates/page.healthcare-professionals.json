@@ -595,7 +595,7 @@
         "column_alignment": "center",
         "columns": "default",
         "background_style": "secondary",
-        "background_style_color": "rgba(0,0,0,0)",
+        "background_style_color": "#f5f5f5",
         "card_bk_none": false,
         "button_label": "",
         "button_link": "",
