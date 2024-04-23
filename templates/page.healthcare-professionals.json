@@ -133,6 +133,7 @@
         "16391567181da7a84b-0"
       ],
       "custom_css": [
+        ".custom-liquid {box-shadow: none; padding-top: 0;}",
         ".multicolumn {padding-top: 0;}",
         ".multicolumn-list {padding-top: 0;}"
       ],
