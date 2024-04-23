@@ -415,18 +415,18 @@
     "1639506526d4856680": {
       "type": "multicolumn",
       "blocks": {
-        "16395065260cbd3902-0": {
+        "column_yC3pQ3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/metro-medical.png",
-            "image_mobile": "shopify:\/\/shop_images\/metro-medical.png",
+            "image": "shopify:\/\/shop_images\/cardinal-health-logo.png",
+            "image_mobile": "shopify:\/\/shop_images\/cardinal-health-logo.png",
             "image_link_url": "",
-            "image_max_height": 55,
+            "image_max_height": 82,
             "column_image_position": "right",
             "title": "",
             "icon": "none",
             "text": "",
-            "column_elements_alignment": "center",
+            "column_elements_alignment": "normal",
             "column_text_alignment": "center",
             "link_label": "",
             "link_type": "link",
@@ -434,7 +434,7 @@
             "modal_liquid": "",
             "custom_liquid": "",
             "liquid_background": "#ffffff",
-            "column_icon_color_custom": "rgba(0,0,0,0)",
+            "column_icon_color_custom": "#000000",
             "column_border_color_enable": false,
             "column_border_color": "#ffffff",
             "title_top": false,
@@ -451,7 +451,7 @@
             "image": "shopify:\/\/shop_images\/mckesson_logo.webp",
             "image_mobile": "shopify:\/\/shop_images\/mckesson_logo.webp",
             "image_link_url": "",
-            "image_max_height": 45,
+            "image_max_height": 47,
             "column_image_position": "left",
             "title": "",
             "icon": "check_mark",
@@ -493,7 +493,7 @@
             "link": "",
             "modal_liquid": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "column_icon_color_custom": "#000000",
             "column_border_color_enable": false,
             "column_border_color": "#ffffff",
@@ -523,7 +523,7 @@
             "link": "",
             "modal_liquid": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
+            "liquid_background": "#ffffff",
             "column_icon_color_custom": "#000000",
             "column_border_color_enable": false,
             "column_border_color": "#ffffff",
@@ -535,26 +535,26 @@
             "text_color_primary": false
           }
         },
-        "column_yC3pQ3": {
+        "16395065260cbd3902-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cardinal-health-logo.png",
-            "image_mobile": "shopify:\/\/shop_images\/cardinal-health-logo.png",
+            "image": "shopify:\/\/shop_images\/metro-medical.png",
+            "image_mobile": "shopify:\/\/shop_images\/metro-medical.png",
             "image_link_url": "",
-            "image_max_height": 70,
+            "image_max_height": 55,
             "column_image_position": "center center",
             "title": "",
             "icon": "none",
             "text": "",
-            "column_elements_alignment": "normal",
+            "column_elements_alignment": "center",
             "column_text_alignment": "center",
             "link_label": "",
             "link_type": "link",
             "link": "",
             "modal_liquid": "",
             "custom_liquid": "",
-            "liquid_background": "#fff",
-            "column_icon_color_custom": "#000000",
+            "liquid_background": "#ffffff",
+            "column_icon_color_custom": "rgba(0,0,0,0)",
             "column_border_color_enable": false,
             "column_border_color": "#ffffff",
             "title_top": false,
@@ -567,11 +567,11 @@
         }
       },
       "block_order": [
-        "16395065260cbd3902-0",
+        "column_yC3pQ3",
         "column_wyUXJz",
         "column_X9BpEf",
         "column_Lhg6JL",
-        "column_yC3pQ3"
+        "16395065260cbd3902-0"
       ],
       "custom_css": [
         ".multicolumn-list {justify-content: center;}",
