@@ -637,7 +637,8 @@
       ],
       "custom_css": [
         ".multicolumn-list {justify-content: center;}",
-        ".multicolumn-list__item {margin-top: 2rem;}"
+        ".multicolumn-list__item {margin-top: 2rem;}",
+        ".title-wrapper-with-link {margin-bottom: 0;}"
       ],
       "settings": {
         "title": "DISTRIBUTED BY",
