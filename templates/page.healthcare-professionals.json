@@ -540,7 +540,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/cardinal-health-logo.png",
             "image_mobile": "shopify:\/\/shop_images\/cardinal-health-logo.png",
-            "image_link_url": "https:\/\/www.cardinalhealth.com\/en.html",
+            "image_link_url": "",
             "image_max_height": 70,
             "column_image_position": "center center",
             "title": "",
