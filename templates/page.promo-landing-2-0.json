@@ -636,7 +636,7 @@
         "column_cnRCNR"
       ],
       "custom_css": [
-        ".multicolumn-list {justify-content: center;}",
+        ".multicolumn-list {justify-content: center; margin-top: 0;}",
         ".multicolumn-list__item {margin-top: 2rem;}",
         ".title-wrapper-with-link {margin-bottom: 0;}"
       ],
