@@ -574,8 +574,9 @@
         "16395065260cbd3902-0"
       ],
       "custom_css": [
-        ".multicolumn-list {justify-content: center;}",
-        ".multicolumn-list__item {margin-top: 2rem;}"
+        ".multicolumn-list {justify-content: center; margin-top: 0;}",
+        ".multicolumn-list__item {margin-top: 2rem;}",
+        ".title-wrapper-with-link {margin-bottom: 0;}"
       ],
       "settings": {
         "title": "DISTRIBUTED BY",
