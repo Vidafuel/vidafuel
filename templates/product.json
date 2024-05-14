@@ -62,6 +62,13 @@
             "page": "",
             "icon": "check_mark"
           }
+        },
+        "text_TME9yD": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Billable Code<\/strong>: B4155",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
@@ -73,7 +80,8 @@
         "209b5cd2-21e3-458c-b9e0-435c7de14288",
         "3860f77f-ac5e-4ce4-970b-455240bddd02",
         "01f31cd5-86c2-41b6-98cd-e0b8b0272a0e",
-        "792851cb-e4b4-4bbe-9821-00b87ccc8fec"
+        "792851cb-e4b4-4bbe-9821-00b87ccc8fec",
+        "text_TME9yD"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -98,7 +106,7 @@
       "type": "apps",
       "blocks": {
         "07f30ab2-42fe-476f-9e7b-07211a450642": {
-          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "type": "shopify:\/\/apps\/yotpo-product-reviews-ugc\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
             "product": "{{product}}"
           }
