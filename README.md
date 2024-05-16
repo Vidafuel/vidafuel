@@ -2,6 +2,8 @@
 
 ## CLI Commands
 
+[Shopify CLI Command Docs](https://shopify.dev/docs/themes/tools/cli)
+
 To check which store you're using, run:
 
 ```
