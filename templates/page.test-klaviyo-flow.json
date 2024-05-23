@@ -4,16 +4,27 @@
       "type": "main-page",
       "custom_css": [
         "h2 {color: #059ca7;}",
-        "p,li {color: #50768D;}",
+        "p,li {color: #50768d;}",
         ".grid-container {grid-template-columns: 3fr 1fr;}",
         ".media {order: 1;}"
       ],
       "settings": {
+        "page_title_hide": true,
         "page_title_background_justification": "default",
         "page_featured_image": "{{ page.metafields.custom.featured_image.value }}",
         "featured_image_ratio": "portrait",
+        "desktop_swap_columns": false,
         "page_width": "page-width",
         "background_color": "#ffffff"
+      }
+    },
+    "custom_liquid_wFKWpR": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"klaviyo-form-SCSkug\"><\/div>",
+        "custom_background": false,
+        "background_color": "#fff",
+        "page_width": false
       }
     },
     "1641929597955d3766": {
@@ -28,6 +39,7 @@
   },
   "order": [
     "main",
+    "custom_liquid_wFKWpR",
     "1641929597955d3766"
   ]
 }
