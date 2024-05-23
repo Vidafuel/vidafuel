@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+        "h2 {color: #059ca7;}",
+        "p,li {color: #50768D;}",
+        ".grid-container {grid-template-columns: 3fr 1fr;}",
+        ".media {order: 1;}"
+      ],
+      "settings": {
+        "page_title_background_justification": "default",
+        "page_featured_image": "{{ page.metafields.custom.featured_image.value }}",
+        "featured_image_ratio": "portrait",
+        "page_width": "page-width",
+        "background_color": "#ffffff"
+      }
+    },
+    "1641929597955d3766": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"yotpo yotpo-reviews-carousel\" \n data-header-customisation-enabled=\"1\" \n data-header-customisation-color=\"#56575f\" \n data-header-customisation-font-size=\"18\" \n data-header-customisation-text=\"Reviews from real customers\" \n data-header-customisation-alignment=\"left\" \n data-background-color=\"transparent\" \n data-mode=\"top_rated\" \n data-type=\"site\" \n data-count=\"9\" \n data-show-bottomline=\"1\" \n data-show-navigation=\"1\">&nbsp;<\/div>",
+        "custom_background": false,
+        "background_color": "#ffffff",
+        "page_width": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1641929597955d3766"
+  ]
+}
