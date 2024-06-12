@@ -6,20 +6,25 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+
 {% if section.settings.product_slider_flickity %}
 		{{ 'flickity.min.css' | asset_url | stylesheet_tag }}
 		<script src="{{ 'flickity.min.js' | asset_url }}" defer></script>
 		{{ 'section-slider.css' | asset_url | stylesheet_tag }}
 		{% render 'main-product-flickity-styles' %}
 {% endif %}
+
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
+
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
 	{{ 'component-product-model.css' | asset_url | stylesheet_tag }}
 	<link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
 	<link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
+
 <section class="page-width">
 	<div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
 		<div class="grid__item product__media-wrapper">
@@ -40,9 +45,9 @@
 						{%- endfor -%}
 					</ul>
 				{% else %}
-					{% comment %}
-						Original Dawn Slider
-					{% endcomment %}
+						{% comment %}
+							Original Dawn Slider
+						{% endcomment %}
 					<ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
 						{%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
 						{%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -129,14 +134,14 @@
 					{%- when 'custom_liquid' -%}
 						{{ block.settings.custom_liquid }}
 					{%- when 'collapsible_tab' -%}
-						{% liquid
-							if block.settings.heading contains 'Benefits'
-								assign attrName = 'open'
-							else
-								assign attrName = ''
-							endif
-							assign blockClass = block.settings.heading | replace_first: " ", "-"
-						%}
+					{% liquid
+						if block.settings.heading contains 'Benefits'
+							assign attrName = 'open'
+						else
+							assign attrName = ''
+						endif
+						assign blockClass = block.settings.heading | replace_first: " ", "-"
+					%}
 					
 						<div class="product__accordion accordion {{ blockClass | downcase }}" {{ block.shopify_attributes }}>
 							<details id="Details-{{ block.id }}-{{ section.id }}" {{ attrName }}>
@@ -276,6 +281,7 @@
 								</variant-selects>
 							{%- endif -%}
 						{%- endunless -%}
+
 						<noscript class="product-form__noscript-wrapper-{{ section.id }}">
 							<div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
 								<label class="form__label" for="Variants-{{ section.id }}">{{ 'products.product.product_variants' | t }}</label>
@@ -309,18 +315,24 @@
 									</svg>
 									<span class="product-form__error-message"></span>
 								</div>
+
 								{%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
 									<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+									{% render 'bsub-widget' %}
+                                  <br>
+
 									{% if block.settings.show_button_pretext %}
 										<div class="product-form_buttons-pretext">
 											{{ block.settings.button_pretext }}
 										</div>
 									{% endif %}
-									{% if product.metafields.vidafields.backorder_product == true %}
-											{% assign soldOutBtnTxt = product.metafields.vidafields.backorder_product_btn_text %} 
-									{% endif %}
+
+										{% if product.metafields.vidafields.backorder_product == true %}
+												{% assign soldOutBtnTxt = product.metafields.vidafields.backorder_product_btn_text %} 
+										{% endif %}
+										
 									<div class="product-form__buttons">
-										{%- comment -%} uncomment type="submit" & name="add" to re-enable add to cart button {%- endcomment -%}
+									{%- comment -%} uncomment type="submit" & name="add" to re-enable add to cart button {%- endcomment -%}
 										<button
 											{% if product.metafields.vidafields.backorder_product == true %}
 											onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });"
@@ -355,8 +367,11 @@
 									</div>
 								{%- endform -%}
 							</product-form>
+
 							{{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
+
 							{%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
+
 							<pickup-availability class="product__pickup-availabilities no-js-hidden"
 								{% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %} available{% endif %}
 								data-root-url="{{ routes.root_url }}"
@@ -409,10 +424,14 @@
 				</div>
 			</div>
 		</div>
+
+
 	</div>
+
 	<product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
 		<div class="product-media-modal__dialog" role="dialog" aria-label="{{ 'products.modal.label' | t }}" aria-modal="true" tabindex="-1">
 			<button id="ModalClose-{{ section.id }}" type="button" class="product-media-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
+
 			<div class="product-media-modal__content" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
 				{%- liquid
 					if product.selected_or_first_available_variant.featured_media != null
@@ -420,6 +439,7 @@
 						render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants
 					endif
 				-%}
+
 				{%- for media in product.media -%}
 					{%- liquid
 						if section.settings.hide_variants and variant_images contains media.src
@@ -436,9 +456,7 @@
 			</div>
 		</div>
 	</product-modal>
-	{% comment %}
-		Product information popup block modal
-	{% endcomment %}
+
 	{% assign popups = section.blocks | where: "type", "popup" %}
 	{%- for block in popups -%}
 		<modal-dialog id="PopupModal-{{ block.id }}" class="product-popup-modal" {{ block.shopify_attributes }}>
@@ -448,98 +466,102 @@
 					<h1 class="h2">{{ block.settings.page.title }}</h1>
 					{{ block.settings.page.content }}
 					{% if block.settings.show_nutrition_facts and product.metafields.vidafields.nutrition_facts != blank %}
-						{% assign image = product.metafields.vidafields.nutrition_facts | image_url %}
 						<img
-							srcset="{% if image.width >= 350 %}{{ image | image_url: '350x' }} 350w,{% endif %}
-                  {% if image.width >= 750 %}{{ image | image_url: '750x' }} 750w,{% endif %}
-                  {% if image.width >= 1100 %}{{ image | image_url: '1100x' }} 1100w,{% endif %}
-                  {% if image.width >= 1500 %}{{ image | image_url: '1500x' }} 1500w,{% endif %}
-                  {% if image.width >= 2200 %}{{ image | image_url: '2200x' }} 2200w,{% endif %}
-                  {% if image.width >= 3000 %}{{ image | image_url: '3000x' }} 3000w,{% endif %}
-                  {{ image | image_url }} {{ image.width }}w"
-							src="{{ image | image_url: width: 1500 }}"
+							srcset="{% if nutrition_facts_image.width >= 288 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 288 }} 288w,{% endif %}
+											{% if product.metafields.vidafields.nutrition_facts.width >= 576 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 576 }} 576w,{% endif %}
+											{% if product.metafields.vidafields.nutrition_facts.width >= 750 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 750 }} 750w,{% endif %}
+											{% if product.metafields.vidafields.nutrition_facts.width >= 1100 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 1100 }} 1100w,{% endif %}
+											{% if product.metafields.vidafields.nutrition_facts.width >= 1500 %}{{ product.metafields.vidafields.nutrition_facts | image_url: width: 1500 }} 1500w,{% endif %}
+											{{ product.metafields.vidafields.nutrition_facts | image_url }} {{ product.metafields.vidafields.nutrition_facts.width }}w"
+							src="{{ product.metafields.vidafields.nutrition_facts | image_url: width: 1500 }}"
 							sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: 0.64 | round }}px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
-							loading="lazy" width="576" height="100" alt="{{ image.alt | escape }}">
+							loading="lazy" width="576" height="100%" alt="{{ product.metafields.vidafields.nutrition_facts.alt | escape }}">
 					{% endif %}
 				</div>
 			</div>
 		</modal-dialog>
 	{%- endfor -%}
 </section>
+
 {% comment %} klaviyo modal form {% endcomment %} 
-{% if product.metafields.vidafields.backorder_product == true %}
-	<div class="klaviyo_modal" id="k_id_modal_request" style="display:none;">
-			<div class="klaviyo_inner">
-					<a href="#" class="klaviyo_close_modal klaviyo_header_close">×</a>
-					<form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate"
-							class="klaviyo_subscription_form">
-							<input type="hidden" name="g" value="JQgHNX">
-							<div class="klaviyo_fieldset">
-									<p class="klaviyo_header">Want to know when this product is back in stock?</p>
-									<p class="klaviyo_subheader">Enter your email below and we will let you know when this product is
-											available.</p>
-							</div>
-							<div class="klaviyo_fieldset">
-									<div class="klaviyo_field_group">
-											<label for="k_id_modal_$email">Email Address</label>
-											<input type="email" id="k_id_modal_$email" name="email">
-									</div>
-							</div>
-							<div class="klaviyo_fine_print"></div>
-							<div class="klaviyo_form_actions">
-									<button type="submit" class="klaviyo_submit_button">
-											<span>Please Let Me Know</span>
-									</button>
-							</div>
-							<div class="klaviyo_below_submit"></div>
-					</form>
-					<div class="klaviyo_messages">
-							<div class="success_message" style="display:none;">Thank you! We'll let you know.</div>
-							<div class="error_message" style="display:none;"></div>
-					</div>
-			</div>
-	</div>
-	{% comment %} klaviyo modal form css {% endcomment %}
-	<style>
-			@media only screen and (min-width: 750px) {
-					.main-content {
-							padding-top: 25px;
-					}
-			}
-			.klaviyo_modal .klaviyo_inner {
-					top: 20px !important;
-					background-color: #fff;
-					font-family: "Trade Gothic Next", sans-serif;
-			}
-			.klaviyo_modal .klaviyo_header {
-					color: rgb(18, 18, 18);
-			}
-			.klaviyo_modal .klaviyo_subheader {
-					color: rgb(18, 18, 18);
-			}
-			.klaviyo_modal .klaviyo_submit_button,
-			.klaviyo_modal .klaviyo_submit_button span {
-					background-color: rgb(123, 204, 200);
-					background-image: none;
-					border-radius: 2px;
-			}
-			.klaviyo_modal .klaviyo_submit_button:hover:not(.btn-fake),
-			.klaviyo_modal .klaviyo_submit_button span:hover:not(.btn-fake) {
-					box-shadow: 0 0 0 0.2rem rgb(123, 204, 200);
-					background-color: rgb(123, 204, 200) !important;
-			}
-			.klaviyo_modal .klaviyo_fieldset {
-					border-top: none;
-			}
-	</style>
-	{% comment %} klaviyo modal form scripts {% endcomment %}
-	<script type="text/javascript">
-			KlaviyoSubscribe.attachToForms('#k_id_modal_request', {
-					hide_form_on_success: true
-			});
-	</script>
-{% endif %}
-<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js" defer></script>
+<div class="klaviyo_modal" id="k_id_modal_request" style="display:none;">
+		<div class="klaviyo_inner">
+				<a href="#" class="klaviyo_close_modal klaviyo_header_close">×</a>
+				<form action="//manage.kmail-lists.com/subscriptions/subscribe" method="POST" novalidate="novalidate"
+						class="klaviyo_subscription_form">
+						<input type="hidden" name="g" value="JQgHNX">
+						<div class="klaviyo_fieldset">
+								<p class="klaviyo_header">Want to know when this product is back in stock?</p>
+								<p class="klaviyo_subheader">Enter your email below and we will let you know when this product is
+										available.</p>
+						</div>
+						<div class="klaviyo_fieldset">
+								<div class="klaviyo_field_group">
+										<label for="k_id_modal_$email">Email Address</label>
+										<input type="email" id="k_id_modal_$email" name="email">
+								</div>
+						</div>
+						<div class="klaviyo_fine_print"></div>
+						<div class="klaviyo_form_actions">
+								<button type="submit" class="klaviyo_submit_button">
+										<span>Please Let Me Know</span>
+								</button>
+						</div>
+						<div class="klaviyo_below_submit"></div>
+				</form>
+				<div class="klaviyo_messages">
+						<div class="success_message" style="display:none;">Thank you! We'll let you know.</div>
+						<div class="error_message" style="display:none;"></div>
+				</div>
+		</div>
+</div>
+{% comment %} klaviyo modal form css {% endcomment %}
+<style>
+		@media only screen and (min-width: 750px) {
+				.main-content {
+						padding-top: 25px;
+				}
+		}
+
+		.klaviyo_modal .klaviyo_inner {
+				top: 20px !important;
+				background-color: #fff;
+				font-family: "Trade Gothic Next", sans-serif;
+		}
+
+		.klaviyo_modal .klaviyo_header {
+				color: rgb(18, 18, 18);
+		}
+
+		.klaviyo_modal .klaviyo_subheader {
+				color: rgb(18, 18, 18);
+		}
+
+		.klaviyo_modal .klaviyo_submit_button,
+		.klaviyo_modal .klaviyo_submit_button span {
+				background-color: rgb(123, 204, 200);
+				background-image: none;
+				border-radius: 2px;
+		}
+
+		.klaviyo_modal .klaviyo_submit_button:hover:not(.btn-fake),
+		.klaviyo_modal .klaviyo_submit_button span:hover:not(.btn-fake) {
+				box-shadow: 0 0 0 0.2rem rgb(123, 204, 200);
+				background-color: rgb(123, 204, 200) !important;
+		}
+
+		.klaviyo_modal .klaviyo_fieldset {
+				border-top: none;
+		}
+</style>
+{% comment %} klaviyo modal form scripts {% endcomment %}
+<script type="text/javascript">
+		KlaviyoSubscribe.attachToForms('#k_id_modal_request', {
+				hide_form_on_success: true
+		});
+</script>
+<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+
 {% javascript %}
 	class ProductModal extends ModalDialog {
 		constructor() {
@@ -576,6 +598,7 @@
 
 	customElements.define('product-modal', ProductModal);
 {% endjavascript %}
+
 <script>
 	document.addEventListener('DOMContentLoaded', function() {
 		function isIE() {
@@ -598,12 +621,15 @@
 		});
 	});
 </script>
+
 {%- if first_3d_model -%}
 	<script type="application/json" id="ProductJSON-{{ product.id }}">
 		{{ product.media | where: 'media_type', 'model' | json }}
 	</script>
+
 	<script src="{{ 'product-model.js' | asset_url }}" defer></script>
 {%- endif -%}
+
 {%- liquid
 	if product.selected_or_first_available_variant.featured_media
 		assign seo_media = product.selected_or_first_available_variant.featured_media
@@ -611,6 +637,7 @@
 		assign seo_media = product.featured_media
 	endif
 -%}
+
 <script type="application/ld+json">
 	{
 		"@context": "http://schema.org/",
@@ -620,7 +647,7 @@
 		{% if seo_media -%}
 			{%- assign media_size = seo_media.preview_image.width | append: 'x' -%}
 			"image": [
-				{{ seo_media | image_url: media_size | prepend: "https:" | json }}
+				{{ seo_media | img_url: media_size | prepend: "https:" | json }}
 			],
 		{%- endif %}
 		"description": {{ product.description | strip_html | json }},
@@ -654,6 +681,7 @@
 		]    
 	}
 </script>
+
 {%- comment -%} KLAVIYO Viewed Product Tracking: https://help.klaviyo.com/hc/en-us/articles/115005080407 {%- endcomment -%}
 <script type="text/javascript">
 	var _learnq = _learnq || [];
@@ -681,6 +709,7 @@
 		}
 	}]);
 </script>
+
 {% schema %}
 {
 	"name": "t:sections.main-product.name",
