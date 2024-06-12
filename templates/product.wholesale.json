@@ -13,10 +13,11 @@
           "settings": {
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
+        "aa03e830-a689-4892-9758-a811e4798269": {
+          "type": "text",
           "settings": {
-            "picker_type": "dropdown"
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "body"
           }
         },
         "quantity_selector": {
@@ -28,7 +29,7 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
-            "show_button_pretext": true,
+            "show_button_pretext": false,
             "button_pretext": "<p>15% off on every order<\/p><p>No contract, and you can cancel or change your order at any time<\/p>"
           }
         },
@@ -67,7 +68,7 @@
       "block_order": [
         "title",
         "price",
-        "variant_picker",
+        "aa03e830-a689-4892-9758-a811e4798269",
         "quantity_selector",
         "buy_buttons",
         "209b5cd2-21e3-458c-b9e0-435c7de14288",

@@ -199,7 +199,7 @@
 	overflow: hidden;
 }
 
-.card .icon-wrap.collage-card__arrow {
+.card .icon-wrap.collage-card__arrow, {
 	display: none;
 }
 
