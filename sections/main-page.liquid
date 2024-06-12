@@ -18,12 +18,6 @@
   if section.settings.page_featured_image
     assign page_content_container = 'grid-container'
   endif
-
-  assign page_content_container_swap = ''
-  
-  if section.settings.desktop_swap_columns
-    assign page_content_container_swap = 'grid-container__swap-cols'
-  endif
   
   if section.settings.page_width == 'page-width--full-width'
   endif
@@ -41,10 +35,7 @@
 <div class="page-container">
   {% comment %}
   Title section
-  {% endcomment %}
-  
-  {% if section.settings.page_title_hide != true %}
-  <div class="{{ section.settings.page_title_background_justification }} {% if template_page and section.settings.page_title_background != blank %}main-page__media--background main-page-title{% else %}page-width page-width--narrow{% endif %}">
+  {% endcomment %}<div class="{{ section.settings.page_title_background_justification }} {% if template_page and section.settings.page_title_background != blank %}main-page__media--background main-page-title{% else %}page-width page-width--narrow{% endif %}">
     {%- if template_page and section.settings.page_title_background != blank -%}
       <img
         srcset="{%- if section.settings.page_title_background.width >= 165 -%}
@@ -74,12 +65,11 @@
       </h1>
     </div>
   </div>
-  {% endif %}
-  
+
   {% comment %}
   Featured image/text section
   {% endcomment %}<div class="page-featured-content" {% if section.settings.background_color != '#ffffff' %}style="background-color:{{ section.settings.background_color }};"{% endif %}>
-    <div class="{{ section.settings.page_width }} {{ page_content_container }} {{ page_content_container_swap }}">
+    <div class="{{ section.settings.page_width }} {{ page_content_container }}">
       {% comment %}
       Featured image
       {% endcomment %}
@@ -122,12 +112,6 @@
     "tag": "section",
     "class": "page",
     "settings": [
-      {
-        "type": "checkbox",
-        "id": "page_title_hide",
-        "label": "Page title hide",
-        "default": false
-      },
       {
         "type": "image_picker",
         "id": "page_title_background",
@@ -176,14 +160,7 @@
       }, {
         "type": "header",
         "content": "Page settings"
-      }, 
-      {
-        "type": "checkbox",
-        "id": "desktop_swap_columns",
-        "label": "Desktop swap columns",
-        "default": false
-      },
-      {
+      }, {
         "type": "select",
         "id": "page_width",
         "default": "page-width",

@@ -88,10 +88,7 @@ class CartItems extends HTMLElement {
         const lineItem =  document.getElementById(`CartItem-${line}`);
         if (lineItem && lineItem.querySelector(`[name="${name}"]`)) lineItem.querySelector(`[name="${name}"]`).focus();
         this.disableLoading();
-      if (window.BOLD && BOLD.common && BOLD.common.eventEmitter &&
-    typeof BOLD.common.eventEmitter.emit === 'function'){
-  BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded');
-}
+     
       }).catch(() => {
         this.querySelectorAll('.loading-overlay').forEach((overlay) => overlay.classList.add('hidden'));
         document.getElementById('cart-errors').textContent = window.cartStrings.error;

@@ -83,7 +83,7 @@
                       </div>
                     {%- else -%}
                       <div class="product-option">
-                        <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_price" data-item-key="{{ item.key }}" style="display:none !important;"></span>{{ item.original_price | money }}
+                        {{ item.original_price | money }}
                       </div>
                     {%- endif -%}
 
@@ -97,9 +97,6 @@
                             </div>
                           {%- endfor -%}
                         {%- endif -%}
-                        <span class="bold_ro_desc" data-product-id="{{ item.id }}-{{ forloop.index0 }}"></span>
-                        <span class="bold_load_cart_item_properties"></span>
-                        {% comment %}
                         {%- for property in item.properties -%}
                           {%- assign property_first_char = property.first | slice: 0 -%}
                           {%- if property.last != blank and property_first_char != '_' -%}
@@ -117,7 +114,6 @@
                             </div>
                           {%- endif -%}
                         {%- endfor -%}
-                        {% endcomment %}
                       </dl>
 
                       <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
@@ -246,12 +242,12 @@
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end">
-                            <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" data-item-key="{{ item.key }}" style="display:none !important;"></span>{{ item.final_line_price | money }}
+                           {{ item.final_line_price | money }}
                           </dd>
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          <span class="Bold-theme-hook-DO-NOT-DELETE bold_cart_item_total" data-item-key="{{ item.key }}" style="display:none !important;"></span>{{ item.original_line_price | money }}
+                         {{ item.original_line_price | money }}
                         </span>
                       {%- endif -%}
 
