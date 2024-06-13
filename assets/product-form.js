@@ -39,10 +39,7 @@ if (!customElements.get('product-form')) {
           }
 
           this.cartNotification.renderContents(response);
-          if (window.BOLD && BOLD.common && BOLD.common.eventEmitter &&
-    typeof BOLD.common.eventEmitter.emit === 'function'){
-  BOLD.common.eventEmitter.emit('BOLD_COMMON_cart_loaded');
-}
+      
         })
         .catch((e) => {
           console.error(e);

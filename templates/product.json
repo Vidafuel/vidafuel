@@ -30,7 +30,7 @@
             "default_subscribe": true,
             "primary_color": "#48afa6",
             "secondary_color": "#9fca57",
-            "background_color": "#F8F9F9",
+            "background_color": "#f8f9f9",
             "border_radius": 4,
             "header_text": "",
             "one_time_text": "One-time Purchase",
@@ -52,12 +52,12 @@
             "eligible_for_subscription_header": "Eligible for Subscription"
           }
         },
-        "buy_buttons": {
+        "buy_buttons_VftaKM": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
             "show_button_pretext": false,
-            "button_pretext": "<p>15% off on every order<\/p><p>No contract, and you can cancel or change your order at any time<\/p>"
+            "button_pretext": ""
           }
         },
         "209b5cd2-21e3-458c-b9e0-435c7de14288": {
@@ -105,7 +105,7 @@
         "variant_picker",
         "quantity_selector",
         "bold_subscriptions_bsub_widget_block_TmHmVj",
-        "buy_buttons",
+        "buy_buttons_VftaKM",
         "209b5cd2-21e3-458c-b9e0-435c7de14288",
         "3860f77f-ac5e-4ce4-970b-455240bddd02",
         "01f31cd5-86c2-41b6-98cd-e0b8b0272a0e",

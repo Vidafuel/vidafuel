@@ -16,6 +16,8 @@
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
+
+
 <div class="card-wrapper">
   <div class="card-information">
     <div class="card-information__wrapper">
@@ -103,6 +105,8 @@
 
           {%- form 'product', product_card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
             <input type="hidden" name="id" value="{{ product_card_product.selected_or_first_available_variant.id }}" disabled>
+         
+            <br>
             <div class="product-form__buttons">
               <button
                 type="submit"

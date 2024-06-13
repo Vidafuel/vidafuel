@@ -25,6 +25,34 @@
           "settings": {
           }
         },
+        "bold_subscriptions_bsub_widget_block_mkWGH8": {
+          "type": "shopify:\/\/apps\/bold-subscriptions\/blocks\/bsub-widget-block\/9ceb49f0-5fe5-4b5e-943d-f8af8985167d",
+          "settings": {
+            "default_subscribe": true,
+            "primary_color": "#3B63FF",
+            "secondary_color": "#7DBA63",
+            "background_color": "#F8F9F9",
+            "border_radius": 4,
+            "header_text": "Purchase Options",
+            "one_time_text": "One-time Purchase",
+            "recurring_text": "Subscribe and Save",
+            "prepaid_recurring_text": "Prepaid Subscribe and Save",
+            "discount_summary_text": "(Save {discount})",
+            "discount_summary_plural_text": "(Save up to {discount})",
+            "frequency_header": "Delivery Frequency",
+            "frequency_text": "delivery",
+            "prepaid_checkbox_label_text": "Prepay for subscription",
+            "billing_frequency_header": "Billing Frequency",
+            "billing_frequency_text": "{count} Orders",
+            "delivery_frequency_discount_text": "({discount} off)",
+            "billing_frequency_discount_text": "({discount} off)",
+            "prepaid_total_text": "Billed {price} today",
+            "prepaid_continue_as_prepaid_text": "Prepaid order will auto-renew after {count} orders",
+            "prepaid_continue_as_standard_text": "Becomes a regular subscription after {count} orders",
+            "convertible_header": "Converts to",
+            "eligible_for_subscription_header": "Eligible for Subscription"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -70,6 +98,7 @@
         "price",
         "aa03e830-a689-4892-9758-a811e4798269",
         "quantity_selector",
+        "bold_subscriptions_bsub_widget_block_mkWGH8",
         "buy_buttons",
         "209b5cd2-21e3-458c-b9e0-435c7de14288",
         "3860f77f-ac5e-4ce4-970b-455240bddd02",
