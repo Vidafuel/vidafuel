@@ -70,8 +70,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     
     {{ content_for_header }}
-    {%- render 'bold-common' -%}
-    {%- render 'bold-ro-init' -%}
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
@@ -181,7 +179,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {% if template.suffix contains "campaign_proteindrinks" or template.suffix contains "b2bcoupon" %}
       <script src="//code.jquery.com/jquery-3.3.1.min.js" async></script>
     {% endif %}
-  {%- render 'bold-subscription-widget' -%}
+  {{ 'bsub.js' | asset_url | script_tag }} 
+  {{ 'bsub.css' | asset_url | stylesheet_tag }}
 </head>
 
   <body class="gradient">

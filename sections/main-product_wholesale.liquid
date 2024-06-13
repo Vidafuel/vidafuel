@@ -294,7 +294,6 @@
 
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
-                  <div class="ro_widget"></div>
                   {% if block.settings.show_button_pretext %}
                     <div class="product-form_buttons-pretext">
                       {{ block.settings.button_pretext }}

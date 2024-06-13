@@ -16,15 +16,6 @@
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
-{%- comment -%}
-Showing the Bold Widget in Special Cases
-https://github.com/bold-commerce/bold-subscriptions/wiki/Bold-Subscriptions-Install-Instructions-for-Shopify-Experts#24-suggested-showing-the-widget-in-special-cases
-{%- endcomment -%}
-<script>
-window.BOLD.common.Shopify.saveProduct({{ product_card_product.handle | json }}, {{ product_card_product.id | json }});
-{%- for variant in product_card_product.variants -%} window.BOLD.common.Shopify.saveVariant({{ variant.id | json }}, {product_id: {{ product_card_product.id | json }}, price: {{ variant.price | json }}, group_id: '{{ variant.metafields.bold_rp.rp_group_id }}'}); {%- endfor -%}
-</script>
-
 <div class="card-wrapper">
   <div class="card-information">
     <div class="card-information__wrapper">
@@ -112,8 +103,6 @@ window.BOLD.common.Shopify.saveProduct({{ product_card_product.handle | json }},
 
           {%- form 'product', product_card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
             <input type="hidden" name="id" value="{{ product_card_product.selected_or_first_available_variant.id }}" disabled>
-            <div class="ro_widget"></div>
-            <br>
             <div class="product-form__buttons">
               <button
                 type="submit"

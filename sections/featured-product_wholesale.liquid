@@ -110,8 +110,6 @@
                 <div {{ block.shopify_attributes }}>
                   {%- form 'product', product -%}
                     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                    <div class="ro_widget"></div>
-                    <br>
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>
