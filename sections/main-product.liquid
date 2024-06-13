@@ -336,7 +336,7 @@
 												onclick="KlaviyoSubscribe.attachToModalForm('#k_id_modal_request',{delay_seconds: 0.01, hide_form_on_success: true, ignore_cookie: true, success_message: true, custom_success_message: true, extra_properties: { $source: 'Request'} });"
 												type="button"
 												class="addtocart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
-												disabled
+												{% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
 											>
 													<span>
 														{%- if product.selected_or_first_available_variant.available and product.metafields.vidafields.backorder_product == false -%}
