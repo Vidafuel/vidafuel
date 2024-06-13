@@ -388,6 +388,7 @@ span.active-facets__button-inner {
   .active-facets__button-wrapper *,
   span.active-facets__button-inner {
     font-size: 1.2rem;
+    align-items: center;
   }
 }
 
