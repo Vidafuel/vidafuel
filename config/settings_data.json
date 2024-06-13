@@ -54,7 +54,7 @@
           "logo": "shopify:\/\/shop_images\/Vidafuel-logo-official.png",
           "logo_width": 150,
           "logo_position": "middle-left",
-          "menu": "main-menu-2023",
+          "menu": "main-menu",
           "show_line_separator": true,
           "enable_sticky_header": true,
           "header_tab": true,
@@ -122,6 +122,12 @@
       },
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "5557296251606798448": {
+        "type": "shopify:\/\/apps\/bold-subscriptions\/blocks\/bsub-embed\/9ceb49f0-5fe5-4b5e-943d-f8af8985167d",
         "disabled": false,
         "settings": {
         }
